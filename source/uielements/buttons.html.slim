@@ -1,0 +1,41 @@
+---
+page_title: Buttons
+description: Buttons communicate the action that will occur when the user touches or click them.
+layout: content
+index: true
+---
+
+.p-buttons.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  .content-top
+    h2.text Sizes and setups
+    p.bx--type-p
+      | There are four standar buttons sizes:
+    p.bx--type-p.u-pt-4
+      | Small: a common button
+    p.bx--type-p
+      | Medium: a common touch button
+    p.bx--type-p.u-pb-4
+      | Large: a button made for attention and call to action
+
+    h2.bx--type-p Use of icons
+    p.bx--type-p
+      | Icons like chevrons can be used on both the left and right hand side of the text
+
+  /!Primary buttons
+  = partial :"buttonstype/_buttons_header", :locals => { :title => 'Primary buttons', :text => 'Buttons for SAVE, go to, confirm, check or validate operations', :light =>'large / medium / small' }
+  = partial :"buttonstype/_primary_buttons"
+
+  /!Secondary buttons
+  = partial :"buttonstype/_buttons_header", :locals => { :title => 'Secondary buttons', :text => 'Buttons for DOWNLOAD or similar operations', :light =>'large / medium / small' }
+  = partial :"buttonstype/_secondary_buttons"
+
+  /!Primary buttons with icon
+  = partial :"buttonstype/_buttons_header", :locals => { :title => 'Primary buttons with icons', :text => 'Buttons for save, go to, confirm, check or validate operations', :light =>'large / medium / small' }
+  = partial :"buttonstype/_primary_buttons_ico"
+
+  /!Secondary buttons with icon
+  = partial :"buttonstype/_buttons_header", :locals => { :title => 'Secondary buttons with icons', :text => 'Buttons for DOWNLOAD or similar operations', :light =>'large / medium / small' }
+  = partial :"buttonstype/_secondary_buttons_ico"

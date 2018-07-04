@@ -1,0 +1,107 @@
+{
+  "checksum": {
+    "previous": "",
+    "current": "b1ff04ff00ad18a6f42219edda5fbf43e19aa1a807dfca848218c4b7140f8c76"
+  },
+  "fonts": [
+
+  ],
+  "glyphs": {
+    "ic-close": {
+      "source": "fontcustom/assets/icons/ic-close.svg",
+      "codepoint": 61696
+    },
+    "ic-components-xl": {
+      "source": "fontcustom/assets/icons/ic-components-xl.svg",
+      "codepoint": 61697
+    },
+    "ic-downloads-xl": {
+      "source": "fontcustom/assets/icons/ic-downloads-xl.svg",
+      "codepoint": 61698
+    },
+    "ic-downloads-xs": {
+      "source": "fontcustom/assets/icons/ic-downloads-xs.svg",
+      "codepoint": 61699
+    },
+    "ic-graphics-vizrules-xs": {
+      "source": "fontcustom/assets/icons/ic-graphics-vizrules-xs.svg",
+      "codepoint": 61700
+    },
+    "ic-guidelines-blue-full": {
+      "source": "fontcustom/assets/icons/ic-guidelines-blue-full.svg",
+      "codepoint": 61701
+    },
+    "ic-guidelines-xl": {
+      "source": "fontcustom/assets/icons/ic-guidelines-xl.svg",
+      "codepoint": 61702
+    },
+    "ic-guidelines-xl-green": {
+      "source": "fontcustom/assets/icons/ic-guidelines-xl-green.svg",
+      "codepoint": 61703
+    },
+    "ic-guidelines-xs": {
+      "source": "fontcustom/assets/icons/ic-guidelines-xs.svg",
+      "codepoint": 61704
+    },
+    "ic-resources-downloads-xs-grey": {
+      "source": "fontcustom/assets/icons/ic-resources-downloads-xs-grey.svg",
+      "codepoint": 61705
+    },
+    "ic-search": {
+      "source": "fontcustom/assets/icons/ic-search.svg",
+      "codepoint": 61706
+    },
+    "ic-uielements-xs": {
+      "source": "fontcustom/assets/icons/ic-uielements-xs.svg",
+      "codepoint": 61707
+    },
+    "ic-viz-rules-xl": {
+      "source": "fontcustom/assets/icons/ic-viz-rules-xl.svg",
+      "codepoint": 61708
+    },
+    "logo-luca": {
+      "source": "fontcustom/assets/icons/logo-luca.svg",
+      "codepoint": 61709
+    },
+    "pattern": {
+      "source": "fontcustom/assets/icons/pattern.svg",
+      "codepoint": 61710
+    }
+  },
+  "options": {
+    "input": {
+      "vectors": "fontcustom/assets/icons",
+      "templates": "fontcustom/templates"
+    },
+    "output": {
+      "fonts": "source/assets/fonts/fontcustom",
+      "css": "source/assets/stylesheets/libs",
+      "00A-icons-preview.html.erb": "source",
+      "preview": "source/assets/fonts/fontcustom"
+    },
+    "config": "fontcustom.yml",
+    "templates": [
+      "_fontcustom-symbols.scss",
+      "00A-icons-preview.html.erb"
+    ],
+    "font_name": "luca-symbols",
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "css_selector": ".s-{{glyph}}",
+    "preprocessor_path": "",
+    "autowidth": false,
+    "no_hash": true,
+    "css3": false,
+    "debug": false,
+    "force": true,
+    "quiet": false,
+    "copyright": "",
+    "class_name": "s",
+    "base64": false
+  },
+  "templates": [
+
+  ]
+}

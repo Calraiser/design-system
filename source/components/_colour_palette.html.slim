@@ -1,0 +1,8 @@
+
+.palette-container.simple
+  h3 #{title}
+  .container-flex
+    - colours.each do |item|
+      .swatches
+        .color-swatch class="#{item}"
+        p.item.uppercase

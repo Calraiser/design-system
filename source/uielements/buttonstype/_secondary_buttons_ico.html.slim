@@ -1,0 +1,59 @@
+/Buttons for DOWNLOAD or similar operations
+.content-buttons
+  .content-buttons-block
+    h3.title.uppercase Large
+    p.bx--type-p.uppercase Active
+    = link_to '#', class: 'c-btn btn-secondary has-icon btn-large' do
+       i class="ico ico-caret"
+       span.c-btn-text Button size L
+    p.bx--type-p.uppercase Hover
+    = link_to '#', class: 'c-btn btn-secondary has-icon btn-large hover' do
+      i class="ico ico-caret"
+      span.c-btn-text Button size L
+    p.bx--type-p.uppercase Disabled
+    = link_to '#', class: 'c-btn btn-secondary has-icon btn-large disabled', disabled: true do
+      i class="ico ico-caret"
+      span.c-btn-text Button size L
+
+  .content-buttons-block
+    h3.title.uppercase Medium
+    p.bx--type-p.uppercase Active
+    = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium' do
+      'Button M
+      i.ico.ico-caret
+    p.bx--type-p.uppercase Hover
+    = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium hover' do
+      'Button M <i class="ico ico-caret"></i>
+    p.bx--type-p.uppercase Disabled
+    = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium disabled', disabled: true do
+      'Button M <i class="ico ico-caret"></i>
+
+  .content-buttons-block
+    h3.title.uppercase Small
+    p.bx--type-p.uppercase Active
+    = link_to '#', class: 'c-btn btn-secondary has-icon btn-small' do
+      'Button <i class="ico ico-caret"></i>
+    p.bx--type-p.uppercase Hover
+    = link_to '#', class: 'c-btn btn-secondary has-icon btn-small hover' do
+      'Button <i class="ico ico-caret"></i>
+    p.bx--type-p.uppercase Disabled
+    = link_to '#', class: 'c-btn btn-secondary has-icon btn-small disabled', disabled: true do
+      'Button <i class="ico ico-caret"></i>
+
+h2.title.uppercase Code/Html > Save
+.code-wrapper
+  .code-content id="sec_btn_ico"
+    = code("html") do
+      = link_to '#', class: 'c-btn btn-secondary has-icon btn-large'
+        'Button Size Large
+        i.ico.ico-caret
+    = code("html") do
+      = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium'
+        'Button Size Medium
+        i.ico.ico-caret
+    = code("html") do
+      = link_to '#', class: 'c-btn btn-secondary has-icon btn-small'
+        'Button Size Small
+        i.ico.ico-caret
+
+  = partial :"components/_code_actions", :locals => { :target => '#sec_btn_ico'}

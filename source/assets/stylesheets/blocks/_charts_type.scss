@@ -1,0 +1,77 @@
+/* =============================================================================
+   Charts Type (blocks/_charts_type.scss)
+   ========================================================================== */
+
+//
+// Variables
+// -----------------------------------------
+
+$flipper-width: 300px;
+
+
+.b-charts-type {
+  margin-top: 66px;
+  .e-flipper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .bx--type-h4 {
+      color: $grey01;
+      text-align: left;
+      transition: $transition-slow;
+    }
+    .front, .back  {
+      margin-top: 18px;
+      top: 0;
+      border-radius: 3px;
+      box-shadow: 0 1px 3px 0 rgba(63, 63, 68, 0.15),
+                  0 0 0 1px rgba(63, 63, 68, 0.05);
+    }
+
+    .front {
+      @include size(298px, 187px);
+      padding: 45px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .back {
+      @include size(250px, 253px);
+      padding: 24px 24px 0;
+      .functions {
+        margin-top: 20px;
+      }
+      .header {
+        flex-direction: column;
+        .text {
+          font-size: rem-calc(14);
+          line-height: 20px;
+        }
+        .more-link {
+          color: $blue;
+        }
+        .e-list {
+          margin: 0 20px;
+          li {
+            line-height: 20px;
+            font-size: rem-calc(14);
+          }
+        }
+      }
+
+    }
+
+    .item {
+      flex: 0 0 30%;
+      height: $flipper-width;
+      margin-bottom: 89px;
+      &:hover {
+        .bx--type-h4 {
+          color: $blue;
+        }
+      }
+    }
+  }
+}

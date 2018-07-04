@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="82px" viewBox="0 0 82 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-guidelines-blue</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="48" height="48" rx="18"></rect>
+        <filter x="-53.1%" y="-51.0%" width="210.4%" height="210.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="ASSETS-welcome-+-home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desk–HD-1440-X-1024-interaction-2" transform="translate(-1094.000000, -121.000000)">
+            <g id="side-panel-&gt;-index" transform="translate(1092.000000, 84.000000)">
+                <g id="lateral-bar">
+                    <g id="ic-guidelines-blue" transform="translate(18.000000, 52.000000)">
+                        <g id="ic-guidelines">
+                            <g id="base">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#00AAEE" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <polygon id="Stroke-4" stroke="#F2F2F2" stroke-width="4" points="24 15 15 30 33 30"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

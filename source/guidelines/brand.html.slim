@@ -1,0 +1,101 @@
+---
+page_title: Brand
+description: Luca represents brand values, light, clarity of ideas, support to make the best decision, future and innovation. In everything we do, we aim to bring focus and clarity to teams without distracting; so our logo and symbol are direct, clear, and impactful. To accomplish this, we adhere to the guidelines below.
+
+layout: content
+index: true
+---
+
+.p-brand.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p.description = current_page.data.description
+
+  .content-block
+    h2.bx--type-h4 Logo-mark
+    p.bx--type-p
+      | This is the logo without the descfriptor. We will use this version when the logo is applied clearly inside of the LUCA environment, by way of the user understands what refers LUCA and it is no necessary to position the brand. Also, it can be used exceptionally in communication when, because of the size in the application, the user couldn’t be read adequately the descriptor.
+    picture.brand-block
+      = svg_tag 'brand_logos/logo_mark_color.svg'
+
+    .brand-block.align-end
+      .brand-item
+        h5.bx--type-h5.u-pb-6 logo-mark
+        = svg_tag 'brand_logos/logo_mark.svg'
+      .brand-item
+        h5.bx--type-h5.u-pb-6  logo-mark + claim (main option)
+        = svg_tag 'brand_logos/logo_claim.svg'
+      .brand-item
+        h5.bx--type-h5.u-pb-6  logo-mark + claim (secondary option)
+        = svg_tag 'brand_logos/logo_claim_secondary.svg'
+
+  .content-block
+    h2.bx--type-h4 Logo-mark + claim (main option)
+    p.bx--type-p
+      | This is the logo cohabiting with the descriptor. It will be used mainly this version when the size of the descriptor was readable. The logo works best in black on a white background. For dark backgrounds, the logo should always be white.
+    picture.brand-block
+      = svg_tag 'brand_logos/logo_claim_margin.svg'
+
+  .content-block
+    h2.bx--type-h4 Logo-mark + claim (secondary option)
+    p.bx--type-p
+      | We will use this version when, because of space and size of the application, it would be better an horizontal version of the logo.
+    picture.brand-block
+      = svg_tag 'brand_logos/logo_claim_secondary_margin.svg'
+
+  .content-block
+    h2.bx--type-h4.u-text-blue Protection area and minimum sizes
+    h2.bx--type-h4 Protection area
+    p.bx--type-p
+      | Protection area is the minimum space that must exist around the logo to keep the entirety of it. It must not be invaded for other elements. When it is necessary to use a minor size of the specified, the logo will not be accompanied by the descriptor.
+    picture.brand-block
+      = svg_tag 'brand_logos/logo_protection_area.svg'
+
+  .content-block
+    h2.bx--type-h4 Minimum sizes
+    p.bx--type-p
+      | These are the minimum sizes for the LUCA logo for a good legibility.
+    picture.brand-block
+      .brand-item
+        span.brand-note.u-pb-3 digital applications
+        = svg_tag 'brand_logos/logo_size_130.svg'
+      .brand-item
+        span.brand-note.u-pb-3 printed applications
+        = svg_tag 'brand_logos/logo_size_35.svg'
+
+  .content-block
+    h2.bx--type-h4.u-text-blue Communication stages
+    p.bx--type-p
+      | LUCA brand can appear in different coexistence stages with the other brands of Telefónica group: Telefónica, Telefónica Business Solutions, Movistar, O2 and Vivo. It is necessary to communicate the relation between LUCA and Telefónica on the different stages. These are the different endorse stages that could change according to what brand leads the communication:
+    picture.brand-block
+      = image_tag 'brand_logos/communication_stages.jpg'
+
+  .content-block
+    h2.bx--type-h4.u-text-blue Endorsement versions
+    h2.bx--type-h4 LUCA endorses other brands
+    p.bx--type-p
+      | It is the LUCA logo with the text 'Data-Driven Decisions by' left aligned, in two lines. Always at one ink.
+    picture.brand-block
+      = svg_tag 'brand_logos/logo_endorsed.svg'
+
+  .content-block
+    h2.bx--type-h4 LUCA leads the communication
+    p.bx--type-p
+      | It is used the endorsement 'Telefónica DATA UNIT' in two versions, dark grey and light grey.
+    picture.brand-block
+      = svg_tag 'brand_logos/logo_telefonica.svg'
+      = svg_tag 'brand_logos/logo_telefonica_light.svg'
+
+  .content-block
+    p.bx--type-p
+      | The height of the 'Telefónica DATA UNIT' endorsement will be the 50% of the 'LUCA' word of the LUCA logo.
+    .brand-block
+      = svg_tag 'brand_logos/logo_claim_height.svg'
+      = svg_tag 'brand_logos/logo_telefonica_height.svg', class:'logo-negative'
+    p.bx--type-p
+      | If you need read more about the LUCA logo behaviour, you can find it in&nbsp;
+      = link_to 'Brand Ignite.', 'https://brandignite.telefonica.com/other/?section=0&inode=2952', class: 'blue-link', target: '_blank'
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'BRAND_download', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'BRAND_download', :pdf => true }
+    = partial :"components/_downloads", :locals => { :name => 'BRAND_download', :ai => true }

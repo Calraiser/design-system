@@ -1,0 +1,5 @@
+.o-content_nav
+  ul
+    - data.home_nav.home_nav.each_with_index do |element, index|
+      li class="item"
+        = link_to element.title, element.title, nav_active(element.title)

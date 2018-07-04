@@ -1,0 +1,52 @@
+/* =============================================================================
+   TYPOGRAPHY (elements/_typography.scss)
+   ========================================================================== */
+
+
+.bx--type-xxl {
+  @extend %txt-mega-xxl;
+}
+
+.bx--type-xl {
+  @extend %txt-mega-xl;
+}
+
+.bx--type-p {
+  @extend %txt-paragraph;
+  &.text-light {
+    color: $grey06;
+  }
+  &.text-bold {
+    font-family: Telefonicabold;
+  }
+}
+
+.bx--type-b {
+  @extend %txt-body;
+}
+
+.bx--type-caption {
+  @extend %txt-caption;
+}
+
+.bx--type-legend {
+  @extend %txt-legend;
+}
+
+.bx--type-quote {
+  @extend %txt-blockquote;
+}
+
+
+p {
+  &.text {
+    @extend %txt-text-positive;
+    &.light {
+      color: $grey01;
+    }
+  }
+  &.note {
+    @extend %txt-note;
+    margin-top: 5px;
+  }
+}

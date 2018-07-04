@@ -1,0 +1,11 @@
+.c-features-block
+  - data.create_own_chart.text_.each_with_index do |element, index|
+    h3.bx--type-h4.u-text-blue = element.title
+    p.bx--type-p = element.text
+    .items-wrapper
+      - element.block_text.each do |item|
+        .feature-item.u-pr-3
+          h4.bx--type-h4
+            = svg_tag 'fake-check.svg'
+            = item.title
+          p.bx--type-p = item.text

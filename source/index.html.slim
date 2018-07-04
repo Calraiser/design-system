@@ -1,0 +1,16 @@
+---
+page_title: LUCA Design System
+description: Our design system helps us work together to build a great experience for all of LUCA’s designers and developers.
+
+---
+
+header.p-homepage
+  .homepage-content
+    .header
+      h1.title Welcome to
+      h2.subtitle.u-uppercase = current_page.data.page_title
+      p.text = current_page.data.description
+    .home-image
+      = svg_tag 'pattern.svg', alt: 'Pattern'
+
+  = partial :"blocks/_home_nav"

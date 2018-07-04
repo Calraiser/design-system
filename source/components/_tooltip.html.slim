@@ -1,0 +1,33 @@
+
+- position ||= false
+- data     ||= false
+- icon     ||= false
+- dark     ||= false
+
+.e-tooltip-wrapper
+
+  - if icon.present?
+    = svg_tag 'ic-tooltip.svg'
+
+  div class= "tooltip #{'data' if data.present?}"
+    .tooltip-container
+
+      div class="tooltip-text #{'dark' if dark.present?}"
+        - if data
+          p
+            strong Departament:
+            |  Lorem
+          p
+            strong Company:
+            |  Ipsum S.A.
+          p
+            strong Country:
+            |  Spain
+          p
+            strong Total Value:
+            |  1.565,999
+        - else
+          p
+            | #{text}
+
+      div class="tooltip-tip #{position}"

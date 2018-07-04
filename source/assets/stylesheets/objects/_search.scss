@@ -1,0 +1,83 @@
+
+/* =============================================================================
+   SEARCH (objects/_search.scss)
+   ========================================================================== */
+
+.o-main-search {
+  display: none;
+  @include media($mobile) {
+    display: block;
+  }
+  &.active {
+    display: block;
+    width: 100%;
+    @include position(fixed, 0 null null 0);
+    z-index: 9999;
+    overflow: hidden;
+  }
+  .main-search-box {
+    background: $grey03;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 59px;
+    @include media($mobile) {
+      padding: 0 80px;
+      height: 100%;
+    }
+    input {
+      background: $grey03;
+      -webkit-appearance:none;
+      outline: none;
+      border: 0;
+      border-radius: 0;
+      padding: 30px 70px 30px 0;
+      margin-left: 15px;
+      width: 100%;
+      @extend %txt-text-positive;
+      @include media($mobile) {
+        padding: 30px 0;
+        height: 100%;
+      }
+    }
+  }
+
+  .searchbar {
+    position: fixed;
+    width: 100%;
+    background: $grey03;
+    border-top: 1px solid $grey02;
+    z-index: 999;
+
+    @include media($mobile) {
+      padding: 0 70px;
+      position: absolute;
+    }
+    .content-search {
+      @include margin(30px 40px 30px 20px);
+      overflow: auto;
+      height: 100vh;
+    }
+    .result {
+        @extend %txt-text-positive;
+      a {
+        .title {
+          color: $blue;
+          margin-top: 20px;
+        }
+        .title, .description {
+          @extend %txt-text-positive;
+        }
+        .description {
+          margin: 10px 15px;
+        }
+      }
+    }
+  }
+  .m-ico-close {
+    background: image-url('ic-close-black.svg') no-repeat;
+    @include size(20px);
+    @include position(absolute, 15px 10px null null);
+  }
+}

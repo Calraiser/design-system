@@ -1,0 +1,94 @@
+grayScale:
+  primaryColors:
+    black: ['#000000', '']
+    grey07: ['#4A4A4A', '']
+  complementaryColors:
+    grey07: ['#4A4A4A', '']
+    grey04: ['#999999', '']
+  complementaryColors2:
+    grey02: ['#D8D8D8', '']
+    grey00: ['#F2F2F2', '']
+
+primaryColors:
+  success:
+    green04: ['#00EEAA', '']
+    blue04: ['#00AAEE', '']
+  warning:
+    orange04: ['#FF7A00', '']
+    pink04: ['#FF0099', '']
+  alert:
+    yellow04: ['#FFF000', '']
+  error:
+    red: ['#F80000', '']
+
+grey:
+  colors:
+    grey00: ['#F2F2F2', '']
+    grey01: ['#E5E5E5', '']
+    grey02: ['#D8D8D8', '']
+    grey03: ['#CCCCCC', '']
+    grey04: ['#999999', '']
+    grey05: ['#676767', '']
+    grey06: ['#595959', '']
+    grey07: ['#4A4A4A', '']
+    grey08: ['#212121', '']
+
+green:
+  colors:
+    green00: ['#CCFBEE', '80%']
+    green01: ['#99F8DD', '60%']
+    green02: ['#66F4CC', '40%']
+    green03: ['#33F1BB', '20%']
+    green04: ['#00EEAA', '']
+    green05: ['#00BE88', '20%']
+    green06: ['#008E66', '40%']
+    green07: ['#005F44', '60%']
+    green08: ['#002F22', '80%']
+
+blue:
+  colors:
+    blue00: ['#CCEEFF', '80%']
+    blue01: ['#99DDFF', '60%']
+    blue02: ['#66CCFF', '40%']
+    blue03: ['#33BBFF', '20%']
+    blue04: ['#00AAEE', '']
+    blue05: ['#0088CC', '20%']
+    blue06: ['#006699', '40%']
+    blue07: ['#004466', '60%']
+    blue08: ['#002233', '80%']
+
+yellow:
+  colors:
+    yellow00: ['#FFFCCC', '80%']
+    yellow01: ['#FFF999', '60%']
+    yellow02: ['#FFF666', '40%']
+    yellow03: ['#FFF333', '20%']
+    yellow04: ['#FFF000', '']
+    yellow05: ['#CCC000', '20%']
+    yellow06: ['#999000', '40%']
+    yellow07: ['#666000', '60%']
+    yellow08: ['#333000', '80%']
+
+orange:
+  colors:
+    orange00: ['#FFE4CC', '80%']
+    orange01: ['#FFC999', '60%']
+    orange02: ['#FFAF66', '40%']
+    orange03: ['#FF9433', '20%']
+    orange04: ['#FF7A00', '']
+    orange05: ['#CC6100', '20%']
+    orange06: ['#994900', '40%']
+    orange07: ['#663000', '60%']
+    orange08: ['#331800', '80%']
+
+pink:
+  colors:
+    pink00: ['#FFCCEA', '80%']
+    pink01: ['#FF99D6', '60%']
+    pink02: ['#FF66C1', '40%']
+    pink03: ['#FF33AD', '20%']
+    pink04: ['#FF0099', '']
+    pink05: ['#CC007A', '20%']
+    pink06: ['#99005B', '40%']
+    pink07: ['#66003D', '60%']
+    pink08: ['#33001E', '80%']

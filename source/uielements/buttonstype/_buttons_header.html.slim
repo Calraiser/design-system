@@ -1,0 +1,12 @@
+
+/!START Buttons Header
+.buttons-header
+  - if title.present?
+    h4.bx--type-h4.u-text-blue #{title}
+  - if text.present?
+    p.bx--type-p
+      | #{text}
+  - if light.present?
+    p.bx--type-p.text-sizes
+      | sizes: #{light}
+/!START Buttons Header

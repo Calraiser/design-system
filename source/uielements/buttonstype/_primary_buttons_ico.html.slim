@@ -1,0 +1,113 @@
+/Buttons for save, go to, confirm, check or validate operations
+.content-buttons
+  .content-buttons-block
+    h3.title.uppercase Large
+    p.bx--type-p.uppercase Active
+    = link_to '#', class: 'c-btn btn-primary has-icon btn-large'
+      'Button size L  <i class="ico ico-check"></i>
+    p.bx--type-p.uppercase Hover
+    = link_to '#', class: 'c-btn btn-primary has-icon btn-large hover'
+      'Button size L  <i class="ico ico-check"></i>
+    p.bx--type-p.uppercase Disabled
+    = link_to '#', class: 'c-btn btn-primary has-icon btn-large disabled', disabled: true
+      'Button size L  <i class="ico ico-check"></i>
+
+  .content-buttons-block
+    h3.title.uppercase Medium
+    p.bx--type-p.uppercase Active
+    = link_to '#', class: 'c-btn btn-primary has-icon btn-medium'
+      'Button <i class="ico ico-check"></i>
+    p.bx--type-p.uppercase Hover
+    = link_to '#', class: 'c-btn btn-primary has-icon btn-medium hover'
+      'Button <i class="ico ico-check"></i>
+    p.bx--type-p.uppercase Disabled
+    = link_to '#', class: 'c-btn btn-primary has-icon btn-medium disabled', disabled: true
+      'Button <i class="ico ico-check"></i>
+
+  .content-buttons-block
+    h3.title.uppercase Small
+    p.bx--type-p.uppercase Active
+    = link_to '#', class: 'c-btn btn-primary has-icon btn-small'
+      'Button <i class="ico ico-check"></i>
+    p.bx--type-p.uppercase Hover
+    = link_to '#', class: 'c-btn btn-primary has-icon btn-small hover'
+      'Button <i class="ico ico-check"></i>
+    p.bx--type-p.uppercase Disabled
+    = link_to '#', class: 'c-btn btn-primary has-icon btn-small disabled', disabled: true
+      'Button <i class="ico ico-check"></i>
+
+h2.title.uppercase Code/Html > Save
+.code-wrapper
+  .code-content id="pri_btn_ico"
+    = code("html") do
+      = link_to '#', class: 'c-btn btn-primary has-icon btn-large'
+        'Button Size Large
+        i.ico.ico-check
+    = code("html") do
+      = link_to '#', class: 'c-btn btn-primary has-icon btn-medium'
+        'Button Size Medium
+        i.ico.ico-check
+    = code("html") do
+      = link_to '#', class: 'c-btn btn-primary has-icon btn-small'
+        'Button Size Small'
+        i.ico.ico-check
+
+  = partial :"components/_code_actions", :locals => { :target => '#pri_btn_ico'}
+
+= partial :"buttonstype/_buttons_header", :locals => { :title => false, :text => 'Buttons for RESET, clean or similar operations', :light =>'large / medium / small' }
+
+/Buttons for RESET, clean or similar operations
+.content-buttons
+  .content-buttons-block
+    h3.title.uppercase Large
+    p.bx--type-p.uppercase Active
+    = link_to '#', class: 'c-btn btn-primary inverse has-icon btn-large'
+      'Reset size L  <i class="ico ico-close"></i>
+    p.bx--type-p.uppercase Hover
+    = link_to '#', class: 'c-btn btn-primary inverse has-icon btn-large hover'
+      'Reset size L  <i class="ico ico-close"></i>
+    p.bx--type-p.uppercase Disabled
+    = link_to '#', class: 'c-btn btn-primary inverse has-icon btn-large disabled'
+      'Reset size L  <i class="ico ico-close"></i>
+
+  .content-buttons-block
+    h3.title.uppercase Medium
+    p.bx--type-p.uppercase Active
+    = link_to '#', class: 'c-btn btn-primary inverse has-icon btn-medium'
+      'Reset <i class="ico ico-close"></i>
+    p.bx--type-p.uppercase Hover
+    = link_to '#', class: 'c-btn btn-primary inverse has-icon btn-medium hover'
+      'Reset <i class="ico ico-close"></i>
+    p.bx--type-p.uppercase Disabled
+    = link_to '#', class: 'c-btn btn-primary inverse has-icon btn-medium disabled'
+      'Reset <i class="ico ico-close"></i>
+
+  .content-buttons-block
+    h3.title.uppercase Small
+    p.bx--type-p.uppercase Active
+    = link_to '#', class: 'c-btn btn-primary inverse has-icon btn-small'
+      'Reset <i class="ico ico-close"></i>
+    p.bx--type-p.uppercase Hover
+    = link_to '#', class: 'c-btn btn-primary inverse has-icon btn-small hover'
+      'Reset <i class="ico ico-close"></i>
+    p.bx--type-p.uppercase Disabled
+    = link_to '#', class: 'c-btn btn-primary inverse has-icon btn-small disabled'
+      'Reset <i class="ico ico-close"></i>
+
+h2.title.uppercase Code/Html > Save
+.code-wrapper
+  .code-content id="pri_inv_btn_ico"
+    = code("html") do
+      = link_to '#', :class => 'c-btn btn-primary inverse has-icon btn-large'
+        'Button Size Large
+        i.ico.ico-close
+    = code("html") do
+      = link_to '#', :class => 'c-btn btn-primary inverse has-icon btn-medium'
+        'Button Size Medium
+        i.ico.ico-close
+    = code("html") do
+      = link_to '#', :class => 'c-btn btn-primary inverse has-icon btn-small'
+        'Button Size Small
+        i.ico.ico-close
+
+  = partial :"components/_code_actions", :locals => { :target => '#pri_inv_btn_ico'}

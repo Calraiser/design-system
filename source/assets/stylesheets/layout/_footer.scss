@@ -1,0 +1,29 @@
+/* =============================================================================
+   SIDEBAR (layout/_footer.scss)
+   ========================================================================== */
+
+
+.l-footer {
+  height: 36px;
+  background-color: $grey03;
+  width: 100%;
+  @include position(absolute, null null 0 null);
+  .row {
+    margin: 0;
+    padding: 10px 15px;
+  }
+}
+
+.content-wrapper {
+  .footer-sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    background-color: $grey03;
+    width: 100%;
+    text-align: center;
+    @include position(fixed, null null 0 0);
+    z-index: 999;
+  }
+}

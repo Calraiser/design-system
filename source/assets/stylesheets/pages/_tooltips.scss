@@ -1,0 +1,24 @@
+.p-tooltips {
+  .tooltips-content {
+    h3 {
+      margin: 30px 0 10px;
+    }
+    .tooltips-sample {
+      margin-top: 40px;
+      .code-wrapper {
+        width: 100%;
+        .code-content {
+          width: 730px;
+          flex: 0 0 80%;
+        }
+      }
+
+}    .link {
+      margin: 20px 0;
+      white-space: pre;
+
+      @extend %txt-paragraph;
+    }
+  }
+
+}

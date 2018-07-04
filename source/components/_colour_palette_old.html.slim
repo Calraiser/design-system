@@ -1,0 +1,11 @@
+
+.palette-container
+  - colours.each do |color|
+    h3 class="#{color}"
+      span #{color}
+    .swatches
+      - (1..10).each do |i|
+        .color-wrapper
+          span.color-swatch class="#{color}-#{strip_trailing_zero(i * (0.20 * 100))}"
+          p.color.uppercase
+          p #{strip_trailing_zero(i * (0.20 * 100))}%

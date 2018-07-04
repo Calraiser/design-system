@@ -1,0 +1,10 @@
+
+
+.image30 {
+  max-width: 100%;
+  @include media($mobile) {
+    max-width: 30%;
+    width: 100%;
+    height: auto;
+  }
+}

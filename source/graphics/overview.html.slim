@@ -1,0 +1,67 @@
+---
+page_title: Graphics Overview
+description: This is a collection of data visualization standards created in order to give teams the library they need to quickly build full-fledged charting components.
+
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+
+  p.bx--type-p = current_page.data.description
+
+  p.bx--type-p.text-light
+    | With the LUCA library, you can learn how to choose a chart properly emphasize certain data relationships. Here you can understand how to apply our visual language to charts or create charts in HTML using the available configurations. Additionally, you can find some documents available for your help in the download area at the end of this section.
+
+  p.bx--type-p.text-light.u-pt-4
+    | This list shows several of the most common charts and graphs used in dashboards and data visualizations and describes what they do, as well as why and when they are most useful.
+
+  picture.image-block
+    = image_tag 'graphics-overview.png'
+
+  .content-block
+    h1.bx--type-h1.u-uppercase  First Steps
+
+    p.bx--type-p
+      | THE GOAL OF A GRAPHIC IS CLARIFY THE INFORMATION AND ADD AN EXTRA VALUE. So, as you know, a good graph will catch a viewer’s attention so only visualize the data that needs attention.
+
+    p.bx--type-p.text-bold.u-pt-4
+      | Too many graphics of unimportant information dilute the power of visualization.
+
+    p.bx--type-p.text-bold.u-pt-4
+      | If you are using a graphic chart in a dashboard, first decide the objective of your dashboard, give a logical order to read and then choose the info to tell and distribute the space in that order, prioritizing the most important, from general to details. When you have this grid sketched, then choose each graphics type based on the most quickly understanding model.
+
+  .content-block.u-pt-7
+    h2.bx--type-h4.u-uppercase.u-text-blue Anatomy of a chart
+    p.bx--type-p.u-pt-2
+      | Choose the correct chart structure. Don’t forget to include areas for: title, context, legend, KPI and margins to each chart
+
+    .image-block
+      = svg_tag 'template-chart-layout.svg'
+
+  .content-block.u-pt-4
+    h2.bx--type-h4.u-uppercase Options
+    p.bx--type-p
+      | Try to keep consistency between margin, padding and content when you scale or distribute the areas of information. Keep everything clear and priorizated.
+
+    .image-block
+      .d-flex
+        = image_tag 'graphic-rules01.png', :class => 'u-pr-4'
+        = image_tag 'graphic-rules02.png', :class => 'u-pl-4'
+
+    .content-block.u-pt-4
+      .image-block
+        h2.bx--type-h4.u-uppercase Examples
+        .graph-wrapper
+          = svg_tag 'graphic-examples.svg'
+
+      .image-block.u-pt-5
+        .graph-wrapper
+          .graph-header
+            h2.bx--type-h4.u-uppercase Afluence by genre, rent & day of the week
+            p.bx--type-p
+              | Average of affluence at Mall Shopping Centre by gender, type (resident, worker or visitor), rent and age. You can observe which is your real target and the influence of stationarity,  by day of the week and hour selecting in the filter bar your options.
+
+          = image_tag 'graphic-example01.png', :class => 'image-wide'

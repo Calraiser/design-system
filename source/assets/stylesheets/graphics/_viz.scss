@@ -1,0 +1,122 @@
+.arc text {
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+.chart01 {
+  margin: 50px;
+
+  .toolTip {
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: -3px 3px 15px #888888;
+    color: black;
+    font: 12px sans-serif;
+    padding: 5px;
+    text-align: center;
+  }
+
+  text {
+    font-family: Telefonicaregular;
+    font-size: 12px;
+    color: white;
+
+    &.label {
+      color: $grey;
+    }
+
+    &.value {
+      font-size: 14px;
+      fill: white;
+    }
+  }
+
+  .axisHorizontal path {
+    fill: none;
+  }
+
+  .axisHorizontal .tick line {
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.2);
+  }
+
+  .bar {
+    fill: $blue;
+    fill-opacity: 0.9;
+  }
+}
+
+.chart02 {
+  .arc text {
+    font: 10px sans-serif;
+    text-anchor: middle;
+  }
+
+  .arc path {
+    stroke: #fff;
+  }
+
+  .toolTip {
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: -3px 3px 15px #888888;
+    color: black;
+    font: 12px sans-serif;
+    padding: 5px;
+    text-align: center;
+  }
+}
+
+.chart03 {
+  .y.axis path {
+    display: none;
+  }
+
+  .y.axis line {
+    stroke: #fff;
+    stroke-opacity: 0.2;
+    shape-rendering: crispEdges;
+  }
+
+  .y.axis .zero line {
+    stroke: #000;
+    stroke-opacity: 1;
+  }
+
+  .title {
+    font: 300 78px Helvetica Neue;
+    fill: #666;
+  }
+
+  .age,
+  .birthyear {
+    text-anchor: middle;
+  }
+
+  .birthyear {
+    fill: #fff;
+  }
+
+  rect {
+    fill-opacity: 0.6;
+    fill: #e377c2;
+  }
+
+  rect:first-child {
+    fill: #1f77b4;
+  }
+}

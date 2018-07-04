@@ -1,0 +1,6 @@
+- header: "Graphics & viz rules"
+  items:
+  - title: "Overview"
+    link: "/graphics/overview.html"
+  - title: "Visualization rules"
+    link: "/graphics/viz-rules.html"

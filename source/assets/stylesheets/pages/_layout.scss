@@ -1,0 +1,40 @@
+/* =============================================================================
+   LAYOUT (pages/_layout.scss)
+   ========================================================================== */
+
+.guidelines_layout {
+  .d-flex {
+    .text-column {
+      flex-basis: 100%;
+      margin-right: 30px;
+    }
+    .note {
+      max-width: 98%;
+    }
+  }
+}
+
+.layout-legend {
+  display: flex;
+  @include margin(40px null 30px null);
+  .legend-item {
+    margin-right: 50px;
+    span {
+      @include size(20px);
+      @include margin(2px 15px null null);
+      border-radius: 50%;
+    }
+    .search-bar {
+      background: $purple;
+    }
+    .app-nav {
+      background: tint($purple, 50%);;
+    }
+    .main-nav {
+      background: $pink01;
+    }
+    .content-l {
+      background: $light-blue;
+    }
+  }
+}

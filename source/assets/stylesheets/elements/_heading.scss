@@ -1,0 +1,56 @@
+h1, h2, h3, h4, h5, h6, p {
+  text-rendering: optimizeLegibility;
+  font-style: normal;
+  font-weight: normal;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.bx--type-h1 {
+  @extend %txt-title-positive;
+}
+
+.bx--type-h2  {
+  @extend %txt-title-h2;
+}
+
+.bx--type-h3 {
+  @extend %txt-title-h3;
+}
+
+.bx--type-h4 {
+  @extend %txt-title-h4;
+  margin-bottom: 5px;
+}
+
+.bx--type-h5 {
+  @extend %txt-title-h5;
+}
+
+
+h1 {
+  &.title {
+    @extend %txt-title-positive;
+  }
+}
+h2 {
+  &.text {
+    @extend %txt-text-positive-bold;
+    margin-bottom: 5px;
+  }
+  &.title {
+    @extend %txt-text-negative-bold;
+    margin-bottom: 10px;
+  }
+  &.subtitle {
+    @extend %txt-subtitle-positive;
+  }
+}
+
+h3 {
+  &.title {
+    @extend %txt-text-negative-grey;
+    margin-bottom: 10px;
+  }
+}

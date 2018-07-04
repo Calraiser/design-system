@@ -1,0 +1,136 @@
+/* =============================================================================
+   FUNCTIONS (base/_functions.scss)
+   ========================================================================== */
+
+.e-flipper {
+  .item {
+    text-align: center;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    flex: 0 0 44%;
+    margin: 30px 0;
+    perspective: 1000px;
+    height: 135px;
+    @include media($medium-desktop) {
+      height: 225px;
+    }
+    @include media($mobile) {
+      flex: 1;
+      margin: 0;
+    }
+
+    &:hover .back {
+      transform: rotateY(0deg);
+    }
+
+    &:hover .front {
+      transform: rotateY(180deg);
+    }
+
+    .front {
+      .bx--type-h4 {
+        color: $blue;
+        margin-top: 20px;
+        @include media($medium-desktop) {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    .back {
+      .bx--type-h4 {
+        color: $blue;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .back,
+  .front,
+  .item {
+    width: 100%;
+  }
+
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+
+    height: 100%;
+  }
+
+  .back,
+  .front {
+    backface-visibility: hidden;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include media($medium-desktop) {
+      top: -30px;
+    }
+
+  }
+
+  .front {
+    z-index: 2;
+    align-items: center;
+    padding-bottom: 40px;
+    transform: rotateY(0deg);
+
+    height: 130px;
+    @include media($medium-desktop) {
+      height: 100%;
+    }
+  }
+
+  .back {
+    transform: rotateY(-180deg);
+    text-align: left;
+    background: $grey03;
+    padding: 25px 30px;
+    display: none;
+    top: -20px;
+
+    height: 400px;
+    width: 80%;
+    .text {
+      font-size: rem-calc(14);
+    }
+    @include media($medium-desktop) {
+      padding: 35px 40px;
+      top: -43px;
+      width: 70%;
+      .text {
+        font-size: rem-calc(18);
+      }
+    }
+    @include media($mobile) {
+      display: block;
+    }
+
+    .header {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      @include media($mobile) {
+        margin-bottom: 10px;
+      }
+    }
+
+    svg {
+      stroke: $blue;
+      stroke-width: 2;
+      margin-right: 10px;
+      margin-top: 2px;
+      @include size(22px);
+    }
+    @include media($medium-desktop) {
+      justify-content: center;
+      padding: 35px 40px;
+    }
+  }
+}

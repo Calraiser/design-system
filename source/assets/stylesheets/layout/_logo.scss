@@ -1,0 +1,24 @@
+.topbar {
+  .logo-container {
+    padding: 25px;
+    svg {
+      width: 150px;
+    }
+
+    @include media($mobile) {
+      padding: 40px 45px 0;
+      svg {
+        width: 226px;
+      }
+    }
+
+    @include media($tablet) {
+      padding: 70px 80px 40px;
+    }
+
+    @include media($medium-desktop) {
+      padding: 70px 80px;
+
+    }
+  }
+}

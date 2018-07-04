@@ -1,0 +1,5 @@
+<%=
+  JSON.generate(generate_search_index({
+    data: [:page_title, :description, :content]
+    }), max_nesting: false)
+%>

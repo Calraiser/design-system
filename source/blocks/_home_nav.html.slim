@@ -1,0 +1,15 @@
+.o-home-nav
+  .nav-content
+    - data.home_nav.home_nav.each_with_index do |element, index|
+      .item
+        .flipper
+          .front
+            = svg_tag "#{element.image}"
+            h4.bx--type-h4  = element.title
+          .back
+            = link_to element.link do
+              .header
+                = svg_tag "#{element.imagexs}"
+                h4.bx--type-h4  = element.title
+              p.text = element.text
+              = link_to 'View more', element.link, class: 'link'
