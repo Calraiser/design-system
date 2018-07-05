@@ -1,0 +1,496 @@
+/* =============================================================================
+   MIXINS (base/_mixins.scss)
+   ========================================================================== */
+
+@mixin media($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+// Return size REM from given size in PX
+@function calculateRem($size) {
+  $remSize: $size / 16;
+  @return $remSize * 1rem;
+}
+
+// Return relative line-height from font-size and line-height in PX
+@function calculateLH($size, $lHeight) {
+  $lineHeight: $lHeight / $size;
+  @return $lineHeight;
+}
+
+// TEXT STYLES
+// $size sets the font-size and must be expressed in PX without units.
+// $lHeight sets the line-height and must be expressed in PX without units.
+// $family sets the font-family weight
+// example:
+// $color sets the color
+//
+//@include text-style(27, 31, regular, $grey03);
+//
+//
+@mixin text-style($size, $lHeight, $family, $color) {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: #{$size}px;
+  font-size: calculateRem($size);
+  line-height: calculateLH($size,$lHeight);
+  font-family: $family;
+  color: $color;
+}
+
+// ICONS
+// Creates an icon with the given image.
+// $width and $height doesn't need the px subfix.
+// Opacity values are optional.
+// To declare a hover opacity you need to declare the static opacity
+// example:
+//
+// @include icon(12, 10, 'icon-burguer.png');
+// @include icon(12, 10, 'icon-burguer.png', 1, .5);
+@mixin icon($width, $height, $img, $opacity: null, $opacity-hover: '') {
+  content: '';
+  display: inline-block;
+  text-align: left;
+  text-indent: -999em;
+  overflow: hidden;
+  width: #{$width}px;
+  height: #{$height}px;
+  background: url('../images/#{$img}') no-repeat center center transparent;
+  background-size: 100%;
+  transition: $transition-slow;
+  opacity: $opacity;
+
+  @if $opacity-hover != '' {
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: $opacity-hover;
+    }
+  }
+}
+
+// ARROWS
+// Creates an arrow head pointing to the given direction
+// Size muste be set with out units
+// Side must be set to: "top", "left", "bottom", "right"
+// example:
+//
+// @include arrow(5, 'right', $cl-white);
+@mixin arrow($size, $side, $color) {
+
+  $direction: 45;
+
+  @if $side == 'top' {
+    $direction: '-45';
+  } @else if $side == 'bottom' {
+    $direction: '135';
+  } @else if $side == 'left' {
+    $direction: '-135';
+  } @else if $side == 'right' {
+    $direction: '45';
+  }
+
+  content: '';
+  display: inline-block;
+  width: #{$size}px;
+  height: #{$size}px;
+  border-top: 2px solid #{$color};
+  border-right: 2px solid #{$color};
+  vertical-align: middle;
+  transform: rotate(#{$direction}deg);
+  position: relative;
+}
+
+
+// ANIMATIONS
+// loads and setup an animation from '_animate.scss'
+// duration must be set in ms
+// example:
+//
+// @include animate(fade-in, 2)
+@mixin animate($animation, $duration) {
+  animation-duration: #{$duration}ms;
+  animation-fill-mode: both;
+  animation-name: $animation;
+}
+
+// LAYOUT HELPERS MIXINS
+@mixin full-with-content {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @each $name, $size in $sizes {
+    @media (min-width: map-get($breakpoints, $name)){
+      padding-right: map-get($sizes, $name);
+      padding-left: map-get($sizes, $name);
+    }
+  }
+}
+
+// LINK
+@mixin text-link($color) {
+  @include text-style(16, 22, ssp-semibold, $color);
+  display: inline-block;
+  text-decoration: none;
+  @media (min-width: $mq-medium) {
+    @include text-style(16, 24, ssp-semibold, $color);
+  }
+}
+
+
+// LINK ISOLATED
+@mixin link-isolated($color) {
+  @include text-style(16, 22, ssp-semibold, $color);
+  display: inline-block;
+  text-decoration: none;
+  margin-left: -5px;
+  @media (min-width: $mq-medium) {
+    @include text-style(16, 24, ssp-semibold, $color);
+  }
+
+  &::before {
+    @include arrow(4, 'right', $color);
+    top: -1px;
+    left: calc(100% + 3px);
+  }
+
+  &::after {
+    position: relative;
+    left: 4px;
+    width: 0;
+    height: 1px;
+    display: block;
+    content: '';
+    transition: width .3s;
+    background: $color;
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+@mixin vh() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// CHECKBOX CUSTOM BUTTON
+
+@mixin input-custom($border, $inputHeight, $inputWidth, $inputBorderWidth, $inputActiveScale, $inputColor, $bgColor, $position) {
+  input[type="radio"],
+  input[type="checkbox"] {
+    @include vh();
+    &:hover {
+      + label {
+        &:before {
+          border-color: $border;
+        }
+      }
+    }
+
+    &:active {
+      + label {
+        &:before {
+          transition-duration: 0;
+          filter: brightness(0.7);
+        }
+      }
+    }
+
+    + label {
+      position: relative;
+      padding-left: 40px;
+      font-weight: normal;
+      color: $cl-grey02;
+
+      &:before,
+      &:after {
+        box-sizing: content-box;
+        position: absolute;
+        content: '';
+        display: block;
+        left: 0;
+        top: 0;
+      }
+
+      &:before {
+        width: $inputWidth;
+        height: $inputHeight;
+        border: $inputBorderWidth solid $border;
+        text-align: center;
+        background: $bgColor;
+      }
+
+      &:after {
+        top:0;
+        background-color: $inputColor;
+        left: $inputBorderWidth + $inputActiveScale/2;
+        width: $inputWidth - $inputActiveScale;
+        height: $inputHeight -$inputActiveScale;
+        margin-top: $inputBorderWidth + $inputActiveScale/2;
+        transform: scale(0);
+        transform-origin: 50%;
+        transition: transform 200ms ease-out;
+      }
+    }
+  }
+
+  input[type="radio"] {
+    &:checked {
+      + label {
+        &:before {
+          background-color: $cl-white;
+        }
+
+        &:after {
+          transform: scale(1);
+        }
+      }
+    }
+    + label {
+      &:before,
+      &:after {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  @if $position == 'right' {
+    input[type="radio"] {
+      + label {
+        padding-left: 0;
+        padding-right: 35px;
+        width: 100%;
+
+        &:before,
+        &:after {
+          left: auto;
+          right: 0;
+          top: 50%;
+          margin-top: -11px;
+        }
+
+        &:after {
+          margin-top: -4px;
+          margin-right: $inputBorderWidth + $inputActiveScale/2;
+        }
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    + label {
+      padding-left: 45px;
+      line-height: $inputWidth;
+      color: $cl-grey02;
+      display: inline-block;
+
+      &:after {
+        background-color: transparent;
+        top: 10px;
+        left: 7px;
+        width: 15px;
+        height: 6px;
+        margin-top: 0;
+        border-style: solid;
+        border-color: $inputColor;
+        border-width: 0 0 3px 3px;
+        border-image: none;
+        transform: rotate(-45deg) scale(0);
+        transition: none;
+      }
+    }
+
+    &:checked {
+      + label {
+        &:after {
+          content: ''; //\2713';
+          transform: rotate(-45deg) scale(1);
+          transition: transform 200ms ease-out;
+        }
+      }
+    }
+  }
+}
+
+
+// PADDINGS FOR LAYOUT MODULES
+@mixin pd-def {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@mixin pd-4col {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+@mixin pd-small {
+  @media (min-width: $mq-small) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+@mixin pd-medium {
+  @media (min-width: $mq-medium) {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+}
+
+@mixin pd-large {
+  @media (min-width: $mq-large) {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+}
+
+@mixin pd-ultra {
+  @media (min-width: $mq-ultra) {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@mixin layout-paddings($sizes) {
+  @if $sizes == 'def' {
+    @include pd-def;
+    @include pd-small;
+    @include pd-medium;
+    @include pd-large;
+    @include pd-ultra;
+  } @if $sizes == 'small' {
+    @include pd-small;
+    @include pd-medium;
+    @include pd-large;
+    @include pd-ultra;
+  } @if $sizes == 'medium' {
+    @include pd-medium;
+    @include pd-large;
+    @include pd-ultra;
+  } @if $sizes == 'large' {
+    @include pd-large;
+    @include pd-ultra;
+  } @if $sizes == 'ultra' {
+    @include pd-ultra;
+  }
+}
+
+@mixin layout-paddings-4col($sizes) {
+  @if $sizes == 'def' {
+    @include pd-def;
+    @include pd-small;
+
+    @media (min-width: $mq-medium) {
+      @include pd-4col;
+    }
+  } @if $sizes == 'small' {
+    @include pd-small;
+
+    @media (min-width: $mq-medium) {
+      @include pd-4col;
+    }
+  } @if $sizes == 'medium' {
+    @media (min-width: $mq-medium) {
+      @include pd-4col;
+    }
+  } @if $sizes == 'large' {
+    @media (min-width: $mq-large) {
+      @include pd-4col;
+    }
+  } @if $sizes == 'ultra' {
+    @media (min-width: $mq-ultra) {
+      @include pd-4col;
+    }
+  }
+}
+
+@mixin custom-bullet($color, $size) {
+  padding: 0 0 0 30px;
+
+  li {
+    position: relative;
+
+    &::before {
+      content: '';
+      width: #{$size}px;
+      height: #{$size}px;
+      border-radius: 50%;
+      background: $color;
+      position: absolute;
+      top: 10px;
+      left: -30px;
+      display: block;
+    }
+  }
+}
+
+// example
+// @include initials(17, $cl-blue09, 42, $cl-blue08);
+@mixin initials($fontSize, $color, $size, $bgColor) {
+  $paddingTop: ($size - $fontSize)/2;
+
+  @include text-style($fontSize, $fontSize, ssp-semibold, $color);
+  text-align: center;
+  padding-top: #{$paddingTop}px;
+  width: #{$size}px;
+  height: #{$size}px;
+  background: $bgColor;
+  border-radius: 50%;
+}
+
+/// Creates a CSS triangle, which can be used for dropdown arrows, dropdown pips, and more. Use this mixin inside a `&::before` or `&::after` selector, to attach the triangle to an existing element.
+///
+/// @param {Number} $triangle-size - Width of the triangle.
+/// @param {Color} $triangle-color - Color of the triangle.
+/// @param {Keyword} $triangle-direction - Direction the triangle points. Can be `up`, `right`, `down`, or `left`.
+@mixin css-triangle(
+  $triangle-color,
+  $triangle-direction
+) {
+  display: block;
+
+  @include size(10px);
+  z-index: -100;
+  display: block;
+  background: #fff;
+  transform:
+    translateX(-50%)
+    rotate(45deg);
+  box-shadow: $tooltip-shadow;
+
+  content: '';
+
+  @if ($triangle-direction == down) {
+    @include position(absolute, null null -4px 50%);
+    background: $triangle-color;
+  }
+  @if ($triangle-direction == up) {
+    @include position(absolute, -4px null null 50%);
+    background: $triangle-color;
+  }
+  @if ($triangle-direction == right) {
+    @include position(absolute, 50% -4px null null);
+    transform:  translateY(-50%)
+                rotate(45deg);
+    background: $triangle-color;
+  }
+  @if ($triangle-direction == left) {
+    @include position(absolute, 50% null null -4px);
+    transform:  translateY(-50%)
+                rotate(45deg);
+    background: $triangle-color;
+  }
+}

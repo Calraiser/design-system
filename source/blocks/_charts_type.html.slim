@@ -1,0 +1,24 @@
+
+.b-charts-type
+  .e-flipper
+    - data.viz_charts.charts.each_with_index do |element, index|
+      .item
+        h3.bx--type-h4.u-uppercase  = element.title
+        .flipper
+          .front
+            = svg_tag "#{element.image}"
+
+          .back
+            .header
+              p.text
+                = element.text
+                - if element.link
+                  = link_to 'more', element.link, :class => 'more-link'
+
+              - if element.functions
+                .functions
+                  p.text
+                    | Functions
+                  ul.e-list
+                    - element.functions.each do |list|
+                      li = list

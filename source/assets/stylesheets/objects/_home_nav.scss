@@ -1,0 +1,179 @@
+/* =============================================================================
+   HOME NAV (objects/_home_nav.scss)
+   ========================================================================== */
+@mixin transform ($val) {
+  transform: $val;
+}
+
+.o-home-nav {
+  position: relative;
+  width: 100%;
+  margin: 50px auto 0;
+
+  svg {
+    stroke: $grey07;
+    stroke-width: 4;
+    width: 30%;
+    margin-bottom: 10px;
+    @include media($tablet) {
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+  @include media($tablet) {
+    @include position(absolute, null null 30px 50%);
+    @include transform(translate(-50%, 0));
+    margin: 0 auto;
+    width: 92%;
+  }
+
+  .nav-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    padding: 0;
+    @include media($tablet) {
+      justify-content: flex-end;
+      flex-wrap: nowrap;
+
+    }
+    .item {
+      text-align: center;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      perspective: 1000px;
+      flex: 0 0 50%;
+      @include media($tablet) {
+        margin: 0;
+        flex: 1;
+        height: 300px;
+      }
+
+      &:hover .back {
+        @include media($mobile) {
+          transform: rotateY(0deg);
+        }
+      }
+
+      &:hover .front {
+        @include media($mobile) {
+          transform: rotateY(180deg);
+        }
+      }
+
+      .front {
+        .bx--type-h4 {
+          color: $blue;
+          padding: 0 20px;
+          @include media($tablet) {
+            margin-top: 20px;
+            padding: 0;
+          }
+        }
+      }
+
+      .back {
+        .bx--type-h4 {
+          color: $blue;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .back,
+    .front {
+      width: 100%;
+    }
+
+    .flipper {
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+
+      height: 100%;
+    }
+
+    .back,
+    .front {
+      backface-visibility: hidden;
+    	transition: 0.6s;
+    	transform-style: preserve-3d;
+
+      bottom: 0;
+    	left: 0;
+      @include media($tablet) {
+        position: absolute;
+      }
+
+    }
+
+    .front {
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-direction: column;
+      padding-bottom: 40px;
+      transform: rotateY(0deg);
+      height: 130px;
+      @include media($medium-desktop) {
+        height: 160px;
+      }
+      a {
+        display: block;
+      }
+      .text {
+        display: none;
+      }
+      @include media($tablet) {
+
+        .text {
+          display: block;
+        }
+      }
+    }
+
+    .back {
+      transform: rotateY(-180deg);
+      text-align: left;
+      background: $grey03;
+      padding: 25px 30px;
+
+      display: none;
+      width: 80%;
+      .text {
+        font-size: rem-calc(14);
+        @include media($mobile) {
+          font-size: rem-calc(16);
+        }
+      }
+      @include media($tablet) {
+        display: block;
+      }
+
+      .header {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 40px;
+        @include media($tablet) {
+          margin-bottom: 10px;
+        }
+      }
+
+      svg {
+        fill: transparent;
+        stroke: $grey07;
+        stroke-width: 3;
+        margin-right: 10px;
+        margin-top: 2px;
+        @include size(22px);
+      }
+      .link {
+        @extend %txt-links-positive;
+        margin: 10px 0;
+      }
+    }
+  }
+}

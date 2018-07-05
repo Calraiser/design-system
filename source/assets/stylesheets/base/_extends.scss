@@ -1,0 +1,274 @@
+/* =============================================================================
+   EXTENDS (base/_extends.scss)
+   ========================================================================== */
+
+%clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+%text-link {
+  text-decoration: none;
+  transition: $transition-slow;
+}
+
+//TITLES AND TEXTS
+%txt-links-positive {
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+  cursor: pointer;
+
+  border: 1px solid transparent;
+
+  &:before {
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 100%; left: 0; right: 100%;
+    background: $grey01;
+    transition: right 0.3s ease;
+  }
+  &:hover,
+  &.active {
+    color: $grey01;
+    &:before {
+      right: 0;
+    }
+  }
+  @include text-style(14, 22, Telefonicaregular, $grey01);
+  @include media($medium-desktop) {
+    @include text-style(16, 24, Telefonicaregular, $grey01);
+  }
+}
+
+%txt-mega-xxl {
+  @include text-style(60, 64, Telefonicaextralight, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(60, 64, Telefonicaextralight, $grey05);
+  }
+}
+
+%txt-mega-xl {
+  @include text-style(54, 60, Telefonicaextralight, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(54, 60, Telefonicaextralight, $grey05);
+  }
+}
+
+%txt-title-h2 {
+  @include text-style(36, 40, Telefonicalight, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(36, 40, Telefonicalight, $grey05);
+  }
+}
+
+%txt-title-h3 {
+  @include text-style(28, 32, Telefonicabold, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(28, 32, Telefonicabold, $grey05);
+  }
+}
+
+%txt-title-h4 {
+  @include text-style(16, 24, Telefonicabold, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(18, 24, Telefonicabold, $grey05);
+  }
+}
+
+%txt-title-h5 {
+  @include text-style(16, 22, Telefonicabold, $grey06);
+
+  @include media($medium-desktop) {
+    @include text-style(16, 22, Telefonicabold, $grey06);
+  }
+}
+
+%txt-paragraph {
+  @include text-style(16, 24, Telefonicaregular, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(18, 24, Telefonicaregular, $grey05);
+  }
+}
+
+%txt-body {
+  @include text-style(14, 18, Telefonicaregular, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(14, 18, Telefonicaregular, $grey05);
+  }
+}
+
+%txt-caption {
+  @include text-style(14, 16, Telefonicabold, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(14, 16, Telefonicabold, $grey05);
+  }
+}
+
+%txt-legend {
+  @include text-style(12, 14, Telefonicaregular, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(12, 14, Telefonicaregular, $grey05);
+  }
+}
+
+%txt-blockquote {
+  @include text-style(24, 30, Telefonicaextralight, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(24, 30, Telefonicaextralight, $grey05);
+  }
+}
+
+
+%txt-title-positive {
+  @include text-style(36, 50, Telefonicaextralight, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(48, 50, Telefonicaextralight, $grey05);
+  }
+}
+
+%txt-subtitle-positive {
+  @include text-style(24, 25, Telefonicalight, $blue);
+
+  @include media($medium-desktop) {
+    @include text-style(36, 40, Telefonicalight, $blue);
+  }
+}
+
+%txt-text-positive-bold {
+  @include text-style(18, 24, Telefonicabold, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(18, 24, Telefonicabold, $grey05);
+  }
+}
+
+%txt-text-positive {
+  @include text-style(16, 24, Telefonicaregular, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(18, 24, Telefonicaregular, $grey05);
+  }
+}
+
+%txt-text-list {
+  @include text-style(16, 24, Telefonicaregular, $grey);
+
+  @include media($medium-desktop) {
+    @include text-style(16, 24, Telefonicaregular, $grey);
+  }
+}
+
+%txt-note {
+  @include text-style(14, 19, Telefonicaregular, $grey);
+
+  @include media($medium-desktop) {
+    @include text-style(14, 19, Telefonicaregular, $grey);
+  }
+}
+
+
+%txt-text-negative {
+  @include text-style(18, 24, Telefonicaregular, $blue);
+
+  @include media($medium-desktop) {
+    @include text-style(18, 24, Telefonicaregular, $blue);
+  }
+}
+
+%txt-text-negative-grey {
+  @include text-style(18, 24, Telefonicabold, $grey01);
+
+  @include media($medium-desktop) {
+    @include text-style(18, 24, Telefonicabold, $grey01);
+  }
+}
+
+%txt-text-negative-bold {
+  @include text-style(18, 24, Telefonicabold, $blue);
+
+  @include media($medium-desktop) {
+    @include text-style(18, 24, Telefonicabold, $blue);
+  }
+}
+
+%txt-claim-positive {
+  @include text-style(36, 25, Telefonicalight, $blue);
+
+  @include media($medium-desktop) {
+    @include text-style(36, 25, Telefonicalight, $blue);
+  }
+}
+
+%txt-claim-negative {
+  @include text-style(36, 25, Telefonicalight, $blue);
+
+  @include media($medium-desktop) {
+    @include text-style(36, 25, Telefonicalight, $blue);
+  }
+}
+
+%txt-title-module-positive {
+  @include text-style(36, 25, Telefonicalight, $blue);
+  text-transform: uppercase;
+
+  @include media($medium-desktop) {
+    @include text-style(36, 25, Telefonicalight, $blue);
+  }
+}
+
+%txt-title-module-negative {
+  @include text-style(36, 25, Telefonicalight, $blue);
+
+  @include media($medium-desktop) {
+    @include text-style(36, 25, Telefonicalight, $blue);
+  }
+}
+
+%txt-entry-positive {
+  @include text-style(36, 25, Telefonicalight, $blue);
+
+  @include media($medium-desktop) {
+    @include text-style(36, 25, Telefonicalight, $blue);
+  }
+}
+
+%txt-entry-negative {
+  @include text-style(36, 25, Telefonicalight, $blue);
+
+  @include media($medium-desktop) {
+    @include text-style(36, 25, Telefonicalight, $blue);
+  }
+}
+
+%txt-title-page-positive {
+  @include text-style(36, 25, Telefonicalight, $blue);
+
+  @include media($medium-desktop) {
+    @include text-style(36, 25, Telefonicalight, $blue);
+  }
+}
+
+%txt-notes-positive {
+  @include text-style(10, 15, Telefonicaregular, $blue);
+  text-transform: uppercase;
+  @include media($medium-desktop) {
+    @include text-style(10, 15, Telefonicaregular, $blue);
+  }
+}

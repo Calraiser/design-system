@@ -1,0 +1,22 @@
+.action.downloads {
+  display: flex;
+  align-items: flex-end;
+  border-top: 1px dashed $grey;
+  padding-top: 75px;
+  margin-top: 100px;
+
+  .action-item {
+    text-align: center;
+    margin-right: 100px;
+    .ai-ico {
+      width: 60px;
+    }
+
+    .link {
+      @extend %txt-links-positive;
+      color: $blue;
+      display: block;
+      margin-top: 5px;
+    }
+  }
+}

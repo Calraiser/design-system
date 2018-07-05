@@ -1,0 +1,113 @@
+---
+page_title: Adopting a Design System
+description: At LUCA, we want to create friendly experiences for our users. We define a simple attractive design, cool interactions at the source and then apply the solutions consistently across our product portfolio, trying to make sure people only have to learn them once. The LUCA Design System is plastic, flexible and allows for gradual adoption by our product teams. The UX Design team of LUCA Product Portfolio Department watches and control the adoption process across LUCA product portfolio progress across steps on each tool.
+
+layout: content
+index: true
+---
+
+.p-adopting.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  picture.image-block
+    = image_tag 'adopting-overview.png'
+
+  p.bx--type-p.text-light.u-pt-4
+    | The LDS reflects the style guides, patterns, and components that underpin the LUCA Product Portfolio. These patterns and components provide a tone and unified language, and consistent look and feel when designing products within the LUCA ecosystems that consolidate the LUCA Product Portfolio.
+
+  .content-block.u-pt-5
+    h2.bx--type-h4 Steps
+    p.bx--type-p
+      | The Design System is adopted per product across gradual steps in priority order. These steps serve as milestones to track adoption across all products no matter the pace of an individual product team.
+
+    .steps-header
+      h3.bx--type-h4.u-uppercase.u-text-blue Step
+      h3.bx--type-h4.u-uppercase.u-text-blue Criteria
+
+    .steps-container
+      .step-block
+        = image_tag 'steps/step-1.png'
+        p.bx--type-p
+          | Detect the problem
+        p.bx--type-p
+          | Non adopter
+
+      .criteria-block
+        ul.e-list
+          li Branding / visual language is out of date.
+          li Product is obviously not complying with System.
+          li Interface is dated and inconsistent with latest conventions.
+
+      .step-block
+        = image_tag 'steps/step-2.png'
+        h2.bx--type-h4.u-uppercase Step 1
+        p.bx--type-p
+          | Plan: backlog and roadmap
+
+      .criteria-block
+        ul.e-list
+          li Review codebase dependency.
+          li Compiled assets –and redesign if is necessary– and customize for integration.
+          li Commitment and rules for process adoption.
+
+      .step-block
+        = image_tag 'steps/step-3.png'
+        h2.bx--type-h4.u-uppercase Step 2
+        p.bx--type-p
+          | Basics: Visual language
+
+      .criteria-block
+        ul.e-list
+          li Lines, spaces-margins, color & typography.
+          li Review illustrations, pictures and iconography.
+          li Primary UI structure-components: navigation icons, nav. bar, header and footer.
+
+      .step-block
+        = image_tag 'steps/step-4.png'
+        h2.bx--type-h4.u-uppercase Step 3
+        p.bx--type-p
+          | Plan: Basic UI components
+
+      .criteria-block
+        ul.e-list
+          li Buttons, primary, secondary, radio, check, switch and select.
+          li Forms: labels, text fields.
+          li List groups and data tablets.
+
+      .step-block
+        = image_tag 'steps/step-5.png'
+        h2.bx--type-h4.u-uppercase Step 4
+        p.bx--type-p
+          | Plan: Full priority components
+
+      .criteria-block
+        ul.e-list
+          li Cards, tooltips & modals.
+          li Notifications & Alerts system.
+          li Dialog, chat & FAQ.
+
+      .step-block
+        = image_tag 'steps/step-6.png'
+        h2.bx--type-h4.u-uppercase Step 5
+        p.bx--type-p
+          | Plan: Full adoption
+
+      .criteria-block
+        ul.e-list
+          li Basic charts.
+          li Simple visualizations.
+          li Complex visualizations.
+
+      .step-block
+        = image_tag 'steps/step-7.png'
+        h2.bx--type-h4.u-uppercase Step 6
+        p.bx--type-p
+          | Plan: Extra materials
+
+      .criteria-block
+        ul.e-list
+          li Onboarding.
+          li Walkthrough.
+          li Tutorials (motion).
+          li Documentation.

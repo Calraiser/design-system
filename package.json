@@ -1,0 +1,20 @@
+{
+  "name": "middleman-boilerplate",
+  "version": "0.0.0",
+  "description": "LUCA Design System",
+  "main": "all.js",
+  "author": "Carlos Alvarez",
+  "license": "GPL",
+  "devDependencies": {
+    "foundation-sites": "^6.4.3",
+    "jquery-lazy": "^1.7.7",
+    "underscore": "^1.8.3"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.0",
+    "d3-dsv": "^1.0.8",
+    "font-face-mixin": "^1.1.0",
+    "normalize-scss": "^7.0.1",
+    "sass-svg": "^1.1.0"
+  }
+}

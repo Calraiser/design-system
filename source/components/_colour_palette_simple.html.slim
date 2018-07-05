@@ -1,0 +1,22 @@
+- title      ||= false
+- colorTitle ||= false
+- extraclass ||= false
+
+.palette-container.simple class = (extraclass if extraclass.present?)
+
+  - if colorTitle.present?
+    h4.bx--type-h4.u-uppercase #{colorTitle}
+
+  .container-flex
+    - colours.each_with_index do |item, index|
+      .swatches id="#{item[0]}"
+        a.btn-copy data-clipboard-action="copy" data-clipboard-text='#{item[1][0]}'
+          .color-swatch class="#{item[0]}"
+          p.item.uppercase
+            span.percentage #{item[1][1]}
+            span.item-color
+              | #{item[1][0]}
+
+
+  - if title.present?
+    h3 #{title}

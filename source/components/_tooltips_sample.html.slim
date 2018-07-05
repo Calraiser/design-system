@@ -1,0 +1,10 @@
+
+- position ||= false
+- content ||= false
+- arrow ||= false
+- dark ||= false
+
+div class="tooltip #{position}" class =('dark' if dark.present?)
+  - if arrow.present?
+    .arrow
+  p.tooltip-content #{content}

@@ -1,0 +1,99 @@
+
+$font-family-sans-serif-neutral: 'Open Sans', sans-serif;
+$font-family-sans-serif: "Telefonicaregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif: 'Telefonicaregular', Georgia, Cambria, "Times New Roman", serif;
+
+$font-weight-bold: 700;
+
+$mq-small: 48em; /* 768px */
+$mq-medium: 64em; /* 1024px */
+$mq-large: 80em; /* 1280px */
+$mq-ultra: 100em; /* 1600px */
+
+$mobile: 767px;
+$tablet: 1023px;
+$small-desktop: 1024px;
+$medium-desktop: 1281px;
+$large-desktop: 1600px;
+
+$mobile-max: 768px;
+
+$pd-def: 20px;
+$pd-small: 30px;
+$pd-medium: 32px;
+$pd-large: 76px;
+$pd-ultra: 104px;
+
+$wd-1col: 8.33%;
+$wd-4col: 33.33%;
+$wd-6col: 50%;
+$wd-8col: 66.66%;
+$wd-7col: 58.33%;
+$wd-10col: 83.33%;
+$wd-12col: 100%;
+
+$sizes: (
+  "small": $pd-small,
+  "medium": $pd-medium,
+  "large": $pd-large,
+  "ultra": $pd-ultra
+);
+
+$breakpoints: (
+  "small": $mq-small,
+  "medium": $mq-medium,
+  "large": $mq-large,
+  "ultra": $mq-ultra
+);
+
+$widths: (
+  "wd-4col": $wd-4col,
+  "wd-6col": $wd-6col,
+  "wd-8col": $wd-8col,
+  "wd-12col": $wd-12col
+);
+
+$layouts: (
+  "wd-4col": "4col",
+  "wd-6col": "6col",
+  "wd-8col": "8col",
+  "wd-12col": "12col"
+);
+
+$transition-slow: all .2s ease;
+$transition-fast: all .07s ease;
+
+
+/* Spacing
+   ========================================================================== */
+
+/**
+ * Control the default spacing of most elements by modifying these variables.
+ * You can add more entries to the `$spacers` map, should you need more
+ * variation.
+ */
+
+$spacers: (
+	'auto': auto,
+	'0': 0,
+	'1': 5px,
+	'2': 10px,
+	'3': 15px,
+	'4': 20px,
+  '5': 30px,
+  '6': 40px,
+  '7': 50px,
+  '8': 60px,
+  '9': 70px,
+  '10': 80px,
+  '11': 90px
+) !default;
+
+$spacing-sides: (
+	'top': t,
+	'right': r,
+	'bottom': b,
+	'left': l,
+	'horizontal': x,
+	'vertical': y,
+) !default;

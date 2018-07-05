@@ -1,0 +1,45 @@
+/* =============================================================================
+   LISTS (elements/_lists.scss)
+   ========================================================================== */
+
+.e-inline-list {
+  // no-bullet
+  margin-left: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    // not on the first one ;)
+    &:nth-child(n+2) {
+      margin-left: rem-calc(30);
+    }
+  }
+}
+
+.e-list {
+  margin: 5px 0 0 50px;
+
+  li {
+    @extend %txt-text-list;
+  }
+}
+
+.list-block {
+  margin: 30px 0;
+  &.flexbox-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include media($mobile) {
+      flex-direction: row;
+    }
+    .e-list {
+      margin: 0 20px;
+      flex: 1;
+      li {
+        line-height: 2;
+      }
+    }
+  }
+
+}

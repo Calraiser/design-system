@@ -1,0 +1,23 @@
+
+.l-sidebar
+  .logo
+    = link_to '', '/', class: 'logo-sidebar', title: 'home'
+
+
+  ul.sidebar-menu
+    h2.bx--type-legend.u-uppercase.u-text-blue Design System
+
+    / Guidelines
+    li = nav_link svg_tag('ic-guidelines-xs.svg'), '#', 'guidelines',  active_if: %r{^/guidelines/}
+
+    / Graphics
+    li = nav_link svg_tag('ic-graphics-vizrules-xs.svg'), '#', 'graphics', active_if: %r{^/graphics/}
+
+    / UI Elements
+    li = nav_link svg_tag('ic-uielements-xs.svg'), '#', 'uielements', active_if: %r{^/uielements/}
+
+    / Resources
+    li = nav_link svg_tag('ic-downloads-xs.svg'), '#', 'resources', active_if: %r{^/resources/}
+
+  .footer-sidebar
+    = svg_tag 'brand_logos/logo_telefonica_footer.svg'

@@ -1,0 +1,123 @@
+
+<svg width="520px" height="371px" viewBox="0 0 520 371" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="512" height="363" rx="2"></rect>
+        <filter x="-1.2%" y="-1.7%" width="102.3%" height="103.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.8   0 0 0 0 0.8   0 0 0 0 0.8  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-3" points="0 4.58261618e-05 0 18.8875275 16.3780604 18.8875275 16.3780604 4.58261618e-05"></polygon>
+        <path d="M79.4048399,76.3866069 L79.4484074,76.4301745 L72.8639463,83.0146356 L66.2359177,76.3866069 L3.6,76.3866069 C1.6117749,76.3866069 8.68118234e-15,74.774832 8.43769499e-15,72.7866069 L0,3.6 C-2.4348735e-16,1.6117749 1.6117749,1.69749866e-15 3.6,1.33226763e-15 L143.4,-4.4408921e-16 C145.388225,1.50837674e-14 147,1.6117749 147,3.6 L147,72.7866069 C147,74.774832 145.388225,76.3866069 143.4,76.3866069 L79.4048399,76.3866069 Z" id="path-5"></path>
+        <filter x="-4.8%" y="-8.4%" width="110.9%" height="119.3%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.6   0 0 0 0 0.6   0 0 0 0 0.6  0 0 0 0.6 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GRAPHIC-&amp;-VISUALIZATIONS-rules" transform="translate(-130.000000, -2481.000000)">
+            <g id="bg--copy-15" transform="translate(134.000000, 2485.000000)">
+                <g>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <polygon id="separator-copy-10" fill="#DFDFDF" fill-rule="evenodd" points="472 0 472 363 471 363 471 0"></polygon>
+                <text id="title-copy-13" font-family="Telefonica-Bold, Telefonica" font-size="16" font-weight="bold" line-spacing="24" fill="#212B36">
+                    <tspan x="16" y="26">AFFLUENCE</tspan>
+                </text>
+                <text id="title-copy-28" font-family="Telefonica-Bold, Telefonica" font-size="14" font-weight="bold" line-spacing="24" fill="#9B9B9B">
+                    <tspan x="16" y="45">Volume by day of the week</tspan>
+                </text>
+                <text id="TUE-Copy-2" font-family="Telefonica-Light, Telefonica" font-size="12" font-weight="300" fill="#494949">
+                    <tspan x="139.818" y="295">TUE</tspan>
+                </text>
+                <text id="MON-Copy-2" font-family="Telefonica-Light, Telefonica" font-size="12" font-weight="300" fill="#494949">
+                    <tspan x="90.466" y="295">MON</tspan>
+                </text>
+                <text id="1k" font-family="Telefonica-Light, Telefonica" font-size="12" font-weight="300" fill="#494949">
+                    <tspan x="55.832" y="275">1k</tspan>
+                </text>
+                <text id="2k" font-family="Telefonica-Light, Telefonica" font-size="12" font-weight="300" fill="#494949">
+                    <tspan x="55.832" y="241">2k</tspan>
+                </text>
+                <text id="3k" font-family="Telefonica-Light, Telefonica" font-size="12" font-weight="300" fill="#494949">
+                    <tspan x="55.832" y="207">3k</tspan>
+                </text>
+                <text id="4k" font-family="Telefonica-Light, Telefonica" font-size="12" font-weight="300" fill="#494949">
+                    <tspan x="55.832" y="173">4k</tspan>
+                </text>
+                <text id="WED-Copy-2" font-family="Telefonica-Light, Telefonica" font-size="12" font-weight="300" fill="#494949">
+                    <tspan x="186.03" y="295">WED</tspan>
+                </text>
+                <text id="THU-Copy-2" font-family="Telefonica-Light, Telefonica" font-size="12" font-weight="300" fill="#494949">
+                    <tspan x="234.032" y="295">THU</tspan>
+                </text>
+                <text id="FRI-Copy-2" font-family="Telefonica-Light, Telefonica" font-size="12" font-weight="300" fill="#494949">
+                    <tspan x="284.26" y="295">FRI</tspan>
+                </text>
+                <text id="SAT-Copy-2" font-family="Telefonica-Light, Telefonica" font-size="12" font-weight="300" fill="#494949">
+                    <tspan x="330.598" y="295">SAT</tspan>
+                </text>
+                <text id="SUN-Copy-2" font-family="Telefonica-Light, Telefonica" font-size="12" font-weight="300" fill="#494949">
+                    <tspan x="376.044" y="295">SUN</tspan>
+                </text>
+                <rect id="Rectangle-2-Copy-28" fill-opacity="0.36" fill="#E90D8B" fill-rule="evenodd" transform="translate(151.000000, 252.000000) rotate(-270.000000) translate(-151.000000, -252.000000) " x="128" y="246" width="46" height="12"></rect>
+                <rect id="Rectangle-2-Copy-44" fill-opacity="0.36" fill="#E90D8B" fill-rule="evenodd" transform="translate(104.000000, 252.000000) rotate(-270.000000) translate(-104.000000, -252.000000) " x="81" y="246" width="46" height="12"></rect>
+                <rect id="Rectangle-2-Copy-30" fill-opacity="0.6" fill="#E90D8B" fill-rule="evenodd" transform="translate(198.500000, 229.000000) rotate(-270.000000) translate(-198.500000, -229.000000) " x="152" y="223" width="93" height="12"></rect>
+                <rect id="Rectangle-2-Copy-36" fill-opacity="0.6" fill="#E90D8B" fill-rule="evenodd" transform="translate(246.500000, 236.000000) rotate(-270.000000) translate(-246.500000, -236.000000) " x="207" y="230" width="79" height="12"></rect>
+                <rect id="Rectangle-2-Copy-37" fill-opacity="0.6" fill="#E90D8B" fill-rule="evenodd" opacity="0.2" transform="translate(293.000000, 260.000000) rotate(-270.000000) translate(-293.000000, -260.000000) " x="278" y="254" width="30" height="12"></rect>
+                <rect id="Rectangle-2-Copy-38" fill-opacity="0.6" fill="#E90D8B" fill-rule="evenodd" opacity="0.2" transform="translate(340.500000, 262.000000) rotate(-270.000000) translate(-340.500000, -262.000000) " x="328" y="256" width="25" height="12"></rect>
+                <rect id="Rectangle-2-Copy-39" fill-opacity="0.6" fill="#E90D8B" fill-rule="evenodd" opacity="0.2" transform="translate(387.000000, 274.000000) rotate(-270.000000) translate(-387.000000, -274.000000) " x="386" y="268" width="2" height="12"></rect>
+                <text id="+0.8-%-related-to-th" font-family="Telefonica-Bold, Telefonica" font-size="14" font-weight="bold" line-spacing="22" fill="#00AAEE">
+                    <tspan x="16" y="335">+0.8 % related to the same week of the previous year</tspan>
+                </text>
+                <g id="Funnel" opacity="0.488783482" transform="translate(15.000000, 66.000000)" fill-rule="evenodd" stroke="#999999" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+                    <g id="Group" transform="translate(2.500000, 2.461538)">
+                        <path d="M26.2288904,3.29253404 C26.2288904,5.15046396 24.9174458,6.58506808 23.2281275,6.58506808 C3.17858587,6.58506808 3.17858587,6.58506808 3.17858587,6.58506808 C1.31144452,6.58506808 0,5.15046396 0,3.29253404 C0,1.43460412 1.31144452,0 3.17858587,0 C23.2281275,0 23.2281275,0 23.2281275,0 C24.9174458,0 26.2288904,1.45812222 26.2288904,3.29253404 Z" id="Shape" stroke-width="1.5"></path>
+                        <path d="M9.75767265,13.7816068 C9.75767265,26.3402723 9.75767265,26.3402723 9.75767265,26.3402723 C16.6262588,23.3064374 16.6262588,23.3064374 16.6262588,23.3064374 C16.6262588,13.7816068 16.6262588,13.7816068 16.6262588,13.7816068 C25.3601159,5.87952507 25.3601159,5.87952507 25.3601159,5.87952507 C26.2817792,4.86824676 26.4792785,3.45716074 25.908725,2.02255662 C25.5576152,0.82313351 24.2409533,0 22.9462358,0 C3.24019634,0 3.24019634,0 3.24019634,0 C1.94547882,0 0.826316223,0.79961541 0.255762742,2.02255662 C-0.292846375,3.43364264 0.0802078243,4.86824676 1.00187114,5.87952507 L9.75767265,13.7816068 Z" id="Shape" stroke-width="1.5"></path>
+                        <path d="M3.57291667,0.43974359 L9.69791667,6.03076923" id="Shape" stroke-width="1.5"></path>
+                        <path d="M16.84375,0.43974359 L22.96875,6.03076923" id="Shape-Copy" stroke-width="1.5" transform="translate(19.906250, 3.235256) scale(-1, 1) translate(-19.906250, -3.235256) "></path>
+                    </g>
+                </g>
+                <text id="Store:-Madrid-PD:-28" font-family="Telefonica-Regular, Telefonica" font-size="14" font-weight="normal" line-spacing="18" fill="#4A4A4A">
+                    <tspan x="54" y="77">Store: Madrid</tspan>
+                    <tspan x="54" y="95">PD: 28010</tspan>
+                </text>
+                <path d="M483,31 L501,31 L501,29 L483,29 L483,31 L483,31 Z M483,26 L501,26 L501,24 L483,24 L483,26 L483,26 Z M483,19 L483,21 L501,21 L501,19 L483,19 L483,19 Z" id="Shape" fill="#999999" fill-rule="evenodd"></path>
+                <text id="Label-Copy-12" font-family="Telefonica-Light, Telefonica" font-size="36" font-weight="300" line-spacing="24" letter-spacing="-0.15">
+                    <tspan x="350.126" y="78.756" fill="#E90D8B">63,8k </tspan>
+                    <tspan x="378.914" y="123" font-size="18" fill="#4A4A4A">last week</tspan>
+                </text>
+                <g id="click-copy" transform="translate(240.000000, 201.000000)" fill-rule="evenodd" stroke-width="1">
+                    <g>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M14.3632966,6.31805293 C14.0884457,6.31805293 13.8260678,6.37487737 13.5872995,6.47798623 C13.3661269,5.58025172 12.5743159,4.91393933 11.6334973,4.91393933 C11.3586465,4.91393933 11.0962686,4.97076377 10.8575002,5.07387263 C10.6365504,4.17613812 9.84429392,3.50982573 8.90392085,3.50982573 C8.65223407,3.50982573 8.41123842,3.55748494 8.18917495,3.64455465 L8.18917495,2.0727173 C8.18917495,0.929812823 7.28532987,0 6.17434435,0 C5.06335883,0 4.15951375,0.929812823 4.15951375,2.0727173 L4.15951375,9.8393352 L3.4394223,9.09855529 C2.65384773,8.29041093 1.37559073,8.29041093 0.590016168,9.09855529 C0.209367761,9.49013985 0,10.0104959 0,10.5640759 C0,11.117656 0.209590492,11.6382412 0.590016168,12.0295966 L5.32751858,16.9032089 C6.5503154,18.1829045 8.18382939,18.8874817 9.92759556,18.8874817 C13.3004211,18.8874817 16.1023854,16.2084843 16.3587495,12.7655648 C16.371668,12.7133229 16.3781272,12.6590189 16.3781272,12.6028819 L16.3781272,8.39077022 C16.3781272,7.24786575 15.4742821,6.31805293 14.3632966,6.31805293 Z" id="Path" fill="#000000" mask="url(#mask-4)"></path>
+                        <path d="M15.0780425,12.4851086 C15.0735878,12.5112296 15.0706923,12.5375796 15.0689105,12.5648462 C14.9109937,15.3604712 12.6524947,17.5502743 9.92759556,17.5502743 C8.53463176,17.5502743 7.22964696,16.9868417 6.25296863,15.9640017 C6.25163224,15.9626269 6.25029585,15.961023 6.24873673,15.9596482 L1.509007,11.0837446 C1.37403161,10.9448914 1.29963924,10.7602119 1.29963924,10.5638468 C1.29963924,10.3674817 1.37403161,10.1828023 1.509007,10.043949 C1.64843702,9.90051312 1.83129971,9.82902431 2.01438514,9.82902431 C2.19747056,9.82902431 2.38055598,9.90074225 2.51976327,10.043949 L4.34972659,11.9262586 C4.5354848,12.1175828 4.81501303,12.1746364 5.05779054,12.0712984 C5.30101351,11.9677313 5.45915299,11.7239361 5.45915299,11.4535617 L5.45915299,2.0727173 C5.45915299,1.66715577 5.77988658,1.33743653 6.17389889,1.33743653 C6.56813393,1.33743653 6.88864479,1.6673849 6.88864479,2.0727173 L6.88864479,5.58277216 L6.88864479,8.39077022 C6.88864479,8.76012909 7.17975507,9.05937392 7.53857577,9.05937392 C7.89739648,9.05937392 8.18850676,8.75989996 8.18850676,8.39077022 L8.18850676,5.58277216 C8.18850676,5.17721063 8.50946308,4.84749139 8.90325265,4.84749139 C9.29748769,4.84749139 9.61799855,5.17743976 9.61799855,5.58277216 L9.61799855,6.98688576 L9.61799855,8.39099935 C9.61799855,8.76035822 9.90910883,9.05960306 10.2679295,9.05960306 C10.626973,9.05960306 10.9178605,8.76012909 10.9178605,8.39099935 L10.9178605,6.98688576 C10.9178605,6.58132423 11.2388168,6.25160499 11.6326064,6.25160499 C12.0270642,6.25160499 12.3473523,6.58155336 12.3473523,6.98688576 L12.3473523,8.39099935 L12.3473523,9.09305615 C12.3473523,9.46241502 12.6384626,9.76165985 12.9972833,9.76165985 C13.3565495,9.76165985 13.6472143,9.46218589 13.6472143,9.09305615 L13.6472143,8.39099935 C13.6472143,7.98566695 13.9681706,7.65571859 14.3619602,7.65571859 C14.7561952,7.65571859 15.0767061,7.98566695 15.0767061,8.39099935 L15.0767061,12.4851086 L15.0780425,12.4851086 Z" id="Fill-1" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+                <g id="Combined-Shape-Copy-5" transform="translate(173.000000, 107.000000)">
+                    <g>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                    <text id="Department:-Lorem-Co" font-family="Telefonica-Bold, Telefonica" font-size="12" font-weight="bold" line-spacing="16" fill="#4A4A4A">
+                        <tspan x="11" y="17">Department:</tspan>
+                        <tspan x="79.292" y="17" font-family="Telefonica-Regular, Telefonica" font-weight="normal"> Lorem</tspan>
+                        <tspan x="11" y="33">Company:</tspan>
+                        <tspan x="64.94" y="33" font-family="Telefonica-Regular, Telefonica" font-weight="normal"> Ipsum S.A.</tspan>
+                        <tspan x="11" y="49">Country:</tspan>
+                        <tspan x="57.68" y="49" font-family="Telefonica-Regular, Telefonica" font-weight="normal"> Spain</tspan>
+                        <tspan x="11" y="65">Total sales:</tspan>
+                        <tspan x="72.428" y="65" font-family="Telefonica-Regular, Telefonica" font-weight="normal"> 1.467.584 €</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

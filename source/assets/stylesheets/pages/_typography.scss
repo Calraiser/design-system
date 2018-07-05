@@ -1,0 +1,66 @@
+/* =============================================================================
+   TYPOGRAPHY (pages/_typography.scss)
+   ========================================================================== */
+
+.p-typography {
+  .font-weights-wrapper {
+    .big-font {
+      font-size: rem-calc(110);
+      font-family: Telefonicaregular;
+    }
+  }
+
+  .font-weigths {
+    width: 46%;
+    margin-bottom: 50px;
+    @include margin(30px null 40px null);
+    .bx--type-p {
+      margin-bottom: 10px;
+    }
+    .fonts {
+      font-size: rem-calc(24);
+      line-height: rem-calc(32);
+      &.extralight {
+        font-family: Telefonicaextralight;
+      }
+      &.light {
+        font-family: Telefonicalight;
+      }
+      &.regular {
+        font-family: Telefonicaregular;
+      }
+      &.bold {
+        font-family: Telefonicabold;
+      }
+    }
+  }
+
+  .hierarchy-table {
+    flex-wrap: wrap;
+    margin-top: 25px;
+    flex-direction: column;
+    @include media($mobile) {
+      flex-direction: row;
+    }
+    .column {
+      margin: 0 0 45px;
+      flex: 1 0 25%;
+      h1.bx--type-h1 {
+        margin: 0 !important;
+      }
+      .title {
+        margin-bottom: 20px;
+        @extend %txt-text-positive-bold;
+      }
+      .note {
+          @extend %txt-text-positive;
+      }
+
+    }
+    .hierarchy-ico {
+      @include size(50px);
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}

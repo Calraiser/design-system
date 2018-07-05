@@ -1,0 +1,75 @@
+/* =============================================================================
+   TYPOGRAPHY (utilities/_typography.scss)
+   ========================================================================== */
+
+/* Text color
+   ========================================================================== */
+
+/**
+ * Utilities for controlling the text color of an element.
+ */
+
+@each $color-key, $color-value in $baseColors {
+	.u-text-#{$color-key} {
+		color: $color-value;
+	}
+}
+
+
+
+/* Font weight
+   ========================================================================== */
+
+/**
+ * Utilities for controlling the font weight of an element.
+ */
+
+.u-font-normal {
+	font-weight: normal;
+}
+
+.u-font-bold {
+	font-weight: bold;
+}
+
+
+
+/* Text alignment
+   ========================================================================== */
+
+/**
+ * Utilities for controlling the alignment of text.
+ */
+
+.u-text-left {
+	text-align: left;
+}
+
+.u-text-center {
+	text-align: center;
+}
+
+.u-text-right {
+	text-align: right;
+}
+
+
+
+/* Style and decoration
+   ========================================================================== */
+
+/**
+ * Utilities for controlling the style of text.
+ */
+
+.u-italic {
+	font-style: italic;
+}
+
+.u-roman {
+	font-style: normal;
+}
+
+.u-uppercase {
+	text-transform: uppercase;
+}

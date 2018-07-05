@@ -1,0 +1,46 @@
+/* =============================================================================
+   BUTTONS (pages/_buttons.scss)
+   ========================================================================== */
+
+.p-buttons {
+  .content-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 55px;
+  }
+
+  .content-buttons-block {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      color: $grey01;
+      margin-bottom: 45px;
+      font-size: rem-calc(16);
+      font-family: Telefonicabold;
+    }
+    .bx--type-p {
+      font-size: rem-calc(14);
+    }
+
+    .c-btn {
+      @include margin(10px null 45px null);
+    }
+  }
+
+  .buttons-header {
+    @include margin(60px null 60px null);
+    .text-sizes {
+      font-size: rem-calc(16);
+      font-family: Telefonicabold;
+      color: $grey01;
+      margin-top: 10px;
+    }
+
+    .text {
+      &.light {
+        margin-top: 5px;
+      }
+    }
+  }
+}

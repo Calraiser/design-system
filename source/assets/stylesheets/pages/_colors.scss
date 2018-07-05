@@ -1,0 +1,324 @@
+$colorPalette: (
+  black: #000,
+  grey: #4A4A4A,
+  grey00: #F2F2F2,
+  grey01: #E5E5E5,
+  grey02: #D8D8D8,
+  grey03: #CCCCCC,
+  grey04: #999999,
+  grey05: #676767,
+  grey06: #595959,
+  grey07: #4A4A4A,
+  grey08: #212121,
+  green00: #CCFBEE,
+  green01: #99F8DD,
+  green02: #66F4CC,
+  green03: #33F1BB,
+  green04: #00EEAA,
+  green05: #00BE88,
+  green06: #008E66,
+  green07: #005F44,
+  green08: #002F22,
+  blue00: #CCEEFF,
+  blue01: #99DDFF,
+  blue02: #66CCFF,
+  blue03: #33BBFF,
+  blue04: #00AAEE,
+  blue05: #0088CC,
+  blue06: #006699,
+  blue07: #004466,
+  blue08: #002233,
+  yellow00: #FFFCCC,
+  yellow01: #FFF999,
+  yellow02: #FFF666,
+  yellow03: #FFF333,
+  yellow04: #FFF000,
+  yellow05: #CCC000,
+  yellow06: #999000,
+  yellow07: #666000,
+  yellow08: #333000,
+  orange00: #FFE4CC,
+  orange01: #FFC999,
+  orange02: #FFAF66,
+  orange03: #FF9433,
+  orange04: #FF7A00,
+  orange05: #CC6100,
+  orange06: #994900,
+  orange07: #663000,
+  orange08: #331800,
+  pink00: #FFCCEA,
+  pink01: #FF99D6,
+  pink02: #FF66C1,
+  pink03: #FF33AD,
+  pink04: #FF0099,
+  pink05: #CC007A,
+  pink06: #99005B,
+  pink07: #66003D,
+  pink08: #33001E,
+  red: #F80000
+);
+
+.p-colors {
+  .container-flex {
+    display: flex;
+  }
+
+  .main-colors {
+    align-items: flex-start;
+
+    > * {
+      flex: 0;
+    }
+  }
+
+  .palette-container {
+    .container-flex {
+      display: flex;
+    }
+
+    &.rounded {
+      margin-top: 20px;
+      margin-bottom: 50px !important;
+      margin-right: 90px;
+      @include media($mobile) {
+        margin-top: 72px;
+      }
+
+      .color-swatch {
+        border-radius: 50%;
+        margin-right: 0;
+      }
+
+      .swatches {
+        margin-bottom: 20px;
+        margin-right: 20px;
+
+        p {
+          font-size: rem-cal(18);
+          text-align: center;
+          @include media($mobile) {
+            font-size: rem-cal(14);
+          }
+        }
+      }
+    }
+
+    &.main-palette {
+      .bx--type-h4 {
+        font-size: rem-calc(10);
+        margin-left: 46px;
+      }
+
+      .color-swatch {
+        @each $color, $value in ($colorPalette) {
+          &.#{$color}[class*="04"] {
+            + .item {
+              color: map-get($colorPalette, $color);
+              order: -1;
+              margin-top: -15px;
+              font-family: Telefonicabold;
+
+              span {
+                @include position (absolute, -19px null null -319px);
+              }
+
+              &:before {
+                content: '#{$value}';
+                @include position (absolute, -15px null null 0);
+                margin-top: -4px;
+                margin-left: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.simple {
+      margin-bottom: 0;
+
+      .container-flex {
+        flex-wrap: wrap;
+        @include media($mobile) {
+          flex-wrap: nowrap;
+        }
+
+        .swatches {
+          .color-swatch {
+            @include size (119px);
+            @include media($mobile) {
+              @include size (75px);
+            }
+          }
+        }
+      }
+
+      h3 {
+        text-align: left;
+      }
+    }
+
+    h3 {
+      margin: 0 0 10px;
+      font-size: rem-calc(13);
+      @extend %txt-note;
+
+      span {}
+    }
+  }
+
+  .swatches {
+    margin-bottom: 42px;
+    position: relative;
+
+    a {
+      display: block;
+    }
+
+    .color-wrapper {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    p {
+      @extend %txt-note;
+      font-size: 10px;
+      margin: 5px 0 2px;
+    }
+  }
+
+  .color-swatch:nth-child(n+7) {
+    color: #fff;
+  }
+
+  .color-swatch {
+    box-sizing: border-box;
+    display: block;
+    font-weight: bold;
+    margin-right: 5px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(0.9);
+      cursor: pointer;
+    }
+    @each $color, $value in ($colorPalette) {
+      &.#{$color} {
+        background-color: map-get($colorPalette, $color);
+        color: map-get($colorPalette, $color);
+
+        + .item {
+          content: '#{$value}';
+
+          span {
+            position: relative;
+          }
+
+          .percentage {
+            display: block;
+            margin: 5px 0 3px;
+            font-family: Telefonicabold;
+          }
+        }
+      }
+    }
+  }
+
+  // TO-DO Refactor
+  .color-usage {
+    .blue-variant {
+      .percentage {
+        display: none !important;
+      }
+    }
+
+    .percentage {
+      margin-top: 20px !important;
+    }
+    .swatches {
+      margin-bottom: 20px;
+    }
+    .color-usage-content {
+      margin: 120px 0;
+    }
+
+    .item-color,
+      h4 {
+        display: none;
+      }
+
+    .color-swatch + .item {
+      &:before {
+        display: none;
+      }
+    }
+
+    .green08 {
+      + .item {
+        .percentage {
+          &:after {
+            content: 'Light and dark percentage';
+            @include position(relative, 1px -92px null null);
+
+            font-family: Telefonicaregular;
+            font-size: rem-calc(12);
+            color: $grey06;
+            text-transform: none;
+          }
+          &:before {
+            display: inline-block;
+            content: '';
+            border-top: 0.1rem solid #DFDFDF;
+            width: 3rem;
+            @include position(absolute, 8px null null null);
+            transform: rotate(0)
+                       translate(55px, 50%)
+          }
+        }
+      }
+    }
+
+    .green04 {
+      border-radius: 50px;
+      &:after {
+        content: 'Primary';
+        font-family: Telefonicaregular;
+        font-size: rem-calc(12);
+        color: $grey06;
+        @include position(relative, -146px null null 18px);
+      }
+
+      &:before {
+        display: inline-block;
+        content: "";
+        border-top: 0.1rem solid #DFDFDF;
+        width: 3rem;
+        margin: 30px 15px;
+        transform: rotate(90deg)
+                   translate(-130%, 50%)
+      }
+    }
+
+    .blue06 {
+      border-radius: 50px;
+      &:after {
+        content: 'Variant';
+        font-family: Telefonicaregular;
+        font-size: rem-calc(12);
+        color: $grey06;
+        @include position(relative, 72px null null 19px);
+      }
+
+      &:before {
+        display: inline-block;
+        content: "";
+        border-top: 0.1rem solid #DFDFDF;
+        width: 3rem;
+        margin: 30px 15px;
+        transform: rotate(90deg)
+                   translate(165%, 50%)
+      }
+    }
+  }
+}

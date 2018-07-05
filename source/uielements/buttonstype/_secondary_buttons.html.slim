@@ -1,0 +1,51 @@
+.content-buttons
+  .content-buttons-block
+    h3.title.uppercase Large
+    p.bx--type-p.uppercase Active
+    = link_to '#', class: 'c-btn btn-secondary btn-large' do
+      'Button size L
+    p.bx--type-p.uppercase Hover
+    = link_to '#', class: 'c-btn btn-secondary btn-large hover' do
+      'Button size L
+    p.bx--type-p.uppercase Disabled
+    = link_to '#', class: 'c-btn btn-secondary btn-large disabled', disabled: true do
+      'Button size L
+
+  .content-buttons-block
+    h3.title.uppercase Medium
+    p.bx--type-p.uppercase Active
+    = link_to '#', class: 'c-btn btn-secondary btn-medium' do
+      'Button size M
+    p.bx--type-p.uppercase Hover
+    = link_to '#', class: 'c-btn btn-secondary btn-medium hover' do
+      'Button size M
+    p.bx--type-p.uppercase Disabled
+    = link_to '#', class: 'c-btn btn-secondary btn-medium disabled', disabled: true do
+      'Button size M
+
+  .content-buttons-block
+    h3.title.uppercase Small
+    p.bx--type-p.uppercase Active
+    = link_to '#', class: 'c-btn btn-secondary btn-small' do
+      'Button S
+    p.bx--type-p.uppercase Hover
+    = link_to '#', class: 'c-btn btn-secondary btn-small hover' do
+      'Button S
+    p.bx--type-p.uppercase Disabled
+    = link_to '#', class: 'c-btn btn-secondary btn-small disabled', disabled: true do
+      'Button S
+
+h2.title.uppercase Code/Html > Save
+.code-wrapper
+  .code-content id="sec_btn"
+    = code("html") do
+      = link_to '#', class: 'c-btn btn-secondary btn-large'
+        'Button Size Large'
+    = code("html") do
+      = link_to '#', class: 'c-btn btn-secondary btn-medium'
+        'Button Size Medium'
+    = code("html") do
+      = link_to '#', class: 'c-btn btn-secondary btn-small'
+        'Button Size Small'
+
+  = partial :"components/_code_actions", :locals => { :target => '#sec_btn'}

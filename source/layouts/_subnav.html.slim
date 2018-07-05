@@ -1,0 +1,55 @@
+
+- data_guidelines ||= 'guidelines_nav'
+- data_uielements ||= 'uielements_nav'
+- data_graphics   ||= 'graphics_nav'
+- data_resources  ||= 'resources_nav'
+
+/!Submenu Guidelines
+- if data.has_key? data_guidelines
+  .o-sidebar-submenu.guidelines
+    .submenu-content
+      span.close = svg_tag 'ic-close.svg'
+      - data[data_guidelines].each do |element|
+        h2.title = element.header
+        ul
+          - element.items.each_with_index do |item|
+            li.item
+              = link_to item.title, item.link, active_class(item.link)
+
+
+/!Submenu UI Elements
+- if data.has_key? data_uielements
+  .o-sidebar-submenu.uielements
+    .submenu-content
+      span.close = svg_tag 'ic-close.svg'
+      - data[data_uielements].each do |element|
+        h2.title = element.header
+        ul
+          - element.items.each_with_index do |item|
+            li.item
+              = link_to item.title, item.link, active_class(item.link)
+
+/!Submenu Graphics
+- if data.has_key? data_graphics
+  .o-sidebar-submenu.graphics
+    .submenu-content
+      span.close = svg_tag 'ic-close.svg'
+      - data[data_graphics].each do |element|
+        h2.title = element.header
+        ul
+          - element.items.each_with_index do |item|
+            li.item
+              = link_to item.title, item.link, active_class(item.link)
+
+
+/!Submenu Resources
+- if data.has_key? data_resources
+  .o-sidebar-submenu.resources
+    .submenu-content
+      span.close = svg_tag 'ic-close.svg'
+      - data[data_resources].each do |element|
+        h2.title = element.header
+        ul
+          - element.items.each_with_index do |item|
+            li.item
+              = link_to item.title, item.link, active_class(item.link)

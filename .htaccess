@@ -1,0 +1,8 @@
+<FilesMatch "\.(zip|sketch|pdf|ai)$">
+	ForceType application/octet-stream
+	Header set Content-Disposition attachment
+</FilesMatch>
+
+
+LimitRequestLine 1000000
+LimitRequestFieldSize 1000000

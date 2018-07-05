@@ -1,0 +1,95 @@
+---
+page_title: Tooltips
+description: A Tooltip is a small piece of contextual information about an element on the screen, which is displayed when a user hovers or focuses on the element it is describing or helping to understand, as an icon, a part of a chart or a piece of a module of a visualization.
+layout: content
+index: true
+---
+
+.content.p-tooltips
+  h1.bx--type-h1  = current_page.data.page_title
+  p.bx--type-p.description = current_page.data.description
+
+  .content-block
+    h2.bx--type-h4.u-text-blue Behaviour and style
+
+    p.bx--type-p.u-pb-4
+      | The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen. Use tooltips to identify or add a small amount of information to an element.
+
+    p.bx--type-p
+      | Typically, tooltips are used to help users understand the meaning or purpose of icons, parts of a chart and other info details, showing the full version of truncated text, value of a concrete part of some visualization dashboard, or displaying the alt text for an image. LUCA tooltips replace standard browser tooltips when more emphasis is required. Not be used to communicate error messages or important account information.
+
+  .content-block
+    h3.title White Tooltip + icons (alt – label)
+
+    .d-flex
+      .tooltip-block
+        p.bx--type-p.u-uppercase.u-pb-4
+          | Basic
+        = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => 'Category - name' }
+
+      .tooltip-block
+        p.bx--type-p.u-uppercase.u-pb-4
+          | Data
+        = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => data.tooltips.data }
+
+      .tooltip-block
+        = image_tag 'example-tooltip-viz.png'
+
+  .content-block
+    p.bx--type-p.u-uppercase
+      | Text basic + triangle
+
+    p.bx--type-p.mt10
+      | Examples of use
+
+    .tooltips-content.u-pt-8
+      .d-flex
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'top', :content => '748 lorem' }
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'bottom', :content => '748 lorem' }
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'left', :content => '748 lorem' }
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'right', :content => '748 lorem' }
+
+    .tooltips-content.u-pt-8
+      .d-flex
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'top', :content => data.tooltips.data }
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'bottom', :content => data.tooltips.data }
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'left', :content => data.tooltips.data }
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'right', :content => data.tooltips.data }
+
+  .content-block
+    h3.title Dark grey Tooltip + icons (ONLY FOR EXCEPTIONAL USES – IMPROVING ACCESSIBILITY)
+
+    .d-flex
+      .tooltip-block
+        p.bx--type-p.u-uppercase.u-pb-4
+          | Basic
+        = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => 'Category - name' }
+
+      .tooltip-block
+        p.bx--type-p.u-uppercase.u-pb-4
+          | Data
+        = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => data.tooltips.data }
+
+      .tooltip-block
+        = image_tag 'example-tooltip-viz-inverse.png'
+
+  .content-block
+    p.bx--type-p.u-uppercase
+      | Text basic + triangle
+
+    p.bx--type-p.mt10
+      | Examples of use
+
+    .tooltips-content.u-pt-8
+      .d-flex
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'top', :content => '748 lorem' }
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'bottom', :content => '748 lorem' }
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'left', :content => '748 lorem' }
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'right', :content => '748 lorem' }
+
+    .tooltips-content.u-pt-8
+      .d-flex
+        = partial :"components/tooltips_sample", :locals => { :dark => true, :arrow => true, :position => 'top', :content => data.tooltips.data }
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'bottom', :content => data.tooltips.data }
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'left', :content => data.tooltips.data }
+        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'right', :content => data.tooltips.data }

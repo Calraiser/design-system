@@ -1,0 +1,36 @@
+---
+page_title: Visualization rules
+description: This checklist is meant to be used as a guide for the development of high impact data visualizations, describes what they do, as well as why and when they are most useful.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  .content-block
+    h2.bx--type-h4.u-uppercase.u-text-blue Anatomy of a chart
+
+    p.bx--type-p
+      | Review the anatomy charts below for illustration of what is what. Choose the correct chart structure. Don’t forget to include areas for: title, context, legend, KPI and margins to each chart.
+
+    picture.image-block.no-res
+      = image_tag 'graph-viz-rules01.png'
+
+  .content-block
+    h2.bx--type-h4.u-uppercase.u-text-blue Types of charts
+    p.bx--type-p
+      | Here is a library of different information visualization types.
+
+    // Types of charts
+    = partial :"blocks/_charts_type"
+
+  .content-block
+    h2.bx--type-h4 Create your own chart
+    p.bx--type-p
+      | If any of the previous charts serves to you, here are some rules to build a new one:
+
+    // Create your own chart
+    = partial :"components/_features_block"

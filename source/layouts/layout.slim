@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    = partial 'layouts/meta_tags'
+    = stylesheet_link_tag :all
+  body class="homepage"
+    = partial 'layouts/logo'
+    = yield
+    = partial 'layouts/footer'
+    = javascript_include_tag :all

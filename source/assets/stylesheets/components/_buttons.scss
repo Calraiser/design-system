@@ -1,0 +1,251 @@
+/* =============================================================================
+   BUTTONS (components/_buttons.scss)
+   ========================================================================== */
+
+/* Settings
+   ========================================================================== */
+
+$button-default-background-color: #bbbbbb !default;
+$button-default-text-color: $white !default;
+$btn-height: 38px;
+$button-colors: (
+	'dark': $black,
+	'red': $orange,
+	'green': $green,
+	'blue': $blue,
+) !default;
+
+%btn-primary-ico {
+  text-align: left;
+  @include padding(null 20px);
+  .ico {
+    @include size(auto, 20px);
+    @include padding(20px null null 20px);
+    margin-left: 20px;
+    display: inline-block;
+    float: right;
+  }
+}
+
+.c-btn {
+  position: relative;
+  display: inline-block;
+  border-radius: 42px;
+  @include size(auto, $btn-height);
+  @include padding(null 20px);
+	font-size: rem-calc(14);
+  line-height: rem-calc(36);
+
+  overflow: hidden;
+  vertical-align: middle;
+  z-index: 1;
+
+  cursor: pointer;
+
+  font-family: 'Telefonicabold';
+  text-align: center;
+  text-transform: uppercase;
+
+  transition: all 0.25s ease;
+
+  &.btn-large {
+    width: 170px;
+  }
+  &.btn-medium {
+    width: 122px;
+  }
+  &.btn-small {
+    width: 74px;
+		.ico-caret {
+			padding: 0 15px !important;
+		}
+		.ico {
+			margin-left: 0;
+		}
+  }
+  &.wide {
+    width: 100%;
+  }
+  &.disabled {
+    opacity: 0.3 !important;
+    cursor: default;
+    border: 2px solid $grey !important;
+    color: $grey !important;
+    &:after {
+      display: none;
+    }
+    &:hover {
+      background: none !important;
+      color: $grey !important;
+    }
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
+
+.btn-primary {
+  color: $green;
+  border: 2px solid $green;
+  background: transparent;
+  &:hover, &.hover {
+    color: $white;
+    background: $green;
+  }
+  &.has-icon {
+    @extend %btn-primary-ico;
+
+		&.btn-small:not(.inverse) {
+			width: 87px;
+			padding-right: 12px;
+			padding-left: 15px;
+		}
+    .ico-check {
+      background: image-url('ic-check-green.svg') no-repeat 90% 50%;
+    }
+    &:hover, &.hover {
+      .ico-check {
+        background: image-url('ic-check-white.svg') no-repeat 90% 50%;
+      }
+    }
+    &.disabled {
+      .ico-check {
+        background: image-url('ic-check-grey.svg') no-repeat 90% 50%;
+      }
+    }
+  }
+}
+
+.btn-primary.filled {
+  color: #fff;
+  border: 2px solid $green;
+  background: transparent;
+  &:before {
+    background: $green;
+    border: 0;
+  }
+  &:after {
+    background: $black;
+    border: 0;
+  }
+}
+
+.btn-secondary {
+  color: $blue;
+  border: 2px solid $blue;
+  background: transparent;
+  &:hover, &.hover {
+    color: $white;
+    background: $blue;
+  }
+  &.has-icon {
+    text-align: left;
+    padding: 0 0 0 20px;
+    display: flex;
+		justify-content: space-between;
+    .ico {
+      padding-left: 20px;
+    }
+    .btn-text {
+      flex: 1;
+
+    }
+    .ico-caret {
+      background: image-url('ic-caret-blue.svg') no-repeat 50% 50%;
+      display: block;
+      padding: 0 24px;
+      order: 1;
+      border-left: 2px solid $blue;
+
+    }
+    &:hover, &.hover {
+      border: 2px solid $white;
+      .ico-caret {
+        background: image-url('ic-caret-white.svg') no-repeat 50% 50%;
+        border-left: 2px solid $white;
+      }
+    }
+    &.disabled {
+      .ico-caret {
+        background: image-url('ic-caret-grey.svg') no-repeat 50% 50%;
+        border-left: 2px solid $grey;
+      }
+    }
+
+		&.btn-large {
+			width: 190px;
+		}
+		&.btn-medium {
+			width: 142px;
+		}
+		&.btn-small {
+			padding-left: 15px;
+			width: 99px;
+
+		}
+  }
+}
+
+.btn-secondary.filled {
+  color: #fff;
+  border: 1px solid $green;
+  background: transparent;
+}
+
+.btn-primary.inverse {
+  color: $grey04;
+  border: 2px solid $grey04;
+  background: transparent;
+  &:hover, &.hover {
+    color: $white;
+    background: $grey04;
+  }
+  &.has-icon {
+    @extend %btn-primary-ico;
+    .ico-close {
+      background: image-url('ic-close-black.svg') no-repeat 90% 50%;
+    }
+
+    &:hover, &.hover {
+      .ico-close {
+        background: image-url('ic-close-white.svg') no-repeat 90% 50%;
+      }
+    }
+    &.disabled {
+      .ico-close {
+        background: image-url('ic-close-grey.svg') no-repeat 90% 50%;
+      }
+    }
+  }
+}
+
+.btn-primary.inverse-white {
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+  &:before {
+    background: transparent;
+    border: 1px solid transparent;
+  }
+  &:after {
+    background: rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+}
+
+/**
+ * Color variations. To add new color variation you have to add new value in
+ * `$button-colors` map on top of the file.
+ */
+
+@each $color-key, $color-value in $button-colors {
+	.c-btn--#{$color-key} {
+		background-color: $color-value;
+	}
+}

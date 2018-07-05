@@ -1,0 +1,66 @@
+
+.p-adopting {
+  .step-block {
+    flex: 1 0 32%;
+    position: relative;
+    h2 {
+      margin-bottom: 0;
+    }
+    img {
+      width: 100%;
+        @include position(absolute, 18px null 0 0);
+      @include media($mobile) {
+        @include position(absolute, 15px null 0 0);
+      }
+      @include media($medium-desktop) {
+        top: 8px;
+      }
+
+    }
+  }
+  .steps-header {
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    @include media($medium-desktop) {
+      margin-top: 40px;
+    }
+    h3 {
+      flex: 1;
+      &:nth-child(2){
+        flex: 1 0 18%;
+      }
+    }
+
+  }
+  .steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    @include media($mobile) {
+      flex-direction: row;
+    }
+  }
+  .step-block, .criteria-block {
+    margin: 20px 0 35px;
+    width: 100%;
+    @include media($mobile) {
+      width: auto;
+    }
+    @include media($medium-desktop) {
+      margin: 20px 0 50px;
+    }
+  }
+  .criteria-block {
+    flex: 1 0 50%;
+    margin-left: 40px;
+    @include media($mobile) {
+      @include position(relative, 28px null null null);
+    }
+    ul {
+      margin: 0;
+    }
+  }
+}
