@@ -19,77 +19,126 @@ index: true
       | Typically, tooltips are used to help users understand the meaning or purpose of icons, parts of a chart and other info details, showing the full version of truncated text, value of a concrete part of some visualization dashboard, or displaying the alt text for an image. LUCA tooltips replace standard browser tooltips when more emphasis is required. Not be used to communicate error messages or important account information.
 
   .content-block
-    h3.title White Tooltip + icons (alt – label)
+    h3.bx--type-h4.u-text-grey01 White Tooltip + icons (alt – label)
 
-    .d-flex
-      .tooltip-block
-        p.bx--type-p.u-uppercase.u-pb-4
+    .row.center-xs.start-md
+      .col-xs-12.col-md-4
+        p.bx--type-note.u-uppercase.u-pb-4
           | Basic
-        = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => 'Category - name' }
+          .row.center-xs.start-md
+            = svg_tag 'ic-local-hotel.svg', class: 'u-pr-2 u-pl-2'
+            = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => 'Category - name' }
 
-      .tooltip-block
-        p.bx--type-p.u-uppercase.u-pb-4
+      .col-xs-12.col-md-4
+        p.bx--type-note.u-uppercase.u-pb-4
           | Data
-        = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => data.tooltips.data }
+        .row.center-xs.start-md
+          = svg_tag 'ic-local-hotel.svg', class: 'u-pr-2 u-pl-2'
+          = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => data.tooltips.data }
 
-      .tooltip-block
-        = image_tag 'example-tooltip-viz.png'
+      .col-xs-12.col-md-4
+        = image_tag 'example-tooltip-viz.png', class: 'u-pt-6'
 
-  .content-block
-    p.bx--type-p.u-uppercase
+    p.bx--type-note.u-uppercase
       | Text basic + triangle
 
-    p.bx--type-p.mt10
+    p.bx--type-note.mt10
       | Examples of use
 
-    .tooltips-content.u-pt-8
-      .d-flex
+    .row.u-pb-6.u-pt-4.start-md.center-xs
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'top', :content => '748 lorem' }
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'bottom', :content => '748 lorem' }
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'left', :content => '748 lorem' }
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'right', :content => '748 lorem' }
 
-    .tooltips-content.u-pt-8
-      .d-flex
+    .row.start-md.center-xs
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'top', :content => data.tooltips.data }
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'bottom', :content => data.tooltips.data }
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'left', :content => data.tooltips.data }
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'right', :content => data.tooltips.data }
 
   .content-block
-    h3.title Dark grey Tooltip + icons (ONLY FOR EXCEPTIONAL USES – IMPROVING ACCESSIBILITY)
+    h2.title.uppercase Code/Html > Save
+    .code-wrapper
+      .code-content id="tooltips"
+        = code("html") do
+          = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'top', :content => '748 lorem' }
+        = code("html") do
+          = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'bottom', :content => '748 lorem' }
+        = code("html") do
+          = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'left', :content => '748 lorem' }
+        = code("html") do
+          = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'right', :content => '748 lorem' }
 
-    .d-flex
-      .tooltip-block
-        p.bx--type-p.u-uppercase.u-pb-4
-          | Basic
-        = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => 'Category - name' }
-
-      .tooltip-block
-        p.bx--type-p.u-uppercase.u-pb-4
-          | Data
-        = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => data.tooltips.data }
-
-      .tooltip-block
-        = image_tag 'example-tooltip-viz-inverse.png'
+      = partial :"components/_code_actions", :locals => { :target => '#tooltips'}
 
   .content-block
-    p.bx--type-p.u-uppercase
+    h3.bx--type-h4.u-text-grey01 Dark grey Tooltip + icons (ONLY FOR EXCEPTIONAL USES – IMPROVING ACCESSIBILITY)
+    .row.center-xs.start-md
+      .col-xs-12.col-md-4
+        p.bx--type-note.u-uppercase.u-pb-4
+          | Basic
+        .row.center-xs.start-md
+          = svg_tag 'ic-local-hotel.svg', class: 'u-pr-2 u-pl-2'
+          = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => false, :content => 'Category - name' }
+      .col-xs-12.col-md-4
+        p.bx--type-note.u-uppercase.u-pb-4
+          | Data
+        .row.center-xs.start-md
+          = svg_tag 'ic-local-hotel.svg', class: 'u-pr-2 u-pl-2'
+          = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => false, :content => data.tooltips.data }
+      .col-xs-12.col-md-4
+        = image_tag 'example-tooltip-viz-inverse.png', class: 'u-pt-6'
+
+    p.bx--type-note.u-uppercase
       | Text basic + triangle
 
-    p.bx--type-p.mt10
+    p.bx--type-note.mt10
       | Examples of use
 
-    .tooltips-content.u-pt-8
-      .d-flex
-        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'top', :content => '748 lorem' }
-        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'bottom', :content => '748 lorem' }
-        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'left', :content => '748 lorem' }
-        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'right', :content => '748 lorem' }
+    .row.u-pb-6.u-pt-4.start-md.center-xs
+      .col-xs-12.col-sm-5.col-md-3
+        = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'top', :content => '748 lorem' }
+      .col-xs-12.col-sm-5.col-md-3
+        = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'bottom', :content => '748 lorem' }
+      .col-xs-12.col-sm-5.col-md-3
+        = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'left', :content => '748 lorem' }
+      .col-xs-12.col-sm-5.col-md-3
+        = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'right', :content => '748 lorem' }
 
-    .tooltips-content.u-pt-8
-      .d-flex
-        = partial :"components/tooltips_sample", :locals => { :dark => true, :arrow => true, :position => 'top', :content => data.tooltips.data }
-        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'bottom', :content => data.tooltips.data }
-        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'left', :content => data.tooltips.data }
-        = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'right', :content => data.tooltips.data }
+    .row.u-pb-6.start-md.center-xs
+      .col-xs-12.col-sm-5.col-md-3
+        = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'top', :content => data.tooltips.data }
+      .col-xs-12.col-sm-5.col-md-3
+        = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'bottom', :content => data.tooltips.data }
+      .col-xs-12.col-sm-5.col-md-3
+        = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'left', :content => data.tooltips.data }
+      .col-xs-12.col-sm-5.col-md-3
+        = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'right', :content => data.tooltips.data }
+
+
+    .content-block
+      h2.title.uppercase Code/Html > Save
+      .code-wrapper
+        .code-content id="tooltips-dark"
+          = code("html") do
+            = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'top', :content => '748 lorem' }
+          = code("html") do
+            = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'bottom', :content => '748 lorem' }
+          = code("html") do
+            = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'left', :content => '748 lorem' }
+          = code("html") do
+            = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'right', :content => '748 lorem' }
+
+        = partial :"components/_code_actions", :locals => { :target => '#tooltips-dark'}
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

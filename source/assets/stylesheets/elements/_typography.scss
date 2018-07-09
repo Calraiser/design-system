@@ -37,6 +37,10 @@
   @extend %txt-blockquote;
 }
 
+.bx--type-note {
+  @extend %txt-note;
+}
+
 
 p {
   &.text {
