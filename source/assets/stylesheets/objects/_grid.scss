@@ -79,8 +79,12 @@
   }
   &.no-res {
     img {
-      width: auto;
-      min-width: auto;
+      width: 100%;
+      min-width: 100%;
+      @include media($mobile) {
+        width: auto;
+        min-width: auto;
+      }
     }
   }
   img {
