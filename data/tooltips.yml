@@ -1,5 +1,5 @@
 data: |
-      - Departament: Lorem
-      - Company: Ipsum S.A.
-      - Country: Spain
-      - Total Value: 1.565,999
+      <strong>Departament</strong>: Lorem
+      <strong>Company</strong>: Ipsum S.A.
+      <strong>Country</strong>: Spain
+      <strong>Total Value</strong>: 1.565,999

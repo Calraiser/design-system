@@ -10,10 +10,17 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
-    padding: 0 50px;
+    padding: 0;
+    @include media($mobile) {
+      padding: 0 50px;
+    }
     .feature-item {
-      flex: 0 0 47%;
+      flex: 0 0 100%;
       margin-bottom: 48px;
+      @include media($mobile) {
+        flex: 0 0 47%;
+
+      }
     }
     h4 {
       svg {

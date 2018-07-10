@@ -12,10 +12,6 @@ $flipper-width: 300px;
 .b-charts-type {
   margin-top: 66px;
   .e-flipper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
     .bx--type-h4 {
       color: $grey01;
       text-align: left;
@@ -30,11 +26,18 @@ $flipper-width: 300px;
     }
 
     .front {
-      @include size(298px, 187px);
+      width: 100%;
       padding: 45px 0;
       display: flex;
       align-items: center;
       justify-content: center;
+      svg {
+        @include size(100%);
+        padding: 20px;
+      }
+      @include media($mobile) {
+        @include size(298px, 187px);
+      }
     }
 
     .back {
@@ -60,13 +63,17 @@ $flipper-width: 300px;
           }
         }
       }
-
     }
 
     .item {
-      flex: 0 0 30%;
       height: $flipper-width;
-      margin-bottom: 89px;
+      margin-bottom: 0;
+      flex: none;
+      height: 268px;
+      @include media($mobile) {
+        margin-bottom: 89px;
+        height: 300px;
+      }
       &:hover {
         .bx--type-h4 {
           color: $blue;

@@ -1,10 +1,11 @@
 
-- position ||= false
-- content ||= false
-- arrow ||= false
-- dark ||= false
+- position   ||= false
+- content    ||= false
+- arrow      ||= false
+- extraclass ||= false
 
-div class="tooltip #{position}" class =('dark' if dark.present?)
+div class="tooltip #{position}" class =(extraclass if extraclass.present?)
   - if arrow.present?
     .arrow
+
   p.tooltip-content #{content}
