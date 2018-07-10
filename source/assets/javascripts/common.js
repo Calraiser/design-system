@@ -7,6 +7,11 @@ $(document).ready(function() {
     topSpacing: 0
   });
 
+
+  $('.c-btn').on('click', function(e){
+    e.preventDefault();
+  });
+  
   // Tooltip
   $('.btn-copy').tooltip({
     trigger: 'click',
