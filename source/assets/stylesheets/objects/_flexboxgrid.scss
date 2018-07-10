@@ -103,6 +103,10 @@ $name: xs;
   text-align: left;
 }
 
+.column-#{$name} {
+  @include flex-direction(column);
+}
+
 .center-#{$name} {
   @include justify-content(center);
   text-align: center;
@@ -131,6 +135,7 @@ $name: xs;
 
 .between-#{$name} {
   @include justify-content(space-between);
+  text-align: inherit;
 }
 
 .first-#{$name} {
@@ -210,6 +215,7 @@ $name: xs;
 
     .between-#{$name} {
       @include justify-content(space-between);
+      text-align: inherit;
     }
 
     .first-#{$name} {
