@@ -136,7 +136,7 @@
 
 
 %txt-title-positive {
-  @include text-style(36, 50, Telefonicaextralight, $grey05);
+  @include text-style(48, 50, Telefonicaextralight, $grey05);
 
   @include media($medium-desktop) {
     @include text-style(48, 50, Telefonicaextralight, $grey05);
