@@ -12,16 +12,18 @@ index: true
   p.bx--type-p.u-pt-4
     | Illustration  is a key element and makes complex ideas more accessible in an efficient and clear way.
   p.bx--type-p.u-pt-4
-   | Our illustrations should always have a goal, be meaningful to users and thoughtfully convey ideas. They have a consistent narrative of practicality, optimism and friendliness used throughout. This is accomplished through shape, color, softness and curves to achieve an inviting, engaging experience.
+   | Our illustrations should always have a goal, be meaningful to users and thoughtfully convey ideas. They have a consistent narrative of practicality, optimism and friendliness used throughout. This is accomplished through shape, colour, softness and curves to achieve an inviting, engaging experience.
 
   .content-block.u-pb-8
     h2.bx--type-h4 Examples of illustrations
     h5.bx--type-h5 Illustrations for promotional elements
-    .row
-      .d-flex.single-column.u-pt-5
-        = image_tag 'illustrations/promotional_image01.png', class: 'image30'
-        = image_tag 'illustrations/promotional_image02.png', class: 'image30'
-        = image_tag 'illustrations/promotional_image03.png', class: 'image30'
+    .row.between-xs.single-column.u-pt-5
+      .col-xs-12.col-md-4
+        = image_tag 'illustrations/promotional_image01.png', class: 'u-wide'
+      .col-xs-12.col-md-4
+        = image_tag 'illustrations/promotional_image02.png', class: 'u-wide'
+      .col-xs-12.col-md-4
+        = image_tag 'illustrations/promotional_image03.png', class: 'u-wide'
 
   .content-block.u-pb-7
     h5.bx--type-h5 Illustrations for web
@@ -30,12 +32,13 @@ index: true
 
   .content-block
     h5.bx--type-h5 Illustrations for emails header
-
-    .row
-      .d-flex.single-column.u-pt-5
-        = image_tag 'illustrations/email-header01.png' ,class: 'image30'
-        = image_tag 'illustrations/email-header02.png' ,class: 'image30'
-        = image_tag 'illustrations/email-header03.png' ,class: 'image30'
+    .row.between-xs.single-column.u-pt-5
+      .col-xs-12.col-md-4
+        = image_tag 'illustrations/email-header01.png', class: 'u-wide'
+      .col-xs-12.col-md-4
+        = image_tag 'illustrations/email-header02.png', class: 'u-wide'
+      .col-xs-12.col-md-4
+        = image_tag 'illustrations/email-header03.png', class: 'u-wide'
 
   .content-block
     h1.bx--type-h1 Images
@@ -49,12 +52,15 @@ index: true
       li Light colours and clear concepts.
 
     .row
-      .d-flex.column
-        = image_tag 'illustrations/image01.jpg', class:'image-responsive'
-        = image_tag 'illustrations/image02.jpg', class:'image-responsive'
-        = image_tag 'illustrations/image03.jpg', class:'image-responsive'
-        = image_tag 'illustrations/image04.jpg', class:'image-responsive'
+      .col-xs-12.col-md-6.u-pb-3
+        = image_tag 'illustrations/image01.jpg', class: 'u-wide'
+      .col-xs-12.col-md-6.u-pb-3
+        = image_tag 'illustrations/image02.jpg', class: 'u-wide'
+      .col-xs-12.col-md-6.u-pb-3
+        = image_tag 'illustrations/image03.jpg', class: 'u-wide'
+      .col-xs-12.col-md-6.u-pb-3
+        = image_tag 'illustrations/image04.jpg', class: 'u-wide'
 
-      p.bx--type-p
+      p.bx--type-p.u-pt-4
         | Following the guidelines to choose a suitable image, you can find some in&nbsp;
         = link_to 'Brand Ignite.', 'https://brandignite.telefonica.com', class: 'blue-link', target: '_blank'

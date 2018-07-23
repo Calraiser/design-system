@@ -1,46 +1,59 @@
-/Buttons for DOWNLOAD or similar operations
+/Buttons for SAVE, go to, confirm, check or validate operations
 .content-buttons
-  .content-buttons-block
-    h3.title.uppercase Large
-    p.bx--type-p.uppercase Active
-    = link_to '#', class: 'c-btn btn-secondary has-icon btn-large' do
-       i class="ico ico-caret"
-       span.c-btn-text Button size L
-    p.bx--type-p.uppercase Hover
-    = link_to '#', class: 'c-btn btn-secondary has-icon btn-large hover' do
-      i class="ico ico-caret"
-      span.c-btn-text Button size L
-    p.bx--type-p.uppercase Disabled
-    = link_to '#', class: 'c-btn btn-secondary has-icon btn-large disabled', disabled: true do
-      i class="ico ico-caret"
-      span.c-btn-text Button size L
+  .row.between-sm.center-xs
+    .content-buttons-block.col-xs-12.col-sm-5.col-md-3
+      .row.column-xs
+        h5.bx--type-h5.uppercase Large
+        .row.column-xs.middle-xs.top-sm.u-pl-3
+          p.bx--type-p.uppercase Active
+          = link_to '#', class: 'c-btn btn-secondary has-icon btn-large' do
+             i class="ico ico-caret"
+             span.c-btn-text Button size L
+        .row.column-xs.middle-xs.top-sm.u-pl-3
+          p.bx--type-p.uppercase Hover
+          = link_to '#', class: 'c-btn btn-secondary has-icon btn-large hover' do
+            i class="ico ico-caret"
+            span.c-btn-text Button size L
+        .row.column-xs.middle-xs.top-sm.u-pl-3
+          p.bx--type-p.uppercase Disabled
+          = link_to '#', class: 'c-btn btn-secondary has-icon btn-large disabled', disabled: true do
+            i class="ico ico-caret"
+            span.c-btn-text Button size L
 
-  .content-buttons-block
-    h3.title.uppercase Medium
-    p.bx--type-p.uppercase Active
-    = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium' do
-      'Button M
-      i.ico.ico-caret
-    p.bx--type-p.uppercase Hover
-    = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium hover' do
-      'Button M <i class="ico ico-caret"></i>
-    p.bx--type-p.uppercase Disabled
-    = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium disabled', disabled: true do
-      'Button M <i class="ico ico-caret"></i>
+    .content-buttons-block.col-xs-12.col-sm-5.col-md-3
+      .row.column-xs
+        h5.bx--type-h5.uppercase Medium
+        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3
+          p.bx--type-p.uppercase Active
+          = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium' do
+            'Button M
+            i.ico.ico-caret
+        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3
+          p.bx--type-p.uppercase Hover
+          = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium hover' do
+            'Button M <i class="ico ico-caret"></i>
+        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3
+          p.bx--type-p.uppercase Disabled
+          = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium disabled', disabled: true do
+            'Button M <i class="ico ico-caret"></i>
 
-  .content-buttons-block
-    h3.title.uppercase Small
-    p.bx--type-p.uppercase Active
-    = link_to '#', class: 'c-btn btn-secondary has-icon btn-small' do
-      'Button <i class="ico ico-caret"></i>
-    p.bx--type-p.uppercase Hover
-    = link_to '#', class: 'c-btn btn-secondary has-icon btn-small hover' do
-      'Button <i class="ico ico-caret"></i>
-    p.bx--type-p.uppercase Disabled
-    = link_to '#', class: 'c-btn btn-secondary has-icon btn-small disabled', disabled: true do
-      'Button <i class="ico ico-caret"></i>
+    .content-buttons-block.col-xs-12.col-sm-5.col-md-3
+      .row.column-xs
+        h5.bx--type-h5.uppercase Small
+        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3
+          p.bx--type-p.uppercase Active
+          = link_to '#', class: 'c-btn btn-secondary has-icon btn-small' do
+            'Button <i class="ico ico-caret"></i>
+        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3
+          p.bx--type-p.uppercase Hover
+          = link_to '#', class: 'c-btn btn-secondary has-icon btn-small hover' do
+            'Button <i class="ico ico-caret"></i>
+        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3
+          p.bx--type-p.uppercase Disabled
+          = link_to '#', class: 'c-btn btn-secondary has-icon btn-small disabled', disabled: true do
+            'Button <i class="ico ico-caret"></i>
 
-h2.title.uppercase Code/Html > Save
+h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
 .code-wrapper
   .code-content id="sec_btn_ico"
     = code("html") do

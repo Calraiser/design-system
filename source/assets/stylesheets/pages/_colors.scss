@@ -59,34 +59,16 @@ $colorPalette: (
 );
 
 .p-colors {
-  .container-flex {
-    display: flex;
-  }
-
-  .main-colors {
-    align-items: flex-start;
-
-    > * {
-      flex: 0;
-    }
-  }
-
   .palette-container {
-    .container-flex {
-      display: flex;
-    }
-
     &.rounded {
       margin-top: 20px;
-      margin-bottom: 50px !important;
-      margin-right: 90px;
-      @include media($mobile) {
+      @include media($tablet) {
         margin-top: 72px;
+        margin-bottom: 50px !important;
       }
 
       .color-swatch {
         border-radius: 50%;
-        margin-right: 0;
       }
 
       .swatches {
@@ -101,12 +83,18 @@ $colorPalette: (
           }
         }
       }
+      &.border-color {
+        .color-swatch {
+          border: 1px solid #979797;
+        }
+      }
     }
 
     &.main-palette {
       .bx--type-h4 {
         font-size: rem-calc(10);
-        margin-left: 46px;
+        margin-left: 38px;
+        margin-bottom: 6px;
       }
 
       .color-swatch {
@@ -138,11 +126,6 @@ $colorPalette: (
       margin-bottom: 0;
 
       .container-flex {
-        flex-wrap: wrap;
-        @include media($mobile) {
-          flex-wrap: nowrap;
-        }
-
         .swatches {
           .color-swatch {
             @include size (119px);
@@ -169,6 +152,7 @@ $colorPalette: (
 
   .swatches {
     margin-bottom: 42px;
+    margin-right: 5px;
     position: relative;
 
     a {
@@ -196,8 +180,8 @@ $colorPalette: (
     box-sizing: border-box;
     display: block;
     font-weight: bold;
-    margin-right: 5px;
     transition: transform 0.2s;
+    @include size(75px);
 
     &:hover {
       transform: scale(0.9);
@@ -236,11 +220,12 @@ $colorPalette: (
     .percentage {
       margin-top: 20px !important;
     }
-    .swatches {
-      margin-bottom: 20px;
-    }
+
     .color-usage-content {
-      margin: 120px 0;
+      margin: 20px 0;
+      @include media($mobile) {
+        margin: 120px 0;
+      }
     }
 
     .item-color,
@@ -263,6 +248,7 @@ $colorPalette: (
 
             font-family: Telefonicaregular;
             font-size: rem-calc(12);
+            white-space: pre;
             color: $grey06;
             text-transform: none;
           }

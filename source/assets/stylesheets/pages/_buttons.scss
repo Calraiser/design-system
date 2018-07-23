@@ -4,23 +4,24 @@
 
 .p-buttons {
   .content-buttons {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 55px;
+    @include media($mobile) {
+      padding-right: 55px;
+    }
   }
 
   .content-buttons-block {
-    display: flex;
-    flex-direction: column;
-
-    .title {
-      color: $grey01;
-      margin-bottom: 45px;
-      font-size: rem-calc(16);
-      font-family: Telefonicabold;
+    .bx--type-h5 {
+      margin-bottom: 25px;
+      margin-left: 10px;
+      text-align: left;
     }
     .bx--type-p {
       font-size: rem-calc(14);
+      @include media($mobile) {
+        text-align: left;
+        margin-left: 15px;
+
+      }
     }
 
     .c-btn {

@@ -16,21 +16,27 @@ index: true
     | LUCA uses many colours in conjunction with iconography to visually differentiate between similar types of content, such as records of different object types. However, it’s important to not always rely on colour to provide visual differentiation. If too many use cases employ colour in this manner, the colours lose their meaning.
 
   .content-block
-    h2.bx--type-h4.u-text-blue Main gray scale
+    h2.bx--type-h4.u-text-blue Main grey scale
 
     p.bx--type-p
-      | Our grays can be used on most UI elements but should be limited to:
+      | Our greys can be used on most UI elements but should be limited to:
     ul.e-list
       li background colours
       li text colours
       li border colours
       li svg fill colours
 
-    .content-block-medium
-      .main-colors.d-flex
-        = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grayScale.primaryColors, :title => 'Primary color (heading & navigation)', :extraclass => 'rounded'}
-        = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grayScale.complementaryColors, :title => 'Complementary color (text, predictive text & icons)', :extraclass => 'rounded'}
-        = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grayScale.complementaryColors2, :title => 'Complementary color (background, borders, lines & separator)', :extraclass => 'rounded'}
+    .content-block
+      .main-colors
+        .row.center-xs
+          .col-lg-3.col-md-6.col-xs-12
+            = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grayScale.primaryColors, :title => 'Primary colour <br>(heading & navigation)', :extraclass => 'rounded'}
+          .col-lg-3.col-md-6.col-xs-12
+            = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grayScale.complementaryColors, :title => 'Complementary colour <br>(text, predictive text & icons)', :extraclass => 'rounded'}
+          .col-lg-3.col-md-6.col-xs-12
+            = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grayScale.complementaryColors2, :title => 'Complementary colour <br>(background, borders, lines & separator)', :extraclass => 'rounded'}
+          .col-lg-3.col-md-6.col-xs-12
+            = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.whiteColor.color, :title => 'Complementary colour <br> (bg cards & boxes)', :extraclass => 'rounded border-color'}
 
       = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grey.colors }
 
@@ -48,16 +54,20 @@ index: true
     p.bx--type-h4
       | Status colour  (for use on components that require a different state)
 
-    .content-block-medium
-      .main-colors.d-flex
-        = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.success, :title => 'Completed / Success/Call to action / Buttons, links & active states', :extraclass => 'rounded'}
-        = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.warning, :title => 'Warning / In progress', :extraclass => 'rounded'}
-        = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.alert, :title => 'Alert / Attention', :extraclass => 'rounded'}
-        = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.error, :title => 'Critical / Error', :extraclass => 'rounded'}
+    .content-block
+      .row.center-xs
+        .col-lg-3.col-md-6.col-xs-12
+          = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.success, :title => 'Completed / Success/Call to action / Buttons, links & active states', :extraclass => 'rounded'}
+        .col-lg-3.col-md-6.col-xs-12
+          = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.warning, :title => 'Warning / In progress', :extraclass => 'rounded'}
+        .col-lg-3.col-md-6.col-xs-12
+          = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.alert, :title => 'Alert / Attention', :extraclass => 'rounded'}
+        .col-lg-3.col-md-6.col-xs-12
+          = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.error, :title => 'Critical / Error', :extraclass => 'rounded'}
 
     h2.bx--type-h4 Visual Hierarchy
     p.bx--type-p
-      | Colour is used sparingly to draw attention to important elements and those that we want the user to take action on. Because most of the application is gray, pops of colour catch a user’s eye.
+      | Colour is used sparingly to draw attention to important elements and those that we want the user to take action on. Because most of the application is grey, pops of colour catch a user’s eye.
 
     h2.bx--type-h4.u-pt-5 Accessibility
     p.bx--type-p
@@ -73,12 +83,12 @@ index: true
     p.note
       | Different percentages of white (left) and black (right) added to our base colour can really fill out the range LUCA palette.
 
-  .content-block-medium
-    = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.green.colors, :colorTitle => '- Green - Color one', :extraclass => 'main-palette'}
-    = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.blue.colors, :colorTitle => '- Blue - Color two', :extraclass => 'main-palette'}
-    = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.yellow.colors, :colorTitle => '- Yellow - Color three', :extraclass => 'main-palette'}
-    = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.orange.colors, :colorTitle => '- Orange - Color four', :extraclass => 'main-palette'}
-    = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.pink.colors, :colorTitle => '- Pink - Color five', :extraclass => 'main-palette'}
+  .content-block
+    = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.green.colors, :colorTitle => '- Green - Colour one', :extraclass => 'main-palette'}
+    = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.blue.colors, :colorTitle => '- Blue - Colour two', :extraclass => 'main-palette'}
+    = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.yellow.colors, :colorTitle => '- Yellow - Colour three', :extraclass => 'main-palette'}
+    = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.orange.colors, :colorTitle => '- Orange - Colour four', :extraclass => 'main-palette'}
+    = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.pink.colors, :colorTitle => '- Pink - Colour five', :extraclass => 'main-palette'}
 
 
   .action.downloads

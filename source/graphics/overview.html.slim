@@ -47,15 +47,19 @@ index: true
       | Try to keep consistency between margin, padding and content when you scale or distribute the areas of information. Keep everything clear and priorizated.
 
     .image-block
-      .d-flex
-        = image_tag 'graphic-rules01.png', :class => 'u-pr-4'
-        = image_tag 'graphic-rules02.png', :class => 'u-pl-4'
+      .row.between-xs
+        .col-xs-12.col-md-6
+          = image_tag 'graphic-rules01.png'
+        .col-xs-12.col-md-6
+          = image_tag 'graphic-rules02.png'
 
     .content-block.u-pt-4
       .image-block
         h2.bx--type-h4.u-uppercase Examples
         .graph-wrapper
-          = svg_tag 'graphic-examples.svg'
+          .row
+            .col-xs-12
+              = svg_tag 'graphic-examples.svg'
 
       .image-block.u-pt-5
         .graph-wrapper

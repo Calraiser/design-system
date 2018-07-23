@@ -34,7 +34,10 @@
 				}
 			} @else {
 				.u-p#{$spacing-side-value}-#{$spacer-key} {
-					padding-#{$spacing-side-key}: $spacer-value;
+		
+					@include media($mobile) {
+						padding-#{$spacing-side-key}: $spacer-value;
+					}
 				}
 			}
 		}

@@ -165,7 +165,6 @@ $button-colors: (
 
     }
     &:hover, &.hover {
-      border: 2px solid $white;
       .ico-caret {
         background: image-url('ic-caret-white.svg') no-repeat 50% 50%;
         border-left: 2px solid $white;
