@@ -1,3 +1,6 @@
+whiteColor:
+  color:
+    white: ['#ffffff', '']
 grayScale:
   primaryColors:
     black: ['#000000', '']

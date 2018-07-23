@@ -10,8 +10,17 @@
     }
   }
 
+  .content-block {
+    .bx--type-h1 {
+      margin: 0 !important;
+    }
+  }
+
+  .column {
+    margin-bottom: 25px;
+  }
+
   .font-weigths {
-    width: 46%;
     margin-bottom: 50px;
     @include margin(30px null 40px null);
     .bx--type-p {
@@ -32,35 +41,6 @@
       &.bold {
         font-family: Telefonicabold;
       }
-    }
-  }
-
-  .hierarchy-table {
-    flex-wrap: wrap;
-    margin-top: 25px;
-    flex-direction: column;
-    @include media($mobile) {
-      flex-direction: row;
-    }
-    .column {
-      margin: 0 0 45px;
-      flex: 1 0 25%;
-      h1.bx--type-h1 {
-        margin: 0 !important;
-      }
-      .title {
-        margin-bottom: 20px;
-        @extend %txt-text-positive-bold;
-      }
-      .note {
-          @extend %txt-text-positive;
-      }
-
-    }
-    .hierarchy-ico {
-      @include size(50px);
-      display: block;
-      margin-top: 10px;
     }
   }
 }
