@@ -36,6 +36,10 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
 
   &.dark {
     background-color: $tooltip-bg-dark;
+    border: none;
+    .arrow {
+      border-color: transparent !important;
+    }
     .tooltip-content {
       color: $white;
     }
@@ -46,13 +50,13 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
       left: 50%;
       top: 100%;
       border-top-color: #ccc;
-      border-width: 8px;
+      border-width: 6px;
       @include transform(translate(-50%, 0));
       &:after {
         border-top-color: $tooltip-bg;
         border-width: 10px 10px 0;
         left: 50%;
-        @include transform(translate(-50%, -11px));
+        @include transform(translate(-50%, -12px));
       }
 
     }
@@ -113,13 +117,13 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
   top: 50%;
   right: 100%;
   border-right-color: #ccc;
-  border-width: 8px;
+  border-width: 6px;
   @include transform(translate(0, -50%));
   &:after {
     top: 50%;
     border-right-color: $tooltip-bg;
     border-width: 10px 10px 10px 0;
-    @include transform(translate(1px, -50%));
+    @include transform(translate(2px, -50%));
   }
 
 }
@@ -128,13 +132,13 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
   left: 50%;
   bottom: 100%;
   border-bottom-color: #ccc;
-  border-width: 8px;
+  border-width: 6px;
   @include transform(translate(-50%, 0));
   &:after {
     left: 50%;
     border-bottom-color: $tooltip-bg;
     border-width: 0 10px 10px;
-    @include transform(translate(-50%, 1px));
+    @include transform(translate(-50%, 2px));
     @include transform-origin(bottom);
   }
 }
@@ -143,13 +147,13 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
   top: 50%;
   left: 100%;
   border-left-color: #ccc;
-  border-width: 8px 0 8px 8px;
+  border-width: 6px;
   @include transform(translate(0, -50%));
   &:after {
     top: 50%;
     border-left-color: $tooltip-bg;
     border-width: 10px 0 10px 10px;
-    @include transform(translate(-11px, -50%));
+    @include transform(translate(-12px, -50%));
     @include transform-origin(left);
   }
 }
