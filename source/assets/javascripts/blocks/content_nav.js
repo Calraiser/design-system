@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+
+  $('.nav-content .back:not(#Guidelines)').on('click', 'a' ,function(e) {
+    e.preventDefault();
+    $(this).parent()
+    .attr('data_tooltip', 'Coming soon')
+    .attr('data_tooltip_pos','down')
+    .tooltip('show');
+  });
+
+
   var $menu = $('.sidebar-menu > li'),
       $submenu = $('.o-sidebar-submenu'),
       $close = $submenu.find('.close'),
