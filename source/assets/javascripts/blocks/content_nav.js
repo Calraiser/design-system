@@ -11,16 +11,16 @@ $(document).ready(function() {
   }
 
 
-  //$menu.on('click', 'a:not(#guidelines)', function(e) {
-    //e.preventDefault();
-    //$(this)
-    //.attr('data_tooltip', 'Coming soon')
-    //.attr('data_tooltip_pos','down')
-    //.tooltip('show');
-  //});
+  $menu.on('click', 'a:not(#guidelines)', function(e) {
+    e.preventDefault();
+    $(this)
+    .attr('data_tooltip', 'Coming soon')
+    .attr('data_tooltip_pos','down')
+    .tooltip('show');
+  });
 
-  //$menu.on('click', 'a#guidelines', function(e) {
-  $menu.on('click', 'a', function(e) {
+  $menu.on('click', 'a#guidelines', function(e) {
+
     e.preventDefault();
     $submenu.filter('.' + this.id).trigger('togglePanel');
 
