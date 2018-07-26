@@ -1,5 +1,6 @@
 $(function() {
     function e(e) {
+      return false;
       r ? e() : $.getJSON("/search.json", function(n) {
           r = lunr.Index.load(n.index), c = n.map, e()
       })
