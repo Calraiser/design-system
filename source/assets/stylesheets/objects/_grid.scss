@@ -107,3 +107,10 @@
     display: none;
   }
 }
+
+.image-wide-50 {
+  @include media($mobile) {
+    width: 50% !important;
+    height: 100%;
+  }
+}

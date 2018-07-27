@@ -36,18 +36,19 @@ $flipper-width: 300px;
         padding: 20px;
       }
       @include media($mobile) {
-        @include size(298px, 187px);
+        @include size(100%, 187px);
       }
     }
 
     .back {
-      @include size(250px, 253px);
-      padding: 24px 24px 0;
+      @include size(100%, 253px);
+      padding: 24px 0 0;
       .functions {
         margin-top: 20px;
       }
       .header {
         flex-direction: column;
+        padding: 0 20px;
         .text {
           font-size: rem-calc(14);
           line-height: 20px;
