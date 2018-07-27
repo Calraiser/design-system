@@ -6,7 +6,7 @@
           .front
             = svg_tag "#{element.image}"
             h4.bx--type-h4  = element.title
-          .back id="#{element.title}"
+          .back id="#{index}"
             = link_to element.link do
               .header
                 = svg_tag "#{element.imagexs}"

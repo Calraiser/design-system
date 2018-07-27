@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-  $('.nav-content .back:not(#Guidelines)').on('click', 'a' ,function(e) {
+  $('.nav-content .back:not(#0):not(#1)').on('click', 'a' ,function(e) {
     e.preventDefault();
     $(this).parent()
     .attr('data_tooltip', 'Coming soon')
@@ -21,7 +21,7 @@ $(document).ready(function() {
   }
 
 
-  $menu.on('click', 'a:not(#guidelines)', function(e) {
+  $menu.on('click', 'a:not(#guidelines):not(#graphics)', function(e) {
     e.preventDefault();
     $(this)
     .attr('data_tooltip', 'Coming soon')
@@ -29,7 +29,7 @@ $(document).ready(function() {
     .tooltip('show');
   });
 
-  $menu.on('click', 'a#guidelines', function(e) {
+  $menu.on('click', 'a#guidelines, a#graphics', function(e) {
 
     e.preventDefault();
     $submenu.filter('.' + this.id).trigger('togglePanel');
