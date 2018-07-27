@@ -20,9 +20,8 @@ $flipper-width: 300px;
     .front, .back  {
       margin-top: 18px;
       top: 0;
-      border-radius: 3px;
-      box-shadow: 0 1px 3px 0 rgba(63, 63, 68, 0.15),
-                  0 0 0 1px rgba(63, 63, 68, 0.05);
+      border-radius: 2px;
+      box-shadow: 0 0 4px 0 #ccc;
     }
 
     .front {
