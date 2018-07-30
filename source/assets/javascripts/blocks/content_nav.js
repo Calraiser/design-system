@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
 
-  $('.nav-content .back:not(#0):not(#1)').on('click', 'a' ,function(e) {
-    e.preventDefault();
-    $(this).parent()
-    .attr('data_tooltip', 'Coming soon')
-    .attr('data_tooltip_pos','down')
-    .tooltip('show');
-  });
+  // $('.nav-content .back:not(#0):not(#1)').on('click', 'a' ,function(e) {
+  //   e.preventDefault();
+  //   $(this).parent()
+  //   .attr('data_tooltip', 'Coming soon')
+  //   .attr('data_tooltip_pos','down')
+  //   .tooltip('show');
+  // });
 
 
   var $menu = $('.sidebar-menu > li'),
@@ -20,16 +20,16 @@ $(document).ready(function() {
     return false;
   }
 
+  //
+  // $menu.on('click', 'a:not(#guidelines):not(#graphics)', function(e) {
+  //   e.preventDefault();
+  //   $(this)
+  //   .attr('data_tooltip', 'Coming soon')
+  //   .attr('data_tooltip_pos','down')
+  //   .tooltip('show');
+  // });
 
-  $menu.on('click', 'a:not(#guidelines):not(#graphics)', function(e) {
-    e.preventDefault();
-    $(this)
-    .attr('data_tooltip', 'Coming soon')
-    .attr('data_tooltip_pos','down')
-    .tooltip('show');
-  });
-
-  $menu.on('click', 'a#guidelines, a#graphics', function(e) {
+  $menu.on('click', 'a', function(e) {
 
     e.preventDefault();
     $submenu.filter('.' + this.id).trigger('togglePanel');
