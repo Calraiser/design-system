@@ -8,6 +8,9 @@
   .action-item {
     text-align: center;
     margin-right: 100px;
+    .link {
+      font-size: rem-calc(14);
+    }
     .ai-ico {
       width: 60px;
     }

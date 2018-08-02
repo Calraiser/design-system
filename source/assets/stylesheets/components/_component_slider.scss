@@ -1,0 +1,65 @@
+.component-slider {
+  margin: 40px 0;
+  height: 200px;
+  .row {
+    align-items: flex-start;
+  }
+}
+
+.component--slider-content {
+  position: relative;
+}
+
+.component-item {
+  transition: left 0s 0.8s, visibility 0s 0.8s, opacity 0.5s;
+  opacity: 0;
+  @include position(absolute, -70px null null 0);
+  z-index: -1;
+
+  img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    float: left;
+  }
+
+  &.show {
+    opacity: 1;
+    transition: left 0s, visibility 0s, opacity 1.5s;
+    left: 0;
+  }
+}
+
+.component-menu {
+  border-left: 1px solid #ccc;
+  padding-left: 25px;
+
+  li {
+    list-style: none;
+    margin-bottom: 10px;
+
+    a {
+      @extend %txt-links-positive;
+      color: $grey;
+
+      &:hover {
+        color: $blue;
+      }
+
+      &:before {
+        background: $blue;
+      }
+
+      &.active {
+        color: $blue;
+        @extend %txt-links-positive;
+
+        &:before {
+          background: $blue;
+        }
+      }
+    }
+  }
+}

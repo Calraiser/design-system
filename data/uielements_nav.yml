@@ -20,5 +20,7 @@
     link: "/uielements/caption.html"
   - title: "Forms"
     link: "/uielements/forms.html"
+  - title: "Switch"
+    link: "/uielements/switch.html"
   - title: "Tooltips"
     link: "/uielements/tooltips.html"

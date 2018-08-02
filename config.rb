@@ -5,7 +5,7 @@ helpers StaticD3Helpers
 helpers MyAssetHandler
 
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true, input: 'GFM'
+set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 set :css_dir,     'assets/stylesheets'
 set :fonts_dir,   'assets/fonts'

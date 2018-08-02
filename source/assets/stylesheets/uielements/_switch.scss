@@ -1,0 +1,138 @@
+/* =============================================================================
+   SWITCH (uielements/_switch.scss)
+   ========================================================================== */
+
+
+.lds-switch {
+  .lds--switch-input,
+  .switch--label-on {
+    display: none;
+
+    &:disabled + .lds--switch-label {
+      span {
+        color: $grey02;
+      }
+
+      &:after {
+        border: 1px solid $grey02;
+      }
+
+      &:before {
+        background-color: $grey02;
+      }
+    }
+
+    &:checked + .lds--switch-label {
+      &:before {
+        background-color: $green;
+      }
+
+      &:after {
+        transform: translate(80%, -50%);
+        border: 1px solid $grey01;
+      }
+
+      .switch--label-on {
+        display: inline-block;
+      }
+
+      .switch--label-off {
+        display: none;
+      }
+    }
+  }
+
+  .lds--switch-label {
+    position: relative;
+    display: inline-block;
+    min-width: 112px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: left;
+    margin: 18px 24px 18px 12px;
+    padding: 0 0 0 39px;
+    max-width: 165px;
+    @include media($mobile) {
+      max-width: 200px;
+    }
+    @at-root {
+      .lds-switch {
+        .lds--switch-label {
+          margin: 9px 24px 9px 12px;
+        }
+      }
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      margin: 0;
+      outline: 0;
+      top: 10px;
+      transform: translate(0, -50%);
+      transition: all 0.3s ease;
+    }
+
+    &:before {
+      @include size(26px, 12px);
+      left: 1px;
+      background-color: $grey07;
+      border-radius: 8px;
+    }
+
+    &:after {
+      @include size(14px);
+      left: 0;
+      box-shadow: 0 0 4px 0 $grey07;
+      background-color: $white;
+      border: 1px solid $grey07;
+      border-radius: 50%;
+    }
+  }
+}
+
+// Examples
+.example-mob {
+  .lds--switch-label {
+    margin: 9px 24px 9px 0;
+    max-width: 165px;
+    span {
+      font-size: rem-calc(12);
+    }
+  }
+}
+
+.example-tab {
+  .lds--switch-label {
+    margin: 9px 24px 9px 0;
+    max-width: 170px;
+    span {
+      font-size: rem-calc(14);
+    }
+  }
+}
+
+.example-desk {
+  .lds--switch-label {
+    margin: 9px 24px 9px 0;
+    max-width: 390px;
+    span {
+      font-size: rem-calc(14);
+    }
+  }
+
+}
+
+.two--col-bg ,.four--col-bg {
+  margin-right: 10px;
+}
+.two--col-bg {
+  background: image-url('uicomponents/2-col-bg.svg') repeat-y;
+  width: 232px;
+}
+
+.four--col-bg {
+  background: image-url('uicomponents/4-col-bg.svg') repeat-y;
+  width: 475px;
+}

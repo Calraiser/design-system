@@ -41,7 +41,17 @@
   @extend %txt-note;
 }
 
+.bx--type-subH2 {
+  @extend %txt-subtitle-h2;
+}
 
+.bx--type-label {
+  @extend %txt-label;
+  &.selected {
+    @extend %txt-caption;
+
+  }
+}
 p {
   &.text {
     @extend %txt-text-positive;

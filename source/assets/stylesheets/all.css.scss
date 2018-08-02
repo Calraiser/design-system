@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+
+@import 'material-components-web';
+@import "@material/switch/mdc-switch";
+
 @import "vendors/normalize";
 @import "base/mixins";
 
@@ -26,6 +30,7 @@
 @import "components/actions_downloads";
 @import "components/spec_item";
 @import "components/features_block";
+@import "components/component_slider";
 
 // 3. layout/
 @import "layout/logo";
@@ -71,5 +76,8 @@
 @import "pages/brand";
 @import "pages/colors";
 
-// 8. blocks/
+// 9. blocks/
 @import "blocks/charts_type";
+
+// 10. uielements/
+@import "uielements/switch";

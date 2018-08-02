@@ -1,0 +1,24 @@
+
+
+.component-slider
+  .row.between-xs
+    .col-xs-7
+      .component--slider-content
+        .component-item#spacing.show
+          = image_tag 'uicomponents/switch/anatomy_02.png'
+
+        .component-item#padding
+          = image_tag 'uicomponents/switch/anatomy_03.png'
+
+        .component-item#specifications
+          = image_tag 'uicomponents/switch/anatomy_04.png'
+
+    .col-xs-5
+      .component-menu
+        ul
+          li
+            = link_to 'Spacing', '#', id: 'spacing', class: 'active'
+          li
+            = link_to 'Padding', '#', id: 'padding'
+          li
+            = link_to 'Specifications', '#', id: 'specifications'

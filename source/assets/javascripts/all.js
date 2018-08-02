@@ -1,4 +1,5 @@
 
+//= require material-components-web
 //= require ./vendors/jquery.js
 //= require ./vendors/jquery-ui.js
 //= require ./vendors/clipboard.min.js
@@ -9,6 +10,7 @@
 //= require ./blocks/responsive_nav.js
 
 //= require ./components/code_block.js
+//= require ./components/component_slider.js
 
 //= require common.js
 

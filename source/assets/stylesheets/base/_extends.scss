@@ -95,10 +95,10 @@
 }
 
 %txt-paragraph {
-  @include text-style(16, 24, Telefonicaregular, $grey05);
+  @include text-style(14, 24, Telefonicaregular, $grey05);
 
   @include media($medium-desktop) {
-    @include text-style(18, 24, Telefonicaregular, $grey05);
+    @include text-style(16, 24, Telefonicaregular, $grey05);
   }
 }
 
@@ -115,6 +115,14 @@
 
   @include media($medium-desktop) {
     @include text-style(14, 16, Telefonicabold, $grey05);
+  }
+}
+
+%txt-label {
+  @include text-style(12, 16, Telefonicaregular, $grey05);
+
+  @include media($medium-desktop) {
+    @include text-style(14, 16, Telefonicaregular, $grey05);
   }
 }
 
@@ -148,6 +156,14 @@
 
   @include media($medium-desktop) {
     @include text-style(36, 40, Telefonicalight, $blue);
+  }
+}
+
+%txt-subtitle-h2 {
+  @include text-style(14, 25, Telefonicalight, $black);
+
+  @include media($medium-desktop) {
+    @include text-style(14, 40, Telefonicalight, $black);
   }
 }
 
