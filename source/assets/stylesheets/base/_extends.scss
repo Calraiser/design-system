@@ -95,10 +95,10 @@
 }
 
 %txt-paragraph {
-  @include text-style(14, 24, Telefonicaregular, $grey05);
+  @include text-style(16, 24, Telefonicaregular, $grey05);
 
   @include media($medium-desktop) {
-    @include text-style(16, 24, Telefonicaregular, $grey05);
+    @include text-style(14, 24, Telefonicaregular, $grey05);
   }
 }
 
@@ -119,10 +119,10 @@
 }
 
 %txt-label {
-  @include text-style(12, 16, Telefonicaregular, $grey05);
+  @include text-style(14, 20, Telefonicaregular, $grey05);
 
   @include media($medium-desktop) {
-    @include text-style(14, 16, Telefonicaregular, $grey05);
+    @include text-style(12, 20, Telefonicaregular, $grey05);
   }
 }
 

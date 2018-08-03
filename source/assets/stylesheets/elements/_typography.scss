@@ -48,8 +48,7 @@
 .bx--type-label {
   @extend %txt-label;
   &.selected {
-    @extend %txt-caption;
-
+    font-family: Telefonicabold;
   }
 }
 p {

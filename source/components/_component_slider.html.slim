@@ -2,23 +2,48 @@
 
 .component-slider
   .row.between-xs
-    .col-xs-7
+    .col-xs-10
       .component--slider-content
+        .row
+          .col-xs-4
+            = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
+          .col-xs-4
+            = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
+          .col-xs-4
+            = partial :"components/_switch", :locals => { :disabled => true, :checked => false, :label_selected => 'Disabled', :label_unselected => 'Disabled' }
+
         .component-item#spacing.show
-          = image_tag 'uicomponents/switch/anatomy_02.png'
+          .row
+            .col-xs-4
+              .component--item-image.spacing style="background-image:url('/assets/images/uicomponents/switch/spacing_01.png')"
+            .col-xs-4
+              .component--item-image.spacing style="background-image:url('/assets/images/uicomponents/switch/spacing_01.png')"
+            .col-xs-4
+              .component--item-image.spacing style="background-image:url('/assets/images/uicomponents/switch/spacing_01.png')"
 
         .component-item#padding
-          = image_tag 'uicomponents/switch/anatomy_03.png'
+          .row
+            .col-xs-4
+              .component--item-image.padding style="background-image:url('/assets/images/uicomponents/switch/padding_01.png')"
+            .col-xs-4
+              .component--item-image.padding style="background-image:url('/assets/images/uicomponents/switch/padding_02.png')"
+            .col-xs-4
+              .component--item-image.padding style="background-image:url('/assets/images/uicomponents/switch/padding_03.png')"
+
 
         .component-item#specifications
-          = image_tag 'uicomponents/switch/anatomy_04.png'
+          .row
+            .col-xs-4
+              .component--item-image.specs style="background-image:url('/assets/images/uicomponents/switch/spec_01.png')"
+            .col-xs-4
+              .component--item-image.specs style="background-image:url('/assets/images/uicomponents/switch/spec_02.png')"
+            .col-xs-4
+              .component--item-image.specs style="background-image:url('/assets/images/uicomponents/switch/spec_03.png')"
 
-    .col-xs-5
+
+    .col-xs-2
       .component-menu
         ul
-          li
-            = link_to 'Spacing', '#', id: 'spacing', class: 'active'
-          li
-            = link_to 'Padding', '#', id: 'padding'
-          li
-            = link_to 'Specifications', '#', id: 'specifications'
+          li = link_to 'Spacing', '#', id: 'spacing', class: 'active'
+          li = link_to 'Padding', '#', id: 'padding'
+          li = link_to 'Specifications', '#', id: 'specifications'
