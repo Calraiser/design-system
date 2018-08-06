@@ -1,0 +1,19 @@
+items:
+  switch:
+    - id: 'padding'
+      images:
+        image01: '/assets/images/uicomponents/switch/padding_01.png'
+        image02: '/assets/images/uicomponents/switch/padding_02.png'
+        image03: '/assets/images/uicomponents/switch/padding_03.png'
+
+    - id: 'measures'
+      images:
+        image01: '/assets/images/uicomponents/switch/measure_01.png'
+        image02: '/assets/images/uicomponents/switch/measure_02.png'
+        image03: '/assets/images/uicomponents/switch/measure_03.png'
+
+    - id: 'specifications'
+      images:
+        image01: '/assets/images/uicomponents/switch/spec_01.png'
+        image02: '/assets/images/uicomponents/switch/spec_02.png'
+        image03: '/assets/images/uicomponents/switch/spec_03.png'

@@ -12,38 +12,16 @@
           .col-xs-4
             = partial :"components/_switch", :locals => { :disabled => true, :checked => false, :label_selected => 'Disabled', :label_unselected => 'Disabled' }
 
-        .component-item#spacing.show
-          .row
-            .col-xs-4
-              .component--item-image.spacing style="background-image:url('/assets/images/uicomponents/switch/spacing_01.png')"
-            .col-xs-4
-              .component--item-image.spacing style="background-image:url('/assets/images/uicomponents/switch/spacing_01.png')"
-            .col-xs-4
-              .component--item-image.spacing style="background-image:url('/assets/images/uicomponents/switch/spacing_01.png')"
-
-        .component-item#padding
-          .row
-            .col-xs-4
-              .component--item-image.padding style="background-image:url('/assets/images/uicomponents/switch/padding_01.png')"
-            .col-xs-4
-              .component--item-image.padding style="background-image:url('/assets/images/uicomponents/switch/padding_02.png')"
-            .col-xs-4
-              .component--item-image.padding style="background-image:url('/assets/images/uicomponents/switch/padding_03.png')"
-
-
-        .component-item#specifications
-          .row
-            .col-xs-4
-              .component--item-image.specs style="background-image:url('/assets/images/uicomponents/switch/spec_01.png')"
-            .col-xs-4
-              .component--item-image.specs style="background-image:url('/assets/images/uicomponents/switch/spec_02.png')"
-            .col-xs-4
-              .component--item-image.specs style="background-image:url('/assets/images/uicomponents/switch/spec_03.png')"
-
+        - item.each_with_index do |element, index|
+          .component-item class=('show' if index === 0) id="#{element[:id]}"
+            .row
+              - element.images.each do |item|
+                .col-xs-4
+                  .component--item-image class="#{element[:id]}"
+                   = image_tag item[1]
 
     .col-xs-2
       .component-menu
         ul
-          li = link_to 'Spacing', '#', id: 'spacing', class: 'active'
-          li = link_to 'Padding', '#', id: 'padding'
-          li = link_to 'Specifications', '#', id: 'specifications'
+          - item[0...5].each_with_index do |element, index|
+            li = link_to element[:id].capitalize, '#', id: element[:id] , class: ('active' if index === 0)

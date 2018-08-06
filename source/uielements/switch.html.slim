@@ -38,16 +38,17 @@ index: true
 
   .content-block.u-pt-6
     h2.bx--type-h4.u-text-blue Anatomy
-    = partial :"components/_component_slider", :locals => { }
+    = partial :"components/_component_slider", :locals => { :item => data.component_slider.items.switch }
 
   .content-block
     h2.bx--type-h4.u-text-blue Spacing
     p.bx--type-p
-      | The vertical spacing starts from the path limit of the longest option. Maximum characters: 36 / Minimum characters: 2.
+      | The vertical spacing starts from the path limit of the longest option. For more than three options, the switches should be disposed in:
+
     ul.e-list
       li Mobile: 1 column
-      li Tablet: 2 columns
-      li Desktop: 4 columns
+      li Tablet: 2 - 4 columns
+      li Desktop: 2 - 4 - 8 columns
     p.bx--type-p.u-pt-2
       | You can find more info about the column system in the &nbsp;
       = link_to 'Layout page', '/guidelines/layout.html', class: 'blue-link'
