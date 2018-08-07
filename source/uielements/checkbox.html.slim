@@ -1,0 +1,92 @@
+---
+page_title: Checkbox
+description: Checkboxes are most commonly used to give users a way to make a range of selections (zero, one, or multiple).
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p
+    | Checkboxes are most commonly used to give users a way to make a range of selections (zero, one, or multiple). They can be used:
+    ul.e-list
+      li When a user can select any number of choices from a set list.
+      li When users need to see all the available options at a glance.
+
+  .content-block
+    h2.bx--type-h4.u-text-blue States
+    p.bx--type-p
+      | These are the different states you can find the checkbox component.
+
+    .row.u-pt-7.u-pb-7.u-pl-6
+      .col-xs-3
+        = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Default', :label_unselected => 'Default' }
+
+      .col-xs-3
+        = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
+
+      .col-xs-3
+        = partial :"components/_checkbox", :locals => { :disabled => true, :checked => false, :label_selected => 'Disabled', :label_unselected => 'Disabled' }
+
+      .col-xs-3
+        = partial :"components/_checkbox", :locals => { :multiple => true, :checked => false, :label_selected => 'Multiple check', :label_unselected => 'Multiple check' }
+
+    h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+    .code-wrapper
+      .code-content id="checkbox-code"
+        = code("html") do
+          = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
+
+      = partial :"components/_code_actions", :locals => { :target => '#checkbox-code'}
+
+  .content-block.u-pt-6
+    h2.bx--type-h4.u-text-blue Anatomy
+    = partial :"components/_component_slider", :locals => { :custom_form => 'checkbox', :item => data.component_slider.items.checkbox }
+
+  .content-block
+    h2.bx--type-h4.u-text-blue Spacing
+    p.bx--type-p
+      | The vertical spacing starts from the path limit of the longest option. For more than three options, the checkboxes should be disposed in:
+
+    ul.e-list
+      li Mobile: 1 column
+      li Tablet: 2 - 4 columns
+      li Desktop: 2 - 4 - 8 columns
+    p.bx--type-p.u-pt-2
+      | You can find more info about the column system in the &nbsp;
+      = link_to 'Layout page', '/guidelines/layout.html', class: 'blue-link'
+
+  .content-block
+    h3.bx--type-subH2.u-uppercase.u-pt-2 Mobile
+    .col-first.two--col-bg.example-mob
+      = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
+      = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
+      = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+
+    h3.bx--type-subH2.u-uppercase.u-pt-8 Tablet
+    .row.row-np.example-tab
+      .col-first.two--col-bg
+        = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
+        = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
+        = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+      .col-first.two--col-bg
+        = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
+        = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
+        = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+
+    h3.bx--type-subH2.u-uppercase.u-pt-8 Desktop
+    .row.row-np.example-desk
+      .col-first.four--col-bg
+        = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' }
+        = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }
+      .col-first.two--col-bg
+        = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'On', :label_unselected => 'Off' }
+        = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
+      .col-first.two--col-bg
+        = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
+        = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }

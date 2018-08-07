@@ -1,6 +1,6 @@
 ---
-page_title: Switch
-description: Switches communicate an action a user can take. It is a control that is used to quickly switch between two possible states.
+page_title: Tabs
+description: Tabs organize and allow navigation between groups of content that are related and at the same level of hierarchy. Tabs can be nested into components like cards and sheets. Tabs control the UI region displayed below them.
 
 layout: content
 index: true
@@ -13,17 +13,11 @@ index: true
   .content-block
     h2.bx--type-h4.u-text-blue States
     p.bx--type-p
-      | These are the different states you can find the switch component.
+      | These are the different states of the tabs.
 
     .row.u-pt-7.u-pb-7.u-pl-6
-      .col-xs-4
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
-
-      .col-xs-4
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
-
-      .col-xs-4
-        = partial :"components/_switch", :locals => { :disabled => true, :checked => false, :label_selected => 'Disabled', :label_unselected => 'Disabled' }
+      .col-xs-12
+        = partial :"components/_tabs", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
 
 
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save

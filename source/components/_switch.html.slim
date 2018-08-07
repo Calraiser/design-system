@@ -3,7 +3,7 @@
 - label_selected   ||= false
 - label_unselected ||= false
 
-.lds-switch
+.lds--custom-input.switch
   input type="checkbox" id=(newId = rand(1..100)) name="set-name" class="lds--switch-input" checked= ('checked' if checked.present?) disabled= ('disabled' if disabled.present?)
     label for=(newId.dup) class="lds--switch-label"
       - if label_selected.present? || label_unselected.present?

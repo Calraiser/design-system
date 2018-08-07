@@ -1,19 +1,60 @@
 items:
+  ## Switch
   switch:
     - id: 'padding'
       images:
-        image01: '/assets/images/uicomponents/switch/padding_01.png'
-        image02: '/assets/images/uicomponents/switch/padding_02.png'
-        image03: '/assets/images/uicomponents/switch/padding_03.png'
+        image01: '/assets/images/uicomponents/switch/padding.png'
+        # image02: '/assets/images/uicomponents/switch/padding_02.png'
+        # image03: '/assets/images/uicomponents/switch/padding_03.png'
 
     - id: 'measures'
       images:
-        image01: '/assets/images/uicomponents/switch/measure_01.png'
-        image02: '/assets/images/uicomponents/switch/measure_02.png'
-        image03: '/assets/images/uicomponents/switch/measure_03.png'
+        image01: '/assets/images/uicomponents/switch/measures.png'
+        # image02: '/assets/images/uicomponents/switch/measure_02.png'
+        # image03: '/assets/images/uicomponents/switch/measure_03.png'
 
     - id: 'specifications'
       images:
-        image01: '/assets/images/uicomponents/switch/spec_01.png'
-        image02: '/assets/images/uicomponents/switch/spec_02.png'
-        image03: '/assets/images/uicomponents/switch/spec_03.png'
+        image01: '/assets/images/uicomponents/switch/specs.png'
+        # image02: '/assets/images/uicomponents/switch/spec_02.png'
+        # image03: '/assets/images/uicomponents/switch/spec_03.png'
+
+  ## Checkbox
+  checkbox:
+    - id: 'padding'
+      images:
+        image01: '/assets/images/uicomponents/checkbox/padding.png'
+        # image02: '/assets/images/uicomponents/checkbox/padding_02.png'
+        # image03: '/assets/images/uicomponents/checkbox/padding_03.png'
+
+    - id: 'measures'
+      images:
+        image01: '/assets/images/uicomponents/checkbox/measures.png'
+        # image02: '/assets/images/uicomponents/checkbox/measures_02.png'
+        # image03: '/assets/images/uicomponents/checkbox/measures_03.png'
+
+    - id: 'specifications'
+      images:
+        image01: '/assets/images/uicomponents/checkbox/specs.png'
+        # image02: '/assets/images/uicomponents/checkbox/specs_02.png'
+        # image03: '/assets/images/uicomponents/checkbox/specs_03.png'
+
+  ## Radio Buttons
+  radio:
+    - id: 'padding'
+      images:
+        image01: '/assets/images/uicomponents/radio/padding.png'
+        # image02: '/assets/images/uicomponents/radio/padding_01.png'
+        # image03: '/assets/images/uicomponents/radio/padding_01.png'
+
+    - id: 'measures'
+      images:
+        image01: '/assets/images/uicomponents/radio/measures.png'
+        # image02: '/assets/images/uicomponents/radio/measures_02.png'
+        # image03: '/assets/images/uicomponents/radio/measures_03.png'
+
+    - id: 'specifications'
+      images:
+        image01: '/assets/images/uicomponents/radio/specs.png'
+        # image02: '/assets/images/uicomponents/radio/specs_02.png'
+        # image03: '/assets/images/uicomponents/radio/specs_03.png'

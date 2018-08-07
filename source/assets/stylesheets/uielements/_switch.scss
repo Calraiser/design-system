@@ -3,7 +3,7 @@
    ========================================================================== */
 
 
-.lds-switch {
+.switch {
   .lds--switch-input,
   .switch--label-on {
     display: none;
@@ -49,20 +49,7 @@
     cursor: pointer;
     font-weight: 500;
     text-align: left;
-    margin: 18px 24px 18px 12px;
     padding: 0 0 0 39px;
-    max-width: 165px;
-
-    @include media($mobile) {
-      max-width: 200px;
-    }
-    @at-root {
-      .lds-switch {
-        .lds--switch-label {
-          margin: 9px 24px 9px 12px;
-        }
-      }
-    }
 
     &:after,
     &:before {
@@ -95,8 +82,7 @@
 
 // Examples
 .example-mob {
-  .lds--switch-label {
-    margin: 9px 24px 9px 0;
+  label {
     max-width: 165px;
     span {
       font-size: rem-calc(12);
@@ -105,8 +91,7 @@
 }
 
 .example-tab {
-  .lds--switch-label {
-    margin: 9px 24px 9px 0;
+  label {
     max-width: 170px;
     span {
       font-size: rem-calc(14);
@@ -115,8 +100,7 @@
 }
 
 .example-desk {
-  .lds--switch-label {
-    margin: 9px 24px 9px 0;
+  label {
     max-width: 390px;
     span {
       font-size: rem-calc(14);

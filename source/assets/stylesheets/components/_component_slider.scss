@@ -8,7 +8,7 @@
 
 .component--slider-content {
   position: relative;
-  .lds-switch {
+  .lds--custom-input {
     margin-top: 49px;
     margin-left: 31px;
     padding: 0 30px;
@@ -18,15 +18,17 @@
 .component-item {
   transition: left 0s 0.8s, visibility 0s 0.8s, opacity 0.5s;
   opacity: 0;
-  @include position(absolute, -48px null null 0);
   z-index: -1;
+
+  position: absolute;
 
   width: 100%;
 
   img {
     padding: 0;
     margin: 0;
-    width: 260px;
+    width: 100%;
+    max-width: 1200px;
   }
 
   &.show {
@@ -35,6 +37,7 @@
     left: 0;
   }
   .component--item-image {
+    @include position(absolute, -40px null null null);
   }
 }
 

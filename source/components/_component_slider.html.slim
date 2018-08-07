@@ -1,24 +1,20 @@
-
+- custom_form ||= ''
 
 .component-slider
   .row.between-xs
     .col-xs-10
       .component--slider-content
-        .row
-          .col-xs-4
-            = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
-          .col-xs-4
-            = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
-          .col-xs-4
-            = partial :"components/_switch", :locals => { :disabled => true, :checked => false, :label_selected => 'Disabled', :label_unselected => 'Disabled' }
-
         - item.each_with_index do |element, index|
           .component-item class=('show' if index === 0) id="#{element[:id]}"
-            .row
-              - element.images.each do |item|
-                .col-xs-4
-                  .component--item-image class="#{element[:id]}"
-                   = image_tag item[1]
+            - element.images.each_with_index do |item, index|
+                .component--item-image class="#{element[:id]}"
+                  = image_tag item[1]
+                  / - if index == 1
+                  /   = partial :"components/_#{custom_form}", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
+                  / - elsif index == 2
+                  /   = partial :"components/_#{custom_form}", :locals => { :disabled => true, :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
+                  / - else
+                  /   = partial :"components/_#{custom_form}", :locals => { :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
 
     .col-xs-2
       .component-menu
