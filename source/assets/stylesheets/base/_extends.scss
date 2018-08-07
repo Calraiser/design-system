@@ -119,7 +119,7 @@
 }
 
 %txt-label {
-  @include text-style(12, 18, Telefonicaregular, $grey05);
+  @include text-style(14, 18, Telefonicaregular, $grey05);
 
   @include media($medium-desktop) {
     @include text-style(14, 18, Telefonicaregular, $grey05);
