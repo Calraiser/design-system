@@ -55,7 +55,67 @@ $colorPalette: (
   pink06: #99005B,
   pink07: #66003D,
   pink08: #33001E,
-  red: #F80000
+  red: #F80000,
+  viz01_1: #FF7A00,
+  viz01_2: #FF0099,
+  viz01_3: #FFF000,
+  viz01_4: #F80000,
+  viz02_1: #0066DD,
+  viz02_2: #393999,
+  viz02_3: #8600DD,
+  viz02_4: #FF72FF,
+  viz02_5: #60CCCC,
+
+  varient1_1: #CCE0F8,
+  varient1_2: #99C1F1,
+  varient1_3: #66A3EA,
+  varient1_4: #3384E3,
+  varient1_5: #0066DD,
+  varient1_6: #0051B0,
+  varient1_7: #003D84,
+  varient1_8: #002858,
+  varient1_9: #011B40,
+
+  varient2_1: #D7D7EA,
+  varient2_2: #AFAFD6,
+  varient2_3: #8888C1,
+  varient2_4: #6060AD,
+  varient2_5: #393999,
+  varient2_6: #2D2D7A,
+  varient2_7: #22225B,
+  varient2_8: #16163D,
+  varient2_9: #0D0C2B,
+
+  varient3_1: #E6CCF8,
+  varient3_2: #CE99F1,
+  varient3_3: #B666EA,
+  varient3_4: #9E33E3,
+  varient3_5: #8600DD,
+  varient3_6: #6B00B0,
+  varient3_7: #500084,
+  varient3_8: #350058,
+  varient3_9: #240040,
+
+  varient4_1: #FFE2FF,
+  varient4_2: #FFC6FF,
+  varient4_3: #FFAAFF,
+  varient4_4: #FF8EFF,
+  varient4_5: #FF72FF,
+  varient4_6: #CC5BCC,
+  varient4_7: #994499,
+  varient4_8: #662D66,
+  varient4_9: #4D1D4D,
+
+  varient5_1: #DFF4F4,
+  varient5_2: #BFEAEA,
+  varient5_3: #9FE0E0,
+  varient5_4: #7FD6D6,
+  varient5_5: #60CCCC,
+  varient5_6: #4CA3A3,
+  varient5_7: #397A7A,
+  varient5_8: #265151,
+  varient5_9: #1A393B,
+
 );
 
 .p-colors {
@@ -88,6 +148,11 @@ $colorPalette: (
           border: 1px solid #979797;
         }
       }
+      &.viz-colors {
+        .swatches {
+          margin-right: 60px;
+        }
+      }
     }
 
     &.main-palette {
@@ -99,7 +164,15 @@ $colorPalette: (
 
       .color-swatch {
         @each $color, $value in ($colorPalette) {
-          &.#{$color}[class*="04"] {
+          &.#{$color}[class*="_5"] {
+            border-radius: 50%;
+            + .item {
+              span {
+                display: none;
+              }
+            }
+          }
+          &.#{$color}[class*="04"], &.#{$color}[class*="_5"], {
             + .item {
               color: map-get($colorPalette, $color);
               order: -1;
@@ -114,7 +187,8 @@ $colorPalette: (
                 content: '#{$value}';
                 @include position (absolute, -15px null null 0);
                 margin-top: -4px;
-                margin-left: 12px;
+                left: 50%;
+                transform: translateX(-50%);
               }
             }
           }
@@ -209,7 +283,7 @@ $colorPalette: (
     }
   }
 
-  // TO-DO Refactor
+  // TODO Refactor
   .color-usage {
     .blue-variant {
       .percentage {

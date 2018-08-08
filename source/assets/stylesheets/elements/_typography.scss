@@ -19,6 +19,9 @@
   &.text-bold {
     font-family: Telefonicabold;
   }
+  &.small {
+    @extend %txt-small;
+  }
 }
 
 .bx--type-b {
@@ -44,6 +47,11 @@
 .bx--type-subH2 {
   @extend %txt-subtitle-h2;
 }
+
+.bx--type-subH2b {
+  @extend %txt-subtitle-h2-bold;
+}
+
 
 .bx--type-label {
   @extend %txt-label;

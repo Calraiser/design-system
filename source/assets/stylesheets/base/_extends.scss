@@ -160,12 +160,21 @@
 }
 
 %txt-subtitle-h2 {
-  @include text-style(14, 25, Telefonicalight, $black);
+  @include text-style(14, 20, Telefonicalight, $black);
 
   @include media($medium-desktop) {
-    @include text-style(14, 40, Telefonicalight, $black);
+    @include text-style(14, 20, Telefonicalight, $black);
   }
 }
+
+%txt-subtitle-h2-bold {
+  @include text-style(14, 20, Telefonicabold, $black);
+
+  @include media($medium-desktop) {
+    @include text-style(14, 20, Telefonicabold, $black);
+  }
+}
+
 
 %txt-text-positive-bold {
   @include text-style(18, 24, Telefonicabold, $grey05);
@@ -196,6 +205,14 @@
 
   @include media($medium-desktop) {
     @include text-style(14, 19, Telefonicaregular, $grey);
+  }
+}
+
+%txt-small {
+  @include text-style(9, 19, Telefonicaregular, $grey);
+
+  @include media($medium-desktop) {
+    @include text-style(9, 19, Telefonicaregular, $grey);
   }
 }
 
