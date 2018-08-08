@@ -165,7 +165,6 @@ $colorPalette: (
       .color-swatch {
         @each $color, $value in ($colorPalette) {
           &.#{$color}[class*="_5"] {
-            border-radius: 50%;
             + .item {
               span {
                 display: none;
@@ -173,6 +172,7 @@ $colorPalette: (
             }
           }
           &.#{$color}[class*="04"], &.#{$color}[class*="_5"], {
+            border-radius: 50%;
             + .item {
               color: map-get($colorPalette, $color);
               order: -1;

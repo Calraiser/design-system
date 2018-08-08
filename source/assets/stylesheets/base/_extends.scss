@@ -209,10 +209,10 @@
 }
 
 %txt-small {
-  @include text-style(9, 19, Telefonicaregular, $grey);
+  @include text-style(14, 19, Telefonicaregular, $grey);
 
   @include media($medium-desktop) {
-    @include text-style(9, 19, Telefonicaregular, $grey);
+    @include text-style(14, 19, Telefonicaregular, $grey);
   }
 }
 
