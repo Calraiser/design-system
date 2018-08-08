@@ -20,7 +20,7 @@ $(document).ready(function() {
     return false;
   }
 
-  //
+
   $menu.on('click', 'a:not(#guidelines):not(#graphics)', function(e) {
     e.preventDefault();
     $(this)
@@ -30,7 +30,6 @@ $(document).ready(function() {
   });
 
   $menu.on('click', 'a', function(e) {
-
     e.preventDefault();
     $submenu.filter('.' + this.id).trigger('togglePanel');
 

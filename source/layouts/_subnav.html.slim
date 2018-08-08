@@ -18,16 +18,16 @@
 
 
 /!Submenu UI Elements
-- if data.has_key? data_uielements
-  .o-sidebar-submenu.uielements
-    .submenu-content
-      span.close = svg_tag 'ic-close.svg'
-      - data[data_uielements].each do |element|
-        h2.title = element.header
-        ul
-          - element.items.each_with_index do |item|
-            li.item
-              = link_to item.title, item.link, active_class(item.link)
+/ - if data.has_key? data_uielements
+/   .o-sidebar-submenu.uielements
+/     .submenu-content
+/       span.close = svg_tag 'ic-close.svg'
+/       - data[data_uielements].each do |element|
+/         h2.title = element.header
+/         ul
+/           - element.items.each_with_index do |item|
+/             li.item
+/               = link_to item.title, item.link, active_class(item.link)
 
 /!Submenu Graphics
 - if data.has_key? data_graphics
@@ -43,13 +43,13 @@
 
 
 /!Submenu Resources
-- if data.has_key? data_resources
-  .o-sidebar-submenu.resources
-    .submenu-content
-      span.close = svg_tag 'ic-close.svg'
-      - data[data_resources].each do |element|
-        h2.title = element.header
-        ul
-          - element.items.each_with_index do |item|
-            li.item
-              = link_to item.title, item.link, active_class(item.link)
+/ - if data.has_key? data_resources
+/   .o-sidebar-submenu.resources
+/     .submenu-content
+/       span.close = svg_tag 'ic-close.svg'
+/       - data[data_resources].each do |element|
+/         h2.title = element.header
+/         ul
+/           - element.items.each_with_index do |item|
+/             li.item
+/               = link_to item.title, item.link, active_class(item.link)
