@@ -1,86 +1,68 @@
-$cyan: #00bcd4;
-$yellow: #ffeb3b;
-$grey: #9e9e9e;
+/* =============================================================================
+   TABS (uielements/_tabs.scss)
+   ========================================================================== */
 
-$num-of-tabs: 3;
 
-@mixin tabs {
-  @for $i from 1 through $num-of-tabs {
-    &:nth-of-type(#{$i}) {
-      &:checked {
-        ~ .slide {
-          left: calc((100% / #{$num-of-tabs}) * #{$i - 1});
+.lds-tabs {
+  width: 100%;
+  position: relative;
+  display: flex;
+  @include media($mobile) {
+    width: 50%;
+  }
+  input[type="radio"][name="tabs"] {
+    @include position(absolute, 10px null null 10px);
+    z-index: -1;
+    &:checked {
+      + .tab-label-content {
+        border-radius: 2px;
+        box-shadow: inset 0 0 4px 0 $grey07;
+        background-color: $grey03;
+        background-image: none;
+        border: solid 1px $grey02;
+        label {
+          color: $grey;
+          font-family: Telefonicabold;
+        }
+        .tab-content {
+          display: block;
         }
       }
     }
   }
-}
 
-
-.tab-wrap {
-  width: 50%;
-  margin-left: 20%;
-  position: relative;
-  display: flex;
-}
-
-input[type="radio"][name="tabs"] {
-  position: absolute;
-  z-index: -1;
-  &:checked {
-    + .tab-label-content {
-      label {
-        color: white;
-      }
-      .tab-content {
-        display: block;
-      }
+  .tab-label {
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: rem-calc(14);
+    @include media($mobile) {
+      font-size: rem-calc(16);
     }
   }
-  @include tabs;
-  &:first-of-type {
-    &:checked {
-      ~ .slide {
-        left: 0;
-      }
+  .tab-label-content {
+    width: 100%;
+    box-shadow: 0 0 4px 0 $grey07;
+    background-image: linear-gradient(to bottom, $white, #f9fafb);
+    border: solid 1px $grey02;
+    text-align: center;
+    display: block;
+    padding: 3px 0 5px;
+    .tab-content {
+      @include position(absolute, 70px null null 0);
+      line-height: 130%;
+      display: none;
     }
   }
 }
 
-label {
-  cursor: pointer;
-  color: $grey;
-  background-color: $white;
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 56px;
-  transition: color 0.2s ease;
-  width: 100%;
-}
-
-.slide {
-  background: $yellow;
-  width: calc(100% / #{$num-of-tabs});
-  height: 4px;
-  position: absolute;
-  left: 0;
-  top: calc(100% - 4px);
-  transition: left 0.3s ease-out;
-}
-
-.tab-label-content {
-  width: 100%;
-  .tab-content {
-    position: absolute;
-    top: 100px;
-    left: 16px;
-    line-height: 130%;
-    display: none;
+.example-mob {
+  .tab-label {
+    font-size: rem-calc(14);
   }
 }
+
 
 @media screen and (max-width: 800px) {
 

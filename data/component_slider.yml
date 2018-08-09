@@ -58,3 +58,42 @@ items:
         image01: '/assets/images/uicomponents/radio/specs.png'
         # image02: '/assets/images/uicomponents/radio/specs_02.png'
         # image03: '/assets/images/uicomponents/radio/specs_03.png'
+
+  ## Tabs
+  tabs:
+    - id: 'padding'
+      images:
+        image01: '/assets/images/uicomponents/tabs/tabs-padding.png'
+        # image02: '/assets/images/uicomponents/radio/padding_01.png'
+        # image03: '/assets/images/uicomponents/radio/padding_01.png'
+
+    - id: 'measures'
+      images:
+        image01: '/assets/images/uicomponents/tabs/tabs-measures.png'
+        # image02: '/assets/images/uicomponents/radio/measures_02.png'
+        # image03: '/assets/images/uicomponents/radio/measures_03.png'
+
+    - id: 'specifications'
+      images:
+        image01: '/assets/images/uicomponents/tabs/tabs-specs.png'
+        # image02: '/assets/images/uicomponents/radio/specs_02.png'
+        # image03: '/assets/images/uicomponents/radio/specs_03.png'
+
+  tabs_section:
+    - id: 'padding'
+      images:
+        image01: '/assets/images/uicomponents/tabs/tabs-section-padding.png'
+        # image02: '/assets/images/uicomponents/radio/padding_01.png'
+        # image03: '/assets/images/uicomponents/radio/padding_01.png'
+
+    - id: 'measures'
+      images:
+        image01: '/assets/images/uicomponents/tabs/tabs-section-measures.png'
+        # image02: '/assets/images/uicomponents/radio/measures_02.png'
+        # image03: '/assets/images/uicomponents/radio/measures_03.png'
+
+    - id: 'specifications'
+      images:
+        image01: '/assets/images/uicomponents/tabs/tabs-section-specs.png'
+        # image02: '/assets/images/uicomponents/radio/specs_02.png'
+        # image03: '/assets/images/uicomponents/radio/specs_03.png'

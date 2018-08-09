@@ -109,15 +109,18 @@
 
 }
 
-.two--col-bg ,.four--col-bg {
+.two--col-bg ,.four--col-bg, .six--col-bg  {
   margin-right: 10px;
+  min-height: 120px;
 }
 .two--col-bg {
   background: image-url('uicomponents/2-col-bg.svg') repeat-y;
-  width: 232px;
 }
 
 .four--col-bg {
   background: image-url('uicomponents/4-col-bg.svg') repeat-y;
-  width: 475px;
+}
+
+.six--col-bg {
+  background: image-url('uicomponents/6-col-bg.svg') repeat-y;
 }

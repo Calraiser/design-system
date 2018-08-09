@@ -10,34 +10,31 @@ index: true
   h1.bx--type-h1 = current_page.data.page_title
   p.bx--type-p.u-pb-5 = current_page.data.description
 
-  .content-block
+  .content-block.u-pb-8
     h2.bx--type-h4.u-text-blue States
     p.bx--type-p
       | These are the different states of the tabs.
-
-    .row.u-pt-7.u-pb-7.u-pl-6
+    .row.u-pt-7.u-pb-7
       .col-xs-12
-        = partial :"components/_tabs", :locals => {  }
+        = partial :"components/_tabs", :locals => { :items => '4' }
 
-
+  .content-block
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
     .code-wrapper
-      .code-content id="switch-code"
+      .code-content id="tabs-code"
         = code("html") do
-          .lds-switch
-            input type="checkbox" id="id-name--1" name="set-name" class="lds--switch-input"
-            label for="id-name--1" class="lds--switch-label"
+          = partial :"components/_tabs", :locals => { :items => '4' }
 
-      = partial :"components/_code_actions", :locals => { :target => '#switch-code'}
+      = partial :"components/_code_actions", :locals => { :target => '#tabs-code'}
 
   .content-block.u-pt-6
     h2.bx--type-h4.u-text-blue Anatomy
-    = partial :"components/_component_slider", :locals => { :custom_form => 'switch', :item => data.component_slider.items.switch }
+    = partial :"components/_component_slider", :locals => { :custom_form => 'tabs', :item => data.component_slider.items.tabs }
 
   .content-block
     h2.bx--type-h4.u-text-blue Spacing
     p.bx--type-p
-      | The vertical spacing starts from the path limit of the longest option. For more than three options, the switches should be disposed in:
+      | The vertical spacing starts from the path limit of the longest option. For more than three options, the checkboxes should be disposed in:
 
     ul.e-list
       li Mobile: 1 column
@@ -49,33 +46,43 @@ index: true
 
   .content-block
     h3.bx--type-subH2.u-uppercase.u-pt-2 Mobile
-    .col-first.two--col-bg.example-mob
-      = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-      = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
-      = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+    .col-first.col-xs-5.row.middle-xs.two--col-bg.example-mob
+      = partial :"components/_tabs", :locals => { :items => '4' }
 
     h3.bx--type-subH2.u-uppercase.u-pt-8 Tablet
     .row.row-np.example-tab
-      .col-first.two--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
-      .col-first.two--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+      .col-first.col-xs-9.row.middle-xs.four--col-bg
+        = partial :"components/_tabs", :locals => { :items => '4' }
 
     h3.bx--type-subH2.u-uppercase.u-pt-8 Desktop
     .row.row-np.example-desk
-      .col-first.four--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }
-      .col-first.two--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'On', :label_unselected => 'Off' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-      .col-first.two--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+      .col-first.col-xs-12.row.middle-xs.six--col-bg
+        = partial :"components/_tabs", :locals => { :items => '6' }
+
+    h1.bx--type-h1 Section tabs
+    p.bx--type-p
+      | Section tabs has the same function as above tabs. To differentiate an active tab from an inactive tab, apply an underline and weight change to the active tab’s text. They should be used in wide horizontal layouts, such as landscape mode.
+
+    .content-block.u-pb-8
+      h2.bx--type-h4.u-text-blue States
+      p.bx--type-p
+        | These are the different states you can find the section tabs.
+      .row.u-pt-7.u-pb-7
+        .col-xs-12
+          = partial :"components/_tabs_section", :locals => { :items => '5' }
+
+    .content-block
+      h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+      .code-wrapper
+        .code-content id="tabs-section-code"
+          = code("html") do
+            = partial :"components/_tabs_section", :locals => { }
+
+        = partial :"components/_code_actions", :locals => { :target => '#tabs-section-code'}
+
+  .content-block.u-pt-6
+    h2.bx--type-h4.u-text-blue Anatomy
+    = partial :"components/_component_slider", :locals => { :custom_form => 'tabs', :item => data.component_slider.items.tabs_section }
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

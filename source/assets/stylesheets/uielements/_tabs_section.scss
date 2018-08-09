@@ -1,0 +1,96 @@
+/* =============================================================================
+   TABS SECTION (uielements/_tabs_section.scss)
+   ========================================================================== */
+
+
+/* Settings
+ ========================================================================== */
+
+$num-of-tabs: 5;
+
+@mixin tabs {
+  @for $i from 1 through $num-of-tabs {
+    &:nth-of-type(#{$i}) {
+      &:checked {
+        ~ .slide {
+          left: calc((100% / #{$num-of-tabs}) * #{$i - 1});
+        }
+      }
+    }
+  }
+}
+
+
+.lds-tab--section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  @include media($mobile) {
+    width: 50%;
+  }
+  input[type="radio"][name="tabs"] {
+    @include position(absolute, 10px null null 10px);
+    z-index: -1;
+    &:checked {
+      + .tab-label-content {
+        label {
+          color: $grey;
+          font-family: Telefonicabold;
+        }
+        .tab-content {
+          display: block;
+        }
+      }
+    }
+    @include tabs;
+    &:first-of-type {
+      &:checked {
+        ~ .slide {
+          left: 0;
+        }
+      }
+    }
+  }
+  .tab-label {
+    cursor: pointer;
+    color: $grey;
+    background-color: $white;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: color 0.2s ease;
+    @include size(100%, 56px);
+  }
+  .slide {
+    background: $green;
+    width: calc(100% / #{$num-of-tabs});
+    height: 3px;
+    position: absolute;
+    left: 0;
+    top: calc(100% - 2px);
+    transition: left 0.3s ease-out;
+  }
+
+  .tab-label-content {
+    width: 100%;
+    .tab-content {
+      @include position(absolute, 90px null null 0);
+      line-height: 130%;
+      display: none;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+  .tab-wrap {
+    width: 80%;
+    margin-left: 10%;
+    top: -106px;
+  }
+}
