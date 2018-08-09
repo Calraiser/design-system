@@ -5,9 +5,9 @@
 
 .lds-tab--section
   - range.each_with_index do |i, index|
-    input type="radio" name="tabs" id=(tabId = rand(1..100)) checked=('checked' if index === 0)
-    .tab-label-content id=(tabId.dup)
-      label.bx--type-p.tab-label for=(tabId.dup) #{labels[index]}
+    input type="radio" name="tabs" id=(tabIds = rand(1..100)) checked=('checked' if index === 0)
+    .tab-label-content id=(tabIds.dup)
+      label.bx--type-p.tab-label for=(tabIds.dup) #{labels[index]}
       .tab-content
         p.bx--type-p
           | #{labels[index]} for #{index} section tab goes here.
