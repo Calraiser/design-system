@@ -12,6 +12,8 @@
     link: "/uielements/card.html"
   - title: "Checkbox"
     link: "/uielements/checkbox.html"
+  - title: "Pills Bar"
+    link: "/uielements/pills_bar.html"
   - title: "Radio buttons"
     link: "/uielements/radio_buttons.html"
   - title: "Switch"

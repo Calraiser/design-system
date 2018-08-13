@@ -47,16 +47,13 @@ $half-gutter-width: $flexboxgrid-gutter-width * .5;
   @include flex-wrap(wrap);
   margin-right: $gutter-compensation;
   margin-left: $gutter-compensation;
-  &.row-np {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  > div  {
-    margin-bottom: 20px;
-    @include media($mobile) {
-      margin-bottom: 0;
-    }
-  }
+}
+
+.row-np {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 .row.reverse {

@@ -111,7 +111,7 @@
 }
 
 %txt-caption {
-  @include text-style(14, 16, Telefonicabold, $grey05);
+  @include text-style(12, 18, Telefonicabold, $grey05);
 
   @include media($medium-desktop) {
     @include text-style(14, 16, Telefonicabold, $grey05);

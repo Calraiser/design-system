@@ -1,0 +1,15 @@
+- close      ||= false
+- back       ||= false
+- extraclass ||= ''
+
+.lds-pills class='#{extraclass}'
+  span.bx--type-caption
+    | #{text}
+  - if close.present?
+    button type="button" class="close" aria-label="Close"
+      span aria-hidden="true"
+        = svg_tag 'ic-close-white.svg'
+
+  - if back.present?
+    i.ic-back
+      = svg_tag 'ic-back-arrow.svg'

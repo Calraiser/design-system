@@ -1,0 +1,92 @@
+.lds-pills {
+  border-radius: 12px;
+  background-color: $pills;
+
+  position: relative;
+  padding: rem-calc(3) rem-calc(35) rem-calc(3) rem-calc(12);
+  margin: 0 8px 8px 0;
+
+  display: inline-block;
+  text-align: left;
+
+  max-width: 106px;
+  transition: $transition-slow;
+  cursor: pointer;
+
+  &.pills-default {
+    width: 125px;
+  }
+  &.pill-back {
+    padding: 0 6px 0 4px;
+    svg {
+      fill: $pills;
+      @include size(10px);
+    }
+  }
+  &.pill-counter {
+    padding: 0 9px 0 6px;
+  }
+  &.pill-counter, &.pill-back {
+    background-color: $white;
+
+    border: 2px solid $pills;
+    span {
+      color: $pills;
+    }
+    &:hover {
+      border: 2px solid $pills-hover;
+      svg {
+        fill: $white;
+      }
+      span {
+        color: $white;
+      }
+    }
+  }
+  &:hover, &.pills-hover {
+    background-color: $pills-hover;
+  }
+  &.pills-disabled {
+    background-color: $grey02;
+  }
+
+  .close {
+    float: right;
+    line-height: 1;
+    @include position(absolute, 0 0 null null);
+    padding: rem-calc(4) rem-calc(12);
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+    cursor:  pointer;
+
+  }
+
+  span {
+    color: $white;
+  }
+}
+
+
+// Examples
+
+.examples-layout {
+  margin-top: 50px !important;
+  .example-item {
+    margin: 50px 0;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  .bx--type-legend {
+    margin-bottom: 10px;
+  }
+}
+
+.uielements_pills_bar {
+  .example-mob {
+    span {
+      font-size: rem-calc(12);
+    }
+  }
+}
