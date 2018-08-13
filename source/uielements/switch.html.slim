@@ -15,7 +15,7 @@ index: true
     p.bx--type-p
       | These are the different states you can find the switch component.
 
-    .row.u-pt-7.u-pb-7.u-pl-6
+    .row.around-xs.center-xs.u-pt-7.u-pb-7
       .col-xs-4
         = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
 
@@ -53,35 +53,57 @@ index: true
       | You can find more info about the column system in the &nbsp;
       = link_to 'Layout page', '/guidelines/layout.html', class: 'blue-link'
 
-  .content-block
-    h3.bx--type-subH2.u-uppercase.u-pt-2 Mobile
-    .col-first.two--col-bg.example-mob
-      = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-      = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
-      = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
 
-    h3.bx--type-subH2.u-uppercase.u-pt-8 Tablet
-    .row.row-np.example-tab
-      .col-first.two--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
-      .col-first.two--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+  .content-block.examples-layout
+    .example-item
+      h3.bx--type-subH2.u-uppercase Mobile
+      .row
+        .col-xs-4
+          .row.row-np.middle-xs.two--col-bg
+            .example-mob.col-xs-10.row-np
+              = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
+              = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
+              = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
 
-    h3.bx--type-subH2.u-uppercase.u-pt-8 Desktop
-    .row.row-np.example-desk
-      .col-first.four--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }
-      .col-first.two--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'On', :label_unselected => 'Off' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-      .col-first.two--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+        .col-xs-4
+          .row.row-np.middle-xs.two--col-bg
+            .example-mob.col-xs-10.row-np
+              = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
+              = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
+              = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+    .example-item
+      h3.bx--type-subH2.u-uppercase Tablet
+      .row
+        .col-xs-6
+          .row.row-np.middle-xs.four--col-bg
+            .example-tab.col-xs-10.row-np
+              = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
+              = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
+              = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+
+        .col-xs-6
+          .row.row-np.middle-xs.four--col-bg
+            .example-tab.col-xs-10.row-np
+              = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
+              = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
+              = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+
+
+    .example-item
+      h3.bx--type-subH2.u-uppercase Desktop
+      .col-xs-8.row-np
+        .row.middle-xs.row-np.six--col-bg
+          .example-desk.col-xs-11.row-np
+            = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' }
+            = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }
+
+    .example-item
+      .col-xs-8.row-np
+        .row.middle-xs.row-np.six--col-bg
+          .example-desk.col-xs-11.row-np
+            = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'On', :label_unselected => 'Off' }
+            = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
+
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

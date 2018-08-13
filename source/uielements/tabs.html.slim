@@ -8,9 +8,9 @@ index: true
 
 .content
   h1.bx--type-h1 = current_page.data.page_title
-  p.bx--type-p.u-pb-5 = current_page.data.description
+  p.bx--type-p = current_page.data.description
 
-  .content-block.u-pb-8
+  .content-block
     h2.bx--type-h4.u-text-blue States
     p.bx--type-p
       | These are the different states of the tabs.
@@ -44,20 +44,21 @@ index: true
       | You can find more info about the column system in the &nbsp;
       = link_to 'Layout page', '/guidelines/layout.html', class: 'blue-link'
 
-  .content-block
-    h3.bx--type-subH2.u-uppercase.u-pt-2 Mobile
-    .col-first.col-xs-5.row.middle-xs.two--col-bg.example-mob
-      = partial :"components/_tabs", :locals => { :items => '4' }
-
-    h3.bx--type-subH2.u-uppercase.u-pt-8 Tablet
-    .row.row-np.example-tab
-      .col-first.col-xs-9.row.middle-xs.four--col-bg
+  .content-block.examples-layout
+    .example-item
+      h3.bx--type-subH2.u-uppercase Mobile
+      .col-first.col-xs-5.row.middle-xs.two--col-bg.example-mob
         = partial :"components/_tabs", :locals => { :items => '4' }
-
-    h3.bx--type-subH2.u-uppercase.u-pt-8 Desktop
-    .row.row-np.example-desk
-      .col-first.col-xs-12.row.middle-xs.six--col-bg
-        = partial :"components/_tabs", :locals => { :items => '6' }
+    .example-item
+      h3.bx--type-subH2.u-uppercase Tablet
+      .row.row-np.example-tab
+        .col-first.col-xs-9.row.middle-xs.four--col-bg
+          = partial :"components/_tabs", :locals => { :items => '4' }
+    .example-item
+      h3.bx--type-subH2.u-uppercase Desktop
+      .row.row-np.example-desk
+        .col-first.col-xs-12.row.middle-xs.six--col-bg
+          = partial :"components/_tabs", :locals => { :items => '6' }
 
     h1.bx--type-h1 Section tabs
     p.bx--type-p

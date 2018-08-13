@@ -1,0 +1,59 @@
+.group {
+  position: relative;
+  margin-bottom: 45px;
+input[type="text"] {
+  font-size: rem-calc(14);
+  padding: 10px 20px 10px 5px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid $grey01;
+  @extend %txt-label;
+
+  &:focus {
+    outline: none;
+    border-bottom: none;
+  }
+}
+
+label {
+  color: $grey;
+  font-size: rem-calc(14);
+  @include position(absolute, 10px null null 5px);
+  pointer-events: none;
+  transition: $transition-slow;
+}
+
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  color: $grey;
+}
+
+.bar {
+  position: relative;
+  top: 3px;
+  display: block;
+  &:after, &:before {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: $green;
+    transition: $transition-slow;
+  }
+  &:before {
+    left: 50%;
+  }
+  &:after {
+    right: 50%;
+  }
+}
+
+input:focus ~ .bar:after,
+input:focus ~ .bar:before {
+  width: 50%;
+}
+
+}
