@@ -1,0 +1,92 @@
+$background: #e74c3c;
+$select-color: #fff;
+$select-background: $white;
+$select-width: 180px;
+$select-height: 36px;
+
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  margin-top: 8px;
+  color: $select-color;
+  width: 100%;
+  height: $select-height;
+  @include media($mobile) {
+    width: $select-width;
+  }
+}
+.select-label {
+  margin-right: 12px;
+}
+.select-styled {
+  @include position(absolute, 0 0 0 0);
+  background-color: $select-background;
+  padding: 8px 12px;
+  transition: $transition-slow;
+  border-radius: 3px;
+  border: 1px solid #D8D8D8;
+  color: #4A4A4A;
+  background: image-url('ic-select.svg') no-repeat;
+  background-position: 95% center;
+  &.disabled {
+    opacity: .5;
+  }
+  font:{
+    size: 14px;
+    family: Telefonicaregular;
+  }
+
+  &:hover {
+  }
+  &:active, &.active {
+    border-color: #999;
+    &:after {
+      top: 9px;
+      border-color: transparent transparent $select-color transparent;
+    }
+  }
+}
+
+.select-options {
+  @include position(absolute, 100% 0 null 0);
+  display: none;
+  z-index: 999;
+  margin: -5px 0 0;
+  list-style: none;
+  border: 1px solid #999;
+  border-top: none;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: $white;
+  padding-top: 3px;
+
+  li {
+    margin: 0;
+    padding: 10px 0;
+    text-indent: 12px;
+    transition: $transition-slow;
+
+    font:{
+      size: 14px;
+      family: Telefonicaregular;
+    }
+
+    color: #4A4A4A;
+    &:hover {
+      color: $blue;
+      background: #f2f2f2;
+    }
+    &[rel="hide"] {
+      display: none;
+    }
+  }
+}

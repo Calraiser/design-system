@@ -76,7 +76,7 @@ index: true
       .code-wrapper
         .code-content id="tabs-section-code"
           = code("html") do
-            = partial :"components/_tabs_section", :locals => { }
+            = partial :"components/_tabs_section", :locals => { :items => '5' }
 
         = partial :"components/_code_actions", :locals => { :target => '#tabs-section-code'}
 
