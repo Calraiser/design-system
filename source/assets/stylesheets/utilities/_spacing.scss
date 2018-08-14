@@ -35,14 +35,6 @@
 			} @else {
 				.u-p#{$spacing-side-value}-#{$spacer-key} {
 					padding-#{$spacing-side-key}: $spacer-value;
-					padding-right: 0;
-					padding-left: 0;
-
-				  @include media($mobile) {
-						padding-#{$spacing-side-key}: $spacer-value;
-						padding-right: $spacer-value;
-						padding-left: $spacer-value;
-					}
 				}
 			}
 		}

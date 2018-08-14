@@ -14,73 +14,71 @@ index: true
 
   .content-block
     h2.bx--type-h2 Inputs
+
+  .content-block
     h2.bx--type-h4.u-text-blue States
 
-    .row.around-xs.center-xs.u-pt-7.u-pb-7
+    .row.around-xs.bottom-xs.iddle-xs.u-py-7
       .col-xs-2
-        = partial :"components/_text_fields", :locals => { }
+        h3.bx--type-subH2.u-uppercase.u-pb-5 Default
+        = partial :"components/_text_fields", :locals => { :text => 'Label', :type => 'text', :placeholder => 'Enter name' }
       .col-xs-2
-        = partial :"components/_text_fields", :locals => { }
+        h3.bx--type-subH2.u-uppercase.u-pb-5 Input + Ico
+        = partial :"components/_text_fields", :locals => { :text => 'Email', :type => 'email', :placeholder => 'Enter mail', :ico => 'mail' }
       .col-xs-2
-        = partial :"components/_text_fields", :locals => { }
+        = partial :"components/_text_fields", :locals => { :text => 'Password', :type => 'password', :placeholder => 'Enter password' }
+
+    .row.around-xs.bottom-xs.iddle-xs.u-py-7
+      .col-xs-2
+        h3.bx--type-subH2.u-uppercase.u-pb-5 Input active
+        = partial :"components/_text_fields", :locals => { :text => 'Label', :type => 'text', :placeholder => 'Enter name', :extraclass => 'active' }
+      .col-xs-2
+        h3.bx--type-subH2.u-uppercase.u-pb-5 Input success
+        = partial :"components/_text_fields", :locals => { :text => 'Email', :type => 'email', :placeholder => 'Enter mail', :extraclass => 'active success'  }
+      .col-xs-2
+        h3.bx--type-subH2.u-uppercase.u-pb-5 Input disabled
+        = partial :"components/_text_fields", :locals => { :text => 'Password', :type => 'text', :placeholder => 'Enter password' }
 
 
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
     .code-wrapper
-      .code-content id="switch-code"
+      .code-content id="input-code"
         = code("html") do
-          .lds-switch
-            input type="checkbox" id="id-name--1" name="set-name" class="lds--switch-input"
-            label for="id-name--1" class="lds--switch-label"
+          = partial :"components/_text_fields", :locals => { :text => 'Label', :type => 'text', :placeholder => 'Enter name' }
 
-      = partial :"components/_code_actions", :locals => { :target => '#switch-code'}
+      = partial :"components/_code_actions", :locals => { :target => '#input-code'}
 
   .content-block.u-pt-6
     h2.bx--type-h4.u-text-blue Anatomy
-    = partial :"components/_component_slider", :locals => { :custom_form => 'switch', :item => data.component_slider.items.switch }
+    = partial :"components/_component_slider", :locals => { :custom_form => 'switch', :item => data.component_slider.items.input }
 
   .content-block
-    h2.bx--type-h4.u-text-blue Spacing
-    p.bx--type-p
-      | The vertical spacing starts from the path limit of the longest option. For more than three options, the switches should be disposed in:
-
-    ul.e-list
-      li Mobile: 1 column
-      li Tablet: 2 - 4 columns
-      li Desktop: 2 - 4 - 8 columns
-    p.bx--type-p.u-pt-2
-      | You can find more info about the column system in the &nbsp;
-      = link_to 'Layout page', '/guidelines/layout.html', class: 'blue-link'
+    h2.bx--type-h2 Text Area
+    p.bx--type-p.u-pt-4
+      | Textarea inputs are used for freeform data entry. They are taller than text fields and wrap overflow text onto a new line. They are a fixed height and scroll vertically when the cursor reaches the bottom of the field. The large initial size indicates that longer responses are possible and encouraged.
 
   .content-block
-    h3.bx--type-subH2.u-uppercase.u-pt-2 Mobile
-    .col-first.two--col-bg.example-mob
-      = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-      = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
-      = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+    .row.around-xs.top-xs.middle-xs.u-py-7
+      .col-xs-3
+        .lds-form--group
+          label.bx--type-subH2.u-uppercase.u-pb-2 Default
+          textarea rows="6" cols="50" placeholder="Enter text here.."
+      .col-xs-3
+        .lds-form--group
+          label.bx--type-subH2.u-uppercase.u-pb-2 Disabled
+          textarea rows="6" cols="50" placeholder="Enter text here.." disabled="disabled"
 
-    h3.bx--type-subH2.u-uppercase.u-pt-8 Tablet
-    .row.row-np.example-tab
-      .col-first.two--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
-      .col-first.two--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
+    .row.around-xs.top-xs.middle-xs.u-py-7
+      .col-xs-3
+        .lds-form--group
+          label.bx--type-subH2.u-uppercase.u-pb-2 Active
+          textarea rows="6" cols="50" class="active" placeholder="Enter text here.."
+      .col-xs-3
+        .lds-form--group
+          label.bx--type-subH2.u-uppercase.u-pb-2 Error
+          textarea rows="6" cols="50" class="error" placeholder="Enter text here.."
+          span.error.message Validation message here
 
-    h3.bx--type-subH2.u-uppercase.u-pt-8 Desktop
-    .row.row-np.example-desk
-      .col-first.four--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }
-      .col-first.two--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'On', :label_unselected => 'Off' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-      .col-first.two--col-bg
-        = partial :"components/_switch", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
-        = partial :"components/_switch", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

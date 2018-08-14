@@ -1,4 +1,13 @@
-.group
-  input type="text" required="required"
-  span.bar
-  label.bx--type-label Name
+
+- type        ||= false
+- text        ||= false
+- placeholder ||= false
+- ico         ||= false
+- extraclass  ||= ''
+
+.lds-form--group
+  label.bx--type-label for=(inputId = rand(1..100))
+    | #{text}
+  input type="#{type}" name=(inputId.dup) required="required" placeholder="#{placeholder}" class='#{extraclass}'
+  -if ico.present?
+    span class="ic ic-#{ico}"

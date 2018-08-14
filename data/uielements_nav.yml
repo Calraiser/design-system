@@ -18,6 +18,8 @@
     link: "/uielements/radio_buttons.html"
   - title: "Switch"
     link: "/uielements/switch.html"
+  - title: "Text fields"
+    link: "/uielements/text_field.html"
   - title: "Tabs"
     link: "/uielements/tabs.html"
   - title: "Tooltips"
