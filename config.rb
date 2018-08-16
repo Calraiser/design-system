@@ -17,9 +17,18 @@ set :video_dir,   'assets/video'
 
 activate :autoprefixer
 activate :livereload
-activate :sprockets
 activate :lunr
 activate :syntax, :inline_theme => Rouge::Themes::Github.new
+
+activate :sprockets do |c|
+  c.expose_middleman_helpers = true
+end
+
+activate :middleman_scavenger do |config|
+  config.path = "./source/assets/images/icons/"
+  config.prefix = "ic-"
+  config.sprite_path = "/assets/images/sprites.svg"
+end
 
 page '/*.xml',  layout: false
 page '/*.json', layout: false

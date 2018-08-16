@@ -1,3 +1,4 @@
+//= require middleman-scavenger
 
 //= require ./vendors/jquery.js
 //= require ./vendors/jquery-ui.js
