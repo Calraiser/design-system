@@ -1,0 +1,20 @@
+- title      ||= false
+- header     ||= false
+- subheader  ||= false
+- extraclass ||= ''
+
+.lds-navigation-icons class='#{extraclass}'
+  - if header.present?
+    .row.bottom-xs
+      .col-xs-12
+        h2.bx--type-subH2 #{header}
+  - if subheader.present?
+          p.bx--type-p.small #{subheader}
+
+  .row.bottom-xs.u-pt-7.u-pb-7
+    - items.each_with_index do |element, index|
+      .col-xs-2.u-text-center.u-pb-8
+        = svg_tag element.image
+        - if title.present?
+          p.bx--type-legend.u-pt-2
+           | #{element.title}

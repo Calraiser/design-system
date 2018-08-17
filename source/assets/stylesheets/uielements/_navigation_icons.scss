@@ -1,0 +1,37 @@
+.lds-navigation-icons {
+  &.default {
+    svg {
+      fill: $grey07;
+      transition: $transition-slow;
+      cursor: pointer;
+      &:hover {
+        fill: $grey01;
+      }
+    }
+    &.hover {
+      svg {
+        fill: $grey01;
+      }
+    }
+    &.blue {
+      svg {
+        fill: $blue;
+      }
+    }
+    &.black {
+      svg {
+        fill: $grey;
+      }
+    }
+    &.green {
+      svg {
+        fill: $green;
+      }
+    }
+    &.disabled {
+      svg {
+        fill: $grey07;
+      }
+    }
+  }
+}

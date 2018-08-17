@@ -1,0 +1,54 @@
+---
+page_title: Navigation Icons
+description: Icons provide visual context and enhance usability.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  .content-block
+    = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => true, :extraclass => 'default' }
+
+
+    / h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+    / .code-wrapper
+    /   .code-content id="checkbox-code"
+    /     = code("html") do
+    /       = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
+    /
+    /   = partial :"components/_code_actions", :locals => { :target => '#checkbox-code'}
+
+  .content-block
+    h2.bx--type-h4.u-text-blue States
+    p.bx--type-p
+      | These are the different states of the navigation icons.
+    .u-pt-7
+      = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'Default', :title => false, :extraclass => 'default' }
+      = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'On hover', :title => false, :extraclass => 'default hover' }
+      = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'Active', :subheader => 'For white and grey backgrounds', :title => false, :extraclass => 'default blue' }
+      = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :extraclass => 'default black' }
+      = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :subheader => 'For white backgrounds', :extraclass => 'default green' }
+      = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :header => 'Disabled', :extraclass => 'default disabled' }
+
+  .content-block
+    h2.bx--type-h4.u-text-blue Anatomy
+    .row.middle-xs.u-pt-5
+      .col-xs-4
+        h2.bx--type-subH2 Padding
+        = image_tag 'uicomponents/image_icons/padding.png'
+
+      .col-xs-4
+        h2.bx--type-subH2 Measures
+        = image_tag 'uicomponents/image_icons/measures.png'
+
+      .col-xs-4
+        h2.bx--type-subH2 Specifications
+        = image_tag 'uicomponents/image_icons/specs.png'
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }
