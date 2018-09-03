@@ -1,0 +1,132 @@
+.lds-info-navigation {
+  @include position(absolute, 20px 60px null null);
+  z-index: 999;
+
+  &.open {
+    .hamburger {
+      background: $white;
+    }
+
+    .btn-wrapper {
+      transition-timing-function: linear;
+      transition-duration: 200ms;
+
+      .hamburger-1 {
+        transform: translate3d(0, 0, 0) rotate(45deg);
+      }
+
+      .hamburger-2 {
+        transform: translate3d(0, 0, 0) rotate(-45deg);
+      }
+    }
+
+    .info-item {
+      transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+      &:nth-child(2) {
+        transition-duration: 170ms;
+        transform: translate3d(-50px, 0, 0);
+      }
+
+      &:nth-child(3) {
+        transition-duration: 250ms;
+        transform: translate3d(-95px, 0, 0);
+      }
+
+      &:nth-child(4) {
+        transition-duration: 330ms;
+        transform: translate3d(-140px, 0, 0);
+      }
+    }
+  }
+
+  .btn-info {
+    @include size(50px, 43px);
+    margin: -6px -12px;
+
+    &.active {
+      svg {
+        fill: $blue;
+      }
+    }
+
+    svg {
+      transition: $transition-slow;
+      fill: $white;
+    }
+  }
+
+  .info-item {
+    .menu-item {
+      @include size(15px);
+      background-color: $white;
+      box-shadow: 0 0 4px 0 rgba(204, 204, 204, 0.5);
+      padding: 8px 10px 10px;
+      border-radius: 50%;
+      line-height: 25px;
+      display: block;
+
+      &:hover {
+        transition: $transition-slow;
+        transform: scale(1.1);
+        background: $blue;
+
+        svg {
+          fill: $white;
+        }
+      }
+    }
+
+    svg {
+      transition: $transition-slow;
+      fill: $grey01;
+      width: 17px !important;
+      height: 17px !important;
+    }
+  }
+
+  .btn-wrapper,
+  .info-item {
+    position: absolute;
+    text-align: center;
+    transition: transform ease-out 200ms;
+  }
+
+  .hamburger {
+    @include size(12px,1px);
+    @include position(absolute, 53% null null 46%);
+    background: $blue;
+    display: block;
+    transition: transform 200ms;
+    z-index: 999;
+
+    &.hamburger-1 {
+      transform: translate3d(0, 0, 0) rotate(90deg);
+    }
+
+    &.hamburger-2 {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .btn-wrapper {
+    z-index: 2;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 400ms;
+    transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+    cursor: pointer;
+  }
+
+  #y-axis-1 {
+    background: #000;
+  }
+
+  .veil {
+    @include position(absolute, 0 null null 0);
+    @include size(100%);
+    background: $grey03;
+    opacity: 0.5;
+    z-index: 2;
+    transition: $transition-slow;
+  }
+}

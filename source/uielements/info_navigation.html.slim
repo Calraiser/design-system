@@ -1,0 +1,92 @@
+---
+page_title: Info Navigation
+description: This component allows to host the functions related to the charts present in the dashboards. Used to export to Excel, PDF, host the help tooltip and other related functions of the graph.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  .content-block
+    h2.bx--type-h4.u-text-blue States
+    .row.u-pt-7.u-pb-7.u-pl-6
+      .col-xs-4.viz-box
+        .lds-info-navigation
+          .btn-wrapper
+            .btn-info
+              = svg_tag 'ic-btn.svg';
+            span.hamburger.hamburger-1
+            span.hamburger.hamburger-2
+
+          .info-item
+            = link_to '#', class: 'menu-item'
+              = svg_tag 'ic-pdf.svg'
+          .info-item
+            = link_to '#', class: 'menu-item'
+              = svg_tag 'ic-xlsx.svg'
+          .info-item
+            = link_to '#', class: 'menu-item'
+              = svg_tag 'ic-question.svg'
+
+
+
+      .col-xs-3
+
+
+    h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+    .code-wrapper
+      .code-content id="combobox"
+        = code("html") do
+          select id="default"
+            option value="hide" Default
+            option value="january" rel="icon-temperature" January
+            option value="february" February
+            option value="march" March
+            option value="april" April
+            option value="may" May
+            option value="june" June
+
+      = partial :"components/_code_actions", :locals => { :target => '#combobox'}
+
+  .content-block.u-pt-6
+    h2.bx--type-h4.u-text-blue Anatomy
+    = partial :"components/_component_slider", :locals => { :custom_form => 'checkbox', :item => data.component_slider.items.combobox }
+
+  .content-block.u-pt-6
+    h2.bx--type-h4.u-text-black.u-uppercase Variants
+    p.bx--type-p.small
+      | Depending on the context, there are two positions where the label can be.
+
+  .content-block.u-pl-6
+    .row
+      .col-xs-12.col-sm-4.col-first
+        h3.bx--type-subH2.u-uppercase.u-pt-2 Left Label
+      .col-xs-12.col-sm-4.col-first
+        h3.bx--type-subH2.u-uppercase.u-pt-2 Top Label
+    .row.bottom-xs
+      .col-xs-12.col-sm-4
+        .row.middle-xs.u-pt-5
+          .select-label.bx--type-label Category
+          select id="default"
+            option value="hide" Left label
+            option value="january" rel="icon-temperature" January
+            option value="february" February
+            option value="march" March
+            option value="april" April
+            option value="may" May
+            option value="june" June
+
+      .col-xs-12.col-sm-4
+        .row.column-xs.u-pt-5
+          .select-label.bx--type-label Category
+          select id="default"
+            option value="hide" Top label
+            option value="january" rel="icon-temperature" January
+            option value="february" February
+            option value="march" March
+            option value="april" April
+            option value="may" May
+            option value="june" June

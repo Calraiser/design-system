@@ -1,5 +1,18 @@
 var data_embed = {};
 
+
+// Go up multiple parent levels in one simple function.
+(function(window, document, $) {
+  $.fn.extend({
+    up: function(levels) {
+      for (var i = levels, self = this; i > 0; i--) {
+        self = self.parent();
+      }
+      return self;
+    }
+  });
+})(window, window.document, jQuery);
+
 $(document).ready(function() {
 
   // Sticky Kit
@@ -11,7 +24,7 @@ $(document).ready(function() {
   $('.c-btn').on('click', function(e){
     e.preventDefault();
   });
-  
+
   // Tooltip
   $('.btn-copy').tooltip({
     trigger: 'click',

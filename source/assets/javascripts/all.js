@@ -12,6 +12,7 @@
 //= require ./components/code_block.js
 //= require ./components/component_slider.js
 //= require ./uicomponents/combobox.js
+//= require ./uicomponents/info_navigation.js
 
 //= require common.js
 
