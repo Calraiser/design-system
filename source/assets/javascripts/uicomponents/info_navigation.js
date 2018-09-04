@@ -11,7 +11,7 @@ $(document).ready(function() {
       $btn.toggleClass("active");
       $btn.up(3).toggleClass('disabled');
 
-      $this.find('.info').toggleClass("open");
+      $this.find('.lds-info-navigation').toggleClass("open");
     });
   })
 

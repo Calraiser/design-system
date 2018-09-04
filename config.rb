@@ -24,11 +24,11 @@ activate :sprockets do |c|
   c.expose_middleman_helpers = true
 end
 
-activate :middleman_scavenger do |config|
-  config.path = "./source/assets/images/icons/"
-  config.prefix = "ic-"
-  config.sprite_path = "/assets/images/sprites.svg"
-end
+# activate :middleman_scavenger do |config|
+#   config.path = "./source/assets/images/icons/"
+#   config.prefix = "ic-"
+#   config.sprite_path = "/assets/images/sprites.svg"
+# end
 
 page '/*.xml',  layout: false
 page '/*.json', layout: false

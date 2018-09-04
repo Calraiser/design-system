@@ -1,7 +1,7 @@
-//= require middleman-scavenger
 
 //= require ./vendors/jquery.js
 //= require ./vendors/jquery-ui.js
+//= require ./vendors/charts.js
 //= require ./vendors/clipboard.min.js
 //= require ./vendors/bootstrap-tooltip.js
 //= require ./vendors/d3.min.v3.js
@@ -13,6 +13,9 @@
 //= require ./components/component_slider.js
 //= require ./uicomponents/combobox.js
 //= require ./uicomponents/info_navigation.js
+//= require ./uicomponents/accordion.js
+
+//= require ./charts/donut_chart.js
 
 //= require common.js
 

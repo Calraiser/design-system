@@ -10,6 +10,7 @@
     transition: max-height 0.8s;
     max-height: 500px;
     overflow: hidden;
+    overflow-y: auto;
 
     &.active {
       max-height: 20px;

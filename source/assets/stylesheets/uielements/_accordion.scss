@@ -1,0 +1,153 @@
+.lds-accordion {
+  width: 340px;
+  max-width: 340px;
+
+  border-radius: 3px;
+
+  box-shadow: 0 0 4px 0 $grey07;
+  background: $white;
+  position: relative;
+  padding-bottom: 2px;
+
+  &.hide {
+    .accordion-wrapper {
+      max-height: 0;
+    }
+  }
+
+  .accordion-wrapper {
+    max-height: 3000px;
+    transition: max-height 0.8s;
+    overflow: hidden;
+    &.hide {
+      max-height: 0;
+    }
+  }
+
+  .close-fold {
+    @include position(absolute, null 0 -17px null);
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+    background: $grey03;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 4px 0 $grey07;
+
+    cursor: pointer;
+  }
+  .accordion-title {
+    h2 {
+      @extend %txt-text-positive-bold ;
+      padding: 7px 15px;
+    }
+  }
+
+  .module-header {
+    cursor: pointer;
+    padding: 11px 15px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-top: 1px solid $grey02;
+    position: relative;
+    transition: $transition-slow;
+    margin: 0;
+    svg {
+      fill: $grey07;
+      transition: $transition-slow;
+      width: 24px;
+    }
+    .module-title {
+      @extend %txt-subtitle-h2-bold;
+      text-transform: uppercase;
+      color: $grey04;
+      margin-left: 22px;
+      transition: $transition-slow;
+    }
+  }
+
+  .accordion-item {
+    .fold {
+      @include position(absolute, null null null 12px);
+      position: absolute;
+      font-size: 18px;
+      color: #595959;
+      transition: all 0.4s ease;
+      svg {
+        fill: $grey07;
+      }
+    }
+
+    &.open {
+      .module-title {
+        color: $blue;
+      }
+      .module-header {
+        svg {
+          fill: $grey;
+        }
+      }
+      .fold {
+        svg {
+          fill: $green;
+        }
+      }
+    }
+  }
+}
+
+.lds-accordion .accordion-item:last-child .module-header {
+  border-bottom: 0;
+}
+
+.lds-accordion .accordion-item .fold {
+  right: 15px;
+  left: auto;
+}
+
+.lds-accordion .accordion-item.open .module-header {
+  color: #b63b4d;
+}
+
+.lds-accordion .accordion-item.open .fold {
+  color: #b63b4d;
+}
+
+.lds-accordion .accordion-item.open .fold {
+  transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+.accordion-content {
+  display: none;
+  background: $white;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 45px 28px 28px;
+  position: relative;
+  .actions {
+    @include position(absolute, null 0 0 null);
+    background: $grey03;
+    padding: 9px 20px 3px;
+
+    cursor: pointer;
+  }
+  .kpi-card {
+    .kpi-value {
+      @extend %txt-title-h2;
+    }
+    .kpi-description {
+      @extend %txt-small;
+    }
+  }
+
+}
+.accordion-content a {
+  display: block;
+  text-decoration: none;
+  color: #d9d9d9;
+  padding: 12px 12px 12px 42px;
+  transition: all 0.25s ease;
+}

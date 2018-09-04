@@ -1,8 +1,9 @@
-- custom_form ||= ''
+/ - custom_form ||= ''
+- extraclass ||= false
 
-.component-slider
+.component-slider class=(extraclass if extraclass.present?)
   .row.between-xs
-    .col-xs-10
+    .col-xs-12.col-md-10.last-xs.first-md
       .component--slider-content
         - item.each_with_index do |element, index|
           .component-item class=('show' if index === 0) id="#{element[:id]}"
@@ -16,7 +17,7 @@
                   / - else
                   /   = partial :"components/_#{custom_form}", :locals => { :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
 
-    .col-xs-2
+    .col-xs-12.col-md-2
       .component-menu
         ul
           - item[0...5].each_with_index do |element, index|

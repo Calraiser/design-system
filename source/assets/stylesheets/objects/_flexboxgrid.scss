@@ -89,6 +89,7 @@ $name: xs;
     @include flexboxgrid-sass-col-common;
     @include flex-basis(100% / $flexboxgrid-grid-columns * $i);
     max-width: 100% / $flexboxgrid-grid-columns * $i;
+    width: 100% / $flexboxgrid-grid-columns * $i;
   }
 }
 @for $i from 0 through $flexboxgrid-grid-columns {
@@ -177,6 +178,8 @@ $name: xs;
         @include flexboxgrid-sass-col-common;
         @include flex-basis(100% / $flexboxgrid-grid-columns * $i);
         max-width: 100% / $flexboxgrid-grid-columns * $i;
+        width: 100% / $flexboxgrid-grid-columns * $i;
+
       }
     }
     @for $i from 0 through $flexboxgrid-grid-columns {
@@ -193,6 +196,7 @@ $name: xs;
       @include flex-grow(1);
       @include flex-basis(0);
       max-width: 100%;
+      width: 100%;
     }
     .start-#{$name} {
       @include justify-content(flex-start);

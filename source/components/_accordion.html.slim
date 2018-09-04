@@ -1,0 +1,135 @@
+- extraclass ||= false
+
+#accordion.lds-accordion
+  .close-fold
+    = svg_tag 'uicomponents/accordion/ic-close-fold.svg'
+
+  .accordion-title
+    h2
+      | KPIs selector
+
+  .accordion-wrapper class=(extraclass if extraclass.present?)
+    .accordion-item
+      .module-header.row.middle-xs
+        = svg_tag 'uicomponents/accordion/ic-driving.svg'
+
+        span.module-title
+          | Driving Behaviour
+        span.fold
+          = svg_tag 'icons/expand_more.svg'
+
+      .accordion-content
+        .row.around-xs
+          .kpi-card
+            .kpi-value
+              | 54%
+            .kpi-description
+              | On service
+          .kpi-card
+            .kpi-value
+              | 36 h
+            .kpi-description
+              | Out of service
+
+        .actions
+          = svg_tag 'uicomponents/accordion/ic-arrow.svg'
+
+    .accordion-item
+      .module-header.row.middle-xs
+        = svg_tag 'uicomponents/accordion/ic-pois.svg'
+
+        span.module-title
+          | Pois
+        span.fold
+          = svg_tag 'icons/expand_more.svg'
+
+      .accordion-content
+        .row.around-xs
+          .kpi-card
+            .kpi-value
+              | 54%
+            .kpi-description
+              | On service
+          .kpi-card
+            .kpi-value
+              | 36 h
+            .kpi-description
+              | Out of service
+
+        .actions
+          = svg_tag 'uicomponents/accordion/ic-arrow.svg'
+
+    .accordion-item
+      .module-header.row.middle-xs
+        = svg_tag 'uicomponents/accordion/ic-traffic.svg'
+
+        span.module-title
+          | Traffic Volume
+        span.fold
+          = svg_tag 'icons/expand_more.svg'
+
+      .accordion-content
+        .row.around-xs
+          .kpi-card
+            .kpi-value
+              | 54%
+            .kpi-description
+              | On service
+          .kpi-card
+            .kpi-value
+              | 36 h
+            .kpi-description
+              | Out of service
+
+        .actions
+          = svg_tag 'uicomponents/accordion/ic-arrow.svg'
+
+    .accordion-item
+      .module-header.row.middle-xs
+        = svg_tag 'uicomponents/accordion/ic-fuel.svg'
+
+        span.module-title
+          | Fuel Consumption
+        span.fold
+          = svg_tag 'icons/expand_more.svg'
+
+      .accordion-content
+        .row.around-xs
+          .kpi-card
+            .kpi-value
+              | 54%
+            .kpi-description
+              | On service
+          .kpi-card
+            .kpi-value
+              | 36 h
+            .kpi-description
+              | Out of service
+
+        .actions
+          = svg_tag 'uicomponents/accordion/ic-arrow.svg'
+
+    .accordion-item
+      .module-header.row.middle-xs
+        = svg_tag 'uicomponents/accordion/ic-driving.svg'
+
+        span.module-title
+          | Driving Behaviour
+        span.fold
+          = svg_tag 'icons/expand_more.svg'
+
+      .accordion-content
+        .row.around-xs
+          .kpi-card
+            .kpi-value
+              | 54%
+            .kpi-description
+              | On service
+          .kpi-card
+            .kpi-value
+              | 36 h
+            .kpi-description
+              | Out of service
+
+        .actions
+          = svg_tag 'uicomponents/accordion/ic-arrow.svg'

@@ -1,6 +1,12 @@
 .component-slider {
   margin: 40px 0;
   height: 200px;
+  &.big-slider {
+    height: 400px;
+    .component-item img {
+      max-width: 900px;
+    }
+  }
   .row {
     align-items: flex-start;
     flex-direction: column;
@@ -41,17 +47,30 @@
     left: 0;
   }
   .component--item-image {
-    @include position(absolute, -40px null null null);
+    @include position(relative, -40px null null null);
   }
 }
 
 .component-menu {
-  border-left: 1px solid #ccc;
-  padding-left: 25px;
+  border-bottom: 1px solid $grey07;
+  margin-bottom: 60px;
+  text-align: center;
+  @include media($tablet) {
+    border-left: 1px solid $grey07;
+    border-bottom: none;
+    text-align: left;
+    margin-bottom: 0;
+    padding-left: 25px;
+  }
 
   li {
     list-style: none;
-    margin-bottom: 10px;
+    margin: 0 20px;
+    display: inline-block;
+    @include media($tablet) {
+      display: block;
+      margin: 0 0 10px;
+    }
 
     a {
       @extend %txt-links-positive;

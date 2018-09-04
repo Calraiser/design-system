@@ -19,7 +19,7 @@ index: true
 
   .content-block
     h2.bx--type-h4.u-text-blue States
-    .row.u-pt-7.u-pb-7.u-pl-6
+    .row.around-xs.u-py-7
       .col-xs-12.col-sm-4
         select id="default"
           option value="hide" Default
@@ -64,15 +64,11 @@ index: true
     p.bx--type-p.small
       | Depending on the context, there are two positions where the label can be.
 
-  .content-block.u-pl-6
-    .row
-      .col-xs-12.col-sm-4.col-first
-        h3.bx--type-subH2.u-uppercase.u-pt-2 Left Label
-      .col-xs-12.col-sm-4.col-first
-        h3.bx--type-subH2.u-uppercase.u-pt-2 Top Label
-    .row.bottom-xs
+  .content-block
+    .row.bottom-xs.around-xs
       .col-xs-12.col-sm-4
-        .row.middle-xs.u-pt-5
+        h3.bx--type-subH2.u-uppercase.u-pb-6 Left Label
+        .row.middle-xs
           .select-label.bx--type-label Category
           select id="default"
             option value="hide" Left label
@@ -84,13 +80,13 @@ index: true
             option value="june" June
 
       .col-xs-12.col-sm-4
-        .row.column-xs.u-pt-5
-          .select-label.bx--type-label Category
-          select id="default"
-            option value="hide" Top label
-            option value="january" rel="icon-temperature" January
-            option value="february" February
-            option value="march" March
-            option value="april" April
-            option value="may" May
-            option value="june" June
+        h3.bx--type-subH2.u-uppercase.u-pb-6 Top Label
+        .select-label.bx--type-label Category
+        select id="default"
+          option value="hide" Top label
+          option value="january" rel="icon-temperature" January
+          option value="february" February
+          option value="march" March
+          option value="april" April
+          option value="may" May
+          option value="june" June
