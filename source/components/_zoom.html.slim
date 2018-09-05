@@ -1,0 +1,6 @@
+- extraclass ||= false
+
+.lds-zoom
+  - icons.each do |element|
+    .control-zoom class=(extraclass if extraclass.present?)
+      = link_to svg_tag element.image

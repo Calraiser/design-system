@@ -192,3 +192,22 @@ items:
         image01: '/assets/images/uicomponents/accordion/specs.png'
         # image02: '/assets/images/uicomponents/radio/specs_02.png'
         # image03: '/assets/images/uicomponents/radio/specs_03.png'
+
+  zoom:
+    - id: 'padding'
+      images:
+        image01: '/assets/images/uicomponents/zoom/padding.png'
+        # image02: '/assets/images/uicomponents/radio/padding_01.png'
+        # image03: '/assets/images/uicomponents/radio/padding_01.png'
+
+    - id: 'measures'
+      images:
+        image01: '/assets/images/uicomponents/zoom/measures.png'
+        # image02: '/assets/images/uicomponents/radio/measures_02.png'
+        # image03: '/assets/images/uicomponents/radio/measures_03.png'
+
+    - id: 'specifications'
+      images:
+        image01: '/assets/images/uicomponents/zoom/specs.png'
+        # image02: '/assets/images/uicomponents/radio/specs_02.png'
+        # image03: '/assets/images/uicomponents/radio/specs_03.png'

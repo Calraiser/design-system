@@ -1,0 +1,50 @@
+---
+page_title: List
+description: Lists present multiple line items vertically as a single continuous element. Lists are best suited for similar data types.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  .content-block.u-pb-7
+    h2.bx--type-h4.u-text-blue States
+    p.bx--type-p
+      | Every item in a list should:
+    ul.e-list
+      li Lists should be sorted in logical ways that make content easy to scan.
+      li Start with a capital letter (be written in sentence case).
+      li Not use commas or semicolons at the end of each line.
+
+  .content-block
+    .row.around-xs.u-py-7
+      .col-xs-12.col-md-3
+        h3.bx--type-label.u-uppercase.u-pb-5 Default on display
+        = partial :"components/_accordion", :locals => {}
+      .col-xs-12.col-md-3
+        h3.bx--type-label.u-uppercase.u-pb-5 Fold (hidden modules)
+        = partial :"components/_accordion", :locals => { :extraclass => 'hide'}
+
+  h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+  .code-wrapper
+    .code-content id="accordion"
+      = code("html") do
+        = partial :"components/_accordion", :locals => {}
+
+    = partial :"components/_code_actions", :locals => { :target => '#accordion'}
+
+  .content-block.u-pt-6
+    h2.bx--type-h4.u-text-blue Anatomy
+    = partial :"components/_component_slider", :locals => { :extraclass => 'big-slider', :custom_form => 'pills', :item => data.component_slider.items.accordion }
+
+  .content-block.u-pt-6
+    h3.bx--type-subH2.u-uppercase Module Anatomy
+    .u-py-6.u-text-center
+      = image_tag 'uicomponents/accordion/anatomy-module.png'
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }

@@ -1,0 +1,39 @@
+---
+page_title: Zoom
+description: Group of buttons disposed in vertical position at the corner of a map or card. Their functions are maximize, minimize, drag and activate full screen.
+
+layout: content
+index: true
+---e
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  .content-block
+    h2.bx--type-h4.u-text-blue States
+    .row.around-xs.u-py-7
+      .col-xs-3
+        h3.bx--type-label.u-uppercase.u-pb-5 Default
+        = partial :"components/_zoom", :locals => { :icons => data.zoom.icons }
+      .col-xs-3
+        h3.bx--type-label.u-uppercase.u-pb-5 Active
+        = partial :"components/_zoom", :locals => { :icons => data.zoom.icons, :extraclass => 'active' }
+
+
+
+  h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+  .code-wrapper
+    .code-content id="zoom"
+      = code("html") do
+        = partial :"components/_zoom", :locals => { :icons => data.zoom.icons }
+
+    = partial :"components/_code_actions", :locals => { :target => '#zoom'}
+
+  .content-block.u-pt-6
+    h2.bx--type-h4.u-text-blue Anatomy
+    = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.zoom }
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }

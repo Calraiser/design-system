@@ -18,6 +18,7 @@
 
 .component--slider-content {
   position: relative;
+  text-align: center;
   .lds--custom-input {
     margin-top: 49px;
     margin-left: 31px;
@@ -37,7 +38,6 @@
   img {
     padding: 0;
     margin: 0;
-    width: 100%;
     max-width: 1200px;
   }
 
@@ -47,7 +47,7 @@
     left: 0;
   }
   .component--item-image {
-    @include position(relative, -40px null null null);
+    @include position(relative, 0 null null null);
   }
 }
 

@@ -1,0 +1,26 @@
+
+.lds-zoom {
+  .control-zoom {
+    margin-bottom: 6px;
+    &.active {
+      a {
+        background: $blue;
+      }
+    }
+    a {
+      @include size(27px);
+      border-radius: 50%;
+      background: $grey01;
+      box-shadow: 0 0 4px 0 $grey07;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: $transition-slow;
+      &:hover {
+        background: $blue;
+      }
+    }
+  }
+}
