@@ -1,0 +1,158 @@
+---
+page_title: Pagination
+description: Pagination is used for splitting up content or data into several pages, with a control for navigating to the next or previous page. The default number displayed will vary depending on the context.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  .content-block
+    h2.bx--type-h4.u-text-blue States
+    p.bx--type-p
+      | These are the different states you can find the pagination icons.
+    .row.around-sm.center-xs.start-sm.u-pt-7.u-pb-4
+      .col-xs-12.col-sm-3
+        .pagination-example
+          h3.bx--type-label Default
+          .lds-pagination
+            ul.pager
+              li.first
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+              li.previous.disabled
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+              li.current 1
+              li = link_to '2', '#';
+              li = link_to '3', '#';
+              li.next
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+              li.last
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+
+      .col-xs-12.col-sm-3
+        .pagination-example
+          h3.bx--type-label On hover
+          .lds-pagination
+            ul.pager
+              li.previous
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+              li.current 1
+              li = link_to '2', '#';
+              li = link_to '3', '#';
+              li.next
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+              li.last.hover
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+
+      .col-xs-12.col-sm-3
+        .pagination-example
+          h3.bx--type-label Disabled
+          .lds-pagination
+            ul.pager.disabled
+              li.previous
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+              li = link_to '1', '#';
+              li = link_to '2', '#';
+              li = link_to '3', '#';
+              li.next
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+              li.last
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+
+    .row.center-xs.u-pt-7.u-pb-4
+      .col-xs-4.col-sm
+        .pagination-example
+          .lds-pagination
+            ul.pager
+              li.first
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+              p.bx--type-p.small.u-pt-2 Double left arrow
+
+      .col-xs-4.col-sm
+        .pagination-example
+          .lds-pagination
+            ul.pager
+              li.previous
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+              p.bx--type-p.small.u-pt-2 Left arrow
+
+      .col-xs-4.col-sm
+        .pagination-example
+          .lds-pagination
+            ul.pager
+              li.current
+                | 1
+              p.bx--type-p.small.u-pt-2 Currently page
+
+      .col-xs-4.col-sm
+        .pagination-example
+          .lds-pagination
+            ul.pager
+              li = link_to '2', '#';
+              li = link_to '3', '#';
+              li = link_to '4', '#';
+              p.bx--type-p.small.u-pt-2 Next pages
+
+      .col-xs-4.col-sm
+        .pagination-example
+          .lds-pagination
+            ul.pager
+              li.next
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+              p.bx--type-p.small.u-pt-2 Right arrow
+
+      .col-xs-4.col-sm
+        .pagination-example
+          .lds-pagination
+            ul.pager
+              li.last
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+              p.bx--type-p.small.u-pt-2 Double right arrow
+
+
+
+  h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+  .code-wrapper
+    .code-content id="pagination"
+      = code("html") do
+        .lds-pagination
+          ul.pager
+            li.first
+              = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+            li.previous
+              = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+            li.current 1
+            li = link_to '2', '#';
+            li = link_to '3', '#';
+            li.next
+              = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+            li.last
+              = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+
+    = partial :"components/_code_actions", :locals => { :target => '#pagination'}
+
+  .content-block.anatomy.u-pt-6
+    h2.bx--type-h4.u-text-blue Anatomy
+    .row.around-sm.middle-xs.start-md.center-xs.u-pt-7.u-pb-4
+      .col-xs-12.col-md-3
+        h3.bx--type-label.u-pb-6 Padding
+        = image_tag 'uicomponents/pagination/padding.png';
+
+      .col-xs-12.col-md-3
+        h3.bx--type-label.u-pb-6 Measures
+        = image_tag 'uicomponents/pagination/measures.png';
+
+      .col-xs-12.col-md-3
+        h3.bx--type-label.u-pb-6 Specifications
+        = image_tag 'uicomponents/pagination/specs.png'
+
+  .content-block.u-pt-6
+    h2.bx--type-h4.u-text-blue.u-pb-6 Example
+    = image_tag 'uicomponents/pagination/example.png', class:"e-image-full-xs"
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }

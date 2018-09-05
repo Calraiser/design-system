@@ -1,0 +1,72 @@
+.pagination-example {
+  margin-bottom: 40px;
+}
+
+.lds-pagination {
+  .pager {
+    li {
+      list-style: none;
+      margin: 0 4px;
+      @extend %txt-note;
+
+      display: inline-block;
+      vertical-align: middle;
+      a {
+        color: $grey07;
+        transition: $transition-slow;
+        &:hover {
+          font-weight: bold;
+          color: $grey;
+        }
+      }
+      &.disabled {
+        a {
+          color: $grey02;
+        }
+      }
+      &.hover {
+        svg {
+          fill: $grey01;
+        }
+      }
+      &.current {
+        font-family: Telefonicabold;
+        color: $grey;
+      }
+      &.next,
+      &.last {
+        transform: rotate(180deg);
+      }
+      &.previous,
+      &.next,
+      &.first,
+      &.last {
+        margin-top: 1px;
+        &:hover {
+          svg {
+            fill: $grey01;
+          }
+        }
+      }
+      svg {
+        transition: $transition-slow;
+        fill: $grey07;
+      }
+    }
+    &.disabled {
+      li, li > a {
+        color: $grey02 !important;
+        &:hover {
+          color: $grey02 !important;
+          font-weight: normal !important;
+        }
+      }
+      svg {
+        fill: $grey02 !important;
+        &:hover {
+          fill: $grey02 !important;
+        }
+      }
+    }
+  }
+}

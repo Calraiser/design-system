@@ -26,5 +26,7 @@
     link: "/uielements/tabs.html"
   - title: "Tooltips"
     link: "/uielements/tooltips.html"
+  - title: "Pagination"
+    link: "/uielements/pagination.html"
   - title: "Zoom"
     link: "/uielements/zoom.html"

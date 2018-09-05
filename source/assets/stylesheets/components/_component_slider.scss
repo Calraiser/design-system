@@ -95,3 +95,12 @@
     }
   }
 }
+
+.anatomy {
+  .col-xs-12 {
+    margin-bottom: 40px;
+    @include media($mobile) {
+      margin-bottom: 0;
+    }
+  }
+}

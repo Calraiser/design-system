@@ -6,3 +6,12 @@
     }
   }
 }
+
+
+.e-image-full-xs {
+  width: 100%;
+  @include media($mobile) {
+    width: auto;
+
+  }
+}
