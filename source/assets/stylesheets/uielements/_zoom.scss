@@ -2,6 +2,13 @@
 .lds-zoom {
   .control-zoom {
     margin-bottom: 6px;
+    &.disabled {
+      a {
+        pointer-events: none;
+        cursor: default;
+        background: $grey02;
+      }
+    }
     &.active {
       a {
         background: $blue;
