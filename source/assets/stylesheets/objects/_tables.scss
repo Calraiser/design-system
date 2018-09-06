@@ -1,0 +1,238 @@
+// ----------------------------------------
+// // ------ tables config ------
+// ----------------------------------------
+// ----------------------------------------
+// // ------ colors ------
+// ----------------------------------------
+$table-border-color: #F2F2F2; // ----------------------------------------
+// // ------ demo container settings ------
+// ----------------------------------------
+$container-width: 100%;
+$container-max-width: 100%; // ----------------------------------------
+// // ------ table settings ------
+// ----------------------------------------
+$table-border-width: 1px;
+$table-border-style: solid;
+$table-margin-bottom: 0;
+$table-cell-padding: 9px;
+$table-cell-text-align: left;
+$table-cell-border-top: $table-border-width $table-border-style $table-border-color;
+$table-header-font-weight: bold;
+$table-body-border-top: 0.142857143em $table-border-style $table-border-color;
+$table-condensed-padding: 0.294117647em;
+$table-bordered-border: $table-border-width $table-border-style $table-border-color;
+$table-bordered-border-radius: 0;
+$table-border-left: $table-border-width $table-border-style $table-border-color;
+$table-bordered-child-radius: 0;
+/* =============================================================
+    TABLES
+    Table styling.
+ * ============================================================= */
+.table-container {
+  padding: 0 20px;
+}
+/*  Removes default browser settings
+ *  and evens out inconsistencies. */
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*  Sets table width to 100%.
+ *  Adds bottom-margin. */
+%table,
+.table {
+  width: 100%;
+  margin-bottom: $table-margin-bottom;
+}
+/*  Adds table cell padding,
+ *  aligns text to the left,
+ *  and adds a top border to each cell. */
+%table td,
+%table th,
+.table td,
+.table th {
+  padding: $table-cell-padding;
+  text-align: $table-cell-text-align;
+  border-top: $table-cell-border-top;
+  font-family: Telefonicaregular;
+  color: #4A4A4A;
+  font-size: 14px;
+}
+/*  Sets table header font-weight to bold.
+ *  Aligns table header text to the bottom of each cell. */
+%table th,
+.table th {
+  font-family: Telefonicabold;
+  vertical-align: bottom;
+  background-color: #fff;
+  text-align: left;
+  border-bottom: 0;
+  padding-left: 0;
+}
+/*  Aligns cell text to the top of each cell. */
+%table td,
+.table td {
+  vertical-align: top;
+  border-top: 1px solid #F2F2F2;
+  position: relative;
+  .status {
+    @include size(8px);
+    @include position(absolute, 50% null null 0);
+    border-radius: 50%;
+    background: #ccc;
+    transform: translateY(-50%);
+    &.on {
+      background: $green;
+    }
+  }
+}
+/*  Aligns cell text to the top of each cell. */
+%table tr,
+.table tr {
+  &.selected {
+    border: 2px solid $green;
+  }
+  &:nth-child(odd) {
+    background-color: #F8F8F8;
+  }
+}
+
+  .table {
+    thead {
+      .sorting,
+      .sorting_asc,
+      .sorting_desc {
+        &:hover {
+          cursor: pointer;
+        }
+        &:after {
+          content: '';
+          background-repeat: no-repeat;
+          background-position: center 20px;
+          cursor: pointer;
+          padding: 10px;
+        }
+
+        &:hover {
+          border: 0;
+          outline: none;
+        }
+      }
+
+      .sorting_asc, .sorting {
+        &:after {
+          background-image: image-url("sort-down.svg");
+        }
+      }
+
+      .sorting_desc {
+        &:after {
+          background-image: image-url("sort-up.svg");
+        }
+      }
+    }
+  }
+
+/*  Removes the border-top from the first row. */
+%table thead:first-child tr td,
+%table thead:first-child tr th,
+.table thead:first-child tr td,
+.table thead:first-child tr th {
+  border-top: 0;
+}
+/*  Adds border-top between two table-body sections. */
+%table tbody + tbody,
+.table tbody + tbody {
+  display: block;
+}
+/*  Reduces cell padding */
+%table-condensed td,
+%table-condensed th,
+.table-condensed td,
+.table-condensed th {
+  padding: $table-condensed-padding;
+}
+/* Adds borders and border-radius. */
+%table-bordered,
+.table-bordered {
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  border-radius: $table-bordered-border-radius;
+}
+
+%table-bordered td + td,
+%table-bordered td + th,
+%table-bordered th + td,
+%table-bordered th + th,
+.table-bordered td + td,
+.table-bordered td + th,
+.table-bordered th + td,
+.table-bordered th + th {
+  border-left: 0;
+}
+
+%table-bordered tbody:first-child tr:first-child td,
+%table-bordered tbody:first-child tr:first-child th,
+%table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered thead:first-child tr:first-child th {
+  border-top: 0;
+}
+
+%table-bordered tbody:first-child tr:first-child td:first-child,
+%table-bordered thead:first-child tr:first-child th:first-child,
+.table-bordered tbody:first-child tr:first-child td:first-child,
+.table-bordered thead:first-child tr:first-child th:first-child {
+  border-radius: $table-bordered-child-radius 0 0 0;
+}
+
+%table-bordered tbody:first-child tr:first-child td:last-child,
+%table-bordered thead:first-child tr:first-child th:last-child,
+.table-bordered tbody:first-child tr:first-child td:last-child,
+.table-bordered thead:first-child tr:first-child th:last-child {
+  border-radius: 0 $table-bordered-child-radius 0 0;
+}
+
+%table-bordered tbody:last-child tr:last-child td:first-child,
+%table-bordered thead:last-child tr:last-child th:first-child,
+.table-bordered tbody:last-child tr:last-child td:first-child,
+.table-bordered thead:last-child tr:last-child th:first-child {
+  border-radius: 0 0 0 $table-bordered-child-radius;
+}
+
+%table-bordered tbody:last-child tr:last-child td:last-child,
+%table-bordered thead:last-child tr:last-child th:last-child,
+.table-bordered tbody:last-child tr:last-child td:last-child,
+.table-bordered thead:last-child tr:last-child th:last-child {
+  border-radius: 0 0 $table-bordered-child-radius 0;
+
+}.dataTables_length {
+  display: none;
+}
+
+.dataTables_scrollBody {
+  border: 1px solid #f2f2f2;
+}
+
+.dataTables_paginate {
+  float: right;
+  margin-top: 30px;
+  .paginate_button {
+    font-family: Telefonicaregular;
+    color: #c2c2c2;
+    margin: 0 6px;
+
+    cursor: pointer;
+    &.current {
+      font-family: Telefonicabold;
+    }
+      &.next {
+
+      }
+      &.previous {
+        transform: rotate(-180deg);
+      }
+    }
+  }
