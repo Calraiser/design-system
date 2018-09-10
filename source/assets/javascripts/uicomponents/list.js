@@ -5,22 +5,26 @@ $(document).ready(function() {
     return false;
   }
 
+  table.append(
+    '<caption class="table-caption bx--type-legend" style="caption-side: bottom">On/Off Legend</caption>');
 
   var table = $('.table').DataTable({
     paging: true,
     filter: false,
     info: false,
-    iDisplayLength: 5,
+    iDisplayLength: 11,
+    fixedColumns: false,
     language: {
      paginate: {
-     next:  <%= image_tag 'uicomponents/pagination/ic-single-arrow.svg' %>,
-     previous: '<img src="/source/assets/images/uicomponents/pagination/ic-single-arrow.svg">',
-    }
+     next: '<img src="/assets/images/uicomponents/pagination/ic-single-arrow.svg">',
+     previous: '<img src="/assets/images/uicomponents/pagination/ic-single-arrow.svg">',
+      }
     },
-    aoColumnDefs: [{
-      "bSortable": false,
-      "aTargets": [ 1 ]
-      }]
+    aoColumnDefs: [
+      {"bSortable": false, "aTargets": [1]},
+      {"width": "55px", "targets": [0]},
+      {"width": "20px", "targets": [1]}
+    ]
   });
 
   $('.table tbody').on('click', 'tr', function() {

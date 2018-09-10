@@ -14,7 +14,7 @@ $container-max-width: 100%; // ----------------------------------------
 $table-border-width: 1px;
 $table-border-style: solid;
 $table-margin-bottom: 0;
-$table-cell-padding: 9px;
+$table-cell-padding: 12px 0;
 $table-cell-text-align: left;
 $table-cell-border-top: $table-border-width $table-border-style $table-border-color;
 $table-header-font-weight: bold;
@@ -29,7 +29,12 @@ $table-bordered-child-radius: 0;
     Table styling.
  * ============================================================= */
 .table-container {
-  padding: 0 20px;
+  padding-bottom: 40px;
+  display: inline-block;
+  width: 100%;
+  @include media($tablet) {
+    padding-bottom: 0;
+  }
 }
 /*  Removes default browser settings
  *  and evens out inconsistencies. */
@@ -37,6 +42,19 @@ table {
   max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  .table-caption {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    white-space: pre;
+    position: absolute;
+    &:before {
+      content: '';
+      background: image-url('uicomponents/list/legend-example.svg') no-repeat;
+      @include size(22px,8px);
+      margin-right: 10px;
+    }
+  }
 }
 /*  Sets table width to 100%.
  *  Adds bottom-margin. */
@@ -73,9 +91,10 @@ table {
 /*  Aligns cell text to the top of each cell. */
 %table td,
 .table td {
-  vertical-align: top;
-  border-top: 1px solid #F2F2F2;
+  vertical-align: middle;
   position: relative;
+  border-collapse: collapse;
+  border-spacing: 0;
   .status {
     @include size(8px);
     @include position(absolute, 50% null null 0);
@@ -86,12 +105,24 @@ table {
       background: $green;
     }
   }
+  &.pois {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 /*  Aligns cell text to the top of each cell. */
-%table tr,
-.table tr {
-  &.selected {
-    border: 2px solid $green;
+%table tbody tr,
+.table tbody tr {
+  cursor: pointer;
+  &.even {
+    border: 1px solid $grey03;
+  }
+  &.odd {
+    border: 1px solid #F8F8F8;
+  }
+  &.selected, &:hover {
+    box-shadow: inset .5px .5px 0 2px $green;
+    background-color: $white !important;
   }
   &:nth-child(odd) {
     background-color: #F8F8F8;
@@ -218,21 +249,30 @@ table {
 
 .dataTables_paginate {
   float: right;
-  margin-top: 30px;
+  margin-top: 20px;
   .paginate_button {
     font-family: Telefonicaregular;
     color: #c2c2c2;
     margin: 0 6px;
-
     cursor: pointer;
+    img {
+      fill: #fff;
+    }
+    &.current {
+      font-weight: bold;
+      color: $grey;
+    }
+    &.next {
+      img {
+        transform: rotate(-180deg);
+      }
+    }
+    &.previous {
+
+    }
     &.current {
       font-family: Telefonicabold;
     }
-      &.next {
 
-      }
-      &.previous {
-        transform: rotate(-180deg);
-      }
     }
   }
