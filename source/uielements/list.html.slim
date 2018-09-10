@@ -31,20 +31,13 @@ index: true
         .table-container
           = partial :"components/_tables", :locals => { :selected => true }
 
-
-
-  h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
-  .code-wrapper
-    .code-content id="accordion"
-      = code("html") do
-        = partial :"components/_accordion", :locals => {}
-
-    = partial :"components/_code_actions", :locals => { :target => '#accordion'}
-
-  .content-block.u-pt-6.u-pb-6
+  .content-block.u-pt-6.
     h2.bx--type-h4.u-text-blue Anatomy
     p.bx--type-p
       | Lists has to be two columns at least. They are built alternating grey rows with white rows.
+  .content-block.u-pb-6
+    = image_tag 'uicomponents/list/list-example.png';
+  .content-block.u-pb-6
     = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.list }
 
   .action.downloads

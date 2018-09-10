@@ -256,7 +256,11 @@ table {
     margin: 0 6px;
     cursor: pointer;
     img {
-      fill: #fff;
+      filter: invert(.8);
+      transition: $transition-slow;
+      &:hover {
+        filter: invert(.3);
+      }
     }
     &.current {
       font-weight: bold;
