@@ -1,13 +1,13 @@
 .topbar {
   .logo-container {
     padding: 25px;
-    svg {
+    img {
       width: 150px;
     }
 
     @include media($mobile) {
       padding: 40px 45px 0;
-      svg {
+      img {
         width: 226px;
       }
     }
