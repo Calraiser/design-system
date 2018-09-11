@@ -1,0 +1,66 @@
+---
+page_title: Button bar
+description: Tabs organize and allow navigation between groups of content that are related and at the same level of hierarchy. Tabs can be nested into components like cards and sheets. Tabs control the UI region displayed below them.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  .content-block
+    h2.bx--type-h4.u-text-blue States
+    p.bx--type-p
+      | These are the different states of the button bar.
+    .row.u-pt-7.u-pb-7
+      .col-xs-12
+        = partial :"components/_tabs", :locals => { :items => '4' }
+
+  .content-block
+    h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+    .code-wrapper
+      .code-content id="tabs-code"
+        = code("html") do
+          = partial :"components/_tabs", :locals => { :items => '4' }
+
+      = partial :"components/_code_actions", :locals => { :target => '#tabs-code'}
+
+  .content-block.u-pt-6
+    h2.bx--type-h4.u-text-blue Anatomy
+    = partial :"components/_component_slider", :locals => { :custom_form => 'tabs', :item => data.component_slider.items.tabs }
+
+  .content-block
+    h2.bx--type-h4.u-text-blue Spacing
+    p.bx--type-p
+      | The vertical spacing starts from the path limit of the longest option. For more than three options, the checkboxes should be disposed in:
+
+    ul.e-list
+      li Mobile: 1 column
+      li Tablet: 2 - 4 columns
+      li Desktop: 2 - 4 - 8 columns
+    p.bx--type-p.u-pt-2
+      | You can find more info about the column system in the &nbsp;
+      = link_to 'Layout page', '/guidelines/layout.html', class: 'blue-link'
+
+  .content-block.examples-layout
+    .example-item
+      h3.bx--type-subH2.u-uppercase Mobile
+      .col-first.col-xs-5.row.middle-xs.two--col-bg.example-mob
+        = partial :"components/_tabs", :locals => { :items => '3' }
+    .example-item
+      h3.bx--type-subH2.u-uppercase Tablet
+      .row.row-np.example-tab
+        .col-first.col-xs-9.row.middle-xs.four--col-bg
+          = partial :"components/_tabs", :locals => { :items => '4' }
+    .example-item
+      h3.bx--type-subH2.u-uppercase Desktop
+      .row.row-np.example-desk
+        .col-first.col-xs-12.row.middle-xs.six--col-bg
+          = partial :"components/_tabs", :locals => { :items => '6' }
+
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }

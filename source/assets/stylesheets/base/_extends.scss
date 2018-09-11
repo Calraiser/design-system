@@ -63,10 +63,10 @@
 }
 
 %txt-title-h2 {
-  @include text-style(36, 40, Telefonicalight, $grey05);
+  @include text-style(36, 40, Telefonicalight, $grey);
 
   @include media($medium-desktop) {
-    @include text-style(36, 40, Telefonicalight, $grey05);
+    @include text-style(36, 40, Telefonicalight, $grey);
   }
 }
 

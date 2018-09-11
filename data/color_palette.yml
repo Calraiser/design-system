@@ -3,10 +3,9 @@ whiteColor:
     white: ['#ffffff', '']
 grayScale:
   primaryColors:
-    black: ['#000000', '']
     grey07: ['#4A4A4A', '']
   complementaryColors:
-    grey07: ['#4A4A4A', '']
+    grey09: ['#50535A', '']
     grey04: ['#999999', '']
   complementaryColors2:
     grey02: ['#D8D8D8', '']
@@ -26,7 +25,7 @@ primaryColors:
 
 grey:
   colors:
-    grey00: ['#F2F2F2', '']
+    grey10: ['#F4F4F4', '']
     grey01: ['#E5E5E5', '']
     grey02: ['#D8D8D8', '']
     grey03: ['#CCCCCC', '']

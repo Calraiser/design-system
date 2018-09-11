@@ -123,6 +123,9 @@ table {
   &.selected, &:hover {
     box-shadow: inset .5px .5px 0 2px $green;
     background-color: $white !important;
+    td {
+      font-weight: bold;
+    }
   }
   &:nth-child(odd) {
     background-color: #F8F8F8;

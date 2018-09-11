@@ -131,8 +131,16 @@
     @include position(absolute, null 0 0 null);
     background: $grey03;
     padding: 9px 20px 3px;
+    svg {
+      fill: $grey01;
+    }
 
     cursor: pointer;
+    &:hover {
+      svg {
+        fill: $blue;
+      }
+    }
   }
   .kpi-card {
     .kpi-value {

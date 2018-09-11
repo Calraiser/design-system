@@ -20,13 +20,13 @@ index: true
       .col-xs-6.col-sm-4.col-lg-2
         = partial :"components/_pills_bar", :locals => { :text => 'Default', :close => true, :extraclass => 'pills-default' }
       .col-xs-6.col-sm-4.col-lg-2
-        = partial :"components/_pills_bar", :locals => { :text => 'Default', :close => true, :extraclass => 'pills-hover pills-default' }
+        = partial :"components/_pills_bar", :locals => { :text => 'On Hover', :close => true, :extraclass => 'pills-hover pills-default' }
       .col-xs-6.col-sm-4.col-lg-2
         = partial :"components/_pills_bar", :locals => { :text => '+2', :extraclass => 'pill-counter' }
       .col-xs-6.col-sm-4.col-lg-2
         = partial :"components/_pills_bar", :locals => { :text => '', :back => true, :extraclass => 'pill-back' }
       .col-xs-6.col-sm-4.col-lg-2
-        = partial :"components/_pills_bar", :locals => { :text => 'Default', :close => true, :extraclass => 'pills-disabled pills-default' }
+        = partial :"components/_pills_bar", :locals => { :text => 'Disabled', :close => true, :extraclass => 'pills-disabled pills-default' }
 
 
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
@@ -67,7 +67,7 @@ index: true
 
         .col-xs-4
           p.bx--type-legend
-            | Fold pills
+            | Unfold pills
           .row.row-np.middle-xs.two--col-bg
             .example-mob.col-xs-10.row-np
               - (1..5).each_with_index do |i, index|
@@ -87,7 +87,7 @@ index: true
 
         .col-xs-6
           p.bx--type-legend
-            | Fold pills
+            | Unfold pills
           .row.row-np.middle-xs.four--col-bg
             .example-tab.col-xs-10.row-np
               - (1..5).each_with_index do |i, index|
@@ -108,7 +108,7 @@ index: true
     .example-item
       .col-xs-8.row-np
         p.bx--type-legend
-          | Fold pills
+          | Unfold pills
         .row.middle-xs.row-np.six--col-bg
           .example-desk.col-xs-11.row-np
             - (1..8).each_with_index do |i, index|

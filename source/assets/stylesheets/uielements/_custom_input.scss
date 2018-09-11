@@ -5,9 +5,9 @@
     margin: 9px 0;
   }
   &.checkbox {
-    @include input-custom($grey01, 18px, 18px, 2px, 15px, $white, $white, '');
+    @include input-custom($grey01, 14px, 14px, 2px, 15px, $white, $white, '');
   }
   &.radio {
-    @include input-custom($grey01, 18px, 18px, 2px, 6px, $green, $white, '');
+    @include input-custom($grey01, 14px, 14px, 2px, 6px, $green, $white, '');
   }
 }

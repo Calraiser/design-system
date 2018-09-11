@@ -6,6 +6,8 @@ icons:
       title: 'Arrow back'
     - image: 'icons/arrow_drop_down.svg'
       title: 'Arrow drop down'
+    - image: 'icons/arrow_drop_up.svg'
+      title: 'Arrow drop up'
     - image: 'icons/arrow_forward.svg'
       title: 'Arrow forward'
     - image: 'icons/check.svg'

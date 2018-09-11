@@ -1,4 +1,4 @@
-- labels     ||= ['Day', 'Month', 'Week', 'Quarter', 'Year', 'Every day', 'Every year', 'Every month']
+- labels     ||= ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5', 'Item 6', 'Item 7', 'Item 8']
 - items      ||= ''
 - startRange ||= '1'
 - range      ||= (startRange..items)
@@ -10,6 +10,6 @@
       label.bx--type-p.tab-label for=(tabIds.dup) #{labels[index]}
       .tab-content
         p.bx--type-p
-          | #{labels[index]} for #{index} section tab goes here.
+          | Content for #{labels[index]} goes here.
 
   .slide

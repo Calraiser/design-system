@@ -38,17 +38,18 @@
     cursor: pointer;
     font-size: rem-calc(14);
     @include media($mobile) {
-      font-size: rem-calc(16);
+      font-size: rem-calc(14);
     }
   }
   .tab-label-content {
     width: 100%;
-    box-shadow: 0 0 4px 0 $grey07;
+    // box-shadow: 0 0 4px 0 $grey07;
     background-image: linear-gradient(to bottom, $white, #f9fafb);
     border: solid 1px $grey02;
     text-align: center;
     display: block;
     padding: 3px 0 5px;
+    margin: 0 -1px;
     .tab-content {
       @include position(absolute, 70px null null 0);
       line-height: 130%;

@@ -20,16 +20,11 @@ index: true
       li Not use commas or semicolons at the end of each line.
 
   .content-block
-    .row.around-xs.u-py-7
+    .row.u-pb-7
       .col-xs-12.col-md-5
         h3.bx--type-label.u-uppercase.u-pb-5 Default
         .table-container
           = partial :"components/_tables", :locals => { }
-
-      .col-xs-12.col-md-5
-        h3.bx--type-label.u-uppercase.u-pb-5 Hover and Selected
-        .table-container
-          = partial :"components/_tables", :locals => { :selected => true }
 
   .content-block.u-pt-6.
     h2.bx--type-h4.u-text-blue Anatomy

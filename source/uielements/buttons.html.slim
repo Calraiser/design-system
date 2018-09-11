@@ -39,3 +39,7 @@ index: true
   /!Secondary buttons with icon
   = partial :"buttonstype/_buttons_header", :locals => { :title => 'Secondary buttons with icons', :text => 'Buttons for DOWNLOAD or similar operations', :light =>'large / medium / small' }
   = partial :"buttonstype/_secondary_buttons_ico"
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }

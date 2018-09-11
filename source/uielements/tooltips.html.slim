@@ -22,22 +22,19 @@ index: true
     h3.bx--type-h4.u-text-grey01 White Tooltip + icons (alt – label)
 
     .row.center-xs.start-md
-      .col-xs-12.col-md-4
+      .col-xs-12.col-md-3
         p.bx--type-note.u-uppercase.u-pb-4
           | Basic
           .row.center-xs.start-md
-            = svg_tag 'ic-local-hotel.svg', class: 'u-pr-2 u-pl-2'
+            = image_tag 'ic-local-hotel.png', class: 'u-pr-2 u-pl-2 ic-hotel'
             = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => 'Category - name' }
 
-      .col-xs-12.col-md-4
+      .col-xs-12.col-md-3
         p.bx--type-note.u-uppercase.u-pb-4
           | Data
         .row.center-xs.start-md
-          = svg_tag 'ic-local-hotel.svg', class: 'u-pr-2 u-pl-2'
+          = image_tag 'ic-local-hotel.png', class: 'u-pr-2 u-pl-2 ic-hotel'
           = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => data.tooltips.data }
-
-      .col-xs-12.col-md-4
-        = image_tag 'example-tooltip-viz.png', class: 'u-pt-6'
 
     p.bx--type-note.u-uppercase
       | Text basic + triangle
@@ -83,20 +80,18 @@ index: true
   .content-block
     h3.bx--type-h4.u-text-grey01 Dark grey Tooltip + icons (ONLY FOR EXCEPTIONAL USES – IMPROVING ACCESSIBILITY)
     .row.center-xs.start-md
-      .col-xs-12.col-md-4
+      .col-xs-12.col-md-3
         p.bx--type-note.u-uppercase.u-pb-4
           | Basic
         .row.center-xs.start-md
-          = svg_tag 'ic-local-hotel.svg', class: 'u-pr-2 u-pl-2'
+          = image_tag 'ic-local-hotel.png', class: 'u-pr-2 u-pl-2 ic-hotel'
           = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => false, :content => 'Category - name' }
-      .col-xs-12.col-md-4
+      .col-xs-12.col-md-3
         p.bx--type-note.u-uppercase.u-pb-4
           | Data
         .row.center-xs.start-md
-          = svg_tag 'ic-local-hotel.svg', class: 'u-pr-2 u-pl-2'
+          = image_tag 'ic-local-hotel.png', class: 'u-pr-2 u-pl-2 ic-hotel'
           = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => false, :content => data.tooltips.data }
-      .col-xs-12.col-md-4
-        = image_tag 'example-tooltip-viz-inverse.png', class: 'u-pt-6'
 
     p.bx--type-note.u-uppercase
       | Text basic + triangle

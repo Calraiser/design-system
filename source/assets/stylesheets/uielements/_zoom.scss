@@ -3,6 +3,9 @@
   .control-zoom {
     margin-bottom: 6px;
     &.disabled {
+      &:hover {
+        cursor: not-allowed;
+      }
       a {
         pointer-events: none;
         cursor: default;
@@ -15,7 +18,7 @@
       }
     }
     a {
-      @include size(27px);
+      @include size(28px);
       border-radius: 50%;
       background: $grey01;
       box-shadow: 0 0 4px 0 $grey07;

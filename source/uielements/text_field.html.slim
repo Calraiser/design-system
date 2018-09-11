@@ -24,9 +24,9 @@ index: true
         = partial :"components/_text_fields", :locals => { :text => 'Label', :type => 'text', :placeholder => 'Enter name' }
       .col-xs-2
         h3.bx--type-label.u-uppercase.u-pb-5 Input + Ico
-        = partial :"components/_text_fields", :locals => { :text => 'Email', :type => 'email', :placeholder => 'Enter mail', :ico => 'mail' }
+        = partial :"components/_text_fields", :locals => { :text => 'Email', :type => 'email', :placeholder => 'Enter email', :ico => 'mail' }
       .col-xs-2
-        = partial :"components/_text_fields", :locals => { :text => 'Password', :type => 'password', :placeholder => 'Enter password' }
+        = partial :"components/_text_fields", :locals => { :text => 'Password', :type => 'password', :placeholder => 'Enter password', }
 
     .row.around-xs.bottom-xs.iddle-xs.u-py-7
       .col-xs-2
@@ -34,10 +34,10 @@ index: true
         = partial :"components/_text_fields", :locals => { :text => 'Label', :type => 'text', :placeholder => 'Enter name', :extraclass => 'active' }
       .col-xs-2
         h3.bx--type-label.u-uppercase.u-pb-5 Input success
-        = partial :"components/_text_fields", :locals => { :text => 'Email', :type => 'email', :ico => 'success', :placeholder => 'Enter mail', :extraclass => 'active success'  }
+        = partial :"components/_text_fields", :locals => { :text => 'Email', :type => 'email', :ico => 'success', :placeholder => 'Enter email', :extraclass => 'active success'  }
       .col-xs-2
         h3.bx--type-label.u-uppercase.u-pb-5 Input disabled
-        = partial :"components/_text_fields", :locals => { :text => 'Password', :type => 'text', :placeholder => 'Enter password' }
+        = partial :"components/_text_fields", :locals => { :text => 'Password', :type => 'text', :placeholder => 'Enter password', :disabled => true }
 
 
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
@@ -53,7 +53,7 @@ index: true
     = partial :"components/_component_slider", :locals => { :custom_form => 'switch', :item => data.component_slider.items.input }
 
   .content-block
-    h2.bx--type-h2 Text Area
+    h1.bx--type-h1 Text Area
     p.bx--type-p.u-pt-4
       | Textarea inputs are used for freeform data entry. They are taller than text fields and wrap overflow text onto a new line. They are a fixed height and scroll vertically when the cursor reaches the bottom of the field. The large initial size indicates that longer responses are possible and encouraged.
 

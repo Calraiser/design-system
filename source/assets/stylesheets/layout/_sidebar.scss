@@ -40,7 +40,7 @@ $sidebar-width: 105px;
     @include size(60px, 35px);
 
     @include media($mobile) {
-      background-image: image-url('brand_logos/logo_sidebar.svg');
+      background-image: image-url('brand_logos/logo_sidebar.png');
       @include size(75px, 35px);
 
 
