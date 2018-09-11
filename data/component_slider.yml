@@ -229,3 +229,21 @@ items:
         image01: '/assets/images/uicomponents/list/specs.png'
         # image02: '/assets/images/uicomponents/radio/specs_02.png'
         # image03: '/assets/images/uicomponents/radio/specs_03.png'
+  popover:
+    - id: 'padding'
+      images:
+        image01: '/assets/images/uicomponents/popover/padding.png'
+        # image02: '/assets/images/uicomponents/radio/padding_01.png'
+        # image03: '/assets/images/uicomponents/radio/padding_01.png'
+
+    - id: 'measures'
+      images:
+        image01: '/assets/images/uicomponents/popover/measures.png'
+        # image02: '/assets/images/uicomponents/radio/measures_02.png'
+        # image03: '/assets/images/uicomponents/radio/measures_03.png'
+
+    - id: 'specifications'
+      images:
+        image01: '/assets/images/uicomponents/popover/specs.png'
+        # image02: '/assets/images/uicomponents/radio/specs_02.png'
+        # image03: '/assets/images/uicomponents/radio/specs_03.png'

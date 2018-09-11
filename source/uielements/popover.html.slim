@@ -1,0 +1,52 @@
+---
+page_title: Popover
+description: Popovers are small overlays that open on demand, usually when the user clicks a button. They let users access supplementary content and actions without cluttering the page.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+  p.bx--type-p
+    | The position of popover is flexible and will change depending on how close the element is to the edge of the screen. Use popover to identify or add a small amount of information to an element.
+
+  .content-block
+    h2.bx--type-h4.u-text-blue States
+
+  .content-block.u-py-7
+    .row.center-xs
+      .col-xs-6.col-md-3.popover-example
+        = partial :"components/popover", :locals => { :arrow => true, :position => 'top', :items => '6'}
+      .col-xs-6.col-md-3.popover-example
+        = partial :"components/popover", :locals => { :arrow => true, :position => 'right', :items => '6'}
+      .col-xs-6.col-md-3.popover-example
+        = partial :"components/popover", :locals => { :arrow => true, :position => 'bottom', :items => '6'}
+      .col-xs-6.col-md-3.popover-example
+        = partial :"components/popover", :locals => { :arrow => true, :position => 'left', :items => '6'}
+
+  h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+  .code-wrapper
+    .code-content id="popover"
+      = code("html") do
+        = partial :"components/popover", :locals => { :arrow => true, :position => 'top'}
+
+    = partial :"components/_code_actions", :locals => { :target => '#popover'}
+
+  .content-block.u-pt-6
+    h2.bx--type-h4.u-text-blue Anatomy
+  .content-block.u-pb-6
+    = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.popover }
+
+  .content-block.u-pt-8
+    h3.bx--type-h4.u-text-grey Variants
+    p.bx--type-p
+      | For the use case where there is more options, the popover would be divided in two columns (or more).
+  .content-block
+    = partial :"components/popover", :locals => { :arrow => true, :position => 'left', :items => '12', :extraclass => 'popover-2__col'}
+
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }

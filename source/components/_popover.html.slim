@@ -1,0 +1,18 @@
+
+- position   ||= false
+- content    ||= false
+- arrow      ||= false
+- extraclass ||= false
+
+- items      ||= ''
+- startRange ||= '1'
+- range      ||= (startRange..items)
+
+- content    ||= ['Option medium', 'Option extra large', 'Option short', 'Option']
+
+div class="popover #{position}" class =(extraclass if extraclass.present?)
+  - if arrow.present?
+    .arrow
+  ul.popover-content
+    - range.each_with_index do |element, index|
+      li = link_to content[rand(content.length)]

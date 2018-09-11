@@ -1,4 +1,5 @@
 
+
 //
 // Variables
 // -----------------------------------------
@@ -22,7 +23,7 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
   transform-origin: $val;
   }
 
-.tooltip {
+.popover {
   @include position(relative, 0 null null 0);
   z-index: 1010;
   display: inline-block;
@@ -33,6 +34,14 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
   background-clip: padding-box;
 
   padding: 9px 14px;
+
+  &-2__col {
+    .popover-content {
+      columns: 160px 2;
+      column-gap: 1px;
+      column-rule: 1px solid $grey03;
+    }
+  }
 
   &.dark {
     background-color: $tooltip-bg-dark;
@@ -63,20 +72,8 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
-.tooltip-content {
-  white-space: pre;
-  font-family: Telefonicaregular;
-  font-size: rem-calc(12);
-  line-height: rem-calc(19);
-  color: $grey;
-  text-align: left;
-  strong {
-    font-family: Telefonicabold;
-  }
-}
-
-.tooltip .arrow,
-.tooltip .arrow:after {
+.popover .arrow,
+.popover .arrow:after {
   position: absolute;
   display: inline-block;
   width: 0;
@@ -85,35 +82,13 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
   border-style: solid;
 }
 
-.tooltip .arrow:after {
+.popover .arrow:after {
   z-index: -1;
   content: "";
 }
 
-// Dark
-.tooltip.right.dark .arrow {
-  &:after {
-    border-right-color: $tooltip-bg-dark;
-  }
-}
-.tooltip.bottom.dark .arrow {
-  &:after {
-    border-bottom-color: $tooltip-bg-dark;
-  }
-}
-.tooltip.left.dark .arrow {
-  &:after {
-    border-left-color: $tooltip-bg-dark;
-  }
-}
-.tooltip.top.dark .arrow {
-  &:after {
-    border-top-color: $tooltip-bg-dark;
-  }
-}
 
-
-.tooltip.right .arrow {
+.popover.right .arrow {
   top: 50%;
   right: 100%;
   border-right-color: #ccc;
@@ -128,7 +103,7 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
 
 }
 
-.tooltip.bottom .arrow {
+.popover.bottom .arrow {
   left: 50%;
   bottom: 100%;
   border-bottom-color: #ccc;
@@ -143,7 +118,7 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
-.tooltip.left .arrow {
+.popover.left .arrow {
   top: 50%;
   left: 100%;
   border-left-color: #ccc;
@@ -155,5 +130,72 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
     border-width: 10px 0 10px 10px;
     @include transform(translate(-12px, -50%));
     @include transform-origin(left);
+  }
+}
+
+
+.popover {
+  padding: 0;
+  .arrow {
+    &:before {
+      content: '';
+      background: image-url('ic-user.svg') no-repeat;
+      padding: 12px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+&.top .arrow {
+  left: 70%;
+  &:before {
+    margin-top: 20px;
+  }
+}
+&.right .arrow {
+  &:before {
+    margin-left: -20px;
+  }
+}
+&.left .arrow {
+  &:before {
+    margin-left: 20px;
+  }
+}
+&.bottom .arrow {
+  left: 70%;
+  &:before {
+    margin-top: -20px;
+  }
+}
+
+  .popover-content {
+    margin: 5px 0;
+    min-width: 163px;
+    li {
+      list-style: none;
+      padding: 9px 12px;
+      text-align: left;
+      &:hover {
+        background: #f2f2f2;
+        a {
+          color: $blue;
+        }
+      }
+      a {
+        transition: $transition-slow;
+        @extend %txt-note;
+        display: block;
+      }
+    }
+  }
+}
+
+.popover-example {
+  margin-bottom: 100px;
+  @include media($tablet) {
+    margin-bottom: 0;
+
   }
 }
