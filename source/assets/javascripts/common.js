@@ -1,6 +1,5 @@
 var data_embed = {};
 
-
 // Go up multiple parent levels in one simple function.
 (function(window, document, $) {
   $.fn.extend({

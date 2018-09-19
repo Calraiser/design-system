@@ -30,9 +30,13 @@ index: true
     .code-wrapper
       .code-content id="switch-code"
         = code("html") do
-          .lds-switch
-            input type="checkbox" id="id-name--1" name="set-name" class="lds--switch-input"
-            label for="id-name--1" class="lds--switch-label"
+          | <div class="lds--custom-input switch">
+              <input checked="checked" class="lds--switch-input" id="50" name="set-name" type="checkbox">
+              <label class="lds--switch-label" for="50">
+                <span class="switch--label-on bx--type-label selected"> Selected</span>
+                <span class="switch--label-off bx--type-label">Unselected</span>
+              </label>
+            </div>
 
       = partial :"components/_code_actions", :locals => { :target => '#switch-code'}
 

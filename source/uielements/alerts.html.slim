@@ -1,0 +1,63 @@
+---
+page_title: Alerts
+description: Notifications are messages that communicate information to the user.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  .content-block
+    h2.bx--type-h4.u-text-blue States
+
+  .content-block
+    h3.bx--type-label Default (close option)
+    .row.around-xs.u-pt-7
+      .col-xs-12.col-md-6
+        = partial :"components/alerts", :locals => { :extraclass =>'alert-default', :title => 'New data available', :text => 'Lorem ipsum dolor sit amet, consectetur.', :date =>'22 May', :close => true }
+      .col-xs-12.col-md-6
+        = partial :"components/alerts", :locals => { :extraclass =>'alert-primary', :title => 'Alert', :text => 'Lorem ipsum dolor sit amet, consectetur.', :date =>'22:34', :close => true }
+
+  .content-block.u-pt-3
+    h3.bx--type-label Default (without close option)
+    .row.around-xs.u-pt-7
+      .col-xs-12
+        = partial :"components/alerts", :locals => { :extraclass =>'alert-secondary', :title => 'Notification', :text => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', :date =>'now', :close => false }
+
+  .content-block.u-pt-3
+    h3.bx--type-label Overlap (more than one alert)
+    .row.around-xs.u-pt-7
+      .col-xs-12
+        .multiple-alert__wrapper
+          .multiple-alert__content
+            -(1..4).each do |i|
+              = partial :"components/alerts", :locals => { :extraclass =>'alert-secondary', :title => 'Notification', :text => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', :date =>'now', :close => false }
+
+
+  h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+  .code-wrapper
+    .code-content id="alert"
+      = code('html') do
+       |  <div class="lds-alert alert-default">
+            <div class="alert-heading">
+            <h2 class="alert-title">New data available</h2>
+              <span class="alert-date">22 May</span>
+              <button class="close" type="button"></button>
+            </div>
+            <p class="bx--type-p">Lorem ipsum dolor sit amet, consectetur.</p>
+          </div>
+
+    = partial :"components/_code_actions", :locals => { :target => '#alert'}
+
+  .content-block.u-pt-6
+    h2.bx--type-h4.u-text-blue Anatomy
+  .content-block.u-pb-6
+    = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.alerts }
+
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }

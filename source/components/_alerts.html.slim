@@ -1,0 +1,18 @@
+- color      ||= false
+- title      ||= false
+- text       ||= false
+- note       ||= false
+- extraclass ||= false
+- close      ||= false
+- date       ||= false
+- index      ||= false
+
+.lds-alert class=(extraclass if extraclass.present?)
+  .alert-heading
+    h2.alert-title #{title}
+    span.alert-date
+      | #{date}
+    - if close.present?
+      button.close type="button"
+  p.bx--type-p
+      | #{text}

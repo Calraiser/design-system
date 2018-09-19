@@ -7,6 +7,7 @@
 //= require ./vendors/d3.min.v3.js
 //= require ./vendors/jquery.sticky-kit.js
 //= require ./vendors/datatables.js
+//= require ./vendors/prism.js
 //= require ./blocks/content_nav.js
 //= require ./blocks/responsive_nav.js
 
@@ -16,6 +17,7 @@
 //= require ./uicomponents/info_navigation.js
 //= require ./uicomponents/accordion.js
 //= require ./uicomponents/list.js
+//= require ./uicomponents/alerts.js
 
 //= require ./charts/donut_chart.js
 

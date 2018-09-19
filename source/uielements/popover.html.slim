@@ -30,7 +30,17 @@ index: true
   .code-wrapper
     .code-content id="popover"
       = code("html") do
-        = partial :"components/popover", :locals => { :arrow => true, :position => 'top'}
+        | <div class="popover top">
+            <div class="arrow"></div>
+            <ul class="popover-content">
+              <li><a href="#">Option short</a></li>
+              <li><a href="#">Option</a></li>
+              <li><a href="#">Option extra large</a></li>
+              <li><a href="#">Option short</a></li>
+              <li><a href="#">Option extra large</a></li>
+              <li><a href="#">Option extra large</a></li>
+            </ul>
+          </div>
 
     = partial :"components/_code_actions", :locals => { :target => '#popover'}
 

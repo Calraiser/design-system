@@ -67,14 +67,10 @@ index: true
     .code-wrapper
       .code-content id="tooltips"
         = code("html") do
-          = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'top', :content => '748 lorem' }
-        = code("html") do
-          = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'bottom', :content => '748 lorem' }
-        = code("html") do
-          = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'left', :content => '748 lorem' }
-        = code("html") do
-          = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'right', :content => '748 lorem' }
-
+          | <div class="tooltip top">
+              <div class="arrow"></div>
+              <p class="tooltip-content">748 lorem</p>
+            </div>
       = partial :"components/_code_actions", :locals => { :target => '#tooltips'}
 
   .content-block

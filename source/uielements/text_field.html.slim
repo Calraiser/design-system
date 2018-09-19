@@ -44,7 +44,10 @@ index: true
     .code-wrapper
       .code-content id="input-code"
         = code("html") do
-          = partial :"components/_text_fields", :locals => { :text => 'Label', :type => 'text', :placeholder => 'Enter name' }
+          | <div class="lds-form--group">
+              <label class="bx--type-label" for="43">Label</label>
+              <input name="43" placeholder="Enter name" required="required" type="text">
+            </div>
 
       = partial :"components/_code_actions", :locals => { :target => '#input-code'}
 

@@ -44,14 +44,16 @@ index: true
     .code-wrapper
       .code-content id="combobox"
         = code("html") do
-          select id="default"
-            option value="hide" Default
-            option value="january" rel="icon-temperature" January
-            option value="february" February
-            option value="march" March
-            option value="april" April
-            option value="may" May
-            option value="june" June
+          | <div class="select">
+              <select id="default" class="select-hidden">
+                <option value="hide">Default</option>
+                <option rel="icon-temperature" value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+              </select>
 
       = partial :"components/_code_actions", :locals => { :target => '#combobox'}
 

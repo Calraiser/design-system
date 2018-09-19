@@ -9,7 +9,7 @@ index: true
 .content
   h1.bx--type-h1 = current_page.data.page_title
   p.bx--type-p = current_page.data.description
-  
+
   .content-block.u-pb-8
     h2.bx--type-h4.u-text-blue States
     p.bx--type-p
@@ -23,7 +23,42 @@ index: true
     .code-wrapper
       .code-content id="tabs-section-code"
         = code("html") do
-          = partial :"components/_tabs_section", :locals => { :items => '5' }
+          | <div class="lds-tab--section">
+              <input checked="checked" id="6" name="tabs" type="radio">
+              <div class="tab-label-content" id="6">
+                <label class="bx--type-p tab-label" for="6">Item 1</label>
+                <div class="tab-content">
+                  <p class="bx--type-p">Content for Item 1 goes here.</p></div></div>
+              <input id="23" name="tabs" type="radio">
+              <div class="tab-label-content" id="23">
+                <label class="bx--type-p tab-label" for="23">Item 2</label>
+                <div class="tab-content">
+                  <p class="bx--type-p">Content for Item 2 goes here.</p>
+                </div>
+              </div>
+              <input id="14" name="tabs" type="radio">
+              <div class="tab-label-content" id="14">
+                <label class="bx--type-p tab-label" for="14">Item 3</label>
+                <div class="tab-content">
+                  <p class="bx--type-p">Content for Item 3 goes here.</p>
+                </div>
+              </div>
+              <input id="54" name="tabs" type="radio">
+              <div class="tab-label-content" id="54">
+                <label class="bx--type-p tab-label" for="54">Item 4</label>
+                <div class="tab-content">
+                  <p class="bx--type-p">Content for Item 4 goes here.</p>
+                </div>
+              </div>
+              <input id="36" name="tabs" type="radio">
+              <div class="tab-label-content" id="36">
+                <label class="bx--type-p tab-label" for="36">Item 5</label>
+                <div class="tab-content">
+                  <p class="bx--type-p">Content for Item 5 goes here.</p>
+                </div>
+              </div>
+              <div class="slide"></div>
+            </div>
 
       = partial :"components/_code_actions", :locals => { :target => '#tabs-section-code'}
 

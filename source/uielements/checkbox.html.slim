@@ -33,7 +33,13 @@ index: true
     .code-wrapper
       .code-content id="checkbox-code"
         = code("html") do
-          = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
+          | <div class="lds--custom-input checkbox">
+              <input class="lds--checkbox-input" id="52" name="set-name" type="checkbox">
+              <label class="lds--checkbox-label" for="52">
+                <span class="label-on bx--type-label selected"> Default</span>
+                <span class="label-off bx--type-label">Default</span>
+              </label>
+            </div>
 
       = partial :"components/_code_actions", :locals => { :target => '#checkbox-code'}
 

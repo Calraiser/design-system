@@ -4,8 +4,9 @@ require 'lib/video_helper.rb'
 helpers StaticD3Helpers
 helpers MyAssetHandler
 
-set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown_enginge, :redcarpet
+set :markdown, fenced_code_blocks: true
+set :haml, { ugly: true }
 
 set :css_dir,     'assets/stylesheets'
 set :fonts_dir,   'assets/fonts'
@@ -23,6 +24,7 @@ activate :syntax, :inline_theme => Rouge::Themes::Github.new
 activate :sprockets do |c|
   c.expose_middleman_helpers = true
 end
+
 
 # activate :middleman_scavenger do |config|
 #   config.path = "./source/assets/images/icons/"

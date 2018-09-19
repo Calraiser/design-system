@@ -37,7 +37,13 @@ index: true
       .code-content id="checkbox-code"
         = preserve do
           = code("html") do
-            = partial :"components/_radio_button", :locals => { :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
+            | <div class="lds--custom-input radio">
+                <input class="lds--radio-input" id="21" name="set-name" type="radio">
+                <label class="lds--radio-label" for="21">
+                  <span class="label-on bx--type-label selected"> Default</span>
+                  <span class="label-off bx--type-label">Default</span>
+                </label>
+              </div>
 
       = partial :"components/_code_actions", :locals => { :target => '#checkbox-code'}
 
