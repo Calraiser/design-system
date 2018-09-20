@@ -7,13 +7,13 @@
   - if header.present?
     .row.bottom-xs
       .col-xs-12
-        h2.bx--type-subH2 #{header}
+        h2.bx--type-note.u-uppercase.u-pt-4.u-pb-2   #{header}
   - if subheader.present?
-          p.bx--type-p.small #{subheader}
+          p.bx--type-note.u-pb-2  #{subheader}
 
-  .row.bottom-xs.u-pb-4.u-pt-5
+  .row.bottom-xs
     - items.each_with_index do |element, index|
-      .u-pb-4 class=(title.present? ? 'col-xs-2 center-xs' : "col-xs")
+      .u-py-2 class=(title.present? ? 'col-xs-2 u-pb-6 center-xs' : "col-xs u-pr-4")
         = svg_tag element.image
         - if title.present?
           p.bx--type-legend.u-pt-2

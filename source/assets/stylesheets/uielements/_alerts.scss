@@ -1,11 +1,13 @@
 .lds-alert {
-  width: 346px;
   border-radius: 4px;
   background-color: $white;
   box-shadow: 0 0 4px 0 $grey07;
   text-align: left;
   padding: 8px 10px 15px 24px;
   position: relative;
+  @include media($mobile) {
+    width: 346px;
+  }
   .alert-heading {
     display: flex;
     align-content: center;
@@ -89,4 +91,11 @@
     }
   }
 }
+  }
+
+  .alert-example {
+    margin-bottom: 30px;
+    @include media($tablet) {
+      margin-bottom: 0;
+    }
   }

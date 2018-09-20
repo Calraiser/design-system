@@ -1,3 +1,10 @@
+.lds-navigation--wrapper {
+  margin: 20px 0;
+  @include media($tablet) {
+    margin-left: 50px;
+  }
+}
+
 .lds-navigation-icons {
   &.default {
     svg {

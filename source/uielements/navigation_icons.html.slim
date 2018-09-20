@@ -10,7 +10,7 @@ index: true
   h1.bx--type-h1 = current_page.data.page_title
   p.bx--type-p = current_page.data.description
 
-  .content-block
+  .content-block.u-pb-8
     = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => true, :extraclass => 'default' }
 
 
@@ -22,17 +22,22 @@ index: true
     /
     /   = partial :"components/_code_actions", :locals => { :target => '#checkbox-code'}
 
-  .content-block
+  .content-block.u-pb-6
     h2.bx--type-h4.u-text-blue States
     p.bx--type-p
       | These are the different states of the navigation icons.
-    .u-pt-7
-      = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'Default', :title => false, :extraclass => 'default' }
-      = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'On hover', :title => false, :extraclass => 'default hover' }
-      = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'Active', :subheader => 'For white and grey backgrounds', :title => false, :extraclass => 'default blue' }
-      = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :extraclass => 'default black' }
-      = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :subheader => 'For white backgrounds', :extraclass => 'default green' }
-      = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :header => 'Disabled', :extraclass => 'default disabled' }
+    .u-pt-4
+      .lds-navigation--wrapper
+        = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'Default', :title => false, :extraclass => 'default' }
+      .lds-navigation--wrapper
+        = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'On hover', :title => false, :extraclass => 'default hover' }
+      .lds-navigation--wrapper
+        = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'Active', :subheader => 'For white and grey backgrounds', :title => false, :extraclass => 'default blue' }
+        = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :extraclass => 'default black' }
+      .lds-navigation--wrapper
+        = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :subheader => 'For white backgrounds', :extraclass => 'default green' }
+      .lds-navigation--wrapper
+        = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :header => 'Disabled', :extraclass => 'default disabled' }
 
   .content-block
     h2.bx--type-h4.u-text-blue Anatomy

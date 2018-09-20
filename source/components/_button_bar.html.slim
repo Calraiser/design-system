@@ -1,0 +1,14 @@
+- labels     ||= ['Day', 'Month', 'Week', 'Quarter', 'Year', 'Every day', 'Every year', 'Every month']
+- items      ||= ''
+- startRange ||= '1'
+- range      ||= (startRange..items)
+
+.lds-button--bar
+  - range.each_with_index do |i, index|
+    input type="checkbox" name="tabs" id=(tabId = rand(1..100)) checked=('checked' if index === 0)
+    .tab-label-content id=(tabId.dup)
+      label.bx--type-p.tab-label for=(tabId.dup)
+        | #{labels[index]}
+      / .tab-content
+      /   p.bx--type-p
+      /     | Content for #{labels[index]} goes here.

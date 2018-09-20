@@ -66,27 +66,3 @@
     color: $white;
   }
 }
-
-
-// Examples
-
-.examples-layout {
-  margin-top: 50px !important;
-  .example-item {
-    margin: 50px 0;
-  }
-  h3 {
-    margin-bottom: 20px;
-  }
-  .bx--type-legend {
-    margin-bottom: 10px;
-  }
-}
-
-.uielements_pills_bar {
-  .example-mob {
-    span {
-      font-size: rem-calc(12);
-    }
-  }
-}

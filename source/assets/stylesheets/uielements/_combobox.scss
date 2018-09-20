@@ -38,6 +38,7 @@ $select-height: 36px;
   background-position: 95% center;
   &.disabled {
     opacity: .5;
+    cursor: not-allowed;
   }
   font:{
     size: 14px;

@@ -16,7 +16,7 @@ index: true
       | These are the different states of the button bar.
     .row.u-pt-7.u-pb-7
       .col-xs-12
-        = partial :"components/_tabs", :locals => { :items => '4' }
+        = partial :"components/_button_bar", :locals => { :items => '4' }
 
   .content-block
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
@@ -62,20 +62,22 @@ index: true
       = link_to 'Layout page', '/guidelines/layout.html', class: 'blue-link'
 
   .content-block.examples-layout
-    .example-item
+    .example-item.example-mobile
       h3.bx--type-subH2.u-uppercase Mobile
-      .col-first.col-xs-5.row.middle-xs.two--col-bg.example-mob
-        = partial :"components/_tabs", :locals => { :items => '3' }
-    .example-item
-      h3.bx--type-subH2.u-uppercase Tablet
-      .row.row-np.example-tab
-        .col-first.col-xs-9.row.middle-xs.four--col-bg
-          = partial :"components/_tabs", :locals => { :items => '4' }
-    .example-item
+      .two--col-bg.example-mob
+        .row.middle-xs
+          = partial :"components/_button_bar", :locals => { :items => '3' }
+    .example-item.example-tablet
+      h3.bx--type-subH2.u-uppercase
+        | Tablet
+      .four--col-bg
+        .row.middle-xs
+          = partial :"components/_button_bar", :locals => { :items => '3' }
+    .example-item.example-desktop
       h3.bx--type-subH2.u-uppercase Desktop
-      .row.row-np.example-desk
-        .col-first.col-xs-12.row.middle-xs.six--col-bg
-          = partial :"components/_tabs", :locals => { :items => '6' }
+      .eight--col-bg
+        .row.middle-xs
+          = partial :"components/_button_bar", :locals => { :items => '6' }
 
 
   .action.downloads

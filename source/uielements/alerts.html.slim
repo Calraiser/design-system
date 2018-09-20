@@ -16,9 +16,9 @@ index: true
   .content-block
     h3.bx--type-label Default (close option)
     .row.around-xs.u-pt-7
-      .col-xs-12.col-md-6
+      .col-xs-12.col-md-6.alert-example
         = partial :"components/alerts", :locals => { :extraclass =>'alert-default', :title => 'New data available', :text => 'Lorem ipsum dolor sit amet, consectetur.', :date =>'22 May', :close => true }
-      .col-xs-12.col-md-6
+      .col-xs-12.col-md-6.alert-example
         = partial :"components/alerts", :locals => { :extraclass =>'alert-primary', :title => 'Alert', :text => 'Lorem ipsum dolor sit amet, consectetur.', :date =>'22:34', :close => true }
 
   .content-block.u-pt-3
