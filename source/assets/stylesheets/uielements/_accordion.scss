@@ -1,3 +1,7 @@
+/* =============================================================================
+   ACCORDION (uielements/_accordion.scss)
+   ========================================================================== */
+
 .lds-accordion {
   width: 340px;
   max-width: 340px;
@@ -8,14 +12,13 @@
   background: $white;
   position: relative;
   padding-bottom: 2px;
-
-  &.hide {
-    .accordion-wrapper {
-      max-height: 0;
+  &__title {
+    h2 {
+      @extend %txt-text-positive-bold ;
+      padding: 7px 15px;
     }
   }
-
-  .accordion-wrapper {
+  &__wrapper {
     max-height: 3000px;
     transition: max-height 0.8s;
     overflow: hidden;
@@ -31,6 +34,50 @@
     }
   }
 
+  &__item {
+    .fold {
+      @include position(absolute, null null null 12px);
+      font-size: 18px;
+      color: #595959;
+      transition: all 0.4s ease;
+      right: 15px;
+      left: auto;
+      svg {
+        fill: $grey07;
+      }
+    }
+
+    &.open {
+      .fold {
+        color: #b63b4d;
+        transform: rotate(180deg);
+      }
+      .module-title {
+        color: $blue;
+      }
+      .module-header {
+        color: #b63b4d;
+        svg {
+          fill: $grey;
+        }
+      }
+      .fold {
+        svg {
+          fill: $green;
+        }
+      }
+    }
+    &:last-child .module-header {
+      border-bottom: 0;
+    }
+  }
+
+  &.hide {
+    .lds-accordion__wrapper {
+      max-height: 0;
+    }
+  }
+
   .close-fold {
     @include position(absolute, null 0 -17px null);
     z-index: 999;
@@ -41,12 +88,6 @@
     box-shadow: 0 0 4px 0 $grey07;
 
     cursor: pointer;
-  }
-  .accordion-title {
-    h2 {
-      @extend %txt-text-positive-bold ;
-      padding: 7px 15px;
-    }
   }
 
   .module-header {
@@ -72,68 +113,27 @@
       transition: $transition-slow;
     }
   }
-
-  .accordion-item {
-    .fold {
-      @include position(absolute, null null null 12px);
-      position: absolute;
-      font-size: 18px;
-      color: #595959;
-      transition: all 0.4s ease;
-      svg {
-        fill: $grey07;
-      }
-    }
-
-    &.open {
-      .module-title {
-        color: $blue;
-      }
-      .module-header {
-        svg {
-          fill: $grey;
-        }
-      }
-      .fold {
-        svg {
-          fill: $green;
-        }
-      }
-    }
-  }
 }
 
-.lds-accordion .accordion-item:last-child .module-header {
-  border-bottom: 0;
-}
 
-.lds-accordion .accordion-item .fold {
-  right: 15px;
-  left: auto;
-}
-
-.lds-accordion .accordion-item.open .module-header {
-  color: #b63b4d;
-}
-
-.lds-accordion .accordion-item.open .fold {
-  color: #b63b4d;
-}
-
-.lds-accordion .accordion-item.open .fold {
-  transform: rotate(180deg);
-}
 
 /**
  * Submenu
  -----------------------------*/
-.accordion-content {
+.lds-accordion__content {
   display: none;
   background: $white;
   font-size: 14px;
   margin: 0;
   padding: 10px 45px 28px 28px;
   position: relative;
+  a {
+    display: block;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 12px 12px 12px 42px;
+    transition: all 0.25s ease;
+  }
   .actions {
     @include position(absolute, null 0 0 null);
     background: $grey03;
@@ -157,12 +157,4 @@
       @extend %txt-small;
     }
   }
-
-}
-.accordion-content a {
-  display: block;
-  text-decoration: none;
-  color: #d9d9d9;
-  padding: 12px 12px 12px 42px;
-  transition: all 0.25s ease;
 }

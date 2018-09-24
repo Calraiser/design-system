@@ -151,7 +151,10 @@ ul {
   .example-item {
     margin: 50px 0;
     .example-mobile {
-      width: 205px;
+      @include media($mobile) {
+        width: 205px;
+        
+      }
       &.mobile-text {
         .bx--type-label {
           font-size: 12px;
@@ -172,7 +175,7 @@ ul {
     .row {
       margin: 0;
       padding: 10px 0;
-      height: 200px;
+      min-height: 150px;
       > div {
         &:first-child {
           padding: 0;

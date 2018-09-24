@@ -1,6 +1,10 @@
 .component-slider {
   margin: 40px 0;
   height: 200px;
+  display: none;
+  @include media($mobile) {
+    display: block;
+  }
   &.big-slider {
     height: 400px;
     .component-item img {

@@ -8,9 +8,9 @@
 - index      ||= false
 
 .lds-alert class=(extraclass if extraclass.present?)
-  .alert-heading
-    h2.alert-title #{title}
-    span.alert-date
+  .lds-alert__heading
+    h2.lds-alert__title #{title}
+    span.lds-alert__date
       | #{date}
     - if close.present?
       button.close type="button"

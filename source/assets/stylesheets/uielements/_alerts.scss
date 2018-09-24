@@ -8,55 +8,63 @@
   @include media($mobile) {
     width: 346px;
   }
-  .alert-heading {
+
+  &__title {
+    @extend %txt-subtitle-h2-bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+
+    &:before {
+      content: '';
+      @include size(18px);
+      border-radius: 4px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+  }
+
+  &__date {
+    @extend %txt-small;
+    margin-right: 8px;
+  }
+
+  &__heading {
     display: flex;
     align-content: center;
-    .alert-date {
-      @extend %txt-small;
-      margin-right: 8px;
-    }
-    .alert-title {
-      @extend %txt-subtitle-h2-bold;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-      margin-top: 5px;
-      display: flex;
-      align-items: center;
-      flex: 1;
-      &:before {
-        content: '';
-        @include size(18px);
-        border-radius: 4px;
-        margin-right: 10px;
-        display: inline-block;
-      }
-    }
-
   }
+
   &.alert-default {
-    .alert-title {
+    .lds-alert__title {
       &:before {
         background: $blue;
       }
     }
   }
+
   &.alert-primary {
-    .alert-title {
+    .lds-alert__title{
       &:before {
         background: $pink;
       }
     }
   }
+
   &.alert-secondary {
-    .alert-title {
+    .lds-alert__title {
       &:before {
         background: $green;
       }
     }
   }
+
   .bx--type-p {
     font-size: rem-calc(14);
   }
+
   .close {
     border: none;
     background: image-url('ic-close-d3.svg') no-repeat;
@@ -67,35 +75,41 @@
     margin-top: 5px;
   }
 }
+
 .multiple-alert {
   &__content {
     position: relative;
     height: 150px;
 
-  .lds-alert {
-    position: absolute;
-    &:nth-child(0) {
-      left: 0;
-    }
-    &:nth-child(1) {
-      left: 0;
-    }
-    &:nth-child(2) {
-      left: 5px;
-    }
-    &:nth-child(3) {
-      left: 10px;
-    }
-    &:nth-child(4) {
-      left: 15px;
+    .lds-alert {
+      position: absolute;
+
+      &:nth-child(0) {
+        left: 0;
+      }
+
+      &:nth-child(1) {
+        left: 0;
+      }
+
+      &:nth-child(2) {
+        left: 5px;
+      }
+
+      &:nth-child(3) {
+        left: 10px;
+      }
+
+      &:nth-child(4) {
+        left: 15px;
+      }
     }
   }
 }
-  }
 
-  .alert-example {
-    margin-bottom: 30px;
-    @include media($tablet) {
-      margin-bottom: 0;
-    }
+.alert-example {
+  margin-bottom: 30px;
+  @include media($tablet) {
+    margin-bottom: 0;
   }
+}

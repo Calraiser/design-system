@@ -7,7 +7,10 @@ $(document).ready(function() {
   }
 
   $alert.on('click', '.close', function(){
-    $(this).closest($alert).fadeOut('fast');
-  })
-
+    $(this).closest($alert)
+    .fadeOut('fast')
+    .delay(1000)
+    .fadeIn('fast');
+  });
+  
 });
