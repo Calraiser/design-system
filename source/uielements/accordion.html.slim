@@ -22,7 +22,7 @@ index: true
     .row.around-xs.u-py-7
       .col-xs-12.col-md-3
         h3.bx--type-label.u-uppercase.u-pb-5 Default on display
-        = partial :"components/_accordion", :locals => {}
+        = partial :"components/_accordion", :locals => { :extraclass => 'default'}
       .col-xs-12.col-md-3
         h3.bx--type-label.u-uppercase.u-pb-5 Fold (hidden modules)
         = partial :"components/_accordion", :locals => { :extraclass => 'hide'}

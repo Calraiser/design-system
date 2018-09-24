@@ -14,7 +14,8 @@ $container-max-width: 100%; // ----------------------------------------
 $table-border-width: 1px;
 $table-border-style: solid;
 $table-margin-bottom: 0;
-$table-cell-padding: 12px 0;
+$table-cell-height: 41px;
+$table-cell-padding: 0;
 $table-cell-text-align: left;
 $table-cell-border-top: $table-border-width $table-border-style $table-border-color;
 $table-header-font-weight: bold;
@@ -70,6 +71,7 @@ table {
 %table th,
 .table td,
 .table th {
+  height: $table-cell-height;
   padding: $table-cell-padding;
   text-align: $table-cell-text-align;
   border-top: $table-cell-border-top;
@@ -87,6 +89,7 @@ table {
   text-align: left;
   border-bottom: 0;
   padding-left: 0;
+  padding: 12px 0;
 }
 /*  Aligns cell text to the top of each cell. */
 %table td,
@@ -281,5 +284,11 @@ table {
       font-family: Telefonicabold;
     }
 
+    }
+  }
+
+  .example-table {
+    @include media($mobile) {
+      margin-left: 60px;
     }
   }

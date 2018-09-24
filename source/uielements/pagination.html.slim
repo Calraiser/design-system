@@ -17,7 +17,21 @@ index: true
     .row.around-sm.center-xs.start-sm.u-pt-7.u-pb-4
       .col-xs-12.col-sm-3
         .pagination-example
-          h3.bx--type-label Default
+          h3.bx--type-label.u-uppercase Default
+          .lds-pagination
+            ul.pager
+              li.first.hide
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+              li.previous.disabled
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+              li.current 1
+              li = link_to '2', '#';
+              li = link_to '3', '#';
+              li.next
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+              li.last
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+
           .lds-pagination
             ul.pager
               li.first
@@ -34,7 +48,7 @@ index: true
 
       .col-xs-12.col-sm-3
         .pagination-example
-          h3.bx--type-label On hover
+          h3.bx--type-label.u-uppercase On hover
           .lds-pagination
             ul.pager
               li.previous
@@ -49,7 +63,7 @@ index: true
 
       .col-xs-12.col-sm-3
         .pagination-example
-          h3.bx--type-label Disabled
+          h3.bx--type-label.u-uppercase Disabled
           .lds-pagination
             ul.pager.disabled
               li.previous

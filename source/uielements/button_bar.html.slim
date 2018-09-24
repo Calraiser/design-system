@@ -51,33 +51,38 @@ index: true
   .content-block
     h2.bx--type-h4.u-text-blue Spacing
     p.bx--type-p
-      | The vertical spacing starts from the path limit of the longest option. For more than three options, the checkboxes should be disposed in:
+      | The vertical spacing starts from the path limit of the longest option. For more than three options, the buttons should be disposed in:
 
     ul.e-list
       li Mobile: 1 column
       li Tablet: 2 - 4 columns
       li Desktop: 2 - 4 - 8 columns
     p.bx--type-p.u-pt-2
-      | You can find more info about the column system in the &nbsp;
+      | You can find more info about the column system in the&nbsp;
       = link_to 'Layout page', '/guidelines/layout.html', class: 'blue-link'
+      |.
 
   .content-block.examples-layout
-    .example-item.example-mobile
+    .example-item
       h3.bx--type-subH2.u-uppercase Mobile
       .two--col-bg.example-mob
-        .row.middle-xs
-          = partial :"components/_button_bar", :locals => { :items => '3' }
-    .example-item.example-tablet
+        .example-mobile.mobile-text
+          .row.middle-xs
+            = partial :"components/_button_bar", :locals => { :items => '3' }
+
+    .example-item
       h3.bx--type-subH2.u-uppercase
         | Tablet
       .four--col-bg
-        .row.middle-xs
-          = partial :"components/_button_bar", :locals => { :items => '3' }
-    .example-item.example-desktop
+        .example-tablet
+          .row.middle-xs
+            = partial :"components/_button_bar", :locals => { :items => '3' }
+    .example-item
       h3.bx--type-subH2.u-uppercase Desktop
       .eight--col-bg
-        .row.middle-xs
-          = partial :"components/_button_bar", :locals => { :items => '6' }
+        .example-desktop
+          .row.middle-xs
+            = partial :"components/_button_bar", :locals => { :items => '6' }
 
 
   .action.downloads

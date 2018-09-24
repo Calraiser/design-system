@@ -38,6 +38,7 @@
     &.disabled {
       svg {
         fill: $grey07;
+        cursor: not-allowed;
       }
     }
   }

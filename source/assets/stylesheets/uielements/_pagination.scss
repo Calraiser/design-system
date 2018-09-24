@@ -8,6 +8,7 @@
       list-style: none;
       margin: 0 4px;
       @extend %txt-note;
+      font-family: Telefonicabold;
 
       display: inline-block;
       vertical-align: middle;
@@ -16,7 +17,7 @@
         transition: $transition-slow;
         &:hover {
           font-weight: bold;
-          color: $grey;
+          color: $blue;
         }
       }
       &.disabled {
@@ -26,16 +27,20 @@
       }
       &.hover {
         svg {
-          fill: $grey01;
+          fill: $blue;
         }
       }
       &.current {
-        font-family: Telefonicabold;
         color: $grey;
       }
       &.next,
       &.last {
         transform: rotate(180deg);
+      }
+      &.first {
+        &.hide {
+          display: none;
+        }
       }
       &.previous,
       &.next,
@@ -44,7 +49,7 @@
         margin-top: 1px;
         &:hover {
           svg {
-            fill: $grey01;
+            fill: $blue;
           }
         }
       }

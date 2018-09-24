@@ -1,0 +1,72 @@
+---
+page_title: Charts examples
+description: These are some examples of how to use the charts in some real cases.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  .content-block
+    main.main role="main"
+
+      .row.start-xs.between-xs
+        .col-xs-4.viz-box
+          = partial 'components/info'
+
+          .hgroup
+            h2.title Fleet use
+            h3.subtitle Average  hours per week
+
+          .row.data.donut-container
+            .col-xs-12
+              #donut
+
+            .col-xs-6.data-container
+              .data
+                p.strong
+                 | Top (h)
+                p.number
+                 | 124'
+                p.strong
+                 | Average
+                p.number
+                  | 312'
+                p.strong
+                  | Lowest (h)
+                p.number
+                 | 21'
+
+        .col-xs-4.viz-box
+          = partial 'components/info'
+
+          .hgroup
+            h2.title Causes
+            h3.subtitle Couses in hours
+
+          .viz-container
+            #bar
+
+        .col-xs-4.viz-box.last-child
+          = partial 'components/info'
+
+          .hgroup
+            h2.title Outliers out of service
+            h3.subtitle Unavailability in hours
+
+          .viz-container
+            div id="offices"
+              .viz-item
+                #bubble
+
+      .row
+        .col-xs-12.viz-box.viz-box__wide
+          = partial 'components/info'
+
+          .hgroup
+            h2.title Outage duration
+            h3.subtitle Average hours per period
+          #line

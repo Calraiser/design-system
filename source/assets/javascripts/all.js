@@ -1,13 +1,15 @@
 
 //= require ./vendors/jquery.js
 //= require ./vendors/jquery-ui.js
-//= require ./vendors/charts.js
+//= require ./vendors/d3.v4.min.js
+//= require ./vendors/c3.min.js
+
 //= require ./vendors/clipboard.min.js
-//= require ./vendors/bootstrap-tooltip.js
-//= require ./vendors/d3.min.v3.js
+// = require ./vendors/bootstrap-tooltip.js
 //= require ./vendors/jquery.sticky-kit.js
 //= require ./vendors/datatables.js
-//= require ./vendors/prism.js
+//= require ./charts/bubble_chart.js
+
 //= require ./blocks/content_nav.js
 //= require ./blocks/responsive_nav.js
 
@@ -18,8 +20,6 @@
 //= require ./uicomponents/accordion.js
 //= require ./uicomponents/list.js
 //= require ./uicomponents/alerts.js
-
-//= require ./charts/donut_chart.js
 
 //= require common.js
 

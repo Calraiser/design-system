@@ -1,0 +1,220 @@
+/*
+  Icon Font: fontcustom
+*/
+
+@font-face {
+  font-family: "fontcustom";
+  src: url("./fontcustom_e60088c7adf6eaedebfa480f384c3a71.eot");
+  src: url("./fontcustom_e60088c7adf6eaedebfa480f384c3a71.eot?#iefix") format("embedded-opentype"),
+       url("./fontcustom_e60088c7adf6eaedebfa480f384c3a71.woff2") format("woff2"),
+       url("./fontcustom_e60088c7adf6eaedebfa480f384c3a71.woff") format("woff"),
+       url("./fontcustom_e60088c7adf6eaedebfa480f384c3a71.ttf") format("truetype"),
+       url("./fontcustom_e60088c7adf6eaedebfa480f384c3a71.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "fontcustom";
+    src: url("./fontcustom_e60088c7adf6eaedebfa480f384c3a71.svg#fontcustom") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-2-col-bg:before,
+.icon-4-col-bg:before,
+.icon-6-col-bg:before,
+.icon-8-col-bg:before,
+.icon-ic-arrow:before,
+.icon-ic-arrow-up:before,
+.icon-ic-back-arrow:before,
+.icon-ic-btn:before,
+.icon-ic-caret-blue:before,
+.icon-ic-caret-grey:before,
+.icon-ic-caret-white:before,
+.icon-ic-cart:before,
+.icon-ic-check-green:before,
+.icon-ic-check-grey:before,
+.icon-ic-check-white:before,
+.icon-ic-circle-arrow:before,
+.icon-ic-close:before,
+.icon-ic-close-black:before,
+.icon-ic-close-d3:before,
+.icon-ic-close-fold:before,
+.icon-ic-close-grey:before,
+.icon-ic-close-white:before,
+.icon-ic-components-xl:before,
+.icon-ic-copy:before,
+.icon-ic-desktop-callout:before,
+.icon-ic-desplegar:before,
+.icon-ic-double-arrow:before,
+.icon-ic-downloads-xl:before,
+.icon-ic-downloads-xs:before,
+.icon-ic-driving:before,
+.icon-ic-envelope:before,
+.icon-ic-fuel:before,
+.icon-ic-fullscreen:before,
+.icon-ic-graphics-blue:before,
+.icon-ic-graphics-vizrules-xs:before,
+.icon-ic-guidelines-blue:before,
+.icon-ic-guidelines-blue-full:before,
+.icon-ic-guidelines-xl:before,
+.icon-ic-guidelines-xl-green:before,
+.icon-ic-guidelines-xs:before,
+.icon-ic-hand:before,
+.icon-ic-hotel:before,
+.icon-ic-info:before,
+.icon-ic-less:before,
+.icon-ic-local-hotel:before,
+.icon-ic-mobile-callout:before,
+.icon-ic-more:before,
+.icon-ic-password:before,
+.icon-ic-pdf:before,
+.icon-ic-pdf-2:before,
+.icon-ic-pois:before,
+.icon-ic-question:before,
+.icon-ic-question-2:before,
+.icon-ic-resources-blue:before,
+.icon-ic-resources-downloads-xs-grey:before,
+.icon-ic-restaurants:before,
+.icon-ic-search:before,
+.icon-ic-select:before,
+.icon-ic-single-arrow:before,
+.icon-ic-sketch:before,
+.icon-ic-tablet-callout:before,
+.icon-ic-tooltip:before,
+.icon-ic-traffic:before,
+.icon-ic-typography:before,
+.icon-ic-uicomponents-blue:before,
+.icon-ic-uielements-blue:before,
+.icon-ic-uielements-xs:before,
+.icon-ic-user:before,
+.icon-ic-viz-rules-xl:before,
+.icon-ic-xlsx:before,
+.icon-ic-xml:before,
+.icon-layout-desktop:before,
+.icon-layout-grid02:before,
+.icon-layout-labtop:before,
+.icon-layout-mobile:before,
+.icon-layout-tablet:before,
+.icon-legend-example:before,
+.icon-logo-luca:before,
+.icon-mobile:before,
+.icon-pattern:before,
+.icon-single-column-gn:before,
+.icon-single-column-gp:before,
+.icon-sort-down:before,
+.icon-sort-up:before,
+.icon-sprites:before,
+.icon-tablet:before,
+.icon-template-chart-layout:before,
+.icon-triangle:before,
+.icon-two-column-apn:before,
+.icon-two-column-gp:before {
+  display: inline-block;
+  font-family: "fontcustom";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon-2-col-bg:before { content: "\f100"; }
+.icon-4-col-bg:before { content: "\f101"; }
+.icon-6-col-bg:before { content: "\f102"; }
+.icon-8-col-bg:before { content: "\f103"; }
+.icon-ic-arrow:before { content: "\f104"; }
+.icon-ic-arrow-up:before { content: "\f105"; }
+.icon-ic-back-arrow:before { content: "\f106"; }
+.icon-ic-btn:before { content: "\f107"; }
+.icon-ic-caret-blue:before { content: "\f108"; }
+.icon-ic-caret-grey:before { content: "\f109"; }
+.icon-ic-caret-white:before { content: "\f10a"; }
+.icon-ic-cart:before { content: "\f10b"; }
+.icon-ic-check-green:before { content: "\f10c"; }
+.icon-ic-check-grey:before { content: "\f10d"; }
+.icon-ic-check-white:before { content: "\f10e"; }
+.icon-ic-circle-arrow:before { content: "\f10f"; }
+.icon-ic-close:before { content: "\f110"; }
+.icon-ic-close-black:before { content: "\f111"; }
+.icon-ic-close-d3:before { content: "\f112"; }
+.icon-ic-close-fold:before { content: "\f113"; }
+.icon-ic-close-grey:before { content: "\f114"; }
+.icon-ic-close-white:before { content: "\f115"; }
+.icon-ic-components-xl:before { content: "\f116"; }
+.icon-ic-copy:before { content: "\f117"; }
+.icon-ic-desktop-callout:before { content: "\f118"; }
+.icon-ic-desplegar:before { content: "\f119"; }
+.icon-ic-double-arrow:before { content: "\f11a"; }
+.icon-ic-downloads-xl:before { content: "\f11b"; }
+.icon-ic-downloads-xs:before { content: "\f11c"; }
+.icon-ic-driving:before { content: "\f11d"; }
+.icon-ic-envelope:before { content: "\f11e"; }
+.icon-ic-fuel:before { content: "\f11f"; }
+.icon-ic-fullscreen:before { content: "\f120"; }
+.icon-ic-graphics-blue:before { content: "\f121"; }
+.icon-ic-graphics-vizrules-xs:before { content: "\f122"; }
+.icon-ic-guidelines-blue:before { content: "\f123"; }
+.icon-ic-guidelines-blue-full:before { content: "\f124"; }
+.icon-ic-guidelines-xl:before { content: "\f125"; }
+.icon-ic-guidelines-xl-green:before { content: "\f126"; }
+.icon-ic-guidelines-xs:before { content: "\f127"; }
+.icon-ic-hand:before { content: "\f128"; }
+.icon-ic-hotel:before { content: "\f129"; }
+.icon-ic-info:before { content: "\f12a"; }
+.icon-ic-less:before { content: "\f12b"; }
+.icon-ic-local-hotel:before { content: "\f12c"; }
+.icon-ic-mobile-callout:before { content: "\f12d"; }
+.icon-ic-more:before { content: "\f12e"; }
+.icon-ic-password:before { content: "\f12f"; }
+.icon-ic-pdf:before { content: "\f130"; }
+.icon-ic-pdf-2:before { content: "\f131"; }
+.icon-ic-pois:before { content: "\f132"; }
+.icon-ic-question:before { content: "\f133"; }
+.icon-ic-question-2:before { content: "\f134"; }
+.icon-ic-resources-blue:before { content: "\f135"; }
+.icon-ic-resources-downloads-xs-grey:before { content: "\f136"; }
+.icon-ic-restaurants:before { content: "\f137"; }
+.icon-ic-search:before { content: "\f138"; }
+.icon-ic-select:before { content: "\f139"; }
+.icon-ic-single-arrow:before { content: "\f13a"; }
+.icon-ic-sketch:before { content: "\f13b"; }
+.icon-ic-tablet-callout:before { content: "\f13c"; }
+.icon-ic-tooltip:before { content: "\f13d"; }
+.icon-ic-traffic:before { content: "\f13e"; }
+.icon-ic-typography:before { content: "\f13f"; }
+.icon-ic-uicomponents-blue:before { content: "\f140"; }
+.icon-ic-uielements-blue:before { content: "\f141"; }
+.icon-ic-uielements-xs:before { content: "\f142"; }
+.icon-ic-user:before { content: "\f143"; }
+.icon-ic-viz-rules-xl:before { content: "\f144"; }
+.icon-ic-xlsx:before { content: "\f145"; }
+.icon-ic-xml:before { content: "\f146"; }
+.icon-layout-desktop:before { content: "\f147"; }
+.icon-layout-grid02:before { content: "\f148"; }
+.icon-layout-labtop:before { content: "\f149"; }
+.icon-layout-mobile:before { content: "\f14a"; }
+.icon-layout-tablet:before { content: "\f14b"; }
+.icon-legend-example:before { content: "\f14c"; }
+.icon-logo-luca:before { content: "\f14d"; }
+.icon-mobile:before { content: "\f14e"; }
+.icon-pattern:before { content: "\f14f"; }
+.icon-single-column-gn:before { content: "\f150"; }
+.icon-single-column-gp:before { content: "\f151"; }
+.icon-sort-down:before { content: "\f152"; }
+.icon-sort-up:before { content: "\f153"; }
+.icon-sprites:before { content: "\f154"; }
+.icon-tablet:before { content: "\f155"; }
+.icon-template-chart-layout:before { content: "\f156"; }
+.icon-triangle:before { content: "\f157"; }
+.icon-two-column-apn:before { content: "\f158"; }
+.icon-two-column-gp:before { content: "\f159"; }
