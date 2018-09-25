@@ -1,12 +1,21 @@
 .lds-navigation--wrapper {
   margin: 20px 0;
-  @include media($tablet) {
-    margin-left: 50px;
+  h2 {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  p {
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .row {
+    margin-bottom: 15px;
   }
 }
 
 .lds-navigation-icons {
   &.default {
+    text-align: center;
     svg {
       fill: $grey07;
       transition: $transition-slow;

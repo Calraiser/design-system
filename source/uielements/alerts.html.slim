@@ -15,7 +15,7 @@ index: true
 
   .content-block
     h3.bx--type-label.u-uppercase Default (with closing option)
-    .row.around-xs.u-pt-7
+    .row.between-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-12.col-md-6.alert-example
         = partial :"components/alerts", :locals => { :extraclass =>'alert-default', :title => 'New data available', :text => 'Lorem ipsum dolor sit amet, consectetur.', :date =>'22 May', :close => true }
       .col-xs-12.col-md-6.alert-example
@@ -23,13 +23,13 @@ index: true
 
   .content-block.u-pt-3
     h3.bx--type-label.u-uppercase Default (without closing option)
-    .row.around-xs.u-pt-7
+    .row.between-xs.u-pt-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-12
         = partial :"components/alerts", :locals => { :extraclass =>'alert-secondary', :title => 'Notification', :text => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', :date =>'now', :close => false }
 
   .content-block.u-pt-3
     h3.bx--type-label.u-uppercase Overlap (more than one alert)
-    .row.around-xs.u-pt-7
+    .row.between-xs.u-pt-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-12
         .multiple-alert__wrapper
           .multiple-alert__content

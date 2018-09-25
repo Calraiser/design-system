@@ -19,7 +19,7 @@ index: true
       li In the case of use in which there are more than three modules, we will show the retracted accordion.
 
   .content-block
-    .row.around-xs.u-py-7
+    .row.between-xs.u-pt-5.u-pb-8.col-xs-offset-0.col-lg-offset-1
       .col-xs-12.col-md-3
         h3.bx--type-label.u-uppercase.u-pb-5 Default on display
         = partial :"components/_accordion", :locals => { :extraclass => 'default'}
@@ -39,10 +39,11 @@ index: true
     h2.bx--type-h4.u-text-blue Anatomy
     = partial :"components/_component_slider", :locals => { :extraclass => 'big-slider', :custom_form => 'pills', :item => data.component_slider.items.accordion }
 
-  .content-block.u-pt-6
-    h3.bx--type-subH2.u-uppercase Module Anatomy
-    .u-py-6.u-text-center
-      = image_tag 'uicomponents/accordion/anatomy-module.png', class: 'image-2x'
+  .content-block
+    .module-anatomy
+      h3.bx--type-subH2.u-uppercase Module Anatomy
+      .u-py-6.u-text-center
+        = image_tag 'uicomponents/accordion/anatomy-module.png', class: 'image-2x'
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

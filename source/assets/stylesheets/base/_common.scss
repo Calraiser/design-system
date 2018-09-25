@@ -153,7 +153,7 @@ ul {
     .example-mobile {
       @include media($mobile) {
         width: 205px;
-        
+
       }
       &.mobile-text {
         .bx--type-label {
@@ -202,4 +202,8 @@ ul {
   &.pills {
 
   }
+}
+
+.module-anatomy {
+  margin-top: 150px;
 }

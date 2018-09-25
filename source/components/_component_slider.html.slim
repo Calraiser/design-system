@@ -9,7 +9,7 @@
           .component-item class=('show' if index === 0) id="#{element[:id]}"
             - element.images.each_with_index do |item, index|
                 .component--item-image class="#{element[:id]}"
-                  = image_tag item[1]
+                  = image_tag item[1], class: 'image-2x'
                   / - if index == 1
                   /   = partial :"components/_#{custom_form}", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
                   / - elsif index == 2

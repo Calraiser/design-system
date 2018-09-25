@@ -5,16 +5,16 @@
 
 .lds-navigation-icons class='#{extraclass}'
   - if header.present?
-    .row.bottom-xs
+    .row.col-xs-offset-0.col-lg-offset-1
       .col-xs-12
-        h2.bx--type-note.u-uppercase.u-pt-4.u-pb-2   #{header}
-  - if subheader.present?
-          p.bx--type-note.u-pb-2  #{subheader}
+        h2.bx--type-note.u-uppercase #{header}
+        - if subheader.present?
+          p.bx--type-note #{subheader}
 
-  .row.bottom-xs
+  .row.col-xs-offset-0.col-lg-offset-1
     - items.each_with_index do |element, index|
-      .u-py-2 class=(title.present? ? 'col-xs-2 u-pb-6 center-xs' : "col-xs u-pr-4")
+      div class=(title.present? ? 'col-xs u-pb-6' : "col-xs")
         = svg_tag element.image
         - if title.present?
-          p.bx--type-legend.u-pt-2
+          p.bx--type-legend
            | #{element.title}

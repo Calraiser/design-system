@@ -10,7 +10,7 @@ index: true
   h1.bx--type-h1 = current_page.data.page_title
   p.bx--type-p = current_page.data.description
 
-  .content-block.u-pb-7
+  .content-block
     h2.bx--type-h4.u-text-blue States
     p.bx--type-p
       | Every item in a list should:
@@ -20,14 +20,13 @@ index: true
       li Not use commas or semicolons at the end of each line.
 
   .content-block
-    .row.u-pb-7
+    .row.between-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-12.col-md-6
-        .example-table
-          h3.bx--type-label.u-uppercase.u-pb-5 Default
-          .table-container
-            = partial :"components/_tables", :locals => { }
+        h3.bx--type-label.u-uppercase.u-pb-5 Default
+        .table-container
+          = partial :"components/_tables", :locals => { }
 
-  .content-block.u-pt-6.
+  .content-block.u-pt-6
     h2.bx--type-h4.u-text-blue Anatomy
     p.bx--type-p
       | Lists has to be two columns at least. They are built alternating grey rows with white rows.
