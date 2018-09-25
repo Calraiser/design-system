@@ -1,49 +1,98 @@
 .lds-navigation--wrapper {
   margin: 20px 0;
+
   h2 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: left;
   }
   p {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    margin-top: 0;
     text-align: left;
   }
+
   .row {
     margin-bottom: 15px;
   }
 }
 
 .lds-navigation-icons {
+  width: 100%;
+    @include media($tablet) {
+      width: 85%;
+    }
+
+  &.icon-text {
+    margin-top: 60px;
+
+    .col-xs {
+      flex: 1 0 30%;
+      margin-bottom: 10px;
+      @include media($mobile) {
+        flex: 1 0 16%;
+      }
+      @include media($tablet) {
+        flex: 1 0 11%;
+      }
+    }
+  }
+
   &.default {
     text-align: center;
+
+    &:not(.icon-text) {
+      .col-xs {
+        margin-right: 10px;
+        margin-bottom: 15px;
+        flex: 1 0 13%;
+        @include media($mobile) {
+          flex: 1 0 14%;
+        }
+        @include media($tablet) {
+          flex: 1 0 4%;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    p {
+      margin-top: 10px;
+    }
+
     svg {
       fill: $grey07;
       transition: $transition-slow;
       cursor: pointer;
+
       &:hover {
         fill: $grey01;
       }
     }
+
     &.hover {
       svg {
         fill: $grey01;
       }
     }
+
     &.blue {
       svg {
         fill: $blue;
       }
     }
+
     &.black {
       svg {
         fill: $grey;
       }
     }
+
     &.green {
       svg {
         fill: $green;
       }
     }
+
     &.disabled {
       svg {
         fill: $grey07;

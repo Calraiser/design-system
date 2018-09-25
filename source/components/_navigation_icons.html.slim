@@ -4,14 +4,13 @@
 - extraclass ||= ''
 
 .lds-navigation-icons class='#{extraclass}'
-  - if header.present?
-    .row.col-xs-offset-0.col-lg-offset-1
-      .col-xs-12
-        h2.bx--type-note.u-uppercase #{header}
-        - if subheader.present?
-          p.bx--type-note #{subheader}
+  .col-xs-offset-0.col-lg-offset-1
+    - if header.present?
+      h2.bx--type-note.u-uppercase #{header}
+    - if subheader.present?
+      p.bx--type-note #{subheader}
 
-  .row.col-xs-offset-0.col-lg-offset-1
+  .row.center-xs.col-xs-offset-0.col-lg-offset-1
     - items.each_with_index do |element, index|
       div class=(title.present? ? 'col-xs u-pb-6' : "col-xs")
         = svg_tag element.image
