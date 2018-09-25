@@ -6,9 +6,9 @@
 - extraclass  ||= ''
 - disabled    ||= false
 
-.lds-form--group
-  label.bx--type-label for=(inputId = rand(1..100))
+.lds-input-field
+  label.lds-input-field__label.bx--type-label for=(inputId = rand(1..100))
     | #{text}
-  input type="#{type}" disabled= ('disabled' if disabled.present?) name=(inputId.dup) required="required" placeholder="#{placeholder}" class='#{extraclass}'
+  input type="#{type}" disabled= ('disabled' if disabled.present?) name=(inputId.dup) required="required" placeholder="#{placeholder}" class="lds-input-field__input" class='#{extraclass}'
   -if ico.present?
     span class="ic ic-#{ico}"

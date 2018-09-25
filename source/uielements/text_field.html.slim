@@ -17,36 +17,39 @@ index: true
 
   .content-block
     h2.bx--type-h4.u-text-blue States
-
-    .row.around-xs.bottom-xs.iddle-xs.u-py-7
-      .col-xs-2
+    .row.between-xs.bottom-xs.u-py-5.col-xs-offset-0.col-lg-offset-1
+      .col-xs-12.col-md-4.col-lg-3
         h3.bx--type-label.u-uppercase.u-pb-5 Default
         = partial :"components/_text_fields", :locals => { :text => 'Label', :type => 'text', :placeholder => 'Enter name' }
-      .col-xs-2
+      .col-xs-12.col-md-4.col-lg-3
         h3.bx--type-label.u-uppercase.u-pb-5 Input + Ico
         = partial :"components/_text_fields", :locals => { :text => 'Email', :type => 'email', :placeholder => 'Enter email', :ico => 'mail' }
-      .col-xs-2
+      .col-xs-12.col-md-4.col-lg-3
         = partial :"components/_text_fields", :locals => { :text => 'Password', :type => 'password', :placeholder => 'Enter password', }
 
-    .row.around-xs.bottom-xs.iddle-xs.u-py-7
-      .col-xs-2
+    .row.between-xs.bottom-xs.u-py-5.col-xs-offset-0.col-lg-offset-1
+      .col-xs-12.col-md-4.col-lg-3
         h3.bx--type-label.u-uppercase.u-pb-5 Input active
         = partial :"components/_text_fields", :locals => { :text => 'Label', :type => 'text', :placeholder => 'Enter name', :extraclass => 'active' }
-      .col-xs-2
+      .col-xs-12.col-md-4.col-lg-3
         h3.bx--type-label.u-uppercase.u-pb-5 Input success
         = partial :"components/_text_fields", :locals => { :text => 'Email', :type => 'email', :ico => 'success', :placeholder => 'Enter email', :extraclass => 'active success'  }
-      .col-xs-2
+      .col-xs-12.col-md-4.col-lg-3
         h3.bx--type-label.u-uppercase.u-pb-5 Input disabled
         = partial :"components/_text_fields", :locals => { :text => 'Password', :type => 'text', :placeholder => 'Enter password', :disabled => true }
 
+    .row.bottom-xs.u-py-5.col-xs-offset-0.col-lg-offset-1
+      .col-xs
+        h3.bx--type-label.u-uppercase.u-pb-5 Error
+        = partial :"components/_text_fields", :locals => { :text => 'Label', :type => 'text', :placeholder => 'Incorrect email, try again', :extraclass => 'error' }
 
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
     .code-wrapper
       .code-content id="input-code"
         = code("html") do
-          | <div class="lds-form--group">
-              <label class="bx--type-label" for="43">Label</label>
-              <input name="43" placeholder="Enter name" required="required" type="text">
+          | <div class="lds-input-field">
+              <label class="lds-input-field__label" for="43">Label</label>
+              <input name="43" placeholder="Enter name" class="lds-input-field__input" required="required" type="text">
             </div>
 
       = partial :"components/_code_actions", :locals => { :target => '#input-code'}
@@ -61,53 +64,54 @@ index: true
       | Textarea inputs are used for freeform data entry. They are taller than text fields and wrap overflow text onto a new line. They are a fixed height and scroll vertically when the cursor reaches the bottom of the field. The large initial size indicates that longer responses are possible and encouraged.
 
   .content-block
-    .row.around-xs.top-xs.middle-xs.u-py-7
-      .col-xs-3
-        .lds-form--group
-          label.bx--type-label.u-uppercase.u-pb-2 Default
-          textarea rows="6" cols="50" placeholder="Enter text here.."
-      .col-xs-3
-        .lds-form--group
-          label.bx--type-label.u-uppercase.u-pb-2 Disabled
-          textarea rows="6" cols="50" placeholder="Enter text here.." disabled="disabled"
+    .row.between-xs.top-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
+      .col-xs-12-col-sm-4
+        .lds-text-field
+          label.lds-text-field__label Default
+          textarea class="lds-text-field__input" rows="6" cols="50" placeholder="Enter text here.."
+      .col-xs-12-col-sm-6
+        .lds-text-field
+          label.lds-text-field__label  Disabled
+          textarea class="lds-text-field__input" rows="6" cols="50" placeholder="Enter text here.." disabled="disabled"
 
-    .row.around-xs.top-xs.middle-xs.u-py-7
-      .col-xs-3
-        .lds-form--group
-          label.bx--type-label.u-uppercase.u-pb-2 Active
-          textarea rows="6" cols="50" class="active" placeholder="Enter text here.."
-      .col-xs-3
-        .lds-form--group
-          label.bx--type-label.u-uppercase.u-pb-2 Error
-          textarea rows="6" cols="50" class="error" placeholder="Enter text here.."
+    .row.between-xs.top-xs.u-pt-5.u-pb-9.col-xs-offset-0.col-lg-offset-1
+      .col-xs-12-col-sm-6
+        .lds-text-field
+          label.lds-text-field__label  Active
+          textarea class="lds-text-field__input" rows="6" cols="50" class="active" placeholder="Enter text here.."
+      .col-xs-12-col-sm-6
+        .lds-text-field
+          label.lds-text-field__label  Error
+          textarea class="lds-text-field__input" rows="6" cols="50" class="error" placeholder="Enter text here.."
           span.error.message Validation message here
 
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
     .code-wrapper
       .code-content id="textarea"
         = code("html") do
-          .lds-form--group
-            label.bx--type-label.u-uppercase.u-pb-2 Default
-            textarea rows="6" cols="50" placeholder="Enter text here.."
+          | <div class="lds-text-field">
+              <label class="lds-text-field__label">Default</label>
+              <textarea class="lds-text-field__input" cols="50" placeholder="Enter text here.." rows="6"></textarea>
+            </div>
 
       = partial :"components/_code_actions", :locals => { :target => '#textarea' }
 
   .content-block.u-pt-6
     h2.bx--type-h4.u-text-blue Anatomy
-    .row.around-xs.top-xs.middle-xs.u-py-7
-      .col-xs-3
+    .row.between-xs.top-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
+      .col-xs-10.col-sm-5.col-lg-4
         h3.bx--type-label.u-pb-5 Measures
-        = image_tag 'uicomponents/inputs/textarea_measures.png'
-      .col-xs-3
+        = image_tag 'uicomponents/inputs/textarea_measures.png', class: 'image-2x';
+      .col-xs-10.col-sm-5.col-lg-4
         h3.bx--type-label.u-pb-5 Specifications
-        = image_tag 'uicomponents/inputs/textarea_spacing.png'
-    .row.around-xs.top-xs.middle-xs.u-py-7
-      .col-xs-3
-        h3.bx--type-label.u-pb-5 Measures
-        = image_tag 'uicomponents/inputs/textarea_measures.png'
-      .col-xs-3
+        = image_tag 'uicomponents/inputs/textarea_specs.png', class: 'image-2x';
+    .row.between-xs.top-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
+      .col-xs-10.col-sm-5.col-lg-4
+        h3.bx--type-label.u-pb-5 Spacing
+        = image_tag 'uicomponents/inputs/textarea_spacing.png', class: 'image-2x';
+      .col-xs-10.col-sm-5.col-lg-4
         h3.bx--type-label.u-pb-5 Padding
-        = image_tag 'uicomponents/inputs/textarea_padding.png'
+        = image_tag 'uicomponents/inputs/textarea_padding.png', class: 'image-2x';
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
