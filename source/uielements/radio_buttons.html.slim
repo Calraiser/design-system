@@ -22,14 +22,14 @@ index: true
     p.bx--type-p
       | These are the different states you can find the radio buttons.
 
-    .row.u-pt-7.u-pb-7.u-pl-6
-      .col-xs-3
+    .row.between-md.u-py-7.col-xs-offset-0.col-lg-offset-1
+      .col-xs-12.col-sm-3
         = partial :"components/_radio_button", :locals => { :checked => false, :label_selected => 'Default', :label_unselected => 'Default' }
 
-      .col-xs-3
+      .col-xs-12.col-sm-3
         = partial :"components/_radio_button", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
 
-      .col-xs-3
+      .col-xs-12.col-sm-3
         = partial :"components/_radio_button", :locals => { :disabled => true, :checked => false, :label_selected => 'Disabled', :label_unselected => 'Disabled' }
 
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
@@ -48,7 +48,7 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#checkbox-code'}
 
   .content-block.u-pt-6
-    h2.bx--type-h4.u-text-blue Anatomy
+    
     = partial :"components/_component_slider", :locals => { :custom_form => 'radio_button', :item => data.component_slider.items.radio }
 
   .content-block
@@ -61,8 +61,9 @@ index: true
       li Tablet: 2 - 4 columns
       li Desktop: 2 - 4 - 8 columns
     p.bx--type-p.u-pt-2
-      | You can find more info about the column system in the &nbsp;
+      | You can find more info about the column system in the&nbsp;
       = link_to 'Layout page', '/guidelines/layout.html', class: 'blue-link'
+      |.
 
 
   .content-block.examples-layout

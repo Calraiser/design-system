@@ -15,3 +15,12 @@
   }
 
 }
+
+.uielements_tooltips {
+  .tooltip {
+    margin-bottom: 30px;
+    @include media($tablet) {
+      margin-bottom: 0;
+    }
+  }
+}

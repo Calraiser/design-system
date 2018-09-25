@@ -15,8 +15,8 @@ index: true
   .content-block
     h2.bx--type-h4.u-text-blue States
 
-  .content-block.u-py-7
-    .row.center-xs
+  .content-block
+    .row.between-md.u-py-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-6.col-md-3.popover-example
         = partial :"components/popover", :locals => { :arrow => true, :position => 'top', :items => '6'}
       .col-xs-6.col-md-3.popover-example
@@ -45,7 +45,7 @@ index: true
     = partial :"components/_code_actions", :locals => { :target => '#popover'}
 
   .content-block.u-pt-6
-    h2.bx--type-h4.u-text-blue Anatomy
+    
   .content-block.u-pb-6
     = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.popover }
 
@@ -54,7 +54,8 @@ index: true
     p.bx--type-p
       | For the use case where there is more options, the popover would be divided in two columns (or more).
   .content-block
-    = partial :"components/popover", :locals => { :arrow => true, :position => 'left', :items => '12', :extraclass => 'popover-2__col'}
+    .col-xs-offset-0.col-lg-offset-1
+      = partial :"components/popover", :locals => { :arrow => true, :position => 'left', :items => '12', :extraclass => 'popover-2__col'}
 
 
   .action.downloads

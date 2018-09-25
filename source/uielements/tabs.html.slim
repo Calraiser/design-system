@@ -14,7 +14,7 @@ index: true
     h2.bx--type-h4.u-text-blue States
     p.bx--type-p
       | These are the different states you can find the section tabs.
-    .row.u-pt-7.u-pb-7
+    .u-py-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-12
         = partial :"components/_tabs_section", :locals => { :items => '5' }
 
@@ -63,7 +63,7 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#tabs-section-code'}
 
   .content-block.u-pt-6
-  h2.bx--type-h4.u-text-blue Anatomy
+  
   = partial :"components/_component_slider", :locals => { :custom_form => 'tabs', :item => data.component_slider.items.tabs_section }
 
   .action.downloads

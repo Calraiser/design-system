@@ -14,7 +14,7 @@ index: true
     h2.bx--type-h4.u-text-blue States
     p.bx--type-p
       | These are the different states you can find the pagination icons.
-    .row.around-sm.center-xs.start-sm.u-pt-7.u-pb-4
+    .row.between-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-12.col-sm-3
         .pagination-example
           h3.bx--type-label.u-uppercase Default
@@ -32,15 +32,18 @@ index: true
               li.last
                 = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
 
-          .lds-pagination
+          .lds-pagination.u-pt-4
             ul.pager
-              li.first
+              li.first.hide
                 = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
               li.previous.disabled
                 = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
               li.current 1
               li = link_to '2', '#';
               li = link_to '3', '#';
+              li = link_to '...';
+              li = link_to '14', '#';
+
               li.next
                 = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
               li.last
@@ -76,7 +79,7 @@ index: true
               li.last
                 = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
 
-    .row.center-xs.u-pt-7.u-pb-4
+    .row.center-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-4.col-sm
         .pagination-example
           .lds-pagination
@@ -149,18 +152,18 @@ index: true
     = partial :"components/_code_actions", :locals => { :target => '#pagination'}
 
   .content-block.anatomy.u-pt-6
-    h2.bx--type-h4.u-text-blue Anatomy
-    .row.around-sm.middle-xs.start-md.center-xs.u-pt-7.u-pb-4
+    
+    .row.top-xs.between-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-12.col-md-3
-        h3.bx--type-label.u-pb-6 Padding
+        h3.bx--type-label.u-pb-6.u-uppercase Padding
         = image_tag 'uicomponents/pagination/padding.png';
 
       .col-xs-12.col-md-3
-        h3.bx--type-label.u-pb-6 Measures
+        h3.bx--type-label.u-pb-6.u-uppercase Measures
         = image_tag 'uicomponents/pagination/measures.png';
 
       .col-xs-12.col-md-3
-        h3.bx--type-label.u-pb-6 Specifications
+        h3.bx--type-label.u-pb-6.u-uppercase Specifications
         = image_tag 'uicomponents/pagination/specs.png'
 
   .content-block.u-pt-6

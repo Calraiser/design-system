@@ -14,7 +14,12 @@
   cursor: pointer;
 
   &.pills-default {
-    width: 125px;
+    width: auto;
+    white-space: pre;
+    @include media($tablet) {
+      width: 125px;
+
+    }
   }
   &.pill-back {
     padding: 0 6px 0 4px;

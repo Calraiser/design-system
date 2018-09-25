@@ -1,9 +1,12 @@
 .component-slider {
-  margin: 40px 0;
+  margin: 40px 0 60px;
   height: 200px;
   display: none;
   @include media($mobile) {
     display: block;
+  }
+  h2 {
+    margin-bottom: 20px;
   }
   &.big-slider {
     height: 400px;
