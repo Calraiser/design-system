@@ -1,6 +1,6 @@
 ---
-page_title: Downloads
-description: Here you can find all the downloads of the LUCA Design System.
+page_title: Resources & Downloads
+description: These resources help you design LUCA products that match the LUCA design language. We provide multiple options for downloading the LUCA Design System, as well as specific downloads for icons, design tokens and swatches.
 
 layout: content
 index: true
@@ -10,6 +10,9 @@ index: true
   h1.bx--type-h1 = current_page.data.page_title
 
   p.bx--type-p.u-pb-5 = current_page.data.description
+
+  picture.image-block
+    = image_tag 'resources-overview.png'
 
   .content-block
     = partial :"blocks/_downloads", :locals => { :downloads => data.downloads.resources }

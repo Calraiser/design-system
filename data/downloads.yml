@@ -97,6 +97,11 @@ resources:
           sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
           PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
 
+      - subtitle: 'Tabs'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
       - subtitle: 'Text Fields'
         files:
           sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
