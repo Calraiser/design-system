@@ -21,7 +21,7 @@ $num-of-tabs: 5;
 }
 
 
-.lds-tab {
+.lds-tab--section {
   width: 100%;
   position: relative;
   display: flex;
@@ -33,12 +33,12 @@ $num-of-tabs: 5;
     @include position(absolute, 10px null null 10px);
     z-index: -1;
     &:checked {
-      + .lds-tab--label__content  {
-        .lds-tab__label {
+      + .tab-label-content {
+        label {
           color: $grey;
           font-family: Telefonicabold;
         }
-        .lds-tab__content {
+        .tab-content {
           display: block;
         }
       }
@@ -52,8 +52,7 @@ $num-of-tabs: 5;
       }
     }
   }
-
-  &__label {
+  .tab-label {
     cursor: pointer;
     color: $grey;
     background-color: $white;
@@ -65,16 +64,6 @@ $num-of-tabs: 5;
     transition: color 0.2s ease;
     @include size(100%, 56px);
   }
-
-  .lds-tab--label__content {
-    width: 100%;
-    .lds-tab__content {
-      @include position(absolute, 90px null null 0);
-      line-height: 130%;
-      display: none;
-    }
-  }
-
   .slide {
     background: $green;
     width: calc(100% / #{$num-of-tabs});
@@ -84,9 +73,21 @@ $num-of-tabs: 5;
     top: calc(100% - 2px);
     transition: left 0.3s ease-out;
   }
+
+  .tab-label-content {
+    width: 100%;
+    .tab-content {
+      @include position(absolute, 90px null null 0);
+      line-height: 130%;
+      display: none;
+    }
+  }
 }
 
+
+
 @media screen and (max-width: 800px) {
+
   .tab-wrap {
     width: 80%;
     margin-left: 10%;

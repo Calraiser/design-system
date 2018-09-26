@@ -61,6 +61,7 @@
     &.disabled {
       li, li > a {
         color: $grey02 !important;
+        cursor: not-allowed;
         &:hover {
           color: $grey02 !important;
           font-weight: normal !important;

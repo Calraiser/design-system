@@ -3,12 +3,12 @@
 - startRange ||= '1'
 - range      ||= (startRange..items)
 
-.lds-tab
+.lds-tab--section
   - range.each_with_index do |i, index|
     input type="radio" name="tabs" id=(tabIds = rand(1..100)) checked=('checked' if index === 0)
-    .lds-tab--label__content id=(tabIds.dup)
-      .bx--type-p.lds-tab__label for=(tabIds.dup) #{labels[index]}
-      .lds-tab__content
+    .tab-label-content id=(tabIds.dup)
+      label.bx--type-p.tab-label for=(tabIds.dup) #{labels[index]}
+      .tab-content
         p.bx--type-p
           | Content for #{labels[index]} goes here.
 

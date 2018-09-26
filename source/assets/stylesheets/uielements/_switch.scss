@@ -9,6 +9,7 @@
     display: none;
 
     &:disabled + .lds--switch-label {
+      cursor: not-allowed;
       span {
         color: $grey02;
       }
