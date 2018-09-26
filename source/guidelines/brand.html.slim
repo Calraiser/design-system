@@ -14,19 +14,19 @@ index: true
     h2.bx--type-h4 Logo-mark
     p.bx--type-p
       | This is the logo without the description. We will use this version when the logo is applied clearly inside of the LUCA environment, by way of the user understands what refers LUCA and it is no necessary to position the brand. Also, it can be used exceptionally in communication when, because of the size in the application, the user couldn’t be read adequately the descriptor.
-    picture.brand-block
+    picture.u-pt-7.u-pb-4
       = svg_tag 'brand_logos/logo_mark_color.svg'
-
-    .brand-block.align-end
-      .brand-item
-        h5.bx--type-h5.u-pb-6 logo-mark
-        = svg_tag 'brand_logos/logo_mark.svg'
-      .brand-item
-        h5.bx--type-h5.u-pb-6  logo-mark + claim (main option)
-        = svg_tag 'brand_logos/logo_claim.svg'
-      .brand-item
-        h5.bx--type-h5.u-pb-6  logo-mark + claim (secondary option)
-        = svg_tag 'brand_logos/logo_claim_secondary.svg'
+    picture
+      .row.between-md.u-pb-7
+        .col-xs-12.col-md-3
+          h5.bx--type-h5.u-pb-6 logo-mark
+          = svg_tag 'brand_logos/logo_mark.svg'
+        .col-xs-12.col-md-3
+          h5.bx--type-h5.u-pb-6  logo-mark + claim (main option)
+          = svg_tag 'brand_logos/logo_claim.svg'
+        .col-xs-12.col-md-3
+          h5.bx--type-h5.u-pb-6  logo-mark + claim (secondary option)
+          = svg_tag 'brand_logos/logo_claim_secondary.svg'
 
   .content-block
     h2.bx--type-h4 Logo-mark + claim (main option)
@@ -52,14 +52,12 @@ index: true
 
   .content-block
     h2.bx--type-h4 Minimum sizes
-    p.bx--type-p
-      | These are the minimum sizes for the LUCA logo for a good legibility.
-    picture.brand-block
-      .brand-item
-        span.brand-note.u-pb-3 digital applications
+    / p.bx--type-p
+    /   | These are the minimum sizes for the LUCA logo for a good legibility.
+    .row.u-py-7
+      .col-xs-6.col-md-3
         = svg_tag 'brand_logos/logo_size_130.svg'
-      .brand-item
-        span.brand-note.u-pb-3 printed applications
+      .col-xs-6.col-md-3
         = svg_tag 'brand_logos/logo_size_35.svg'
 
   .content-block
@@ -67,7 +65,7 @@ index: true
     p.bx--type-p
       | LUCA brand can appear in different coexistence stages with the other brands of Telefónica group: Telefónica, Telefónica Business Solutions, Movistar, O2 and Vivo. It is necessary to communicate the relation between LUCA and Telefónica on the different stages. These are the different endorse stages that could change according to what brand leads the communication:
     picture.brand-block
-      = image_tag 'brand_logos/communication_stages.jpg'
+      = image_tag 'brand_logos/communication_stages.png', class: 'image-2x'
 
   .content-block
     h2.bx--type-h4.u-text-blue Endorsement versions
@@ -80,17 +78,20 @@ index: true
   .content-block
     h2.bx--type-h4 LUCA leads the communication
     p.bx--type-p
-      | It is used the endorsement 'Telefónica DATA UNIT' in two versions, dark grey and light grey.
-    picture.brand-block
-      = svg_tag 'brand_logos/logo_telefonica.svg'
-      = svg_tag 'brand_logos/logo_telefonica_light.svg'
+      | It is used the endorsement 'Telefónica DATA UNIT' in three versions, dark grey, light grey and black.
+    picture.row.between-xs.u-py-6
+      .col-xs-12.col-md-3
+        = svg_tag 'brand_logos/logo_telefonica_dark_grey.svg'
+      .col-xs-12.col-md-3
+        = svg_tag 'brand_logos/logo_telefonica_light_grey.svg'
+      .col-xs-12.col-md-3
+        = svg_tag 'brand_logos/logo_telefonica_dark.svg'
 
   .content-block
     p.bx--type-p
       | The height of the 'Telefónica DATA UNIT' endorsement will be the 50% of the 'LUCA' word of the LUCA logo.
-    .brand-block
+    .brand-block.u-py-6
       = svg_tag 'brand_logos/logo_claim_height.svg'
-      = svg_tag 'brand_logos/logo_telefonica_height.svg', class:'logo-negative'
     p.bx--type-p
       | If you need read more about the LUCA logo behaviour, you can find it in&nbsp;
       = link_to 'Brand Ignite.', 'https://brandignite.telefonica.com/other/?section=0&inode=2952', class: 'blue-link', target: '_blank'
