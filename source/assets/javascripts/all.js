@@ -12,6 +12,7 @@
 
 //= require ./blocks/content_nav.js
 //= require ./blocks/responsive_nav.js
+//= require ./blocks/resources.js
 
 //= require ./components/code_block.js
 //= require ./components/component_slider.js

@@ -1,0 +1,113 @@
+resources:
+
+  # Guidelines
+  - title: 'Guidelines'
+    items:
+      - subtitle: 'Colour'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          adobe illustrator: '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Typography'
+        files:
+          font:              '/download/typography/typography.zip'
+
+      - subtitle: 'Grid & Layouts'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Brand & Logos'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          adobe illustrator: '/download/sketch/COLOUR_PALETTE_download.zip'
+
+
+  #Graphics
+  - title: 'Graphic & Viz rules'
+    items:
+      - subtitle: 'Complementary colours'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          adobe illustrator: '/download/sketch/COLOUR_PALETTE_download.zip'
+
+  #UI Elements
+  - title: 'UI Elements & Components'
+    items:
+      - subtitle: 'Accordion'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Buttons'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Buttons Bar'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Checkbox'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Combobox'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'List'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Navigation Icons'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Pagination'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Pills Bar'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Popover'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Radio Buttons'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Switch'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Text Fields'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Tooltips'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+
+      - subtitle: 'Zoom'
+        files:
+          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
+          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'

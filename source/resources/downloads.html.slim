@@ -1,0 +1,15 @@
+---
+page_title: Downloads
+description: Here you can find all the downloads of the LUCA Design System.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+
+  p.bx--type-p.u-pb-5 = current_page.data.description
+
+  .content-block
+    = partial :"blocks/_downloads", :locals => { :downloads => data.downloads.resources }

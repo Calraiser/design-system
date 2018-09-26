@@ -1,0 +1,84 @@
+.lds-resources {
+  border-bottom: 1px dashed #979797;
+  &.open {
+    .lds-resources__title {
+      &:before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__title {
+    @extend %txt-title-h5;
+    color: $blue;
+    padding-bottom: 18px;
+    margin-top: 22px;
+    display: block;
+    cursor: pointer;
+    &:before {
+      content: "\f108";
+      font-family: fontcustom;
+      font-size: rem-calc(12);
+      transition: $transition-slow;
+      display: inline-block;
+      @include size(10px);
+      margin-right: 25px;
+    }
+
+  }
+  &__content {
+    margin-top: 20px;
+    display: none;
+    .col-xs-6 {
+      padding-bottom: 20px;
+    }
+
+  }
+  &__subtitle {
+    @extend %txt-paragraph;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  li {
+    list-style: none;
+    margin-bottom: 24px;
+    &:before {
+      content: "";
+      margin-right: 6px;
+      padding: 12px;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+    &.adobe {
+      &:before {
+        background-image: image-url('ic-adobe.png');
+        background-size: 19px auto;
+      }
+    }
+    &.PDF {
+      &:before {
+        background-image: image-url('ic-pdf_02.svg');
+        background-size: 19px auto;
+      }
+    }
+    &.font {
+      &:before {
+        background-image: image-url('ic-typo_02.svg');
+        background-size: 21px auto;
+      }
+    }
+    &.sketch {
+      &:before {
+        background-image: image-url('ic-sketch_02.svg');
+        background-size: 22px auto;
+      }
+    }
+    a {
+      @extend %txt-links-positive;
+      font-size: rem-calc(12);
+      color: $blue;
+      text-decoration: none;
+    }
+
+  }
+}
