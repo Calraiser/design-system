@@ -19,14 +19,14 @@ index: true
     p.bx--type-p
       | These are the different states you can find the checkbox component.
 
-    .row.between-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-3
+    .row.u-py-7.col-xs-offset-0.col-lg-offset-1
+      .col-xs-12.col-sm-6.col-md-3
         = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Default', :label_unselected => 'Default' }
-      .col-xs-3
+      .col-xs-12.col-sm-6.col-md-3
         = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
-      .col-xs-3
+      .col-xs-12.col-sm-6.col-md-3
         = partial :"components/_checkbox", :locals => { :disabled => true, :checked => false, :label_selected => 'Disabled', :label_unselected => 'Disabled' }
-      .col-xs-3
+      .col-xs-12.col-sm-6.col-md-3
         = partial :"components/_checkbox", :locals => { :multiple => true, :checked => false, :label_selected => 'Multiple check', :label_unselected => 'Multiple check' }
 
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save

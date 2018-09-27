@@ -14,7 +14,7 @@ index: true
     h2.bx--type-h4.u-text-blue States
     p.bx--type-p
       | These are the different states of the button bar.
-    .row.between-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
+    .u-py-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-12
         = partial :"components/_button_bar", :locals => { :items => '4' }
 
@@ -44,7 +44,7 @@ index: true
 
       = partial :"components/_code_actions", :locals => { :target => '#tabs-code'}
 
-  .content-block    
+  .content-block
     = partial :"components/_component_slider", :locals => { :custom_form => 'tabs', :item => data.component_slider.items.tabs }
 
   .content-block

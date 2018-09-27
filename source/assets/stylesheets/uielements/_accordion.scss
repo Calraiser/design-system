@@ -26,7 +26,7 @@
       max-height: 0;
     }
     &.default {
-      .accordion-item {
+      .lds-accordion__item{
         &:nth-child(-n+2) {
           display: none;
         }
