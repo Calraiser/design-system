@@ -1,17 +1,20 @@
 .component-slider {
-  margin: 40px 0 60px;
-  height: 200px;
+  margin: 40px 0 120px;
   display: none;
   @include media($mobile) {
     display: block;
+  }
+  > .row {
+      margin-top: 50px;
   }
   h2 {
     margin-bottom: 20px;
   }
   &.big-slider {
-    height: 400px;
+    height: 300px;
     .component-item img {
-      max-width: 900px;
+      width: 450px;
+
     }
   }
   .row {
@@ -45,6 +48,10 @@
   img {
     padding: 0;
     margin: 0;
+    width: 100%;
+    @include media($large-desktop) {
+      width: 980px;
+    }
   }
 
   &.show {

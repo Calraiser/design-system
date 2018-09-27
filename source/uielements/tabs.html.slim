@@ -62,9 +62,8 @@ index: true
 
       = partial :"components/_code_actions", :locals => { :target => '#tabs-section-code'}
 
-  .content-block.u-pt-6
-  
-  = partial :"components/_component_slider", :locals => { :custom_form => 'tabs', :item => data.component_slider.items.tabs_section }
+  .content-block
+    = partial :"components/_component_slider", :locals => { :custom_form => 'tabs', :item => data.component_slider.items.tabs_section }
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

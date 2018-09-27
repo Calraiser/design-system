@@ -39,20 +39,21 @@ index: true
       .lds-navigation--wrapper
         = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :header => 'Disabled', :extraclass => 'default disabled' }
 
-  .content-block
-    
-    .row.between-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-12.col-md-4
-        h2.bx--type-subH2.u-uppercase Padding
-        = image_tag 'uicomponents/image_icons/padding.png'
+  .anatomy-simple
+    h2.bx--type-h4.u-text-blue Anatomy
+    .anatomy-simple__content
+      .row.col-xs-offset-0.col-lg-offset-1
+        .col-xs-12.col-sm-4.col-md-4.col-lg-3
+          hh2.anatomy-simple__heading  Padding
+          = image_tag 'uicomponents/image_icons/padding.png'
 
-      .col-xs-12.col-md-4
-        h2.bx--type-subH2.u-uppercase Measures
-        = image_tag 'uicomponents/image_icons/measures.png'
+        .col-xs-12.col-sm-4.col-md-4.col-lg-3
+          h2.anatomy-simple__heading  Measures
+          = image_tag 'uicomponents/image_icons/measures.png'
 
-      .col-xs-12.col-md-4
-        h2.bx--type-subH2.u-uppercase Specifications
-        = image_tag 'uicomponents/image_icons/specs.png'
+        .col-xs-12.col-sm-4.col-md-4.col-lg-3
+          h2.anatomy-simple__heading  Specifications
+          = image_tag 'uicomponents/image_icons/specs.png'
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

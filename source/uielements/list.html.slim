@@ -27,12 +27,11 @@ index: true
           = partial :"components/_tables", :locals => { }
 
   .content-block.u-pt-6
-    
     p.bx--type-p
       | Lists has to be two columns at least. They are built alternating grey rows with white rows.
   .content-block.u-pb-6
     = image_tag 'uicomponents/list/list-example.png';
-  .content-block.u-pb-6
+  .content-block.u-pb-2
     = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.list }
 
   .action.downloads
