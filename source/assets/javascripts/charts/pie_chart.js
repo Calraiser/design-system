@@ -5,7 +5,7 @@ var donut_chart = c3.generate({
     },
     padding: {
       top: 25,
-      bottom: 30,
+      bottom: 80,
       left: 0,
       right: 0
     },

@@ -10,32 +10,32 @@ index: true
   h1.bx--type-h1 = current_page.data.page_title
   p.bx--type-p = current_page.data.description
 
-  .content-block.u-pb-7
+  .content-block.info-navigation__states
     h2.bx--type-h4.u-text-blue States
     p.bx--type-p
       | These are the different states you can find the info navigation component.
-    .row.around-xs.u-py-7
-      .col-xs-12.col-md-3
-        h3.bx--type-label.u-uppercase.u-pb-5 Default
-        .col-xs-4.viz-box.example
-          = partial :"components/_info_navigation", :locals => {}
+    .row.u-py-7.col-xs-offset-0.col-lg-offset-2
+      .col-xs-12.col-md-4
+        h3.bx--type-label.u-uppercase.u-pb-5.u-text-right  Default
+        .viz-box.example
+          = partial :"components/_info", :locals => {}
 
-      .col-xs-12.col-md-3
-        h3.bx--type-label.u-uppercase.u-pb-5 Active
-        .col-xs-4.viz-box.example
-          = partial :"components/_info_navigation", :locals => {}
+      .col-xs-12.col-md-4
+        h3.bx--type-label.u-uppercase.u-pb-5.u-text-right  Active
+        .viz-box.example
+          = partial :"components/_info", :locals => { :active => 'true'}
 
   .content-block
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
     .code-wrapper
       .code-content id="info_navigation"
         = code("html") do
-          = partial :"components/_info_navigation", :locals => {}
+          = partial :"components/_info", :locals => {}
 
       = partial :"components/_code_actions", :locals => { :target => '#info_navigation'}
 
   .content-block.u-pt-6
-    
+
     = partial :"components/_component_slider", :locals => { :custom_form => 'checkbox', :item => data.component_slider.items.info_navigation }
 
   .content-block.u-pt-6
@@ -43,25 +43,31 @@ index: true
     p.bx--type-p
       | When we use it on graphs, we need to overlay the component with 60% of white to avoid tittle competition or weird overlays.
 
-  .content-block.u-pt-6
-    .row.around-xs
+  .content-block
+    .row.between-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-12.col-md-4.viz-box
-        = partial :"components/_info_navigation", :locals => {}
+        .veil
+        = partial 'components/info'
 
         .hgroup
-          h4.bx--type-h4 Outliers consumption
-          h5.bx--type-h5 Consumption per vehicle (l/100km)
+          h2.title Fleet use
+          h3.subtitle Average  hours per week
 
-        .donut
+        .row.data.donut-container
+          .col-xs-12
+            #bar
 
       .col-xs-12.col-md-4.viz-box
-        = partial :"components/_info_navigation", :locals => {}
+        .veil
+        = partial :"components/_info", :locals => { :active => 'true'}
 
         .hgroup
-          h4.bx--type-h4 Outliers consumption
-          h5.bx--type-h5 Consumption per vehicle (l/100km)
+          h2.title Fleet use
+          h3.subtitle Average  hours per week
 
-        .donut
+        .row.data.donut-container
+          .col-xs-12
+            #donut
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

@@ -4,10 +4,10 @@ var barchart = c3.generate({
     pattern: ['#00AAEE', '#ACF8E2']
   },
   padding: {
-    top: 10,
-    left: 40,
-    right: 40,
-    bottom: 30
+    top: 50,
+    left: 20,
+    right: 20,
+    bottom: 50
   },
     data: {
         columns: [

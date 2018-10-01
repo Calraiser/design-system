@@ -1,59 +1,86 @@
-var chart = c3.generate({
-  bindto: '#bubble',
-  padding: {
-    top: 50,
-    left: 40,
-    right: 40,
-    bottom: 0
-  },
-  color: {
-    pattern: ['#00AAEE']
-  },
-  data: {
-    type: 'bubble',
-    pairs: [{
-        x: '3L',
-        y: '12',
-        value: 10000
-      },
-      {
-        x: '9L',
-        y: '50',
-        value: 20000
-      },
-      {
-        x: '15L',
-        y: '90',
-        value: 39990
-      },
-    ]
-  },
-  axis: {
-     x: {
-      padding: {
-        left: 0,
-        right: 0
-      },
-       tick: {
-        fit: false,
-        outer: false
-      },
-       type: 'category',
-       categories: ["Label1", "Label2", "Label3", "Label4", "Label5"],
+var popCanvas = document.getElementById("bubble");
 
-     },
-  },
-  tooltip: {
-    contents: function (d) {
-      return "<div data_tooltip=" + d[0].value + "&nbsp;min" + " data_tooltip_pos='down'></div>";
-    }
-  },
-  grid: {
-    x: {
-      show: false
+Chart.defaults.global.defaultFontFamily = "Telefonicaregular";
+Chart.defaults.global.defaultFontSize = 13;
+Chart.defaults.global.defaultColor= '#fff';
+
+var popData = {
+  datasets: [{
+    label: ['Deer Population'],
+    data: [{
+      x: 100,
+      y: 0,
+      r: 10
+    }, {
+      x: 60,
+      y: 30,
+      r: 20
+    }, {
+      x: 40,
+      y: 60,
+      r: 25
+    }, {
+      x: 20,
+      y: 10,
+      r: 25
+    }, {
+      x: 40,
+      y: 60,
+      r: 25
+    }, {
+      x: 20,
+      y: 10,
+      r: 10
+    }, {
+      x: 20,
+      y: 30,
+      r: 25
+    }, {
+      x: 0,
+      y: 100,
+      r: 5
+    }],
+    backgroundColor: "rgba(78,200,231,.5)",
+    borderColor: "rgba(78,200,231,.5)",
+  }]
+};
+
+var bubbleChart = new Chart(popCanvas, {
+  type: 'bubble',
+  data: popData,
+  options: {
+    plugins: {
+      deferred: {
+        delay: 800      // delay of 500 ms after the canvas is considered inside the viewport
+      }
     },
-    y: {
-      show: false
+    layout: {
+      padding: {
+          left: 18,
+          right: 50,
+          top: 0,
+          bottom: 30
+      }
+    },
+    responsive: true,
+    maintainAspectRatio: false,
+    tooltips: {
+      enabled: false
+   },
+    legend: {
+      display: false,
+    },
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: false
+        }
+      }]
     }
   },
 });

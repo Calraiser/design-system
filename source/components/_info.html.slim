@@ -1,16 +1,18 @@
-.info
+- active ||= false
+
+.info class=('open' if active.present?)
+  .veil
   .btn-wrapper
-    .btn-info
+    .btn-info  class=('active' if active.present?)
       = svg_tag 'ic-btn.svg';
     span.hamburger.hamburger-1
     span.hamburger.hamburger-2
-
   .info-item
     = link_to '#', class: 'menu-item'
-      = svg_tag 'ic-pdf.svg'
+      i.icon-ic-pdf
   .info-item
     = link_to '#', class: 'menu-item'
-      = svg_tag 'ic-xml.svg'
+      i.icon-ic-xlsx
   .info-item
     = link_to '#', class: 'menu-item'
-      = svg_tag 'ic-question.svg'
+      i.icon-ic-question

@@ -13,7 +13,7 @@ index: true
   .content-block
     main.main role="main"
 
-      .row.start-xs.between-xs
+      .row.around-xs
         .col-xs-4.viz-box
           = partial 'components/info'
 
@@ -25,48 +25,56 @@ index: true
             .col-xs-12
               #donut
 
-            .col-xs-6.data-container
-              .data
-                p.strong
-                 | Top (h)
-                p.number
-                 | 124'
-                p.strong
-                 | Average
-                p.number
-                  | 312'
-                p.strong
-                  | Lowest (h)
-                p.number
-                 | 21'
 
-        .col-xs-4.viz-box
+        .col-xs-6.viz-box
           = partial 'components/info'
 
           .hgroup
-            h2.title Causes
-            h3.subtitle Couses in hours
+            h2.title Fleet use
+            h3.subtitle Average  hours per week
 
-          .viz-container
-            #bar
+          .row.data.donut-container
+            .col-xs-12
+              #chart
 
-        .col-xs-4.viz-box.last-child
-          = partial 'components/info'
 
-          .hgroup
-            h2.title Outliers out of service
-            h3.subtitle Unavailability in hours
+      .content-block
+        .row
+          .col-xs-4.viz-box
+            = partial 'components/info'
 
-          .viz-container
-            div id="offices"
-              .viz-item
-                #bubble
+            .hgroup
+              h2.title Causes
+              h3.subtitle Couses in hours
 
-      .row
-        .col-xs-12.viz-box.viz-box__wide
-          = partial 'components/info'
+            .viz-container
+              #bar
 
-          .hgroup
-            h2.title Outage duration
-            h3.subtitle Average hours per period
-          #line
+      .content-block
+        .row
+          .col-xs-4.viz-box
+            = partial 'components/info'
+
+            .hgroup
+              h2.title Outliers out of service
+              h3.subtitle Unavailability in hours
+
+            .viz-container
+              div id="offices"
+                .viz-item
+                  canvas id="bubble" height="200"
+                    div id="legend03" class="noselect legend legend-l"
+                      ul.1-legend
+                        span.circle style="background-color:rgba(78,200,231,.5)"
+                        li
+                          span Volume of cars</span>
+
+        .content-block
+        .row
+          .col-xs-6.viz-box
+            = partial 'components/info'
+
+            .hgroup
+              h2.title Outage duration
+              h3.subtitle Average hours per period
+            #line

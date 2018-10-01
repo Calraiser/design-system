@@ -1,9 +1,37 @@
 
-.viz-box {
-  position: relative;
+.info-navigation__states {
+  .viz-box {
+    height: auto;
+    margin-bottom: 40px;
+    @include media($tablet) {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.lds-info-navigation {
+
+.viz-box {
+  position: relative;
+  &.open {
+    .veil {
+      opacity: .4;
+      z-index: 2;
+    }
+  }
+  .veil {
+    @include position(absolute, 0 null null 0);
+    @include size(100%);
+    background: $white;
+    opacity: 0;
+
+    z-index: -1;
+
+    transition: $transition-slow;
+  }
+
+}
+
+.info {
   @include position(absolute, 20px 60px null null);
   z-index: 999;
 
@@ -28,26 +56,26 @@
     .info-item {
       transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 
-      &:nth-child(2) {
-        transition-duration: 170ms;
-        transform: translate3d(-60px, 0, 0);
-      }
-
       &:nth-child(3) {
-        transition-duration: 250ms;
-        transform: translate3d(-105px, 0, 0);
+        transition-duration: 170ms;
+        transform: translate3d(-56px, 0, 0);
       }
 
       &:nth-child(4) {
+        transition-duration: 250ms;
+        transform: translate3d(-102px, 0, 0);
+      }
+
+      &:nth-child(5) {
         transition-duration: 330ms;
-        transform: translate3d(-150px, 0, 0);
+        transform: translate3d(-148px, 0, 0);
       }
     }
   }
 
   .btn-info {
     @include size(50px, 43px);
-    margin: -6px -12px;
+    margin: -4px -12px;
 
     &.active {
       svg {
@@ -62,14 +90,18 @@
   }
 
   .info-item {
+    background-color: $white;
+    box-shadow: 0 0 4px 0 rgba(204, 204, 204, 0.5);
+    border-radius: 50%;
     .menu-item {
-      @include size(20px);
-      background-color: $white;
-      box-shadow: 0 0 4px 0 rgba(204, 204, 204, 0.5);
-      padding: 8px 10px 10px;
-      border-radius: 50%;
-      line-height: 25px;
-      display: block;
+      @include size(36px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        font-size: rem-calc(20);
+        color: $grey01;
+      }
 
       &:hover {
         transition: $transition-slow;
@@ -94,7 +126,7 @@
 
   .hamburger {
     @include size(12px,1px);
-    @include position(absolute, 53% null null 46%);
+    @include position(absolute, 50% null null 40%);
     background: $blue;
     display: block;
     transition: transform 200ms;
@@ -115,18 +147,5 @@
     transition-duration: 400ms;
     transform: scale(1.1, 1.1) translate3d(0, 0, 0);
     cursor: pointer;
-  }
-
-  #y-axis-1 {
-    background: #000;
-  }
-
-  .veil {
-    @include position(absolute, 0 null null 0);
-    @include size(100%);
-    background: $grey03;
-    opacity: 0.5;
-    z-index: 2;
-    transition: $transition-slow;
   }
 }

@@ -2,10 +2,10 @@ var chart = c3.generate({
   bindto: '#line',
   type : 'line',
   padding: {
-    top: 50,
-    left: 40,
-    right: 40,
-    bottom: 0
+    top: 80,
+    left: 10,
+    right: 10,
+    bottom: 20
   },
   color: {
     pattern: ['#00AAEE']

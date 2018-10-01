@@ -1,8 +1,3 @@
-require 'lib/static_d3_helpers.rb'
-require 'lib/video_helper.rb'
-
-helpers StaticD3Helpers
-helpers MyAssetHandler
 
 set :markdown_enginge, :redcarpet
 set :markdown, fenced_code_blocks: true
