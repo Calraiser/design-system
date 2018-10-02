@@ -1,13 +1,15 @@
 
 var diameter = 300,
     format = d3.format(",d"),
-    color = d3.scaleOrdinal(d3.schemeCategory20c);
+    color = d3.scaleQuantize()
+    .domain([0, 1])
+    .range(["brown", "#00AAEE"]);
 
 var bubble = d3.pack()
     .size([diameter, diameter])
-    .padding(1.5);
+    .padding(10);
 
-var svg = d3.select("#chart").append("svg")
+var svg = d3.select("#bubble_02").append("svg")
     .attr("width", diameter)
     .attr("height", diameter)
     .attr("class", "bubble");

@@ -4,7 +4,7 @@ var barchart = c3.generate({
     pattern: ['#00AAEE', '#ACF8E2']
   },
   padding: {
-    top: 50,
+    top: 20,
     left: 20,
     right: 20,
     bottom: 50

@@ -210,6 +210,7 @@
     }
   }
 
+  // TODO: Refactor
   .viz-box {
     border-radius: 2px;
     background-color: #fff;
@@ -217,6 +218,15 @@
     padding: 10px 20px 40px;
     position: relative;
     height: 390px;
+    .bubble {
+      bottom: 50px !important;
+    }
+    .c3, canvas, .bubble {
+      position: absolute !important;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
     > * {
       transition: $transition-slow;
     }
@@ -423,11 +433,5 @@
 
   100% {
     transform: translateX(-100%);
-  }
-}
-
-#chart {
-  circle {
-    fill: $blue !important;
   }
 }

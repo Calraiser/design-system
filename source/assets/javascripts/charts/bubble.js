@@ -56,9 +56,9 @@ var bubbleChart = new Chart(popCanvas, {
     },
     layout: {
       padding: {
-          left: 18,
-          right: 50,
-          top: 0,
+          left: 0,
+          right: 10,
+          top: 80,
           bottom: 30
       }
     },
