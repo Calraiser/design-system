@@ -207,3 +207,38 @@ ul {
 .module-anatomy {
   margin-top: 150px;
 }
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  a {
+    @extend %txt-links-positive;
+    color: $grey;
+    &:after {
+      font-family: fontcustom;
+      font-size: 10px;
+      display: inline-block;
+    }
+    &.next {
+      &:before {
+        margin-right: 20px;
+      }
+      &:after {
+        content: "\f168";
+        transform: rotate(180deg);
+        margin: 5px 5px 0;
+      }
+    }
+    &.previous {
+      &:before {
+        left: 25%;
+      }
+      &:after {
+        content: "\f168";
+        float: left;
+        margin: 6px 5px 0;
+      }
+    }
+  }
+}

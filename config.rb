@@ -15,6 +15,10 @@ activate :autoprefixer
 activate :livereload
 activate :lunr
 activate :syntax, :inline_theme => Rouge::Themes::Github.new
+activate :navtree do |options|
+  options.data_file = 'title.yml' # The data file where our navtree is stored.
+  options.ignore_dir = ['assets'] # An array of directories we want to ignore when building our tree.
+end
 
 activate :sprockets do |c|
   c.expose_middleman_helpers = true

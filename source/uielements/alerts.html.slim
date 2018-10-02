@@ -55,6 +55,10 @@ index: true
   .content-block
     = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.alerts }
 
+  .footer-navigation
+    = previous_link(data.title['uielements'])
+    = next_link(data.title['uielements'])
+
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }

@@ -12,6 +12,7 @@ gem 'middleman-livereload',     '~> 3.4.3'
 gem 'middleman-sprockets'
 gem 'middleman-lunr'
 gem "middleman-syntax"
+gem 'middleman-navtree'
 # gem "middleman-scavenger",      git: 'https://github.com/varvet/middleman-scavenger.git', branch: 'feature/middleman-4-support'
 gem 'redcarpet'
 gem "rack-codehighlighter",       :git => "git://github.com/wbzyl/rack-codehighlighter.git"

@@ -45,6 +45,10 @@ index: true
       .u-py-6.u-text-center
         = image_tag 'uicomponents/accordion/anatomy-module.png', class: 'image-2x'
 
+  .footer-navigation
+    = previous_link(data.title['uielements'])
+    = next_link(data.title['uielements'])
+
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }
