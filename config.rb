@@ -1,4 +1,7 @@
 
+require 'lib/middleman-navtree/helpers'
+include NavTree
+
 set :markdown_enginge, :redcarpet
 set :markdown, fenced_code_blocks: true
 set :haml, { ugly: true }
