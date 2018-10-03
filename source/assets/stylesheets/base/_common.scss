@@ -147,9 +147,8 @@ ul {
 }
 
 .examples-layout {
-  margin-top: 50px !important;
   .example-item {
-    margin: 50px 0;
+    margin-bottom: 50px;
     .example-mobile {
       @include media($mobile) {
         width: 205px;

@@ -40,6 +40,10 @@ index: true
   = partial :"buttonstype/_buttons_header", :locals => { :title => 'Secondary buttons with icons', :text => 'Buttons for DOWNLOAD or similar operations', :light =>'large / medium / small' }
   = partial :"buttonstype/_secondary_buttons_ico"
 
+  .footer-navigation
+    = previous_link(data.title['uielements'])
+    = next_link(data.title['uielements'])
+    
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }

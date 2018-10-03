@@ -57,7 +57,7 @@ index: true
     .content-block
       .row.center-xs
         .col-lg-3.col-md-6.col-xs-12
-          = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.success, :title => 'Completed / Success/Call to action / Buttons, links & active states', :extraclass => 'rounded'}
+          = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.success, :title => 'Completed / Success/Call to action <br>/ Buttons, links & active states', :extraclass => 'rounded'}
         .col-lg-3.col-md-6.col-xs-12
           = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.warning, :title => 'Warning / In progress', :extraclass => 'rounded'}
         .col-lg-3.col-md-6.col-xs-12
@@ -90,6 +90,9 @@ index: true
     = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.orange.colors, :colorTitle => '- Orange - Colour four', :extraclass => 'main-palette'}
     = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.pink.colors, :colorTitle => '- Pink - Colour five', :extraclass => 'main-palette'}
 
+  .footer-navigation
+    = previous_link(data.title['guidelines'])
+    = next_link(data.title['guidelines'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

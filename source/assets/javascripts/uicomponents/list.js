@@ -28,6 +28,7 @@ $(document).ready(function() {
   });
 
   $('.table tbody').on('click', 'tr', function() {
+    $(this).find('td > .status').addClass('on');
     if ($(this).hasClass('selected')) {
       $(this).removeClass('selected');
     } else {

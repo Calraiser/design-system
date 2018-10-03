@@ -36,21 +36,21 @@ index: true
             -(1..4).each do |i|
               = partial :"components/alerts", :locals => { :extraclass =>'alert-secondary', :title => 'Notification', :text => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', :date =>'now', :close => false }
 
+  .clipboard
+    h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+    .code-wrapper
+      .code-content id="alert"
+        = code('html') do
+          | <div class="lds-alert alert-default">
+              <div class="lds-alert__heading">
+                <h2 class="lds-alert__title">New data available</h2>
+                  <span class="lds-alert__date">22 May</span>
+                    <button class="close" type="button"></button>
+               </div>
+                <p class="bx--type-p">Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
 
-  h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
-  .code-wrapper
-    .code-content id="alert"
-      = code('html') do
-        | <div class="lds-alert alert-default">
-            <div class="lds-alert__heading">
-              <h2 class="lds-alert__title">New data available</h2>
-                <span class="lds-alert__date">22 May</span>
-                  <button class="close" type="button"></button>
-             </div>
-              <p class="bx--type-p">Lorem ipsum dolor sit amet, consectetur.</p>
-          </div>
-
-    = partial :"components/_code_actions", :locals => { :target => '#alert'}
+      = partial :"components/_code_actions", :locals => { :target => '#alert'}
 
   .content-block
     = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.alerts }

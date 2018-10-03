@@ -22,7 +22,7 @@ charts:
 - title: "Sankey chart"
   image: "viz_charts/sankey-chart.svg"
   text: "They are developed to represent changes in network structure over time. Values are represented with blocks on each axis. The height of a block represents the size of the cluster …"
-  link: "/more"
+
   functions:
     - Comparison
     - Correlation
@@ -38,7 +38,7 @@ charts:
 - title: "Parallel chart"
   image: "viz_charts/parallel-chart.svg"
   text: "It shows data frequencies instead of the individual data points. The method is based on the axis layout of parallel coordinates, with boxes representing the categories and parallelograms…"
-  link: "/more"
+
   functions:
     - Comparison
     - Correlation
@@ -54,7 +54,7 @@ charts:
 - title: "Sunburst"
   image: "viz_charts/sunburst-chart.svg"
   text: "It is used to visualize hierarchical data, depicted by concentric circles. The circle in the centre represents the root node, with the hierarchy moving outward from the center. A segment of the inner circle …"
-  link: "/more"
+
   functions:
     - Comparison
 
@@ -70,7 +70,7 @@ charts:
 - title: "Tree map"
   image: "viz_charts/tree-map.svg"
   text: "They display hierarchical (tree-structured) data as a set of nested rectangles. Each branch of the tree is given a rectangle, which is then tiled with smaller rectangles representing sub-branches. A leaf node’s rectangle has an area proportional…"
-  link: "/more"
+
   functions:
     - Comparison
     - Distribution

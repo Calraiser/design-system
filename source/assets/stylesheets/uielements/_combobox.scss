@@ -91,3 +91,22 @@ $select-height: 36px;
     }
   }
 }
+
+.combobox-variants {
+  &__right {
+    .row {
+      margin-left: 0;
+    }
+  }
+  &__left {
+    .row {
+      margin-left: 0;
+      @include media($mobile) {
+        padding-top: 17px;
+      }
+    }
+  }
+  h3 {
+
+  }
+}

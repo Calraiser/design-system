@@ -43,17 +43,21 @@ index: true
     h2.bx--type-h4.u-text-blue Anatomy
     .anatomy-simple__content
       .row.col-xs-offset-0.col-lg-offset-1
-        .col-xs-12.col-sm-4.col-md-4.col-lg-3
-          hh2.anatomy-simple__heading  Padding
+        .col-xs-12.col-sm-4.col-md-4.col-lg-4
+          h2.anatomy-simple__heading  Padding
           = image_tag 'uicomponents/image_icons/padding.png'
 
-        .col-xs-12.col-sm-4.col-md-4.col-lg-3
+        .col-xs-12.col-sm-4.col-md-4.col-lg-4
           h2.anatomy-simple__heading  Measures
           = image_tag 'uicomponents/image_icons/measures.png'
 
-        .col-xs-12.col-sm-4.col-md-4.col-lg-3
+        .col-xs-12.col-sm-4.col-md-4.col-lg-4
           h2.anatomy-simple__heading  Specifications
           = image_tag 'uicomponents/image_icons/specs.png'
+
+  .footer-navigation
+    = previous_link(data.title['uielements'])
+    = next_link(data.title['uielements'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

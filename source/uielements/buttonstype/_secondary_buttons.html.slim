@@ -38,18 +38,19 @@
         .col-sm-12
           = link_to '#', class: 'c-btn btn-secondary btn-small disabled', disabled: true do
             'Disabled
+            
+.clipboard
+  h4.bx--type-h4.u-text-blue.uppercase Code/Html > Save
+  .code-wrapper
+    .code-content id="sec_btn"
+      = code("html") do
+        = link_to '#', class: 'c-btn btn-secondary btn-large'
+          'Button Size Large'
+      = code("html") do
+        = link_to '#', class: 'c-btn btn-secondary btn-medium'
+          'Button Size Medium'
+      = code("html") do
+        = link_to '#', class: 'c-btn btn-secondary btn-small'
+          'Button Size Small'
 
-h4.bx--type-h4.u-text-blue.uppercase Code/Html > Save
-.code-wrapper
-  .code-content id="sec_btn"
-    = code("html") do
-      = link_to '#', class: 'c-btn btn-secondary btn-large'
-        'Button Size Large'
-    = code("html") do
-      = link_to '#', class: 'c-btn btn-secondary btn-medium'
-        'Button Size Medium'
-    = code("html") do
-      = link_to '#', class: 'c-btn btn-secondary btn-small'
-        'Button Size Small'
-
-  = partial :"components/_code_actions", :locals => { :target => '#sec_btn'}
+    = partial :"components/_code_actions", :locals => { :target => '#sec_btn'}

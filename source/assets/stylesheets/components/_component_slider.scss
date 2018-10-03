@@ -8,9 +8,10 @@
       margin-top: 50px;
   }
   h2 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    display: inline-block;
   }
-  &.big-slider {
+&.big-slider {
     height: 300px;
     .component-item img {
       width: 450px;

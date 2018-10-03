@@ -25,6 +25,11 @@
     @extend %txt-label;
     width: 205px;
     max-width: 100%;
+    outline-style:none;
+
+    &:focus {
+      border-bottom: 2px solid $green;
+    }
 
     &:disabled {
       color: $grey02;
@@ -80,10 +85,6 @@
     display: block;
     &.error {
       border-bottom: 2px solid $pink;
-
-      &:focus {
-        border-bottom: 2px solid $pink;
-      }
     }
 
     &:disabled {

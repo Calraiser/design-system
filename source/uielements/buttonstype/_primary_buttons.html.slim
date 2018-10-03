@@ -40,21 +40,21 @@
           = link_to '#', class: 'c-btn btn-primary btn-small disabled', disabled: true do
             'Disabled
 
-h2.title.u-uppercase Code/Html > Save
+.clipboard
+  h2.title.u-uppercase Code/Html > Save
+  .code-wrapper
+    .code-content id="pri_btn"
+      = code("html") do
+        = link_to '#', class:'c-btn btn-primary btn-large'
+          'Button Size Large
+      = code("html") do
+        = link_to '#', class:'c-btn btn-primary btn-medium'
+          'Button Size Medium
+      = code("html") do
+        = link_to '#', class:'c-btn btn-primary btn-small'
+          'Button Size Small
 
-.code-wrapper
-  .code-content id="pri_btn"
-    = code("html") do
-      = link_to '#', class:'c-btn btn-primary btn-large'
-        'Button Size Large
-    = code("html") do
-      = link_to '#', class:'c-btn btn-primary btn-medium'
-        'Button Size Medium
-    = code("html") do
-      = link_to '#', class:'c-btn btn-primary btn-small'
-        'Button Size Small
-
-  = partial :"components/_code_actions", :locals => { :target => '#pri_btn'}
+    = partial :"components/_code_actions", :locals => { :target => '#pri_btn'}
 
 /Buttons for CANCEL, close, delete, reset or sign out operations
 = partial :"buttonstype/_buttons_header", :locals => { :title => false, :text => 'Buttons for CANCEL, close, delete, reset or sign out operations', :light =>'large / medium / small' }
@@ -99,18 +99,19 @@ h2.title.u-uppercase Code/Html > Save
         .col-sm-12
           = link_to '#', class: 'c-btn btn-primary inverse btn-small disabled', disabled: true do
             'Disabled
+            
+.clipboard
+  h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+  .code-wrapper
+    .code-content id="pri_inv_btn"
+      = code("html") do
+        = link_to '#', class:'c-btn btn-primary inverse btn-large'
+          'Button Size Large
+      = code("html") do
+        = link_to '#', class:'c-btn btn-primary inverse btn-medium'
+          'Button Size Medium
+      = code("html") do
+        = link_to '#', class:'c-btn btn-primary inverse btn-small'
+          'Button Size Small
 
-h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
-.code-wrapper
-  .code-content id="pri_inv_btn"
-    = code("html") do
-      = link_to '#', class:'c-btn btn-primary inverse btn-large'
-        'Button Size Large
-    = code("html") do
-      = link_to '#', class:'c-btn btn-primary inverse btn-medium'
-        'Button Size Medium
-    = code("html") do
-      = link_to '#', class:'c-btn btn-primary inverse btn-small'
-        'Button Size Small
-
-  = partial :"components/_code_actions", :locals => { :target => '#pri_inv_btn'}
+    = partial :"components/_code_actions", :locals => { :target => '#pri_inv_btn'}

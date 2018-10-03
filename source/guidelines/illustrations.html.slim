@@ -14,7 +14,7 @@ index: true
   p.bx--type-p.u-pt-4
    | Our illustrations should always have a goal, be meaningful to users and thoughtfully convey ideas. They have a consistent narrative of practicality, optimism and friendliness used throughout. This is accomplished through shape, colour, softness and curves to achieve an inviting, engaging experience.
 
-  .content-block.u-pb-8
+  .content-block.u-py-7
     h2.bx--type-h4 Examples of illustrations
     h5.bx--type-h5 Illustrations for promotional elements
     .row.between-xs.single-column.u-pt-5
@@ -25,14 +25,14 @@ index: true
       .col-xs-12.col-md-4
         = image_tag 'illustrations/promotional_image03.png', class: 'u-wide'
 
-  .content-block.u-pb-7
+  .content-block.u-py-7
     h5.bx--type-h5 Illustrations for web
     .row
       = image_tag 'illustrations-overview.png', class: 'u-wide'
 
   .content-block
     h5.bx--type-h5 Illustrations for emails header
-    .row.between-xs.single-column.u-pt-5
+    .row.between-xs.single-column.u-pt-7
       .col-xs-12.col-md-4
         = image_tag 'illustrations/email-header01.png', class: 'u-wide'
       .col-xs-12.col-md-4
@@ -64,3 +64,7 @@ index: true
       p.bx--type-p.u-pt-4
         | Following the guidelines to choose a suitable image, you can find some in&nbsp;
         = link_to 'Brand Ignite.', 'https://brandignite.telefonica.com', class: 'blue-link', target: '_blank'
+
+  .footer-navigation
+    = previous_link(data.title['guidelines'])
+    = next_link(data.title['guidelines'])

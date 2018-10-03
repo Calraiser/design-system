@@ -27,13 +27,14 @@ index: true
         h3.bx--type-label.u-uppercase.u-pb-5 Fold (hidden modules)
         = partial :"components/_accordion", :locals => { :extraclass => 'hide'}
 
-  h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
-  .code-wrapper
-    .code-content id="accordion"
-      = code("html") do
-        = partial :"components/_accordion", :locals => {}
+  .clipboard
+    h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+    .code-wrapper
+      .code-content id="accordion"
+        = code("html") do
+          = partial :"components/_accordion", :locals => {}
 
-    = partial :"components/_code_actions", :locals => { :target => '#accordion'}
+      = partial :"components/_code_actions", :locals => { :target => '#accordion'}
 
   .content-block.u-pt-6
 
@@ -43,7 +44,7 @@ index: true
     .module-anatomy
       h3.bx--type-subH2.u-uppercase Module Anatomy
       .u-py-6.u-text-center
-        = image_tag 'uicomponents/accordion/anatomy-module.png', class: 'image-2x'
+        = image_tag 'uicomponents/accordion/anatomy-module.png', class: 'image-3x'
 
   .footer-navigation
     = previous_link(data.title['uielements'])

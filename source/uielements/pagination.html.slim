@@ -21,23 +21,23 @@ index: true
           .lds-pagination
             ul.pager
               li.first.hide
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
               li.previous.disabled
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
               li.current 1
               li = link_to '2', '#';
               li = link_to '3', '#';
               li.next
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
               li.last
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
 
           .lds-pagination.u-pt-4
             ul.pager
               li.first.hide
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
               li.previous.disabled
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
               li.current 1
               li = link_to '2', '#';
               li = link_to '3', '#';
@@ -45,9 +45,9 @@ index: true
               li = link_to '14', '#';
 
               li.next
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
               li.last
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
 
       .col-xs-12.col-sm-3
         .pagination-example
@@ -55,14 +55,14 @@ index: true
           .lds-pagination
             ul.pager
               li.previous
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
               li.current 1
               li = link_to '2', '#';
               li = link_to '3', '#';
               li.next
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
               li.last.hover
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
 
       .col-xs-12.col-sm-3
         .pagination-example
@@ -70,14 +70,14 @@ index: true
           .lds-pagination
             ul.pager.disabled
               li.previous
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
               li = link_to '1', '#';
               li = link_to '2', '#';
               li = link_to '3', '#';
               li.next
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
               li.last
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
 
     .row.center-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-4.col-sm
@@ -85,7 +85,7 @@ index: true
           .lds-pagination
             ul.pager
               li.first
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
               p.bx--type-p.small.u-pt-2 Double left arrow
 
       .col-xs-4.col-sm
@@ -93,7 +93,7 @@ index: true
           .lds-pagination
             ul.pager
               li.previous
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
               p.bx--type-p.small.u-pt-2 Left arrow
 
       .col-xs-4.col-sm
@@ -118,7 +118,7 @@ index: true
           .lds-pagination
             ul.pager
               li.next
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
               p.bx--type-p.small.u-pt-2 Right arrow
 
       .col-xs-4.col-sm
@@ -126,50 +126,56 @@ index: true
           .lds-pagination
             ul.pager
               li.last
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
               p.bx--type-p.small.u-pt-2 Double right arrow
 
 
+  .clipboard
+    h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+    .code-wrapper
+      .code-content id="pagination"
+        = code("html") do
+          .lds-pagination
+            ul.pager
+              li.first
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
+              li.previous
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
+              li.current 1
+              li = link_to '2', '#';
+              li = link_to '3', '#';
+              li.next
+                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
+              li.last
+                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
 
-  h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
-  .code-wrapper
-    .code-content id="pagination"
-      = code("html") do
-        .lds-pagination
-          ul.pager
-            li.first
-              = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
-            li.previous
-              = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
-            li.current 1
-            li = link_to '2', '#';
-            li = link_to '3', '#';
-            li.next
-              = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '';
-            li.last
-              = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '';
-
-    = partial :"components/_code_actions", :locals => { :target => '#pagination'}
+      = partial :"components/_code_actions", :locals => { :target => '#pagination'}
 
   .anatomy-simple
     h2.bx--type-h4.u-text-blue Anatomy
     .anatomy-simple__content
       .row.col-xs-offset-0.col-lg-offset-1
-        .col-xs-12.col-sm-4.col-md-4.col-lg-3
+        .col-xs-12.col-sm-4.col-md-4
           h2.anatomy-simple__heading  Padding
           = image_tag 'uicomponents/pagination/padding.png';
 
-        .col-xs-12.col-sm-4.col-md-4.col-lg-3
+        .col-xs-12.col-sm-4.col-md-4
           h2.anatomy-simple__heading  Measures
           = image_tag 'uicomponents/pagination/measures.png';
 
-        .col-xs-12.col-sm-4.col-md-4.col-lg-3
+        .col-xs-12.col-sm-4.col-md-4
           h2.anatomy-simple__heading  Specifications
           = image_tag 'uicomponents/pagination/specs.png'
 
   .content-block.u-pt-6
     h2.bx--type-h4.u-text-blue.u-pb-6 Example
-    = image_tag 'uicomponents/pagination/example.png', class:"e-image-full-xs"
+    .col-xs-offset-0.col-lg-offset-1
+      .col-xs-12.col-md-6
+        = partial :"components/_tables", :locals => { }
+
+  .footer-navigation
+    = previous_link(data.title['uielements'])
+    = next_link(data.title['uielements'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

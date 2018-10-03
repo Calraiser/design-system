@@ -40,6 +40,8 @@ index: true
           option value="may" May
           option value="june" June
 
+
+  .clipboard
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
     .code-wrapper
       .code-content id="combobox"
@@ -62,12 +64,12 @@ index: true
 
   .content-block.u-pt-6
     h2.bx--type-h4.u-text-black.u-uppercase Variants
-    p.bx--type-p.small
+    p.bx--type-p
       | Depending on the context, there are two positions where the label can be.
 
-  .content-block
-    .row.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-12.col-sm-6
+  .content-block.combobox-variants
+    .row.between-xs.top-xs.col-xs-offset-0.col-lg-offset-1
+      .col-xs-5.col-md-6.combobox-variants__left
         h3.bx--type-subH2.u-uppercase.u-pb-6 Left Label
         .row.middle-xs
           .select-label.bx--type-label Category
@@ -80,17 +82,22 @@ index: true
             option value="may" May
             option value="june" June
 
-      .col-xs-12.col-sm-6
+      .col-xs-5.col-md-6.combobox-variants__right
         h3.bx--type-subH2.u-uppercase.u-pb-6 Top Label
-        .select-label.bx--type-label Category
-        select id="default"
-          option value="hide" Top label
-          option value="january" rel="icon-temperature" January
-          option value="february" February
-          option value="march" March
-          option value="april" April
-          option value="may" May
-          option value="june" June
+        .row.column-xs
+          .select-label.bx--type-label Category
+          select id="default"
+            option value="hide" Top label
+            option value="january" rel="icon-temperature" January
+            option value="february" February
+            option value="march" March
+            option value="april" April
+            option value="may" May
+            option value="june" June
+
+  .footer-navigation
+    = previous_link(data.title['uielements'])
+    = next_link(data.title['uielements'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

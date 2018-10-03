@@ -14,18 +14,18 @@ index: true
     h2.bx--type-h4.u-text-blue States
     p.bx--type-p
       | These are the different states you can find the info navigation component.
-    .row.u-py-7.col-xs-offset-0.col-lg-offset-2
+    .row.u-py-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-12.col-md-4
-        h3.bx--type-label.u-uppercase.u-pb-5.u-text-right  Default
+        h3.bx--type-label.u-uppercase.u-pb-5 Default
         .viz-box.example
           = partial :"components/_info", :locals => {}
 
       .col-xs-12.col-md-4
-        h3.bx--type-label.u-uppercase.u-pb-5.u-text-right  Active
+        h3.bx--type-label.u-uppercase.u-pb-5  Active
         .viz-box.example
           = partial :"components/_info", :locals => { :active => 'true'}
 
-  .content-block
+  .clipboard
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
     .code-wrapper
       .code-content id="info_navigation"
@@ -68,6 +68,10 @@ index: true
         .row.data.donut-container
           .col-xs-12
             #donut
+
+  .footer-navigation
+    = previous_link(data.title['uielements'])
+    = next_link(data.title['uielements'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

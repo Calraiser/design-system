@@ -40,23 +40,25 @@
           = link_to '#', class: 'c-btn btn-primary has-icon btn-small disabled', disabled: true
             'Disabled <i class="ico ico-check"></i>
 
-h4.bx--type-h4.u-text-blue.uppercase Code/Html > Save
-.code-wrapper
-  .code-content id="pri_btn_ico"
-    = code("html") do
-      = link_to '#', class: 'c-btn btn-primary has-icon btn-large'
-        'Button Size Large
-        i.ico.ico-check
-    = code("html") do
-      = link_to '#', class: 'c-btn btn-primary has-icon btn-medium'
-        'Button Size Medium
-        i.ico.ico-check
-    = code("html") do
-      = link_to '#', class: 'c-btn btn-primary has-icon btn-small'
-        'Button Size Small'
-        i.ico.ico-check
 
-  = partial :"components/_code_actions", :locals => { :target => '#pri_btn_ico'}
+.clipboard
+  h4.bx--type-h4.u-text-blue.uppercase Code/Html > Save
+  .code-wrapper
+    .code-content id="pri_btn_ico"
+      = code("html") do
+        = link_to '#', class: 'c-btn btn-primary has-icon btn-large'
+          'Button Size Large
+          i.ico.ico-check
+      = code("html") do
+        = link_to '#', class: 'c-btn btn-primary has-icon btn-medium'
+          'Button Size Medium
+          i.ico.ico-check
+      = code("html") do
+        = link_to '#', class: 'c-btn btn-primary has-icon btn-small'
+          'Button Size Small'
+          i.ico.ico-check
+
+    = partial :"components/_code_actions", :locals => { :target => '#pri_btn_ico'}
 
 = partial :"buttonstype/_buttons_header", :locals => { :title => false, :text => 'Buttons for RESET, clean or similar operations', :light =>'large / medium / small' }
 
@@ -102,20 +104,22 @@ h4.bx--type-h4.u-text-blue.uppercase Code/Html > Save
           = link_to '#', class: 'c-btn btn-primary inverse has-icon btn-small disabled'
             'Disabled <i class="ico ico-close"></i>
 
-h4.bx--type-h4.u-text-blue.uppercase Code/Html > Save
-.code-wrapper
-  .code-content id="pri_inv_btn_ico"
-    = code("html") do
-      = link_to '#', :class => 'c-btn btn-primary inverse has-icon btn-large'
-        'Button Size Large
-        i.ico.ico-close
-    = code("html") do
-      = link_to '#', :class => 'c-btn btn-primary inverse has-icon btn-medium'
-        'Button Size Medium
-        i.ico.ico-close
-    = code("html") do
-      = link_to '#', :class => 'c-btn btn-primary inverse has-icon btn-small'
-        'Button Size Small
-        i.ico.ico-close
 
-  = partial :"components/_code_actions", :locals => { :target => '#pri_inv_btn_ico'}
+.clipboard
+  h4.bx--type-h4.u-text-blue.uppercase Code/Html > Save
+  .code-wrapper
+    .code-content id="pri_inv_btn_ico"
+      = code("html") do
+        = link_to '#', :class => 'c-btn btn-primary inverse has-icon btn-large'
+          'Button Size Large
+          i.ico.ico-close
+      = code("html") do
+        = link_to '#', :class => 'c-btn btn-primary inverse has-icon btn-medium'
+          'Button Size Medium
+          i.ico.ico-close
+      = code("html") do
+        = link_to '#', :class => 'c-btn btn-primary inverse has-icon btn-small'
+          'Button Size Small
+          i.ico.ico-close
+
+    = partial :"components/_code_actions", :locals => { :target => '#pri_inv_btn_ico'}

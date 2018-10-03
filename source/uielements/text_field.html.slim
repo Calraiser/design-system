@@ -64,21 +64,21 @@ index: true
 
   .content-block
     .row.between-xs.top-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-12-col-sm-4
+      .col-xs-12-col-sm-5
         .lds-text-field
           label.lds-text-field__label Default
           textarea class="lds-text-field__input" rows="6" cols="50" placeholder="Enter text here.."
-      .col-xs-12-col-sm-6
+      .col-xs-12-col-sm-4
         .lds-text-field
           label.lds-text-field__label  Disabled
           textarea class="lds-text-field__input" rows="6" cols="50" placeholder="Enter text here.." disabled="disabled"
 
     .row.between-xs.top-xs.u-pt-5.u-pb-9.col-xs-offset-0.col-lg-offset-1
-      .col-xs-12-col-sm-6
+      .col-xs-12-col-sm-4
         .lds-text-field
           label.lds-text-field__label  Active
           textarea class="lds-text-field__input" rows="6" cols="50" class="active" placeholder="Enter text here.."
-      .col-xs-12-col-sm-6
+      .col-xs-12-col-sm-4
         .lds-text-field
           label.lds-text-field__label  Error
           textarea class="lds-text-field__input" rows="6" cols="50" class="error" placeholder="Enter text here.."
@@ -111,6 +111,10 @@ index: true
       .col-xs-10.col-sm-5.col-lg-4
         h3.bx--type-label.u-pb-5.u-uppercase Padding
         = image_tag 'uicomponents/inputs/textarea_padding.png', class: 'image-2x';
+
+  .footer-navigation
+    = previous_link(data.title['uielements'])
+    = next_link(data.title['uielements'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

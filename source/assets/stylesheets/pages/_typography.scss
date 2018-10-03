@@ -43,4 +43,7 @@
       }
     }
   }
+  .ico-hierarchy {
+    @include size(40px);
+  }
 }

@@ -13,6 +13,17 @@
   transition: $transition-slow;
   cursor: pointer;
 
+  .icon-ic-close {
+    font-size: rem-calc(10);
+  }
+  .icon-ic-back-arrow {
+    font-size: rem-calc(10);
+    color: $pills;
+    position: relative;
+    left: 2px;
+    top: -1px;
+  }
+
   &.pills-default {
     width: auto;
     white-space: pre;
@@ -40,10 +51,7 @@
     }
     &:hover {
       border: 2px solid $pills-hover;
-      svg {
-        fill: $white;
-      }
-      span {
+      span, i {
         color: $white;
       }
     }

@@ -17,9 +17,9 @@ index: true
       | These are the different states of the pills.
 
     .row.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs.col-sm-2
+      .col-xs.col-sm-3
         = partial :"components/_pills_bar", :locals => { :text => 'Default', :close => true, :extraclass => 'pills-default' }
-      .col-xs.col-sm-2
+      .col-xs.col-sm-3
         = partial :"components/_pills_bar", :locals => { :text => 'On Hover', :close => true, :extraclass => 'pills-hover pills-default' }
       .col-xs.col-sm-2
         = partial :"components/_pills_bar", :locals => { :text => '+2', :extraclass => 'pill-counter' }
@@ -123,6 +123,10 @@ index: true
                 - (1..8).each_with_index do |i, index|
                   = partial :"components/_pills_bar", :locals => { :text => text_pills[index], :close => true }
                 = partial :"components/_pills_bar", :locals => { :text => '', :back => true, :extraclass => 'pill-back' }
+
+  .footer-navigation
+    = previous_link(data.title['uielements'])
+    = next_link(data.title['uielements'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

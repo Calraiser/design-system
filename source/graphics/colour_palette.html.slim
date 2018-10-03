@@ -45,6 +45,9 @@ index: true
     = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.varient04.colors, :extraclass => 'main-palette'}
     = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.varient05.colors, :extraclass => 'main-palette'}
 
+  .footer-navigation
+    = previous_link(data.title['graphics'])
+    = next_link(data.title['graphics'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COMPLEMENTARY_COLOURS_download', :sketch => true }

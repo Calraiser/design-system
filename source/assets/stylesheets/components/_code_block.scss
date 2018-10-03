@@ -1,3 +1,12 @@
+
+.clipboard {
+  display: none;
+  @include media($mobile) {
+    display: block;
+    margin: 40px 0;
+  }
+}
+
 .code-wrapper {
   display: flex;
   margin-top: 10px;

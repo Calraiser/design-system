@@ -30,9 +30,13 @@ index: true
     p.bx--type-p
       | Lists has to be two columns at least. They are built alternating grey rows with white rows.
   .content-block.u-pb-6
-    = image_tag 'uicomponents/list/list-example.png';
+    = image_tag 'uicomponents/list/list-example.png', class: 'image-3x';
   .content-block
     = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.list }
+
+  .footer-navigation
+    = previous_link(data.title['uielements'])
+    = next_link(data.title['uielements'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

@@ -71,6 +71,7 @@ $button-colors: (
     cursor: default;
     border: 2px solid $grey !important;
     color: $grey !important;
+		cursor: not-allowed;
     &:after {
       display: none;
     }

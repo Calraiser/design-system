@@ -47,25 +47,25 @@ index: true
       p.bx--type-p
         | Selecting the appropriate type style is determined by layout or template structure. Products and tools may have several levels of architecture or areas that require varying typographic hierarchies.
 
-      .row.end-md.start-sm.between-sm.u-pt-9.u-pb-8
+      .row.end-md.start-sm.between-sm.u-pt-9.u-pb-3
         .column.col-xs-4.col-sm-3.col-md-3
           .row.column-xs.center-xs
             .col-xs-6.col-sm-6.col-md-3
               = svg_tag 'ic-desktop-callout.svg'
             .col-xs-6.col-sm-6.col-md-3.u-pt-2
-              = svg_tag 'desktop.svg'
+              = svg_tag 'desktop.svg', class: 'ico-hierarchy'
         .column.col-xs-4.col-sm-3.col-md-3
           .row.column-xs.center-xs
             .col-xs-6.col-sm-6.col-md-3
               = svg_tag 'ic-tablet-callout.svg'
             .col-xs-6.col-sm-6.col-md-3.u-pt-2
-              = svg_tag 'tablet.svg'
+              = svg_tag 'tablet.svg', class: 'ico-hierarchy'
         .column.col-xs-4.col-sm-3.col-md-3
           .row.column-xs.center-xs
             .col-xs-6.col-sm-6.col-md-3
               = svg_tag 'ic-mobile-callout.svg'
             .col-xs-6.col-sm-6.col-md-3.u-pt-2
-              = svg_tag 'mobile.svg'
+              = svg_tag 'mobile.svg', class: 'ico-hierarchy'
 
       .row
         /Mega XXL
@@ -222,6 +222,10 @@ index: true
           = partial :"components/_spec_item", :locals => { :fontsize => '20px', :fontweight => 'Extralight', :lineheight =>'24px', :classname => '.bx--type-quote' }
         .column.col-xs-4.col-sm-4.col-md-3
           = partial :"components/_spec_item", :locals => { :fontsize => '18px', :fontweight => 'Extralight', :lineheight =>'22px', :classname => '.bx--type-quote' }
+
+  .footer-navigation
+    = previous_link(data.title['guidelines'])
+    = next_link(data.title['guidelines'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'typography', :typo => true}

@@ -44,20 +44,22 @@
           = link_to '#', class: 'c-btn btn-secondary has-icon btn-small disabled', disabled: true do
             'Disabled <i class="ico ico-caret"></i>
 
-h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
-.code-wrapper
-  .code-content id="sec_btn_ico"
-    = code("html") do
-      = link_to '#', class: 'c-btn btn-secondary has-icon btn-large'
-        'Button Size Large
-        i.ico.ico-caret
-    = code("html") do
-      = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium'
-        'Button Size Medium
-        i.ico.ico-caret
-    = code("html") do
-      = link_to '#', class: 'c-btn btn-secondary has-icon btn-small'
-        'Button Size Small
-        i.ico.ico-caret
 
-  = partial :"components/_code_actions", :locals => { :target => '#sec_btn_ico'}
+.clipboard
+  h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+  .code-wrapper
+    .code-content id="sec_btn_ico"
+      = code("html") do
+        = link_to '#', class: 'c-btn btn-secondary has-icon btn-large'
+          'Button Size Large
+          i.ico.ico-caret
+      = code("html") do
+        = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium'
+          'Button Size Medium
+          i.ico.ico-caret
+      = code("html") do
+        = link_to '#', class: 'c-btn btn-secondary has-icon btn-small'
+          'Button Size Small
+          i.ico.ico-caret
+
+    = partial :"components/_code_actions", :locals => { :target => '#sec_btn_ico'}

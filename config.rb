@@ -16,6 +16,7 @@ activate :livereload
 activate :lunr
 activate :syntax, :inline_theme => Rouge::Themes::Github.new
 activate :navtree do |options|
+  options.automatic_tree_updates = false # The tree.yml file will be updated automatically when source files are changed.
   options.data_file = 'title.yml' # The data file where our navtree is stored.
   options.ignore_dir = ['assets'] # An array of directories we want to ignore when building our tree.
 end

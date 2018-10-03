@@ -118,6 +118,10 @@ index: true
     .content-image
       = svg_tag 'layout-grid02.svg'
 
+    .footer-navigation
+      = previous_link(data.title['guidelines'])
+      = next_link(data.title['guidelines'])
+      
     .action.downloads
       = partial :"components/_downloads", :locals => { :name => 'GRIDS_LAYOUTS_download', :sketch => true }
       = partial :"components/_downloads", :locals => { :name => 'LAYOUT_GRID_download', :pdf => true }

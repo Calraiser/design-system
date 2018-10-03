@@ -55,6 +55,9 @@ index: true
     .col-xs-offset-0.col-lg-offset-1
       = partial :"components/popover", :locals => { :arrow => true, :position => 'left', :items => '12', :extraclass => 'popover-2__col'}
 
+  .footer-navigation
+    = previous_link(data.title['uielements'])
+    = next_link(data.title['uielements'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
