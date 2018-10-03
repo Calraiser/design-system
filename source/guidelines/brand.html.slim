@@ -97,8 +97,10 @@ index: true
       = link_to 'Brand Ignite.', 'https://brandignite.telefonica.com/other/?section=0&inode=2952', class: 'blue-link', target: '_blank'
 
   .footer-navigation
-    = previous_link(data.title['guidelines'])
-    = next_link(data.title['guidelines'])
+    .footer-navigation__previous
+      = previous_link(data.title['guidelines'])
+    .footer-navigation__next
+      = next_link(data.title['guidelines'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'BRAND_download', :sketch => true }

@@ -211,32 +211,34 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-top: 90px;
-  a {
-    @extend %txt-links-positive;
-    color: $grey;
-    &:after {
+  > div {
+    &:after, &:before {
       font-family: fontcustom;
       font-size: 10px;
       display: inline-block;
+      color: $grey;
     }
-    &.next {
-      &:before {
-        margin-right: 20px;
-      }
-      &:after {
-        content: "\f168";
-        transform: rotate(180deg);
-        margin: 5px 5px 0;
-      }
+  }
+  &__previous {
+    &:before {
+      content: "\f168";
+      margin-right: 5px;
     }
-    &.previous {
+  }
+  &__next {
+    &:after {
+      content: "\f168";
+      transform: rotate(180deg);
+      margin-left: 5px;
+    }
+  }
+  a {
+    @extend %txt-links-positive;
+    color: $grey !important;
+    &:hover {
+      color: $blue !important;
       &:before {
-        left: 25%;
-      }
-      &:after {
-        content: "\f168";
-        float: left;
-        margin: 6px 5px 0;
+        background: $blue !important;
       }
     }
   }

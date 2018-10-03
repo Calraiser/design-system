@@ -224,8 +224,10 @@ index: true
           = partial :"components/_spec_item", :locals => { :fontsize => '18px', :fontweight => 'Extralight', :lineheight =>'22px', :classname => '.bx--type-quote' }
 
   .footer-navigation
-    = previous_link(data.title['guidelines'])
-    = next_link(data.title['guidelines'])
+    .footer-navigation__previous
+      = previous_link(data.title['guidelines'])
+    .footer-navigation__next
+      = next_link(data.title['guidelines'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'typography', :typo => true}

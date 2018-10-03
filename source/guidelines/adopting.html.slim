@@ -111,7 +111,9 @@ index: true
           li Walkthrough.
           li Tutorials (motion).
           li Documentation.
-          
+
   .footer-navigation
-    = previous_link(data.title['guidelines'])
-    = next_link(data.title['guidelines'])
+    .footer-navigation__previous
+      = previous_link(data.title['guidelines'])
+    .footer-navigation__next
+      = next_link(data.title['guidelines'])

@@ -132,8 +132,10 @@ index: true
         = partial :"components/_code_actions", :locals => { :target => '#tooltips-dark'}
 
   .footer-navigation
-    = previous_link(data.title['uielements'])
-    = next_link(data.title['uielements'])
+    .footer-navigation__previous
+      = previous_link(data.title['uielements'])
+    .footer-navigation__next
+      = next_link(data.title['uielements'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

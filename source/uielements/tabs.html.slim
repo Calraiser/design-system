@@ -66,8 +66,10 @@ index: true
     = partial :"components/_component_slider", :locals => { :custom_form => 'tabs', :item => data.component_slider.items.tabs_section }
 
   .footer-navigation
-    = previous_link(data.title['uielements'])
-    = next_link(data.title['uielements'])
+    .footer-navigation__previous
+      = previous_link(data.title['uielements'])
+    .footer-navigation__next
+      = next_link(data.title['uielements'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

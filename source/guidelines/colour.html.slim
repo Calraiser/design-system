@@ -91,8 +91,10 @@ index: true
     = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.pink.colors, :colorTitle => '- Pink - Colour five', :extraclass => 'main-palette'}
 
   .footer-navigation
-    = previous_link(data.title['guidelines'])
-    = next_link(data.title['guidelines'])
+    .footer-navigation__previous
+      = previous_link(data.title['guidelines'])
+    .footer-navigation__next
+      = next_link(data.title['guidelines'])
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }

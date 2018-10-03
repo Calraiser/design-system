@@ -71,5 +71,7 @@ index: true
           = image_tag 'graphic-example01.png', :class => 'image-wide'
 
   .footer-navigation
-    = previous_link(data.title['graphics'])
-    = next_link(data.title['graphics'])
+    .footer-navigation__previous
+      = previous_link(data.title['graphics'])
+    .footer-navigation__next
+      = next_link(data.title['graphics'])
