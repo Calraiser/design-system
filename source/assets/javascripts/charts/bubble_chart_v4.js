@@ -1,4 +1,8 @@
 
+if (!document.getElementById("bubble_02")) {
+  return false;
+}
+
 var diameter = 300,
     format = d3.format(",d"),
     color = d3.scaleQuantize()
