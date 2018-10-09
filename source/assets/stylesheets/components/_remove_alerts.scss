@@ -26,12 +26,10 @@
     @include size(380px, 130px);
     background: transparent;
     z-index: 9999;
-    display: none;
+
 
     cursor: pointer;
-    @include media($tablet) {
-      display: block;
-    }
+  
   }
 }
 

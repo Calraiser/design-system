@@ -369,16 +369,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 						requestAnimationFrame(function(){
 
-							leftObj.style.transform = "translateX(0) translateY(" + elTrans + "px) translateZ(0)";
-							leftObj.style.webkitTransform = "translateX(0) translateY(" + elTrans + "px) translateZ(0)";
+							leftObj.style.transform = "translateX(" + elTrans + "px) translateY(0) translateZ(0)";
+							leftObj.style.webkitTransform = "translateX(" + elTrans + "px) translateY(0) translateZ(0)";
 							leftObj.style.opacity = '0';
 
-							rightObj.style.transform = "translateX(0) translateY(" + elTrans + "px) translateZ(0)";
-							rightObj.style.webkitTransform = "translateX(0) translateY(" + elTrans + "px) translateZ(0)";
+							rightObj.style.transform = "translateX(" + elTrans + "px) translateY(0) translateZ(0)";
+							rightObj.style.webkitTransform = "translateX(" + elTrans + "px) translateY(0) translateZ(0)";
 							rightObj.style.opacity = '0';
 
-							topObj.style.transform = "translateX(0) translateY(" + elTrans + "px) translateZ(0)";
-							topObj.style.webkitTransform = "translateX(0) translateY(" + elTrans + "px) translateZ(0)";
+							topObj.style.transform = "translateX(" + elTrans + "px) translateY(0) translateZ(0)";
+							topObj.style.webkitTransform = "translateX(" + elTrans + "px) translateY(0) translateZ(0)";
 							topObj.style.opacity = '0';
 
 						});
@@ -440,8 +440,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				if(stackedOptions === "Top"){
 					elTrans = elementsMargin * (items - 1);
 					if(element){
-						element.style.webkitTransform = "translateX(" + (moveY + elTrans) + "px) translateY(" + moveX + "px ) translateZ(0) rotate(" + rotateElement + "deg)";
-						element.style.transform = "translateX(" + (moveY + elTrans) + "px)) translateY(" + moveX + "px ) translateZ(0) rotate(" + rotateElement + "deg)";
+						element.style.webkitTransform = "translateX(" + moveX + "px " + (moveY + elTrans) + "px) translateY(" + (moveY + elTrans) + "px) translateZ(0) rotate(" + rotateElement + "deg)";
+						element.style.transform = "translateX(" + moveX + "px) translateY(" + (moveY + elTrans) + "px) translateZ(0) rotate(" + rotateElement + "deg)";
 						element.style.opacity = opacity;
 					}
 				} else if(stackedOptions === "Bottom" || stackedOptions === "None"){
