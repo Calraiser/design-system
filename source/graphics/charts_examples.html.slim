@@ -12,33 +12,28 @@ index: true
 
   .content-block
     main.main role="main"
+      .content-block
+        h2.bx--type-h4.u-text-blue.u-uppercase.u-pb-3
+          | Bar Chart (vertical)
+        .row
+          .col-xs-6
+            .viz-box
+              .veil
+              = partial 'components/info'
 
-      .row.around-xs
-        .col-xs-6
-          .viz-box
-            = partial 'components/info'
+              .hgroup
+                h2.title Fleet use
+                h3.subtitle Average  hours per week
 
-            .hgroup
-              h2.title Fleet use
-              h3.subtitle Average  hours per week
-
-            #donut
-
-
-        .col-xs-6
-          .viz-box
-            = partial 'components/info'
-
-            .hgroup
-              h2.title Fleet use
-              h3.subtitle Average  hours per week
-
-            #bubble_02
+              #donut
 
       .content-block
+        h2.bx--type-h4.u-text-blue.u-uppercase.u-pb-3
+          | Bubble chart
         .row
-          .col-xs-4
+          .col-xs-6
             .viz-box
+              .veil
               = partial 'components/info'
 
               .hgroup
@@ -52,31 +47,68 @@ index: true
                     li
                       span Volume of cars
 
-      .content-block
-        .row
-          .col-xs-4
+          .col-xs-6
             .viz-box
+              .veil
+              = partial 'components/info'
+
+              .hgroup
+                h2.title Fleet use
+                h3.subtitle Average  hours per week
+
+              #bubble_02
+
+      .content-block
+        h2.bx--type-h4.u-text-blue.u-uppercase.u-pb-3
+          | Bar chart
+        .row
+          .col-xs-6
+            .viz-box
+              .veil
               = partial 'components/info'
 
               .hgroup
                 h2.title Outliers out of service
                 h3.subtitle Unavailability in hours
-              #bar
+              .row
+                .col-xs-8
+                  #bar
+                .col-xs-4
+                  .viz-box__data
+                    p.bx--type-p
+                      | Top
+
 
 
       .content-block
+        h2.bx--type-h4.u-text-blue.u-uppercase.u-pb-3
+          | Line Chart
         .row
           .col-xs-6
             .viz-box
+              .veil
               = partial 'components/info'
 
               .hgroup
                 h2.title Outage duration
                 h3.subtitle Average hours per period
-              #line
+              #lineChart
+                svg id="line" class="lineChart--svg"
+                  defs
+                    linearGradient id="lineChart--gradientBackgroundArea" x1="0" x2="0" y1="0" y2="1"
+                    stop class="lineChart--gradientBackgroundArea--top" offset="0%"
+
+
 
   .footer-navigation
     .footer-navigation__previous
       = previous_link(data.title['graphics'])
     .footer-navigation__next
       = next_link(data.title['graphics'])
+
+
+  = javascript_include_tag 'charts/bubble_chart_v4.js'
+  = javascript_include_tag 'charts/pie_chart.js'
+  = javascript_include_tag 'charts/line_chart.js'
+  = javascript_include_tag 'charts/bar_chart.js'
+  = javascript_include_tag 'charts/bubble.js'

@@ -1,8 +1,3 @@
-
-if (!document.getElementById("bubble_02")) {
-  return false;
-}
-
 var diameter = 300,
     format = d3.format(",d"),
     color = d3.scaleQuantize()
@@ -13,7 +8,7 @@ var bubble = d3.pack()
     .size([diameter, diameter])
     .padding(10);
 
-var svg = d3.select("#bubble_02").append("svg")
+var sv2g = d3.select("#bubble_02").append("svg")
     .attr("width", diameter)
     .attr("height", diameter)
     .attr("class", "bubble");
@@ -26,7 +21,7 @@ d3.json("data/flare.json", function(error, data) {
       .sort(function(a, b) { return b.value - a.value; });
 
   bubble(root);
-  var node = svg.selectAll(".node")
+  var node = sv2g.selectAll(".node")
       .data(root.children)
     .enter().append("g")
       .attr("class", "node")

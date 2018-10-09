@@ -1,0 +1,93 @@
+
+#lineChart {
+  width: 100%;
+  @include position(absolute, null null 25px null);
+}
+.lineChart--area {
+  fill: url("#lineChart--gradientBackgroundArea");
+}
+
+.lineChart--areaLine {
+  fill: none;
+  stroke: $blue;
+  stroke-width: 3;
+}
+
+.lineChart--bubble--label {
+  fill: none;
+  stroke: #6bb7c7;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.lineChart--bubble--value {
+  fill: #fff;
+  stroke: #fff;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.lineChart--circle {
+  fill: $blue;
+  stroke: #fff;
+  stroke-width: 3;
+}
+
+.lineChart--circle__highlighted {
+  fill: #fff;
+  stroke: #3f95a7;
+}
+
+.lineChart--gradientBackgroundArea--top {
+  stop-color: #6bb7c7;
+  stop-opacity: 0.1;
+}
+
+.lineChart--gradientBackgroundArea--bottom {
+  stop-color: #6bb7c7;
+  stop-opacity: 0.6;
+}
+
+.lineChart--svg {
+  .domain {
+    stroke: $white;
+  }
+  .grid_x {
+    .tick {
+      stroke-dasharray: 5.5;
+      line {
+      stroke: #F6F7FA;
+      }
+    }
+  }
+
+  .tick {
+    text {
+      font-size: 13px;
+      font-family: Telefonicaregular;
+      color: #4A4A4A;
+    }
+    line {
+      stroke: #F2F2F2;
+      stroke-width: 2px;
+    }
+  }
+  .grid {
+    .tick {
+      fill: $grey;
+    }
+  }
+}
+
+.lineChart--bubble--text,.lineChart--bubble--value {
+  color: $white;
+  text-transform: normal;
+  font-family: Telefonicaregular;
+}
+
+.lineChart--xAxis .domain,
+.lineChart--xAxisTicks .domain,
+.lineChart--yAxisTicks .domain {
+  display: none;
+}

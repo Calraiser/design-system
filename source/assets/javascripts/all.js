@@ -11,6 +11,8 @@
 //= require ./vendors/jquery.sticky-kit.js
 //= require ./vendors/datatables.js
 
+//= require ./charts/timeLineChart.js
+
 //= require ./blocks/content_nav.js
 //= require ./blocks/responsive_nav.js
 //= require ./blocks/resources.js
@@ -22,6 +24,7 @@
 //= require ./uicomponents/accordion.js
 //= require ./uicomponents/list.js
 //= require ./uicomponents/alerts.js
+//= require ./uicomponents/stacked_cards.js
 
 //= require common.js
 

@@ -29,12 +29,26 @@ index: true
 
   .content-block
     h3.bx--type-label.u-uppercase Overlap (more than one alert)
-    .row.u-pt-7.col-xs-offset-0.col-lg-offset-1
+    .u-pt-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-12
         .multiple-alert__wrapper
-          .multiple-alert__content
-            -(1..4).each do |i|
-              = partial :"components/alerts", :locals => { :extraclass =>'alert-secondary', :title => 'Notification', :text => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', :date =>'now', :close => false }
+          #stacked-cards-block.stackedcards.stackedcards--animatable.init
+            .stackedcards-container
+              = partial :"components/alerts", :locals => { :extraclass =>'alert-secondary', :title => 'Notification', :text => 'Seled do eiusmod tempor incididunt ut labore et dolore.', :date =>'22 may', :close => false }
+              = partial :"components/alerts", :locals => { :extraclass =>'alert-secondary', :title => 'Notification', :text => 'Seled do eiusmod tempor incididunt ut labore et dolore.', :date =>'22 may', :close => false }
+              = partial :"components/alerts", :locals => { :extraclass =>'alert-secondary', :title => 'Notification', :text => 'Seled do eiusmod tempor incididunt ut labore et dolore.', :date =>'22 may', :close => false }
+
+              = partial :"components/alerts", :locals => { :extraclass =>'alert-secondary', :title => 'Notification', :text => 'Seled do eiusmod tempor incididunt ut labore et dolore.', :date =>'22 may', :close => false }
+              = partial :"components/alerts", :locals => { :extraclass =>'alert-secondary', :title => 'Notification', :text => 'Seled do eiusmod tempor incididunt ut labore et dolore.', :date =>'22 may', :close => false }
+
+              .stackedcards--animatable.stackedcards-overlay.top Top
+              .stackedcards--animatable.stackedcards-overlay.right Right
+              .stackedcards--animatable.stackedcards-overlay.left Left
+
+            .actions
+              .right-action
+
+
 
   .clipboard
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save

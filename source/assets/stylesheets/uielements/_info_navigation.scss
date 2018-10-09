@@ -75,7 +75,7 @@
 
   .btn-info {
     @include size(50px, 43px);
-    margin: -4px -12px;
+    margin: -3px -11px;
 
     &.active {
       svg {
@@ -126,7 +126,7 @@
 
   .hamburger {
     @include size(12px,1px);
-    @include position(absolute, 50% null null 40%);
+    @include position(absolute, 47% null null 40%);
     background: $blue;
     display: block;
     transition: transform 200ms;

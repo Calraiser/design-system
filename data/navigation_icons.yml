@@ -2,37 +2,71 @@ icons:
   items:
     - image: 'icons/add.svg'
       title: 'Add'
+
+
     - image: 'icons/arrow_back.svg'
       title: 'Arrow back'
+
+
     - image: 'icons/arrow_drop_down.svg'
       title: 'Arrow drop down'
+
+
     - image: 'icons/arrow_drop_up.svg'
       title: 'Arrow drop up'
+
+
     - image: 'icons/arrow_forward.svg'
       title: 'Arrow forward'
+
+
     - image: 'icons/check.svg'
       title: 'Check'
+
+
     - image: 'icons/chevron_left.svg'
       title: 'Chevron left'
+
+
     - image: 'icons/chevron_right.svg'
       title: 'Chevron right'
+
+
     - image: 'icons/close.svg'
       title: 'Close'
+
+
     - image: 'icons/expand_less.svg'
       title: 'Expand less'
+
+
     - image: 'icons/expand_more.svg'
       title: 'Expand more'
+
+
     - image: 'icons/favorite.svg'
       title: 'Favorite'
+      
+
     - image: 'icons/fullscreen_exit.svg'
       title: 'Fullscreen exit'
+
+
     - image: 'icons/fullscreen.svg'
       title: 'Fullscreen'
+
+
     - image: 'icons/hamburguer.svg'
       title: 'Hamburguer'
+
+
     - image: 'icons/menu.svg'
       title: 'Menu'
+
+
     - image: 'icons/more.svg'
       title: 'More'
+
+
     - image: 'icons/refresh.svg'
       title: 'Refresh'
