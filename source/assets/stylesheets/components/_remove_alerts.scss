@@ -2,6 +2,14 @@
   transition: none !important;
 }
 
+.multiple-alert__wrapper {
+  margin-top: 40px;
+  margin-left: -30px;
+  margin-right: 30px;
+  @include media($mobile) {
+    margin: 40px -20px 0;
+  }
+}
 .stackedcards-overflow {
   overflow-y: hidden !important;
 }
@@ -14,12 +22,16 @@
 .stackedcards {
   position: relative;
   .actions, .right-action {
-    position: absolute;
+    @include position(absolute, -56px null null 28px);
+    @include size(380px, 130px);
     background: transparent;
-    top: 0;
-    width: 380px;
-    height: 130px;
     z-index: 9999;
+    display: none;
+
+    cursor: pointer;
+    @include media($tablet) {
+      display: block;
+    }
   }
 }
 
@@ -34,12 +46,12 @@
 .stackedcards .stackedcards-container > *,
 .stackedcards-overlay {
   position: absolute;
-  width: 346px;
-  /* set 100% */
-  height: 74px;
-  /* set 100% */
+  height: auto;
   will-change: transform, opacity;
   top: 0;
+  @include media($mobile) {
+    @include size(346px, 74px);
+  }
 }
 
 .stackedcards-overlay.left > div,
@@ -72,17 +84,6 @@
   /* this style was added only for better preview */
 }
 
-.stackedcards-overlay.top {
-  background: #E38568;
-}
-
-.stackedcards-overlay.right {
-  background: #7BB3C5;
-}
-
-.stackedcards-overlay.left {
-  background: #E58D93;
-}
 
 .stackedcards-overlay.left:empty,
 .stackedcards-overlay.right:empty,

@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		var stackedOptions = 'Top'; //Change stacked cards view from 'Bottom', 'Top' or 'None'.
 		var rotate = false; //Activate the elements' rotation for each move on stacked cards.
-		var items = 3; //Number of visible elements when the stacked options are bottom or top.
-		var elementsMargin = 5; //Define the distance of each element when the stacked options are bottom or top.
+		var items = 4; //Number of visible elements when the stacked options are bottom or top.
+		var elementsMargin = 13; //Define the distance of each element when the stacked options are bottom or top.
 		var useOverlays = false; //Enable or disable the overlays for swipe elements.
 		var maxElements; //Total of stacked cards on DOM.
 		var currentPosition = 0; //Keep the position of active stacked card.
@@ -74,8 +74,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		for(i = items; i < maxElements; i++){
 			listElNodesObj[i].style.zIndex = 0;
 			listElNodesObj[i].style.opacity = 0;
-			listElNodesObj[i].style.webkitTransform ='scale(' + (1 - (items * 0.04)) +') translateX(0) translateY(' + elTrans + 'px) translateZ(0)';
-			listElNodesObj[i].style.transform ='scale(' + (1 - (items * 0.04)) +') translateX(0) translateY(' + elTrans + 'px) translateZ(0)';
+			listElNodesObj[i].style.webkitTransform ='scale(' + (1 - (items * 0.04)) +') translateX(' + elTrans + 'px) translateY(0) translateZ(0)';
+			listElNodesObj[i].style.transform ='scale(' + (1 - (items * 0.04)) +') translateX(' + elTrans + 'px) translateY(0) translateZ(0)';
 		}
 
 		if(listElNodesObj[currentPosition]){
@@ -307,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				if(useOverlays){
 					setTimeout(function(){
 
-						if(stackedOptions === "Top"){+2
+						if(stackedOptions === "Top"){
 
 							elTrans = elementsMargin * (items - 1);
 
@@ -326,12 +326,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 						requestAnimationFrame(function(){
 
-							rightObj.style.transform = "translateX(0) translateY(" + elTrans + "px) translateZ(0)";
-							rightObj.style.webkitTransform = "translateX(0) translateY(" + elTrans + "px) translateZ(0)";
+							rightObj.style.transform = "translateX(" + elTrans + "px) translateY(0) translateZ(0)";
+							rightObj.style.webkitTransform = "translateX(" + elTrans + "px) translateY(0) translateZ(0)";
 							rightObj.style.opacity = '0';
 
-							topObj.style.transform = "translateX(0) translateY(" + elTrans + "px) translateZ(0)";
-							topObj.style.webkitTransform = "translateX(0) translateY(" + elTrans + "px) translateZ(0)";
+							topObj.style.transform = "translateX(" + elTrans + "px) translateY(0) translateZ(0)";
+							topObj.style.webkitTransform = "translateX(" + elTrans + "px) translateY(0) translateZ(0)";
 							topObj.style.opacity = '0';
 
 						});
@@ -440,8 +440,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				if(stackedOptions === "Top"){
 					elTrans = elementsMargin * (items - 1);
 					if(element){
-						element.style.webkitTransform = "translateX(" + moveX + "px) translateY(" + (moveY + elTrans) + "px) translateZ(0) rotate(" + rotateElement + "deg)";
-						element.style.transform = "translateX(" + moveX + "px) translateY(" + (moveY + elTrans) + "px) translateZ(0) rotate(" + rotateElement + "deg)";
+						element.style.webkitTransform = "translateX(" + (moveY + elTrans) + "px) translateY(" + moveX + "px ) translateZ(0) rotate(" + rotateElement + "deg)";
+						element.style.transform = "translateX(" + (moveY + elTrans) + "px)) translateY(" + moveX + "px ) translateZ(0) rotate(" + rotateElement + "deg)";
 						element.style.opacity = opacity;
 					}
 				} else if(stackedOptions === "Bottom" || stackedOptions === "None"){
@@ -499,8 +499,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 						}
 
-						listElNodesObj[i].style.transform ='scale(' + elScale + ') translateX(0) translateY(' + (elTrans - elTransInc) + 'px) translateZ(0)';
-						listElNodesObj[i].style.webkitTransform ='scale(' + elScale + ') translateX(0) translateY(' + (elTrans - elTransInc) + 'px) translateZ(0)';
+						listElNodesObj[i].style.transform ='scale(' + elScale + ') translateX(' + (elTrans - elTransInc) + 'px) translateY(-50%) translateZ(0)';
+						listElNodesObj[i].style.webkitTransform ='scale(' + elScale + ') translateX(' + (elTrans - elTransInc) + 'px) translateY(-50%)) translateZ(0)';
 						listElNodesObj[i].style.opacity = elOpac;
 						listElNodesObj[i].style.zIndex = elZindex;
 
