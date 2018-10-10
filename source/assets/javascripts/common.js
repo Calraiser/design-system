@@ -14,6 +14,10 @@ var data_embed = {};
 
 $(document).ready(function() {
 
+  if (!$('.component-slider').is(':visible')) {
+    $('.component-slider').parent().hide();
+  }
+
   // Sticky Kit
   $(".o-sidebar-submenu").sticky({
     topSpacing: 0

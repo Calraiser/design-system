@@ -29,12 +29,19 @@
 				}
 			} @else if $spacing-side-key == 'vertical' {
 				.u-p#{$spacing-side-value}-#{$spacer-key} {
-					padding-top: $spacer-value;
-					padding-bottom: $spacer-value;
+					padding-top: $spacer-value/3;
+					padding-bottom: $spacer-value/3;
+					@include media($mobile) {
+						padding-right: $spacer-value;
+						padding-left: $spacer-value;
+					}
 				}
 			} @else {
 				.u-p#{$spacing-side-value}-#{$spacer-key} {
-					padding-#{$spacing-side-key}: $spacer-value;
+					padding-#{$spacing-side-key}: $spacer-value/2;
+					@include media($mobile) {
+						padding-#{$spacing-side-key}: $spacer-value;
+					}
 				}
 			}
 		}

@@ -22,14 +22,14 @@ index: true
     h3.bx--type-h4.u-text-grey01 White Tooltip + icons (alt – label)
 
     .row.between-md.start-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-6.col-md-3
+      .col-xs-12.col-sm-6.col-md-3
         p.bx--type-note.u-uppercase.u-pb-4
           | Basic
           .row
             = image_tag 'ic-local-hotel.png', class: 'u-pr-2 u-pl-2 ic-hotel'
             = partial :"components/tooltips_sample", :locals => { :arrow => false, :content => 'Category - name' }
 
-      .col-xs-6.col-md-3
+      .col-xs-12.col-sm-6.col-md-3
         p.bx--type-note.u-uppercase.u-pb-4
           | Data
         .row
@@ -53,16 +53,16 @@ index: true
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'right', :content => '748 lorem' }
 
     .row.between-md.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-5.col-md-3
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'top', :content => data.tooltips.data }
-      .col-xs-5.col-md-3
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'bottom', :content => data.tooltips.data }
-      .col-xs-5.col-md-3
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'left', :content => data.tooltips.data }
-      .col-xs-5.col-md-3
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :arrow => true, :position => 'right', :content => data.tooltips.data }
 
-  .content-block
+  .clipboard
     h2.title.uppercase Code/Html > Save
     .code-wrapper
       .code-content id="tooltips"
@@ -76,13 +76,13 @@ index: true
   .content-block
     h3.bx--type-h4.u-text-grey01 Dark grey Tooltip + icons (ONLY FOR EXCEPTIONAL USES – IMPROVING ACCESSIBILITY)
     .row.between-md.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-6.col-md-3
+      .col-xs-12.col-sm-6.col-md-3
         p.bx--type-note.u-uppercase.u-pb-4
           | Basic
         .row
           = image_tag 'ic-local-hotel.png', class: 'u-pr-2 u-pl-2 ic-hotel'
           = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => false, :content => 'Category - name' }
-      .col-xs-6.col-md-3
+      .col-xs-12.col-sm-6.col-md-3
         p.bx--type-note.u-uppercase.u-pb-4
           | Data
         .row
@@ -106,17 +106,17 @@ index: true
         = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'right', :content => '748 lorem' }
 
     .row.between-md.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-5.col-md-3
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'top', :content => data.tooltips.data }
-      .col-xs-5.col-md-3
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'bottom', :content => data.tooltips.data }
-      .col-xs-5.col-md-3
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'left', :content => data.tooltips.data }
-      .col-xs-5.col-md-3
+      .col-xs-12.col-sm-5.col-md-3
         = partial :"components/tooltips_sample", :locals => { :extraclass => 'dark', :arrow => true, :position => 'right', :content => data.tooltips.data }
 
 
-    .content-block
+    .clipboard
       h2.title.uppercase Code/Html > Save
       .code-wrapper
         .code-content id="tooltips-dark"

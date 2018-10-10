@@ -16,33 +16,34 @@ index: true
     h2.bx--type-h4.u-text-blue States
 
   .content-block
-    .row.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-6.col-md-3.popover-example
+    .row.u-py-7.center-xs.start-sm.col-xs-offset-0.col-lg-offset-1
+      .col-xs-12.col-sm-6.col-md-3.popover-example
         = partial :"components/popover", :locals => { :arrow => true, :position => 'top', :items => '6'}
-      .col-xs-6.col-md-3.popover-example
+      .col-xs-12.col-sm-6.col-md-3.popover-example
         = partial :"components/popover", :locals => { :arrow => true, :position => 'right', :items => '6'}
-      .col-xs-6.col-md-3.popover-example
+      .col-xs-12.col-sm-6.col-md-3.popover-example
         = partial :"components/popover", :locals => { :arrow => true, :position => 'bottom', :items => '6'}
-      .col-xs-6.col-md-3.popover-example
+      .col-xs-12.col-sm-6.col-md-3.popover-example
         = partial :"components/popover", :locals => { :arrow => true, :position => 'left', :items => '6'}
 
-  h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
-  .code-wrapper
-    .code-content id="popover"
-      = code("html") do
-        | <div class="popover top">
-            <div class="arrow"></div>
-            <ul class="popover-content">
-              <li><a href="#">Option short</a></li>
-              <li><a href="#">Option</a></li>
-              <li><a href="#">Option extra large</a></li>
-              <li><a href="#">Option short</a></li>
-              <li><a href="#">Option extra large</a></li>
-              <li><a href="#">Option extra large</a></li>
-            </ul>
-          </div>
+  .clipboard
+    h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+    .code-wrapper
+      .code-content id="popover"
+        = code("html") do
+          | <div class="popover top">
+              <div class="arrow"></div>
+              <ul class="popover-content">
+                <li><a href="#">Option short</a></li>
+                <li><a href="#">Option</a></li>
+                <li><a href="#">Option extra large</a></li>
+                <li><a href="#">Option short</a></li>
+                <li><a href="#">Option extra large</a></li>
+                <li><a href="#">Option extra large</a></li>
+              </ul>
+            </div>
 
-    = partial :"components/_code_actions", :locals => { :target => '#popover'}
+      = partial :"components/_code_actions", :locals => { :target => '#popover'}
 
   .content-block
     = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.popover }

@@ -37,7 +37,7 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
 
   &-2__col {
     .popover-content {
-      columns: 160px 2;
+      columns: 2;
       column-gap: 1px;
       column-rule: 1px solid $grey03;
     }

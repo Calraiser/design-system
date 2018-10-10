@@ -254,7 +254,9 @@ table {
 }
 
 .dataTables_paginate {
-  float: right;
+
+  display: flex;
+  justify-content: flex-end;
   margin-top: 20px;
   .paginate_button {
     font-family: Telefonicaregular;

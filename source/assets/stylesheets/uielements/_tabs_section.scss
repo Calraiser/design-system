@@ -26,6 +26,8 @@ $num-of-tabs: 5;
   position: relative;
   display: flex;
   border-bottom: 1px solid #ccc;
+
+  margin-bottom: 40px;
   @include media($mobile) {
     width: 50%;
   }

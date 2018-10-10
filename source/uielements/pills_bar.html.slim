@@ -28,7 +28,7 @@ index: true
       .col-xs.col-sm-2
         = partial :"components/_pills_bar", :locals => { :text => 'Disabled', :close => true, :extraclass => 'pills-disabled pills-default' }
 
-
+  .clipboard
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
     .code-wrapper
       .code-content id="pills"
@@ -56,7 +56,7 @@ index: true
     .example-item
       h3.bx--type-subH2.u-uppercase Mobile
       .row
-        .col-xs-4
+        .col-xs-12.col-md-4
           .example-mobile
             p.bx--type-legend
               | Fold pills
@@ -66,7 +66,7 @@ index: true
                   = partial :"components/_pills_bar", :locals => { :text => text_pills[index], :close => true }
                 = partial :"components/_pills_bar", :locals => { :text => '+2', :close => false, :extraclass => 'pill-counter'}
 
-        .col-xs-4
+        .col-xs-12.col-md-4
           .example-mobile
             p.bx--type-legend
               | Unfold pills
@@ -79,7 +79,7 @@ index: true
     .example-item
       h3.bx--type-subH2.u-uppercase Tablet
       .row
-        .col-xs-6
+        .col-xs-12.col-md-6
           .example-tablet
             p.bx--type-legend
               | Fold pills
@@ -89,7 +89,7 @@ index: true
                   = partial :"components/_pills_bar", :locals => { :text => text_pills[index], :close => true }
                 = partial :"components/_pills_bar", :locals => { :text => '+2', :close => false, :extraclass => 'pill-counter'}
 
-        .col-xs-6
+        .col-xs-12.col-md-6
           .example-tablet
             p.bx--type-legend
               | Unfold pills
@@ -103,7 +103,7 @@ index: true
     .example-item
       h3.bx--type-subH2.u-uppercase Desktop
       .row
-        .col-xs
+        .col-xs-12.col-md
           .example-desktop
             p.bx--type-legend
               | Fold pills
@@ -114,7 +114,7 @@ index: true
                 = partial :"components/_pills_bar", :locals => { :text => '+5', :close => false, :extraclass => 'pill-counter'}
 
       .row
-        .col-xs
+        .col-xs-12.col-md
           .example-desktop
             p.bx--type-legend
               | Unfold pills

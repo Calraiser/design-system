@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .lds-accordion {
-  width: 340px;
   max-width: 340px;
 
   border-radius: 3px;
@@ -12,6 +11,10 @@
   background: $white;
   position: relative;
   padding-bottom: 2px;
+  margin-bottom: 35px;
+  @include media($mobile) {
+    width: 340px;
+  }
   &__title {
     h2 {
       @extend %txt-text-positive-bold ;

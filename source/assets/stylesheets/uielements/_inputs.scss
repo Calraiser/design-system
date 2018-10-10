@@ -6,6 +6,11 @@
   margin-bottom: 45px;
   display: inline-grid;
 
+  width: 100%;
+  @include media($mobile) {
+    width: auto;
+  }
+
   &__label {
     color: $grey;
     font-size: rem-calc(14);
@@ -23,9 +28,12 @@
     transition: $transition-slow;
     line-height: 20px;
     @extend %txt-label;
-    width: 205px;
+    width: auto;
     max-width: 100%;
     outline-style:none;
+    @include media($mobile) {
+      width: 205px;
+    }
 
     &:focus {
       border-bottom: 2px solid $green;
@@ -72,17 +80,24 @@
 }
 
 .lds-text-field {
+  margin-bottom: 30px;
+  @include media($mobile) {
+    margin-bottom: 0;
+  }
   &__input {
     border-radius: 2px;
     background-color: $white;
     box-shadow: 0 0 4px 0 $grey07;
     border: none;
-    width: 266px;
+    width: auto;
     @extend %txt-label;
     padding: 12px;
     outline: 0;
     border-bottom: 2px solid $grey07;
     display: block;
+    @include media($mobile) {
+      width: 266px;
+    }
     &.error {
       border-bottom: 2px solid $pink;
     }
@@ -130,4 +145,20 @@
       color: $pink;
     }
   }
+}
+
+.text-field__anatomy {
+  .col-xs-12 {
+    h3 {
+      margin-bottom: 20px;
+      @include media($mobile) {
+        margin-bottom: 0;
+      }
+    }
+    margin-bottom: 30px;
+    @include media($mobile) {
+      margin-bottom: 0;
+    }
+  }
+
 }
