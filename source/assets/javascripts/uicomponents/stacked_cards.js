@@ -440,8 +440,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				if(stackedOptions === "Top"){
 					elTrans = elementsMargin * (items - 1);
 					if(element){
-						element.style.webkitTransform = "translateX(" + moveX + "px " + (moveY + elTrans) + "px) translateY(" + (moveY + elTrans) + "px) translateZ(0) rotate(" + rotateElement + "deg)";
-						element.style.transform = "translateX(" + moveX + "px) translateY(" + (moveY + elTrans) + "px) translateZ(0) rotate(" + rotateElement + "deg)";
+						element.style.webkitTransform = "translateX(" + moveX + "px) translateY(-50%) translateZ(0) rotate(" + rotateElement + "deg)";
+						element.style.transform = "translateX(" + moveX + "px) translateY((-50%) translateZ(0) rotate(" + rotateElement + "deg)";
 						element.style.opacity = opacity;
 					}
 				} else if(stackedOptions === "Bottom" || stackedOptions === "None"){
@@ -663,9 +663,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			}
 		};
 
-		element.addEventListener('touchstart', gestureStart, false);
-		element.addEventListener('touchmove', gestureMove, false);
-		element.addEventListener('touchend', gestureEnd, false);
+		element.addEventListener('touchstart', gestureStart, true);
+		element.addEventListener('touchmove', gestureMove, true);
+		element.addEventListener('touchend', gestureEnd, true);
 
 		//Add listeners to call global action for swipe cards
 		// var buttonLeft = document.querySelector('.left-action');
