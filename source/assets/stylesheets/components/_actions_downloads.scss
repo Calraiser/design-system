@@ -1,6 +1,7 @@
 .action.downloads {
   display: flex;
   justify-content: space-around;
+  align-items: baseline;
   border-top: 1px dashed $grey;
   padding-top: 70px;
   margin-top: 15px;

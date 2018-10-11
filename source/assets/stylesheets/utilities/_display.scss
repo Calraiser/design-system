@@ -26,6 +26,13 @@
 	display: none;
 }
 
+.u-hidden-xs {
+	display: none;
+	@include media($mobile) {
+		display: block;
+	}
+}
+
 .u-right {
 	float: right;
 }

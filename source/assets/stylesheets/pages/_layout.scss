@@ -2,39 +2,55 @@
    LAYOUT (pages/_layout.scss)
    ========================================================================== */
 
-.guidelines_layout {
-  .d-flex {
-    .text-column {
-      flex-basis: 100%;
-      margin-right: 30px;
+.layout-structure {
+  .col-xs-12 {
+    margin-bottom: 30px;
+    @include media($medium-desktop) {
+      margin-bottom: 0;
     }
-    .note {
-      max-width: 98%;
+  }
+  .col-center {
+    text-align: center;
+    @include media($mobile) {
+      text-align: left;
     }
   }
 }
 
-.layout-legend {
-  display: flex;
-  @include margin(40px null 30px null);
-  .legend-item {
-    margin-right: 50px;
-    span {
+.legend-item {
+  margin-bottom: 10px;
+  margin-left: 0;
+  @include media($tablet) {
+    margin-bottom: 0;
+  }
+  .bx--type-p {
+    font-size: 14px;
+    @include media($mobile) {
+      font-size: rem-calc(16px);
+    }
+  }
+  span {
+    @include size(10px);
+    @include margin(null 10px null null);
+    border-radius: 50%;
+    @include media($tablet) {
       @include size(20px);
-      @include margin(2px 15px null null);
-      border-radius: 50%;
     }
-    .search-bar {
-      background: $purple;
-    }
-    .app-nav {
-      background: tint($purple, 50%);;
-    }
-    .main-nav {
-      background: $pink01;
-    }
-    .content-l {
-      background: $light-blue;
-    }
+  }
+
+  .search-bar {
+    background: $purple;
+  }
+
+  .app-nav {
+    background: tint($purple, 50%);
+  }
+
+  .main-nav {
+    background: $pink01;
+  }
+
+  .content-l {
+    background: $light-blue;
   }
 }

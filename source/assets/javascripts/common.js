@@ -14,6 +14,15 @@ var data_embed = {};
 
 $(document).ready(function() {
 
+  var $previous = $('.footer-navigation__previous');
+  var $next = $('.footer-navigation__next');
+
+  if (!$previous.find('.previous').is(':visible')) {
+    $previous.hide();
+  } else if (!$next.find('.next').is(':visible')) {
+    $next.hide();
+  }
+
   if (!$('.component-slider').is(':visible')) {
     $('.component-slider').parent().hide();
   }

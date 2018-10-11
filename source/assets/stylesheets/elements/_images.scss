@@ -11,18 +11,38 @@
   @include size(24px, 29px);
 }
 
-
 .e-image-full-xs {
   width: 100%;
   @include media($mobile) {
     width: auto;
-
   }
 }
+
+.e-image-full-sm {
+  width: 100%;
+  height: 100%;
+  @include media($tablet) {
+    width: auto;
+    height: auto;
+  }
+}
+
 .image-2x {
   width: 100%;
   max-width: 900px;
 }
+
+.image-50 {
+  width: 100%;
+  @include media($mobile) {
+    width: 50%;
+  }
+}
+
+.image-100 {
+  width: 100%;
+}
+
 .image-3x {
   max-width: 600px;
   width: 100%;

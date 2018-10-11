@@ -33,42 +33,41 @@ index: true
     p.bx--type-p.text-bold.u-pt-4
       | If you are using a graphic chart in a dashboard, first decide the objective of your dashboard, give a logical order to read and then choose the info to tell and distribute the space in that order, prioritizing the most important, from general to details. When you have this grid sketched, then choose each graphics type based on the most quickly understanding model.
 
-  .content-block.u-pt-7
+  .content-block
     h2.bx--type-h4.u-uppercase.u-text-blue Anatomy of a chart
     p.bx--type-p.u-pt-2
       | Choose the correct chart structure. Don’t forget to include areas for: title, context, legend, KPI and margins to each chart
 
-    .image-block
-      = svg_tag 'template-chart-layout.svg'
+    = svg_tag 'template-chart-layout.svg', class: 'u-pt-8 image-50'
 
-  .content-block.u-pt-4
+  .content-block
     h2.bx--type-h4.u-uppercase Options
     p.bx--type-p
       | Try to keep consistency between margin, padding and content when you scale or distribute the areas of information. Keep everything clear and priorizated.
 
-    .image-block
-      .row.between-xs
-        .col-xs-12.col-md-6
-          = image_tag 'graphic-rules01.png'
-        .col-xs-12.col-md-6
-          = image_tag 'graphic-rules02.png'
+    .row.between-xs
+      .col-xs-12.col-sm-6
+        = image_tag 'graphic-rules01.png', class: 'image-100 u-py-8'
+      .col-xs-12.col-sm-6
+        = image_tag 'graphic-rules02.png', class: 'image-100 u-py-8'
 
-    .content-block.u-pt-4
-      .image-block
-        h2.bx--type-h4.u-uppercase Examples
-        .graph-wrapper
-          .row
-            .col-xs-12
-              = svg_tag 'graphic-examples.svg'
+  .content-block
+    h2.bx--type-h4.u-uppercase Examples
+    .row.u-pt-4
+      .col-xs-12
+        = image_tag 'graphic-examples.png', class: 'image-50'
 
-      .image-block.u-pt-5
-        .graph-wrapper
-          .graph-header
-            h2.bx--type-h4.u-uppercase Afluence by genre, rent & day of the week
-            p.bx--type-p
-              | Average of affluence at Mall Shopping Centre by gender, type (resident, worker or visitor), rent and age. You can observe which is your real target and the influence of stationarity,  by day of the week and hour selecting in the filter bar your options.
+  .content-block
+    h2.bx--type-h4.u-uppercase Afluence by genre, rent & day of the week
+    p.bx--type-p
+      | Average of affluence at Mall Shopping Centre by gender, type (resident, worker or visitor), rent and age. You can observe which is your real target and the influence of stationarity,  by day of the week and hour selecting in the filter bar your options.
 
-          = image_tag 'graphic-example01.png', :class => 'image-wide'
+  .content-block
+    .row.around-xs
+      .col-xs-10.col-sm-5
+        = image_tag 'women-chart.png', class: 'image-100 u-py-8'
+      .col-xs-10.col-sm-5
+        = image_tag 'men-chart.png', class: 'image-100 u-py-8'
 
   .footer-navigation
     .footer-navigation__previous

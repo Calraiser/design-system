@@ -16,45 +16,53 @@ index: true
       li Almost always use a grid layout — visitors can read more quickly on pages that use grids. Choose a single grid system for your entire site.
       li Avoid mixing this grid and other grid systems.
 
-  .content-block
+  .content-block.layout-structure
     h2.bx--type-p.u-uppercase.u-pb-4 Structure of modules & Read order/Layout
-    .d-flex
-      = svg_tag 'layout-mobile.svg'
-      = svg_tag 'layout-tablet.svg'
-      = svg_tag 'layout-labtop.svg'
-      = svg_tag 'layout-desktop.svg'
+    .row.center-xs.top-xs.start-lg.u-pt-4
+      .col-xs-12.col-sm-6.col-lg-2
+        = svg_tag 'layout-mobile.svg', class: 'e-image-full-xs'
+      .col-xs-12.col-sm-6.col-lg-3
+        = svg_tag 'layout-tablet.svg', class: 'e-image-full-xs'
+      .col-xs-12.col-sm-6.col-lg-4
+        = svg_tag 'layout-labtop.svg', class: 'e-image-full-sm'
+      .col-xs-12.col-sm-6.col-lg-3
+        = svg_tag 'layout-desktop.svg', class: 'e-image-full-sm'
 
   .content-block
     h2.bx--type-p.u-uppercase structure of content
-    .layout-legend
-      .legend-item.d-flex
-        span.search-bar
-        p.bx--type-p Search bar
-      .legend-item.d-flex
-        span.app-nav
-        p.bx--type-p App Navigation
-      .legend-item.d-flex
-        span.main-nav
-        p.bx--type-p Main navigation & Sidebar
-      .legend-item.d-flex
-        span.content-l
-        p.bx--type-p Content
+    .row.u-py-6
+      .col-xs-7.col-md-2
+        .legend-item.row.middle-xs
+          span.search-bar
+          p.bx--type-p Search bar
+      .col-xs-5.col-md-2
+        .legend-item.row.middle-xs
+          span.app-nav
+          p.bx--type-p App Navigation
+      .col-xs-7.col-md-3
+        .legend-item.row.middle-xs
+          span.main-nav
+          p.bx--type-p Main navigation & Sidebar
+      .col-xs-5.col-md-2
+        .legend-item.row.middle-xs
+          span.content-l
+          p.bx--type-p Content
 
-    .d-flex
-      .image
-        = svg_tag 'single-column-gp.svg'
+    .row.around-xs.layout-structure
+      .col-xs-12.col-center.col-sm-6.col-lg-3
+        = svg_tag 'single-column-gp.svg', class: 'e-image-full-xs'
         p.note
           | Single Column with global and app navigation.
-      .image
-        = svg_tag 'two-column-gp.svg'
+      .col-xs-12.col-center.col-sm-6.col-lg-3
+        = svg_tag 'two-column-gp.svg', class: 'e-image-full-xs'
         p.note
           | Two Column with global and app navigation.
-      .image
-        = svg_tag 'single-column-gn.svg'
+      .col-xs-12.col-center.col-sm-6.col-lg-3
+        = svg_tag 'single-column-gn.svg', class: 'e-image-full-xs'
         p.note
           | Single Column with Global navigation.
-      .image
-        = svg_tag 'two-column-apn.svg'
+      .col-xs-12.col-center.col-sm-6.col-lg-3
+        = svg_tag 'two-column-apn.svg', class: 'e-image-full-xs'
         p.note
           | Two Column with app navigation.
 
@@ -124,6 +132,6 @@ index: true
     .footer-navigation__next
       = next_link(data.title['guidelines'])
 
-    .action.downloads
-      = partial :"components/_downloads", :locals => { :name => 'GRIDS_LAYOUTS_download', :sketch => true }
-      = partial :"components/_downloads", :locals => { :name => 'LAYOUT_GRID_download', :pdf => true }
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'GRIDS_LAYOUTS_download', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'LAYOUT_GRID_download', :pdf => true }

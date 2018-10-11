@@ -130,7 +130,11 @@ $colorPalette: (
       }
 
       .color-swatch {
-        border-radius: 50%;
+        border-radius: 0;
+        @include media($mobile) {
+          border-radius: 50%;
+
+        }
       }
 
       .swatches {
@@ -174,7 +178,10 @@ $colorPalette: (
             }
           }
           &.#{$color}[class*="04"], &.#{$color}[class*="_5"], {
-            border-radius: 50%;
+            border-radius: 0;
+            @include media($mobile) {
+              border-radius: 50%;
+            }
             + .item {
               color: map-get($colorPalette, $color);
               order: -1;
@@ -182,7 +189,10 @@ $colorPalette: (
               font-family: Telefonicabold;
 
               span {
-                @include position (absolute, -19px null null -319px);
+                @include position (absolute, -20px null null -260px);
+                @include media($mobile) {
+                  @include position (absolute, -19px null null -319px);
+                }
               }
 
               &:before {
@@ -200,6 +210,10 @@ $colorPalette: (
 
     &.simple {
       margin-bottom: 0;
+      padding: 0 10px;
+      @include media($mobile) {
+        padding: 0;
+      }
 
       .container-flex {
         .swatches {
@@ -257,7 +271,10 @@ $colorPalette: (
     display: block;
     font-weight: bold;
     transition: transform 0.2s;
-    @include size(75px);
+    @include size(60px);
+    @include media($mobile) {
+      @include size(75px);
+    }
 
     &:hover {
       transform: scale(0.9);

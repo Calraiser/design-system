@@ -29,13 +29,13 @@ index: true
     .content-block
       .main-colors
         .row.center-xs
-          .col-lg-3.col-md-6.col-xs-12
+          .col-lg-3.col-xs-6
             = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grayScale.primaryColors, :title => 'Primary colour <br>(heading & navigation)', :extraclass => 'rounded'}
-          .col-lg-3.col-md-6.col-xs-12
+          .col-lg-3.col-xs-6
             = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grayScale.complementaryColors, :title => 'Complementary colour <br>(text, predictive text & icons)', :extraclass => 'rounded'}
-          .col-lg-3.col-md-6.col-xs-12
+          .col-lg-3.col-xs-6
             = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grayScale.complementaryColors2, :title => 'Complementary colour <br>(background, borders, lines & separator)', :extraclass => 'rounded'}
-          .col-lg-3.col-md-6.col-xs-12
+          .col-lg-3.col-xs-6
             = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.whiteColor.color, :title => 'Complementary colour <br> (bg cards & boxes)', :extraclass => 'rounded border-color'}
 
       = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grey.colors }
@@ -56,13 +56,13 @@ index: true
 
     .content-block
       .row.center-xs
-        .col-lg-3.col-md-6.col-xs-12
+        .col-lg-3.col-xs-6
           = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.success, :title => 'Completed / Success/Call to action <br>/ Buttons, links & active states', :extraclass => 'rounded'}
-        .col-lg-3.col-md-6.col-xs-12
+        .col-lg-3.col-xs-6
           = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.warning, :title => 'Warning / In progress', :extraclass => 'rounded'}
-        .col-lg-3.col-md-6.col-xs-12
+        .col-lg-3.col-xs-6
           = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.alert, :title => 'Alert / Attention', :extraclass => 'rounded'}
-        .col-lg-3.col-md-6.col-xs-12
+        .col-lg-3.col-xs-6
           = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.error, :title => 'Critical / Error', :extraclass => 'rounded'}
 
     h2.bx--type-h4 Visual Hierarchy

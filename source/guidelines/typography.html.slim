@@ -47,180 +47,182 @@ index: true
       p.bx--type-p
         | Selecting the appropriate type style is determined by layout or template structure. Products and tools may have several levels of architecture or areas that require varying typographic hierarchies.
 
-      .row.end-md.start-sm.between-sm.u-pt-9.u-pb-3
-        .column.col-xs-4.col-sm-3.col-md-3
-          .row.column-xs.center-xs
-            .col-xs-6.col-sm-6.col-md-3
-              = svg_tag 'ic-desktop-callout.svg'
-            .col-xs-6.col-sm-6.col-md-3.u-pt-2
-              = svg_tag 'desktop.svg', class: 'ico-hierarchy'
-        .column.col-xs-4.col-sm-3.col-md-3
-          .row.column-xs.center-xs
-            .col-xs-6.col-sm-6.col-md-3
-              = svg_tag 'ic-tablet-callout.svg'
-            .col-xs-6.col-sm-6.col-md-3.u-pt-2
-              = svg_tag 'tablet.svg', class: 'ico-hierarchy'
-        .column.col-xs-4.col-sm-3.col-md-3
-          .row.column-xs.center-xs
-            .col-xs-6.col-sm-6.col-md-3
-              = svg_tag 'ic-mobile-callout.svg'
-            .col-xs-6.col-sm-6.col-md-3.u-pt-2
-              = svg_tag 'mobile.svg', class: 'ico-hierarchy'
+      .u-hidden-xs
+        .row.end-md.start-sm.between-sm.u-pt-9
+          .col-xs-4.col-sm-3
+            .row.column-xs.center-xs
+              .col-xs-6.col-md-3
+                = svg_tag 'ic-desktop-callout.svg'
+              .col-xs-6.col-md-3.u-pt-2
+                = svg_tag 'desktop.svg', class: 'ico-hierarchy'
+          .col-xs-4.col-sm-3.col-md-3
+            .row.column-xs.center-xs
+              .col-xs-6.col-md-3
+                = svg_tag 'ic-tablet-callout.svg'
+              .col-xs-6.col-md-3.u-pt-2
+                = svg_tag 'tablet.svg', class: 'ico-hierarchy'
+          .col-xs-4.col-sm-3.col-md-3
+            .row.column-xs.center-xs
+              .col-xs-6.col-md-3
+                = svg_tag 'ic-mobile-callout.svg'
+              .col-xs-6.col-sm-6.col-md-3.u-pt-2
+                = svg_tag 'mobile.svg', class: 'ico-hierarchy'
 
-      .row
+    .content-block
+      .row.between-xs
         /Mega XXL
-        .column.col-xs-12.col-sm-12.col-md-3.column-title
+        .column.col-xs-12.col-md-3.column-title
           p.bx--type-p.u-font-bold.u-pb-5
             | Headers
           .header-column
             span.bx--type-note.u-uppercase xxl
             h1.bx--type-xxl Mega
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           p.bx--type-p.u-font-bold.u-pb-5
             | Spec
           = partial :"components/_spec_item", :locals => { :fontsize => '60px', :fontweight => 'Extralight', :lineheight =>'64px', :classname => '.bx--type-xxl' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           p.bx--type-p.u-font-bold.u-pb-5
             | Spec
           = partial :"components/_spec_item", :locals => { :fontsize => '60px', :fontweight => 'Extralight', :lineheight =>'64px', :classname => '.bx--type-xxl' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           p.bx--type-p.u-font-bold.u-pb-5
             | Spec
           = partial :"components/_spec_item", :locals => { :fontsize => '60px', :fontweight => 'Extralight', :lineheight =>'64px', :classname => '.bx--type-xxl' }
 
         /Big XL
-        .column.col-xs-12.col-sm-12.col-md-3.column-title
+        .column.col-xs-12.col-md-3.column-title
           .header-column
             span.bx--type-note.u-uppercase xl
             h1.bx--type-xl Big
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '54px', :fontweight => 'Extralight', :lineheight =>'60px', :classname => '.bx--type-xl' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '54px', :fontweight => 'Extralight', :lineheight =>'60px', :classname => '.bx--type-xl' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '54px', :fontweight => 'Extralight', :lineheight =>'60px', :classname => '.bx--type-xl' }
 
         /H1 Main
-        .column.col-xs-12.col-sm-12.col-md-3.column-title
+        .column.col-xs-12.col-md-3.column-title
           .header-column
             span.bx--type-note.u-uppercase H1
             h1.bx--type-h1 Main
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '48px', :fontweight => 'Extralight', :lineheight =>'50px', :classname => '.bx--type-h1' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '40px', :fontweight => 'Extralight', :lineheight =>'42px', :classname => '.bx--type-h1' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '36px', :fontweight => 'Extralight', :lineheight =>'38px', :classname => '.bx--type-h1' }
 
         /H2 Section Title
-        .column.col-xs-12.col-sm-12.col-md-3.column-title
+        .column.col-xs-12.col-md-3.column-title
           .header-column
             span.bx--type-note.u-uppercase H2
             h2.bx--type-h2 Section
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '36px', :fontweight => 'Light', :lineheight =>'40px', :classname => '.bx--type-h2' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '32px', :fontweight => 'Light', :lineheight =>'36px', :classname => '.bx--type-h2' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '28px', :fontweight => 'Light', :lineheight =>'32px', :classname => '.bx--type-h2' }
 
         /H3 Title
-        .column.col-xs-12.col-sm-12.col-md-3.column-title
+        .column.col-xs-12.col-md-3.column-title
           .header-column
             span.bx--type-note.u-uppercase H3
             h3.bx--type-h3 H3 Title
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '28px', :fontweight => 'Bold', :lineheight =>'32px', :classname => '.bx--type-h3' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '24px', :fontweight => 'Bold', :lineheight =>'28px', :classname => '.bx--type-h3' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '20px', :fontweight => 'Bold', :lineheight =>'24px', :classname => '.bx--type-h3' }
 
         /H4 Subtitle
-        .column.col-xs-12.col-sm-12.col-md-3.column-title
+        .column.col-xs-12.col-md-3.column-title
           .header-column
             span.bx--type-note.u-uppercase H4
             h4.bx--type-h4 H4 Subtitle
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '18px', :fontweight => 'Bold', :lineheight =>'22px', :classname => '.bx--type-h4' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '18px', :fontweight => 'Bold', :lineheight =>'22px', :classname => '.bx--type-h4' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '16px', :fontweight => 'Bold', :lineheight =>'20px', :classname => '.bx--type-h4' }
 
         /H5 Subtitle
-        .column.col-xs-12.col-sm-12.col-md-3.column-title
+        .column.col-xs-12.col-md-3.column-title
           .header-column
             span.bx--type-note.u-uppercase H5
             h5.bx--type-h5 H5 Subtitle
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '16px', :fontweight => 'Bold', :lineheight =>'22px', :classname => '.bx--type-h5' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '16px', :fontweight => 'Bold', :lineheight =>'20px', :classname => '.bx--type-h5' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '14px', :fontweight => 'Bold', :lineheight =>'20px', :classname => '.bx--type-h5' }
 
       h4.bx--type-h4.c-blue.u-uppercase Others
 
       .row
         /Paragraph
-        .column.col-xs-12.col-sm-12.col-md-3.column-title
+        .column.col-xs-12.col-md-3.column-title
           .header-column
             span.bx--type-note p (paragraph)
             p.bx--type-p Paragraph
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '16px', :fontweight => 'Regular', :lineheight =>'24px', :classname => '.bx--type-p' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '16px', :fontweight => 'Regular', :lineheight =>'24px', :classname => '.bx--type-p' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '14px', :fontweight => 'Regular', :lineheight =>'20px', :classname => '.bx--type-p' }
 
         /Body
-        .column.col-xs-12.col-sm-12.col-md-3.column-title
+        .column.col-xs-12.col-md-3.column-title
           .header-column
             span.bx--type-note b (body)
             p.bx--type-b Body
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '14px', :fontweight => 'Regular', :lineheight =>'18px', :classname => '.bx--type-b' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '14px', :fontweight => 'Regular', :lineheight =>'18px', :classname => '.bx--type-b' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '12px', :fontweight => 'Regular', :lineheight =>'16px', :classname => '.bx--type-b' }
 
         /Caption
-        .column.col-xs-12.col-sm-12.col-md-3.column-title
+        .column.col-xs-12.col-md-3.column-title
           .header-column
             span.bx--type-note Caption
             p.bx--type-caption.u-uppercase Caption
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '14px', :fontweight => 'Bold', :lineheight =>'16px', :classname => '.bx--type-caption' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '14px', :fontweight => 'Bold', :lineheight =>'16px', :classname => '.bx--type-caption' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '12px', :fontweight => 'Bold', :lineheight =>'14px', :classname => '.bx--type-caption' }
 
         /Legend
-        .column.col-xs-12.col-sm-12.col-md-3.column-title
+        .column.col-xs-12.col-md-3.column-title
           .header-column
             span.bx--type-note Legend
             p.bx--type-legend Legend
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '12px', :fontweight => 'Regular', :lineheight =>'14px', :classname => '.bx--type-legend' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '12px', :fontweight => 'Regular', :lineheight =>'14px', :classname => '.bx--type-legend' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '12px', :fontweight => 'Regular', :lineheight =>'14px', :classname => '.bx--type-legend' }
 
         /Blockquote
-        .column.col-xs-12.col-sm-12.col-md-3.column-title
+        .column.col-xs-12.col-md-3.column-title
           .header-column
             span.bx--type-note Blockquote
             p.bx--type-quote Blockquote
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '24px', :fontweight => 'Extralight', :lineheight =>'30px', :classname => '.bx--type-quote' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '20px', :fontweight => 'Extralight', :lineheight =>'24px', :classname => '.bx--type-quote' }
-        .column.col-xs-4.col-sm-4.col-md-3
+        .column.col-xs-6.col-sm-3
           = partial :"components/_spec_item", :locals => { :fontsize => '18px', :fontweight => 'Extralight', :lineheight =>'22px', :classname => '.bx--type-quote' }
 
   .footer-navigation

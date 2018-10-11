@@ -288,8 +288,19 @@ ul {
     &:before {
       font-family: fontcustom;
       font-size: 10px;
-      display: inline-block;
       color: $grey;
+    }
+  }
+
+  &__previous,
+  &__next {
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: $blue;
+    }
+    &:before, &:after {
+      margin-top: 4px;
     }
   }
 
