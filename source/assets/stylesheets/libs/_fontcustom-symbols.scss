@@ -1,0 +1,181 @@
+//
+// Icon Font: luca-symbols
+//
+@include font-face(luca-symbols, "../fonts/fontcustom/luca-symbols", $file-formats: svg eot ttf woff);
+%custom-icon,
+.s:after,
+.s-before:before {
+  display: inline-block;
+  font-family: "luca-symbols";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  vertical-align: middle;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently */
+}
+
+.s-before:before {
+  margin-right: 8px;
+}
+
+// [data-icon]:after { content: attr(data-icon); }
+
+
+.s.s-ic-close:after {
+  content: "\f100";
+}
+
+.s.s-ic-components-xl:after {
+  content: "\f101";
+}
+
+.s.s-ic-downloads-xl:after {
+  content: "\f102";
+}
+
+.s.s-ic-downloads-xs:after {
+  content: "\f103";
+}
+
+.s.s-ic-graphics-vizrules-xs:after {
+  content: "\f104";
+}
+
+.s.s-ic-guidelines-blue-full:after {
+  content: "\f105";
+}
+
+.s.s-ic-guidelines-xl:after {
+  content: "\f106";
+}
+
+.s.s-ic-guidelines-xl-green:after {
+  content: "\f107";
+}
+
+.s.s-ic-guidelines-xs:after {
+  content: "\f108";
+}
+
+.s.s-ic-resources-downloads-xs-grey:after {
+  content: "\f109";
+}
+
+.s.s-ic-search:after {
+  content: "\f10a";
+}
+
+.s.s-ic-uielements-xs:after {
+  content: "\f10b";
+}
+
+.s.s-ic-viz-rules-xl:after {
+  content: "\f10c";
+}
+
+.s.s-logo-luca:after {
+  content: "\f10d";
+}
+
+.s.s-pattern:after {
+  content: "\f10e";
+}
+
+
+
+.s-before.s-ic-close:before {
+  content: "\f100";
+}
+
+.s-before.s-ic-components-xl:before {
+  content: "\f101";
+}
+
+.s-before.s-ic-downloads-xl:before {
+  content: "\f102";
+}
+
+.s-before.s-ic-downloads-xs:before {
+  content: "\f103";
+}
+
+.s-before.s-ic-graphics-vizrules-xs:before {
+  content: "\f104";
+}
+
+.s-before.s-ic-guidelines-blue-full:before {
+  content: "\f105";
+}
+
+.s-before.s-ic-guidelines-xl:before {
+  content: "\f106";
+}
+
+.s-before.s-ic-guidelines-xl-green:before {
+  content: "\f107";
+}
+
+.s-before.s-ic-guidelines-xs:before {
+  content: "\f108";
+}
+
+.s-before.s-ic-resources-downloads-xs-grey:before {
+  content: "\f109";
+}
+
+.s-before.s-ic-search:before {
+  content: "\f10a";
+}
+
+.s-before.s-ic-uielements-xs:before {
+  content: "\f10b";
+}
+
+.s-before.s-ic-viz-rules-xl:before {
+  content: "\f10c";
+}
+
+.s-before.s-logo-luca:before {
+  content: "\f10d";
+}
+
+.s-before.s-pattern:before {
+  content: "\f10e";
+}
+
+
+.s-2x { font-size: 2em; }
+.s-3x { font-size: 3em; }
+.s-4x { font-size: 4em; }
+.s-5x { font-size: 5em; }
+
+$icons: (
+   ic-close: "\f100",  ic-components-xl: "\f101",  ic-downloads-xl: "\f102",  ic-downloads-xs: "\f103",  ic-graphics-vizrules-xs: "\f104",  ic-guidelines-blue-full: "\f105",  ic-guidelines-xl: "\f106",  ic-guidelines-xl-green: "\f107",  ic-guidelines-xs: "\f108",  ic-resources-downloads-xs-grey: "\f109",  ic-search: "\f10a",  ic-uielements-xs: "\f10b",  ic-viz-rules-xl: "\f10c",  logo-luca: "\f10d",  pattern: "\f10e", 
+);
+
+// Mixin for adding icons to element without need of adding classes
+@mixin icon($icon: false, $position: after, $styles: true) {
+  // Either a :before or :after pseudo-element, default to :after
+  &:#{$position} {
+    @if $icon {
+      content: "#{map-get($icons, $icon)}";
+    }
+    @if $styles {
+      @extend %custom-icon;
+    }
+    // Include any extra rules supplied for the pseudo-element
+    @content;
+  }
+}

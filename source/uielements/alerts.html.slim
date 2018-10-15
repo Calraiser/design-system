@@ -24,8 +24,10 @@ index: true
   .content-block
     h3.bx--type-label.u-uppercase Default (without closing option)
     .row.u-pt-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-12
+      .col-xs-12.col-md-6.alert-example
         = partial :"components/alerts", :locals => { :extraclass =>'alert-secondary', :title => 'Notification', :text => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.', :date =>'now', :close => false }
+      .col-xs-12.col-md-6.alert-example
+        = partial :"components/alerts", :locals => { :extraclass =>'alert-with__icon', :text => 'You must select ON Rental, OFF Rental or Other'}
 
   .content-block
     h3.bx--type-label.u-uppercase Overlap (more than one alert)

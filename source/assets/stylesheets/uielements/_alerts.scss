@@ -9,7 +9,19 @@
     width: 346px;
     min-height: 75px;
   }
-
+  &.alert-with__icon {
+    display: flex;
+    min-height: auto;
+    padding: {
+      top: 14px;
+      bottom: 14px;
+    }
+    &:before {
+      content: url(/assets/images/icons/ic-alert.svg);
+      margin-right: 10px;
+      display: inline-block;
+    }
+  }
   &__title {
     @extend %txt-subtitle-h2-bold;
     text-transform: uppercase;
