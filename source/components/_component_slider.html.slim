@@ -1,16 +1,19 @@
-/ - custom_form ||= ''
+
 - extraclass ||= false
+- multiple   ||= false
 
 .component-slider class=(extraclass if extraclass.present?)
   h2.bx--type-h4.u-text-blue Anatomy
-  .row.between-xs
+  .row.between-xs.middle-xs
     .col-xs-12.col-md-10.last-xs.first-md
       .component--slider-content
         - item.each_with_index do |element, index|
           .component-item class=('show' if index === 0) id="#{element[:id]}"
-            - element.images.each_with_index do |item, index|
-                .component--item-image class="#{element[:id]}"
-                  = image_tag item[1]
+            .row.around-xs.center-xs.bottom-xs
+              - element.images.each_with_index do |image, index|
+                div class=(multiple.present? ? 'col-lg-2 col-md-3 col-sm-5' : 'col-lg-5 col-sm-8')
+                  .component-item__col class="#{element[:id]}"
+                    = image_tag image[1]
                   / - if index == 1
                   /   = partial :"components/_#{custom_form}", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
                   / - elsif index == 2

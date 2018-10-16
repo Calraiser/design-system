@@ -60,7 +60,7 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#combobox'}
 
   .content-block
-    = partial :"components/_component_slider", :locals => { :custom_form => 'checkbox', :item => data.component_slider.items.combobox }
+    = partial :"components/_component_slider", :locals => { :custom_form => 'checkbox', :multiple => true, :item => data.component_slider.items.combobox }
 
   .content-block.u-pt-6
     h2.bx--type-h4.u-text-black.u-uppercase Variants

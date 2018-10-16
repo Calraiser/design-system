@@ -23,21 +23,25 @@ items:
   checkbox:
     - id: 'padding'
       images:
-        image01: '/assets/images/uicomponents/checkbox/padding.png'
-        # image02: '/assets/images/uicomponents/checkbox/padding_02.png'
-        # image03: '/assets/images/uicomponents/checkbox/padding_03.png'
+        image01: '/assets/images/uicomponents/checkbox/padding_01.png'
+        image02: '/assets/images/uicomponents/checkbox/padding_02.png'
+        image03: '/assets/images/uicomponents/checkbox/padding_03.png'
+        image04: '/assets/images/uicomponents/checkbox/padding_04.png'
 
     - id: 'measures'
       images:
-        image01: '/assets/images/uicomponents/checkbox/measures.png'
-        # image02: '/assets/images/uicomponents/checkbox/measures_02.png'
-        # image03: '/assets/images/uicomponents/checkbox/measures_03.png'
+        image01: '/assets/images/uicomponents/checkbox/measures_01.png'
+        image02: '/assets/images/uicomponents/checkbox/measures_02.png'
+        image03: '/assets/images/uicomponents/checkbox/measures_03.png'
+        image04: '/assets/images/uicomponents/checkbox/measures_04.png'
 
     - id: 'specifications'
       images:
-        image01: '/assets/images/uicomponents/checkbox/specs.png'
-        # image02: '/assets/images/uicomponents/checkbox/specs_02.png'
-        # image03: '/assets/images/uicomponents/checkbox/specs_03.png'
+        image01: '/assets/images/uicomponents/checkbox/specs_01.png'
+        image02: '/assets/images/uicomponents/checkbox/specs_02.png'
+        image03: '/assets/images/uicomponents/checkbox/specs_03.png'
+        image04: '/assets/images/uicomponents/checkbox/specs_04.png'
+
 
   ## Radio Buttons
   radio:
@@ -101,21 +105,24 @@ items:
   combobox:
     - id: 'padding'
       images:
-        image01: '/assets/images/uicomponents/combobox/padding.png'
-        # image02: '/assets/images/uicomponents/radio/padding_01.png'
-        # image03: '/assets/images/uicomponents/radio/padding_01.png'
+        image01: '/assets/images/uicomponents/combobox/padding_01.png'
+        image02: '/assets/images/uicomponents/combobox/padding_02.png'
+        image03: '/assets/images/uicomponents/combobox/padding_03.png'
+
 
     - id: 'measures'
       images:
-        image01: '/assets/images/uicomponents/combobox/measures.png'
-        # image02: '/assets/images/uicomponents/radio/measures_02.png'
-        # image03: '/assets/images/uicomponents/radio/measures_03.png'
+        image01: '/assets/images/uicomponents/combobox/measures_01.png'
+        image02: '/assets/images/uicomponents/combobox/measures_02.png'
+        image03: '/assets/images/uicomponents/combobox/measures_03.png'
+
 
     - id: 'specifications'
       images:
-        image01: '/assets/images/uicomponents/combobox/specs.png'
-        # image02: '/assets/images/uicomponents/radio/specs_02.png'
-        # image03: '/assets/images/uicomponents/radio/specs_03.png'
+        image01: '/assets/images/uicomponents/combobox/specs_01.png'
+        image02: '/assets/images/uicomponents/combobox/specs_02.png'
+        image03: '/assets/images/uicomponents/combobox/specs_03.png'
+
 
   pills:
     - id: 'padding'
