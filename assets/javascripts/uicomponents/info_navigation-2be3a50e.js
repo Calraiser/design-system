@@ -1,0 +1,1 @@
+$(document).ready(function(){var n=$(".viz-box");if(!n.length)return!1;n.each(function(){var n=$(this),o=n.find(".btn-info");o.on("click",function(){o.toggleClass("active"),o.up(3).toggleClass("open"),n.find(".info").toggleClass("open")})})});
