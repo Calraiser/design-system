@@ -16,3 +16,9 @@ index: true
 
   picture.image-block
     = image_tag 'uielements-overview.png'
+
+  .footer-navigation
+    .footer-navigation__previous
+      = previous_link(data.title['uielements'])
+    .footer-navigation__next
+      = next_link(data.title['uielements'])
