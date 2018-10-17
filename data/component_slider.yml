@@ -3,21 +3,22 @@ items:
   switch:
     - id: 'padding'
       images:
-        image01: '/assets/images/uicomponents/switch/padding.png'
-        # image02: '/assets/images/uicomponents/switch/padding_02.png'
-        # image03: '/assets/images/uicomponents/switch/padding_03.png'
+        image01: '/assets/images/uicomponents/switch/padding_01.png'
+        image02: '/assets/images/uicomponents/switch/padding_02.png'
+        image03: '/assets/images/uicomponents/switch/padding_03.png'
 
     - id: 'measures'
       images:
-        image01: '/assets/images/uicomponents/switch/measures.png'
-        # image02: '/assets/images/uicomponents/switch/measure_02.png'
-        # image03: '/assets/images/uicomponents/switch/measure_03.png'
+        image01: '/assets/images/uicomponents/switch/measure_01.png'
+        image02: '/assets/images/uicomponents/switch/measure_02.png'
+        image03: '/assets/images/uicomponents/switch/measure_03.png'
 
     - id: 'specifications'
       images:
-        image01: '/assets/images/uicomponents/switch/specs.png'
-        # image02: '/assets/images/uicomponents/switch/spec_02.png'
-        # image03: '/assets/images/uicomponents/switch/spec_03.png'
+        image01: '/assets/images/uicomponents/switch/spec_01.png'
+        image02: '/assets/images/uicomponents/switch/spec_02.png'
+        image03: '/assets/images/uicomponents/switch/spec_03.png'
+
 
   ## Checkbox
   checkbox:
@@ -47,21 +48,21 @@ items:
   radio:
     - id: 'padding'
       images:
-        image01: '/assets/images/uicomponents/radio/padding.png'
-        # image02: '/assets/images/uicomponents/radio/padding_01.png'
-        # image03: '/assets/images/uicomponents/radio/padding_01.png'
+        image01: '/assets/images/uicomponents/radio/padding_01.png'
+        image02: '/assets/images/uicomponents/radio/padding_02.png'
+        image03: '/assets/images/uicomponents/radio/padding_03.png'
 
     - id: 'measures'
       images:
-        image01: '/assets/images/uicomponents/radio/measures.png'
-        # image02: '/assets/images/uicomponents/radio/measures_02.png'
-        # image03: '/assets/images/uicomponents/radio/measures_03.png'
+        image01: '/assets/images/uicomponents/radio/measures_01.png'
+        image02: '/assets/images/uicomponents/radio/measures_02.png'
+        image03: '/assets/images/uicomponents/radio/measures_03.png'
 
     - id: 'specifications'
       images:
-        image01: '/assets/images/uicomponents/radio/specs.png'
-        # image02: '/assets/images/uicomponents/radio/specs_02.png'
-        # image03: '/assets/images/uicomponents/radio/specs_03.png'
+        image01: '/assets/images/uicomponents/radio/specs_01.png'
+        image02: '/assets/images/uicomponents/radio/specs_02.png'
+        image03: '/assets/images/uicomponents/radio/specs_03.png'
 
   ## Tabs
   tabs:
@@ -127,40 +128,47 @@ items:
   pills:
     - id: 'padding'
       images:
-        image01: '/assets/images/uicomponents/pills/padding.png'
-        # image02: '/assets/images/uicomponents/radio/padding_01.png'
-        # image03: '/assets/images/uicomponents/radio/padding_01.png'
+        image01: '/assets/images/uicomponents/pills/padding_01.png'
+        image02: '/assets/images/uicomponents/pills/padding_02.png'
+        image03: '/assets/images/uicomponents/pills/padding_03.png'
+        image04: '/assets/images/uicomponents/pills/padding_04.png'
+
 
     - id: 'measures'
       images:
-        image01: '/assets/images/uicomponents/pills/measures.png'
-        # image02: '/assets/images/uicomponents/radio/measures_02.png'
-        # image03: '/assets/images/uicomponents/radio/measures_03.png'
+        image01: '/assets/images/uicomponents/pills/measures_01.png'
+        image02: '/assets/images/uicomponents/pills/measures_02.png'
+        image03: '/assets/images/uicomponents/pills/measures_03.png'
+        image04: '/assets/images/uicomponents/pills/measures_04.png'
+
 
     - id: 'specifications'
       images:
-        image01: '/assets/images/uicomponents/pills/specs.png'
-        # image02: '/assets/images/uicomponents/radio/specs_02.png'
-        # image03: '/assets/images/uicomponents/radio/specs_03.png'
+        image01: '/assets/images/uicomponents/pills/specs_01.png'
+        image02: '/assets/images/uicomponents/pills/specs_02.png'
+        image03: '/assets/images/uicomponents/pills/specs_03.png'
+        image04: '/assets/images/uicomponents/pills/specs_04.png'
+
 
   input:
     - id: 'padding'
       images:
-        image01: '/assets/images/uicomponents/inputs/padding.png'
-        # image02: '/assets/images/uicomponents/radio/padding_01.png'
-        # image03: '/assets/images/uicomponents/radio/padding_01.png'
+        image01: '/assets/images/uicomponents/inputs/padding_01.png'
+        image02: '/assets/images/uicomponents/inputs/padding_02.png'
+        image03: '/assets/images/uicomponents/inputs/padding_03.png'
 
     - id: 'measures'
       images:
-        image01: '/assets/images/uicomponents/inputs/measures.png'
-        # image02: '/assets/images/uicomponents/radio/measures_02.png'
-        # image03: '/assets/images/uicomponents/radio/measures_03.png'
+        image01: '/assets/images/uicomponents/inputs/measures_01.png'
+        image02: '/assets/images/uicomponents/inputs/measures_02.png'
+        image03: '/assets/images/uicomponents/inputs/measures_03.png'
+
 
     - id: 'specifications'
       images:
-        image01: '/assets/images/uicomponents/inputs/specs.png'
-        # image02: '/assets/images/uicomponents/radio/specs_02.png'
-        # image03: '/assets/images/uicomponents/radio/specs_03.png'
+        image01: '/assets/images/uicomponents/inputs/specs_01.png'
+        image02: '/assets/images/uicomponents/inputs/specs_02.png'
+        image03: '/assets/images/uicomponents/inputs/specs_03.png'
 
   info_navigation:
     - id: 'padding'

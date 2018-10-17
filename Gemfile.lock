@@ -29,7 +29,6 @@ GEM
       sass (>= 3.2, < 3.5)
     concurrent-ruby (1.0.5)
     contracts (0.13.0)
-    css-class-string (0.1.1)
     dom_limpio (0.1.3)
     dotenv (2.5.0)
     em-websocket (0.5.1)
@@ -169,7 +168,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  css-class-string
   dom_limpio
   middleman (= 4.2.1)
   middleman-autoprefixer (~> 2.7.1)

@@ -11,15 +11,15 @@
           .component-item class=('show' if index === 0) id="#{element[:id]}"
             .row.around-xs.center-xs.bottom-xs
               - element.images.each_with_index do |image, index|
-                div class=(multiple.present? ? 'col-lg-2 col-md-3 col-sm-5' : 'col-lg-5 col-sm-8')
-                  .component-item__col class="#{element[:id]}"
-                    = image_tag image[1]
-                  / - if index == 1
-                  /   = partial :"components/_#{custom_form}", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
-                  / - elsif index == 2
-                  /   = partial :"components/_#{custom_form}", :locals => { :disabled => true, :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
-                  / - else
-                  /   = partial :"components/_#{custom_form}", :locals => { :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
+                div class=(multiple.present? ? 'col-lg-2 col-md-3 col-sm-5' : 'col-lg-8 col-sm-10') class="#{element[:id]}"
+
+                  = image_tag image[1]
+                / - if index == 1
+                /   = partial :"components/_#{custom_form}", :locals => { :checked => true, :label_selected => 'Selected', :label_unselected => 'Unselected' }
+                / - elsif index == 2
+                /   = partial :"components/_#{custom_form}", :locals => { :disabled => true, :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
+                / - else
+                /   = partial :"components/_#{custom_form}", :locals => { :checked => false, :label_selected => 'Selected', :label_unselected => 'Unselected' }
 
     .col-xs-12.col-md-2
       .component-menu

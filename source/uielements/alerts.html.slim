@@ -68,7 +68,7 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#alert'}
 
   .content-block
-    = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.alerts }
+    = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :extraclass => 'alerts', :item => data.component_slider.items.alerts }
 
   .footer-navigation
     .footer-navigation__previous
@@ -79,3 +79,6 @@ index: true
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
     = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }
+
+
+  = javascript_include_tag 'uicomponents/stacked_cards.js'

@@ -19,6 +19,34 @@
       flex-direction: row;
     }
   }
+  &.accordion {
+    img {
+      width: 80%;
+      @include media($tablet) {
+        width: 65%;
+      }
+    }
+  }
+  &.alerts {
+    img {
+      width: 100%;
+      @include media($tablet) {
+        width: 80%;
+      }
+    }
+  }
+  &.popover_anatomy {
+    height: auto;
+    @include media($tablet) {
+      height: 400px;
+    }
+    img {
+      width: 60%;
+      @include media($tablet) {
+        width: 40%;
+      }
+    }
+  }
 }
 
 .component--slider-content {

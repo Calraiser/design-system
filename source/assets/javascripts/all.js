@@ -5,13 +5,12 @@
 //= require ./vendors/c3.min.js
 //= require ./vendors/chart.min.js
 //= require ./vendors/chartjs-deferred.min.js
+//= require ./vendors/lunr.js
 
 //= require ./vendors/clipboard.min.js
 //= require ./vendors/bootstrap-tooltip.js
 //= require ./vendors/jquery.sticky-kit.js
 //= require ./vendors/datatables.js
-
-//= require ./charts/timeLineChart.js
 
 //= require ./blocks/content_nav.js
 //= require ./blocks/responsive_nav.js
@@ -24,7 +23,6 @@
 //= require ./uicomponents/accordion.js
 //= require ./uicomponents/list.js
 //= require ./uicomponents/alerts.js
-//= require ./uicomponents/stacked_cards.js
 
 //= require common.js
 

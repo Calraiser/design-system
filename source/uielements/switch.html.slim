@@ -41,7 +41,7 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#switch-code'}
 
   .content-block
-    = partial :"components/_component_slider", :locals => { :custom_form => 'switch', :item => data.component_slider.items.switch }
+    = partial :"components/_component_slider", :locals => { :custom_form => 'switch', :multiple => true, :item => data.component_slider.items.switch }
 
   .content-block
     h2.bx--type-h4.u-text-blue Spacing

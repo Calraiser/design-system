@@ -38,7 +38,7 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#pills'}
 
   .content-block
-    = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.pills }
+    = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :multiple => true, :item => data.component_slider.items.pills }
 
   .content-block
     h2.bx--type-h4.u-text-blue Spacing

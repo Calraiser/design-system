@@ -37,7 +37,7 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#accordion'}
 
   .content-block
-    = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.accordion }
+    = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :extraclass => 'accordion' , :item => data.component_slider.items.accordion }
 
   .content-block
     .module-anatomy
