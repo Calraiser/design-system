@@ -1,0 +1,70 @@
+
+<svg width="787px" height="272px" viewBox="0 0 787 272" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Primary" transform="translate(-39.000000, -22.000000)">
+            <g>
+                <text font-family="Telefonica-Regular, Telefonica" font-size="12" font-weight="normal" line-spacing="8" fill="#9B9B9B">
+                    <tspan x="311.16" y="28.4414596">Primary</tspan>
+                </text>
+                <text id="Light-and-dark-perce" font-family="Telefonica-Regular, Telefonica" font-size="12" font-weight="normal" line-spacing="8" fill="#9B9B9B">
+                    <tspan x="689.464" y="156.769404">Light and dark percentage</tspan>
+                </text>
+                <rect id="BLUE-Copy" fill="#00AAEE" fill-rule="evenodd" x="305" y="176.341801" width="62" height="54.1247113"></rect>
+                <rect id="60%-White" fill="#99DDFF" fill-rule="evenodd" x="105" y="176.341801" width="62" height="54.1247113"></rect>
+                <rect id="80%-White-Copy-2" fill="#CCEEFF" fill-rule="evenodd" x="39" y="176.341801" width="62" height="54.1247113"></rect>
+                <rect id="40%-White" fill="#66CCFF" fill-rule="evenodd" x="171" y="176.341801" width="62" height="54.1247113"></rect>
+                <rect id="20%-White" fill="#33BBFF" fill-rule="evenodd" x="237" y="176.341801" width="62" height="54.1247113"></rect>
+                <rect id="20%-Black" fill="#0088CC" fill-rule="evenodd" x="373" y="176.341801" width="62" height="54.1247113"></rect>
+                <text id="60%" font-family="Telefonica-Bold, Telefonica" font-size="9.6" font-weight="bold" line-spacing="14.4" fill="#4A4A4A">
+                    <tspan x="106" y="158.406467">60%</tspan>
+                </text>
+                <text id="80%" font-family="Telefonica-Bold, Telefonica" font-size="9.6" font-weight="bold" line-spacing="14.4" fill="#4A4A4A">
+                    <tspan x="40" y="158.406467">80%</tspan>
+                </text>
+                <text id="20%" font-family="Telefonica-Bold, Telefonica" font-size="9.6" font-weight="bold" line-spacing="14.4" fill="#4A4A4A">
+                    <tspan x="373" y="158.406467">20%</tspan>
+                </text>
+                <text id="40%" font-family="Telefonica-Bold, Telefonica" font-size="9.6" font-weight="bold" line-spacing="14.4" fill="#4A4A4A">
+                    <tspan x="175" y="158.406467">40%</tspan>
+                </text>
+                <text id="20%" font-family="Telefonica-Bold, Telefonica" font-size="9.6" font-weight="bold" line-spacing="14.4" fill="#4A4A4A">
+                    <tspan x="240" y="158.406467">20%</tspan>
+                </text>
+                <rect id="GREEN-Copy" fill="#00EEAA" fill-rule="evenodd" x="305" y="80.3140878" width="62" height="54.1247113" rx="27.0623557"></rect>
+                <g id="White-Overlay" stroke-width="1" fill-rule="evenodd" transform="translate(39.000000, 80.314088)">
+                    <rect id="80%-White-Copy-2" fill="#CCFBEE" x="0" y="0" width="62.1428571" height="54.1247113"></rect>
+                    <rect id="60%-White" fill="#99F8DD" x="66.2857143" y="0" width="62.1428571" height="54.1247113"></rect>
+                    <rect id="40%-White" fill="#66F4CC" x="132.571429" y="0" width="62.1428571" height="54.1247113"></rect>
+                    <rect id="20%-White" fill="#33F1BB" x="198.857143" y="0" width="62.1428571" height="54.1247113"></rect>
+                </g>
+                <g id="Black-Overlay" stroke-width="1" fill-rule="evenodd" transform="translate(373.000000, 80.314088)">
+                    <rect id="20%-Black" fill="#00BE88" x="0" y="0" width="62.1428571" height="54.1247113"></rect>
+                    <rect id="40%-Black" fill="#008E66" x="66.2857143" y="0" width="62.1428571" height="54.1247113"></rect>
+                    <rect id="60%-Black" fill="#005F44" x="132.571429" y="0" width="62.1428571" height="54.1247113"></rect>
+                    <rect id="80%-Black-Copy-2" fill="#002F22" x="198.857143" y="0" width="62.1428571" height="54.1247113"></rect>
+                </g>
+                <rect id="40%-Black" fill="#006699" fill-rule="evenodd" x="439" y="176.341801" width="62" height="54.1247113" rx="27.0623557"></rect>
+                <rect id="60%-Black" fill="#004466" fill-rule="evenodd" x="506" y="176.341801" width="62" height="54.1247113"></rect>
+                <rect id="60%-Black-Copy-2" fill="#002233" fill-rule="evenodd" x="572" y="176.341801" width="62" height="54.1247113"></rect>
+                <text id="40%" font-family="Telefonica-Bold, Telefonica" font-size="9.6" font-weight="bold" line-spacing="14.4" fill="#4A4A4A">
+                    <tspan x="439" y="158.406467">40%</tspan>
+                </text>
+                <text id="60%" font-family="Telefonica-Bold, Telefonica" font-size="9.6" font-weight="bold" line-spacing="14.4" fill="#4A4A4A">
+                    <tspan x="506" y="158.406467">60%</tspan>
+                </text>
+                <text id="80%" font-family="Telefonica-Bold, Telefonica" font-size="9.6" font-weight="bold" line-spacing="14.4" fill="#4A4A4A">
+                    <tspan x="572" y="158.406467">80%</tspan>
+                </text>
+                <path d="M336,72.7063112 L336,32.9755267" id="Path-2" stroke="#DFDFDF" stroke-width="1"></path>
+                <path d="M471,278.729406 L471,238.998621" id="Path-2-Copy" stroke="#DFDFDF" stroke-width="1"></path>
+                <path d="M684.511719,154.517321 L606.498398,154.517321" id="Path-2-Copy-2" stroke="#DFDFDF" stroke-width="1"></path>
+                <text id="Variant" font-family="Telefonica-Regular, Telefonica" font-size="12" font-weight="normal" line-spacing="8" fill="#9B9B9B">
+                    <tspan x="445.858" y="290.335224">Variant</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

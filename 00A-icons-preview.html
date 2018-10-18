@@ -1,0 +1,176 @@
+<!doctype html> <html> <head> <meta charset=utf-8> <meta content="IE=edge,chrome=1" http-equiv=X-UA-Compatible> <title>Luca Design System</title> <link href="assets/stylesheets/normalize.css" rel=stylesheet /><link href="assets/stylesheets/all-ec59ec1d.css" rel=stylesheet /> <script src="assets/javascripts/all-a3e0352d.js"></script> </head> <body class=x00A-icons-preview> <style>
+  /* Page Styles */
+
+  /** {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }*/
+
+  /*body {
+    background: #fff;
+    color: #444;
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }*/
+
+  /*
+  a,
+  a:visited {
+    color: #888;
+    text-decoration: underline;
+  }
+  a:hover,
+  a:focus { color: #000; }
+  */
+
+  header.icons-preview {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 20px 0;
+  }
+
+  header.icons-preview h1 {
+    color: #888;
+    float: left;
+    font-size: 36px;
+    font-weight: 300;
+  }
+
+  header.icons-preview a {
+    float: right;
+    font-size: 14px;
+  }
+
+  .icons-preview-container {
+    margin: 0 auto;
+    max-width: 1204px;
+    min-width: 960px;
+    padding: 0 40px;
+    width: 90%;
+  }
+
+  .glyph {
+    border-bottom: 1px dotted #ccc;
+    padding: 10px 0 20px;
+    margin-bottom: 20px;
+    float: left;
+    width: 50%
+  }
+
+  .preview-glyphs { vertical-align: bottom; }
+
+  .preview-scale {
+    color: #888;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .icons-preview-step {
+    display: inline-block;
+    line-height: 1;
+    position: relative;
+    width: 13%;
+  }
+
+  .icons-preview-step .letters,
+  .icons-preview-step i {
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+  }
+
+  .icons-preview-step:hover .letters { opacity: 1; }
+  .icons-preview-step:hover i { opacity: .3; }
+
+  .letters {
+    opacity: .3;
+    position: absolute;
+  }
+
+  .characters-off {
+    overflow: hidden;
+  }
+
+  .characters-off .letters { display: none; }
+  .characters-off .icons-preview-step:hover i { opacity: 1; }
+
+  
+  .size-12 { font-size: 12px; }
+  
+  .size-16 { font-size: 16px; }
+  
+  .size-21 { font-size: 21px; }
+  
+  .size-24 { font-size: 24px; }
+  
+  .size-36 { font-size: 36px; }
+  
+  .size-48 { font-size: 48px; }
+  
+  .size-60 { font-size: 60px; }
+  
+
+  .usage { margin-top: 10px; }
+
+  .usage input {
+    font-family: monospace;
+    margin-right: 3px;
+    padding: 2px 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+
+  .usage .point { width: 150px; }
+
+  .usage .class { width: 250px; }
+
+  .preview-footer {
+    color: #888;
+    font-size: 12px;
+    padding: 20px 0;
+  }
+
+
+  [data-icon]:before { content: attr(data-icon); }
+
+  [data-icon]:before,
+  .s-ic-close:before,
+.s-ic-components-xl:before,
+.s-ic-downloads-xl:before,
+.s-ic-downloads-xs:before,
+.s-ic-graphics-vizrules-xs:before,
+.s-ic-guidelines-blue-full:before,
+.s-ic-guidelines-xl:before,
+.s-ic-guidelines-xl-green:before,
+.s-ic-guidelines-xs:before,
+.s-ic-resources-downloads-xs-grey:before,
+.s-ic-search:before,
+.s-ic-uielements-xs:before,
+.s-ic-viz-rules-xl:before,
+.s-logo-luca:before,
+.s-pattern:before {
+    display: inline-block;
+  font-family: "luca-symbols";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  }
+
+</style> <script>
+  function toggleCharacters() {
+    var body = document.getElementsByTagName('body')[0];
+    body.className = body.className === 'characters-off' ? '' : 'characters-off';
+  }
+</script> <div class=characters-off> <div id=page class=icons-preview-container> <header class=icons-preview> <h1>luca-symbols contains 15 glyphs:</h1> <a onclick="toggleCharacters(); return false;" href="#">Toggle Preview Characters</a> </header> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-close class="s s-ic-close"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-close class="s s-ic-close"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-close class="s s-ic-close"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-close class="s s-ic-close"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-close class="s s-ic-close"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-close class="s s-ic-close"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-close class="s s-ic-close"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-close"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf100;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-components-xl class="s s-ic-components-xl"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-components-xl class="s s-ic-components-xl"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-components-xl class="s s-ic-components-xl"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-components-xl class="s s-ic-components-xl"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-components-xl class="s s-ic-components-xl"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-components-xl class="s s-ic-components-xl"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-components-xl class="s s-ic-components-xl"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-components-xl"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf101;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-downloads-xl class="s s-ic-downloads-xl"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-downloads-xl class="s s-ic-downloads-xl"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-downloads-xl class="s s-ic-downloads-xl"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-downloads-xl class="s s-ic-downloads-xl"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-downloads-xl class="s s-ic-downloads-xl"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-downloads-xl class="s s-ic-downloads-xl"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-downloads-xl class="s s-ic-downloads-xl"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-downloads-xl"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf102;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-downloads-xs class="s s-ic-downloads-xs"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-downloads-xs class="s s-ic-downloads-xs"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-downloads-xs class="s s-ic-downloads-xs"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-downloads-xs class="s s-ic-downloads-xs"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-downloads-xs class="s s-ic-downloads-xs"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-downloads-xs class="s s-ic-downloads-xs"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-downloads-xs class="s s-ic-downloads-xs"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-downloads-xs"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf103;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-graphics-vizrules-xs class="s s-ic-graphics-vizrules-xs"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-graphics-vizrules-xs class="s s-ic-graphics-vizrules-xs"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-graphics-vizrules-xs class="s s-ic-graphics-vizrules-xs"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-graphics-vizrules-xs class="s s-ic-graphics-vizrules-xs"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-graphics-vizrules-xs class="s s-ic-graphics-vizrules-xs"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-graphics-vizrules-xs class="s s-ic-graphics-vizrules-xs"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-graphics-vizrules-xs class="s s-ic-graphics-vizrules-xs"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-graphics-vizrules-xs"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf104;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-guidelines-blue-full class="s s-ic-guidelines-blue-full"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-guidelines-blue-full class="s s-ic-guidelines-blue-full"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-guidelines-blue-full class="s s-ic-guidelines-blue-full"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-guidelines-blue-full class="s s-ic-guidelines-blue-full"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-guidelines-blue-full class="s s-ic-guidelines-blue-full"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-guidelines-blue-full class="s s-ic-guidelines-blue-full"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-guidelines-blue-full class="s s-ic-guidelines-blue-full"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-guidelines-blue-full"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf105;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-guidelines-xl class="s s-ic-guidelines-xl"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-guidelines-xl class="s s-ic-guidelines-xl"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-guidelines-xl class="s s-ic-guidelines-xl"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-guidelines-xl class="s s-ic-guidelines-xl"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-guidelines-xl class="s s-ic-guidelines-xl"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-guidelines-xl class="s s-ic-guidelines-xl"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-guidelines-xl class="s s-ic-guidelines-xl"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-guidelines-xl"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf106;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-guidelines-xl-green class="s s-ic-guidelines-xl-green"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-guidelines-xl-green class="s s-ic-guidelines-xl-green"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-guidelines-xl-green class="s s-ic-guidelines-xl-green"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-guidelines-xl-green class="s s-ic-guidelines-xl-green"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-guidelines-xl-green class="s s-ic-guidelines-xl-green"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-guidelines-xl-green class="s s-ic-guidelines-xl-green"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-guidelines-xl-green class="s s-ic-guidelines-xl-green"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-guidelines-xl-green"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf107;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-guidelines-xs class="s s-ic-guidelines-xs"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-guidelines-xs class="s s-ic-guidelines-xs"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-guidelines-xs class="s s-ic-guidelines-xs"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-guidelines-xs class="s s-ic-guidelines-xs"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-guidelines-xs class="s s-ic-guidelines-xs"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-guidelines-xs class="s s-ic-guidelines-xs"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-guidelines-xs class="s s-ic-guidelines-xs"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-guidelines-xs"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf108;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-resources-downloads-xs-grey class="s s-ic-resources-downloads-xs-grey"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-resources-downloads-xs-grey class="s s-ic-resources-downloads-xs-grey"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-resources-downloads-xs-grey class="s s-ic-resources-downloads-xs-grey"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-resources-downloads-xs-grey class="s s-ic-resources-downloads-xs-grey"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-resources-downloads-xs-grey class="s s-ic-resources-downloads-xs-grey"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-resources-downloads-xs-grey class="s s-ic-resources-downloads-xs-grey"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-resources-downloads-xs-grey class="s s-ic-resources-downloads-xs-grey"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-resources-downloads-xs-grey"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf109;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-search class="s s-ic-search"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-search class="s s-ic-search"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-search class="s s-ic-search"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-search class="s s-ic-search"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-search class="s s-ic-search"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-search class="s s-ic-search"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-search class="s s-ic-search"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-search"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf10a;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-uielements-xs class="s s-ic-uielements-xs"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-uielements-xs class="s s-ic-uielements-xs"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-uielements-xs class="s s-ic-uielements-xs"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-uielements-xs class="s s-ic-uielements-xs"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-uielements-xs class="s s-ic-uielements-xs"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-uielements-xs class="s s-ic-uielements-xs"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-uielements-xs class="s s-ic-uielements-xs"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-uielements-xs"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf10b;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-ic-viz-rules-xl class="s s-ic-viz-rules-xl"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-ic-viz-rules-xl class="s s-ic-viz-rules-xl"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-ic-viz-rules-xl class="s s-ic-viz-rules-xl"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-ic-viz-rules-xl class="s s-ic-viz-rules-xl"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-ic-viz-rules-xl class="s s-ic-viz-rules-xl"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-ic-viz-rules-xl class="s s-ic-viz-rules-xl"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-ic-viz-rules-xl class="s s-ic-viz-rules-xl"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-ic-viz-rules-xl"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf10c;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-logo-luca class="s s-logo-luca"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-logo-luca class="s s-logo-luca"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-logo-luca class="s s-logo-luca"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-logo-luca class="s s-logo-luca"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-logo-luca class="s s-logo-luca"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-logo-luca class="s s-logo-luca"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-logo-luca class="s s-logo-luca"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-logo-luca"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf10d;"/> </div> </div> <div class=glyph> <div class=preview-glyphs> <span class="icons-preview-step size-12"><span class=letters>Pp</span><i id=s-pattern class="s s-pattern"></i></span><span class="icons-preview-step size-16"><span class=letters>Pp</span><i id=s-pattern class="s s-pattern"></i></span><span class="icons-preview-step size-21"><span class=letters>Pp</span><i id=s-pattern class="s s-pattern"></i></span><span class="icons-preview-step size-24"><span class=letters>Pp</span><i id=s-pattern class="s s-pattern"></i></span><span class="icons-preview-step size-36"><span class=letters>Pp</span><i id=s-pattern class="s s-pattern"></i></span><span class="icons-preview-step size-48"><span class=letters>Pp</span><i id=s-pattern class="s s-pattern"></i></span><span class="icons-preview-step size-60"><span class=letters>Pp</span><i id=s-pattern class="s s-pattern"></i></span> </div> <div class=preview-scale> <span class=step>12</span><span class=step>16</span><span class=step>21</span><span class=step>24</span><span class=step>36</span><span class=step>48</span><span class=step>60</span> </div> <div class=usage> <input class=class type=text readonly onClick="this.select();" value=".s .s-pattern"/> <input class=point type=text readonly onClick="this.select();" value="&amp;#xf10e;"/> </div> </div> <div class=preview-footer> Made with love using <a href="http://fontcustom.com">Font Custom</a>. </div> </div> </div> </body> </html>
