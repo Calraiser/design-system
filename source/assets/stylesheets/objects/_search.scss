@@ -49,6 +49,7 @@
     border-top: 1px solid $grey02;
     z-index: 999;
     opacity: .95;
+    width: 100%;
 
     @include media($mobile) {
       padding: 0 70px;
