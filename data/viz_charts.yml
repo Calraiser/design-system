@@ -1,7 +1,9 @@
 charts:
 - title: "Multi-level pie chart"
   image: "viz_charts/pie-chart.svg"
+  largeImage: "/assets/images/viz_charts/pie-chart_3x.png"
   text: "It allows you to show symmetrical/asymmetrical tree structures in a consolidated structure. It contains no connected hierarchy, but only displays independant donut rings for comparison."
+  link: 'http://cargocollective.com/jaimemartinez/'
   functions:
     - Comparison
     - Part to a whole
@@ -9,19 +11,25 @@ charts:
 
 - title: "Bar chart (horizontal)"
   image: "viz_charts/bar-chart-x.svg"
+  largeImage: "/assets/images/viz_charts/bar-chart-x_3x.png"
   text: "One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value. Bars on the chart may be arranged in any order."
+  link: 'http://cargocollective.com/jaimemartinez/'
   functions:
     - Comparison
 
 - title: "Bubble chart"
   image: "viz_charts/bubble-chart.svg"
+  largeImage: "/assets/images/viz_charts/bubble-chart_3x.png"
   text: "Nested circles allow to represent hierarchies and compare values.This visualization is particularly effective to show the proportion between elements through their areas and their position inside a hierarchical structure."
+  link: 'http://cargocollective.com/jaimemartinez/'
   functions:
     - Comparison
 
 - title: "Sankey chart"
   image: "viz_charts/sankey-chart.svg"
+  largeImage: "/assets/images/viz_charts/sankey-chart.svg"
   text: "They are developed to represent changes in network structure over time. Values are represented with blocks on each axis. The height of a block represents the size of the cluster …"
+  link: 'http://cargocollective.com/jaimemartinez/'
 
   functions:
     - Comparison
@@ -32,12 +40,16 @@ charts:
 - title: "Population pyramid"
   image: "viz_charts/pyramid-chart.svg"
   text: "It is a graphical illustration that shows the distribution of various age groups in a population, which forms the shape of a pyramid when the population is growing."
+  link: 'http://cargocollective.com/jaimemartinez/'
+
   functions:
     - Comparison
 
 - title: "Parallel chart"
   image: "viz_charts/parallel-chart.svg"
+  largeImage: "/assets/images/viz_charts/parallel-chart.svg"
   text: "It shows data frequencies instead of the individual data points. The method is based on the axis layout of parallel coordinates, with boxes representing the categories and parallelograms…"
+  link: 'http://cargocollective.com/jaimemartinez/'
 
   functions:
     - Comparison
@@ -46,13 +58,17 @@ charts:
 
 - title: "Polar chart / Radar chart"
   image: "viz_charts/radar-chart.svg"
+  largeImage: "/assets/images/viz_charts/radar-chart.svg"
   text: "It is similar to a usual pie chart, except sectors are equal angles and differ rather in how far each sector extends from the center of the circle. The polar area diagram is used to plot cyclic phenomena."
+  link: 'http://cargocollective.com/jaimemartinez/'
+
   functions:
     - Comparison
     - Trend over time
 
 - title: "Sunburst"
   image: "viz_charts/sunburst-chart.svg"
+  largeImage: "/assets/images/viz_charts/sunburst-chart_3x.png"
   text: "It is used to visualize hierarchical data, depicted by concentric circles. The circle in the centre represents the root node, with the hierarchy moving outward from the center. A segment of the inner circle …"
 
   functions:
@@ -60,6 +76,7 @@ charts:
 
 - title: "Heat map"
   image: "viz_charts/heat-map.svg"
+  largeImage: "/assets/images/viz_charts/heat-map_3x.png"
   text: "In these charts, the individual values contained in a matrix through variations in coloring. They are useful for visualizing variance across multiple variables to display patterns in correlations."
   functions:
     - Comparison
@@ -69,6 +86,7 @@ charts:
 
 - title: "Tree map"
   image: "viz_charts/tree-map.svg"
+  largeImage: "/assets/images/viz_charts/tree-map_3x.png"
   text: "They display hierarchical (tree-structured) data as a set of nested rectangles. Each branch of the tree is given a rectangle, which is then tiled with smaller rectangles representing sub-branches. A leaf node’s rectangle has an area proportional…"
 
   functions:
@@ -77,6 +95,7 @@ charts:
 
 - title: "Bar chart (vertical)"
   image: "viz_charts/bar-chart-y.svg"
+  largeImage: "/assets/images/viz_charts/bar-chart-y_3x.png"
   text: "It is a chart with rectangular bars with lengths proportional to the values that they represent.  One axis of the chart shows the specific categories being compared, and the other axis represents a discrete value."
   functions:
     - Comparison
@@ -84,6 +103,7 @@ charts:
 
 - title: "Pie chart"
   image: "viz_charts/pie-chart-simple.svg"
+  largeImage: "/assets/images/viz_charts/pie-chart-simple_3x.png"
   text: "It is divided into sectors, illustrating numerical proportion. The arc length of each sector, is proportional to the quantity it represents. It cannot show more than a few values and it usually needs a legend."
   functions:
     - Comparison

@@ -1,24 +1,34 @@
 
 .b-charts-type
-  .e-flipper.row.between-xs.center-xs
-    - data.viz_charts.charts.each_with_index do |element, index|
-      .item.col-xs-12.col-sm-5.col-md-4.col-lg-3
-        h3.bx--type-h4.u-uppercase  = element.title
-        .flipper
-          .front
-            = svg_tag "#{element.image}"
+  .e-flipper
+    ul#og-grid.og-grid.row
+      - data.viz_charts.charts.each_with_index do |element, index|
+        li.col-xs-12.col-sm-5.col-md-4.col-lg-3
+          .item
+            h3.bx--type-h4.u-uppercase  = element.title
+            .flipper
+              .front
+                = svg_tag "#{element.image}"
 
-          .back
-            .header
-              p.text
-                = element.text
-                - if element.link
-                  = link_to 'more', element.link, :class => 'more-link'
-
-              - if element.functions
-                .functions
+              .back
+                .header
                   p.text
-                    | Functions
-                  ul.e-list
-                    - element.functions.each do |list|
-                      li = list
+                    = element.text
+                    - if element.link
+                      = link_to ' more', '#',  :class => 'more-link', :data => { :largesrc => element.largeImage , :title => element.title, :description => element.text }
+
+                  - if element.functions
+                    .functions
+                      p.text
+                        | Functions
+                      ul.e-list
+                        - element.functions.each do |list|
+                          li = list
+
+
+= javascript_include_tag 'components/grid.js'
+
+javascript:
+  $(function() {
+    Grid.init();
+  });

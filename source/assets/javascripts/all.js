@@ -11,6 +11,7 @@
 //= require ./vendors/bootstrap-tooltip.js
 //= require ./vendors/jquery.sticky-kit.js
 //= require ./vendors/datatables.js
+//= require ./vendors/modernizr.custom.js
 
 //= require ./blocks/content_nav.js
 //= require ./blocks/responsive_nav.js
