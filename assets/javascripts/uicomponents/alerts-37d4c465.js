@@ -1,1 +1,0 @@
-$(document).ready(function(){var e=$(".lds-alert");if(!e.length)return!1;e.on("click",".close",function(){$(this).closest(e).fadeOut("fast").delay(1e3).fadeIn("fast")})});

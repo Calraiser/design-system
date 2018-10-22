@@ -1,1 +1,0 @@
-$(document).ready(function(){var t=$(".code-actions"),e=t.find(".btn-toggle"),n=$(".code-content");if(!t.length)return!1;e.on("click",function(){$(this).toggleClass("active"),$(this).next().toggleClass("hide"),$(this).parent().parent().find(n).toggleClass("active")})});
