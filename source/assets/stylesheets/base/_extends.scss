@@ -207,6 +207,14 @@
   }
 }
 
+%txt-note-light {
+  @include text-style(16, 20, Telefonicalight, $grey);
+
+  @include media($medium-desktop) {
+    @include text-style(16, 20, Telefonicalight, $grey);
+  }
+}
+
 %txt-small {
   @include text-style(12, 19, Telefonicaregular, $grey);
 

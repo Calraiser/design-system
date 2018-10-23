@@ -44,6 +44,10 @@
   @extend %txt-note;
 }
 
+.bx--type-note_light {
+  @extend %txt-note-light;
+}
+
 .bx--type-subH2 {
   @extend %txt-subtitle-h2;
 }
