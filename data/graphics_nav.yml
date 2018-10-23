@@ -2,7 +2,7 @@
   items:
   - title: "Overview"
     link: "/graphics/overview.html"
+  - title: "Complementary Colour palette"
+    link: "/graphics/colour_palette.html"
   - title: "Visualization rules"
     link: "/graphics/viz-rules.html"
-  - title: "Charts examples"
-    link: "/graphics/charts_examples.html"

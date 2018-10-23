@@ -5,9 +5,9 @@ resources:
     items:
       - subtitle: 'Colour'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
-          adobe illustrator: '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Colourpalette_v1.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Colourpalette_v1.pdf'
+          adobe illustrator: '/download/sketch/20180917_DSdownload_EGG_Colourpalette_v1.zip'
 
       - subtitle: 'Typography'
         files:
@@ -15,14 +15,13 @@ resources:
 
       - subtitle: 'Grid & Layouts'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Gridandlayouts_v1.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Gridandlayouts_v1.pdf'
 
       - subtitle: 'Brand & Logos'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
-          adobe illustrator: '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Brand.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Brand.pdf'
 
 
   #Graphics
@@ -30,94 +29,94 @@ resources:
     items:
       - subtitle: 'Complementary colours'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
-          adobe illustrator: '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_CompColourpalette_v1.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_CompColourpalette_v1.pdf'
+          adobe illustrator: '/download/sketch/20180917_DSdownload_EGG_CompColourpalette_v1.zip'
 
   #UI Elements
   - title: 'UI Elements & Components'
     items:
       - subtitle: 'Alerts'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Alerts.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Alerts.pdf'
 
       - subtitle: 'Accordion'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Accordion.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Accordion.pdf'
 
       - subtitle: 'Buttons'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Buttons_v1.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Buttons_v1.pdf'
 
       - subtitle: 'Buttons Bar'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_ButtonBar.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_ButtonBar.pdf'
 
       - subtitle: 'Checkbox'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Checkbox_v1.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Checkbox_v1.pdf'
 
       - subtitle: 'Combobox'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Combobox.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Combobox.pdf'
 
       - subtitle: 'List'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_List.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_List.pdf'
 
       - subtitle: 'Navigation Icons'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Navigationicons.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Navigationicons.pdf'
 
       - subtitle: 'Pagination'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Pagination.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Pagination.pdf'
 
       - subtitle: 'Pills Bar'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Pillsbar.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Pillsbar.pdf'
 
       - subtitle: 'Popover'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Popover.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Popover.pdf'
 
       - subtitle: 'Radio Buttons'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Radiobuttons.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Radiobuttons.pdf'
 
       - subtitle: 'Switch'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Switch.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Switch.pdf'
 
       - subtitle: 'Tabs'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Tabs.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Tabs.pdf'
 
       - subtitle: 'Text Fields'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_TextFields.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_TextFields.pdf'
 
       - subtitle: 'Tooltips'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Tooltips.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Tooltips.pdf'
 
       - subtitle: 'Zoom'
         files:
-          sketch:            '/download/sketch/COLOUR_PALETTE_download.zip'
-          PDF:               '/download/sketch/COLOUR_PALETTE_download.zip'
+          sketch:            '/download/sketch/20180917_DSdownload_EGG_Zoom.zip'
+          PDF:               '/download/sketch/20180917_DSdownload_EGG_Zoom.pdf'

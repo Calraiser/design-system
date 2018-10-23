@@ -1,6 +1,7 @@
 ---
 graphics:
   overview.html.slim: "/graphics/overview.html.slim"
+  colour_palette.html.slim: "/graphics/colour_palette.html.slim"
   viz-rules.html.slim: "/graphics/viz-rules.html.slim"
   charts_examples.html.slim: "/graphics/charts_examples.html.slim"
 guidelines:
