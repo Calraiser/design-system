@@ -112,6 +112,86 @@ index: true
           li Tutorials (motion).
           li Documentation.
 
+  .content
+    h1.bx--type-h1 Atomic design
+    p.bx--type-p.u-pb-5
+      | Atomic design is a design system which objective is to organize the components in hierarchy to build interfaces and to have a usefull organization. It helps to the developers to build the code in an easy and clear way, facilitating to visualize and translate the design to a code more directly. In addition, it helps designers in the communication and to find and control changes or problems that could appear when the design is being programmed.
+
+    .content-block
+      h2.bx--type-h4
+        | Atomic hierarchy
+      p.bx--type-p
+        | This is the actual hierarchy, from the smallest to the largest element (it is suitable to add more elements if it would be necessary):
+
+    .content-block
+      .row.center-xs.around-xs
+        .col-xs-6.col-sm-2
+          = image_tag 'atomic_design/atom.png', class: 'image-100'
+          p.bx--type-note_light.u-uppercase.u-pt-3
+            | Atom
+
+        .col-xs-6.col-sm-2
+          = image_tag 'atomic_design/molecule.png', class: 'image-100'
+          p.bx--type-note_light.u-uppercase.u-pt-3
+            | Molecule
+
+        .col-xs-6.col-sm-2
+          = image_tag 'atomic_design/organism.png', class: 'image-100'
+          p.bx--type-note_light.u-uppercase.u-pt-3
+            | Organism
+
+        .col-xs-6.col-sm-2
+          = image_tag 'atomic_design/system.png', class: 'image-100'
+          p.bx--type-note_light.u-uppercase.u-pt-3
+            | System
+
+
+    .content-block
+      h2.bx--type-h4.u-text-blue.u-uppercase
+        | Atoms
+      p.bx--type-p
+        | Atoms are  the smallets elements or with a low hierarchy. An atom is an element that does not make sense by itself and needs to cohabit with others atoms to make it. An atom should be named, defined and enclosed for margins to know how is its behaviour cómo se comporta al ser juntado con otros átomos.
+
+    .content-block
+      .row
+        .col-xs-12.col-sm-6.col-lg-4
+          = image_tag 'atomic_design/atom_chart.png', class: 'image-100'
+
+    .content-block
+      h2.bx--type-h4.u-text-blue.u-uppercase
+        | Molecules
+      p.bx--type-p
+        | When two or more atoms come together, they create molecules. A molecule is the element that begins to be used in isolation. A molecule offers enough information to guide an action within the interface. A molecule must be defined and bounded again to be able to know how it behaves in coexistence with its peers.
+
+    .content-block
+      .row
+        .col-xs-12.col-sm-6.col-lg-4
+          = image_tag 'atomic_design/molecule_chart.png', class: 'image-100'
+
+    .content-block
+      h2.bx--type-h4.u-text-blue.u-uppercase
+        | Organisms
+      p.bx--type-p
+        | They are formed by two or more molecules and form a section or part of our product. The organisms offer a complete experience to the user.
+
+    .content-block
+      .row
+        .col-xs-12.col-sm-6.col-lg-4
+          = image_tag 'atomic_design/organism_01.png', class: 'image-100'
+        .col-xs-12.col-sm-6.col-lg-4
+          = image_tag 'atomic_design/organism_02.png', class: 'image-100'
+
+    .content-block
+      h2.bx--type-h4.u-text-blue.u-uppercase
+        | Systems
+      p.bx--type-p
+        | System is everything: any digital product we are building.
+
+    .content-block
+      .row
+        .col-xs-12.col-lg-8
+          = image_tag 'atomic_design/system_template.png', class: 'image-100'
+
   .footer-navigation
     .footer-navigation__previous
       = previous_link(data.title['guidelines'])

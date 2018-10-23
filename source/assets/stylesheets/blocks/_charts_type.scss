@@ -94,8 +94,8 @@ $flipper-width: 300px;
 .og-grid {
   > li {
     height: 350px;
-
     &.og-expander {
+      margin-bottom: 20px;
       .flipper {
         .front {
           transform: rotateY(180deg);
