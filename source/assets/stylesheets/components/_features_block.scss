@@ -1,28 +1,22 @@
 .c-features-block {
   h3 {
     margin-top: 17px;
+
     + .bx--type-p {
       margin-bottom: 36px;
     }
   }
-  .items-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 
+  .items-wrapper {
     padding: 0;
     @include media($mobile) {
       padding: 0 50px;
     }
-    
-    .feature-item {
-      flex: 0 0 100%;
-      margin-bottom: 48px;
-      @include media($mobile) {
-        flex: 0 0 47%;
 
-      }
+    .feature-item {
+      margin-bottom: 48px;
     }
+
     h4 {
       svg {
         margin-right: 5px;

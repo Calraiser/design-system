@@ -2,9 +2,9 @@
   - data.create_own_chart.text_.each_with_index do |element, index|
     h3.bx--type-h4.u-text-blue = element.title
     p.bx--type-p = element.text
-    .items-wrapper
+    .row.around-md.start-sm
       - element.block_text.each do |item|
-        .feature-item.u-pr-3
+        .col-xs-12.col-sm-6.col-md-5.u-py-5
           h4.bx--type-h4
             = svg_tag 'fake-check.svg'
             = item.title

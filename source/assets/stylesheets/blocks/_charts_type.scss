@@ -43,6 +43,7 @@ $flipper-width: 300px;
     .back {
       @include size(100%, 253px);
       padding: 24px 0 0;
+      display: block;
 
       .functions {
         margin-top: 20px;
@@ -91,9 +92,11 @@ $flipper-width: 300px;
   }
 }
 
+
 .og-grid {
   > li {
     height: 350px;
+    list-style: none;
     &.og-expander {
       margin-bottom: 20px;
       .flipper {
@@ -118,54 +121,52 @@ $flipper-width: 300px;
 }
 
 .og-grid .og-expanded .item::after {
-  top: auto;
+
   border: solid transparent;
   content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
+  @include size(0);
+  @include position(absolute, auto null null 50%);
   pointer-events: none;
   border-bottom-color: $grey03;
   border-width: 15px;
-  left: 50%;
   margin: -10px 0 0 -15px;
 }
 
 .og-expander {
-  position: absolute;
+  @include position(absolute, auto null null 0);
+  @include size(100%, 0);
   background: $grey03;
-  top: auto;
-  left: 0;
-  width: 100%;
   max-width: 1200px;
-  margin-top: 20px;
+  margin-top: 147px;
   margin-left: 0;
   text-align: left;
-  height: 0;
   overflow: hidden;
+  @include media($mobile) {
+    margin-top: 20px;
+  }
 }
 
 .og-expander-inner {
-  padding: 50px 50px 0;
+  padding: 20px;
   display: flex;
+  flex-direction: column;
+  @include media($tablet) {
+    padding: 50px 50px 0;
+    flex-direction: row;
+  }
 }
 
 .og-close {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 20px;
-  right: 20px;
+  @include position(absolute, 20px 20px null null);
+  @include size(40px);
   cursor: pointer;
 }
 
 .og-close::after,
 .og-close::before {
   content: '';
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  height: 1px;
+  @include position(absolute, 50% null null null);
+  @include size(100%, 1px);
   background: #888;
   transform: rotate(45deg);
 }
@@ -180,13 +181,27 @@ $flipper-width: 300px;
 }
 
 .og-details {
-  padding: 0 40px 0 20px;
   align-self: flex-start;
+  order: -1;
+  @include media($tablet) {
+    padding: 0 40px 0 20px;
+    order: 1;
+  }
 }
 
 .og-fullimg {
-  margin-top: 60px;
-  margin-right: 40px;
+  margin: 0;
+  padding: 50px 100px;
+  display: none;
+  @include media($tablet) {
+    margin-top: 60px;
+    margin-right: 40px;
+    padding: 0;
+
+  }
+  @include media($mobile) {
+    display: block;
+  }
 }
 
 .og-fullimg img {
@@ -199,48 +214,37 @@ $flipper-width: 300px;
   padding: 40px 0 10px;
   margin-bottom: 10px;
   @extend .bx--type-h4;
+  font-size: rem-calc(20);
+  @include media($mobile) {
+    font-size: rem-calc(30);
+  }
+  @include media($tablet) {
+    font-size: rem-calc(52);
+  }
 }
 
 .og-details p {
   @extend .bx--type-p;
+  font-size: rem-calc(14);
+  @include media($mobile) {
+    font-size: rem-calc(16);
+  }
 }
 
 .og-details a {
-  font-weight: 700;
-  font-size: 16px;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 10px 20px;
-  border: 3px solid #333;
-  display: inline-block;
-  margin: 30px 0 0;
-  outline: none;
-}
 
-.og-details a::before {
-  content: '\2192';
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.og-details a:hover {
-  border-color: #999;
-  color: #999;
 }
 
 .og-loading {
-  width: 20px;
-  height: 20px;
+  @include size(20px);
+  @include position(absolute, 50% null null 50%);
   border-radius: 50%;
   background: #ddd;
   box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   margin: -25px 0 0 -25px;
   animation: loader 0.5s infinite ease-in-out both;
 }
+
 @-webkit-keyframes loader {
   0% {
     background: #ddd;
@@ -284,28 +288,5 @@ $flipper-width: 300px;
   66% {
     background: #ccc;
     box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc;
-  }
-}
-@media screen and (max-width: 830px) {
-  .og-expander h3 {
-    font-size: 32px;
-  }
-
-  .og-expander p {
-    font-size: 13px;
-  }
-
-  .og-expander a {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 650px) {
-  .og-fullimg {
-    display: none;
-  }
-
-  .og-details {
-    float: none;
-    width: 100%;
   }
 }
