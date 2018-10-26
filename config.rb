@@ -16,6 +16,10 @@ activate :livereload
 activate :lunr
 activate :syntax, :inline_theme => Rouge::Themes::Github.new
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-127480418-1'
+end
+
 activate :navtree do |options|
   options.automatic_tree_updates = false # The tree.yml file will be updated automatically when source files are changed.
   options.data_file = 'title.yml' # The data file where our navtree is stored.

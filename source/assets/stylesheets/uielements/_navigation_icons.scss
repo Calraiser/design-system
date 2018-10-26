@@ -59,45 +59,72 @@
       margin-top: 10px;
     }
 
-    svg {
-      fill: $grey07;
+    .icon {
+      color: $grey07;
       transition: $transition-slow;
       cursor: pointer;
 
+      display: inline-block;
+
       &:hover {
-        fill: $grey01;
+        color: $grey01;
+        display: block;
+
+      }
+
+      &.icon-add,
+      &.icon-arrow_drop_down {
+        &:hover {
+          transform: rotate(180deg);
+        }
+      }
+      &.icon-arrow_back {
+        &:hover {
+          animation: bounce 1s infinite;
+        }
       }
     }
 
+
     &.hover {
-      svg {
-        fill: $grey01;
+      .icon {
+        color: $grey01;
       }
     }
 
     &.blue {
-      svg {
-        fill: $blue;
+      .icon {
+        color: $blue;
       }
     }
 
     &.black {
-      svg {
-        fill: $grey;
+      .icon {
+        color: $grey;
       }
     }
 
     &.green {
-      svg {
-        fill: $green;
+      .icon  {
+        color: $green;
       }
     }
 
     &.disabled {
-      svg {
-        fill: $grey07;
+      .icon  {
+        color: $grey07;
         cursor: not-allowed;
       }
     }
+  }
+}
+
+
+@keyframes bounce {
+	0%, 100% {
+    transform: translateX(0);
+  }
+	40% {
+  transform: translateX(-10px);
   }
 }

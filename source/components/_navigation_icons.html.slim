@@ -13,7 +13,7 @@
   .row.center-xs.col-xs-offset-0.col-lg-offset-1
     - items.each_with_index do |element, index|
       div class=(title.present? ? 'col-xs u-pb-6' : "col-xs")
-        = svg_tag element.image
+        i class="icon icon-#{element.title.downcase.split.join('_')}"
         - if title.present?
           p.bx--type-legend
            | #{element.title}
