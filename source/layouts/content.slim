@@ -2,6 +2,13 @@ doctype html
 html
   head
     = partial 'layouts/meta_tags'
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127480418-2">
+    javascript:
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-127480418-2');
     = stylesheet_link_tag :all
     = javascript_include_tag :all
     = favicon_tag 'favicon-32x32.png'
@@ -17,11 +24,5 @@ html
           = partial 'layouts/subnav'
           = yield
           = partial 'blocks/toTop'
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127480418-2">
-          javascript:
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
 
-            gtag('config', 'UA-127480418-2');
           .visel
