@@ -17,7 +17,7 @@ activate :lunr
 activate :syntax, :inline_theme => Rouge::Themes::Github.new
 
 activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-127480418-1'
+  ga.tracking_id = 'UA-127480418-2'
 end
 
 activate :navtree do |options|
