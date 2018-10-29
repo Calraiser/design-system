@@ -17,6 +17,11 @@ html
           = partial 'layouts/subnav'
           = yield
           = partial 'blocks/toTop'
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127480418-1"></script>
-          = google_analytics_tag
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127480418-1">
+          javascript:
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-127480418-1');
           .visel
