@@ -3,7 +3,7 @@ charts:
   image: "viz_charts/pie-chart.svg"
   largeImage: "/assets/images/viz_charts/pie-chart_3x.png"
   text: "It allows you to show symmetrical/asymmetrical tree structures in a consolidated structure. It contains no connected hierarchy, but only displays independant donut rings for comparison."
-  link: '#'
+  link: 'https://beta.observablehq.com/@mbostock/d3-treemap'
   functions:
     - Comparison
     - Part to a whole

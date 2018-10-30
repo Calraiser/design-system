@@ -187,6 +187,10 @@ $flipper-width: 300px;
     padding: 0 40px 0 20px;
     order: 1;
   }
+  a {
+    @extend %txt-links-positive;
+    margin-top: 20px;
+  }
 }
 
 .og-fullimg {

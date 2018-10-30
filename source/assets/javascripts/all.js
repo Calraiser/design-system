@@ -26,5 +26,6 @@
 //= require ./uicomponents/alerts.js
 
 //= require common.js
+//= require component.js
 
 //= require ./blocks/search.js
