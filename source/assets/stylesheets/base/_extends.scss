@@ -17,7 +17,7 @@
 
 //TITLES AND TEXTS
 %txt-links-positive {
-  display: inline-block;
+  display: inline;
   position: relative;
   transition: color 0.3s ease;
   cursor: pointer;
@@ -30,19 +30,19 @@
     height: 1px;
     position: absolute;
     top: 100%; left: 0; right: 100%;
-    background: $grey01;
+    background: $grey;
     transition: right 0.3s ease;
   }
   &:hover,
   &.active {
-    color: $grey01;
+    color: $grey;
     &:before {
       right: 0;
     }
   }
-  @include text-style(16, 22, Telefonicaregular, $grey01);
+  @include text-style(14, 22, Telefonicaregular, $blue);
   @include media($medium-desktop) {
-    @include text-style(16, 24, Telefonicaregular, $grey01);
+    @include text-style(14, 24, Telefonicaregular, $blue);
   }
 }
 
