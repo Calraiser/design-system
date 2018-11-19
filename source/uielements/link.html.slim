@@ -1,0 +1,119 @@
+---
+page_title: Links
+description: Links are used primarily as a navigational element. Links may also change what or how data is displayed (view more, show all). If the action taken by the user will change or manipulate data, use a button.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  .content-block.u-pb-8
+    h2.bx--type-h4.u-text-blue Informational modal
+    p.bx--type-p
+      | They provide platform information and error messages. They are useful in onboardings, explaining certain aspects that the user may not be familiar with.
+
+    ul.e-list
+      li Links should be three words or less.
+      li Text should be consistent with the title of the intended destination, avoid the web address itself.
+
+  .content-block
+    h2.bx--type-h4.u-text-blue States
+    p.bx--type-p
+      | These are the different states you can find links.
+
+    .row.u-pt-9.col-xs-offset-0.col-lg-offset-1
+      .col-xs-6.col-sm-3.u-pb-8
+        p.bx--type-note.u-uppercase.u-pb-4
+          | Default
+        = link_to 'Lorem ipsum dolor', '#', class: 'bx--link'
+      .col-xs-6.col-sm-3.u-pb-8
+        p.bx--type-note.u-uppercase.u-pb-4
+          | On hover
+        = link_to 'Lorem ipsum dolor', '#', class: 'bx--link hover'
+      .col-xs-6.col-sm-3.u-pb-8
+        p.bx--type-note.u-uppercase.u-pb-4
+          | Visited
+        = link_to 'Lorem ipsum dolor', '#', class: 'bx--link visited'
+      .col-xs-6.col-sm-3.u-pb-8
+        p.bx--type-note.u-uppercase.u-pb-4
+          | Disabled
+        = link_to 'Lorem ipsum dolor', '#', { :class => 'bx--link', :tabindex => '-1', :aria => {:disabled => true } }
+
+  .clipboard
+    h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+    .code-wrapper
+      .code-content id="pills"
+        = code("html") do
+          = link_to 'Lorem ipsum dolor', '#', class: 'bx--link'
+        = code("html") do
+          = link_to 'Lorem ipsum dolor', '#', { :class => 'bx--link', :tabindex => '-1', :aria => {:disabled => true } }
+
+      = partial :"components/_code_actions", :locals => { :target => '#pills'}
+
+  .content-block
+    h2.bx--type-h4.u-text-blue Anatomy
+    p.bx--type-note.u-uppercase.u-pt-4
+      | Specifications
+
+    .row.around-xs.u-pt-9
+      .col-xs-6.col-md-3.u-pb-8
+        p.bx--type-note.u-uppercase.u-pb-6
+          | Default
+        .col-xs-9
+          = image_tag 'uicomponents/link/default.jpg', class: 'image-100'
+      .col-xs-6.col-md-3.u-pb-8
+        p.bx--type-note.u-uppercase.u-pb-6
+          | Default
+        .col-xs-9
+          = image_tag 'uicomponents/link/hover.jpg', class: 'image-100'
+      .col-xs-6.col-md-3.u-pb-8
+        p.bx--type-note.u-uppercase.u-pb-6
+          | Default
+        .col-xs-9
+          = image_tag 'uicomponents/link/visited.jpg', class: 'image-100'
+      .col-xs-6.col-md-3.u-pb-8
+        p.bx--type-note.u-uppercase.u-pb-6
+          | Default
+        .col-xs-9
+          = image_tag 'uicomponents/link/disabled.jpg', class: 'image-100'
+
+  .content-block.link-examples
+    h2.bx--type-h4.u-text-blue Examples
+    .row.col-xs-offset-0.col-lg-offset-1.u-pt-9
+      .col-xs-12.col-md-6.u-pb-8
+        h3.bx--type-h4.u-uppercase.text-blue
+          | Sankey Chart
+        .b-charts-type
+          .e-flipper
+            .back
+              .header
+                p.text
+                  | It allows you to show symmetrical/asymmetrical tree structures in a consolidated structure. It contains no connected hierarchy, but only displays independant donut rings for comparison...
+                  a(href="#" class="bx--link") read more
+
+                .functions
+                  p.text
+                    | Functions
+                  ul.e-list
+                    li Comparison
+                    li Part to a whole
+                    li Correlation
+      .col-xs-12.col-md-6.u-pb-8
+        .lds-resources.open
+          .lds-resources__content
+            h3.lds-resources__subtitle Colour
+            ul.e-list
+              li.sketch
+                = link_to 'Download Sketch', '#'
+              li.PDF
+                = link_to 'Download Pdf', '#'
+              li.adobe.illustrator
+                = link_to 'Download Adobe illustrator', '#'
+
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => '20180917_DSdownload_EGG_Tabs', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => '20180917_DSdownload_EGG_Tabs', :pdf => true }

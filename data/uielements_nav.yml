@@ -16,6 +16,8 @@
     link: "/uielements/combobox.html"
   # - title: "Info Navigation"
   #   link: "/uielements/info_navigation.html"
+  - title: "Link"
+    link: "/uielements/link.html"
   - title: "List"
     link: "/uielements/list.html"
   - title: "Navigation Icons"
