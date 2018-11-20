@@ -107,3 +107,30 @@
     margin-bottom: 0;
   }
 }
+
+.alerts-legend {
+  .lds-alert {
+    border-radius: 0;
+    box-shadow: none;
+    &.alert-yellow {
+      .lds-alert__title  {
+        &:before {
+          background: $yellow;
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 0;
+      margin-top: 0;
+      &:before {
+        @include size(30px);
+        position: relative;
+        top: 10px;
+        margin-right: 20px;
+      }
+    }
+    p {
+      margin-left: 50px;
+    }
+  }
+}
