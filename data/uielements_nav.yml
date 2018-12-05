@@ -20,6 +20,8 @@
     link: "/uielements/link.html"
   - title: "List"
     link: "/uielements/list.html"
+  - title: "Modals"
+    link: "/uielements/modals.html"
   - title: "Navigation Icons"
     link: "/uielements/navigation_icons.html"
   - title: "Pagination"
