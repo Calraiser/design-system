@@ -1,19 +1,23 @@
-- text      ||= false
-- heading   ||= false
-- textlabel ||= false
-- check     ||= false
-- secondbtn ||= false
-- btnTxt    ||= false
+- text              ||= false
+- heading           ||= false
+- textlabel         ||= false
+- check             ||= false
+- secondbtn         ||= false
+- btnTxt            ||= false
+- extraclass        ||= false
+- secondbtnTxt      ||= false
+- id                ||= false
+- footerPosition    ||= false
 
 
-.lds-modal (data-modal id="modal-ctc6fyo8dge" role="dialog" aria-modal="true" aria-labelledby="modal-ctc6fyo8dge-label" aria-describedby="modal-ctc6fyo8dge-heading" tabindex="-1")
+.lds-modal (class=(extraclass if extraclass.present?) data-modal id="#{id}" role="dialog" aria-modal="true" aria-labelledby="#{id}-label" aria-describedby="#{id}-heading" tabindex="-1")
   .lds-modal--container
     .lds-modal--header
       - if textlabel
-        p.lds-modal--header__label.bx--type-delta id="modal-ctc6fyo8dge-label"
+        p.lds-modal--header__label id="modal-ctc6fyo8dge-label"
           | #{textlabel}
       - if heading
-        p.lds-modal--header__heading.bx--type-beta id="modal-ctc6fyo8dge-heading"
+        p.lds-modal--header__heading id="modal-ctc6fyo8dge-heading"
          | #{heading}
       - if close
         button.lds-modal--close (type="button" data-modal-close aria-label="close modal")
@@ -23,7 +27,7 @@
       p
         | #{text}
 
-    .lds-modal--footer
+    .lds-modal--footer class="#{footerPosition}"
       - if check
         .actions
           = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Don’t show me again', :label_unselected => 'Don’t show me again' }

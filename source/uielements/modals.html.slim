@@ -6,12 +6,24 @@ layout: content
 index: true
 ---
 
+= javascript_include_tag 'https://unpkg.com/carbon-components/scripts/carbon-components.min.js'
+
+/.Example modal
+= partial :"components/_modal", :locals => { :id => 'example', :close => true, :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Modal dialog title goes here', :textlabel => 'Optional label', :check => true, :btnTxt => 'Save', :secondbtnTxt => 'Cancel', :secondbtn => true, :footerPosition => 'between-xs' }
+
+= partial :"components/_modal", :locals => { :close => true, :id => 'informational', :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Welcome to LUCA Comms', :check => true, :btnTxt => 'Go it!', :footerPosition => 'between-xs' }
+
+= partial :"components/_modal", :locals => { :close => true, :id=> 'transactional', :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Explore the full functionalities', :textlabel => 'Welcome to LUCA', :btnTxt => 'Go ahead!' , :secondbtnTxt => 'Skip', :secondbtn => true, :footerPosition => 'end-xs'  }
+
+
 .content
   h1.bx--type-h1 = current_page.data.page_title
   p.bx--type-p = current_page.data.description
 
   .content-block.u-pb-8
-    = partial :"components/_modal", :locals => { :close => true, :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Modal dialog title goes here', :textlabel => 'Optional label', :check => true, :btnTxt => 'Secondary', :secondbtnTxt => 'Primary', :secondbtn => true }
+    h2.bx--type-h4.u-text-blue Example modal
+    .u-pt-6.u-text-center
+      button.c-btn.btn-primary (type="button" data-modal-target="#example") Show modal
 
     .clipboard
       h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
@@ -56,24 +68,34 @@ index: true
     p.bx--type-p.u-pb-6
       | They provide platform information and error messages. They are useful in onboardings, explaining certain aspects that the user may not be familiar with. If the information provided is subject to be repeatded we can included a don’t show again checkbox component.
 
-    = partial :"components/_modal", :locals => { :close => true, :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Welcome to LUCA Comms', :check => true, :btnTxt => 'Go it!' }
+    .u-text-center
+      button.c-btn.btn-primary (type="button" data-modal-target="#informational") Show modal
+
 
   .content-block
     h2.bx--type-h4.u-text-blue Transactional
     p.bx--type-p.u-pb-6
       | It is used when the user needs to make a deliberate choice, asking the user to make a decision that will affect any future actions within the application, like agreeing to terms and conditions before continuing or deleting any kind of data.
 
-    = partial :"components/_modal", :locals => { :close => true, :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Explore the full functionalities', :textlabel => 'Welcome to LUCA', :btnTxt => 'Go ahead!' , :secondbtnTxt => 'Skip', :secondbtn => true }
+    .u-text-center
+      button.c-btn.btn-primary (type="button" data-modal-target="#transactional") Show modal
 
+
+
+  / .content-block
+  /   h2.bx--type-h4.u-text-blue Input modal
+  /   p.bx--type-p.u-pb-6
+  /     | It is used when the user needs to make a deliberate choice, asking the user to make a decision that will affect any future actions within the application, like agreeing to terms.
+  /
+  /   = partial 'components/_input_modal'
+  /
 
   .content-block
-    h2.bx--type-h4.u-text-blue Input modal
+    h2.bx--type-h4.u-text-blue Setting modal
     p.bx--type-p.u-pb-6
-      | It is used when the user needs to make a deliberate choice, asking the user to make a decision that will affect any future actions within the application, like agreeing to terms.
+      | It is used when the user needs to make a deliberate choice, asking the user to make a decision that will affect any future actions within the application, like agreeing to terms
 
-    = partial 'components/_input_modal'
-
-
+    = partial 'components/_setting_modal'
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => '20180917_DSdownload_EGG_Tabs', :sketch => true }

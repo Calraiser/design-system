@@ -17,6 +17,7 @@
     pointer-events: none;
     text-transform: uppercase;
     display: inline-block;
+    text-align: left;
   }
 
   &__input {
@@ -65,6 +66,7 @@
 
     &[type="email"] {
       padding-left: 22px;
+      padding-right: 3px;
       background: image-url('ic-envelope.svg') no-repeat;
       background-position: 0 17px;
     }
