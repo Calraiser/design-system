@@ -33,7 +33,7 @@
           = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Don’t show me again', :label_unselected => 'Don’t show me again' }
       .actions
         - if secondbtn
-          button.c-btn.btn-primary.inverse (type="button" data-modal-close)
+          button.c-btn.btn-medium.btn-primary.inverse (type="button" data-modal-close)
             | #{secondbtnTxt}
-        button.c-btn.btn-primary (type="button"  data-modal-primary-focus)
+        button.c-btn.btn-medium.btn-primary (type="button"  data-modal-primary-focus)
          | #{btnTxt}

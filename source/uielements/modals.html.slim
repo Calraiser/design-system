@@ -29,36 +29,9 @@ index: true
       h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
       .code-wrapper
         .code-content id="combobox"
-          = code("html") do
-            | <div aria-describedby="modal-ctc6fyo8dge-heading" aria-labelledby="modal-ctc6fyo8dge-label" aria-modal="true" class="lds-modal" data-modal="" id="modal-ctc6fyo8dge" role="dialog" tabindex="-1">
-                <div class="lds-modal--container">
-                  <div class="lds-modal--header">
-                    <p class="lds-modal--header__label bx--type-delta" id="modal-ctc6fyo8dge-label">Optional label</p>
-                    <p class="lds-modal--header__heading bx--type-beta" id="modal-ctc6fyo8dge-heading">Modal dialog title goes here</p>
-                    <button aria-label="close modal" class="lds-modal--close" data-modal-close="" type="button">
-                      <div class="icon-close"></div>
-                    </button>
-                  </div>
-                  <div class="lds-modal--content">
-                    <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. </p>
-                  </div>
-                  <div class="lds-modal--footer">
-                    <div class="actions">
-                      <div class="lds--custom-input checkbox">
-                        <input class="lds--checkbox-input" id="40" name="set-name" type="checkbox">
-                        <label class="lds--checkbox-label" for="40">
-                          <span class="label-on bx--type-label selected"> Don’t show me again</span>
-                          <span class="label-off bx--type-label">Don’t show me again</span>
-                        </label>
-                      </div>
-                    </div>
-                    <div class="actions">
-                      <button class="c-btn btn-primary inverse" data-modal-close="" type="button">Primary</button>
-                      <button class="c-btn btn-primary" data-modal-primary-focus="" type="button">&nbsp;Secondary</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          / = code("html") do
+          /   :preserve
+          /     = partial :"components/_modal", :locals => { :id => 'example', :close => true, :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Modal dialog title goes here', :textlabel => 'Optional label', :check => true, :btnTxt => 'Save', :secondbtnTxt => 'Cancel', :secondbtn => true, :footerPosition => 'between-xs' }
 
 
         = partial :"components/_code_actions", :locals => { :target => '#combobox'}

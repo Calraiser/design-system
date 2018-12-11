@@ -17,5 +17,5 @@ home_nav:
 - title: "Resources & Dowloads"
   image: "ic-downloads-xl.svg"
   imagexs: "ic-downloads-xs.svg"
-  link: "/resources/downloads.html"
+  link: "/resources/overview.html"
   text: "These resources help you design LUCA products that match the LUCA design language..."
