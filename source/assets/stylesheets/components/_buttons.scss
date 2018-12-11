@@ -34,6 +34,7 @@ $button-colors: (
   @include size(auto, $btn-height);
   @include padding(null 20px);
 	font-size: rem-calc(14);
+	line-height: rem-calc(35);
 
   overflow: hidden;
   vertical-align: middle;
