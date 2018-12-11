@@ -1,0 +1,22 @@
+- text      ||= false
+- heading   ||= false
+- textlabel ||= false
+- check     ||= false
+- secondbtn ||= false
+- btnTxt    ||= false
+
+
+.lds-modal.login-modal.is-static (data-modal id="modal-ctc6fyo8dge" role="dialog" aria-modal="true" aria-labelledby="modal-ctc6fyo8dge-label" aria-describedby="modal-ctc6fyo8dge-heading" tabindex="-1")
+  .lds-modal--container
+    .lds-modal--header
+
+      p.lds-modal--header__label
+        | Bienvenido
+
+    .lds-modal--content
+      = partial :"components/_text_fields", :locals => { :text => 'Email', :type => 'email', :placeholder => 'Enter email', :ico => 'mail' }
+      = partial :"components/_text_fields", :locals => { :text => 'Password', :type => 'password', :placeholder => 'Enter password', }
+
+    .lds-modal--footer
+      button.c-btn.btn-primary.btn-large.inverse type="button"
+        | Login

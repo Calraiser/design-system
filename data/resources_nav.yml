@@ -1,6 +1,6 @@
 - header: "Resources & Downloads"
   items:
-  # - title: "Overview"
-  #   link: "/resources/overview.html"
+  - title: "Overview"
+    link: "/resources/overview.html"
   - title: "Downloads"
     link: "/resources/downloads.html"
