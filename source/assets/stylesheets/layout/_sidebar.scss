@@ -78,11 +78,17 @@ $sidebar-width: 105px;
       }
       &.active {
         @extend %active_svg;
+        .name-menu {
+          color: $blue;
+        }
       }
       a {
-
+        display: block;
         &:hover, &.active {
           @extend %active_svg;
+          + .name-menu {
+            color: $blue;
+          }
         }
 
       }
@@ -97,6 +103,16 @@ $sidebar-width: 105px;
     .bx--type-legend {
       margin-bottom: 42px;
       font-size: rem-calc(11);
+      display: none;
+      @include media($mobile) {
+        display: block;
+      }
+    }
+    .name-menu {
+      @extend %txt-label;
+      display: block;
+      margin-top: 5px;
+      color: $grey02;
       display: none;
       @include media($mobile) {
         display: block;

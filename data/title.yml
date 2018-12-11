@@ -13,8 +13,8 @@ guidelines:
   illustrations.html.slim: "/guidelines/illustrations.html.slim"
   brand.html.slim: "/guidelines/brand.html.slim"
 resources:
-  downloads.html.slim: "/resources/downloads.html.slim"
   overview.html.slim: "/resources/overview.html.slim"
+  downloads.html.slim: "/resources/downloads.html.slim"
 uielements:
   overview.html.slim: "/uielements/overview.html.slim"
   accordion.html.slim: "/uielements/accordion.html.slim"

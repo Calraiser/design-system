@@ -13,3 +13,9 @@ index: true
 
   picture.image-block
     = image_tag 'resources-overview.jpg'
+
+  .footer-navigation
+    .footer-navigation__previous
+      = previous_link(data.title['resources'])
+    .footer-navigation__next
+      = next_link(data.title['resources'])

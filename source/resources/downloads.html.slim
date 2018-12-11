@@ -9,10 +9,11 @@ index: true
 .content
   h1.bx--type-h1 = current_page.data.page_title
 
-  p.bx--type-p.u-pb-5 = current_page.data.description
-
-  picture.image-block
-    = image_tag 'resources-overview.jpg'
-
   .content-block
     = partial :"blocks/_downloads", :locals => { :downloads => data.downloads.resources }
+
+  .footer-navigation
+    .footer-navigation__previous
+      = previous_link(data.title['resources'])
+    .footer-navigation__next
+      = next_link(data.title['resources'])

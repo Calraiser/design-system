@@ -8,16 +8,28 @@
     h2.bx--type-legend.u-uppercase.u-text-blue Design System
 
     / Guidelines
-    li = nav_link svg_tag('ic-guidelines-xs.svg'), '#', 'guidelines',  active_if: %r{^/guidelines/}
+    li
+      = nav_link svg_tag('ic-guidelines-xs.svg'), '#', 'guidelines',  active_if: %r{^/guidelines/}
+      span.name-menu
+        | Guidelines
 
     / Graphics
-    li = nav_link svg_tag('ic-graphics-vizrules-xs.svg'), '#', 'graphics', active_if: %r{^/graphics/}
+    li
+      = nav_link svg_tag('ic-graphics-vizrules-xs.svg'), '#', 'graphics', active_if: %r{^/graphics/}
+      span.name-menu
+        | Graphics
 
     / UI Elements
-    li = nav_link svg_tag('ic-uielements-xs.svg'), '#', 'uielements', active_if: %r{^/uielements/}
+    li
+      = nav_link svg_tag('ic-uielements-xs.svg'), '#', 'uielements', active_if: %r{^/uielements/}
+      span.name-menu
+        | UI Elements
 
     / Resources
-    li = nav_link svg_tag('ic-downloads-xs.svg'), '#', 'resources', active_if: %r{^/resources/}
+    li
+      = nav_link svg_tag('ic-downloads-xs.svg'), '#', 'resources', active_if: %r{^/resources/}
+      span.name-menu
+        | Resources
 
   .footer-sidebar
     = svg_tag 'brand_logos/logo_telefonica_footer.svg'
