@@ -2,5 +2,9 @@
   items:
   - title: "Overview"
     link: "/resources/overview.html"
-  - title: "Downloads"
-    link: "/resources/downloads.html"
+  - title: "Guidelines"
+    link: "/resources/guidelines.html"
+  - title: "Graphics & Viz rules"
+    link: "/resources/graphics.html"
+  - title: "UI Elements & Components"
+    link: "/resources/uielements.html"
