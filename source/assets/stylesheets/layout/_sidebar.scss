@@ -64,7 +64,7 @@ $sidebar-width: 105px;
   .sidebar-menu {
     -webkit-padding-start: 0;
     @include media($mobile) {
-      margin-top: 60px;
+      margin-top: 80px;
     }
     li {
       list-style: none;

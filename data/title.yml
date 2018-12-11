@@ -15,6 +15,10 @@ guidelines:
 resources:
   overview.html.slim: "/resources/overview.html.slim"
   downloads.html.slim: "/resources/downloads.html.slim"
+  guidelines.html.slim: "/resources/guidelines.html.slim"
+  graphics.html.slim: "/resources/graphics.html.slim"
+  components.html.slim: "/resources/components.html.slim"
+  external_resources.html.slim: "/resources/external_resources.html.slim"
 uielements:
   overview.html.slim: "/uielements/overview.html.slim"
   accordion.html.slim: "/uielements/accordion.html.slim"

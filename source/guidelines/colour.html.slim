@@ -40,19 +40,10 @@ index: true
 
       = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grey.colors }
 
-  .content-block.color-usage
-    h2.bx--type-h4.u-text-blue Colour usage and palettes
-    p.bx--type-h4
-      | Primary colours and variants
-
-    .color-usage-content
-      = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.green.colors, :extraclass => 'main-palette'}
-      = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.blue.colors, :extraclass => 'main-palette blue-variant'}
-
   .content-block
     h2.bx--type-h4.u-text-blue Primary colours
     p.bx--type-h4
-      | Status colour  (for use on components that require a different state)
+      | Status colour (for use on components that require a different state)
 
     .content-block
       .row.center-xs
