@@ -31,10 +31,10 @@ $button-colors: (
   position: relative;
   display: inline-block;
   border-radius: 42px;
-  @include size(auto, $btn-height);
+	padding: .540rem .75rem;
   @include padding(null 20px);
 	font-size: rem-calc(14);
-	line-height: rem-calc(35);
+	line-height: 1.5;
 
   overflow: hidden;
   vertical-align: middle;
