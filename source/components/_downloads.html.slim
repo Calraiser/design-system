@@ -1,25 +1,44 @@
 
-- pdf    ||= false
-- sketch ||= false
-- typo   ||= false
-- ai     ||= false
+- pdf         ||= false
+- sketch      ||= false
+- typo        ||= false
+- ai          ||= false
+- zip         ||= false
+- customTitle ||= false
+
+
 
 - if pdf
   .action-item
-    = svg_tag 'ic-pdf.svg'
-    = link_to 'Download PDF', '/download/pdf/' + name + '.pdf' , download:name, class:'link'
+    a(href="/download/pdf/#{name}.pdf", download="#{name}" class="link")
+      = svg_tag 'ic-pdf.svg'
+      span
+        | Download PDF
 
 - if sketch
   .action-item
-    = svg_tag 'ic-sketch.svg'
-    = link_to 'Download Sketch', '/download/sketch/' + name + '.zip' , download:name, class:'link'
+    a(href="/download/sketch/#{name}.zip", download="#{name}" class="link")
+      = svg_tag 'ic-sketch.svg'
+      span
+        | Download Sketch
 
 - if typo
   .action-item
-    = svg_tag 'ic-typography.svg'
-    = link_to 'Download Typography', '/download/typography/' + name + '.zip', download:name, class:'link'
+    a(href="/download/typography/#{name}.zip", download="#{name}" class="link")
+      = svg_tag 'ic-pdf.svg'
+      span
+        | Download Typography
+
+- if zip
+  .action-item
+    a(href="/download/zip/#{name}.zip", download="#{name}" class="link")
+      = svg_tag 'ic-zip.svg'
+      span
+        | #{customTitle}
 
 - if ai
   .action-item
-    = image_tag 'ai_icon.png', class: 'ai-ico'
-    = link_to 'Download Illustrator', '/download/ai/' + name + '.zip', download:name, class:'link'
+    a(href="/download/ai/#{name}.zip", download="#{name}" class="link")
+      = image_tag 'ai_icon.png', class: 'ai-ico'
+      span
+        | Download Illustrator

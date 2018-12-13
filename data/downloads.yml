@@ -1,7 +1,7 @@
 resources:
 
   # Guidelines
-  - title: 'guidelines'
+  - title: 'Guidelines'
     items:
       - subtitle: 'Colour'
         files:
@@ -22,6 +22,7 @@ resources:
         files:
           Sketch:            '/download/Sketch/20180917_DSdownload_EGG_Brand.zip'
           PDF:               '/download/Sketch/20180917_DSdownload_EGG_Brand.pdf'
+          ZIP:               '/download/zip/logos_LUCA_TEF.pdf'
 
 
   #Graphics
