@@ -73,6 +73,12 @@
         background-size: 22px auto;
       }
     }
+    &.ZIP {
+      &:before {
+        background-image: image-url('ic-zip_02.svg');
+        background-size: 19px auto;
+      }
+    }
 
     [a*="pdf"] {
       text-transform: uppercase;
