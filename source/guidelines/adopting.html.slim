@@ -126,12 +126,12 @@ index: true
     .content-block
       .row.center-xs.around-xs
         .col-xs-6.col-sm-2
-          = image_tag 'atomic_design/atom.png', class: 'image-100'
+          = image_tag 'atomic_design/atom@3x.png', class: 'image-100'
           p.bx--type-note_light.u-uppercase.u-pt-3
             | Atom
 
         .col-xs-6.col-sm-2
-          = image_tag 'atomic_design/molecule.png', class: 'image-100'
+          = image_tag 'atomic_design/molecule@3x.png', class: 'image-100'
           p.bx--type-note_light.u-uppercase.u-pt-3
             | Molecule
 
@@ -141,7 +141,7 @@ index: true
             | Organism
 
         .col-xs-6.col-sm-2
-          = image_tag 'atomic_design/system.png', class: 'image-100'
+          = image_tag 'atomic_design/system@3x.png', class: 'image-100'
           p.bx--type-note_light.u-uppercase.u-pt-3
             | System
 
@@ -155,7 +155,9 @@ index: true
     .content-block
       .row
         .col-xs-12.col-sm-4.col-lg-2
-          = image_tag 'atomic_design/atom_chart.png', class: 'image-100'
+          = link_to 'ok', '#', class: 'c-btn btn-primary btn-small'
+          p.bx--type-p.small.u-pt-3
+            | Atom (button)
 
     .content-block
       h2.bx--type-h4.u-text-blue.u-uppercase
@@ -164,9 +166,11 @@ index: true
         | When two or more atoms come together, they create molecules. A molecule is the element that begins to be used in isolation. A molecule offers enough information to guide an action within the interface. A molecule must be defined and bounded again to be able to know how it behaves in coexistence with its peers.
 
     .content-block
-      .row
-        .col-xs-12.col-sm-4.col-lg-2
-          = image_tag 'atomic_design/molecule_chart.png', class: 'image-100'
+      .row.actions
+        = link_to 'cancel', '#', class: 'c-btn btn-primary inverse btn-small'
+        = link_to 'ok', '#', class: 'c-btn btn-primary btn-small'
+      p.bx--type-p.small.u-pt-3
+        | Atom (button) + Atom(button) = Molecule
 
     .content-block
       h2.bx--type-h4.u-text-blue.u-uppercase
@@ -176,19 +180,22 @@ index: true
 
     .content-block
       .row
-        .col-xs-12.col-sm-4.col-lg-4
-          = image_tag 'atomic_design/organism_01.png', class: 'image-100'
+        .col-xs-12
+          == partial :"components/_modal", :locals => { :id => 'example', :close => true, :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Welcome to your account', :textlabel => 'LUCA Comms', :check => false, :btnTxt => 'Ok', :secondbtnTxt => 'Cancel', :secondbtn => true, :footerPosition => 'end-xs', :extraclass => 'is-static' }
+      p.bx--type-p.small.u-pt-3
+        | Molecule(text) + Molecule(action buttons) = Organism(modal)
+
 
     .content-block
       h2.bx--type-h4.u-text-blue.u-uppercase
-        | Systems
+        | Template
       p.bx--type-p
-        | System is everything: any digital product we are building.
+        | Templates are formed by molecules into a page layout, articulating the system, which is everything: any digital product we are building.
 
     .content-block
       .row
-        .col-xs-12.col-lg-10
-          = image_tag 'atomic_design/system_template.png', class: 'image-100'
+        .col-xs-12.col-lg-8
+          = image_tag 'atomic_design/template@3x.jpg', class: 'image-100'
 
   .footer-navigation
     .footer-navigation__previous

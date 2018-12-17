@@ -19,11 +19,7 @@ $button-colors: (
   text-align: left;
   @include padding(null 20px);
   .ico {
-    @include size(auto, 20px);
-    @include padding(20px null null 20px);
-    margin-left: 20px;
-    display: inline-block;
-    float: right;
+    @include padding(null null null 20px);
   }
 }
 
@@ -101,25 +97,16 @@ $button-colors: (
   }
   &.has-icon {
     @extend %btn-primary-ico;
-
+		display: flex;
+		justify-content: space-between;
+		.icon-check {
+			font-size: rem-calc(17);
+		}
 		&.btn-small:not(.inverse) {
 			width: 87px;
 			padding-right: 12px;
 			padding-left: 15px;
 		}
-    .ico-check {
-      background: image-url('ic-check-green.svg') no-repeat 90% 50%;
-    }
-    &:hover, &.hover {
-      .ico-check {
-        background: image-url('ic-check-white.svg') no-repeat 90% 50%;
-      }
-    }
-    &.disabled {
-      .ico-check {
-        background: image-url('ic-check-grey.svg') no-repeat 90% 50%;
-      }
-    }
   }
 }
 
@@ -141,15 +128,25 @@ $button-colors: (
   color: $blue;
   border: 2px solid $blue;
   background: transparent;
+	&.disabled {
+		.icon-expand_more {
+			border-left: 2px solid $grey !important;
+		}
+	}
   &:hover, &.hover {
     color: $white;
     background: $blue;
+		border: 2px solid $white;
+		.icon-expand_more {
+			border-left: 2px solid $white !important;
+		}
   }
   &.has-icon {
     text-align: left;
     padding: 0 0 0 20px;
     display: flex;
 		justify-content: space-between;
+		align-items: center;
     .ico {
       padding-left: 20px;
     }
@@ -157,25 +154,15 @@ $button-colors: (
       flex: 1;
 
     }
-    .ico-caret {
-      background: image-url('ic-caret-blue.svg') no-repeat 50% 50%;
+    .icon-expand_more {
       display: block;
-      padding: 0 24px;
+      padding: 5px 17px 0;
       order: 1;
       border-left: 2px solid $blue;
-
-    }
-    &:hover, &.hover {
-      .ico-caret {
-        background: image-url('ic-caret-white.svg') no-repeat 50% 50%;
-        border-left: 2px solid $white;
-      }
-    }
-    &.disabled {
-      .ico-caret {
-        background: image-url('ic-caret-grey.svg') no-repeat 50% 50%;
-        border-left: 2px solid $grey;
-      }
+			display: flex;
+			align-items: center;
+			height: 31px;
+			font-size: rem-calc(12);
     }
 
 		&.btn-large {
@@ -188,6 +175,12 @@ $button-colors: (
 			padding-left: 15px;
 			width: 99px;
 
+		}
+		&.btn-medium,
+		&.btn-small {
+			.icon-expand_more {
+				padding: 5px 9px 0 !important;
+			}
 		}
   }
 }
@@ -208,20 +201,12 @@ $button-colors: (
   }
   &.has-icon {
     @extend %btn-primary-ico;
-    .ico-close {
-      background: image-url('ic-close-black.svg') no-repeat 90% 50%;
-    }
-
-    &:hover, &.hover {
-      .ico-close {
-        background: image-url('ic-close-white.svg') no-repeat 90% 50%;
-      }
-    }
-    &.disabled {
-      .ico-close {
-        background: image-url('ic-close-grey.svg') no-repeat 90% 50%;
-      }
-    }
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.icon-ic-close {
+			font-size: rem-calc(12);
+		}
   }
 }
 
@@ -238,6 +223,13 @@ $button-colors: (
     border: 1px solid rgba(0,0,0,0.1);
   }
 }
+
+.actions {
+	.c-btn + .c-btn {
+		margin-left: 15px;
+	}
+}
+
 
 /**
  * Color variations. To add new color variation you have to add new value in
