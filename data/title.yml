@@ -14,7 +14,6 @@ guidelines:
   brand.html.slim: "/guidelines/brand.html.slim"
 resources:
   overview.html.slim: "/resources/overview.html.slim"
-  downloads.html.slim: "/resources/downloads.html.slim"
   guidelines.html.slim: "/resources/guidelines.html.slim"
   graphics.html.slim: "/resources/graphics.html.slim"
   components.html.slim: "/resources/components.html.slim"
