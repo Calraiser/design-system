@@ -76,6 +76,9 @@ $sidebar-width: 105px;
         display: block;
 
       }
+      .name-menu {
+        transition: $transition-slow;
+      }
       &.active {
         @extend %active_svg;
         .name-menu {

@@ -64,10 +64,10 @@ $button-colors: (
   }
   &.disabled {
     opacity: 0.3 !important;
-    cursor: default;
     border: 2px solid $grey !important;
     color: $grey !important;
 		cursor: not-allowed;
+		pointer-events:none;
     &:after {
       display: none;
     }
@@ -99,6 +99,7 @@ $button-colors: (
     @extend %btn-primary-ico;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		.icon-check {
 			font-size: rem-calc(17);
 		}
@@ -179,7 +180,7 @@ $button-colors: (
 		&.btn-medium,
 		&.btn-small {
 			.icon-expand_more {
-				padding: 5px 9px 0 !important;
+				padding: 5px 11px 0 !important;
 			}
 		}
   }
