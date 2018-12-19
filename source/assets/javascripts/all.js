@@ -6,6 +6,7 @@
 //= require ./vendors/chart.min.js
 //= require ./vendors/chartjs-deferred.min.js
 //= require ./vendors/lunr.js
+//= require ./vendors/jquery.progressScroll.js
 
 //= require ./vendors/clipboard.min.js
 //= require ./vendors/bootstrap-tooltip.js
@@ -17,8 +18,10 @@
 //= require ./blocks/responsive_nav.js
 //= require ./blocks/resources.js
 
+//= require ./components/scrollTop.js
 //= require ./components/code_block.js
 //= require ./components/component_slider.js
+
 //= require ./uicomponents/combobox.js
 //= require ./uicomponents/info_navigation.js
 //= require ./uicomponents/accordion.js

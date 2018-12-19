@@ -70,25 +70,4 @@ $(document).ready(function() {
     hideTooltip(e.trigger);
   });
 
-
-  // Scroll Totop
-  var offset = 600,
-      duration = 300,
-      btnTop = $('.toTop');
-
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > offset) {
-      btnTop.fadeIn(duration);
-    } else {
-      btnTop.fadeOut(duration);
-    }
-  });
-
-  btnTop.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: 0
-    }, duration);
-    return false;
-  })
 });
