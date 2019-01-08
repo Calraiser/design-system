@@ -40,6 +40,7 @@ end
 page '/*.xml',  layout: false
 page '/*.json', layout: false
 page '/*.txt',  layout: false
+page '/source/404.html', directory_index: false
 
 configure :build do
   activate :minify_css
@@ -103,8 +104,8 @@ helpers do
 
 
   def strip_trailing_zero(n)
-  n.to_s.sub(/\.?0+$/, '')
-end
+    n.to_s.sub(/\.?0+$/, '')
+  end
 
   def active_class(page)
     current_page.url == page ? {:class => 'active'} : {}

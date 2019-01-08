@@ -3,6 +3,8 @@
 Redirect 301 <%= old %> <%= data.htaccess.web.url %><%= new %>
 <% end %>
 
+ErrorDocument 404 /source/404.html
+
 # REWRITE - redirect to www. page
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^<%= data.htaccess.web.domain %>$
