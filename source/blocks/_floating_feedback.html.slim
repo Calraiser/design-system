@@ -1,0 +1,16 @@
+button data-modal-target="#feedback" type="button" class="survey cancelled-out-taborder"
+  .floating-feedback
+    = svg_tag 'floating_feedback.svg'
+
+
+.bx--modal#feedback (data-modal role="dialog" aria-modal="true" aria-labelledby="feedback-label" aria-describedby="feedback-heading" tabindex="-1")
+  .bx--modal-container
+    .bx--modal-header
+      button.bx--modal-close (type="button" data-modal-close aria-label="close modal"  data-modal-primary-focus)
+        <svg class="bx--modal-close__icon" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+         <title>Close Modal</title>
+         <path d="M6.32 5L10 8.68 8.68 10 5 6.32 1.32 10 0 8.68 3.68 5 0 1.32 1.32 0 5 3.68 8.68 0 10 1.32 6.32 5z" fill-rule="nonzero"
+         />
+    .bx--modal-content
+      javascript:
+        (function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdyKesb_2FP2KXdmO_2FWrh8nXl_2FGj_2FdNalc_2BUU9sImxyQ7TF.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");

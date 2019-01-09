@@ -1,0 +1,19 @@
+.survey {
+  appearance: none;
+  border: none;
+  background: none;
+}
+
+.floating-feedback {
+  @include position(fixed, 0 null 0 15px);
+  @include size(21px, 70px);
+  margin: auto;
+  cursor: pointer;
+  svg {
+    fill: $grey;
+  }
+}
+
+.floating_feedback--modal {
+  display: none;
+}

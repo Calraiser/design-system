@@ -15,5 +15,13 @@ html
   body class="homepage"
     = partial 'layouts/logo'
     = yield
+    = partial 'blocks/floating_feedback'
     = partial 'layouts/footer'
     = javascript_include_tag :all
+    = javascript_include_tag 'https://unpkg.com/carbon-components/scripts/carbon-components.min.js'
+    = javascript_include_tag 'https://unpkg.com/scrollreveal'
+
+    = javascript_include_tag 'vendors/jquery.mousewheel.min.js'
+    = javascript_include_tag 'vendors/jquery.easing.js'
+    = javascript_include_tag 'vendors/jquery.singular.js'
+    = javascript_include_tag 'components/scrollDown.js'
