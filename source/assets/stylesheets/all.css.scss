@@ -80,6 +80,7 @@
 
 // 9. blocks/
 @import "blocks/charts_type";
+@import "blocks/floating_feedback";
 
 // 10. uielements/
 @import "uielements/switch";
@@ -102,3 +103,6 @@
 
 // 11. charts/
 @import "graphics/line_chart";
+
+// 12. carbon-components/
+@import '../node_modules/carbon-components/scss/components/modal/modal';

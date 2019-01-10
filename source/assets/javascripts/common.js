@@ -14,6 +14,15 @@ var data_embed = {};
 
 $(document).ready(function() {
 
+  // Floating Feedback Tooltip
+  $('.floating-feedback').on('mouseenter', function(e) {
+    e.preventDefault();
+    $(this)
+    .attr('data_tooltip', 'Give Feedback')
+    .attr('data_tooltip_pos','left')
+    .tooltip('show');
+  });
+
   var $previous = $('.footer-navigation__previous');
   var $next = $('.footer-navigation__next');
 
@@ -70,4 +79,25 @@ $(document).ready(function() {
     hideTooltip(e.trigger);
   });
 
+
+  // Scroll Totop
+  var offset = 600,
+      duration = 300,
+      btnTop = $('.toTop');
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > offset) {
+      btnTop.fadeIn(duration);
+    } else {
+      btnTop.fadeOut(duration);
+    }
+  });
+
+  btnTop.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: 0
+    }, duration);
+    return false;
+  })
 });

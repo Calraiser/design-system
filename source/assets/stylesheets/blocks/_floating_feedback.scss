@@ -1,0 +1,50 @@
+.survey {
+  appearance: none;
+  border: none;
+  background: none;
+}
+
+// Feedback Modal
+#feedback {
+  .bx--modal-close {
+    svg {
+      transition: $transition-slow;
+      &:hover {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  .bx--modal-container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .bx--modal-content {
+    overflow-y: hidden;
+    margin-bottom: 5px;
+  }
+  .bx--modal-header {
+    margin-bottom: 0;
+  }
+}
+
+.floating-feedback {
+  @include position(fixed, 0 25px 0 null);
+  @include size(21px, 70px);
+  margin: auto;
+  cursor: pointer;
+  svg {
+    fill: $grey;
+  }
+  &__blogo {
+    width: 120px;
+    float: right;
+    margin-top: 10px !important;
+  }
+  &__tlogo {
+    width: 90px;
+  }
+}
+
+.floating_feedback--modal {
+  display: none;
+}
