@@ -19,7 +19,7 @@ $(document).ready(function() {
     e.preventDefault();
     $(this)
     .attr('data_tooltip', 'Give Feedback')
-    .attr('data_tooltip_pos','right')
+    .attr('data_tooltip_pos','left')
     .tooltip('show');
   });
 

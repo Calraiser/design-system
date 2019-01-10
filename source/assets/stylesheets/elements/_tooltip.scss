@@ -1,6 +1,6 @@
 :root {
-  --tooltip-color: snow;
-  --tooltip-background: #4A4A4A;
+  --tooltip-color: $white;
+  --tooltip-background: $grey;
   --tooltip-border-radius: 2px;
   --tooltip-font-size: 14px;
   --tooltip-padding: 3px 3px 7px;
@@ -20,6 +20,44 @@
 
     transition: 0.3s ease;
     transition-property: opacity, transform, visibility;
+  }
+
+  &[data_tooltip_pos = 'right'] {
+    &:before,
+    &:after {
+      top: 50%;
+      right: 100%;
+      border-right-color: $grey07;
+      border-width: 6px;
+      height: 30px;
+      margin-left: 25px;
+
+      transform: translateY(-50%);
+    }
+
+    &:after {
+      top: 50%; left: -31%;
+
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+
+  &[data_tooltip_pos = 'left'] {
+    &:before,
+    &:after {
+      top: 50%;
+      left: -95%;
+      border-width: 6px;
+      height: 30px;
+
+      transform: translate(-95%, 0);
+    }
+
+    &:after {
+      top: 50%; left: 0;
+
+      transform: translateY(-14%) rotate(-90deg);
+    }
   }
 
   &:before {
