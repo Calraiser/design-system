@@ -43,6 +43,7 @@ $button-colors: (
   text-transform: uppercase;
 
   transition: all 0.25s ease;
+	box-sizing: content-box;
 
   &.btn-large {
     width: 170px;
