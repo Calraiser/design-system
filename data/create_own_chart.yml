@@ -71,10 +71,6 @@ text_:
         text: Data are displayed using a graph type appropriate for the relationship within the data. For example, change over time is displayed as a line graph, area chart, slope chart or dot plot.
       - title: Individual chart elements work together to reinforce the overarching takeaway message
         text: Choices about graph type, text, arrangement, color and lines should reinforce the same takeaway message.
-      - title: The type of graph is appropriate for data
-        text: Data are displayed using a graph type appropriate for the relationship within the data. For example, change over time is displayed as a line graph, area chart, slope chart or dot plot.
-      - title: Individual chart elements work together to reinforce the overarching takeaway message
-        text: Choices about graph type, text, arrangement, color and lines should reinforce the same takeaway message.
       - title: Graph has appropriate level of precision
         text: Few numeric labels need decimal places. When precision is important, choose a type of graph type that displays differences through length or points along a line (for example, bar charts, dot plots). When precision is less importante, you can use a graph that displays differences through angles or area (for example, pie charts, circle charts).
       - title: Score

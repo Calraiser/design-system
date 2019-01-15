@@ -13,6 +13,11 @@
   transition: $transition-slow;
   cursor: pointer;
 
+  &__caption {
+    @extend %txt-caption;
+    white-space: pre;
+  }
+
   .icon-ic-close {
     font-size: rem-calc(10);
   }

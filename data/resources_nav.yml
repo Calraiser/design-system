@@ -8,5 +8,5 @@
     link: "/resources/graphics.html"
   - title: "UI Elements & Components"
     link: "/resources/components.html"
-  - title: "External resources"
-    link: "/resources/external_resources.html"
+  # - title: "External resources"
+  #   link: "/resources/external_resources.html"

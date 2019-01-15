@@ -4,8 +4,10 @@
 - label_unselected ||= false
 - focus            ||= false
 
+- a = (100..999).to_a.shuffle
+
 .lds--custom-input.radio
-  input type="radio" id=(newId = rand(1..100)) name="set-name" class="lds--radio-input" checked= ('checked' if checked.present?) disabled= ('disabled' if disabled.present?)
+  input type="radio" id=(newId = a.pop) name="set-name" class="lds--radio-input" checked= ('checked' if checked.present?) disabled= ('disabled' if disabled.present?)
     label for=(newId.dup) class="lds--radio-label"
       - if label_selected.present? || label_unselected.present?
         span.label-on.bx--type-label.selected  #{label_selected}

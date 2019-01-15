@@ -3,8 +3,10 @@
 - label_selected   ||= false
 - label_unselected ||= false
 
+- a = (100..999).to_a.shuffle
+
 .lds--custom-input.switch
-  input type="checkbox" id=(newId = rand(1..100)) name="set-name" class="lds--switch-input" checked= ('checked' if checked.present?) disabled= ('disabled' if disabled.present?)
+  input type="checkbox" id=(newId = a.pop) name="set-name" class="lds--switch-input" checked= ('checked' if checked.present?) disabled= ('disabled' if disabled.present?)
     label for=(newId.dup) class="lds--switch-label"
       - if label_selected.present? || label_unselected.present?
         span.switch--label-on.bx--type-label.selected  #{label_selected}

@@ -36,7 +36,7 @@ $flipper-width: 300px;
         padding: 20px;
       }
       @include media($mobile) {
-        @include size(100%, 187px);
+        @include size(100%, 253px);
       }
     }
 

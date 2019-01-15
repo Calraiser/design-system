@@ -3,9 +3,11 @@
 - startRange ||= '1'
 - range      ||= (startRange..items)
 
+- a = (100..999).to_a.shuffle
+
 .lds-button--bar
   - range.each_with_index do |i, index|
-    input type="checkbox" name="tabs" id=(tabId = rand(1..100)) checked=('checked' if index === 0)
+    input type="checkbox" name="tabs" id=(tabId = a.pop) checked=('checked' if index === 0)
     .tab-label-content id=(tabId.dup)
       label.bx--type-p.tab-label for=(tabId.dup)
         | #{labels[index]}

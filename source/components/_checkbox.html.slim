@@ -5,8 +5,10 @@
 - focus            ||= false
 - multiple         ||= false
 
+- a = (100..999).to_a.shuffle
+
 .lds--custom-input.checkbox
-  input type="checkbox" id=(newId = rand(1..100)) name="set-name" class="lds--checkbox-input" class=('multiple' if multiple.present?) checked= ('checked' if checked.present?) disabled= ('disabled' if disabled.present?)
+  input type="checkbox" id=(newId = a.pop) name="set-name" class="lds--checkbox-input" class=('multiple' if multiple.present?) checked= ('checked' if checked.present?) disabled= ('disabled' if disabled.present?)
     label for=(newId.dup) class="lds--checkbox-label"
       - if label_selected.present? || label_unselected.present?
         span.label-on.bx--type-label.selected  #{label_selected}
