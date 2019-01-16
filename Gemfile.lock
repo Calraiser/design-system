@@ -30,9 +30,8 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.1.5)
     ffi (1.9.25)
-    foreman (0.63.0)
-      dotenv (>= 0.7)
-      thor (>= 0.13.6)
+    foreman (0.85.0)
+      thor (~> 0.19.1)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
@@ -149,7 +148,7 @@ GEM
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
       ref
-    thor (0.20.3)
+    thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.9)
     titleize (1.4.1)
@@ -157,6 +156,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    yard (0.9.16)
 
 PLATFORMS
   ruby
@@ -164,7 +164,7 @@ PLATFORMS
 DEPENDENCIES
   dom_limpio
   foreman
-  middleman (~> 4.3, >= 4.3.1)
+  middleman (~> 4.2)
   middleman-autoprefixer (~> 2.7.1)
   middleman-gh-pages
   middleman-google-analytics (~> 3.0)
@@ -176,14 +176,15 @@ DEPENDENCIES
   middleman-syntax
   oga (~> 2.8)
   puma
-  rake
+  rake (~> 12.3)
   redcarpet
   slim (~> 3.0.7)
   tzinfo-data
   wdm (~> 0.1.0)
+  yard (~> 0.9.11)
 
 RUBY VERSION
    ruby 2.5.0p0
 
 BUNDLED WITH
-   2.0.1
+   1.15.4

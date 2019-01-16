@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 ruby '2.5.0'
 
 # Middleman Gems
-gem 'middleman',                '~> 4.3', '>= 4.3.1'
+gem 'middleman',                '~> 4.2'
 gem 'middleman-autoprefixer',   '~> 2.7.1'
 gem 'middleman-minify-html',    '~> 3.4.1'
 gem 'middleman-livereload',     '~> 3.4.3'
@@ -20,8 +20,9 @@ gem 'middleman-gh-pages'
 gem 'middleman-google-analytics', '~> 3.0'
 
 gem 'foreman'
-gem 'puma' 
-gem 'rake'
+gem 'puma'
+gem 'rake',                      '~> 12.3', require: false
+gem 'yard',                      '~> 0.9.11', require: false
 
 # For faster file watcher updates on Windows:
 gem "wdm",                       "~> 0.1.0", :platforms => [:mswin, :mingw]
