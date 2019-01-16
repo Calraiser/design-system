@@ -51,6 +51,12 @@ Rake.add_rakelib 'lib/tasks'
 
 task :default => :preview
 
+namespace :assets do
+  task :precompile do
+    sh "middleman build"
+  end
+end
+
 #
 # Tasks start here
 #
