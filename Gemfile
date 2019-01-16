@@ -19,11 +19,6 @@ gem 'middleman-gh-pages'
 
 gem 'middleman-google-analytics', '~> 3.0'
 
-gem 'foreman'
-gem 'puma'
-gem 'rake',                      '~> 12.3', require: false
-gem 'yard',                      '~> 0.9.11', require: false
-
 # For faster file watcher updates on Windows:
 gem "wdm",                       "~> 0.1.0", :platforms => [:mswin, :mingw]
 
