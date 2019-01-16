@@ -1,34 +1,13 @@
-# config.ru
+require 'middleman-core/load_paths'
+::Middleman.setup_load_paths
 
-# Serve static files under a `build` directory:
-# - `/` will try to serve your `build/index.html` file
-# - `/foo` will try to serve `build/foo` or `build/foo.html` in this order
+require 'middleman-core'
+require 'middleman-core/rack'
 
-# Standalone version of Ryan Tomayko's TryStatic, originally part of Rack-Contrib gem.
-# https://github.com/rack/rack-contrib/blob/master/lib/rack/contrib/try_static.rb
-module Rack
+require 'fileutils'
+FileUtils.mkdir('log') unless File.exist?('log')
+::Middleman::Logger.singleton("log/#{ENV['RACK_ENV']}.log")
 
-  class TryStatic
+app = ::Middleman::Application.new
 
-    def initialize(app, options)
-      @app = app
-      @try = ['', *options.delete(:try)]
-      @static = ::Rack::Static.new(lambda { [404, {}, []] }, options)
-    end
-
-    def call(env)
-      orig_path = env['PATH_INFO']
-      found = nil
-      @try.each do |path|
-        resp = @static.call(env.merge!({'PATH_INFO' => orig_path + path}))
-        break if 404 != resp[0] && found = resp
-      end
-      found or @app.call(env.merge!('PATH_INFO' => orig_path))
-    end
-  end
-end
-
-use Rack::TryStatic, :root => "build", :urls => %w[/], :try => ['.html', 'index.html', '/index.html']
-
-# Run your own Rack app here or use this one to serve 404 messages:
-run lambda{ |env| [ 404, { 'Content-Type'  => 'text/html' }, ['404 - page not found'] ] }
+run ::Middleman::Rack.new(app).to_app
