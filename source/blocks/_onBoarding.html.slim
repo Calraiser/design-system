@@ -1,19 +1,56 @@
 
 .bx--modal#onBoarding (data-modal role="dialog" aria-modal="true" aria-labelledby="onBoarding-label" aria-describedby="onBoarding-heading" tabindex="-1")
   .bx--modal-container
-    .bx--modal-header
-      button.bx--modal-close (type="button" data-modal-close aria-label="close modal"  data-modal-primary-focus)
-        <svg class="bx--modal-close__icon" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
-         <title>Close Modal</title>
-         <path d="M6.32 5L10 8.68 8.68 10 5 6.32 1.32 10 0 8.68 3.68 5 0 1.32 1.32 0 5 3.68 8.68 0 10 1.32 6.32 5z" fill-rule="nonzero"
-         />
     .bx--modal-content
-      div class="onBoarding-slide"
-        div 1
-        div 2
-        div 3
-        div 4
+      .onBoarding-slide
+
+        .onBoarding-slide__item
+          figure.onBoarding-slide__figure
+            = svg_tag 'onBoarding/welcome.svg';
+          h3.onBoarding-slide__header
+            | Welcome
+          p.onBoarding-slide__text
+            | In this section, there are the main information about the design principles, the usage of the colour, the tipography, the logo versions or the guides to follow in all the LUCA products.
+
+
+        .onBoarding-slide__item
+          figure.onBoarding-slide__figure
+            = svg_tag 'onBoarding/guidelines.svg';
+          h3.onBoarding-slide__header
+            | Guidelines
+          p.onBoarding-slide__text
+            | In this section, there are the main information about the design principles, the usage of the colour, the tipography, the logo versions or the guides to follow in all the LUCA products.
+
+
+        .onBoarding-slide__item
+          figure.onBoarding-slide__figure
+            = svg_tag 'onBoarding/graphics.svg';
+          h3.onBoarding-slide__header
+            | Graphics & Visualization rules
+          p.onBoarding-slide__text
+            | In this section, there are the main information about the design principles, the usage of the colour, the tipography, the logo versions or the guides to follow in all the LUCA products.
+
+
+        .onBoarding-slide__item
+          figure.onBoarding-slide__figure
+            = svg_tag 'onBoarding/uielements.svg';
+          h3.onBoarding-slide__header
+            | UI Elemenmts & Components
+          p.onBoarding-slide__text
+            | In this section, there are the main information about the design principles, the usage of the colour, the tipography, the logo versions or the guides to follow in all the LUCA products.
+
+
+        .onBoarding-slide__item
+          figure.onBoarding-slide__figure
+            = svg_tag 'onBoarding/resources.svg';
+          h3.onBoarding-slide__header
+            | Resources & Downloads
+          p.onBoarding-slide__text
+            | In this section, there are the main information about the design principles, the usage of the colour, the tipography, the logo versions or the guides to follow in all the LUCA products.
 
 
 
-			<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button><ul class="slick-dots" style="display: block;" role="tablist"><li class="" aria-hidden="true" role="presentation" aria-selected="true" aria-controls="navigation40" id="slick-slide40"><button type="button" data-role="none" role="button" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation41" id="slick-slide41" class=""><button type="button" data-role="none" role="button" tabindex="0">2</button></li><li aria-hidden="false" role="presentation" aria-selected="false" aria-controls="navigation42" id="slick-slide42" class="slick-active"><button type="button" data-role="none" role="button" tabindex="0">3</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation43" id="slick-slide43"><button type="button" data-role="none" role="button" tabindex="0">4</button></li></ul></div>
+
+      .actions
+        = link_to 'Skip', '#', { :class => 'c-btn btn-primary inverse btn-medium', :'data-modal-close' => '', :'aria-label'=> 'close modal' }
+        = link_to 'Next', '#', { :class => 'c-btn btn-secondary btn-medium next'}
