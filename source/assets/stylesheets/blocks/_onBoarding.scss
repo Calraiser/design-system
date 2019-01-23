@@ -15,6 +15,10 @@
       margin-top: 35px;
       height: 200px;
       svg {
+        width: 100%;
+        @include media($mobile) {
+          width: auto;
+        }
         &.hidden {
           display: none;
         }
