@@ -2,10 +2,14 @@
   appearance: none;
   border: none;
   background: none;
+  @include position(absolute, -100px 0 null null);
 }
 
 // Feedback Modal
 #feedback {
+  &.is-visible {
+    z-index: 99999;
+  }
   .bx--modal-close {
     svg {
       transition: $transition-slow;

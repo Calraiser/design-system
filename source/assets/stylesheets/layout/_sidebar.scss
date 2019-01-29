@@ -136,7 +136,7 @@ $sidebar-width: 105px;
     height: 34px;
     background-color: $grey03;
     width: 100%;
-    @include position(absolute, null null 20px null);
+    @include position(absolute, null null 0 null);
     svg {
       width: 85%;
     }

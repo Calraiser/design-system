@@ -17,8 +17,9 @@ html
     = favicon_tag 'favicon-32x32.png'
 
   body class = page_classes
-
+    = partial 'blocks/floating_feedback'
     .main-content#main
+
       = partial 'layouts/sidebar'
       .main-content-wrapper
         = partial 'blocks/search'
@@ -28,3 +29,4 @@ html
           = yield
           = partial 'blocks/toTop'
           .visel
+    = javascript_include_tag 'https://unpkg.com/carbon-components/scripts/carbon-components.min.js'
