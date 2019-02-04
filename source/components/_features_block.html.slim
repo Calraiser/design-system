@@ -2,10 +2,13 @@
   - data.create_own_chart.text_.each_with_index do |element, index|
     h3.bx--type-h4.u-text-blue = element.title
     p.bx--type-p = element.text
-    .row.around-md.start-sm
+    .row.between-xs.col-xs-offset-0.col-lg-offset-1
       - element.block_text.each do |item|
         .col-xs-12.col-sm-6.col-md-5.u-py-5
-          h4.bx--type-h4
-            = svg_tag 'fake-check.svg'
-            = item.title
-          p.bx--type-p = item.text
+          .row
+            .col-xs.col-first
+              = svg_tag 'fake-check.svg';
+            .col-xs-11.col-sm-10.col-md-10.col-lg-11.col-first
+              h4.bx--type-h4
+                = item.title
+              p.bx--type-p = item.text
