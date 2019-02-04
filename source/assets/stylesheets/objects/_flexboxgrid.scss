@@ -165,7 +165,6 @@ $name: xs;
   padding-left: 0 !important;
 }
 
-
 @each $breakpoint in $flexboxgrid-breakpoints {
   $name: nth($breakpoint, 1);
   $size: nth($breakpoint, 2);
