@@ -29,7 +29,7 @@
 
 
     cursor: pointer;
-  
+
   }
 }
 
@@ -48,7 +48,7 @@
   will-change: transform, opacity;
   top: 0;
   @include media($mobile) {
-    @include size(346px, 74px);
+    width: 346px;
   }
 }
 
