@@ -26,13 +26,18 @@ resources:
 
 
   #Graphics
-  - title: 'Graphic & Viz rules'
+  - title: 'Graphics & Viz rules'
     items:
       - subtitle: 'Complementary colours'
         files:
           sketch:            '/download/sketch/20180917_DSdownload_EGG_CompColourpalette_v1.zip'
           PDF:               '/download/pdf/20180917_DSdownload_EGG_CompColourpalette_v1.pdf'
           Adobe Illustrator: '/download/ai/20180917_DSdownload_EGG_CompColourpalette_v1.zip'
+
+      - subtitle: 'Viz rules'
+        files:
+          sketch:            '/download/sketch/20180917_DesignSystem_EGG_Vizrules_v1.zip'
+          PDF:               '/download/pdf/20190112_VizRules_GYGL_Descargable.pdf'
 
   #UI Elements
   - title: 'UI Elements & Components'
@@ -67,10 +72,20 @@ resources:
           sketch:            '/download/sketch/20180917_DSdownload_EGG_Combobox.zip'
           PDF:               '/download/pdf/20180917_DSdownload_EGG_Combobox.pdf'
 
+      - subtitle: 'Links'
+        files:
+          sketch:            '/download/sketch/20190215_DesignSystem_GYGL_Links.zip'
+          PDF:               '/download/pdf/20190215_DSdownload_GYGL_Link.pdf'
+
       - subtitle: 'List'
         files:
           sketch:            '/download/sketch/20180917_DSdownload_EGG_List.zip'
           PDF:               '/download/pdf/20180917_DSdownload_EGG_List.pdf'
+
+      - subtitle: 'Modals'
+        files:
+          sketch:            '/download/sketch/20190215_DesignSystem_GYGL_Modals.zip'
+          PDF:               '/download/pdf/20190215_DSdownload_GYGL_Modals.pdf'
 
       - subtitle: 'Navigation Icons'
         files:
@@ -82,10 +97,10 @@ resources:
           sketch:            '/download/sketch/20180917_DSdownload_EGG_Pagination.zip'
           PDF:               '/download/pdf/20180917_DSdownload_EGG_Pagination.pdf'
 
-      - subtitle: 'Pills Bar'
+      - subtitle: 'Tags'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Pillsbar.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Pillsbar.pdf'
+          sketch:            '/download/sketch/20181217_DSdownload_GYGL_Tags.zip'
+          PDF:               '/download/pdf/20181217_DSdownload_GYGL_Tags.pdf'
 
       - subtitle: 'Popover'
         files:

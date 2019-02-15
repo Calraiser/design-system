@@ -1,6 +1,6 @@
-.lds-pills {
+.lds-tags{
   border-radius: 12px;
-  background-color: $pills;
+  background-color: $tags;
 
   position: relative;
   padding: rem-calc(3) rem-calc(35) rem-calc(3) rem-calc(12);
@@ -23,13 +23,13 @@
   }
   .icon-ic-back-arrow {
     font-size: rem-calc(10);
-    color: $pills;
+    color: $tags;
     position: relative;
     left: 2px;
     top: -1px;
   }
 
-  &.pills-default {
+  &.tags-default {
     width: auto;
     white-space: pre;
     @include media($tablet) {
@@ -37,34 +37,34 @@
 
     }
   }
-  &.pill-back {
+  &.tag-back {
     padding: 0 6px 0 4px;
     svg {
-      fill: $pills;
+      fill: $tags;
       @include size(10px);
     }
   }
-  &.pill-counter {
+  &.tag-counter {
     padding: 0 9px 0 6px;
   }
-  &.pill-counter, &.pill-back {
+  &.tag-counter, &.tag-back {
     background-color: $white;
 
-    border: 2px solid $pills;
+    border: 2px solid $tags;
     span {
-      color: $pills;
+      color: $tags;
     }
     &:hover {
-      border: 2px solid $pills-hover;
+      border: 2px solid $tags-hover;
       span, i {
         color: $white;
       }
     }
   }
-  &:hover, &.pills-hover {
-    background-color: $pills-hover;
+  &:hover, &.tags-hover {
+    background-color: $tags-hover;
   }
-  &.pills-disabled {
+  &.tags-disabled {
     background-color: $grey02;
   }
 
