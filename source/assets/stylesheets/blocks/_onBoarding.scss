@@ -1,6 +1,9 @@
 #onBoarding {
+  background-color: rgba(74, 74, 74, .2);
   .bx--modal-container {
     max-height: 100%;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 0 $grey07;
   }
 
   .bx--modal-content {
