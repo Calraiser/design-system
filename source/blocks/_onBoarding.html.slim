@@ -10,48 +10,32 @@
         .onBoarding-slide__item
           figure.onBoarding-slide__figure
             = svg_tag 'onBoarding/welcome.svg';
-          h3.onBoarding-slide__header
-            | Welcome
-          p.onBoarding-slide__text
-            | In this section, there are the main information about the design principles, the usage of the colour, the tipography, the logo versions or the guides to follow in all the LUCA products.
-
+          h3.onBoarding-slide__header = data.on_boarding.text.welcome.title
+          p.onBoarding-slide__text = data.on_boarding.text.welcome.content
 
         .onBoarding-slide__item
           figure.onBoarding-slide__figure
             = svg_tag 'onBoarding/guidelines.svg';
-          h3.onBoarding-slide__header
-            | Guidelines
-          p.onBoarding-slide__text
-            | In this section, there are the main information about the design principles, the usage of the colour, the tipography, the logo versions or the guides to follow in all the LUCA products.
-
+          h3.onBoarding-slide__header = data.on_boarding.text.guidelines.title
+          p.onBoarding-slide__text = data.on_boarding.text.guidelines.content
 
         .onBoarding-slide__item
           figure.onBoarding-slide__figure
             = svg_tag 'onBoarding/graphics.svg';
-          h3.onBoarding-slide__header
-            | Graphics & Visualization rules
-          p.onBoarding-slide__text
-            | In this section, there are the main information about the design principles, the usage of the colour, the tipography, the logo versions or the guides to follow in all the LUCA products.
-
+          h3.onBoarding-slide__header = data.on_boarding.text.graphics.title
+          p.onBoarding-slide__text = data.on_boarding.text.graphics.content
 
         .onBoarding-slide__item
           figure.onBoarding-slide__figure
             = svg_tag 'onBoarding/uielements.svg';
-          h3.onBoarding-slide__header
-            | UI Elemenmts & Components
-          p.onBoarding-slide__text
-            | In this section, there are the main information about the design principles, the usage of the colour, the tipography, the logo versions or the guides to follow in all the LUCA products.
-
+          h3.onBoarding-slide__header = data.on_boarding.text.uielements.title
+          p.onBoarding-slide__text = data.on_boarding.text.uielements.content
 
         .onBoarding-slide__item
           figure.onBoarding-slide__figure
             = svg_tag 'onBoarding/resources.svg';
-          h3.onBoarding-slide__header
-            | Resources & Downloads
-          p.onBoarding-slide__text
-            | In this section, there are the main information about the design principles, the usage of the colour, the tipography, the logo versions or the guides to follow in all the LUCA products.
-
-
+          h3.onBoarding-slide__header = data.on_boarding.text.resources.title
+          p.onBoarding-slide__text = data.on_boarding.text.resources.content
 
 
       .actions

@@ -1,0 +1,16 @@
+text:
+  welcome:
+    title: Welcome
+    content: This is a tool to facilitate your day to day in LUCA product portfolio.
+  guidelines:
+    title: Guidelines
+    content: This is a tool to facilitate your day to day in LUCA product portfolio.
+  graphics:
+    title: Graphics & Visualization rules
+    content: Some useful charts or how to build an understandable one.
+  uielements:
+    title: UI Elements & Components
+    content: A complete and increasing library of functional components, their stages and their usage.
+  resources:
+    title: Resources & Downloads
+    content:  All the downloads you can find in the Design System and also external interesting links.
