@@ -1,160 +1,19 @@
-.component-slider {
-  display: none;
-  min-height: 600px;
-  @include media($mobile) {
-    display: block;
-  }
-  @include media($tablet) {
-    min-height: 300px;
-  }
-  > .row {
-      margin-top: 50px;
+.anatomy {
+  &-content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0 40px;
+    background: #f2f2f2;
   }
   h2 {
-    display: inline-block;
-  }
-  .row {
-    flex-direction: column;
-    @include media($mobile) {
-      flex-direction: row;
-    }
-  }
-  &.accordion {
-    img {
-      width: 80%;
-      @include media($tablet) {
-        width: 65%;
-      }
-    }
-  }
-  &.alerts {
-    img {
-      width: 100%;
-      @include media($tablet) {
-        width: 80%;
-      }
-    }
-  }
-  &.popover_anatomy {
-    height: auto;
-    @include media($tablet) {
-      height: 400px;
-    }
-    img {
-      width: 60%;
-      @include media($tablet) {
-        width: 40%;
-      }
-    }
-  }
-}
-
-.component--slider-content {
-  position: relative;
-  min-height: 100px;
-  @include media($tablet) {
-    min-height: auto;
-
-  }
-  .lds--custom-input {
-    margin-top: 49px;
-    margin-left: 31px;
-    padding: 0 30px;
-  }
-}
-
-.component-item {
-  transition: left 0s 0.8s, visibility 0s 0.8s, opacity 0.5s;
-  opacity: 0;
-  z-index: -1;
-  width: 100%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  .col-lg-2 {
     margin-bottom: 30px;
-    img {
-      width: 80%;
-    }
-    @include media($tablet) {
-      img {
-        width: 100%;
-      }
-      margin-bottom: 0;
-    }
   }
-  &__col {
+  h3 {
 
   }
-
-  img {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-
-  &.show {
-    opacity: 1;
-    transition: left 0s, visibility 0s, opacity 1.5s;
-  }
-}
-
-.component-menu {
-  border-bottom: 1px solid $grey07;
-  margin-bottom: 60px;
-  text-align: center;
-
-  @include media($tablet) {
-    border-left: 1px solid $grey07;
-    border-bottom: none;
-    text-align: left;
-    margin-bottom: 0;
-    padding-left: 25px;
-    position: absolute;
-  }
-
-  li {
-    list-style: none;
-    margin: 0 20px;
-    display: inline-block;
-    @include media($tablet) {
-      display: block;
-      margin: 0 0 10px;
-    }
-
-    a {
-      @extend %txt-links-positive;
-      &:before {
-        background: none !important;
-      }
-
-      color: $grey;
-
-      &:hover {
-        color: $blue;
-      }
-
-      &:before {
-        background: $blue;
-      }
-
-      &.active {
-        color: $blue;
-        @extend %txt-links-positive;
-
-        &:before {
-          background: $blue;
-        }
-      }
-    }
-  }
-}
-
-.anatomy {
-  .col-xs-12 {
-    margin-bottom: 40px;
-    @include media($mobile) {
-      margin-bottom: 0;
-    }
+  figure {
+    margin: 40px 30px;
   }
 }

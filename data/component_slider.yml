@@ -26,15 +26,11 @@ items:
       images:
         image01: '/assets/images/uicomponents/checkbox/padding_01.png'
         image02: '/assets/images/uicomponents/checkbox/padding_02.png'
-        image03: '/assets/images/uicomponents/checkbox/padding_03.png'
-        image04: '/assets/images/uicomponents/checkbox/padding_04.png'
 
     - id: 'measures'
       images:
         image01: '/assets/images/uicomponents/checkbox/measures_01.png'
         image02: '/assets/images/uicomponents/checkbox/measures_02.png'
-        image03: '/assets/images/uicomponents/checkbox/measures_03.png'
-        image04: '/assets/images/uicomponents/checkbox/measures_04.png'
 
     - id: 'specifications'
       images:
