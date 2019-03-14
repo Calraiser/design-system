@@ -11,7 +11,7 @@ $submenu-width: 400px;
 
 
 .menu-open {
-  .main-content-wrapper{
+  .main-content-wrapper {
     width: 100%;
   }
 }
@@ -205,4 +205,8 @@ body {
 }
 .main-content.menu-open .main-content-wrapper .content {
   transform: translate3d(400px, 0, 0);
+  transition: all .5s ease;
+  @include media($medium-desktop) {
+    padding-right: 500px;
+  }
 }
