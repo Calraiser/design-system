@@ -39,21 +39,9 @@ index: true
       .lds-navigation--wrapper
         = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :header => 'Disabled', :extraclass => 'default disabled' }
 
-  .anatomy-simple
-    h2.bx--type-h4.u-text-blue Anatomy
-    .anatomy-simple__content
-      .row.col-xs-offset-0.col-lg-offset-1
-        .col-xs-12.col-sm-4.col-md-4.col-lg-4
-          h2.anatomy-simple__heading  Padding
-          = image_tag 'uicomponents/image_icons/padding.png'
-
-        .col-xs-12.col-sm-4.col-md-4.col-lg-4
-          h2.anatomy-simple__heading  Measures
-          = image_tag 'uicomponents/image_icons/measures.png'
-
-        .col-xs-12.col-sm-4.col-md-4.col-lg-4
-          h2.anatomy-simple__heading  Specifications
-          = image_tag 'uicomponents/image_icons/specs.png'
+  .content-block
+    = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.nav_icons }
+    
 
   .footer-navigation
     .footer-navigation__previous

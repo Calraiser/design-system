@@ -92,8 +92,7 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#alert'}
 
   .content-block
-    = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :extraclass => 'alerts', :item => data.component_slider.items.alerts }
-
+    = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.alerts }
   .footer-navigation
     .footer-navigation__previous
       = previous_link(data.title['uielements'])

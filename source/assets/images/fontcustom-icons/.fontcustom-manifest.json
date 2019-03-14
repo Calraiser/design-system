@@ -1,319 +1,239 @@
 {
   "checksum": {
     "previous": "42b25de51cf2f52c9b0eee69434f50233a87ad42a4e94fbcda2be782f3af93c0",
-    "current": "42b25de51cf2f52c9b0eee69434f50233a87ad42a4e94fbcda2be782f3af93c0"
+    "current": "4a72c5a854369e3b3d219ba875f3ce0d3296be723d417df9ec34d87ad7def8ef"
   },
   "fonts": [
-    "fontcustom/fontcustom_42b25de51cf2f52c9b0eee69434f5023.ttf",
-    "fontcustom/fontcustom_42b25de51cf2f52c9b0eee69434f5023.svg",
-    "fontcustom/fontcustom_42b25de51cf2f52c9b0eee69434f5023.woff",
-    "fontcustom/fontcustom_42b25de51cf2f52c9b0eee69434f5023.eot",
-    "fontcustom/fontcustom_42b25de51cf2f52c9b0eee69434f5023.woff2"
+
   ],
   "glyphs": {
     "2-col-bg": {
-      "codepoint": 61793,
-      "source": "./2-col-bg.svg"
+      "source": "./2-col-bg.svg",
+      "codepoint": 61793
     },
     "4-col-bg": {
-      "codepoint": 61794,
-      "source": "./4-col-bg.svg"
+      "source": "./4-col-bg.svg",
+      "codepoint": 61794
     },
     "6-col-bg": {
-      "codepoint": 61795,
-      "source": "./6-col-bg.svg"
+      "source": "./6-col-bg.svg",
+      "codepoint": 61795
     },
     "8-col-bg": {
-      "codepoint": 61796,
-      "source": "./8-col-bg.svg"
-    },
-    "add": {
-      "codepoint": 61893,
-      "source": "./add.svg"
-    },
-    "arrow_back": {
-      "codepoint": 61894,
-      "source": "./arrow_back.svg"
-    },
-    "arrow_drop_down": {
-      "codepoint": 61895,
-      "source": "./arrow_drop_down.svg"
-    },
-    "arrow_drop_up": {
-      "codepoint": 61896,
-      "source": "./arrow_drop_up.svg"
-    },
-    "arrow_forward": {
-      "codepoint": 61897,
-      "source": "./arrow_forward.svg"
-    },
-    "check": {
-      "codepoint": 61898,
-      "source": "./check.svg"
-    },
-    "chevron_left": {
-      "codepoint": 61899,
-      "source": "./chevron_left.svg"
-    },
-    "chevron_right": {
-      "codepoint": 61900,
-      "source": "./chevron_right.svg"
-    },
-    "close": {
-      "codepoint": 61901,
-      "source": "./close.svg"
-    },
-    "expand_less": {
-      "codepoint": 61902,
-      "source": "./expand_less.svg"
-    },
-    "expand_more": {
-      "codepoint": 61903,
-      "source": "./expand_more.svg"
-    },
-    "favorite": {
-      "codepoint": 61904,
-      "source": "./favorite.svg"
-    },
-    "fullscreen": {
-      "codepoint": 61905,
-      "source": "./fullscreen.svg"
-    },
-    "fullscreen_exit": {
-      "codepoint": 61906,
-      "source": "./fullscreen_exit.svg"
-    },
-    "hamburguer": {
-      "codepoint": 61907,
-      "source": "./hamburguer.svg"
+      "source": "./8-col-bg.svg",
+      "codepoint": 61796
     },
     "ic-ai_02": {
-      "codepoint": 61797,
-      "source": "./ic-ai_02.svg"
-    },
-    "ic-alert": {
-      "codepoint": 61892,
-      "source": "./ic-alert.svg"
+      "source": "./ic-ai_02.svg",
+      "codepoint": 61797
     },
     "ic-arrow": {
-      "codepoint": 61798,
-      "source": "./ic-arrow.svg"
+      "source": "./ic-arrow.svg",
+      "codepoint": 61798
     },
     "ic-arrow-up": {
-      "codepoint": 61799,
-      "source": "./ic-arrow-up.svg"
+      "source": "./ic-arrow-up.svg",
+      "codepoint": 61799
     },
     "ic-back-arrow": {
-      "codepoint": 61800,
-      "source": "./ic-back-arrow.svg"
+      "source": "./ic-back-arrow.svg",
+      "codepoint": 61800
     },
     "ic-btn": {
-      "codepoint": 61801,
-      "source": "./ic-btn.svg"
+      "source": "./ic-btn.svg",
+      "codepoint": 61801
     },
     "ic-cart": {
-      "codepoint": 61805,
-      "source": "./ic-cart.svg"
+      "source": "./ic-cart.svg",
+      "codepoint": 61805
     },
     "ic-circle-arrow": {
-      "codepoint": 61809,
-      "source": "./ic-circle-arrow.svg"
+      "source": "./ic-circle-arrow.svg",
+      "codepoint": 61809
     },
     "ic-close": {
-      "codepoint": 61810,
-      "source": "./ic-close.svg"
+      "source": "./ic-close.svg",
+      "codepoint": 61810
     },
     "ic-copy": {
-      "codepoint": 61817,
-      "source": "./ic-copy.svg"
+      "source": "./ic-copy.svg",
+      "codepoint": 61817
     },
     "ic-desktop-callout": {
-      "codepoint": 61818,
-      "source": "./ic-desktop-callout.svg"
+      "source": "./ic-desktop-callout.svg",
+      "codepoint": 61818
     },
     "ic-desplegar": {
-      "codepoint": 61819,
-      "source": "./ic-desplegar.svg"
+      "source": "./ic-desplegar.svg",
+      "codepoint": 61819
     },
     "ic-double-arrow": {
-      "codepoint": 61820,
-      "source": "./ic-double-arrow.svg"
+      "source": "./ic-double-arrow.svg",
+      "codepoint": 61820
     },
     "ic-driving": {
-      "codepoint": 61823,
-      "source": "./ic-driving.svg"
+      "source": "./ic-driving.svg",
+      "codepoint": 61823
     },
     "ic-envelope": {
-      "codepoint": 61824,
-      "source": "./ic-envelope.svg"
+      "source": "./ic-envelope.svg",
+      "codepoint": 61824
     },
     "ic-fuel": {
-      "codepoint": 61825,
-      "source": "./ic-fuel.svg"
+      "source": "./ic-fuel.svg",
+      "codepoint": 61825
     },
     "ic-fullscreen": {
-      "codepoint": 61826,
-      "source": "./ic-fullscreen.svg"
+      "source": "./ic-fullscreen.svg",
+      "codepoint": 61826
     },
     "ic-graphics-blue": {
-      "codepoint": 61827,
-      "source": "./ic-graphics-blue.svg"
+      "source": "./ic-graphics-blue.svg",
+      "codepoint": 61827
     },
     "ic-graphics-vizrules-xs": {
-      "codepoint": 61828,
-      "source": "./ic-graphics-vizrules-xs.svg"
+      "source": "./ic-graphics-vizrules-xs.svg",
+      "codepoint": 61828
     },
     "ic-hand": {
-      "codepoint": 61834,
-      "source": "./ic-hand.svg"
+      "source": "./ic-hand.svg",
+      "codepoint": 61834
     },
     "ic-hotel": {
-      "codepoint": 61835,
-      "source": "./ic-hotel.svg"
+      "source": "./ic-hotel.svg",
+      "codepoint": 61835
     },
     "ic-info": {
-      "codepoint": 61836,
-      "source": "./ic-info.svg"
+      "source": "./ic-info.svg",
+      "codepoint": 61836
     },
     "ic-less": {
-      "codepoint": 61837,
-      "source": "./ic-less.svg"
+      "source": "./ic-less.svg",
+      "codepoint": 61837
     },
     "ic-local-hotel": {
-      "codepoint": 61838,
-      "source": "./ic-local-hotel.svg"
+      "source": "./ic-local-hotel.svg",
+      "codepoint": 61838
     },
     "ic-more": {
-      "codepoint": 61840,
-      "source": "./ic-more.svg"
+      "source": "./ic-more.svg",
+      "codepoint": 61840
     },
     "ic-password": {
-      "codepoint": 61841,
-      "source": "./ic-password.svg"
+      "source": "./ic-password.svg",
+      "codepoint": 61841
     },
     "ic-pdf": {
-      "codepoint": 61842,
-      "source": "./ic-pdf.svg"
+      "source": "./ic-pdf.svg",
+      "codepoint": 61842
     },
     "ic-pois": {
-      "codepoint": 61843,
-      "source": "./ic-pois.svg"
+      "source": "./ic-pois.svg",
+      "codepoint": 61843
     },
     "ic-question": {
-      "codepoint": 61844,
-      "source": "./ic-question.svg"
+      "source": "./ic-question.svg",
+      "codepoint": 61844
     },
     "ic-restaurants": {
-      "codepoint": 61848,
-      "source": "./ic-restaurants.svg"
+      "source": "./ic-restaurants.svg",
+      "codepoint": 61848
     },
     "ic-search": {
-      "codepoint": 61849,
-      "source": "./ic-search.svg"
+      "source": "./ic-search.svg",
+      "codepoint": 61849
     },
     "ic-select": {
-      "codepoint": 61850,
-      "source": "./ic-select.svg"
+      "source": "./ic-select.svg",
+      "codepoint": 61850
     },
     "ic-single-arrow": {
-      "codepoint": 61851,
-      "source": "./ic-single-arrow.svg"
+      "source": "./ic-single-arrow.svg",
+      "codepoint": 61851
     },
     "ic-sketch": {
-      "codepoint": 61852,
-      "source": "./ic-sketch.svg"
+      "source": "./ic-sketch.svg",
+      "codepoint": 61852
     },
     "ic-tablet-callout": {
-      "codepoint": 61854,
-      "source": "./ic-tablet-callout.svg"
+      "source": "./ic-tablet-callout.svg",
+      "codepoint": 61854
     },
     "ic-tooltip": {
-      "codepoint": 61855,
-      "source": "./ic-tooltip.svg"
+      "source": "./ic-tooltip.svg",
+      "codepoint": 61855
     },
     "ic-traffic": {
-      "codepoint": 61856,
-      "source": "./ic-traffic.svg"
+      "source": "./ic-traffic.svg",
+      "codepoint": 61856
     },
     "ic-typography": {
-      "codepoint": 61857,
-      "source": "./ic-typography.svg"
+      "source": "./ic-typography.svg",
+      "codepoint": 61857
     },
     "ic-user": {
-      "codepoint": 61861,
-      "source": "./ic-user.svg"
+      "source": "./ic-user.svg",
+      "codepoint": 61861
     },
     "ic-xlsx": {
-      "codepoint": 61863,
-      "source": "./ic-xlsx.svg"
+      "source": "./ic-xlsx.svg",
+      "codepoint": 61863
     },
     "ic-xml": {
-      "codepoint": 61864,
-      "source": "./ic-xml.svg"
+      "source": "./ic-xml.svg",
+      "codepoint": 61864
     },
     "layout-desktop": {
-      "codepoint": 61865,
-      "source": "./layout-desktop.svg"
+      "source": "./layout-desktop.svg",
+      "codepoint": 61865
     },
     "layout-grid02": {
-      "codepoint": 61866,
-      "source": "./layout-grid02.svg"
+      "source": "./layout-grid02.svg",
+      "codepoint": 61866
     },
     "layout-labtop": {
-      "codepoint": 61867,
-      "source": "./layout-labtop.svg"
+      "source": "./layout-labtop.svg",
+      "codepoint": 61867
     },
     "layout-mobile": {
-      "codepoint": 61868,
-      "source": "./layout-mobile.svg"
+      "source": "./layout-mobile.svg",
+      "codepoint": 61868
     },
     "layout-tablet": {
-      "codepoint": 61869,
-      "source": "./layout-tablet.svg"
+      "source": "./layout-tablet.svg",
+      "codepoint": 61869
     },
     "legend-example": {
-      "codepoint": 61870,
-      "source": "./legend-example.svg"
+      "source": "./legend-example.svg",
+      "codepoint": 61870
     },
     "logo-luca": {
-      "codepoint": 61871,
-      "source": "./logo-luca.svg"
-    },
-    "menu": {
-      "codepoint": 61908,
-      "source": "./menu.svg"
+      "source": "./logo-luca.svg",
+      "codepoint": 61871
     },
     "mobile": {
-      "codepoint": 61872,
-      "source": "./mobile.svg"
-    },
-    "more": {
-      "codepoint": 61909,
-      "source": "./more.svg"
+      "source": "./mobile.svg",
+      "codepoint": 61872
     },
     "pattern": {
-      "codepoint": 61873,
-      "source": "./pattern.svg"
-    },
-    "refresh": {
-      "codepoint": 61910,
-      "source": "./refresh.svg"
+      "source": "./pattern.svg",
+      "codepoint": 61873
     },
     "sort-down": {
-      "codepoint": 61876,
-      "source": "./sort-down.svg"
+      "source": "./sort-down.svg",
+      "codepoint": 61876
     },
     "sort-up": {
-      "codepoint": 61877,
-      "source": "./sort-up.svg"
+      "source": "./sort-up.svg",
+      "codepoint": 61877
     },
     "tablet": {
-      "codepoint": 61879,
-      "source": "./tablet.svg"
+      "source": "./tablet.svg",
+      "codepoint": 61879
     },
     "triangle": {
-      "codepoint": 61881,
-      "source": "./triangle.svg"
+      "source": "./triangle.svg",
+      "codepoint": 61881
     }
   },
   "options": {

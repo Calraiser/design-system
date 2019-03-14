@@ -18,3 +18,26 @@
     margin-bottom: 40px;
   }
 }
+
+
+.anatomy {
+  display: none;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  @include media($mobile) {
+    display: block;
+  }
+  h2 {
+    margin-bottom: 40px;
+  }
+  .atomy-image__wrapper {
+    background: #f3f2f2;
+    padding: 40px 20px 0;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    .col {
+      margin-bottom: 40px;
+    }
+  }
+}

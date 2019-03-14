@@ -46,7 +46,8 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#popover'}
 
   .content-block
-    = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :extraclass => 'popover_anatomy', :item => data.component_slider.items.popover }
+    = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.popover }
+
 
   .content-block.u-pt-8
     h3.bx--type-h4.u-text-grey Variants

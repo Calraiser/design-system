@@ -54,31 +54,8 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#pills'}
 
   .content-block
-    h2.bx--type-h4.u-text-blue Anatomy
-    p.bx--type-note.u-uppercase.u-pt-4
-      | Specifications
+    = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.links }
 
-    .row.around-xs.u-pt-9
-      .col-xs-6.col-md-3.u-pb-8
-        p.bx--type-note.u-uppercase.u-pb-6
-          | Default
-        .col-xs-9
-          = image_tag 'uicomponents/link/default.jpg', class: 'image-100'
-      .col-xs-6.col-md-3.u-pb-8
-        p.bx--type-note.u-uppercase.u-pb-6
-          | Default
-        .col-xs-9
-          = image_tag 'uicomponents/link/hover.jpg', class: 'image-100'
-      .col-xs-6.col-md-3.u-pb-8
-        p.bx--type-note.u-uppercase.u-pb-6
-          | Default
-        .col-xs-9
-          = image_tag 'uicomponents/link/visited.jpg', class: 'image-100'
-      .col-xs-6.col-md-3.u-pb-8
-        p.bx--type-note.u-uppercase.u-pb-6
-          | Default
-        .col-xs-9
-          = image_tag 'uicomponents/link/disabled.jpg', class: 'image-100'
 
   .content-block.link-examples
     h2.bx--type-h4.u-text-blue Examples
