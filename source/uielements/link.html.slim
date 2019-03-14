@@ -113,6 +113,12 @@ index: true
               li.adobe.illustrator
                 = link_to 'Download Adobe illustrator', '#'
 
+  .footer-navigation
+    .footer-navigation__previous
+      = previous_link(data.title['uielements'])
+    .footer-navigation__next
+      = next_link(data.title['uielements'])
+
 
   .action.downloads
     = partial :"components/_downloads", :locals => { :name => '20190215_DesignSystem_GYGL_Links', :sketch => true }
