@@ -96,7 +96,7 @@ $sidebar-width: 105px;
 
       }
       svg {
-        stroke: $grey07;
+        stroke: $grey01;
         fill: $white;
         fill-opacity: 1;
         transition: $transition-slow;
@@ -115,7 +115,7 @@ $sidebar-width: 105px;
       @extend %txt-label;
       display: block;
       margin-top: 5px;
-      color: $grey07;
+      color: $grey01;
       display: none;
       @include media($mobile) {
         display: block;
