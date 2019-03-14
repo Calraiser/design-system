@@ -3,3 +3,10 @@ icons:
   - image: 'uicomponents/zoom/ic-less.svg'
   - image: 'uicomponents/zoom/ic-hand.svg'
   - image: 'uicomponents/zoom/ic-fullscreen.svg'
+
+iconsFull:
+    - image: 'uicomponents/zoom/ic-more.svg'
+    - image: 'uicomponents/zoom/ic-less.svg'
+    - image: 'uicomponents/zoom/ic-hand.svg'
+    - image: 'uicomponents/zoom/ic-fullsize.svg'
+  

@@ -25,7 +25,7 @@ uielements:
   buttons.html.slim: "/uielements/buttons.html.slim"
   button_bar.html.slim: "/uielements/button_bar.html.slim"
   checkbox.html.slim: "/uielements/checkbox.html.slim"
-  combobox.html.slim: "/uielements/combobox.html.slim"
+  dropdown.html.slim: "/uielements/dropdown.html.slim"
   link.html.slim: "/uielements/link.html.slim"
   list.html.slim: "/uielements/list.html.slim"
   modals.html.slim: "/uielements/modals.html.slim"

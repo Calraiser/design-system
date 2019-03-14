@@ -1,6 +1,8 @@
 .lds-zoom {
   .control-zoom {
     margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
 
     &.disabled {
       &:hover {
@@ -13,8 +15,17 @@
         background: $grey02;
       }
     }
+    &:last-child {
+      &.active-last {
+        a {
+          background: $blue;
+
+        }
+      }
+    }
 
     &:first-child {
+
       &.active {
         a {
           background: $blue;
