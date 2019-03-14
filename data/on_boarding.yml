@@ -1,16 +1,16 @@
 text:
   welcome:
     title: Welcome
-    content: This is a tool to facilitate your day to day in LUCA product portfolio.
+    content: Here you will find all about the good use of the principles, language and design to be coherent and consistent in your day to day in LUCA.
   guidelines:
     title: Guidelines
-    content: The first step is to know all about LUCA brand and their design principles.
+    content: Here you will find the basic design principles for the digital LUCA products. Let’s go together!.
   graphics:
     title: Graphics & Visualization rules
-    content: Some useful charts or how to build an understandable one.
+    content: Guides to build comprehensible and useful data visualizations in an easy way.
   uielements:
     title: UI Elements & Components
-    content: A complete and increasing library of functional components, their stages and their usage.
+    content: An increasing library of components, made for developers and designers work efficiently together.
   resources:
     title: Resources & Downloads
-    content:  All the downloads you can find in the Design System and also external interesting links.
+    content: Find here all the materials and interesting links to start your LUCA project.
