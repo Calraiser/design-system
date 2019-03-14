@@ -1,0 +1,54 @@
+
+<svg width="321px" height="180px" viewBox="0 0 321 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="">
+   <defs>
+       <path id="path-1" width="73.6" height="28" d="M7.2 122.4 L80.8 122.4 L80.8 150.4 L7.2 150.4 Z" class="zpKIvabH_0"></path>
+       <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="73.6" height="28" fill="white">
+           <use xlink:href="#path-1"></use>
+       </mask>
+   </defs>
+   <g id="Onboarding---DEF" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+       <g id="Desktop-HD-1440-X-1024-HOME-Copy-3" transform="translate(-561.000000, -180.000000)">
+           <path fill="#FFFFFF" width="1440" height="800" d="M0 0 L1440 0 L1440 800 L0 800 Z" class="zpKIvabH_1"></path>
+           <g id="Group-2" transform="translate(270.000000, 100.000000)">
+               <g id="Group" transform="translate(291.000000, 82.000000)">
+                   <g>
+                       <path id="Stroke-4-Copy-4" stroke="#CCFBEE" stroke-width="3.4" fill="#FFFFFF" fill-rule="nonzero" d="M266.56,55.16L215.56,143.56L317.56,143.56Z" class="zpKIvabH_2"></path>
+                       <path id="Stroke-4-Copy-2" fill="#CCFBEE" fill-rule="nonzero" d="M156.4,0.08L66.64,155.12L246.16,155.12Z" class="zpKIvabH_3"></path>
+                       <path id="Stroke-4-Copy-5" stroke="#999999" stroke-width="1.36" fill-rule="nonzero" d="M163.98,0.169090909L77.56,149.44L250.4,149.44Z" class="zpKIvabH_4"></path>
+                       <path id="Stroke-4-Copy-3" stroke="#CCFBEE" stroke-width="3.4" fill="#FFFFFF" fill-rule="nonzero" d="M80.58,55.16L10.88,175.52L150.28,175.52Z" class="zpKIvabH_5"></path>
+                       <g id="estampado" transform="translate(0.000000, 49.600000)" fill="#CCFBEE" fill-rule="nonzero">
+                           <path id="Stroke-4-Copy-8" d="M80.58,0.12L71.4,15.76L89.76,15.76Z" class="zpKIvabH_6"></path>
+                           <path id="Stroke-4-Copy-6" d="M98.94,21.88L89.76,37.52L108.12,37.52Z" class="zpKIvabH_7"></path>
+                           <path id="Stroke-4-Copy-9" d="M80.58,49.76L71.4,65.4L89.76,65.4Z" class="zpKIvabH_8"></path>
+                           <path id="Stroke-4-Copy-13" d="M116.62,49.76L107.44,65.4L125.8,65.4Z" class="zpKIvabH_9"></path>
+                           <path id="Stroke-4-Copy-11" d="M98.94,77.64L89.76,93.28L108.12,93.28Z" class="zpKIvabH_10"></path>
+                           <path id="Stroke-4-Copy-14" d="M134.98,77.64L125.8,93.28L144.16,93.28Z" class="zpKIvabH_11"></path>
+                           <path id="Stroke-4-Copy-15" d="M117.3,105.52L108.12,121.16L126.48,121.16Z" class="zpKIvabH_12"></path>
+                           <path id="Stroke-4-Copy-20" d="M153.34,105.52L144.16,121.16L162.52,121.16Z" class="zpKIvabH_13"></path>
+                           <path id="Stroke-4-Copy-16" d="M81.26,105.52L72.08,121.16L90.44,121.16Z" class="zpKIvabH_14"></path>
+                           <path id="Stroke-4-Copy-17" d="M45.22,105.52L36.04,121.16L54.4,121.16Z" class="zpKIvabH_15"></path>
+                           <path id="Stroke-4-Copy-18" d="M9.18,105.52L0,121.16L18.36,121.16Z" class="zpKIvabH_16"></path>
+                           <path id="Stroke-4-Copy-7" d="M62.9,21.88L53.72,37.52L72.08,37.52Z" class="zpKIvabH_17"></path>
+                           <path id="Stroke-4-Copy-10" d="M44.54,49.76L35.36,65.4L53.72,65.4Z" class="zpKIvabH_18"></path>
+                       </g>
+                       <text id="A" font-family="Telefonica-Regular, Telefonica" font-size="97.92" font-weight="normal" fill="#999999">
+                           <tspan x="140.76" y="125.96">A</tspan>
+                       </text>
+                       <text id="a" font-family="Telefonica-Light, Telefonica" font-size="97.92" font-weight="300" fill="#999999">
+                           <tspan x="195.16" y="125.96">a</tspan>
+                       </text>
+                       <path d="M163.2,37.3359375 L238.092187,18.4" id="Path-2" stroke="#979797" stroke-width="0.8" fill-rule="nonzero" class="zpKIvabH_19"></path>
+                       <path id="Oval" fill="#CCFBEE" fill-rule="nonzero" d="M236,16.8A12,12 0,1,1 260,16.8A12,12 0,1,1 236,16.8" class="zpKIvabH_20"></path>
+                       <text id="#CCFBEE" font-family="Telefonica-Regular, Telefonica" font-size="12.8" font-weight="normal" fill="#999999">
+                           <tspan x="264.0928" y="20.2">#CCFBEE</tspan>
+                       </text>
+                       <use id="Rectangle-5" stroke="#999999" mask="url(#mask-2)" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" stroke-dasharray="2.4,2.4" xlink:href="#path-1"></use>
+                       <text id="Logo" font-family="Telefonica-Regular, Telefonica" font-size="12.8" font-weight="normal" fill="#999999">
+                           <tspan x="30.7968" y="141">Logo</tspan>
+                       </text>
+                   </g>
+               </g>
+           </g>
+       </g>
+   </g>
+<style data-made-with="vivus-instant">.zpKIvabH_0{stroke-dasharray:204 206;stroke-dashoffset:205;animation:zpKIvabH_draw 1333ms linear 0ms forwards;}.zpKIvabH_1{stroke-dasharray:4480 4482;stroke-dashoffset:4481;animation:zpKIvabH_draw 1333ms linear 33ms forwards;}.zpKIvabH_2{stroke-dasharray:307 309;stroke-dashoffset:308;animation:zpKIvabH_draw 1333ms linear 66ms forwards;}.zpKIvabH_3{stroke-dasharray:538 540;stroke-dashoffset:539;animation:zpKIvabH_draw 1333ms linear 99ms forwards;}.zpKIvabH_4{stroke-dasharray:518 520;stroke-dashoffset:519;animation:zpKIvabH_draw 1333ms linear 133ms forwards;}.zpKIvabH_5{stroke-dasharray:418 420;stroke-dashoffset:419;animation:zpKIvabH_draw 1333ms linear 166ms forwards;}.zpKIvabH_6{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 199ms forwards;}.zpKIvabH_7{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 233ms forwards;}.zpKIvabH_8{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 266ms forwards;}.zpKIvabH_9{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 299ms forwards;}.zpKIvabH_10{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 333ms forwards;}.zpKIvabH_11{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 366ms forwards;}.zpKIvabH_12{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 399ms forwards;}.zpKIvabH_13{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 433ms forwards;}.zpKIvabH_14{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 466ms forwards;}.zpKIvabH_15{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 499ms forwards;}.zpKIvabH_16{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 533ms forwards;}.zpKIvabH_17{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 566ms forwards;}.zpKIvabH_18{stroke-dasharray:55 57;stroke-dashoffset:56;animation:zpKIvabH_draw 1333ms linear 599ms forwards;}.zpKIvabH_19{stroke-dasharray:78 80;stroke-dashoffset:79;animation:zpKIvabH_draw 1333ms linear 633ms forwards;}.zpKIvabH_20{stroke-dasharray:76 78;stroke-dashoffset:77;animation:zpKIvabH_draw 1333ms linear 666ms forwards;}@keyframes zpKIvabH_draw{100%{stroke-dashoffset:0;}}@keyframes zpKIvabH_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>

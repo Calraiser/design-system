@@ -1,0 +1,49 @@
+#onBoarding {
+  background-color: rgba(74, 74, 74, .2);
+  .bx--modal-container {
+    max-height: 100%;
+    border-radius: 2px;
+    box-shadow: 0 0 4px 0 $grey07;
+  }
+
+  .bx--modal-content {
+    overflow: inherit;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .onBoarding-slide {
+    &__figure {
+      margin-bottom: 70px;
+      margin-top: 35px;
+      height: 200px;
+      svg {
+        width: 100%;
+        @include media($mobile) {
+          width: auto;
+        }
+        &.hidden {
+          display: none;
+        }
+      }
+    }
+
+    &__header {
+      @extend %txt-title-h3;
+      color: $blue;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    &__text {
+      @extend %txt-paragraph;
+      margin-bottom: 40px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .actions {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,43 @@
+
+.bx--modal#onBoarding (data-modal role="dialog" aria-modal="true" aria-labelledby="onBoarding-label" aria-describedby="onBoarding-heading" tabindex="-1")
+  .bx--modal-container
+    .bx--modal-header
+      button.lds-modal--close (type="button" data-modal-close aria-label="close modal")
+        .icon-close
+    .bx--modal-content
+      .onBoarding-slide
+
+        .onBoarding-slide__item
+          figure.onBoarding-slide__figure
+            = svg_tag 'onBoarding/welcome.svg';
+          h3.onBoarding-slide__header = data.on_boarding.text.welcome.title
+          p.onBoarding-slide__text = data.on_boarding.text.welcome.content
+
+        .onBoarding-slide__item
+          figure.onBoarding-slide__figure
+            = svg_tag 'onBoarding/guidelines.svg';
+          h3.onBoarding-slide__header = data.on_boarding.text.guidelines.title
+          p.onBoarding-slide__text = data.on_boarding.text.guidelines.content
+
+        .onBoarding-slide__item
+          figure.onBoarding-slide__figure
+            = svg_tag 'onBoarding/graphics.svg';
+          h3.onBoarding-slide__header = data.on_boarding.text.graphics.title
+          p.onBoarding-slide__text = data.on_boarding.text.graphics.content
+
+        .onBoarding-slide__item
+          figure.onBoarding-slide__figure
+            = svg_tag 'onBoarding/uielements.svg';
+          h3.onBoarding-slide__header = data.on_boarding.text.uielements.title
+          p.onBoarding-slide__text = data.on_boarding.text.uielements.content
+
+        .onBoarding-slide__item
+          figure.onBoarding-slide__figure
+            = svg_tag 'onBoarding/resources.svg';
+          h3.onBoarding-slide__header = data.on_boarding.text.resources.title
+          p.onBoarding-slide__text = data.on_boarding.text.resources.content
+
+
+      .actions
+        = link_to 'Skip', '#', { :class => 'c-btn btn-primary inverse btn-medium', :'data-modal-close' => '', :'aria-label'=> 'close modal' }
+        = link_to 'Next', '#', { :class => 'c-btn btn-secondary btn-medium next'}

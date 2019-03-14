@@ -13,6 +13,7 @@
 // Vendors
 @import "vendors/bourbon";
 @import "vendors/c3.min";
+@import "vendors/slick";
 
 // Styling!
 // 1. base/
@@ -81,6 +82,7 @@
 // 9. blocks/
 @import "blocks/charts_type";
 @import "blocks/floating_feedback";
+@import "blocks/onBoarding";
 
 // 10. uielements/
 @import "uielements/switch";
