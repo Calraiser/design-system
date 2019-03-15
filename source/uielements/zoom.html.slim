@@ -22,6 +22,9 @@ index: true
       .col-xs-5.col-md-2.u-pb-5
         h3.bx--type-label.u-uppercase.u-pb-5 Disabled
         = partial :"components/_zoom", :locals => { :icons => data.zoom.icons, :extraclass => 'disabled' }
+      .col-xs-5.col-md-2.u-pb-5
+        h3.bx--type-label.u-uppercase.u-pb-5 Full size map
+        = partial :"components/_zoom", :locals => { :icons => data.zoom.iconsFull, :extraclass => 'active-last' }
 
   .clipboard
     h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
