@@ -93,7 +93,7 @@ ul {
     right: 20px;
     bottom: 50px;
     @include media($mobile) {
-      @include position(fixed, null 70px 30px null);
+      @include position(fixed, null 20px 30px null);
     }
   }
   .progressScroll-circle {

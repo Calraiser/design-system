@@ -40,6 +40,9 @@ index: true
   = partial :"buttonstype/_buttons_header", :locals => { :title => 'Secondary buttons with icons', :text => 'Buttons for DOWNLOAD or similar operations', :light =>'large / medium / small' }
   = partial :"buttonstype/_secondary_buttons_ico"
 
+  .content-block
+    = partial :"blocks/_anatomy", :locals => { :extracolumn => true, :item => data.component_slider.items.buttons }
+
   .footer-navigation
     .footer-navigation__previous
       = previous_link(data.title['uielements'])

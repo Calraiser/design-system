@@ -318,3 +318,24 @@ items:
       images:
         image01: '/assets/images/uicomponents/tooltip/specs_01.png'
         image02: '/assets/images/uicomponents/tooltip/specs_02.png'
+
+
+  buttons:
+    - id: 'padding'
+      images:
+        image01: '/assets/images/uicomponents/buttons/padding_01.png'
+        image02: '/assets/images/uicomponents/buttons/padding_02.png'
+        image03: '/assets/images/uicomponents/buttons/padding_03.png'
+
+    - id: 'measures'
+      images:
+        image01: '/assets/images/uicomponents/buttons/measures_01.png'
+        image02: '/assets/images/uicomponents/buttons/measures_02.png'
+        image03: '/assets/images/uicomponents/buttons/measures_03.png'
+        image04: '/assets/images/uicomponents/buttons/measures_04.png'
+
+    - id: 'specifications'
+      images:
+        image01: '/assets/images/uicomponents/buttons/specs_01.png'
+        image02: '/assets/images/uicomponents/buttons/specs_02.png'
+        image03: '/assets/images/uicomponents/buttons/specs_03.png'
