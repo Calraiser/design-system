@@ -49,7 +49,7 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#checkbox-code'}
 
   .content-block
-    = partial :"components/_component_slider", :locals => { :custom_form => 'radio_button', :multiple => true, :item => data.component_slider.items.radio }
+    = partial :"blocks/_anatomy", :locals => { :extracolumn => true, :item => data.component_slider.items.radio }
 
   .content-block
     h2.bx--type-h4.u-text-blue Spacing

@@ -131,6 +131,10 @@ index: true
 
         = partial :"components/_code_actions", :locals => { :target => '#tooltips-dark'}
 
+    .content-block
+      = partial :"blocks/_anatomy", :locals => { :extracolumn => true, :item => data.component_slider.items.tooltip }
+
+
   .footer-navigation
     .footer-navigation__previous
       = previous_link(data.title['uielements'])

@@ -1,13 +1,16 @@
 
-- extraclass ||= false
-- multiple   ||= false
+- extraclass  ||= false
+- multiple    ||= false
+- extracolumn ||= false
 
 .anatomy class=(extraclass if extraclass.present?)
   h2.bx--type-h4.u-text-blue Anatomy
 
-  .row.between-xs
-    - item.each_with_index do |element, index|
-      .col-xs-4 id="#{element[:id]}"
-        h3.bx--type-h4.u-uppercase = element[:id].capitalize
-        - element.images.each_with_index do |image, index|
-          = image_tag image[1], class: 'image-100'
+  - item.each_with_index do |element, index|
+    div id="#{element[:id]}"
+      h3.bx--type-h4.u-uppercase = element[:id].capitalize
+      .atomy-image__wrapper
+        .row.middle-xs.center-xs.around-lg
+          - element.images.each_with_index do |image, index|
+            .col-lg.col class=('col-xs-6' if extracolumn.present?)
+              = image_tag image[1]

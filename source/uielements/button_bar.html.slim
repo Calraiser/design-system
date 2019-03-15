@@ -45,8 +45,8 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#tabs-code'}
 
   .content-block
-    = partial :"components/_component_slider", :locals => { :custom_form => 'tabs', :item => data.component_slider.items.tabs }
-
+    = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.tabs }
+    
   .content-block
     h2.bx--type-h4.u-text-blue Spacing
     p.bx--type-p

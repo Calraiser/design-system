@@ -56,7 +56,7 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#input-code'}
 
   .content-block
-    = partial :"components/_component_slider", :locals => { :custom_form => 'switch', :multiple => true, :item => data.component_slider.items.input }
+    = partial :"blocks/_anatomy", :locals => { :extracolumn => true,  :item => data.component_slider.items.input }
 
   .content-block
     h1.bx--type-h1 Text Area

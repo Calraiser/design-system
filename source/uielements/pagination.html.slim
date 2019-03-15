@@ -151,21 +151,9 @@ index: true
 
       = partial :"components/_code_actions", :locals => { :target => '#pagination'}
 
-  .anatomy-simple
-    h2.bx--type-h4.u-text-blue Anatomy
-    .anatomy-simple__content
-      .row.col-xs-offset-0.col-lg-offset-1
-        .col-xs-12.col-sm-4.col-md-4
-          h2.anatomy-simple__heading  Padding
-          = image_tag 'uicomponents/pagination/padding.png';
+  .content-block
+    = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.pagination }
 
-        .col-xs-12.col-sm-4.col-md-4
-          h2.anatomy-simple__heading  Measures
-          = image_tag 'uicomponents/pagination/measures.png';
-
-        .col-xs-12.col-sm-4.col-md-4
-          h2.anatomy-simple__heading  Specifications
-          = image_tag 'uicomponents/pagination/specs.png'
 
   .content-block
     h2.bx--type-h4.u-text-blue.u-pb-6 Example

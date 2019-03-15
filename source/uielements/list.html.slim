@@ -32,7 +32,8 @@ index: true
   .content-block.u-pb-6
     = image_tag 'uicomponents/list/list-example.png', class: 'image-3x';
   .content-block
-    = partial :"components/_component_slider", :locals => { :custom_form => 'pills', :item => data.component_slider.items.list }
+    = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.list }
+
 
   .footer-navigation
     .footer-navigation__previous

@@ -1,6 +1,6 @@
 ---
-page_title: Combobox
-description: Combobox lets users choose one option from a list in a dropdown menu. It works well for lists of more than four choices when displaying them could clutter up the interface.
+page_title: Dropdown
+description: Dropdown lets users choose options (one in case of dropdown) or various options (in case of multiselect dropdown) from a list in a menu. It works well for lists of more than four choices when displaying them could clutter up the interface.
 
 layout: content
 index: true
@@ -16,6 +16,7 @@ index: true
       li Provide a label to clearly identify the content being presented in the drop down menu.
       li Have a default option selected, where possible.
       li Have a placeholder option with the text “Select” if there is no logical default option.
+      li In case of choosing various options, when the dropdown is fold, it indicates the number of selected items.
 
   .content-block
     h2.bx--type-h4.u-text-blue States
@@ -60,7 +61,7 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#combobox'}
 
   .content-block
-    = partial :"components/_component_slider", :locals => { :custom_form => 'checkbox', :multiple => true, :item => data.component_slider.items.combobox }
+    = partial :"blocks/_anatomy", :locals => { :extracolumn => true, :item => data.component_slider.items.combobox }
 
   .content-block.u-pt-6
     h2.bx--type-h4.u-text-black.u-uppercase Variants
