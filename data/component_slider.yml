@@ -143,6 +143,8 @@ items:
         image01: '/assets/images/uicomponents/inputs/padding_01.png'
         image02: '/assets/images/uicomponents/inputs/padding_02.png'
         image03: '/assets/images/uicomponents/inputs/padding_03.png'
+        image04: '/assets/images/uicomponents/inputs/padding_04.png'
+        image05: '/assets/images/uicomponents/inputs/padding_05.png'
 
     - id: 'measures'
       images:
@@ -156,6 +158,7 @@ items:
         image01: '/assets/images/uicomponents/inputs/specs_01.png'
         image02: '/assets/images/uicomponents/inputs/specs_02.png'
         image03: '/assets/images/uicomponents/inputs/specs_03.png'
+        image03: '/assets/images/uicomponents/inputs/specs_04.png'
 
   info_navigation:
     - id: 'padding'

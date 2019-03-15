@@ -1,6 +1,7 @@
 
-- extraclass ||= false
-- multiple   ||= false
+- extraclass  ||= false
+- multiple    ||= false
+- extracolumn ||= false
 
 .anatomy class=(extraclass if extraclass.present?)
   h2.bx--type-h4.u-text-blue Anatomy
@@ -11,5 +12,5 @@
       .atomy-image__wrapper
         .row.middle-xs.center-xs.around-lg
           - element.images.each_with_index do |image, index|
-            .col-lg.col class=('col-xs-6' if index > 1)
+            .col-lg.col class=('col-xs-6' if extracolumn.present?)
               = image_tag image[1]

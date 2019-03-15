@@ -61,8 +61,8 @@ index: true
       = partial :"components/_code_actions", :locals => { :target => '#combobox'}
 
   .content-block
-    = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.combobox }
-  
+    = partial :"blocks/_anatomy", :locals => { :extracolumn => true, :item => data.component_slider.items.combobox }
+
   .content-block.u-pt-6
     h2.bx--type-h4.u-text-black.u-uppercase Variants
     p.bx--type-p
