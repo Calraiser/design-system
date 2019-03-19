@@ -338,7 +338,7 @@ items:
       images:
         - item: '/assets/images/uicomponents/zoom/specs@3x.png'
           width: 264
-          height: 200
+          height: 165
 
   list:
     - id: 'padding'
