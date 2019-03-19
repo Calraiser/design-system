@@ -1,0 +1,70 @@
+.multi {
+  @include position(absolute, 0 0 0 0);
+  background-color: $white;
+  padding: 10px 0;
+  transition: all 0.2s ease;
+  border-radius: 3px;
+  border: 1px solid $grey02;
+  color: $grey;
+  background: image-url('icons/arrow_drop_down.svg') no-repeat;
+  background-position: 97% 15px;
+  font-size: 14px;
+  font-family: Telefonicaregular;
+  .button-text {
+    padding: 0 15px;
+    cursor: pointer;
+  }
+  &.open {
+    background: image-url('icons/arrow_drop_up.svg') no-repeat;
+    background-position: 97% 15px;
+    .multi-menu {
+     display: block
+   }
+  }
+  .multi-menu {
+    margin-top: 3px;
+    .list-items {
+      position: relative;
+      cursor: pointer;
+      &.selected {
+        background: #f2f2f2;
+        .check-mark {
+          &:before {
+            content: '\f1ca';
+            font-family: fontcustom;
+            color: $blue;
+          }
+        }
+      }
+      &.control {
+        margin: 5px 0;
+      }
+      a {
+        display: block;
+        padding: 12px 15px;
+        clear: both;
+        font-weight: 400;
+        line-height: 1.42857143;
+        color: $grey;
+        white-space: nowrap
+      }
+    }
+  }
+}
+
+
+.multi-menu li a span.text {
+  display: inline-block;
+  position: relative
+}
+
+.multi-menu li a span.check-mark {
+  display: none
+}
+
+.multi-menu li.selected a span.check-mark {
+  position: absolute;
+  display: inline-block;
+  right: 15px;
+  margin-top: 0
+}
