@@ -28,11 +28,36 @@ index: true
     .clipboard
       h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
       .code-wrapper
-        .code-content id="combobox"
-          / = code("html") do
-          /   :preserve
-          /     = partial :"components/_modal", :locals => { :id => 'example', :close => true, :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Modal dialog title goes here', :textlabel => 'Optional label', :check => true, :btnTxt => 'Save', :secondbtnTxt => 'Cancel', :secondbtn => true, :footerPosition => 'between-xs' }
-
+        .code-content id="modal"
+          = code("html") do
+            | <div aria-describedby="example-heading" aria-labelledby="example-label" aria-modal="true" class="lds-modal" data-modal="" id="example" role="dialog" tabindex="-1">
+                <div class="lds-modal--container">
+                  <div class="lds-modal--header">
+                    <p class="lds-modal--header__label" id="modal-ctc6fyo8dge-label">Optional label</p>
+                    <p class="lds-modal--header__heading" id="modal-ctc6fyo8dge-heading">Modal dialog title goes here</p>
+                    <button aria-label="close modal" class="lds-modal--close" data-modal-close="" type="button">
+                      <div class="icon-close"></div>
+                    </button>
+                  </div>
+                  <div class="lds-modal--content">
+                  <p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. </p>
+                  </div>
+                  <div class="lds-modal--footer between-xs">
+                    <div class="actions">
+                      <div class="lds--custom-input checkbox">
+                        <input class="lds--checkbox-input" id="483" name="set-name" type="checkbox">
+                        <label class="lds--checkbox-label" for="483">
+                        <span class="label-on bx--type-label selected"> Don’t show me again</span>
+                        <span class="label-off bx--type-label">Don’t show me again</span></label>
+                      </div>
+                    </div>
+                    <div class="actions">
+                      <button class="c-btn btn-medium btn-primary inverse" data-modal-close="" type="button">Cancel</button>
+                      <button class="c-btn btn-medium btn-primary" data-modal-primary-focus="" type="button">&nbsp;Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
         = partial :"components/_code_actions", :locals => { :target => '#combobox'}
 
@@ -69,6 +94,9 @@ index: true
       | It is used when the user needs to make a deliberate choice, asking the user to make a decision that will affect any future actions within the application, like agreeing to terms
 
     = partial 'components/_setting_modal'
+
+  .content-block
+    = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.modals }
 
   .footer-navigation
     .footer-navigation__previous

@@ -13,4 +13,4 @@
         .row.center-xs.middle-xs.around-lg
           - element.images.each_with_index do |image, index|
             .col-lg.col class=('col-xs-6' if extracolumn.present?)
-              = image_tag image[1]
+              = image_tag image.item, width: image.width, height: image.height

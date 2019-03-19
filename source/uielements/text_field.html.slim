@@ -97,21 +97,8 @@ index: true
 
       = partial :"components/_code_actions", :locals => { :target => '#textarea' }
 
-  .content-block.text-field__anatomy
-    .row.between-xs.top-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-12.col-sm-5.col-lg-4
-        h3.bx--type-label.u-pb-5.u-uppercase Measures
-        = image_tag 'uicomponents/inputs/textarea_measures.png', class: 'image-2x';
-      .col-xs-12.col-sm-5.col-lg-4
-        h3.bx--type-label.u-pb-5.u-uppercase Specifications
-        = image_tag 'uicomponents/inputs/textarea_specs.png', class: 'image-2x';
-    .row.between-xs.top-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-12.col-sm-5.col-lg-4
-        h3.bx--type-label.u-pb-5.u-uppercase Spacing
-        = image_tag 'uicomponents/inputs/textarea_spacing.png', class: 'image-2x';
-      .col-xs-12.col-sm-5.col-lg-4
-        h3.bx--type-label.u-pb-5.u-uppercase Padding
-        = image_tag 'uicomponents/inputs/textarea_padding.png', class: 'image-2x';
+  .content-block
+    = partial :"blocks/_anatomy", :locals => { :extracolumn => true,  :item => data.component_slider.items.text_field }
 
   .footer-navigation
     .footer-navigation__previous
