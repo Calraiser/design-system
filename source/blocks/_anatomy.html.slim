@@ -8,7 +8,7 @@
 
   - item.each_with_index do |element, index|
     div id="#{element[:id]}"
-      h3.bx--type-h4.u-uppercase = element[:id].capitalize
+      h4.bx--type-h5.u-uppercase = element[:id].capitalize
       .atomy-image__wrapper
         .row.center-xs.middle-xs.around-lg
           - element.images.each_with_index do |image, index|
