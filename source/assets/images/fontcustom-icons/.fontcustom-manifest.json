@@ -1,7 +1,7 @@
 {
   "checksum": {
     "previous": "42b25de51cf2f52c9b0eee69434f50233a87ad42a4e94fbcda2be782f3af93c0",
-    "current": "4a72c5a854369e3b3d219ba875f3ce0d3296be723d417df9ec34d87ad7def8ef"
+    "current": "0dbb94b0e791c3a9b2a8710520d50ccad015e868ff3f44e67cc5798bc0d02350"
   },
   "fonts": [
 
@@ -22,6 +22,10 @@
     "8-col-bg": {
       "source": "./8-col-bg.svg",
       "codepoint": 61796
+    },
+    "download": {
+      "source": "./download.svg",
+      "codepoint": 61882
     },
     "ic-ai_02": {
       "source": "./ic-ai_02.svg",
@@ -234,6 +238,10 @@
     "triangle": {
       "source": "./triangle.svg",
       "codepoint": 61881
+    },
+    "upload": {
+      "source": "./upload.svg",
+      "codepoint": 61883
     }
   },
   "options": {

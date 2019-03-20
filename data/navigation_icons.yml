@@ -53,3 +53,9 @@ icons:
 
     - image: 'icons/refresh.svg'
       title: 'Refresh'
+    # 
+    # - image: 'icons/download.svg'
+    #   title: 'Download'
+    #
+    # - image: 'icons/upload.svg'
+    #   title: 'Upload'

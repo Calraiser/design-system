@@ -3,17 +3,17 @@ whiteColor:
     white: ['#ffffff', '']
 grayScale:
   primaryColors:
-    grey07: ['#4A4A4A', '']
+    grey07: ['#333333', '']
   complementaryColors:
-    grey09: ['#50535A', '']
-    grey04: ['#999999', '']
+    grey09: ['#606060', '']
+    grey04: ['#86888C', '']
   complementaryColors2:
-    grey02: ['#D8D8D8', '']
-    grey00: ['#F2F2F2', '']
+    grey02: ['#DFE0E1', '']
+    grey00: ['#F4F4F4', '']
 
 primaryColors:
   success:
-    green04: ['#00EEAA', '']
+    green04: ['#1AA992', '']
     blue04: ['#00AAEE', '']
   warning:
     orange04: ['#FF7A00', '']
@@ -25,39 +25,39 @@ primaryColors:
 
 grey:
   colors:
-    grey10: ['#F4F4F4', '']
-    grey01: ['#E5E5E5', '']
-    grey02: ['#D8D8D8', '']
-    grey03: ['#CCCCCC', '']
-    grey04: ['#999999', '']
-    grey05: ['#676767', '']
-    grey06: ['#595959', '']
-    grey07: ['#4A4A4A', '']
-    grey08: ['#212121', '']
+    grey10: ['#F2F2F3', '']
+    grey01: ['#E5E6E7', '']
+    grey02: ['#DFE0E1', '']
+    grey03: ['#CECFD0', '']
+    grey04: ['#BDBEBF', '']
+    grey05: ['#9D9D9E', '']
+    grey06: ['#86888C', '']
+    grey07: ['#606060', '']
+    grey08: ['#3A3A3A', '']
 
 green:
   colors:
-    green00: ['#CCFBEE', '80%']
-    green01: ['#99F8DD', '60%']
-    green02: ['#66F4CC', '40%']
-    green03: ['#33F1BB', '20%']
-    green04: ['#00EEAA', '']
-    green05: ['#00BE88', '20%']
-    green06: ['#008E66', '40%']
-    green07: ['#005F44', '60%']
-    green08: ['#002F22', '80%']
+    green00: ['#D1EDE9', '80%']
+    green01: ['#A3DCD3', '60%']
+    green02: ['#75CBBD', '40%']
+    green03: ['#47BAA7', '20%']
+    green04: ['#1AA992', '']
+    green05: ['#148774', '20%']
+    green06: ['#0F6557', '40%']
+    green07: ['#0A433A', '60%']
+    green08: ['#05211D', '80%']
 
 blue:
   colors:
-    blue00: ['#CCEEFF', '80%']
-    blue01: ['#99DDFF', '60%']
-    blue02: ['#66CCFF', '40%']
-    blue03: ['#33BBFF', '20%']
+    blue00: ['#CCEEFB', '80%']
+    blue01: ['#99DDF8', '60%']
+    blue02: ['#66CCF4', '40%']
+    blue03: ['#33BBF1', '20%']
     blue04: ['#00AAEE', '']
-    blue05: ['#0088CC', '20%']
-    blue06: ['#006699', '40%']
-    blue07: ['#004466', '60%']
-    blue08: ['#002233', '80%']
+    blue05: ['#0088BE', '20%']
+    blue06: ['#00668E', '40%']
+    blue07: ['#00445F', '60%']
+    blue08: ['#00222F', '80%']
 
 yellow:
   colors:

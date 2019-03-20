@@ -1,0 +1,388 @@
+{
+  "checksum": {
+    "previous": "",
+    "current": "c70a411ef1d52558cf0452d6e61518cd3df205af0b23c02c4f1c9b174d8ba1a1"
+  },
+  "fonts": [
+
+  ],
+  "glyphs": {
+    "color_usage": {
+      "source": "./color_usage.svg",
+      "codepoint": 61755
+    },
+    "desktop": {
+      "source": "./desktop.svg",
+      "codepoint": 61756
+    },
+    "fake-check": {
+      "source": "./fake-check.svg",
+      "codepoint": 61757
+    },
+    "fixed-grid": {
+      "source": "./fixed-grid.svg",
+      "codepoint": 61758
+    },
+    "floating_feedback": {
+      "source": "./floating_feedback.svg",
+      "codepoint": 61759
+    },
+    "graphic-example01": {
+      "source": "./graphic-example01.svg",
+      "codepoint": 61760
+    },
+    "graphic-examples": {
+      "source": "./graphic-examples.svg",
+      "codepoint": 61761
+    },
+    "graphic-rules01": {
+      "source": "./graphic-rules01.svg",
+      "codepoint": 61762
+    },
+    "graphic-rules02": {
+      "source": "./graphic-rules02.svg",
+      "codepoint": 61763
+    },
+    "ic-ai_02": {
+      "source": "./ic-ai_02.svg",
+      "codepoint": 61701
+    },
+    "ic-arrow-up": {
+      "source": "./ic-arrow-up.svg",
+      "codepoint": 61703
+    },
+    "ic-back-arrow": {
+      "source": "./ic-back-arrow.svg",
+      "codepoint": 61704
+    },
+    "ic-btn": {
+      "source": "./ic-btn.svg",
+      "codepoint": 61705
+    },
+    "ic-btn0": {
+      "source": "./ic-btn0.svg",
+      "codepoint": 61764
+    },
+    "ic-caret-blue": {
+      "source": "./ic-caret-blue.svg",
+      "codepoint": 61765
+    },
+    "ic-caret-grey": {
+      "source": "./ic-caret-grey.svg",
+      "codepoint": 61766
+    },
+    "ic-caret-white": {
+      "source": "./ic-caret-white.svg",
+      "codepoint": 61767
+    },
+    "ic-check-green": {
+      "source": "./ic-check-green.svg",
+      "codepoint": 61768
+    },
+    "ic-check-grey": {
+      "source": "./ic-check-grey.svg",
+      "codepoint": 61769
+    },
+    "ic-check-white": {
+      "source": "./ic-check-white.svg",
+      "codepoint": 61770
+    },
+    "ic-circle-arrow": {
+      "source": "./ic-circle-arrow.svg",
+      "codepoint": 61707
+    },
+    "ic-close": {
+      "source": "./ic-close.svg",
+      "codepoint": 61708
+    },
+    "ic-close-black": {
+      "source": "./ic-close-black.svg",
+      "codepoint": 61771
+    },
+    "ic-close-d3": {
+      "source": "./ic-close-d3.svg",
+      "codepoint": 61772
+    },
+    "ic-close-grey": {
+      "source": "./ic-close-grey.svg",
+      "codepoint": 61773
+    },
+    "ic-close-white": {
+      "source": "./ic-close-white.svg",
+      "codepoint": 61774
+    },
+    "ic-components-xl": {
+      "source": "./ic-components-xl.svg",
+      "codepoint": 61775
+    },
+    "ic-copy": {
+      "source": "./ic-copy.svg",
+      "codepoint": 61709
+    },
+    "ic-desktop-callout": {
+      "source": "./ic-desktop-callout.svg",
+      "codepoint": 61710
+    },
+    "ic-downloads-xl": {
+      "source": "./ic-downloads-xl.svg",
+      "codepoint": 61776
+    },
+    "ic-downloads-xs": {
+      "source": "./ic-downloads-xs.svg",
+      "codepoint": 61777
+    },
+    "ic-envelope": {
+      "source": "./ic-envelope.svg",
+      "codepoint": 61714
+    },
+    "ic-error": {
+      "source": "./ic-error.svg",
+      "codepoint": 61778
+    },
+    "ic-graphics-blue": {
+      "source": "./ic-graphics-blue.svg",
+      "codepoint": 61717
+    },
+    "ic-graphics-vizrules-xs": {
+      "source": "./ic-graphics-vizrules-xs.svg",
+      "codepoint": 61718
+    },
+    "ic-guidelines-blue": {
+      "source": "./ic-guidelines-blue.svg",
+      "codepoint": 61779
+    },
+    "ic-guidelines-blue-full": {
+      "source": "./ic-guidelines-blue-full.svg",
+      "codepoint": 61780
+    },
+    "ic-guidelines-xl": {
+      "source": "./ic-guidelines-xl.svg",
+      "codepoint": 61781
+    },
+    "ic-guidelines-xl-green": {
+      "source": "./ic-guidelines-xl-green.svg",
+      "codepoint": 61782
+    },
+    "ic-guidelines-xs": {
+      "source": "./ic-guidelines-xs.svg",
+      "codepoint": 61783
+    },
+    "ic-info": {
+      "source": "./ic-info.svg",
+      "codepoint": 61721
+    },
+    "ic-local-hotel": {
+      "source": "./ic-local-hotel.svg",
+      "codepoint": 61723
+    },
+    "ic-mobile-callout": {
+      "source": "./ic-mobile-callout.svg",
+      "codepoint": 61784
+    },
+    "ic-password": {
+      "source": "./ic-password.svg",
+      "codepoint": 61725
+    },
+    "ic-pdf": {
+      "source": "./ic-pdf.svg",
+      "codepoint": 61726
+    },
+    "ic-pdf_02": {
+      "source": "./ic-pdf_02.svg",
+      "codepoint": 61785
+    },
+    "ic-question": {
+      "source": "./ic-question.svg",
+      "codepoint": 61728
+    },
+    "ic-question0": {
+      "source": "./ic-question0.svg",
+      "codepoint": 61786
+    },
+    "ic-resources-blue": {
+      "source": "./ic-resources-blue.svg",
+      "codepoint": 61787
+    },
+    "ic-resources-downloads-xs-grey": {
+      "source": "./ic-resources-downloads-xs-grey.svg",
+      "codepoint": 61788
+    },
+    "ic-search": {
+      "source": "./ic-search.svg",
+      "codepoint": 61730
+    },
+    "ic-select": {
+      "source": "./ic-select.svg",
+      "codepoint": 61731
+    },
+    "ic-sketch": {
+      "source": "./ic-sketch.svg",
+      "codepoint": 61733
+    },
+    "ic-sketch_02": {
+      "source": "./ic-sketch_02.svg",
+      "codepoint": 61789
+    },
+    "ic-tablet-callout": {
+      "source": "./ic-tablet-callout.svg",
+      "codepoint": 61734
+    },
+    "ic-tooltip": {
+      "source": "./ic-tooltip.svg",
+      "codepoint": 61735
+    },
+    "ic-typo_02": {
+      "source": "./ic-typo_02.svg",
+      "codepoint": 61790
+    },
+    "ic-typography": {
+      "source": "./ic-typography.svg",
+      "codepoint": 61737
+    },
+    "ic-uicomponents-blue": {
+      "source": "./ic-uicomponents-blue.svg",
+      "codepoint": 61791
+    },
+    "ic-uielements-blue": {
+      "source": "./ic-uielements-blue.svg",
+      "codepoint": 61792
+    },
+    "ic-uielements-xs": {
+      "source": "./ic-uielements-xs.svg",
+      "codepoint": 61793
+    },
+    "ic-user": {
+      "source": "./ic-user.svg",
+      "codepoint": 61738
+    },
+    "ic-viz-rules-xl": {
+      "source": "./ic-viz-rules-xl.svg",
+      "codepoint": 61794
+    },
+    "ic-xml": {
+      "source": "./ic-xml.svg",
+      "codepoint": 61740
+    },
+    "ic-xml0": {
+      "source": "./ic-xml0.svg",
+      "codepoint": 61795
+    },
+    "ic-zip": {
+      "source": "./ic-zip.svg",
+      "codepoint": 61796
+    },
+    "ic-zip_02": {
+      "source": "./ic-zip_02.svg",
+      "codepoint": 61797
+    },
+    "layout-desktop": {
+      "source": "./layout-desktop.svg",
+      "codepoint": 61741
+    },
+    "layout-grid02": {
+      "source": "./layout-grid02.svg",
+      "codepoint": 61742
+    },
+    "layout-labtop": {
+      "source": "./layout-labtop.svg",
+      "codepoint": 61743
+    },
+    "layout-mobile": {
+      "source": "./layout-mobile.svg",
+      "codepoint": 61744
+    },
+    "layout-tablet": {
+      "source": "./layout-tablet.svg",
+      "codepoint": 61745
+    },
+    "logo-luca": {
+      "source": "./logo-luca.svg",
+      "codepoint": 61747
+    },
+    "mobile": {
+      "source": "./mobile.svg",
+      "codepoint": 61748
+    },
+    "pattern": {
+      "source": "./pattern.svg",
+      "codepoint": 61749
+    },
+    "single-column-gn": {
+      "source": "./single-column-gn.svg",
+      "codepoint": 61798
+    },
+    "single-column-gp": {
+      "source": "./single-column-gp.svg",
+      "codepoint": 61799
+    },
+    "sort-down": {
+      "source": "./sort-down.svg",
+      "codepoint": 61750
+    },
+    "sort-down-black": {
+      "source": "./sort-down-black.svg",
+      "codepoint": 61800
+    },
+    "sort-up": {
+      "source": "./sort-up.svg",
+      "codepoint": 61751
+    },
+    "sprites": {
+      "source": "./sprites.svg",
+      "codepoint": 61801
+    },
+    "tablet": {
+      "source": "./tablet.svg",
+      "codepoint": 61752
+    },
+    "template-chart-layout": {
+      "source": "./template-chart-layout.svg",
+      "codepoint": 61802
+    },
+    "triangle": {
+      "source": "./triangle.svg",
+      "codepoint": 61753
+    },
+    "two-column-apn": {
+      "source": "./two-column-apn.svg",
+      "codepoint": 61803
+    },
+    "two-column-gp": {
+      "source": "./two-column-gp.svg",
+      "codepoint": 61804
+    }
+  },
+  "options": {
+    "input": {
+      "vectors": ".",
+      "templates": "."
+    },
+    "output": {
+      "fonts": "fontcustom",
+      "css": "fontcustom",
+      "preview": "fontcustom"
+    },
+    "config": "fontcustom.yml",
+    "templates": [
+      "css",
+      "preview"
+    ],
+    "font_name": "fontcustom",
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "css_selector": ".icon-{{glyph}}",
+    "preprocessor_path": null,
+    "autowidth": false,
+    "no_hash": false,
+    "css3": false,
+    "debug": false,
+    "force": false,
+    "quiet": false,
+    "copyright": ""
+  },
+  "templates": [
+
+  ]
+}
