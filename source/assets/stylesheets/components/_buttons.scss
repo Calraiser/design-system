@@ -138,7 +138,6 @@ $button-colors: (
   &:hover, &.hover {
     color: $white;
     background: $blue;
-		border: 2px solid $white;
 		.icon-expand_more {
 			border-left: 2px solid $white !important;
 		}
