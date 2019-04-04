@@ -1,7 +1,7 @@
 .o-home-nav
-  .nav-content
+  .nav-content.row
     - data.home_nav.home_nav.each_with_index do |element, index|
-      .item
+      .item.col-xs-3
         .flipper
           .front
             = svg_tag "#{element.image}"

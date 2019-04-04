@@ -4,12 +4,12 @@ $select-background: $white;
 $select-width: 180px;
 $select-height: 36px;
 
-
 .select-hidden {
   display: none;
   visibility: hidden;
   padding-right: 10px;
 }
+
 .select {
   cursor: pointer;
   display: inline-block;
@@ -23,9 +23,11 @@ $select-height: 36px;
     width: $select-width;
   }
 }
+
 .select-label {
   margin-right: 12px;
 }
+
 .select-styled {
   @include position(absolute, 0 0 0 0);
   background-color: $select-background;
@@ -36,19 +38,22 @@ $select-height: 36px;
   color: #4A4A4A;
   background: image-url('ic-select.svg') no-repeat;
   background-position: 95% center;
+
   &.disabled {
-    opacity: .5;
+    opacity: 0.5;
     cursor: not-allowed;
   }
-  font:{
+  font: {
     size: 14px;
     family: Telefonicaregular;
   }
 
-  &:hover {
-  }
-  &:active, &.active {
+  &:hover {}
+
+  &.active,
+  &:active {
     border-color: #999;
+
     &:after {
       top: 9px;
       border-color: transparent transparent $select-color transparent;
@@ -57,7 +62,7 @@ $select-height: 36px;
 }
 
 .select-options {
-  @include position(absolute, 100% 0 null 0);
+  @include position(relative, 100% 0 null 0);
   display: none;
   z-index: 999;
   margin: -5px 0 0;
@@ -69,23 +74,24 @@ $select-height: 36px;
   border-top-right-radius: 0;
   background: $white;
   padding-top: 3px;
+  height: 120px;
 
   li {
     margin: 0;
     padding: 10px 0;
     text-indent: 12px;
     transition: $transition-slow;
-
-    font:{
+    font: {
       size: 14px;
       family: Telefonicaregular;
     }
-
     color: #4A4A4A;
+
     &:hover {
       color: $blue;
       background: #f2f2f2;
     }
+
     &[rel="hide"] {
       display: none;
     }
@@ -98,6 +104,7 @@ $select-height: 36px;
       margin-left: 0;
     }
   }
+
   &__left {
     .row {
       margin-left: 0;
@@ -106,7 +113,41 @@ $select-height: 36px;
       }
     }
   }
-  h3 {
 
-  }
+  h3 {}
 }
+// Scroll Bar
+.sb-container {
+  position: relative;
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+.sb-content {
+  height: 100%;
+  width: 135%;
+  padding-right: 20%;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.sb-scrollbar-container {
+  position: absolute;
+  right: 3px;
+  bottom: 5px;
+  top: 5px;
+  width: 10px;
+}
+
+.sb-scrollbar {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  width: 6px;
+  border-radius: 50px;
+  background: #86888C;
+}
+
+// .sb-scrollbar:hover {
+//   background: rgba(0, 0, 0, 0.5);
+// }

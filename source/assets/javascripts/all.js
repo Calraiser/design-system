@@ -14,6 +14,7 @@
 //= require ./vendors/datatables.js
 //= require ./vendors/modernizr.custom.js
 //= require ./vendors/multi.select.js
+//= require ./vendors/scrollBar.js
 
 //= require ./blocks/content_nav.js
 //= require ./blocks/responsive_nav.js

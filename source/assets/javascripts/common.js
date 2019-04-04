@@ -14,6 +14,8 @@ var data_embed = {};
 
 $(document).ready(function() {
 
+  $(".select-options").scrollBox();
+
   // Floating Feedback Tooltip
   $('.floating-feedback').on('mouseenter', function(e) {
     e.preventDefault();
@@ -91,6 +93,12 @@ $(document).ready(function() {
     } else {
       btnTop.fadeOut(duration);
     }
+    //
+    // if($('.homepage-content').height()) > ($('.o-home-nav').height()) {
+    //   $('.o-home-nav').addClass('relative');
+    // } else {
+    //   $('.o-home-nav').removeClass('relative');
+    // }
   });
 
   btnTop.on('click', function(e) {
