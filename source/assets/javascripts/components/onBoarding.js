@@ -3,7 +3,6 @@ var Modal = CarbonComponents.Modal;
 var element = Modal.create(document.getElementById('onBoarding'));
 var slider = $('.onBoarding-slide');
 var slider_svg = $('.onBoarding-slide__figure svg');
-
 var currSlide = 0;
 var nextSlide = 0;
 
@@ -22,6 +21,16 @@ document.addEventListener('modal-beingshown', function() {
 
 
 function applyHiddenClass() {
+  $('.slick-arrow').each(function(){
+  if ($(this).hasClass('slick-disabled')) {
+      $(this).text("Let's go");
+      $(this).attr('data-modal-close', '');
+    } else {
+      $(this).text("Next");
+      $(this).removeAttr('data-modal-close', '');
+    }
+  });
+
   $.each($('.slick-slide'), function() {
     if ($(this).attr('aria-hidden') == 'true') {
       $(this).find(slider_svg).fadeOut('slow');
@@ -33,6 +42,10 @@ function applyHiddenClass() {
 
 
 $(document).ready(function() {
+
+
+
+  $('.slick-disabled').html('Lets go');
 
   if (Cookies("popup_1_2") == null) {
     element.show();
