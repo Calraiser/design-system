@@ -13,6 +13,8 @@
 //= require ./vendors/jquery.sticky-kit.js
 //= require ./vendors/datatables.js
 //= require ./vendors/modernizr.custom.js
+//= require ./vendors/multi.select.js
+//= require ./vendors/scrollBar.js
 
 //= require ./blocks/content_nav.js
 //= require ./blocks/responsive_nav.js
@@ -27,6 +29,7 @@
 //= require ./uicomponents/accordion.js
 //= require ./uicomponents/list.js
 //= require ./uicomponents/alerts.js
+//= require ./uicomponents/multi_select.js
 
 //= require common.js
 //= require component.js

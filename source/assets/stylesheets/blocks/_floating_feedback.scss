@@ -36,6 +36,7 @@
   @include size(21px, 70px);
   margin: auto;
   cursor: pointer;
+  z-index: 99999;
   svg {
     fill: $grey;
   }
