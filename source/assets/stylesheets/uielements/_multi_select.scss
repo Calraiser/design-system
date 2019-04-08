@@ -2,32 +2,43 @@
   @include position(absolute, 0 0 0 0);
   background-color: $white;
   padding: 10px 0;
-  transition: all 0.2s ease;
   border-radius: 3px;
   border: 1px solid $grey02;
   color: $grey;
   background: image-url('icons/arrow_drop_down.svg') no-repeat;
-  background-position: 97% 15px;
+  background-position: 94% 15px;
   font-size: 14px;
   font-family: Telefonicaregular;
+  width: 180px !important;
   .button-text {
-    padding: 0 15px;
+    padding: 0 12px;
     cursor: pointer;
+    display: block;
   }
   &.open {
     background: image-url('icons/arrow_drop_up.svg') no-repeat;
-    background-position: 97% 15px;
+    background-position: 94% 15px;
+    border-color: $grey01;
     .multi-menu {
-     display: block
+     display: block;
+
    }
   }
   .multi-menu {
-    margin-top: 3px;
+    min-height: 120px;
+    top: 12px;
+    .control {
+      display: none;
+    }
     .list-items {
       position: relative;
       cursor: pointer;
+      padding: 8px 12px;
       &.selected {
-        background: #f2f2f2;
+        background: $grey03;
+        a {
+          color: $blue;
+        }
         .check-mark {
           &:before {
             content: '\f1ca';
@@ -41,7 +52,6 @@
       }
       a {
         display: block;
-        padding: 12px 15px;
         clear: both;
         font-weight: 400;
         line-height: 1.42857143;

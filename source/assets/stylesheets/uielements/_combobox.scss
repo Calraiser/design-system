@@ -1,5 +1,5 @@
 $background: #e74c3c;
-$select-color: #fff;
+$select-color: $white;
 $select-background: $white;
 $select-width: 180px;
 $select-height: 36px;
@@ -35,9 +35,10 @@ $select-height: 36px;
   transition: $transition-slow;
   border-radius: 3px;
   border: 1px solid #D8D8D8;
-  color: #4A4A4A;
-  background: image-url('ic-select.svg') no-repeat;
-  background-position: 95% center;
+  color: $grey;
+  background: image-url('icons/arrow_drop_down.svg') no-repeat;
+  background-position: 94% center;
+
 
   &.disabled {
     opacity: 0.5;
@@ -48,11 +49,18 @@ $select-height: 36px;
     family: Telefonicaregular;
   }
 
-  &:hover {}
+  &.active {
+    font-family: Telefonicabold;
+  }
+  &.open {
+    background: image-url('icons/arrow_drop_up.svg') no-repeat;
+    background-position: 95% center;
+  }
 
+  &.open,
   &.active,
   &:active {
-    border-color: #999;
+    border-color: $grey01;
 
     &:after {
       top: 9px;
@@ -74,7 +82,7 @@ $select-height: 36px;
   border-top-right-radius: 0;
   background: $white;
   padding-top: 3px;
-  height: 120px;
+  height: 110px;
 
   li {
     margin: 0;
@@ -85,11 +93,11 @@ $select-height: 36px;
       size: 14px;
       family: Telefonicaregular;
     }
-    color: #4A4A4A;
+    color: $grey;
 
     &:hover {
       color: $blue;
-      background: #f2f2f2;
+      background: $grey03;
     }
 
     &[rel="hide"] {
@@ -113,8 +121,6 @@ $select-height: 36px;
       }
     }
   }
-
-  h3 {}
 }
 // Scroll Bar
 .sb-container {
@@ -137,6 +143,7 @@ $select-height: 36px;
   bottom: 5px;
   top: 5px;
   width: 10px;
+  z-index: 999;
 }
 
 .sb-scrollbar {

@@ -5,8 +5,6 @@ $(document).ready(function() {
     selectColor: 'purple',
     selectSize: 'small',
     selectText: 'Select Project',
-    duration: 300,
-    easing: 'slide',
     listMaxHeight: '100%',
     selectedCount: 2,
     sortByText: true,

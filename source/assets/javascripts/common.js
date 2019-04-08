@@ -15,6 +15,7 @@ var data_embed = {};
 $(document).ready(function() {
 
   $(".select-options").scrollBox();
+  $(".multi-menu").scrollBox();
 
   // Floating Feedback Tooltip
   $('.floating-feedback').on('mouseenter', function(e) {

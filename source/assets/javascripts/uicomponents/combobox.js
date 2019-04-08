@@ -40,6 +40,7 @@ $(document).ready(function(){
               $(this).addClass('active').next('ul.select-options').hide();
           });
           $(this).next('ul.select-options').toggle();
+          $(this).toggleClass('open');
       });
 
       $listItems.click(function(e) {
