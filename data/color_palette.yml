@@ -3,13 +3,13 @@ whiteColor:
     white: ['#ffffff', '']
 grayScale:
   primaryColors:
-    grey07: ['#333333', '']
+    grey07: ['#4A4A4A', '']
   complementaryColors:
     grey09: ['#606060', '']
-    grey04: ['#86888C', '']
+    grey05: ['#86888C', '']
   complementaryColors2:
-    grey02: ['#DFE0E1', '']
-    grey00: ['#F4F4F4', '']
+    grey11: ['#DFE0E1', '']
+    grey12: ['#F4F4F4', '']
 
 primaryColors:
   success:
@@ -22,18 +22,19 @@ primaryColors:
     yellow04: ['#FFF000', '']
   error:
     red: ['#F80000', '']
+  digital:
+    green09: ['#00CCAA', '']
 
 grey:
   colors:
     grey10: ['#F2F2F3', '']
-    grey01: ['#E5E6E7', '']
-    grey02: ['#DFE0E1', '']
-    grey03: ['#CECFD0', '']
-    grey04: ['#BDBEBF', '']
-    grey05: ['#9D9D9E', '']
-    grey06: ['#86888C', '']
-    grey07: ['#606060', '']
-    grey08: ['#3A3A3A', '']
+    grey01: ['#E9EAE8', '']
+    grey02: ['#D3D4D3', '']
+    grey03: ['#B6B7B7', '']
+    grey04: ['#9D9D9E', '']
+    grey05: ['#86888C', '']
+    grey06: ['#606060', '']
+    grey07: ['#3A3A3A', '']
 
 green:
   colors:

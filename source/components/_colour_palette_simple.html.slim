@@ -7,7 +7,7 @@
   - if colorTitle.present?
     h4.bx--type-h4.u-uppercase #{colorTitle}
 
-  .row
+  .row.row-np
     - colours.each_with_index do |item, index|
       .swatches id="#{item[0]}"
         a.btn-copy data-clipboard-action="copy" data-clipboard-text='#{item[1][0]}'

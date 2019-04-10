@@ -2,16 +2,18 @@ $colorPalette: (
   black: #000,
   grey: #4A4A4A,
   grey00: #F2F2F3,
-  grey01: #E5E6E7,
-  grey02: #DFE0E1,
-  grey03: #CECFD0,
-  grey04: #86888c,
+  grey01: #E9EAE8,
+  grey02: #D3D4D3,
+  grey03: #B6B7B7,
+  grey04: #9D9D9E,
   grey05: #86888C,
-  grey06: #595959,
-  grey07: #333333,
+  grey06: #606060,
+  grey07: #3A3A3A,
   grey08: #3A3A3A,
   grey09: #606060,
-  grey10: #F4F4F4,
+  grey10: #F2F2F3,
+  grey11: #DFE0E1,
+  grey12: #F4F4F4,
   green00: #D1EDE9,
   green01: #A3DCD3,
   green02: #75CBBD,
@@ -21,12 +23,13 @@ $colorPalette: (
   green06: #0F6557,
   green07: #0A433A,
   green08: #05211D,
+  green09: #00CCAA,
   blue00: #CCEEFB,
   blue01: #99DDF8,
   blue02: #66CCF4,
   blue03: #33BBF1,
   blue04: #00AAEE,
-  blue05: #0088CE,
+  blue05: #0088BE,
   blue06: #00668E,
   blue07: #00445F,
   blue08: #00222F,
@@ -124,8 +127,8 @@ $colorPalette: (
   .palette-container {
     &.rounded {
       margin-top: 20px;
-      @include media($tablet) {
-        margin-top: 72px;
+      @include media($mobile) {
+        margin-top: 20px;
         margin-bottom: 50px !important;
       }
 
@@ -164,7 +167,7 @@ $colorPalette: (
     &.main-palette {
       .bx--type-h4 {
         font-size: rem-calc(10);
-        margin-left: 38px;
+        margin-left: 46px;
         margin-bottom: 6px;
       }
 

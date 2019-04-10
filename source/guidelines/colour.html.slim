@@ -28,7 +28,7 @@ index: true
 
     .content-block
       .main-colors
-        .row.center-xs
+        .row.center-xs.row-np
           .col-lg-3.col-xs-6
             = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.grayScale.primaryColors, :title => 'Primary colour <br>(heading & navigation)', :extraclass => 'rounded'}
           .col-lg-3.col-xs-6
@@ -46,15 +46,17 @@ index: true
       | Status colour (for use on components that require a different state)
 
     .content-block
-      .row.center-xs
+      .row.between-xs.row-np
         .col-lg-3.col-xs-6
           = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.success, :title => 'Completed / Success/Call to action <br>/ Buttons, links & active states', :extraclass => 'rounded'}
         .col-lg-3.col-xs-6
           = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.warning, :title => 'Warning / In progress', :extraclass => 'rounded'}
-        .col-lg-3.col-xs-6
+        .col-lg-2.col-xs-6
           = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.alert, :title => 'Alert / Attention', :extraclass => 'rounded'}
-        .col-lg-3.col-xs-6
+        .col-lg-2.col-xs-6
           = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.error, :title => 'Critical / Error', :extraclass => 'rounded'}
+        .col-lg-2.col-xs-6
+          = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.digital, :title => 'Digital products <br> components', :extraclass => 'rounded'}
 
     h2.bx--type-h4 Visual Hierarchy
     p.bx--type-p
