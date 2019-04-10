@@ -219,9 +219,9 @@ ul {
     .example-desk {
       &.u-pl-4 {
         padding-left: 0;
-        @include media($tablet) {
-          padding-left: 20px;
-        }
+        // @include media($tablet) {
+        //   padding-left: 20px;
+        // }
       }
 
       &.u-pl-5 {
