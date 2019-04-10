@@ -18,6 +18,7 @@
 
 .e-list {
   margin: 5px 0 0 50px;
+  list-style: disc;
 
   li {
     @extend %txt-text-list;
