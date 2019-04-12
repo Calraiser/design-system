@@ -5,11 +5,11 @@ description: Our design system helps us work together to build a great experienc
 ---
 
 header.p-homepage
-  .homepage-content
-    .header
-      h1.title Welcome to
-      h2.subtitle.u-uppercase = current_page.data.page_title
-      p.text.u-pb-6 = current_page.data.description
+  .homepage-content.center-xs.start-md
+    .header.col-xs-12.col-md-5
+      hgroup.u-pb-6
+        h1.title Welcome to
+        h2.subtitle.u-uppercase = current_page.data.page_title
 
       = link_to 'Getting Started', '#', { :class => 'c-btn btn-secondary btn-large', :'data-modal-target'=> '#onBoarding' }
     .home-image
