@@ -9,12 +9,12 @@ index: true
 = javascript_include_tag 'https://unpkg.com/carbon-components/scripts/carbon-components.min.js'
 
 /.Example modal
-= partial :"components/_modal", :locals => { :id => 'example', :close => true, :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Modal dialog title goes here', :textlabel => 'Optional label', :check => true, :btnTxt => 'Save', :secondbtnTxt => 'Cancel', :secondbtn => true, :footerPosition => 'between-xs' }
 
 = partial :"components/_modal", :locals => { :close => true, :id => 'informational', :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Welcome to LUCA Comms', :check => true, :btnTxt => 'Go it!', :footerPosition => 'between-xs' }
 
-= partial :"components/_modal", :locals => { :close => true, :id=> 'transactional', :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Explore the full functionalities', :textlabel => 'Welcome to LUCA', :btnTxt => 'Go ahead!' , :secondbtnTxt => 'Skip', :secondbtn => true, :footerPosition => 'end-xs'  }
+= partial :"components/_modal", :locals => { :close => true, :id => 'transactional', :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Explore the full functionalities', :textlabel => 'Welcome to LUCA', :btnTxt => 'Go ahead!' , :secondbtnTxt => 'Skip', :secondbtn => true, :footerPosition => 'end-xs' }
 
+= partial :"components/_setting_modal", :locals => { :id => 'settings' }
 
 .content
   h1.bx--type-h1 = current_page.data.page_title
@@ -22,8 +22,8 @@ index: true
 
   .content-block.u-pb-8
     h2.bx--type-h4.u-text-blue Example modal
-    .u-pt-6.u-text-center
-      button.c-btn.btn-primary (type="button" data-modal-target="#example") Show modal
+    .content-block
+      = partial :"components/_modal", :locals => { :id => 'example', :extraclass => 'is-static', :close => true, :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Modal dialog title goes here', :textlabel => 'Optional label', :check => true, :btnTxt => 'Save', :secondbtnTxt => 'Cancel', :secondbtn => true, :footerPosition => 'between-xs' }
 
     .clipboard
       h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
@@ -93,7 +93,9 @@ index: true
     p.bx--type-p.u-pb-6
       | It is used when the user needs to make a deliberate choice, asking the user to make a decision that will affect any future actions within the application, like agreeing to terms
 
-    = partial 'components/_setting_modal'
+    .u-text-center
+      button.c-btn.btn-primary (type="button" data-modal-target="#settings") Show modal
+
 
   .content-block
     = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.modals }

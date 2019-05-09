@@ -30,8 +30,8 @@
 //= require ./uicomponents/list.js
 //= require ./uicomponents/alerts.js
 //= require ./uicomponents/multi_select.js
+//= require ./uicomponents/zoom.js
 
 //= require common.js
-//= require component.js
 
 //= require ./blocks/search.js

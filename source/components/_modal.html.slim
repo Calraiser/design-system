@@ -27,13 +27,14 @@
       p
         | #{text}
 
-    .lds-modal--footer class="#{footerPosition}"
-      - if check
+    .lds-modal--footer
+      .actions-container class="#{footerPosition}"
+        - if check
+          .actions
+            = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Don’t show me again', :label_unselected => 'Don’t show me again' }
         .actions
-          = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Don’t show me again', :label_unselected => 'Don’t show me again' }
-      .actions
-        - if secondbtn
-          button.c-btn.btn-medium.btn-primary.inverse (type="button" data-modal-close)
-            | #{secondbtnTxt}
-        button.c-btn.btn-medium.btn-primary (type="button"  data-modal-primary-focus)
-         | #{btnTxt}
+          - if secondbtn
+            button.c-btn.btn-medium.btn-primary.inverse (type="button" data-modal-close)
+              | #{secondbtnTxt}
+          button.c-btn.btn-medium.btn-primary (type="button"  data-modal-primary-focus)
+           | #{btnTxt}

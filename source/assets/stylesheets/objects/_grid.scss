@@ -29,7 +29,7 @@
       }
       .content-block {
         padding: 15px 0;
-        max-width: 1200px;
+        max-width: 1400px;
         @include media($mobile) {
           padding: 35px 0;
         }
@@ -103,14 +103,15 @@
     background-color: $grey03;
     position: fixed;
     opacity: .8;
-    top: 0;
+    top: 70px;
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 999;
+    z-index: 99999;
   }
   @include media($mobile) {
     display: none;
+    top: 0;
   }
 }
 

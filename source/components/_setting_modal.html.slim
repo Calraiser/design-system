@@ -4,9 +4,10 @@
 - check     ||= false
 - secondbtn ||= false
 - btnTxt    ||= false
+- id        ||= false
 
 
-.lds-modal.setting-modal.is-static (data-modal id="modal-ctc6fyo8dge" role="dialog" aria-modal="true" aria-labelledby="modal-ctc6fyo8dge-label" aria-describedby="modal-ctc6fyo8dge-heading" tabindex="-1")
+.lds-modal.setting-modal (data-modal id="#{id}" role="dialog" aria-modal="true" aria-labelledby="modal-ctc6fyo8dge-label" aria-describedby="modal-ctc6fyo8dge-heading" tabindex="-1")
   .lds-modal--container
     .lds-modal--header
 
@@ -16,31 +17,32 @@
     .lds-modal--content
       .row.between-xs
 
-        .col-xs-3.col
+        .col-xs-12.col-sm-6.col-md-3.col
           = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'Annual evolution of voice consumption', :label_unselected => 'Annual evolution of voice consumption' }
           = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Annual evolution of voice consumption', :label_unselected => 'Annual evolution of voice consumption' }
           = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Annual evolution of voice consumption', :label_unselected => 'Annual evolution of voice consumption' }
           = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Top 5 departments with highest avg voice consumption', :label_unselected => 'Top 5 departments with highest avg voice consumption' }
 
-        .col-xs-3.col
+        .col-xs-12.col-sm-6.col-md-3.col
           = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'Top 5 countries international corporative calls', :label_unselected => 'Top 5 countries international corporative calls' }
           = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Top 5 countries international corporative calls', :label_unselected => 'Top 5 countries international corporative calls' }
 
-        .col-xs-3.col
+        .col-xs-12.col-sm-6.col-md-3.col
           = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'Top 5 countries international corporative calls', :label_unselected => 'Top 5 countries international corporative calls' }
           = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Top 5 countries international corporative calls', :label_unselected => 'Top 5 countries international corporative calls' }
 
-        .col-xs-3.col
+        .col-xs-12.col-sm-6.col-md-3.col
           = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'Top 5 countries international corporative calls', :label_unselected => 'Top 5 countries international corporative calls' }
           = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Top 5 countries international corporative calls', :label_unselected => 'Top 5 countries international corporative calls' }
           = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Top 5 countries international corporative calls', :label_unselected => 'Top 5 countries international corporative calls' }
           = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Top 5 countries international corporative calls', :label_unselected => 'Top 5 countries international corporative calls' }
 
     .lds-modal--footer.end-xs
-      .actions
-        button.c-btn.btn-medium.btn-primary.inverse (type="button" data-modal-close)
-          | Cancel
-        button.c-btn.btn-medium.btn-primary.inverse (type="button" data-modal-close)
-          | Reset
-        button.c-btn.btn-medium.btn-primary (type="button"  data-modal-primary-focus)
-          | Apply
+      .actions-container
+        .actions
+          button.c-btn.btn-medium.btn-primary.inverse (type="button" data-modal-close)
+            | Cancel
+          button.c-btn.btn-medium.btn-primary.inverse (type="button" data-modal-close)
+            | Reset
+          button.c-btn.btn-medium.btn-primary (type="button"  data-modal-primary-focus)
+            | Apply

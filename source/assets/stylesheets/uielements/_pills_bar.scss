@@ -1,17 +1,18 @@
-.lds-tags{
+.lds-tags {
   border-radius: 12px;
   background-color: $tags;
-
-  position: relative;
-  padding: rem-calc(3) rem-calc(35) rem-calc(3) rem-calc(12);
+  padding: 0 5px 0 12px;
   margin: 0 8px 8px 0;
-
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: left;
-
-  max-width: 106px;
+  max-width: 125px;
+  height: 24px;
   transition: $transition-slow;
   cursor: pointer;
+
+  float: left;
 
   &__caption {
     @extend %txt-caption;
@@ -21,12 +22,10 @@
   .icon-ic-close {
     font-size: rem-calc(10);
   }
+
   .icon-ic-back-arrow {
     font-size: rem-calc(10);
     color: $tags;
-    position: relative;
-    left: 2px;
-    top: -1px;
   }
 
   &.tags-default {
@@ -34,53 +33,69 @@
     white-space: pre;
     @include media($tablet) {
       width: 125px;
-
     }
   }
+
   &.tag-back {
     padding: 0 6px 0 4px;
+
     svg {
       fill: $tags;
       @include size(10px);
     }
   }
+
   &.tag-counter {
     padding: 0 9px 0 6px;
+    max-width: 39px;
   }
-  &.tag-counter, &.tag-back {
-    background-color: $white;
+  &.tag-back {
+    max-width: 24px;
+    width: 24px;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+  }
 
+  &.tag-back,
+  &.tag-counter {
+    background-color: $white;
     border: 2px solid $tags;
+    justify-content: center;
+
     span {
       color: $tags;
     }
+
     &:hover {
       border: 2px solid $tags-hover;
-      span, i {
+
+      i,
+      span {
         color: $white;
       }
     }
   }
-  &:hover, &.tags-hover {
+
+  &.tags-hover,
+  &:hover {
     background-color: $tags-hover;
   }
+
   &.tags-disabled {
     background-color: $grey02;
   }
 
   .close {
-    float: right;
     line-height: 1;
-    @include position(absolute, 0 0 null null);
-    padding: rem-calc(4) rem-calc(12);
     border: none;
     background: none;
     -webkit-appearance: none;
-    cursor:  pointer;
-
+    cursor: pointer;
   }
 
   span {
     color: $white;
+    margin-top: -2px;
   }
 }

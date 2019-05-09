@@ -3,6 +3,11 @@
     margin-bottom: 6px;
     display: flex;
     justify-content: center;
+    &.active {
+      a {
+        background: $blue;
+      }
+    }
 
     &.disabled {
       &:hover {
@@ -19,7 +24,6 @@
       &.active-last {
         a {
           background: $blue;
-
         }
       }
     }

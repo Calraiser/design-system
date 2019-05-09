@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 59px;
+    height: 70px;
     @include media($mobile) {
       padding: 0 80px;
       height: 100%;
@@ -79,6 +79,6 @@
   .m-ico-close {
     background: image-url('ic-close-black.svg') no-repeat;
     @include size(20px);
-    @include position(absolute, 15px 10px null null);
+    @include position(absolute, 30px 20px null null);
   }
 }

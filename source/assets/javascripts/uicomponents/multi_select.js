@@ -7,8 +7,8 @@ $(document).ready(function() {
     selectText: 'Select Project',
     listMaxHeight: '100%',
     selectedCount: 2,
-    sortByText: true,
-    fillButton: true,
+    sortByText: false,
+    fillButton: false,
     data: {
       "BD": "Bangladesh",
       "BE": "Belgium",
@@ -20,8 +20,5 @@ $(document).ready(function() {
       "BL": "Saint Barthelemy",
       "BM": "Bermuda",
     },
-    onSelect: function(values) {
-      console.log('return values: ', values);
-    }
     });
   });

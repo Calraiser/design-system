@@ -43,8 +43,6 @@ function applyHiddenClass() {
 
 $(document).ready(function() {
 
-
-
   $('.slick-disabled').html('Lets go');
 
   if (Cookies("popup_1_2") == null) {

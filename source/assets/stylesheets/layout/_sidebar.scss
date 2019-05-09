@@ -18,9 +18,11 @@ $sidebar-width: 105px;
   background: $white;
   position: fixed;
   z-index: 9999;
+  padding: 10px 0;
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid $grey03;
   @include media($mobile) {
     width: $sidebar-width;
