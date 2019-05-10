@@ -27,7 +27,7 @@ $button-colors: (
   position: relative;
   display: inline-block;
   border-radius: 42px;
-	padding: .540rem .75rem;
+	padding: .532rem .75rem;
   @include padding(null 20px);
 	font-size: rem-calc(14);
 	line-height: 1.5;
@@ -101,6 +101,7 @@ $button-colors: (
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: .407rem 1.25rem;
 		.icon-check {
 			font-size: rem-calc(17);
 		}
@@ -157,13 +158,14 @@ $button-colors: (
     }
     .icon-expand_more {
       display: block;
-      padding: 5px 17px 0;
+      padding: 8px 17px;
       order: 1;
       border-left: 2px solid $blue;
-			display: flex;
 			align-items: center;
-			height: 31px;
 			font-size: rem-calc(12);
+			&:before {
+				margin-top: 8px;
+			}
     }
 
 		&.btn-large {
@@ -180,7 +182,8 @@ $button-colors: (
 		&.btn-medium,
 		&.btn-small {
 			.icon-expand_more {
-				padding: 5px 11px 0 !important;
+				padding-left: 11px;
+				padding-right: 11px;
 			}
 		}
   }
@@ -205,6 +208,7 @@ $button-colors: (
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: .532rem 1.25rem;
 		.icon-ic-close {
 			font-size: rem-calc(12);
 		}

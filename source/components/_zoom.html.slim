@@ -2,5 +2,5 @@
 
 .lds-zoom
   - icons.each_with_index do |element, index|
-    .control-zoom class=(extraclass if index === 1)
+    .control-zoom class=(extraclass if index === 0)
       = link_to svg_tag element.image

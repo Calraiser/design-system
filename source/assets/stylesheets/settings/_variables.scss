@@ -99,6 +99,15 @@ $spacing-sides: (
 ) !default;
 
 
+$caption-01: (
+  font-family: carbon--font-family('sans'),
+  font-size: carbon--type-scale(1),
+  font-weight: carbon--font-weight('regular'),
+  line-height: carbon--rem(16px),
+  letter-spacing: 0.32px,
+) !default;
+
+
 
 $edited: true;
 $brand-01: $white;
