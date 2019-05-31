@@ -6,6 +6,8 @@
     link: "/guidelines/overview.html"
   - title: "Colour"
     link: "/guidelines/colour.html"
+  - title: "Spacing"
+    link: "/guidelines/spacing.html"
   - title: "Type & Hierarchy"
     link: "/guidelines/typography.html"
   - title: "Grid, layouts & breakpoints"

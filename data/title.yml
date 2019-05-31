@@ -8,6 +8,7 @@ guidelines:
   adopting.html.slim: "/guidelines/adopting.html.slim"
   overview.html.slim: "/guidelines/overview.html.slim"
   colour.html.slim: "/guidelines/colour.html.slim"
+  spacing.html.slim: "/guidelines/spacing.html.slim"
   typography.html.slim: "/guidelines/typography.html.slim"
   layout.html.slim: "/guidelines/layout.html.slim"
   illustrations.html.slim: "/guidelines/illustrations.html.slim"

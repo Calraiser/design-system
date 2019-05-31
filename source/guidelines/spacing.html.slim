@@ -1,0 +1,78 @@
+---
+page_title: Spacing
+description: Spacing helps give priority and legibility to content. Its use guides in an effective way the human eye directing and focusing attention. With this, we will achieve a balance and harmony to the content.
+
+layout: content
+index: true
+---
+
+.p-adopting.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+  p.bx--type-p.u-pt-5
+    | The space in a composition will be achieved with the following elements:
+    ul.e-list
+      li Space around a graphic element or image.
+      li Margins, paddings.
+      li Line spacing within a text content (see section #{ link_to "see section Type & Hierarchy", '/guidelines/typography.html', class: 'bx--link' })
+      li Space between columns.
+
+  p.bx--type-p.u-pt-6.u-pb-7
+    | In LUCA there are two spacing scales. One for general spacing for components and the other for layout spacing. The following measures must be followed, but exceptionally, if necessary, any multiple of 3 is recommended.
+
+  .content-block
+    h2.bx--type-h4.u-text-blue Spacing scale
+    p.bx--type-p.u-pt-3
+      | Use the spacing scale when building individual components. It includes small increments needed to create appropriate spatial relationships for detail-level designs.
+
+  .spacing-table
+    .spacing-table__header
+      p.bx--type-p px
+      p.bx--type-p example
+    .spacing-table__content
+      - (0..10).each_with_index do |i, index|
+        - index += 1
+        .spacing-table__item
+          .px
+            p.bx--type-p
+              | #{index * 6}
+          .example
+            div class="example-#{index * 6}"
+
+  .content-block
+    h2.bx--type-p.u-pb-6 Example of spacing scale
+    .col-lg-8.col-md-12
+      = image_tag 'guidelines/scale-example.png', class: 'image-100'
+
+
+  .content-block
+    h2.bx--type-h4.u-text-blue Layout scale
+    p.bx--type-p.u-pt-3
+      | We use layout scale to organize the visual components into a full page layout.
+
+  .spacing-table
+    .spacing-table__header
+      p.bx--type-p px
+      p.bx--type-p example
+    .spacing-table__content
+      - (0..10).each_with_index do |i, index|
+        - index += 1
+        .spacing-table__item
+          .px
+            p.bx--type-p
+              | #{index * 6}
+          .example
+            div class="example-#{index * 6}"
+
+  .content-block
+    h2.bx--type-p.u-pb-4 Example of spacing scale
+    .col-lg-11.col-md-12
+      = image_tag 'guidelines/scale-example_02.png', class: 'image-100'
+
+
+
+  .footer-navigation
+    .footer-navigation__previous
+      = previous_link(data.title['guidelines'])
+    .footer-navigation__next
+      = next_link(data.title['guidelines'])
