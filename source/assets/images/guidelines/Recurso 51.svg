@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Recurso 51</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Recurso-51">
+            <g id="Shape">
+                <g fill="#1E3546" fill-rule="nonzero">
+                    <g>
+                        <path d="M12,1 C19.3,1 23,4.7 23,12 C23,19.3 19.29,23 12,23 C4.71,23 1,19.3 1,12 C1,4.7 4.7,1 12,1 L12,1 Z M12,0 C4.42,0 0,3.83 0,12 C0,20.17 4.42,24 12,24 C19.58,24 24,20.17 24,12 C24,3.83 19.57,0 12,0 Z"></path>
+                    </g>
+                </g>
+                <g id="Path" transform="translate(12.000000, 7.330000)" stroke="#1E3546" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+                    <polyline points="-8.8817842e-16 0 -8.8817842e-16 5 3.69 8.69"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

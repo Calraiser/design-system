@@ -5,24 +5,29 @@ resources:
     items:
       - subtitle: 'Colour'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Colourpalette_v1.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Colourpalette_v1.pdf'
-          Adobe Illustrator: '/download/ai/20180917_DSdownload_EGG_Colourpalette_v1.zip'
+          sketch:            '/download/sketch/colourpalette_DS_LUCA.zip'
+          PDF:               '/download/pdf/colourpalette_DS_LUCA.pdf'
+          Adobe Illustrator: '/download/ai/colourpalette_DS_LUCA.zip'
 
       - subtitle: 'Typography'
         files:
-          Font:              '/download/typography/typography.zip'
+          Font:              '/download/typography/typography_DS_LUCA.zip'
 
       - subtitle: 'Grid & Layouts'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Gridandlayouts_v1.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Gridandlayouts_v1.pdf'
+          sketch:            '/download/sketch/gridandlayouts_DS_LUCA.zip'
+          PDF:               '/download/pdf/gridandlayouts_DS_LUCA.pdf'
+
+      - subtitle: 'Spacing'
+        files:
+          sketch:            '/download/sketch/spacing_DS_LUCA.zip'
+          PDF:               '/download/pdf/spacing_DS_LUCA.pdf'
 
       - subtitle: 'Brand & Logos'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Brand.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Brand.pdf'
-          ZIP:               '/download/zip/logos_LUCA_TEF.zip'
+          sketch:            '/download/sketch/brand_DS_LUCA.zip'
+          PDF:               '/download/pdf/brand_DS_LUCA.pdf'
+          ZIP:               '/download/zip/logos_DS_LUCA.zip'
 
 
   #Graphics
@@ -30,109 +35,114 @@ resources:
     items:
       - subtitle: 'Complementary colours'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_CompColourpalette_v1.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_CompColourpalette_v1.pdf'
-          Adobe Illustrator: '/download/ai/20180917_DSdownload_EGG_CompColourpalette_v1.zip'
+          sketch:            '/download/sketch/compColourpalette_DS_LUCA.zip'
+          PDF:               '/download/pdf/compColourpalette_DS_LUCA.pdf'
+          Adobe Illustrator: '/download/ai/compColourpalette_DS_LUCA.zip'
 
       - subtitle: 'Viz rules'
         files:
-          sketch:            '/download/sketch/20180917_DesignSystem_EGG_Vizrules_v1.zip'
-          PDF:               '/download/pdf/20190112_VizRules_GYGL_Descargable.pdf'
+          sketch:            '/download/sketch/vizrules_DS_LUCA.zip'
+          PDF:               '/download/pdf/vizrules_DS_LUCA.pdf'
 
   #UI Elements
   - title: 'UI Elements & Components'
     items:
       - subtitle: 'Alerts'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Alerts.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Alerts.pdf'
+          sketch:            '/download/sketch/alerts_DS_LUCA.zip'
+          PDF:               '/download/pdf/alerts_DS_LUCA.pdf'
 
       - subtitle: 'Accordion'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Accordion.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Accordion.pdf'
+          sketch:            '/download/sketch/accordion_DS_LUCA.zip'
+          PDF:               '/download/pdf/accordion_DS_LUCA.pdf'
 
       - subtitle: 'Buttons'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Buttons_v1.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Buttons_v1.pdf'
+          sketch:            '/download/sketch/buttons_DS_LUCA.zip'
+          PDF:               '/download/pdf/buttons_DS_LUCA.pdf'
 
       - subtitle: 'Buttons Bar'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_ButtonBar.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_ButtonBar.pdf'
+          sketch:            '/download/sketch/buttonBar_DS_LUCA.zip'
+          PDF:               '/download/pdf/buttonBar_DS_LUCA.pdf'
+
+      - subtitle: 'Cards'
+        files:
+          sketch:            '/download/sketch/cards_DS_LUCA.zip'
+          PDF:               '/download/pdf/cards_DS_LUCA.pdf'
 
       - subtitle: 'Checkbox'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Checkbox_v1.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Checkbox_v1.pdf'
+          sketch:            '/download/sketch/checkbox_DS_LUCA.zip'
+          PDF:               '/download/pdf/checkbox_DS_LUCA.pdf'
 
       - subtitle: 'Combobox'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Combobox.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Combobox.pdf'
+          sketch:            '/download/sketch/combobox_DS_LUCA.zip'
+          PDF:               '/download/pdf/combobox_DS_LUCA.pdf'
 
       - subtitle: 'Links'
         files:
-          sketch:            '/download/sketch/20190215_DesignSystem_GYGL_Links.zip'
-          PDF:               '/download/pdf/20190215_DSdownload_GYGL_Link.pdf'
+          sketch:            '/download/sketch/links_DS_LUCA.zip'
+          PDF:               '/download/pdf/links_DS_LUCA.pdf'
 
       - subtitle: 'List'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_List.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_List.pdf'
+          sketch:            '/download/sketch/list_DS_LUCA.zip'
+          PDF:               '/download/pdf/list_DS_LUCA.pdf'
 
       - subtitle: 'Modals'
         files:
-          sketch:            '/download/sketch/20190215_DesignSystem_GYGL_Modals.zip'
-          PDF:               '/download/pdf/20190215_DSdownload_GYGL_Modals.pdf'
+          sketch:            '/download/sketch/modals_DS_LUCA.zip'
+          PDF:               '/download/pdf/modals_DS_LUCA.pdf'
 
       - subtitle: 'Navigation Icons'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Navigationicons.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Navigationicons.pdf'
+          sketch:            '/download/sketch/navigationicons_DS_LUCA.zip'
+          PDF:               '/download/pdf/navigationicons_DS_LUCA.pdf'
 
       - subtitle: 'Pagination'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Pagination.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Pagination.pdf'
+          sketch:            '/download/sketch/pagination_DS_LUCA.zip'
+          PDF:               '/download/pdf/pagination_DS_LUCA.pdf'
 
       - subtitle: 'Tags'
         files:
-          sketch:            '/download/sketch/20181217_DSdownload_GYGL_Tags.zip'
-          PDF:               '/download/pdf/20181217_DSdownload_GYGL_Tags.pdf'
+          sketch:            '/download/sketch/tags_DS_LUCA.zip'
+          PDF:               '/download/pdf/tags_DS_LUCA.pdf'
 
       - subtitle: 'Popover'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Popover.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Popover.pdf'
+          sketch:            '/download/sketch/popover_DS_LUCA.zip'
+          PDF:               '/download/pdf/popover_DS_LUCA.pdf'
 
       - subtitle: 'Radio Buttons'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Radiobuttons.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Radiobuttons.pdf'
+          sketch:            '/download/sketch/radiobuttons_DS_LUCA.zip'
+          PDF:               '/download/pdf/radiobuttons_DS_LUCA.pdf'
 
       - subtitle: 'Switch'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Switch.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Switch.pdf'
+          sketch:            '/download/sketch/switch_DS_LUCA.zip'
+          PDF:               '/download/pdf/switch_DS_LUCA.pdf'
 
       - subtitle: 'Tabs'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Tabs.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Tabs.pdf'
+          sketch:            '/download/sketch/tabs_DS_LUCA.zip'
+          PDF:               '/download/pdf/tabs_DS_LUCA.pdf'
 
       - subtitle: 'Text Fields'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_TextFields.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_TextFields.pdf'
+          sketch:            '/download/sketch/textFields_DS_LUCA.zip'
+          PDF:               '/download/pdf/textFields_DS_LUCA.pdf'
 
       - subtitle: 'Tooltips'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Tooltips.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Tooltips.pdf'
+          sketch:            '/download/sketch/tooltips_DS_LUCA.zip'
+          PDF:               '/download/pdf/tooltips_DS_LUCA.pdf'
 
       - subtitle: 'Zoom'
         files:
-          sketch:            '/download/sketch/20180917_DSdownload_EGG_Zoom.zip'
-          PDF:               '/download/pdf/20180917_DSdownload_EGG_Zoom.pdf'
+          sketch:            '/download/sketch/zoom_DS_LUCA.zip'
+          PDF:               '/download/pdf/zoom_DS_LUCA.pdf'

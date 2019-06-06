@@ -34,7 +34,7 @@ body {
   &.open {
     overflow: hidden;
     @include media($mobile) {
-      overflow: auto;
+      overflow-y: auto;
     }
   }
 }
@@ -206,7 +206,7 @@ body {
 .main-content.menu-open .main-content-wrapper .content {
   transform: translate3d(400px, 0, 0);
   transition: all .5s ease;
-  @include media($medium-desktop) {
+  @include media($tablet) {
     padding-right: 500px;
   }
 }

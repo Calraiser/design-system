@@ -1,0 +1,55 @@
+---
+page_title: Cards
+description: The cards provide information, details about a service or representation of data that users can interact with.
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+  p.bx--type-p.u-pt-5
+    | There is a wide variety of cards. All of them must be easy to scan in search of relevant and actionable information. They are a gateway to more detailed information.
+  p.bx--type-p.u-pt-5
+    | Card designs may vary to support the types of content. Despite all the variants of cards that can be made, some rules must be met:
+    ul.e-list
+      li The width of the card must adapt to the grid.
+      li Within the card the spacing established in the LUCA Design System must be respected (see section #{ link_to "see section Spacing", '/guidelines/spacing.html', class: 'bx--link' })
+      li The same margin must be maintained on all four sides of the card.
+
+
+  .content-block
+    h2.bx--type-h4.u-text-blue Types of cards
+    p.bx--type-p.u-pt-3
+      | This type of cards will be used in dashboards. Depending on their functionality will be shown title, subtitle, percentages, graphs, maps, lists, etc.
+
+    .row.u-pt-6
+      .col-xs-12.col-md-6.col-lg-6
+        = image_tag 'card_01.png';
+      .col-xs-12.col-sm-4
+        = image_tag 'card_02.png';
+
+  .content-block
+    p.bx--type-p
+      | These cards will be used on the web. The width of your container will be adjusted to the grid. According to the need we can include title, subtitle, text,...
+
+  .content-cards
+    .row
+      .col-xs-12.col-md-12.u-pb-7.col-lg-6
+        = partial :"components/_cards", :locals => { :note => 'Optional Label', :title => 'Title. Maximum of 28 characters' }
+      .col-xs-12.col-md-6.u-pb-7.col-lg-3
+        = partial :"components/_cards", :locals => { :title => 'Title 18 characters' }
+      .col-xs-12.col-sm-6
+        = partial :"components/_cards", :locals => { :title => 'Title. Maximum of 28 characters', :subtitle => 'Subtitle optional' }
+
+
+
+  .footer-navigation
+    .footer-navigation__previous
+      = previous_link(data.title['uielements'])
+    .footer-navigation__next
+      = next_link(data.title['uielements'])
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'cards_DS_LUCA', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'cards_DS_LUCA', :pdf => true }

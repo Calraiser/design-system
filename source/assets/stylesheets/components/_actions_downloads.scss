@@ -17,6 +17,13 @@
     }
     .link {
       font-size: rem-calc(14);
+      &.pdf-link,
+      &.ai-link {
+        svg {
+          @include size(57px, 61px);
+          margin-left: -15px;
+        }
+      }
     }
     .ai-ico {
       width: 60px;
@@ -30,6 +37,7 @@
     }
     span {
       display: block;
+      margin-top: 8px;
     }
   }
 }

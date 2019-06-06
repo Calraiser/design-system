@@ -21,6 +21,9 @@
   position: relative;
   transition: color 0.3s ease;
   cursor: pointer;
+  color: $blue;
+  font-family: Telefonicaregular;
+  font-size: 14px;
 
   border: 1px solid transparent;
 
@@ -39,10 +42,6 @@
     &:before {
       right: 0;
     }
-  }
-  @include text-style(14, 22, Telefonicaregular, $blue);
-  @include media($medium-desktop) {
-    @include text-style(14, 24, Telefonicaregular, $blue);
   }
 }
 

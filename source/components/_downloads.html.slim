@@ -10,35 +10,35 @@
 
 - if pdf
   .action-item
-    a(href="/download/pdf/#{name}.pdf", download="#{name}" class="link")
-      = svg_tag 'ic-pdf.svg'
+    a(href="/download/pdf/#{name}.pdf"  download="#{name}" class="link pdf-link")
+      = svg_tag 'ic-pdf_02.svg'
       span
         | Download PDF
 
 - if sketch
   .action-item
-    a(href="/download/sketch/#{name}.zip", download="#{name}" class="link")
+    a(href="/download/sketch/#{name}.zip" download="#{name}" class="link")
       = svg_tag 'ic-sketch.svg'
       span
         | Download Sketch
 
 - if typo
   .action-item
-    a(href="/download/typography/#{name}.zip", download="#{name}" class="link")
+    a(href="/download/typography/#{name}.zip" download="#{name}" class="link")
       = svg_tag 'ic-zip.svg'
       span
         | Download Typography
 
 - if zip
   .action-item
-    a(href="/download/zip/#{name}.zip", download="#{name}" class="link")
+    a(href="/download/zip/#{name}.zip" download="#{name}" class="link")
       = svg_tag 'ic-zip.svg'
       span
         | #{customTitle}
 
 - if ai
   .action-item
-    a(href="/download/ai/#{name}.zip", download="#{name}" class="link")
-      = image_tag 'ai_icon.png', class: 'ai-ico'
+    a(href="/download/ai/#{name}.zip" download="#{name}" class="link ai-link")
+      = svg_tag 'ic-doc-ai.svg';
       span
         | Download Illustrator

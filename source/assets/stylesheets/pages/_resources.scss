@@ -51,7 +51,7 @@
     }
     &.Adobe {
       &:before {
-        background-image: image-url('ic-adobe.png');
+        background-image: image-url('ai-link.png');
         background-size: 19px auto;
       }
     }
@@ -95,6 +95,16 @@
   }
 }
 
+.ppt-file {
+  &:after {
+    content: '';
+    background: image-url('icons/ic-doc-ppt.svg') no-repeat;
+    background-size: 20px auto;
+    padding: 12px;
+    float: left;
+    margin-right: 5px;
+  }
+}
 .resources-inner {
   .lds-resources {
     border-bottom: none;

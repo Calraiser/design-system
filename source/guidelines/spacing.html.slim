@@ -6,7 +6,7 @@ layout: content
 index: true
 ---
 
-.p-adopting.content
+.content
   h1.bx--type-h1 = current_page.data.page_title
   p.bx--type-p = current_page.data.description
   p.bx--type-p.u-pt-5
@@ -76,3 +76,7 @@ index: true
       = previous_link(data.title['guidelines'])
     .footer-navigation__next
       = next_link(data.title['guidelines'])
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'spacing_DS_LUCA', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'spacing_DS_LUCA', :pdf => true }
