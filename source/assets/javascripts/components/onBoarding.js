@@ -23,7 +23,7 @@ document.addEventListener('modal-beingshown', function() {
 function applyHiddenClass() {
   $('.slick-arrow').each(function(){
   if ($(this).hasClass('slick-disabled')) {
-      $(this).text("Go!");
+      $(this).text("Go it!");
       $(this).attr('data-modal-close', '');
     } else {
       $(this).text("Next");

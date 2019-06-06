@@ -24,15 +24,15 @@
 
 - if typo
   .action-item
-    a(href="/download/typography/#{name}.zip" download="#{name}" class="link")
-      = svg_tag 'ic-zip.svg'
+    a(href="/download/typography/#{name}.zip" download="#{name}" class="link zip-link")
+      = svg_tag 'ic-doc-zip.svg'
       span
         | Download Typography
 
 - if zip
   .action-item
-    a(href="/download/zip/#{name}.zip" download="#{name}" class="link")
-      = svg_tag 'ic-zip.svg'
+    a(href="/download/zip/#{name}.zip" download="#{name}" class="link zip-link")
+      = svg_tag 'ic-doc-zip.svg'
       span
         | #{customTitle}
 

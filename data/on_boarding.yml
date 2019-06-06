@@ -1,16 +1,16 @@
 text:
   welcome:
-    title: Welcome
-    content: Here you will find all about the good use of the principles, language and design to be coherent and consistent in your day to day in LUCA.
+    title: LET’S GET STARTED!
+    content: Get into the spirit of LUCA with our design system. From the principles to the language and materials, this site provides everything you’ll need to build high-quality digital experiences.
   guidelines:
-    title: Guidelines
-    content: Here you will find the basic design principles for the digital LUCA products. Let’s go together!.
+    title: GUIDELINES
+    content: Start developing and designing with our quick and comprehensive guides. Simplify your workflow and ensure quality and consistency.
   graphics:
-    title: Graphics & Visualization rules
-    content: Guides to build comprehensible and useful data visualizations in an easy way.
+    title: GRAPHICS & VISUALISATION RULES
+    content: Learn how to build and customize LUCA digital products with our guides and our extensive collection of material.
   uielements:
-    title: UI Elements & Components
-    content: An increasing library of components, made for developers and designers work efficiently together.
+    title: UI ELEMENTS & COMPONENTS
+    content: Make the most out of our library of components to jumpstart your project.
   resources:
-    title: Resources & Downloads
-    content: Find here all the materials and interesting links to start your LUCA project.
+    title: RESOURCES & DOWNLOADS
+    content: Browse and download our favourite material! Our resources are available in a wide range of formats, colours and sizes.

@@ -486,39 +486,36 @@ items:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/buttons/padding_01@3x.png'
-          width: 260
-          height: 75
+          width: 277
+          height: 116
         - item: '/assets/images/uicomponents/buttons/padding_02@3x.png'
           width: 277
-          height: 89
+          height: 116
         - item: '/assets/images/uicomponents/buttons/padding_03@3x.png'
-          width: 220
-          height: 89
+          width: 277
+          height: 116
 
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/buttons/measures_01@3x.png'
-          width: 259
-          height: 77
-        - item: '/assets/images/uicomponents/buttons/measures_02@3x.png'
-          width: 259
-          height: 75
+          width: 282
+          height: 80
         - item: '/assets/images/uicomponents/buttons/measures_03@3x.png'
-          width: 211
-          height: 57
+          width: 282
+          height: 80
         - item: '/assets/images/uicomponents/buttons/measures_04@3x.png'
-          width: 163
-          height: 57
+          width: 282
+          height: 80
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/buttons/specs_01@3x.png'
-          width: 214
-          height: 159
+          width: 218
+          height: 161
         - item: '/assets/images/uicomponents/buttons/specs_02@3x.png'
-          width: 166
-          height: 160
+          width: 218
+          height: 161
         - item: '/assets/images/uicomponents/buttons/specs_03@3x.png'
-          width: 119
-          height: 145
+          width: 218
+          height: 161
