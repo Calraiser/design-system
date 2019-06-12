@@ -52,7 +52,7 @@ $.fn.progressScroll = function(options) {
 
     this.prepare = function () {
         $(container).addClass("progressScroll");
-        $(container).html("<div class='" + borderContainer + "'><div class='" + circleContainer + "'><span class='ico icon-ic-arrow-up'></span></div></div>");
+        $(container).html("<div class='" + borderContainer + "'><div class='" + circleContainer + "'><span class='ico icon-ic-arrow_back'></span></div></div>");
 
         $(".progressScroll").css({
             "width" : settings.width,

@@ -90,20 +90,20 @@ items:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/tabs/tabs-padding@3x.png'
-          width: 760
-          height: 143
+          width: 623
+          height: 156
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/tabs/tabs-measures@3x.png'
-          width: 760
-          height: 143
+          width: 623
+          height: 156
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/tabs/tabs-specs@3x.png'
-          width: 760
-          height: 143
+          width: 623
+          height: 156
 
   ## Modals
   modals:
@@ -130,19 +130,19 @@ items:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/tabs/tabs-section-padding@3x.png'
-          width: 735
-          height: 107
+          width: 760
+          height: 143
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/tabs/tabs-section-measures@3x.png'
-          width: 691
-          height: 87
+          width: 760
+          height: 143
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/tabs/tabs-section-specs@3x.png'
-          width: 691
+          width: 760
           height: 143
 
   combobox:

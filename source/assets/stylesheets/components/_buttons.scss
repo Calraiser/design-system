@@ -53,9 +53,6 @@ $button-colors: (
   }
   &.btn-small {
     width: 74px;
-		.ico-caret {
-			padding: 0 15px !important;
-		}
 		.ico {
 			margin-left: 0;
 		}
@@ -92,7 +89,8 @@ $button-colors: (
   color: $green;
   border: 2px solid $green;
   background: transparent;
-  &:hover, &.hover {
+  &:hover,
+	&.hover {
     color: $white;
     background: $green;
   }
@@ -102,8 +100,39 @@ $button-colors: (
 		justify-content: space-between;
 		align-items: center;
 		padding: .407rem 1.25rem;
-		.icon-check {
-			font-size: rem-calc(17);
+		&:hover {
+			.ico:before {
+				color: $white;
+			}
+		}
+		&.inverse {
+			&:hover {
+				.ico:before {
+					color: $white;
+				}
+			}
+			.ico:before {
+				color: $grey;
+			}
+		}
+		&.disabled {
+			.ico:before {
+				color: $grey;
+			}
+		}
+		&.hover {
+			color: $white;
+			background: $green;
+			.ico:before {
+				color: $white;
+			}
+		}
+		.ico {
+			font-size: rem-calc(18);
+			font-weight: bold;
+			&:before {
+				color: $green;
+			}
 		}
 		&.btn-small:not(.inverse) {
 			width: 87px;
@@ -132,14 +161,15 @@ $button-colors: (
   border: 2px solid $blue;
   background: transparent;
 	&.disabled {
-		.icon-expand_more {
+		.icon-ic-expand_more {
 			border-left: 2px solid $grey !important;
 		}
 	}
-  &:hover, &.hover {
+  &:hover,
+	&.hover {
     color: $white;
     background: $blue;
-		.icon-expand_more {
+		.icon-ic-expand_more {
 			border-left: 2px solid $white !important;
 		}
   }
@@ -149,6 +179,21 @@ $button-colors: (
     display: flex;
 		justify-content: space-between;
 		align-items: center;
+		&:hover {
+			.icon-ic-expand_more:before {
+				color: $white;
+			}
+		}
+		&.disabled {
+			.icon-ic-expand_more:before {
+				color: $grey;
+			}
+		}
+		&.hover {
+			.icon-ic-expand_more:before {
+				color: $white;
+			}
+		}
     .ico {
       padding-left: 20px;
     }
@@ -156,15 +201,17 @@ $button-colors: (
       flex: 1;
 
     }
-    .icon-expand_more {
+    .icon-ic-expand_more {
       display: block;
-      padding: 8px 17px;
+      padding: 8px 12px 8px 11px;
       order: 1;
       border-left: 2px solid $blue;
 			align-items: center;
-			font-size: rem-calc(12);
+			font-size: rem-calc(22);
 			&:before {
 				margin-top: 8px;
+				color: $blue;
+				font-weight: bold;
 			}
     }
 
@@ -181,7 +228,7 @@ $button-colors: (
 		}
 		&.btn-medium,
 		&.btn-small {
-			.icon-expand_more {
+			.icon-ic-expand_more {
 				padding-left: 11px;
 				padding-right: 11px;
 			}
@@ -210,7 +257,9 @@ $button-colors: (
 		align-items: center;
 		padding: .532rem 1.25rem;
 		.icon-ic-close {
-			font-size: rem-calc(12);
+			&:before {
+				font-size: rem-calc(18);
+			}
 		}
   }
 }

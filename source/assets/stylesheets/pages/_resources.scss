@@ -3,7 +3,7 @@
   &.open {
     .lds-resources__title {
       &:before {
-        transform: rotate(180deg);
+        transform: rotate(90deg);
       }
     }
   }
@@ -15,13 +15,16 @@
     display: block;
     cursor: pointer;
     &:before {
-      content: "\f1cf";
-      font-family: fontcustom;
-      font-size: rem-calc(12);
+      content: "\e907";
+      font-family: 'luca-icon';
+      font-weight: bold;
+      font-size: rem-calc(18);
       transition: $transition-slow;
       display: inline-block;
-      @include size(10px);
-      margin-right: 25px;
+      margin-right: 10px;
+      transform: rotate(-90deg);
+      position: relative;
+      top: 4px;
     }
 
   }
@@ -51,13 +54,13 @@
     }
     &.Adobe {
       &:before {
-        background-image: image-url('ai-link.png');
+        background-image: image-url('ic-doc-ai.svg');
         background-size: 19px auto;
       }
     }
     &.PDF {
       &:before {
-        background-image: image-url('ic-pdf_02.svg');
+        background-image: image-url('ic-doc-pdf.svg');
         background-size: 19px auto;
       }
     }
@@ -75,7 +78,7 @@
     }
     &.ZIP {
       &:before {
-        background-image: image-url('ic-zip_02.svg');
+        background-image: image-url('ic-doc-zip.svg');
         background-size: 19px auto;
       }
     }

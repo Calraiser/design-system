@@ -20,12 +20,20 @@
   }
 
   .icon-ic-close {
-    font-size: rem-calc(10);
+    &:before {
+      color: $white;
+      font-weight: bold;
+      font-size: rem-calc(13);
+    }
   }
 
-  .icon-ic-back-arrow {
-    font-size: rem-calc(10);
-    color: $tags;
+  .icon-ic-chevron_left {
+    &:before {
+      font-size: rem-calc(18);
+      color: $tags;
+      font-weight: bold;
+      margin-right: 2px;
+    }
   }
 
   &.tags-default {
@@ -52,7 +60,6 @@
   &.tag-back {
     max-width: 24px;
     width: 24px;
-    display: inline-block;
     text-align: center;
     padding: 0;
   }

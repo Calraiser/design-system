@@ -98,10 +98,10 @@ ul {
   }
   .progressScroll-circle {
     .ico {
-      font-size: 12px;
+      font-size: 22px;
       color: $grey05;
-      @include position(absolute, 57% null null 50%);
-      transform: translate(-50%, -50%);
+      @include position(absolute, 50% null null 50%);
+      transform: translate(-50%, -50%) rotate(90deg);
       transition: $transition-slow;
     }
   }
