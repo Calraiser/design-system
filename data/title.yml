@@ -34,6 +34,7 @@ uielements:
   navigation_icons.html.slim: "/uielements/navigation_icons.html.slim"
   pagination.html.slim: "/uielements/pagination.html.slim"
   popover.html.slim: "/uielements/popover.html.slim"
+  progress_indicators.html.slim: "/uielements/progress_indicators.html.slim"
   radio_buttons.html.slim: "/uielements/radio_buttons.html.slim"
   switch.html.slim: "/uielements/switch.html.slim"
   tabs.html.slim: "/uielements/tabs.html.slim"

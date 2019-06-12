@@ -30,6 +30,8 @@
     link: "/uielements/pagination.html"
   - title: "Popover"
     link: "/uielements/popover.html"
+  - title: "Progress indicators"
+    link: "/uielements/progress_indicators.html"
   - title: "Radio buttons"
     link: "/uielements/radio_buttons.html"
   - title: "Switch"
