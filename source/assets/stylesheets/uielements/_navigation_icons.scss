@@ -1,9 +1,11 @@
 .lds-navigation--wrapper {
-  margin: 40px 0;
+  margin: 20px 0;
 
   h2 {
     margin-bottom: 15px;
     text-align: left;
+    font-size: rem-calc(16);
+    margin-bottom: 25px;
   }
   p {
     margin-bottom: 15px;
@@ -20,20 +22,22 @@
 .lds-navigation-icons {
   width: 100%;
     @include media($tablet) {
-      width: 85%;
+      width: 90%;
     }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 
   &.icon-text {
-    margin-top: 60px;
+    margin-top: 30px;
 
     .col-xs {
-      flex: 1 0 30%;
       margin-bottom: 10px;
-      @include media($mobile) {
-        flex: 1 0 16%;
-      }
+      flex: 0 0 80px;
       @include media($tablet) {
-        flex: 1 0 11%;
+        padding: 0 20px 40px;
       }
     }
   }
@@ -44,15 +48,8 @@
     &:not(.icon-text) {
       .col-xs {
         margin-right: 10px;
-        margin-bottom: 15px;
-        flex: 1 0 13%;
-        @include media($mobile) {
-          flex: 1 0 14%;
-        }
-        @include media($tablet) {
-          flex: 1 0 4%;
-          margin-bottom: 5px;
-        }
+        margin-bottom: 20px;
+        flex: 0 0 auto;
       }
     }
 
@@ -61,28 +58,18 @@
     }
 
     .icon {
-      color: $grey07;
-      transition: $transition-slow;
       cursor: pointer;
 
       display: inline-block;
+      font-size: rem-calc(24);
+      &:before {
+        transition: $transition-slow;
+      }
 
-      &:hover {
+      &:hover:before {
         color: $grey01;
         display: block;
 
-      }
-
-      &.icon-add,
-      &.icon-arrow_drop_down {
-        &:hover {
-          transform: rotate(180deg);
-        }
-      }
-      &.icon-arrow_back {
-        &:hover {
-          animation: bounce 1s infinite;
-        }
       }
     }
 
@@ -95,26 +82,34 @@
 
     &.blue {
       .icon {
-        color: $blue;
+          &:before {
+          color: $blue;
+        }
       }
     }
 
     &.black {
       .icon {
-        color: $grey;
+        &:before {
+          color: $grey;
+        }
       }
     }
 
     &.green {
       .icon  {
-        color: $green;
+        &:before {
+          color: $green;
+        }
       }
     }
 
     &.disabled {
       .icon  {
-        color: $grey07;
-        cursor: not-allowed;
+        &:before {
+          color: $grey07;
+          cursor: not-allowed;
+        }
       }
     }
   }

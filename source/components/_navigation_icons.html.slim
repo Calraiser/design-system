@@ -1,19 +1,14 @@
 - title      ||= false
 - header     ||= false
-- subheader  ||= false
 - extraclass ||= ''
 
 .lds-navigation-icons class='#{extraclass}'
-  .col-xs-offset-0.col-lg-offset-1
-    - if header.present?
-      h2.bx--type-note.u-uppercase #{header}
-    - if subheader.present?
-      p.bx--type-note #{subheader}
+  - if header.present?
+    h2.bx--type-note = header
 
-  .row.center-xs.col-xs-offset-0.col-lg-offset-1
+  .lds-navigation-icons__wrapper
     - items.each_with_index do |element, index|
       div class=(title.present? ? 'col-xs u-pb-6' : "col-xs")
-        i class="icon icon-#{element.title.downcase.split.join('_')}"
+        i class="icon icon-ic-#{element.title.downcase.split.join('_')}"
         - if title.present?
-          p.bx--type-legend
-           | #{element.title}
+          p.bx--type-legend = element.title

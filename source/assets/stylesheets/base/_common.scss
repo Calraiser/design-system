@@ -288,8 +288,8 @@ ul {
   > div {
     &:after,
     &:before {
-      font-family: fontcustom;
-      font-size: 10px;
+      font-family: 'luca-icon';
+      font-size: 14px;
       color: $grey;
     }
   }
@@ -308,16 +308,16 @@ ul {
 
   &__previous {
     &:before {
-      content: "\f168";
-      margin-right: 5px;
+      content: "\e907";
+      margin-right: 2px;
     }
   }
 
   &__next {
     &:after {
-      content: "\f168";
+      content: "\e907";
       transform: rotate(180deg);
-      margin-left: 5px;
+      margin-left: 2px;
     }
   }
 

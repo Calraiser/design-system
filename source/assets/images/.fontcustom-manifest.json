@@ -1,361 +1,341 @@
 {
   "checksum": {
     "previous": "",
-    "current": "c70a411ef1d52558cf0452d6e61518cd3df205af0b23c02c4f1c9b174d8ba1a1"
+    "current": "980ea8f9207481a3a3676080f6dc1dcc55a7b7ae980a5fc00706223d2d918a7e"
   },
   "fonts": [
 
   ],
   "glyphs": {
-    "color_usage": {
-      "source": "./color_usage.svg",
-      "codepoint": 61755
+    "2-col-bg": {
+      "source": "fontcustom-icons/2-col-bg.svg",
+      "codepoint": 61805
     },
-    "desktop": {
-      "source": "./desktop.svg",
-      "codepoint": 61756
+    "4-col-bg": {
+      "source": "fontcustom-icons/4-col-bg.svg",
+      "codepoint": 61806
     },
-    "fake-check": {
-      "source": "./fake-check.svg",
-      "codepoint": 61757
+    "6-col-bg": {
+      "source": "fontcustom-icons/6-col-bg.svg",
+      "codepoint": 61807
     },
-    "fixed-grid": {
-      "source": "./fixed-grid.svg",
-      "codepoint": 61758
+    "8-col-bg": {
+      "source": "fontcustom-icons/8-col-bg.svg",
+      "codepoint": 61808
     },
-    "floating_feedback": {
-      "source": "./floating_feedback.svg",
-      "codepoint": 61759
+    "download": {
+      "source": "fontcustom-icons/download.svg",
+      "codepoint": 61809
     },
-    "graphic-example01": {
-      "source": "./graphic-example01.svg",
-      "codepoint": 61760
-    },
-    "graphic-examples": {
-      "source": "./graphic-examples.svg",
-      "codepoint": 61761
-    },
-    "graphic-rules01": {
-      "source": "./graphic-rules01.svg",
-      "codepoint": 61762
-    },
-    "graphic-rules02": {
-      "source": "./graphic-rules02.svg",
-      "codepoint": 61763
+    "ic-add": {
+      "source": "fontcustom-icons/ic-add.svg",
+      "codepoint": 61810
     },
     "ic-ai_02": {
-      "source": "./ic-ai_02.svg",
+      "source": "fontcustom-icons/ic-ai_02.svg",
       "codepoint": 61701
     },
+    "ic-apps": {
+      "source": "fontcustom-icons/ic-apps.svg",
+      "codepoint": 61811
+    },
+    "ic-arrow": {
+      "source": "fontcustom-icons/ic-arrow.svg",
+      "codepoint": 61812
+    },
     "ic-arrow-up": {
-      "source": "./ic-arrow-up.svg",
+      "source": "fontcustom-icons/ic-arrow-up.svg",
       "codepoint": 61703
     },
+    "ic-arrowback": {
+      "source": "fontcustom-icons/ic-arrowback.svg",
+      "codepoint": 61813
+    },
+    "ic-arrowdropdown": {
+      "source": "fontcustom-icons/ic-arrowdropdown.svg",
+      "codepoint": 61814
+    },
+    "ic-arrowdropup": {
+      "source": "fontcustom-icons/ic-arrowdropup.svg",
+      "codepoint": 61815
+    },
+    "ic-arrowforward": {
+      "source": "fontcustom-icons/ic-arrowforward.svg",
+      "codepoint": 61816
+    },
     "ic-back-arrow": {
-      "source": "./ic-back-arrow.svg",
+      "source": "fontcustom-icons/ic-back-arrow.svg",
       "codepoint": 61704
     },
     "ic-btn": {
-      "source": "./ic-btn.svg",
+      "source": "fontcustom-icons/ic-btn.svg",
       "codepoint": 61705
     },
-    "ic-btn0": {
-      "source": "./ic-btn0.svg",
-      "codepoint": 61764
+    "ic-cart": {
+      "source": "fontcustom-icons/ic-cart.svg",
+      "codepoint": 61817
     },
-    "ic-caret-blue": {
-      "source": "./ic-caret-blue.svg",
-      "codepoint": 61765
+    "ic-check": {
+      "source": "fontcustom-icons/ic-check.svg",
+      "codepoint": 61818
     },
-    "ic-caret-grey": {
-      "source": "./ic-caret-grey.svg",
-      "codepoint": 61766
+    "ic-chevronleft": {
+      "source": "fontcustom-icons/ic-chevronleft.svg",
+      "codepoint": 61819
     },
-    "ic-caret-white": {
-      "source": "./ic-caret-white.svg",
-      "codepoint": 61767
-    },
-    "ic-check-green": {
-      "source": "./ic-check-green.svg",
-      "codepoint": 61768
-    },
-    "ic-check-grey": {
-      "source": "./ic-check-grey.svg",
-      "codepoint": 61769
-    },
-    "ic-check-white": {
-      "source": "./ic-check-white.svg",
-      "codepoint": 61770
+    "ic-chevronright": {
+      "source": "fontcustom-icons/ic-chevronright.svg",
+      "codepoint": 61820
     },
     "ic-circle-arrow": {
-      "source": "./ic-circle-arrow.svg",
+      "source": "fontcustom-icons/ic-circle-arrow.svg",
       "codepoint": 61707
     },
     "ic-close": {
-      "source": "./ic-close.svg",
+      "source": "fontcustom-icons/ic-close.svg",
       "codepoint": 61708
     },
-    "ic-close-black": {
-      "source": "./ic-close-black.svg",
-      "codepoint": 61771
-    },
-    "ic-close-d3": {
-      "source": "./ic-close-d3.svg",
-      "codepoint": 61772
-    },
-    "ic-close-grey": {
-      "source": "./ic-close-grey.svg",
-      "codepoint": 61773
-    },
-    "ic-close-white": {
-      "source": "./ic-close-white.svg",
-      "codepoint": 61774
-    },
-    "ic-components-xl": {
-      "source": "./ic-components-xl.svg",
-      "codepoint": 61775
-    },
     "ic-copy": {
-      "source": "./ic-copy.svg",
+      "source": "fontcustom-icons/ic-copy.svg",
       "codepoint": 61709
     },
     "ic-desktop-callout": {
-      "source": "./ic-desktop-callout.svg",
+      "source": "fontcustom-icons/ic-desktop-callout.svg",
       "codepoint": 61710
     },
-    "ic-downloads-xl": {
-      "source": "./ic-downloads-xl.svg",
-      "codepoint": 61776
+    "ic-desplegar": {
+      "source": "fontcustom-icons/ic-desplegar.svg",
+      "codepoint": 61821
     },
-    "ic-downloads-xs": {
-      "source": "./ic-downloads-xs.svg",
-      "codepoint": 61777
+    "ic-double-arrow": {
+      "source": "fontcustom-icons/ic-double-arrow.svg",
+      "codepoint": 61822
+    },
+    "ic-driving": {
+      "source": "fontcustom-icons/ic-driving.svg",
+      "codepoint": 61823
+    },
+    "ic-edit-1": {
+      "source": "fontcustom-icons/ic-edit-1.svg",
+      "codepoint": 61824
+    },
+    "ic-edit-2": {
+      "source": "fontcustom-icons/ic-edit-2.svg",
+      "codepoint": 61825
     },
     "ic-envelope": {
-      "source": "./ic-envelope.svg",
+      "source": "fontcustom-icons/ic-envelope.svg",
       "codepoint": 61714
     },
-    "ic-error": {
-      "source": "./ic-error.svg",
-      "codepoint": 61778
+    "ic-expandless": {
+      "source": "fontcustom-icons/ic-expandless.svg",
+      "codepoint": 61826
+    },
+    "ic-expandmore": {
+      "source": "fontcustom-icons/ic-expandmore.svg",
+      "codepoint": 61827
+    },
+    "ic-export": {
+      "source": "fontcustom-icons/ic-export.svg",
+      "codepoint": 61828
+    },
+    "ic-favoritefill": {
+      "source": "fontcustom-icons/ic-favoritefill.svg",
+      "codepoint": 61829
+    },
+    "ic-favoriteline": {
+      "source": "fontcustom-icons/ic-favoriteline.svg",
+      "codepoint": 61830
+    },
+    "ic-fuel": {
+      "source": "fontcustom-icons/ic-fuel.svg",
+      "codepoint": 61831
+    },
+    "ic-fullscreen": {
+      "source": "fontcustom-icons/ic-fullscreen.svg",
+      "codepoint": 61832
+    },
+    "ic-fullscreenexit": {
+      "source": "fontcustom-icons/ic-fullscreenexit.svg",
+      "codepoint": 61833
     },
     "ic-graphics-blue": {
-      "source": "./ic-graphics-blue.svg",
+      "source": "fontcustom-icons/ic-graphics-blue.svg",
       "codepoint": 61717
     },
+    "ic-graphics-vizrules-s": {
+      "source": "fontcustom-icons/ic-graphics-vizrules-s.svg",
+      "codepoint": 61834
+    },
     "ic-graphics-vizrules-xs": {
-      "source": "./ic-graphics-vizrules-xs.svg",
+      "source": "fontcustom-icons/ic-graphics-vizrules-xs.svg",
       "codepoint": 61718
     },
-    "ic-guidelines-blue": {
-      "source": "./ic-guidelines-blue.svg",
-      "codepoint": 61779
+    "ic-hand": {
+      "source": "fontcustom-icons/ic-hand.svg",
+      "codepoint": 61835
     },
-    "ic-guidelines-blue-full": {
-      "source": "./ic-guidelines-blue-full.svg",
-      "codepoint": 61780
+    "ic-hotel": {
+      "source": "fontcustom-icons/ic-hotel.svg",
+      "codepoint": 61836
     },
-    "ic-guidelines-xl": {
-      "source": "./ic-guidelines-xl.svg",
-      "codepoint": 61781
-    },
-    "ic-guidelines-xl-green": {
-      "source": "./ic-guidelines-xl-green.svg",
-      "codepoint": 61782
-    },
-    "ic-guidelines-xs": {
-      "source": "./ic-guidelines-xs.svg",
-      "codepoint": 61783
+    "ic-import": {
+      "source": "fontcustom-icons/ic-import.svg",
+      "codepoint": 61837
     },
     "ic-info": {
-      "source": "./ic-info.svg",
+      "source": "fontcustom-icons/ic-info.svg",
       "codepoint": 61721
     },
+    "ic-less": {
+      "source": "fontcustom-icons/ic-less.svg",
+      "codepoint": 61838
+    },
+    "ic-list": {
+      "source": "fontcustom-icons/ic-list.svg",
+      "codepoint": 61839
+    },
     "ic-local-hotel": {
-      "source": "./ic-local-hotel.svg",
+      "source": "fontcustom-icons/ic-local-hotel.svg",
       "codepoint": 61723
     },
-    "ic-mobile-callout": {
-      "source": "./ic-mobile-callout.svg",
-      "codepoint": 61784
+    "ic-menu": {
+      "source": "fontcustom-icons/ic-menu.svg",
+      "codepoint": 61840
+    },
+    "ic-more": {
+      "source": "fontcustom-icons/ic-more.svg",
+      "codepoint": 61841
     },
     "ic-password": {
-      "source": "./ic-password.svg",
+      "source": "fontcustom-icons/ic-password.svg",
       "codepoint": 61725
     },
     "ic-pdf": {
-      "source": "./ic-pdf.svg",
+      "source": "fontcustom-icons/ic-pdf.svg",
       "codepoint": 61726
     },
-    "ic-pdf_02": {
-      "source": "./ic-pdf_02.svg",
-      "codepoint": 61785
+    "ic-pois": {
+      "source": "fontcustom-icons/ic-pois.svg",
+      "codepoint": 61842
     },
     "ic-question": {
-      "source": "./ic-question.svg",
+      "source": "fontcustom-icons/ic-question.svg",
       "codepoint": 61728
     },
-    "ic-question0": {
-      "source": "./ic-question0.svg",
-      "codepoint": 61786
+    "ic-refresh": {
+      "source": "fontcustom-icons/ic-refresh.svg",
+      "codepoint": 61843
     },
-    "ic-resources-blue": {
-      "source": "./ic-resources-blue.svg",
-      "codepoint": 61787
-    },
-    "ic-resources-downloads-xs-grey": {
-      "source": "./ic-resources-downloads-xs-grey.svg",
-      "codepoint": 61788
+    "ic-restaurants": {
+      "source": "fontcustom-icons/ic-restaurants.svg",
+      "codepoint": 61844
     },
     "ic-search": {
-      "source": "./ic-search.svg",
+      "source": "fontcustom-icons/ic-search.svg",
       "codepoint": 61730
     },
     "ic-select": {
-      "source": "./ic-select.svg",
+      "source": "fontcustom-icons/ic-select.svg",
       "codepoint": 61731
     },
+    "ic-single-arrow": {
+      "source": "fontcustom-icons/ic-single-arrow.svg",
+      "codepoint": 61845
+    },
     "ic-sketch": {
-      "source": "./ic-sketch.svg",
+      "source": "fontcustom-icons/ic-sketch.svg",
       "codepoint": 61733
     },
-    "ic-sketch_02": {
-      "source": "./ic-sketch_02.svg",
-      "codepoint": 61789
-    },
     "ic-tablet-callout": {
-      "source": "./ic-tablet-callout.svg",
+      "source": "fontcustom-icons/ic-tablet-callout.svg",
       "codepoint": 61734
     },
     "ic-tooltip": {
-      "source": "./ic-tooltip.svg",
+      "source": "fontcustom-icons/ic-tooltip.svg",
       "codepoint": 61735
     },
-    "ic-typo_02": {
-      "source": "./ic-typo_02.svg",
-      "codepoint": 61790
+    "ic-traffic": {
+      "source": "fontcustom-icons/ic-traffic.svg",
+      "codepoint": 61846
     },
     "ic-typography": {
-      "source": "./ic-typography.svg",
+      "source": "fontcustom-icons/ic-typography.svg",
       "codepoint": 61737
     },
-    "ic-uicomponents-blue": {
-      "source": "./ic-uicomponents-blue.svg",
-      "codepoint": 61791
-    },
-    "ic-uielements-blue": {
-      "source": "./ic-uielements-blue.svg",
-      "codepoint": 61792
-    },
-    "ic-uielements-xs": {
-      "source": "./ic-uielements-xs.svg",
-      "codepoint": 61793
-    },
     "ic-user": {
-      "source": "./ic-user.svg",
+      "source": "fontcustom-icons/ic-user.svg",
       "codepoint": 61738
     },
-    "ic-viz-rules-xl": {
-      "source": "./ic-viz-rules-xl.svg",
-      "codepoint": 61794
+    "ic-xlsx": {
+      "source": "fontcustom-icons/ic-xlsx.svg",
+      "codepoint": 61847
     },
     "ic-xml": {
-      "source": "./ic-xml.svg",
+      "source": "fontcustom-icons/ic-xml.svg",
       "codepoint": 61740
     },
-    "ic-xml0": {
-      "source": "./ic-xml0.svg",
-      "codepoint": 61795
-    },
-    "ic-zip": {
-      "source": "./ic-zip.svg",
-      "codepoint": 61796
-    },
-    "ic-zip_02": {
-      "source": "./ic-zip_02.svg",
-      "codepoint": 61797
-    },
     "layout-desktop": {
-      "source": "./layout-desktop.svg",
+      "source": "fontcustom-icons/layout-desktop.svg",
       "codepoint": 61741
     },
     "layout-grid02": {
-      "source": "./layout-grid02.svg",
+      "source": "fontcustom-icons/layout-grid02.svg",
       "codepoint": 61742
     },
     "layout-labtop": {
-      "source": "./layout-labtop.svg",
+      "source": "fontcustom-icons/layout-labtop.svg",
       "codepoint": 61743
     },
     "layout-mobile": {
-      "source": "./layout-mobile.svg",
+      "source": "fontcustom-icons/layout-mobile.svg",
       "codepoint": 61744
     },
     "layout-tablet": {
-      "source": "./layout-tablet.svg",
+      "source": "fontcustom-icons/layout-tablet.svg",
       "codepoint": 61745
     },
+    "legend-example": {
+      "source": "fontcustom-icons/legend-example.svg",
+      "codepoint": 61848
+    },
     "logo-luca": {
-      "source": "./logo-luca.svg",
+      "source": "fontcustom-icons/logo-luca.svg",
       "codepoint": 61747
     },
     "mobile": {
-      "source": "./mobile.svg",
+      "source": "fontcustom-icons/mobile.svg",
       "codepoint": 61748
     },
     "pattern": {
-      "source": "./pattern.svg",
+      "source": "fontcustom-icons/pattern.svg",
       "codepoint": 61749
     },
-    "single-column-gn": {
-      "source": "./single-column-gn.svg",
-      "codepoint": 61798
-    },
-    "single-column-gp": {
-      "source": "./single-column-gp.svg",
-      "codepoint": 61799
-    },
     "sort-down": {
-      "source": "./sort-down.svg",
+      "source": "fontcustom-icons/sort-down.svg",
       "codepoint": 61750
     },
-    "sort-down-black": {
-      "source": "./sort-down-black.svg",
-      "codepoint": 61800
-    },
     "sort-up": {
-      "source": "./sort-up.svg",
+      "source": "fontcustom-icons/sort-up.svg",
       "codepoint": 61751
     },
-    "sprites": {
-      "source": "./sprites.svg",
-      "codepoint": 61801
-    },
     "tablet": {
-      "source": "./tablet.svg",
+      "source": "fontcustom-icons/tablet.svg",
       "codepoint": 61752
     },
-    "template-chart-layout": {
-      "source": "./template-chart-layout.svg",
-      "codepoint": 61802
-    },
     "triangle": {
-      "source": "./triangle.svg",
+      "source": "fontcustom-icons/triangle.svg",
       "codepoint": 61753
     },
-    "two-column-apn": {
-      "source": "./two-column-apn.svg",
-      "codepoint": 61803
-    },
-    "two-column-gp": {
-      "source": "./two-column-gp.svg",
-      "codepoint": 61804
+    "upload": {
+      "source": "fontcustom-icons/upload.svg",
+      "codepoint": 61849
     }
   },
   "options": {
     "input": {
-      "vectors": ".",
-      "templates": "."
+      "vectors": "fontcustom-icons",
+      "templates": "fontcustom-icons"
     },
     "output": {
       "fonts": "fontcustom",

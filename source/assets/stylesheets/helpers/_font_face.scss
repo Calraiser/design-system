@@ -69,13 +69,12 @@
 */
 
 @font-face {
-  font-family: "fontcustom";
-  src: font-url("fontcustom_42b25de51cf2f52c9b0eee69434f5023.eot");
-  src: font-url("fontcustom_42b25de51cf2f52c9b0eee69434f5023.eot?#iefix") format("embedded-opentype"),
-       font-url("fontcustom_42b25de51cf2f52c9b0eee69434f5023.woff2") format("woff2"),
-       font-url("fontcustom_42b25de51cf2f52c9b0eee69434f5023.woff") format("woff"),
-       font-url("fontcustom_42b25de51cf2f52c9b0eee69434f5023.ttf") format("truetype"),
-       font-url("fontcustom_42b25de51cf2f52c9b0eee69434f5023.svg#fontcustom") format("svg");
+  font-family: "luca-icon";
+  src: font-url("luca-icon.eot");
+  src: font-url("luca-icon.eot?#iefix") format("embedded-opentype"),
+       font-url("luca-icon.woff") format("woff"),
+       font-url("luca-icon.ttf") format("truetype"),
+       font-url("luca-icon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -83,177 +82,122 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: font-url("fontcustom_42b25de51cf2f52c9b0eee69434f5023.svg#fontcustom") format("svg");
+    src: font-url("luca-icon.svg") format("svg");
   }
 }
 
 
-[data-icon]:before { content: attr(data-icon); }
-
-[data-icon]:before,
-.icon-2-col-bg:before,
-.icon-4-col-bg:before,
-.icon-6-col-bg:before,
-.icon-8-col-bg:before,
-.icon-add:before,
-.icon-arrow_back:before,
-.icon-arrow_drop_down:before,
-.icon-arrow_drop_up:before,
-.icon-arrow_forward:before,
-.icon-check:before,
-.icon-chevron_left:before,
-.icon-chevron_right:before,
-.icon-close:before,
-.icon-expand_less:before,
-.icon-expand_more:before,
-.icon-favorite:before,
-.icon-fullscreen:before,
-.icon-fullscreen_exit:before,
-.icon-hamburguer:before,
-.icon-ic-ai_02:before,
-.icon-ic-alert:before,
-.icon-ic-arrow:before,
-.icon-ic-arrow-up:before,
-.icon-ic-back-arrow:before,
-.icon-ic-btn:before,
-.icon-ic-cart:before,
-.icon-ic-circle-arrow:before,
-.icon-ic-close:before,
-.icon-ic-copy:before,
-.icon-ic-desktop-callout:before,
-.icon-ic-desplegar:before,
-.icon-ic-double-arrow:before,
-.icon-ic-driving:before,
-.icon-ic-envelope:before,
-.icon-ic-fuel:before,
-.icon-ic-fullscreen:before,
-.icon-ic-graphics-blue:before,
-.icon-ic-graphics-vizrules-xs:before,
-.icon-ic-hand:before,
-.icon-ic-hotel:before,
-.icon-ic-info:before,
-.icon-ic-less:before,
-.icon-ic-local-hotel:before,
-.icon-ic-more:before,
-.icon-ic-password:before,
-.icon-ic-pdf:before,
-.icon-ic-pois:before,
-.icon-ic-question:before,
-.icon-ic-restaurants:before,
-.icon-ic-search:before,
-.icon-ic-select:before,
-.icon-ic-single-arrow:before,
-.icon-ic-sketch:before,
-.icon-ic-tablet-callout:before,
-.icon-ic-tooltip:before,
-.icon-ic-traffic:before,
-.icon-ic-typography:before,
-.icon-ic-user:before,
-.icon-ic-xlsx:before,
-.icon-ic-xml:before,
-.icon-layout-desktop:before,
-.icon-layout-grid02:before,
-.icon-layout-labtop:before,
-.icon-layout-mobile:before,
-.icon-layout-tablet:before,
-.icon-legend-example:before,
-.icon-logo-luca:before,
-.icon-menu:before,
-.icon-mobile:before,
-.icon-more:before,
-.icon-pattern:before,
-.icon-refresh:before,
-.icon-sort-down:before,
-.icon-sort-up:before,
-.icon-tablet:before,
-.icon-triangle:before {
-  display: inline-block;
-  font-family: "fontcustom";
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'luca-icon' !important;
+  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
-  line-height: 1;
-  text-decoration: inherit;
-  text-rendering: optimizeLegibility;
   text-transform: none;
-  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-2-col-bg:before { content: "\f161"; }
-.icon-4-col-bg:before { content: "\f162"; }
-.icon-6-col-bg:before { content: "\f163"; }
-.icon-8-col-bg:before { content: "\f164"; }
-.icon-add:before { content: "\f1c5"; }
-.icon-arrow_back:before { content: "\f1c6"; }
-.icon-arrow_drop_down:before { content: "\f1c7"; }
-.icon-arrow_drop_up:before { content: "\f1c8"; }
-.icon-arrow_forward:before { content: "\f1c9"; }
-.icon-check:before { content: "\f1ca"; }
-.icon-chevron_left:before { content: "\f1cb"; }
-.icon-chevron_right:before { content: "\f1cc"; }
-.icon-close:before { content: "\f1cd"; }
-.icon-expand_less:before { content: "\f1ce"; }
-.icon-expand_more:before { content: "\f1cf"; }
-.icon-favorite:before { content: "\f1d0"; }
-.icon-fullscreen:before { content: "\f1d1"; }
-.icon-fullscreen_exit:before { content: "\f1d2"; }
-.icon-hamburguer:before { content: "\f1d3"; }
-.icon-ic-ai_02:before { content: "\f165"; }
-.icon-ic-alert:before { content: "\f1c4"; }
-.icon-ic-arrow:before { content: "\f166"; }
-.icon-ic-arrow-up:before { content: "\f167"; }
-.icon-ic-back-arrow:before { content: "\f168"; }
-.icon-ic-btn:before { content: "\f169"; }
-.icon-ic-cart:before { content: "\f16d"; }
-.icon-ic-circle-arrow:before { content: "\f171"; }
-.icon-ic-close:before { content: "\f172"; }
-.icon-ic-copy:before { content: "\f179"; }
-.icon-ic-desktop-callout:before { content: "\f17a"; }
-.icon-ic-desplegar:before { content: "\f17b"; }
-.icon-ic-double-arrow:before { content: "\f17c"; }
-.icon-ic-driving:before { content: "\f17f"; }
-.icon-ic-envelope:before { content: "\f180"; }
-.icon-ic-fuel:before { content: "\f181"; }
-.icon-ic-fullscreen:before { content: "\f182"; }
-.icon-ic-graphics-blue:before { content: "\f183"; }
-.icon-ic-graphics-vizrules-xs:before { content: "\f184"; }
-.icon-ic-hand:before { content: "\f18a"; }
-.icon-ic-hotel:before { content: "\f18b"; }
-.icon-ic-info:before { content: "\f18c"; }
-.icon-ic-less:before { content: "\f18d"; }
-.icon-ic-local-hotel:before { content: "\f18e"; }
-.icon-ic-more:before { content: "\f190"; }
-.icon-ic-password:before { content: "\f191"; }
-.icon-ic-pdf:before { content: "\f192"; }
-.icon-ic-pois:before { content: "\f193"; }
-.icon-ic-question:before { content: "\f194"; }
-.icon-ic-restaurants:before { content: "\f198"; }
-.icon-ic-search:before { content: "\f199"; }
-.icon-ic-select:before { content: "\f19a"; }
-.icon-ic-single-arrow:before { content: "\f19b"; }
-.icon-ic-sketch:before { content: "\f19c"; }
-.icon-ic-tablet-callout:before { content: "\f19e"; }
-.icon-ic-tooltip:before { content: "\f19f"; }
-.icon-ic-traffic:before { content: "\f1a0"; }
-.icon-ic-typography:before { content: "\f1a1"; }
-.icon-ic-user:before { content: "\f1a5"; }
-.icon-ic-xlsx:before { content: "\f1a7"; }
-.icon-ic-xml:before { content: "\f1a8"; }
-.icon-layout-desktop:before { content: "\f1a9"; }
-.icon-layout-grid02:before { content: "\f1aa"; }
-.icon-layout-labtop:before { content: "\f1ab"; }
-.icon-layout-mobile:before { content: "\f1ac"; }
-.icon-layout-tablet:before { content: "\f1ad"; }
-.icon-legend-example:before { content: "\f1ae"; }
-.icon-logo-luca:before { content: "\f1af"; }
-.icon-menu:before { content: "\f1d4"; }
-.icon-mobile:before { content: "\f1b0"; }
-.icon-more:before { content: "\f1d5"; }
-.icon-pattern:before { content: "\f1b1"; }
-.icon-refresh:before { content: "\f1d6"; }
-.icon-sort-down:before { content: "\f1b4"; }
-.icon-sort-up:before { content: "\f1b5"; }
-.icon-tablet:before { content: "\f1b7"; }
-.icon-triangle:before { content: "\f1b9"; }
+.icon-ic-add:before {
+  content: "\e900";
+  color: #ccc;
+}
+.icon-ic-apps:before {
+  content: "\e901";
+  color: #ccc;
+}
+.icon-ic-arrow_back:before {
+  content: "\e902";
+  color: #ccc;
+}
+.icon-ic-arrow_drop_down:before {
+  content: "\e903";
+  color: #ccc;
+}
+.icon-ic-arrow_drop_up:before {
+  content: "\e904";
+  color: #ccc;
+}
+.icon-ic-arrow_forward:before {
+  content: "\e905";
+  color: #ccc;
+}
+.icon-ic-check:before {
+  content: "\e906";
+  color: #ccc;
+}
+.icon-ic-chevron_left:before {
+  content: "\e907";
+  color: #ccc;
+}
+.icon-ic-chevron_right:before {
+  content: "\e908";
+  color: #ccc;
+}
+.icon-ic-close:before {
+  content: "\e909";
+  color: #ccc;
+}
+.icon-ic-edit_1:before {
+  content: "\e90a";
+  color: #ccc;
+}
+.icon-ic-edit_2:before {
+  content: "\e90b";
+  color: #ccc;
+}
+.icon-ic-expand_less:before {
+  content: "\e90c";
+  color: #ccc;
+}
+.icon-ic-expand_more:before {
+  content: "\e90d";
+  color: #ccc;
+}
+.icon-ic-export:before {
+  content: "\e90e";
+  color: #ccc;
+}
+.icon-ic-favorite_fill:before {
+  content: "\e90f";
+  color: #ccc;
+}
+.icon-ic-favorite:before {
+  content: "\e90f";
+  color: #ccc;
+}
+.icon-ic-fullscreen:before {
+  content: "\e911";
+  color: #ccc;
+}
+.icon-ic-fullscreen_exit:before {
+  content: "\e912";
+  color: #ccc;
+}
+.icon-ic-graphics-vizrules-s:before {
+  content: "\e913";
+}
+.icon-ic-import:before {
+  content: "\e914";
+  color: #ccc;
+}
+.icon-ic-list:before {
+  content: "\e915";
+  color: #ccc;
+}
+.icon-ic-menu:before {
+  content: "\e916";
+  color: #ccc;
+}
+.icon-ic-more:before {
+  content: "\e917";
+  color: #ccc;
+}
+.icon-ic-refresh:before {
+  content: "\e918";
+  color: #ccc;
+}

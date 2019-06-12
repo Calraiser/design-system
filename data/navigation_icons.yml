@@ -1,61 +1,70 @@
 icons:
   items:
-    - image: 'icons/add.svg'
+    - image: 'icons/ic-add.svg'
       title: 'Add'
 
-    - image: 'icons/arrow_back.svg'
+    - image: 'icons/ic-apps.svg'
+      title: 'Apps'
+
+    - image: 'icons/ic-arrowback.svg'
       title: 'Arrow back'
 
-    - image: 'icons/arrow_drop_down.svg'
+    - image: 'icons/ic-arrowdropdown.svg'
       title: 'Arrow drop down'
 
-    - image: 'icons/arrow_drop_up.svg'
+    - image: 'icons/ic-arrowdropup.svg'
       title: 'Arrow drop up'
 
-    - image: 'icons/arrow_forward.svg'
+    - image: 'icons/ic-arrowforward.svg'
       title: 'Arrow forward'
 
-    - image: 'icons/check.svg'
+    - image: 'icons/ic-check.svg'
       title: 'Check'
 
-    - image: 'icons/chevron_left.svg'
+    - image: 'icons/ic-chevronleft.svg'
       title: 'Chevron left'
 
-    - image: 'icons/chevron_right.svg'
+    - image: 'icons/ic-chevronright.svg'
       title: 'Chevron right'
 
-    - image: 'icons/close.svg'
+    - image: 'icons/ic-close.svg'
       title: 'Close'
 
-    - image: 'icons/expand_less.svg'
+    - image: 'icons/ic-edit-1.svg'
+      title: 'Edit 1'
+
+    - image: 'icons/ic-edit-2.svg'
+      title: 'Edit 2'
+
+    - image: 'icons/ic-expandless.svg'
       title: 'Expand less'
 
-    - image: 'icons/expand_more.svg'
+    - image: 'icons/ic-expandmore.svg'
       title: 'Expand more'
 
-    - image: 'icons/favorite.svg'
+    - image: 'icons/ic-export.svg'
+      title: 'Export'
+
+    - image: 'icons/ic-favoriteline.svg'
       title: 'Favorite'
 
-    - image: 'icons/fullscreen_exit.svg'
-      title: 'Fullscreen exit'
-
-    - image: 'icons/fullscreen.svg'
+    - image: 'icons/ic-fullscreen.svg'
       title: 'Fullscreen'
 
-    - image: 'icons/hamburguer.svg'
-      title: 'Hamburguer'
+    - image: 'icons/ic-fullscreenexit.svg'
+      title: 'Fullscreen exit'
 
-    - image: 'icons/menu.svg'
+    - image: 'icons/ic-import.svg'
+      title: 'Import'
+
+    - image: 'icons/ic-list.svg'
+      title: 'List'
+
+    - image: 'icons/ic-menu.svg'
       title: 'Menu'
 
-    - image: 'icons/more.svg'
+    - image: 'icons/ic-more.svg'
       title: 'More'
 
-    - image: 'icons/refresh.svg'
+    - image: 'icons/ic-refresh.svg'
       title: 'Refresh'
-    # 
-    # - image: 'icons/download.svg'
-    #   title: 'Download'
-    #
-    # - image: 'icons/upload.svg'
-    #   title: 'Upload'

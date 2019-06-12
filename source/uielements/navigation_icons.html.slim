@@ -1,6 +1,6 @@
 ---
 page_title: Navigation Icons
-description: Icons provide visual context and enhance usability.
+description: Icons provide visual context and exchance usability. Communicate messages at a glance, allow interactivity and draw attention to important information.
 
 layout: content
 index: true
@@ -9,8 +9,13 @@ index: true
 .content
   h1.bx--type-h1 = current_page.data.page_title
   p.bx--type-p = current_page.data.description
+  p.bx--type-p.u-pt-4
+    | They are designed to be simple and modern following the iconographic line of Telefónica. Among them they have a consistent appearance which guarantees readability and clarity, even in small sizes.
 
-  .content-block.u-pb-4
+  p.bx--type-p.u-pt-4
+    | The navigation icons that appear below, are usually 16px squares.
+
+  .content-block
     = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => true, :extraclass => 'default icon-text' }
 
 
@@ -22,26 +27,20 @@ index: true
     /
     /   = partial :"components/_code_actions", :locals => { :target => '#checkbox-code'}
 
-  .content-block.u-pb-6
+  .content-block
     h2.bx--type-h4.u-text-blue States
-    p.bx--type-p
-      | These are the different states of the navigation icons.
     .u-pt-4
       .lds-navigation--wrapper
         = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'Default', :title => false, :extraclass => 'default' }
-      .lds-navigation--wrapper
+      .lds-navigation--wrapper.u-pt-3
         = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'On hover', :title => false, :extraclass => 'default hover' }
-      .lds-navigation--wrapper
-        = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'Active', :subheader => 'For white and grey backgrounds', :title => false, :extraclass => 'default blue' }
-        = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :extraclass => 'default black' }
-      .lds-navigation--wrapper
-        = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :subheader => 'For white backgrounds', :extraclass => 'default green' }
-      .lds-navigation--wrapper
+      .lds-navigation--wrapper.u-pt-3
+        = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :header => 'Active', :title => false, :extraclass => 'default blue' }
+        = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :extraclass => 'default black u-pt-5' }
+        = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :extraclass => 'default green u-pt-5' }
+      .lds-navigation--wrapper.u-pt-3
         = partial :"components/_navigation_icons", :locals => { :items => data.navigation_icons.icons.items, :title => false, :header => 'Disabled', :extraclass => 'default disabled' }
 
-  / .content-block
-  /   = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.nav_icons }
-  /
 
   .footer-navigation
     .footer-navigation__previous
