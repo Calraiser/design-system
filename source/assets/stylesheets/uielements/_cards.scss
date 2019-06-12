@@ -29,6 +29,8 @@
   &__subtitle {
     margin: 5px 0 0;
     @extend %txt-title-h3;
+    font-family: Telefonicalight;
+    font-size: rem-calc(24);
 
   }
 }

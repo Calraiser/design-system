@@ -1,5 +1,5 @@
 
-- downloads.each do |element|
+- downloads.each_with_index do |element, index|
   .lds-resources
     h2.lds-resources__title = element.title
     .lds-resources__content
@@ -11,3 +11,9 @@
             - item.files.each_with_index do |e, index|
               li class="#{e[0]}"
                 = link_to 'Download ' + e[0], e[1]
+
+      - if index === 2
+        .download-ppt
+          h2.bx--type-p.u-pb-4
+            | Not a designer? We’ve got you covered! Our simplified tool kit has everything you’ll need.
+          = link_to 'Components DS LUCA', '/download/ppt/components-DS-LUCA.zip', class: 'blue-link ppt-file'

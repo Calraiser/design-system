@@ -95,12 +95,19 @@
   }
 }
 
+.download-ppt {
+  display: inline-block;
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+
 .ppt-file {
+  line-height: 35px;
   &:after {
     content: '';
     background: image-url('icons/ic-doc-ppt.svg') no-repeat;
-    background-size: 20px auto;
-    padding: 12px;
+    background-size: 40px auto;
+    padding: 22px;
     float: left;
     margin-right: 5px;
   }

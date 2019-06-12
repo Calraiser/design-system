@@ -4,26 +4,26 @@ items:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/switch/padding_01@3x.png'
-          width: 192
+          width: 189
           height: 108
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/switch/measures_01@3x.png'
-          width: 161
-          height: 123
+          width: 140
+          height: 83
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/switch/specs_01@3x.png'
-          width: 212
-          height: 175
+          width: 210
+          height: 179
         - item: '/assets/images/uicomponents/switch/specs_02@3x.png'
-          width: 209
-          height: 175
+          width: 210
+          height: 179
         - item: '/assets/images/uicomponents/switch/specs_03@3x.png'
-          width: 201
-          height: 175
+          width: 210
+          height: 179
 
 
   ## Checkbox
@@ -31,13 +31,13 @@ items:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/checkbox/padding_01@3x.png'
-          width: 181
-          height: 120
+          width: 215
+          height: 130
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/checkbox/measures_01@3x.png'
-          width: 121
+          width: 134
           height: 54
         - item: '/assets/images/uicomponents/checkbox/measures_02@3x.png'
           width: 135
@@ -46,93 +46,84 @@ items:
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/checkbox/specs_01@3x.png'
-          width: 167
+          width: 215
           height: 130
         - item: '/assets/images/uicomponents/checkbox/specs_02@3x.png'
           width: 215
-          height: 120
+          height: 130
         - item: '/assets/images/uicomponents/checkbox/specs_03@3x.png'
-          width: 152
-          height: 129
-        - item: '/assets/images/uicomponents/checkbox/specs_04@3x.png'
-          width: 209
-          height: 129
+          width: 215
+          height: 130
 
 
   ## Radio Buttons
   radio:
     - id: 'padding'
       images:
-        - item: '/assets/images/uicomponents/radio/padding_01@3x.png'
-          width: 120
-          height: 100
         - item: '/assets/images/uicomponents/radio/padding_02@3x.png'
-          width: 130
-          height: 100
-        - item: '/assets/images/uicomponents/radio/padding_03@3x.png'
           width: 131
           height: 100
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/radio/measures_01@3x.png'
-          width: 129
-          height: 53
+          width: 139
+          height: 60
         - item: '/assets/images/uicomponents/radio/measures_02@3x.png'
-          width: 149
+          width: 139
           height: 60
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/radio/specs_01@3x.png'
-          width: 183
-          height: 120
+          width: 190
+          height: 128
         - item: '/assets/images/uicomponents/radio/specs_02@3x.png'
-          width: 188
-          height: 122
+          width: 190
+          height: 128
         - item: '/assets/images/uicomponents/radio/specs_03@3x.png'
-          width: 164
-          height: 122
+          width: 190
+          height: 128
 
   ## Tabs
   tabs:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/tabs/tabs-padding@3x.png'
-          width: 564
-          height: 122
+          width: 760
+          height: 143
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/tabs/tabs-measures@3x.png'
-          width: 493
-          height: 59
+          width: 760
+          height: 143
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/tabs/tabs-specs@3x.png'
-          width: 572
-          height: 156
+          width: 760
+          height: 143
 
   ## Modals
   modals:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/modals/padding@3x.png'
-          width: 782
-          height: 499
+          width: 902
+          height: 506
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/modals/measures@3x.png'
-          width: 835
-          height: 484
+          width: 902
+          height: 506
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/modals/specs@3x.png'
           width: 902
-          height: 476
+          height: 506
 
   ## Tabs Section
   tabs_section:
@@ -158,55 +149,55 @@ items:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/combobox/padding_01@3x.png'
-          width: 252
-          height: 156
+          width: 297
+          height: 192
         - item: '/assets/images/uicomponents/combobox/padding_02@3x.png'
-          width: 283
-          height: 152
+          width: 297
+          height: 192
         - item: '/assets/images/uicomponents/combobox/padding_03@3x.png'
           width: 297
-          height: 214
+          height: 192
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/combobox/measures_01@3x.png'
-          width: 225
-          height: 36
+          width: 332
+          height: 110
         - item: '/assets/images/uicomponents/combobox/measures_02@3x.png'
-          width: 245
+          width: 332
           height: 110
 
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/combobox/specs_01@3x.png'
-          width: 245
-          height: 151
+          width: 331
+          height: 186
         - item: '/assets/images/uicomponents/combobox/specs_02@3x.png'
           width: 331
           height: 186
         - item: '/assets/images/uicomponents/combobox/specs_03@3x.png'
-          width: 245
-          height: 151
+          width: 331
+          height: 186
 
   pills:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/pills/padding_01@3x.png'
-          width: 148
+          width: 199
           height: 124
         - item: '/assets/images/uicomponents/pills/padding_02@3x.png'
-          width: 186
-          height: 77
+          width: 199
+          height: 124
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/pills/measures_01@3x.png'
-          width: 203
-          height: 24
+          width: 196
+          height: 58
         - item: '/assets/images/uicomponents/pills/measures_02@3x.png'
-          width: 155
-          height: 56
+          width: 196
+          height: 58
 
 
     - id: 'specifications'
@@ -228,36 +219,36 @@ items:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/inputs/padding_01@3x.png'
-          width: 310
+          width: 376
           height: 246
         - item: '/assets/images/uicomponents/inputs/padding_02@3x.png'
-          width: 255
-          height: 110
+          width: 376
+          height: 246
         - item: '/assets/images/uicomponents/inputs/padding_03@3x.png'
-          width: 308
-          height: 108
+          width: 376
+          height: 246
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/inputs/measures_01@3x.png'
-          width: 245
-          height: 90
+          width: 254
+          height: 95
         - item : '/assets/images/uicomponents/inputs/measures_02@3x.png'
-          width: 251
-          height: 58
+          width: 254
+          height: 95
 
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/inputs/specs_01@3x.png'
-          width: 236
-          height: 147
+          width: 305
+          height: 161
         - item: '/assets/images/uicomponents/inputs/specs_02@3x.png'
-          width: 216
-          height: 100
+          width: 305
+          height: 161
         - item: '/assets/images/uicomponents/inputs/specs_03@3x.png'
-          width: 221
-          height: 111
+          width: 305
+          height: 161
 
 
   text_field:
@@ -324,34 +315,34 @@ items:
   zoom:
     - id: 'padding'
       images:
-        - item: '/assets/images/uicomponents/zoom/paddding@3x.png'
-          width: 121
-          height: 196
+        - item: '/assets/images/uicomponents/zoom/padding@3x.png'
+          width: 265
+          height: 203
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/zoom/measures@3x.png'
-          width: 119
-          height: 160
+          width: 265
+          height: 203
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/zoom/specs@3x.png'
-          width: 264
-          height: 165
+          width: 265
+          height: 203
 
   list:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/list/padding@3x.png'
-          width: 603
-          height: 248
+          width: 739
+          height: 250
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/list/measures@3x.png'
-          width: 595
-          height: 177
+          width: 739
+          height: 250
 
     - id: 'specifications'
       images:
@@ -363,33 +354,33 @@ items:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/popover/padding@3x.png'
-          width: 230
-          height: 247
+          width: 439
+          height: 266
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/popover/measures@3x.png'
-          width: 234
-          height: 261
+          width: 439
+          height: 266
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/popover/specs@3x.png'
           width: 439
-          height: 226
+          height: 266
 
   alerts:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/alerts/padding@3x.png'
-          width: 450
-          height: 170
+          width: 590
+          height: 183
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/alerts/measures@3x.png'
-          width: 437
-          height: 113
+          width: 590
+          height: 183
 
     - id: 'specifications'
       images:
@@ -437,19 +428,19 @@ items:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/pagination/padding@3x.png'
-          width: 108
-          height: 103
+          width: 292
+          height: 130
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/pagination/measures@3x.png'
-          width: 161
-          height: 48
+          width: 292
+          height: 130
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/pagination/specs@3x.png'
-          width: 288
+          width: 292
           height: 130
 
 
@@ -457,29 +448,29 @@ items:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/tooltip/padding_01@3x.png'
-          width: 149
-          height: 60
+          width: 223
+          height: 131
         - item: '/assets/images/uicomponents/tooltip/padding_02@3x.png'
           width: 223
-          height: 129
+          height: 131
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/tooltip/measures_01@3x.png'
-          width: 116
-          height: 58
+          width: 220
+          height: 130
         - item: '/assets/images/uicomponents/tooltip/measures_02@3x.png'
-          width: 216
-          height: 126
+          width: 220
+          height: 130
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/tooltip/specs_01@3x.png'
           width: 293
-          height: 119
+          height: 123
         - item: '/assets/images/uicomponents/tooltip/specs_02@3x.png'
-          width: 278
-          height: 108
+          width: 293
+          height: 123
 
 
   buttons:
