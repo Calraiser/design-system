@@ -375,18 +375,26 @@ items:
         - item: '/assets/images/uicomponents/alerts/padding@3x.png'
           width: 590
           height: 183
-
+        - item: '/assets/images/uicomponents/alerts/notification-card-padding@3x.png'
+          width: 620
+          height: 420
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/alerts/measures@3x.png'
           width: 590
           height: 183
+        - item: '/assets/images/uicomponents/alerts/notification-card-measures@3x.png'
+          width: 620
+          height: 420
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/alerts/specs@3x.png'
           width: 590
           height: 183
+        - item: '/assets/images/uicomponents/alerts/notification-card-specs@3x.png'
+          width: 620
+          height: 420
 
   links:
     - id: 'specifications'
