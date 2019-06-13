@@ -22,7 +22,10 @@ index: true
     = partial :"components/_progress_indicator", :locals => { :valuenow => '100', :width => '100', :progresstext => 'Operation completed successfully' }
 
 
+  .content-block
+    = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.progress }
 
+    
   .footer-navigation
     .footer-navigation__previous
       = previous_link(data.title['uielements'])

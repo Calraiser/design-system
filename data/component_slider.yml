@@ -444,6 +444,33 @@ items:
           height: 130
 
 
+  progress:
+    - id: 'padding'
+      images:
+        - item: '/assets/images/uicomponents/progress/padding@3x.png'
+          width: 785
+          height: 188
+
+    - id: 'measures'
+      images:
+        - item: '/assets/images/uicomponents/progress/measures@3x.png'
+          width: 785
+          height: 188
+
+    - id: 'specifications'
+      images:
+        - item: '/assets/images/uicomponents/progress/specs_01@3x.png'
+          width: 785
+          height: 188
+        - item: '/assets/images/uicomponents/progress/specs_02@3x.png'
+          width: 785
+          height: 188
+        - item: '/assets/images/uicomponents/progress/specs_03@3x.png'
+          width: 785
+          height: 188
+
+
+
   tooltip:
     - id: 'padding'
       images:

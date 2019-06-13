@@ -89,6 +89,87 @@
   }
 }
 
+.lds-card-notification {
+  width: 275px;
+  position: relative;
+  z-index: 99999;
+  .lds-card-triangle {
+    @include css-triangle('#000', 'up');
+    left: auto;
+    right: 8%;
+    z-index: 1;
+  }
+  &__content {
+    background: $white;
+    box-shadow: 0 0 4px 0 $grey07;
+    border-radius: 4px;
+  }
+  &__title {
+    @extend %txt-subtitle-h2-bold;
+    padding: 12px;
+    color: $grey01;
+    position: relative;
+    z-index: 9999;
+    background: $white;
+
+  }
+  &__item {
+    padding: 12px 12px;
+    border-bottom: 1px solid #f5f5f5;
+    &.new-notification {
+      background: #f8f8f8;
+    }
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    &__title {
+      h2 {
+      @extend %txt-subtitle-h2-bold;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+      flex: 1;
+      &:before {
+        content: '';
+        @include size(18px);
+        border-radius: 4px;
+        margin-right: 10px;
+        display: inline-block;
+      }
+      &.title-alert {
+        &:before {
+          background: $pink;
+        }
+      }
+      &.title-notification {
+        &:before {
+          background: $blue;
+        }
+      }
+    }
+    }
+    &__date {
+      p {
+        @extend %txt-small;
+        margin-right: 8px;
+      }
+
+    }
+  }
+  .card-text {
+    p {
+      font-size: rem-calc(14);
+    }
+
+  }
+}
+
+
+
+
 .multiple-alert {
   &__content {
     height: 150px;
