@@ -436,20 +436,20 @@ items:
     - id: 'padding'
       images:
         - item: '/assets/images/uicomponents/pagination/padding@3x.png'
-          width: 292
-          height: 130
+          width: 585
+          height: 151
 
     - id: 'measures'
       images:
         - item: '/assets/images/uicomponents/pagination/measures@3x.png'
-          width: 292
-          height: 130
+          width: 585
+          height: 151
 
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/pagination/specs@3x.png'
-          width: 292
-          height: 130
+          width: 585
+          height: 151
 
 
   progress:

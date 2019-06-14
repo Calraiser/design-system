@@ -1,78 +1,147 @@
-.pagination-example {
-  margin-bottom: 40px;
+.pagination-example__wrapper{
+  margin-left: 5px;
+  .pagination-example {
+    margin-bottom: 30px;
+  }
+  .lds-pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .pager {
+      display: flex;
+      li:not(.previous):not(.current):not(.next):not(.total-pages) {
+        border: {
+          bottom: 1px solid #bdbebf;
+          top: 1px solid #bdbebf;
+        }
+        &:nth-child(1) {
+          border-radius: 4px 0 0 4px;
+          border-right: 1px solid #bdbebf;
+          border-left: 1px solid #bdbebf;
+        }
+        &:nth-child(3) {
+          border-radius: 0 4px 4px 0;
+          border-left: 1px solid  #bdbebf;
+          border-right: 1px solid  #bdbebf;
+
+        }
+      }
+    }
+  }
+  p {
+    white-space: pre;
+  }
+}
+
+.lds-pagination__wrapper {
+  margin-left: 40px;
+  .col-xs-12 {
+    margin: 40px 0;
+  }
 }
 
 .lds-pagination {
   .pager {
-    li {
-      list-style: none;
-      margin: 0 4px;
-      @extend %txt-note;
-      font-family: Telefonicabold;
+    display: flex;
+    li:not(.previous):not(.current):not(.next):not(.total-pages) {
+      border: {
+        bottom: 1px solid #bdbebf;
+        top: 1px solid #bdbebf;
+      }
+      &:nth-child(3) {
+        border-radius: 4px 0 0 4px;
+        border-right: 1px solid #bdbebf;
+        border-left: 1px solid #bdbebf;
+      }
+      &:nth-child(5) {
+        border-radius: 0 4px 4px 0;
+        border-left: 1px solid  #bdbebf;
+        border-right: 1px solid  #bdbebf;
 
-      display: inline-block;
-      vertical-align: middle;
+      }
+    }
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      list-style: none;
+      height: 30px;
+      min-width: 30px;
+      @extend %txt-note;
       a {
-        color: $grey07;
+        color: $grey;
         transition: $transition-slow;
+        display: block;
         &:hover {
           font-weight: bold;
           color: $blue;
         }
       }
-      &.disabled {
-        a {
-          color: $grey02;
+      .icon {
+        font-size: rem-calc(26);
+        &:before {
+          transition: $transition-slow;
+          color: #333;
+          font-weight: bold;
         }
       }
-      &.hover {
-        svg {
-          fill: $blue;
+      &.total-pages {
+        white-space: pre;
+        padding: 0 15px;
+        .total {
+          margin-left: 15px;
         }
       }
       &.current {
-        color: $grey;
-      }
-      &.next,
-      &.last {
-        transform: rotate(180deg);
-      }
-      &.first {
-        &.hide {
-          display: none;
-        }
-      }
-      &.previous,
-      &.next,
-      &.first,
-      &.last {
-        margin-top: 1px;
-        &:hover {
-          svg {
-            fill: $blue;
+        margin: 0 12px;
+        width: 46px;
+        input {
+          border: 0;
+          background: transparent;
+          -webkit-appearance: none;
+          width: 46px;
+          padding-left: 10px;
+          padding-right: 10px;
+          text-align: center;
+          &:focus {
+            outline: 0;
           }
         }
       }
-      svg {
-        transition: $transition-slow;
-        fill: $grey07;
+      &.current,
+      &.next,
+      &.previous {
+        font-family: Telefonicabold;
+        border: 1px solid #bdbebf;
+        border-radius: 4px;
+      }
+      &:hover {
+        .icon:before {
+          color: $blue;
+        }
       }
     }
     &.disabled {
-      li, li > a {
-        color: $grey02 !important;
-        cursor: not-allowed;
-        &:hover {
-          color: $grey02 !important;
-          font-weight: normal !important;
-        }
-      }
-      svg {
-        fill: $grey02 !important;
-        &:hover {
-          fill: $grey02 !important;
+      opacity: .5;
+      pointer-events: none;
+
+    }
+    &.hover {
+      .next {
+        .icon:before {
+          color: $blue;
         }
       }
     }
   }
+}
+
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+-moz-appearance: textfield;
 }

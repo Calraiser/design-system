@@ -14,120 +14,107 @@ index: true
     h2.bx--type-h4.u-text-blue States
     p.bx--type-p
       | These are the different states you can find the pagination icons.
-    .row.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-12.col-sm-3
-        .pagination-example
+
+    .lds-pagination__wrapper
+      .row
+        .col-xs-12.col-md-5.col-lg-4
           h3.bx--type-label.u-uppercase.u-pb-4 Default
           .lds-pagination
             ul.pager
-              li.first.hide
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
-              li.previous.disabled
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
-              li.current 1
+              li.previous
+                = link_to '#'
+                  i.icon.icon-ic-chevron_left
+              li.current
+                input (type="number" value="1" autofocus)
               li = link_to '2', '#';
               li = link_to '3', '#';
+              li.more-pages = link_to '...', '#';
+              li.total-pages
+                | of
+                span.total 133
               li.next
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
-              li.last
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
+                i.icon.icon-ic-chevron_right
 
-          .lds-pagination.u-pt-4
-            ul.pager
-              li.first.hide
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
-              li.previous.disabled
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
-              li.current 1
-              li = link_to '2', '#';
-              li = link_to '3', '#';
-              li = link_to '...';
-              li = link_to '14', '#';
-
-              li.next
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
-              li.last
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
-
-      .col-xs-12.col-sm-3
-        .pagination-example
+        .col-xs-12.col-md-5.col-lg-4
           h3.bx--type-label.u-uppercase.u-pb-4 On hover
           .lds-pagination
-            ul.pager
+            ul.pager.hover
               li.previous
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
-              li.current 1
+                = link_to '#'
+                  i.icon.icon-ic-chevron_left
+              li.current
+                input (type="number" value="1" autofocus)
               li = link_to '2', '#';
               li = link_to '3', '#';
+              li.more-pages = link_to '...', '#';
+              li.total-pages
+                | of
+                span.total 133
               li.next
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
-              li.last.hover
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
+                i.icon.icon-ic-chevron_right
 
-      .col-xs-12.col-sm-3
-        .pagination-example
+        .col-xs-12.col-md-5.col-lg-4
           h3.bx--type-label.u-uppercase.u-pb-4 Disabled
           .lds-pagination
             ul.pager.disabled
               li.previous
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
-              li = link_to '1', '#';
+                = link_to '#'
+                  i.icon.icon-ic-chevron_left
+              li.current
+                input (onfocus="if(this.value == 'value') { this.value = ''; }"  type="number" value="1" autofocus)
               li = link_to '2', '#';
               li = link_to '3', '#';
+              li.more-pages = link_to '...', '#';
+              li.total-pages
+                | of
+                span.total 133
               li.next
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
-              li.last
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
+                i.icon.icon-ic-chevron_right
 
-    .row.center-xs.u-py-7.col-xs-offset-0.col-lg-offset-1
-      .col-xs-4.col-sm
-        .pagination-example
-          .lds-pagination
-            ul.pager
-              li.first
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
-              p.bx--type-p.small.u-pt-2 Double left arrow
 
-      .col-xs-4.col-sm
-        .pagination-example
-          .lds-pagination
-            ul.pager
-              li.previous
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
+    .pagination-example__wrapper
+      .row.u-pt-7
+        .col-xs-6.col-sm-4.col-md-2.col-lg-2
+          .pagination-example
+            .lds-pagination
+              ul.pager
+                li.previous
+                  i.icon.icon-ic-chevron_left
               p.bx--type-p.small.u-pt-2 Left arrow
 
-      .col-xs-4.col-sm
-        .pagination-example
-          .lds-pagination
-            ul.pager
-              li.current
-                | 1
+        .col-xs-6.col-sm-4.col-md-2.col-lg-2
+          .pagination-example
+            .lds-pagination
+              ul.pager
+                li.current
+                  input (type="number" value="1" autofocus)
               p.bx--type-p.small.u-pt-2 Currently page
 
-      .col-xs-4.col-sm
-        .pagination-example
-          .lds-pagination
-            ul.pager
-              li = link_to '2', '#';
-              li = link_to '3', '#';
-              li = link_to '4', '#';
+        .col-xs-6.col-sm-4.col-md-2.col-lg-2
+          .pagination-example
+            .lds-pagination
+              ul.pager
+                li = link_to '2', '#';
+                li = link_to '3', '#';
+                li.more-pages = link_to '...', '#';
               p.bx--type-p.small.u-pt-2 Next pages
 
-      .col-xs-4.col-sm
-        .pagination-example
-          .lds-pagination
-            ul.pager
-              li.next
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
-              p.bx--type-p.small.u-pt-2 Right arrow
+        .col-xs-6.col-sm-4.col-md-2.col-lg-2
+          .pagination-example
+            .lds-pagination
+              ul.pager
+                li.total-pages
+                  | of
+                  span.total 133
+              p.bx--type-p.small.u-pt-2 Last page
 
-      .col-xs-4.col-sm
-        .pagination-example
-          .lds-pagination
-            ul.pager
-              li.last
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
-              p.bx--type-p.small.u-pt-2 Double right arrow
+        .col-xs-6.col-sm-4.col-md-2.col-lg-2
+          .pagination-example
+            .lds-pagination
+              ul.pager
+                li.next
+                  i.icon.icon-ic-chevron_right
+              p.bx--type-p.small.u-pt-2 Right arrow
 
 
   .clipboard
@@ -135,19 +122,23 @@ index: true
     .code-wrapper
       .code-content id="pagination"
         = code("html") do
-          .lds-pagination
-            ul.pager
-              li.first
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
-              li.previous
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
-              li.current 1
-              li = link_to '2', '#';
-              li = link_to '3', '#';
-              li.next
-                = link_to svg_tag('/uicomponents/pagination/ic-single-arrow.svg'), '#';
-              li.last
-                = link_to svg_tag('/uicomponents/pagination/ic-double-arrow.svg'), '#';
+          | <div class="lds-pagination">
+              <ul class="pager">
+                <li class="previous">
+                  <a href="#"><i class="icon icon-ic-chevron_left"></i></a>
+                </li>
+                <li class="current">
+                  <input autofocus type="number" value="1"></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li class="more-pages">
+                  <a href="#">...</a>
+                </li>
+                <li class="total-pages">of<span class="total">133</span></li>
+                <li class="next"><i class="icon icon-ic-chevron_right"></i>
+                </li>
+              </ul>
+            </div>
 
       = partial :"components/_code_actions", :locals => { :target => '#pagination'}
 
@@ -159,7 +150,7 @@ index: true
     h2.bx--type-h4.u-text-blue.u-pb-6 Example
     .col-xs-offset-0.col-lg-offset-1
       .col-xs-12.col-md-8
-        = partial :"components/_tables", :locals => { }
+        = image_tag 'uicomponents/pagination/pagination-example@3x.png', width: 525, height: 282
 
   .footer-navigation
     .footer-navigation__previous
