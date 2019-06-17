@@ -103,11 +103,21 @@
 }
 
 .icon-ic-add:before {
+  content: "\e901";
+  color: #ccc;
+}
+
+.icon-ic-favorite:before {
   content: "\e900";
+  color: #ccc;
+  font-size: 20px;
+}
+.icon-ic-fullscreen_exit:before {
+  content: "\e910";
   color: #ccc;
 }
 .icon-ic-apps:before {
-  content: "\e901";
+  content: "\e912";
   color: #ccc;
 }
 .icon-ic-arrow_back:before {
@@ -166,16 +176,8 @@
   content: "\e90f";
   color: #ccc;
 }
-.icon-ic-favorite:before {
-  content: "\e90f";
-  color: #ccc;
-}
 .icon-ic-fullscreen:before {
   content: "\e911";
-  color: #ccc;
-}
-.icon-ic-fullscreen_exit:before {
-  content: "\e912";
   color: #ccc;
 }
 .icon-ic-graphics-vizrules-s:before {

@@ -167,7 +167,6 @@ items:
           width: 332
           height: 110
 
-
     - id: 'specifications'
       images:
         - item: '/assets/images/uicomponents/combobox/specs_01@3x.png'
@@ -250,7 +249,6 @@ items:
           width: 305
           height: 161
 
-
   text_field:
     - id: 'padding'
       images:
@@ -272,7 +270,6 @@ items:
         - item: '/assets/images/uicomponents/text_field/specs_01@3x.png'
           width: 419
           height: 105
-
 
   info_navigation:
     - id: 'padding'
@@ -412,7 +409,6 @@ items:
           width: 163
           height: 81
 
-
   nav_icons:
     - id: 'padding'
       images:
@@ -451,7 +447,6 @@ items:
           width: 585
           height: 151
 
-
   progress:
     - id: 'padding'
       images:
@@ -476,8 +471,6 @@ items:
         - item: '/assets/images/uicomponents/progress/specs_03@3x.png'
           width: 785
           height: 188
-
-
 
   tooltip:
     - id: 'padding'
@@ -506,7 +499,6 @@ items:
         - item: '/assets/images/uicomponents/tooltip/specs_02@3x.png'
           width: 293
           height: 123
-
 
   buttons:
     - id: 'padding'
