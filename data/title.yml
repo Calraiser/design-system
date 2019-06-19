@@ -27,6 +27,7 @@ uielements:
   button_bar.html.slim: "/uielements/button_bar.html.slim"
   cards.html.slim: "/uielements/cards.html.slim"
   checkbox.html.slim: "/uielements/checkbox.html.slim"
+  date_picker.html.slim: "/uielements/date_picker.html.slim"
   dropdown.html.slim: "/uielements/dropdown.html.slim"
   link.html.slim: "/uielements/link.html.slim"
   list.html.slim: "/uielements/list.html.slim"

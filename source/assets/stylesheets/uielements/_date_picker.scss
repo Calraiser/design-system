@@ -1,0 +1,227 @@
+@import '../node_modules/carbon-components/scss/components/date-picker/_date-picker';
+
+$css--font-face: true !default;
+$css--helpers: true !default;
+$css--body: true !default;
+$css--use-layer: true !default;
+$css--reset: true !default;
+$css--typography: true !default;
+$css--plex: true !default;
+
+
+.bx--date-picker__calendar.flatpickr-calendar.open {
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 $grey07;
+  height: auto;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  width: 326px !important;
+}
+
+.bx--date-picker__days .nextMonthDay,
+.bx--date-picker__days .prevMonthDay {
+  color: $grey07;
+  opacity: 1;
+}
+
+.bx--date-picker__day.today::after,
+.flatpickr-day.today::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: inherit;
+    left: inherit;
+    transform: translateX(0);
+    height: auto;
+    width: auto;
+    border-radius: 0;
+    background: #fff;
+  }
+
+.flatpickr-innerContainer,
+.flatpickr-rContainer {
+  width: 270px;
+  height: 100%;
+
+}
+.bx--date-picker__weekdays {
+  background: #e5e5e5;
+}
+
+.bx--date-picker__weekdays,
+.flatpickr-weekdays,
+.flatpickr-weekdaycontainer {
+  width: 270px;
+
+}
+.bx--date-picker__days,
+.dayContainer {
+  justify-content: flex-start;
+  width: 270px;
+  height: 100%;
+  min-width: 270px;
+  max-width: 270px;
+}
+
+.bx--date-picker__day,
+.flatpickr-day {
+  font-family: Telefonicaregular;
+  color: $grey;
+  font-size: rem-calc(14);
+  @include size(38px);
+  max-width: 38px;
+  flex-basis: 38px;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+
+  &:hover:not(.inRange) {
+     border: solid 2px $green;
+     background: $white;
+     border-radius: 50%;
+     color: $green;
+     font-family: Telefonicabold;
+  }
+}
+
+
+.bx--date-picker__month .flatpickr-current-month .cur-month,
+.bx--date-picker__month .numInputWrapper .numInput {
+  font-family: Telefonicaregular;
+  font-size: rem-calc(14);
+  color: $grey;
+  text-transform: none;
+}
+
+
+.bx--date-picker__day.startRange,
+.flatpickr-day.starRange,
+.bx--date-picker__day.endRange,
+.flatpickr-day.endRange {
+  transition: $transition-slow;
+  &:hover {
+    font-family: Telefonicabold;
+    position: relative;
+    z-index: 9999;
+    border: 0;
+    background-color: rgba(0, 204, 170, 0.2);
+    &:after {
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      z-index: -1;
+      border-radius: 50%;
+      border: 2px solid $green;
+      color: $green;
+      background: $white;
+    }
+  }
+}
+.bx--date-picker__day.startRange,
+.flatpickr-day.startRange {
+  &:hover {
+    border-radius: 50% 0 0 50%;
+  }
+}
+
+.bx--date-picker__day.endRange,
+.flatpickr-day.endRange {
+  &:hover {
+    border-radius: 0 50% 50% 0;
+  }
+}
+.bx--date-picker__day.startRange.selected,
+.flatpickr-day.startRange.selected {
+  border-radius: 50% 0 0 50%;
+}
+.bx--date-picker__day.endRange.selected,
+.flatpickr-day.endRange.selected {
+    border-radius: 0 50% 50% 0;
+}
+.bx--date-picker__day.startRange.selected,
+.bx--date-picker__day.endRange.selected,
+.flatpickr-day.endRange.selected,
+.flatpickr-day.startRange.selected {
+  color: #fff;
+  font-family: Telefonicabold;
+  position: relative;
+  z-index: 9999;
+  border: 0;
+  background-color: rgba(0, 204, 170, 0.2);
+  &:after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    z-index: -1;
+    border: solid 2px $green;
+    background-color: $green;
+    border-radius: 50%;
+
+  }
+}
+.bx--date-picker__day.inRange,
+.flatpickr-day.inRange {
+    transition: $transition-slow;
+    background-color: rgba(0, 204, 170, 0.2);
+    box-shadow: none;
+    border-radius: 0;
+}
+
+
+.bx--date-picker__month,
+.flatpickr-month {
+  position: relative;
+  margin-bottom: 15px;
+  .numInputWrapper .numInput {
+    background-color: $white;
+    padding: 0;
+  }
+  .numInputWrapper span.arrowDown,
+  .numInputWrapper span.arrowUp,
+  .flatpickr-month .numInputWrapper span.arrowDown,
+  .flatpickr-month .numInputWrapper span.arrowUp {
+    top: 5px;
+    opacity: 1;
+    font-weight: bold;
+    font-size: 18px;
+    color: $grey07;
+    transition: $transition-slow;
+    &:after {
+      font-family: 'luca-icon';
+    }
+    &:hover:after {
+      border: none;
+    }
+    &:hover {
+      color: $grey05;
+    }
+  }
+  .numInputWrapper span.arrowDown,
+  .flatpickr-month .numInputWrapper span.arrowDown{
+    left: 0;
+    &:after {
+      content: "\e907";
+    }
+  }
+  .numInputWrapper span.arrowUp,
+  .flatpickr-month .numInputWrapper span.arrowUp {
+    left: 80%;
+    &:after {
+      content: "\e908";
+    }
+  }
+}
+.numInputWrapper,
+.flatpickr-current-month .numInputWrapper {
+  position: static;
+}
+
+.bx--date-picker__weekday,
+.flatpickr-weekday {
+  font-family: Telefonicaregular;
+  font-size: rem-calc(12);
+  color: $grey;
+  font-weight: normal;
+}
