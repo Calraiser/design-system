@@ -13,8 +13,8 @@
                 .header
                   p.text
                     = element.text
-                    / - if element.link
-                    /   = link_to ' more', element.link,  :class => 'bx--link', :data => { :largesrc => element.largeImage , :title => element.title, :description => element.text }
+                    - if element.link
+                      = link_to ' more', element.link,  :class => 'bx--link', :data => { :largesrc => element.largeImage , :title => element.title, :description => element.text }
 
                   - if element.functions
                     .functions

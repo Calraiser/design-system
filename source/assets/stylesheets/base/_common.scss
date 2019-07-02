@@ -138,37 +138,23 @@ ul {
   line-height: 20px;
   font-family: Telefonicaregular;
 }
+
+
 // Examples
 .two--col-bg {
   background: image-url('uicomponents/2-col-bg.svg') repeat-y;
-  background-size: 100% auto;
-  @include media($mobile) {
-    background-size: auto;
-  }
 }
 
 .four--col-bg {
   background: image-url('uicomponents/4-col-bg.svg') repeat-y;
-  background-size: 100% auto;
-  @include media($mobile) {
-    background-size: auto;
-  }
 }
 
 .six--col-bg {
   background: image-url('uicomponents/6-col-bg.svg') repeat-y;
-  background-size: 100% auto;
-  @include media($mobile) {
-    background-size: auto;
-  }
 }
 
 .eight--col-bg {
   background: image-url('uicomponents/8-col-bg.svg') repeat-y;
-  background-size: 100% auto;
-  @include media($mobile) {
-    background-size: auto;
-  }
 }
 
 .examples-layout {
@@ -181,30 +167,25 @@ ul {
     .example-mobile {
       padding-left: 0;
       margin-bottom: 20px;
-      @include media($mobile) {
-        width: 205px;
-        margin-bottom: 0;
+      width: 210px;
+      &:first-child {
+        margin-right: 30px;
       }
-      &.u-pl-6 {
-        padding-left: 0;
-        @include media($mobile) {
-          padding-left: 40px;
-        }
-      }
-
 
       &.mobile-text {
         .bx--type-label {
           font-size: 12px;
         }
       }
+      .lds--custom-input {
+        margin-right: 0;
+      }
     }
 
     .example-tablet {
-      width: 100%;
       margin-bottom: 20px;
+      width: 450px;
       @include media($mobile) {
-        width: 448px;
         margin-bottom: 0;
       }
     }
@@ -212,17 +193,22 @@ ul {
     .example-desktop {
       width: 100%;
       @include media($mobile) {
-        width: 931px;
+        width: 935px;
+
       }
     }
 
     .example-desk {
-      &.u-pl-4 {
-        padding-left: 0;
-        // @include media($tablet) {
-        //   padding-left: 20px;
-        // }
+      width: 390px;
+      &:first-child {
+        margin-right: 93px;
       }
+      // &.u-pl-4 {
+      //   padding-left: 0;
+      //   // @include media($tablet) {
+      //   //   padding-left: 20px;
+      //   // }
+      // }
 
       &.u-pl-5 {
         padding-left: 0;
@@ -239,7 +225,7 @@ ul {
     .row {
       margin: 0;
       padding: 10px 0;
-      min-height: 150px;
+      min-height: 140px;
 
       > div {
         &:first-child {
@@ -250,6 +236,7 @@ ul {
 
     .example-tab {
       padding-right: 12px;
+      width: 390px;
       // .lds--custom-input {
       //   width: 210px;
       // }

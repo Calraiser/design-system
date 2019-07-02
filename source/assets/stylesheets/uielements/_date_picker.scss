@@ -98,7 +98,6 @@ $css--plex: true !default;
 .flatpickr-day.starRange,
 .bx--date-picker__day.endRange,
 .flatpickr-day.endRange {
-  transition: $transition-slow;
   &:hover {
     font-family: Telefonicabold;
     position: relative;
@@ -163,7 +162,6 @@ $css--plex: true !default;
 }
 .bx--date-picker__day.inRange,
 .flatpickr-day.inRange {
-    transition: $transition-slow;
     background-color: rgba(0, 204, 170, 0.2);
     box-shadow: none;
     border-radius: 0;

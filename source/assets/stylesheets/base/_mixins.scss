@@ -269,10 +269,10 @@
       &:after {
         top:0;
         background-color: $inputColor;
-        left: $inputBorderWidth + $inputActiveScale/2;
-        width: $inputWidth - $inputActiveScale;
-        height: $inputHeight -$inputActiveScale;
-        margin-top: $inputBorderWidth + $inputActiveScale/2;
+        left: $inputBorderWidth + $inputActiveScale/2 - 1;
+        width: $inputWidth - $inputActiveScale + 2;
+        height: $inputHeight -$inputActiveScale + 2;
+        margin-top: $inputBorderWidth + $inputActiveScale/2 - 1;
         transform: scale(0);
         transform-origin: 50%;
         transition: transform 200ms ease-out;
