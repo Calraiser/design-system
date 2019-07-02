@@ -11,7 +11,7 @@
 @import "settings/variables";
 
 // Vendors
-@import "vendors/bourbon";
+@import '../node_modules/bourbon/core/_bourbon';
 @import "vendors/c3.min";
 @import "vendors/slick";
 

@@ -57,9 +57,7 @@ index: true
       li Tablet: 2 - 4 columns
       li Desktop: 2 - 4 - 8 columns
     p.bx--type-p.u-pt-2
-      | You can find more info about the column system in the&nbsp;
-      = link_to 'Layout page', '/guidelines/layout.html', class: 'blue-link'
-      |.
+      | You can find more info about the column system in the #{link_to 'Layout page', '/guidelines/layout.html', class: 'blue-link'}.
 
   .content-block.examples-layout
     .example-item
@@ -72,7 +70,6 @@ index: true
               = partial :"components/_checkbox", :locals => { :checked => true, :label_selected => 'Lorem ipsum dolor sit amet', :label_unselected => 'Lorem ipsum dolor sit amet' }
               = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt', :label_unselected => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.' }
               = partial :"components/_checkbox", :locals => { :checked => false, :label_selected => 'On', :label_unselected => 'Off' }
-
 
     .example-item
       h3.bx--type-subH2.u-uppercase
