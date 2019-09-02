@@ -1,0 +1,59 @@
+---
+page_title: Breadcrumb
+description: Breadcrumbs help users keep track of their locations within a website and move up to a parent level if desired.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+  p.bx--type-p
+    | Each tier of the breadcrumb should be clickable.
+
+  ul.e-list
+    li Breadcrumb titles short but descriptive.
+    li Breadcrumbs should not replace primary navigation.
+    li Show hierarchy, not history.
+
+  .content-block
+    h2.bx--type-h4.u-text-blue States
+    p.bx--type-p
+      | These are the different states you can find the breadcrumb component.
+
+    .u-py-7.col-xs-offset-0.col-lg-offset-1
+      .col-xs-12.col-md-4
+        h3.bx--type-label.u-uppercase.u-pb-5 Default
+        = partial :"components/_breadcrumb", :locals => {}
+
+      .col-xs-12.col-md-4
+        h3.bx--type-label.u-uppercase.u-pb-5  On hover
+        = partial :"components/_breadcrumb", :locals => { :hover => true }
+
+      .col-xs-12.col-md-4
+        h3.bx--type-label.u-uppercase.u-pb-5  Truncated
+        = partial :"components/_breadcrumb", :locals => { :truncated => true }
+
+
+
+  .clipboard
+    h4.bx--type-h4.u-text-blue.uppercase  Code/Html > Save
+    .code-wrapper
+      .code-content id="breadcrumb"
+        = code("html") do
+          = partial :"components/_info", :locals => {}
+
+      = partial :"components/_code_actions", :locals => { :target => '#breadcrumb'}
+
+
+
+  .footer-navigation
+    .footer-navigation__previous
+      = previous_link(data.title['uielements'])
+    .footer-navigation__next
+      = next_link(data.title['uielements'])
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'COLOUR_PALETTE_download', :pdf => true }

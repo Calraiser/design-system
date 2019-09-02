@@ -10,6 +10,8 @@
     link: "/uielements/buttons.html"
   - title: "Button bar"
     link: "/uielements/button_bar.html"
+  - title: "Breadcrumb"
+    link: "/uielements/breadcrumb.html"
   - title: "Cards"
     link: "/uielements/cards.html"
   - title: "Checkbox"

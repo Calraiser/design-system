@@ -1,0 +1,40 @@
+.lds-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 3px;
+
+    span {
+      position: relative;
+    }
+    a {
+      @extend %txt-note;
+      color: #86888c;
+      transition: $transition-slow;
+      display: block;
+      &:hover {
+        color: $blue;
+      }
+
+    }
+    &:after {
+      content: "/";
+      color: #86888c;
+      margin-left: 3px;
+      margin-top: 5px;
+    }
+    &:last-child {
+      &:after {
+        content: '';
+      }
+    }
+    &.hover {
+      a {
+        color: $blue;
+      }
+    }
+  }
+}

@@ -8,13 +8,48 @@ $css--reset: true !default;
 $css--typography: true !default;
 $css--plex: true !default;
 
+.example-calendar {
+  position: relative;
+}
+
+.bx--date-picker--range {
+  .bx--date-picker__input {
+    box-shadow: none;
+    background-color: none;
+    border: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    font-family: Telefonicabold;
+    font-size: rem-calc(16);
+    color: $grey05;
+    width: rem-calc(100);
+    height: 100%;
+  }
+  .bx--date-picker__icon {
+    fill: $green;
+    top: 3px;
+    right: -2.5rem;
+    @include size(25px);
+  }
+}
+
+.bx--date-picker {
+  .bx--visually-hidden {
+    display: none;
+  }
+}
+
+.bx--date-picker__separator {
+  margin: 0 10px;
+}
+
 
 .bx--date-picker__calendar.flatpickr-calendar.open {
   border-radius: 4px;
   box-shadow: 0 0 4px 0 $grey07;
   height: auto;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding: 30px;
   width: 326px !important;
 }
 
@@ -40,7 +75,7 @@ $css--plex: true !default;
 
 .flatpickr-innerContainer,
 .flatpickr-rContainer {
-  width: 270px;
+  width: 100%;
   height: 100%;
 
 }
@@ -51,16 +86,16 @@ $css--plex: true !default;
 .bx--date-picker__weekdays,
 .flatpickr-weekdays,
 .flatpickr-weekdaycontainer {
-  width: 270px;
+  width: 100%;
 
 }
 .bx--date-picker__days,
 .dayContainer {
-  justify-content: flex-start;
-  width: 270px;
+  justify-content: center;
+  width: 100%;
   height: 100%;
-  min-width: 270px;
-  max-width: 270px;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .bx--date-picker__day,
@@ -168,6 +203,14 @@ $css--plex: true !default;
 }
 
 
+.bx--date-picker__month .numInputWrapper span.arrowDown,
+.flatpickr-month .numInputWrapper span.arrowDown,
+.bx--date-picker__month .numInputWrapper span.arrowUp,
+.flatpickr-month .numInputWrapper span.arrowUp  {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .bx--date-picker__month,
 .flatpickr-month {
   position: relative;
@@ -180,7 +223,6 @@ $css--plex: true !default;
   .numInputWrapper span.arrowUp,
   .flatpickr-month .numInputWrapper span.arrowDown,
   .flatpickr-month .numInputWrapper span.arrowUp {
-    top: 5px;
     opacity: 1;
     font-weight: bold;
     font-size: 18px;
@@ -188,6 +230,7 @@ $css--plex: true !default;
     transition: $transition-slow;
     &:after {
       font-family: 'luca-icon';
+      border: none;
     }
     &:hover:after {
       border: none;
@@ -197,7 +240,7 @@ $css--plex: true !default;
     }
   }
   .numInputWrapper span.arrowDown,
-  .flatpickr-month .numInputWrapper span.arrowDown{
+  .flatpickr-month .numInputWrapper span.arrowDown {
     left: 0;
     &:after {
       content: "\e907";
@@ -205,7 +248,7 @@ $css--plex: true !default;
   }
   .numInputWrapper span.arrowUp,
   .flatpickr-month .numInputWrapper span.arrowUp {
-    left: 80%;
+    left: 90%;
     &:after {
       content: "\e908";
     }
@@ -215,7 +258,18 @@ $css--plex: true !default;
 .flatpickr-current-month .numInputWrapper {
   position: static;
 }
-
+.flatpickr-months {
+  align-items: center;
+}
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  padding: 0;
+  position: relative;
+}
+.flatpickr-prev-month svg,
+.flatpickr-next-month svg {
+  width: 18px;
+}
 .bx--date-picker__weekday,
 .flatpickr-weekday {
   font-family: Telefonicaregular;

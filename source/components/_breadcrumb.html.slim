@@ -1,0 +1,20 @@
+- hover     ||= false
+- truncated ||= false
+
+nav.lds-breadcrumb
+  .lds-breadcrumb__item
+    = link_to 'Home', '#';
+
+  - if truncated
+    .lds-breadcrumb__item
+      span = link_to '...'
+
+    .lds-breadcrumb__item class=('hover' if hover.present?)
+      = link_to 'Types of chart', '#';
+  - else
+    .lds-breadcrumb__item
+      = link_to 'Graphics', '#';
+    .lds-breadcrumb__item
+      = link_to 'Visualization rules', '#';
+    .lds-breadcrumb__item class=('hover' if hover.present?)
+      = link_to 'Types of chart', '#';

@@ -5,6 +5,18 @@
 /* Settings
    ========================================================================== */
 
+
+@import '../node_modules/carbon-components/scss/components/dropdown/_dropdown';
+
+$css--font-face: true !default;
+$css--helpers: true !default;
+$css--body: true !default;
+$css--use-layer: true !default;
+$css--reset: true !default;
+$css--typography: true !default;
+$css--plex: true !default;
+
+
 $button-default-background-color: #bbbbbb !default;
 $button-default-text-color: $white !default;
 $btn-height: 38px;
