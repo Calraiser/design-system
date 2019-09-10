@@ -3,7 +3,7 @@ class ComponentName extends React.Component {
 
   render() {
     return (
-      <div>Component</div>
+      <div>Holaaaaa</div>
     );
   }
 

@@ -15,6 +15,7 @@ activate :autoprefixer
 activate :livereload
 activate :lunr
 activate :syntax, :inline_theme => Rouge::Themes::Github.new
+# activate :sprockets
 
 # activate :google_analytics do |ga|
 #   ga.tracking_id = 'UA-127480418-2'
@@ -32,11 +33,6 @@ activate :navtree do |options|
   options.data_file = 'title.yml' # The data file where our navtree is stored.
   options.ignore_dir = ['assets'] # An array of directories we want to ignore when building our tree.
 end
-
-# activate :sprockets do |c|
-#   c.expose_middleman_helpers = true
-# end
-
 
 # activate :middleman_scavenger do |config|
 #   config.path = "./source/assets/images/icons/"
@@ -57,7 +53,7 @@ configure :build do
   activate :asset_hash
   activate :relative_assets
 
-  set :relative_links, true
+  # set :relative_links, true
 end
 
 # Helpers

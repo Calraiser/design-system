@@ -1,4 +1,13 @@
 GIT
+  remote: https://github.com/animade/bourbon.git
+  revision: 541285d30aca24688484872a9709ec946769c27f
+  branch: bourbon-3.2.0
+  specs:
+    bourbon (3.2.3)
+      sass (~> 3.2)
+      thor
+
+GIT
   remote: https://github.com/middleman-contrib/middleman-deploy.git
   revision: 4d04b550b4c6888265d83ee9689f41e29dbae535
   branch: master
@@ -141,6 +150,11 @@ GEM
     ruby-ll (2.1.2)
       ansi
       ast
+    sass (3.7.4)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
     sassc (2.2.0)
       ffi (~> 1.9)
     servolux (0.13.0)
@@ -169,6 +183,7 @@ PLATFORMS
   x86-unknown
 
 DEPENDENCIES
+  bourbon!
   middleman (~> 4)
   middleman-autoprefixer (~> 2.7.1)
   middleman-deploy!

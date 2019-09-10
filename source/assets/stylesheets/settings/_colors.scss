@@ -47,74 +47,74 @@ $baseColors: (
 
 );
 
-@function colorMap($baseColors, $variations) {
-  $colors:();
-
-  @each $color, $value in $baseColors {
-    $maxVar: 35;
-    $mid: $variations / 2;
-    $dist: $mid - 1;
-    $step: $maxVar / $dist;
-
-    // lighten and darken
-    @for $i from 1 through $dist {
-      $percent: $maxVar - ($step * ($i - 1));
-      $darken: ($variations - $i) * floor(0.20 * 100);
-      $lighten: $i * floor(0.20 * 100);
-
-      $colors: map-merge($colors, (
-         #{$color}-#{$lighten}: lighten($value, $percent),
-         #{$color}-#{$darken}:  darken($value, $percent)
-      ));
-    }
-
-    // middle eg 500
-    $colors: map-merge($colors, (#{$color}-100.0: lighten($value, 38.7)));
-    $colors: map-merge($colors, (#{$color}-#{$variations/2*floor(0.20 * 100)}: $value));
-  }
-
-  @return $colors;
-}
-
-@each $color, $value in colorMap($baseColors, 10) {
-
-  @if (str-index($color, '-100')){
-    .#{$color} {
-      + p {
-        &.color {
-        color: $value;
-        display: block;
-        }
-        + p {
-          display: none
-        }
-      }
-    }
-  }
-
-  .#{$color} {
-    background-color: $value;
-    + p {
-      &.color {
-        &:after {
-          content: '#{$value}';
-        }
-      }
-    }
-  }
-
-  h3.#{$color} {
-    background: none;
-    color: $value !important;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-size: 13px;
-    span {
-      color: $grey;
-      margin-left: 10px;
-    }
-    &:before {
-      content: '#{$value}';
-    }
-  }
-}
+// @function colorMap($baseColors, $variations) {
+//   $colors:();
+//
+//   @each $color, $value in $baseColors {
+//     $maxVar: 35;
+//     $mid: $variations / 2;
+//     $dist: $mid - 1;
+//     $step: $maxVar / $dist;
+// 
+//     // lighten and darken
+//     @for $i from 1 through $dist {
+//       $percent: $maxVar - ($step * ($i - 1));
+//       $darken: ($variations - $i) * floor(0.20 * 100);
+//       $lighten: $i * floor(0.20 * 100);
+//
+//       $colors: map-merge($colors, (
+//          #{$color}-#{$lighten}: lighten($value, $percent),
+//          #{$color}-#{$darken}:  darken($value, $percent)
+//       ));
+//     }
+//
+//     // middle eg 500
+//     $colors: map-merge($colors, (#{$color}-100.0: lighten($value, 38.7)));
+//     $colors: map-merge($colors, (#{$color}-#{$variations/2*floor(0.20 * 100)}: $value));
+//   }
+//
+//   @return $colors;
+// }
+//
+// @each $color, $value in colorMap($baseColors, 10) {
+//
+//   @if (str-index($color, '-100')){
+//     .#{$color} {
+//       + p {
+//         &.color {
+//         color: $value;
+//         display: block;
+//         }
+//         + p {
+//           display: none
+//         }
+//       }
+//     }
+//   }
+//
+//   .#{$color} {
+//     background-color: $value;
+//     + p {
+//       &.color {
+//         &:after {
+//           content: '#{$value}';
+//         }
+//       }
+//     }
+//   }
+//
+//   h3.#{$color} {
+//     background: none;
+//     color: $value !important;
+//     text-transform: uppercase;
+//     margin-bottom: 10px;
+//     font-size: 13px;
+//     span {
+//       color: $grey;
+//       margin-left: 10px;
+//     }
+//     &:before {
+//       content: '#{$value}';
+//     }
+//   }
+// }

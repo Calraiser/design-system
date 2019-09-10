@@ -10,7 +10,9 @@ html
 
       gtag('config', 'UA-84580051-7');
 
-    = stylesheet_link_tag :all
+    = stylesheet_link_tag "main.bundle"
+    = stylesheet_link_tag 'https://unpkg.com/carbon-components/css/carbon-components.min.css'
+
     = favicon_tag 'favicon-32x32.png'
   body class="homepage"
     = partial 'layouts/logo'
@@ -19,10 +21,8 @@ html
     = partial 'blocks/floating_feedback'
     = partial 'layouts/footer'
 
-    = javascript_include_tag 'vendors/jquery.js'
     = javascript_include_tag 'vendors/jquery.cookie.js'
-    = javascript_include_tag 'https://unpkg.com/carbon-components/scripts/carbon-components.min.js'
     = javascript_include_tag 'vendors/slick.js'
     = javascript_include_tag 'components/onBoarding.js'
 
-    = javascript_include_tag :all
+    = javascript_include_tag "main.bundle"

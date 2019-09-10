@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js install
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js
 
 PATH: 
   /Users/carlos.alvarez/.rbenv/shims:/usr/local/opt/rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/play1_4_4:/Applications/mongodb4010/bin:/opt/X11/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, mkdir '/Users/carlos.alvarez/Documents/Projects/luca-design-system/node_modules/acorn-dynamic-import'
+  Error: EACCES: permission denied, mkdir '/Users/carlos.alvarez/Documents/Projects/luca-design-system/node_modules/babel-loader/node_modules'
 
 npm manifest: 
   {
@@ -34,6 +34,9 @@ npm manifest:
       "babel-core": "^6.22.1",
       "babel-loader": "^6.2.10",
       "babel-preset-env": "^1.1.8",
+      "babel-preset-es2015": "^6.9.0",
+      "babel-preset-react": "^6.11.1",
+      "babel-preset-stage-0": "^6.5.0",
       "clean-webpack-plugin": "^0.1.15",
       "css-loader": "^0.26.1",
       "extract-text-webpack-plugin": "^2.0.0-beta",
@@ -46,7 +49,9 @@ npm manifest:
     },
     "dependencies": {
       "d3": "^4.5.0",
-      "sanitize.css": "^4.1.0"
+      "sanitize.css": "^4.1.0",
+      "react": "^15.2.1",
+      "react-dom": "^15.2.1"
     }
   }
 

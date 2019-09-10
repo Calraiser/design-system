@@ -1,3 +1,5 @@
+
+
 var data_embed = {};
 
 // Go up multiple parent levels in one simple function.
@@ -69,18 +71,7 @@ $(document).ready(function() {
     }, 1000);
   }
 
-  // Clipboard
-  var clipboard = new ClipboardJS('.btn-copy');
 
-  clipboard.on('success', function(e) {
-    setTooltip(e.trigger, 'Copied!');
-    hideTooltip(e.trigger);
-  });
-
-  clipboard.on('error', function(e) {
-    setTooltip(e.trigger, 'Failed!');
-    hideTooltip(e.trigger);
-  });
 
 
   // Scroll Totop

@@ -1,3 +1,5 @@
+import 'main.scss';
+
 import ComponentName from './components/ComponentName';
 
 export class App extends React.Component{
@@ -6,9 +8,6 @@ export class App extends React.Component{
     super(props);
     this.state = {};
   }
-
-
-  
 
   render() {
     return (

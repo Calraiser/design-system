@@ -2,7 +2,7 @@ doctype html
 html
   head
     = partial 'layouts/meta_tags'
-    = stylesheet_link_tag :all
+    = stylesheet_link_tag "main.bundle"
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84580051-7"></script>
     javascript:
@@ -12,8 +12,7 @@ html
 
       gtag('config', 'UA-84580051-7');
 
-    = javascript_include_tag :all
-    = javascript_include_tag 'https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js'
+    / = javascript_include_tag 'https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js'
     = favicon_tag 'favicon-32x32.png'
 
   body class = page_classes
@@ -29,5 +28,3 @@ html
           = yield
           = partial 'blocks/toTop'
           .visel
-
-    = javascript_include_tag 'https://unpkg.com/carbon-components/scripts/carbon-components.min.js'

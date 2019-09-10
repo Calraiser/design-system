@@ -17,6 +17,8 @@ gem 'middleman-navtree'
 gem 'redcarpet'
 gem 'middleman-gh-pages'
 
+gem 'bourbon', :git => 'https://github.com/animade/bourbon.git', :branch => 'bourbon-3.2.0'
+
 gem 'middleman-google-analytics', '~> 3.0'
 
 # For faster file watcher updates on Windows:

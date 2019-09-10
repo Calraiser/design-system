@@ -4,7 +4,7 @@ var Clean = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    main:   __dirname + '/source/assets/javascripts/app.js'
+    main:   __dirname + '/source/assets/javascripts/main.js'
     // second: './assets/javascript/second.js',
   },
 
@@ -19,7 +19,7 @@ module.exports = {
 
   output: {
     path: __dirname + '/.tmp/dist',
-    filename: 'assets/javascript/[name].bundle.js',
+    filename: 'assets/javascripts/[name].bundle.js',
   },
 
   module: {
@@ -31,24 +31,6 @@ module.exports = {
         query: {
           presets: ['es2015', 'react']
         }
-      },
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            'css-loader',
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: function () {
-                  return [
-                    require('autoprefixer')
-                  ];
-                }
-              }
-            }
-          ]}),
       },
       {
         test: /\.scss$|.sass$/,
@@ -83,12 +65,17 @@ module.exports = {
       },
     }),
 
+    new webpack.ProvidePlugin({
+       $: "jquery",
+       jQuery: "jquery"
+     }),
+
     // Make React globally available
    new webpack.ProvidePlugin({
      React: "react",
      ReactDOM: "react-dom"
    }),
     new Clean(['.tmp']),
-    new ExtractTextPlugin("/source/assets/stylesheets/[name].bundle.css"),
+    new ExtractTextPlugin("assets/stylesheets/[name].bundle.css"),
   ],
 };
