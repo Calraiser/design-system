@@ -23,23 +23,20 @@ index: true
     p.bx--type-p.u-uppercase.u-pt-2 Dropdown
     .row.u-py-7.col-xs-offset-0.col-lg-offset-1
       .col-xs-12.col-sm-6
-        select id="default"
+        select.dropdown
           option value="hide" Default
-          option value="january" rel="icon-temperature" January
           option value="february" February
           option value="march" March
           option value="april" April
           option value="may" May
           option value="june" June
           option value="hide" Default
-          option value="january" rel="icon-temperature" January
           option value="february" February
           option value="march" March
           option value="april" April
           option value="may" May
           option value="june" June
           option value="hide" Default
-          option value="january" rel="icon-temperature" January
           option value="february" February
           option value="march" March
           option value="april" April
@@ -47,14 +44,8 @@ index: true
           option value="june" June
 
       .col-xs-12.col-sm-6
-        select id="default" disabled="disabled"
+        select.dropdown disabled="disabled"
           option value="hide" Disabled
-          option value="january" rel="icon-temperature" January
-          option value="february" February
-          option value="march" March
-          option value="april" April
-          option value="may" May
-          option value="june" June
 
   .content-block
     p.bx--type-p.u-uppercase Multiselect dropdown
@@ -68,7 +59,7 @@ index: true
       .code-content id="combobox"
         = code("html") do
           | <div class="select">
-              <select id="default" class="select-hidden">
+              <select id="dropdown" class="select-hidden">
                 <option value="hide">Default</option>
                 <option rel="icon-temperature" value="january">January</option>
                 <option value="february">February</option>
@@ -94,7 +85,7 @@ index: true
         h3.bx--type-subH2.u-uppercase.u-pb-6 Left Label
         .row.middle-xs
           .select-label.bx--type-label Category
-          select id="default"
+          select.dropdown
             option value="hide" Left label
             option value="january" rel="icon-temperature" January
             option value="february" February
@@ -107,7 +98,7 @@ index: true
         h3.bx--type-subH2.u-uppercase.u-pb-6 Top Label
         .row.column-xs
           .select-label.bx--type-label Category
-          select id="default"
+          select.dropdown
             option value="hide" Top label
             option value="january" rel="icon-temperature" January
             option value="february" February

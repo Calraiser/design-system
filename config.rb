@@ -20,15 +20,22 @@ activate :syntax, :inline_theme => Rouge::Themes::Github.new
 #   ga.tracking_id = 'UA-127480418-2'
 # end
 
+
+activate :external_pipeline,
+ name: :webpack,
+ command: build? ?  "yarn run build" : "yarn run start",
+ source: ".tmp/dist",
+ latency: 1
+
 activate :navtree do |options|
   options.automatic_tree_updates = false # The tree.yml file will be updated automatically when source files are changed.
   options.data_file = 'title.yml' # The data file where our navtree is stored.
   options.ignore_dir = ['assets'] # An array of directories we want to ignore when building our tree.
 end
 
-activate :sprockets do |c|
-  c.expose_middleman_helpers = true
-end
+# activate :sprockets do |c|
+#   c.expose_middleman_helpers = true
+# end
 
 
 # activate :middleman_scavenger do |config|
