@@ -1,9 +1,16 @@
 
+
 class ComponentName extends React.Component {
 
   render() {
     return (
-      <div>Holaaaaa</div>
+      <Calendar
+      accentColor={'blue'}
+      orientation={'flex-col'}
+      showHeader={false}
+      onDatePicked={(d) => {
+        console.log('onDatePicked', d);
+      }}/>,
     );
   }
 

@@ -1,5 +1,6 @@
 
-var Modal = CarbonComponents.Modal;
+import { Modal } from 'carbon-components'
+
 var element = Modal.create(document.getElementById('onBoarding'));
 var slider = $('.onBoarding-slide');
 var slider_svg = $('.onBoarding-slide__figure svg');

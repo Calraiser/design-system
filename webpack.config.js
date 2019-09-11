@@ -1,20 +1,18 @@
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var Clean = require('clean-webpack-plugin');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require('extract-css-chunks-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-module.exports = {
+module.exports = (env, options) => ({
+
+  optimization: {
+    minimizer: [new UglifyJsPlugin({ cache: true, parallel: true, sourceMap: false }), new OptimizeCSSAssetsPlugin({})],
+  },
+
   entry: {
     main:   __dirname + '/source/assets/javascripts/main.js'
     // second: './assets/javascript/second.js',
-  },
-
-  resolve: {
-    modules: [
-      __dirname + '/source/assets/javascripts',
-      __dirname + '/source/assets/stylesheets',
-      __dirname + '/node_modules',
-    ],
-    extensions: ['.js', '.css', '.scss']
   },
 
   output: {
@@ -23,59 +21,42 @@ module.exports = {
   },
 
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "babel-loader",
-        query: {
-          presets: ['es2015', 'react']
-        }
+        use: [
+          {
+            loader: 'babel-loader',
+          }
+        ]
       },
       {
-        test: /\.scss$|.sass$/,
-        loader: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            'css-loader',
-            {
-              loader: 'postcss-loader',
-              options: {
-                plugins: function () {
-                  return [
-                    require('autoprefixer')
-                  ];
-                }
-              }
-            },
-            'sass-loader'
-          ]
-        }),
+         test: /\.(scss|sass|css)$/,
+         use: [
+           MiniCssExtractPlugin.loader,
+           'css-loader',
+           'sass-loader'
+         ],
+       },
+       {
+        test: /\.(ttf|eot|svg|png|jpg|gif|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'file-loader'
       }
     ]
   },
 
   plugins: [
-    // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
-    // inside your code for any environment checks; UglifyJS will automatically
-    // drop any unreachable code.
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
-      },
-    }),
-
-    new webpack.ProvidePlugin({
-       $: "jquery",
-       jQuery: "jquery"
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+       filename: 'assets/stylesheets/main.css'
      }),
 
-    // Make React globally available
-   new webpack.ProvidePlugin({
-     React: "react",
-     ReactDOM: "react-dom"
+    new webpack.ProvidePlugin({
+       React: "react",
+       ReactDOM: "react-dom",
+       $: "jquery",
+       jQuery: "jquery",
+       "window.jQuery": "jquery"
    }),
-    new Clean(['.tmp']),
-    new ExtractTextPlugin("assets/stylesheets/[name].bundle.css"),
   ],
-};
+});

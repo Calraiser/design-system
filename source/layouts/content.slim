@@ -2,7 +2,9 @@ doctype html
 html
   head
     = partial 'layouts/meta_tags'
-    = stylesheet_link_tag "main.bundle"
+    = stylesheet_link_tag "main"
+
+    #root
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84580051-7"></script>
     javascript:
@@ -14,6 +16,8 @@ html
 
     / = javascript_include_tag 'https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js'
     = favicon_tag 'favicon-32x32.png'
+
+    = javascript_include_tag "main.bundle"
 
   body class = page_classes
     = partial 'blocks/floating_feedback'

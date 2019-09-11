@@ -1,11 +1,13 @@
 
-import 'main.scss'
+import _css from '../stylesheets/main.scss';
 
+import './app';
 import 'lunr'
 import 'carbon-components'
 import 'jquery-ui'
-import 'bootstrap-tooltip'
-import 'clipboard-js'
+import './vendors/bootstrap-tooltip.js'
+import './vendors/clipboard.min.js'
+
 
 import './common.js'
 

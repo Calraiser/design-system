@@ -3,6 +3,7 @@ html
   head
     = partial 'layouts/meta_tags'
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84580051-7"></script>
+
     javascript:
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -10,7 +11,7 @@ html
 
       gtag('config', 'UA-84580051-7');
 
-    = stylesheet_link_tag "main.bundle"
+    = stylesheet_link_tag "main"
     = stylesheet_link_tag 'https://unpkg.com/carbon-components/css/carbon-components.min.css'
 
     = favicon_tag 'favicon-32x32.png'
@@ -21,8 +22,5 @@ html
     = partial 'blocks/floating_feedback'
     = partial 'layouts/footer'
 
-    = javascript_include_tag 'vendors/jquery.cookie.js'
-    = javascript_include_tag 'vendors/slick.js'
-    = javascript_include_tag 'components/onBoarding.js'
 
     = javascript_include_tag "main.bundle"

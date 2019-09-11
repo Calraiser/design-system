@@ -74,7 +74,7 @@ body {
   &.uielements {
     .title {
       &:before {
-        background-image: image-url("ic-uicomponents-blue.svg");
+        background-image: url("../images/ic-uicomponents-blue.svg");
       }
     }
   }
@@ -82,7 +82,7 @@ body {
   &.graphics {
     .title {
       &:before {
-        background-image: image-url("ic-graphics-blue.svg");
+        background-image: url("../images/ic-graphics-blue.svg");
       }
     }
   }
@@ -90,7 +90,7 @@ body {
   &.resources {
     .title {
       &:before {
-        background-image: image-url("ic-resources-blue.svg");
+        background-image: url("../images/ic-resources-blue.svg");
       }
     }
   }
@@ -98,7 +98,7 @@ body {
   &.guidelines {
     .title {
       &:before {
-        background-image: image-url("ic-guidelines-blue.svg");
+        background-image: url("../images/ic-guidelines-blue.svg");
       }
     }
   }

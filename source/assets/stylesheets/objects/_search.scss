@@ -77,7 +77,7 @@
     }
   }
   .m-ico-close {
-    background: image-url('ic-close-black.svg') no-repeat;
+    background: url('../images/ic-close-black.svg') no-repeat;
     @include size(20px);
     @include position(absolute, 30px 20px null null);
   }

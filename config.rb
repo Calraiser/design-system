@@ -21,12 +21,15 @@ activate :syntax, :inline_theme => Rouge::Themes::Github.new
 #   ga.tracking_id = 'UA-127480418-2'
 # end
 
+# Load Sass from node_modules
+config[:sass_assets_paths] << File.join(root, 'node_modules')
+
 
 activate :external_pipeline,
- name: :webpack,
- command: build? ?  "yarn run build" : "yarn run start",
- source: ".tmp/dist",
- latency: 1
+   name: :webpack,
+   command: build? ? 'npm run build' : 'npm run start',
+   source: ".tmp/dist",
+   latency: 1
 
 activate :navtree do |options|
   options.automatic_tree_updates = false # The tree.yml file will be updated automatically when source files are changed.
@@ -53,7 +56,7 @@ configure :build do
   activate :asset_hash
   activate :relative_assets
 
-  # set :relative_links, true
+  set :relative_links, true
 end
 
 # Helpers
