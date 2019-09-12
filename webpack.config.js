@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const MiniCssExtractPlugin = require('extract-css-chunks-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -11,8 +11,8 @@ module.exports = (env, options) => ({
   },
 
   entry: {
-    main:   __dirname + '/source/assets/javascripts/main.js'
-    // second: './assets/javascript/second.js',
+    main:   __dirname + '/source/assets/javascripts/main.js',
+    second: __dirname + '/source/assets/javascripts/components.js',
   },
 
   output: {
@@ -24,6 +24,7 @@ module.exports = (env, options) => ({
     rules: [
       {
         test: /\.js$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: 'babel-loader',
@@ -35,7 +36,7 @@ module.exports = (env, options) => ({
          use: [
            MiniCssExtractPlugin.loader,
            'css-loader',
-           'sass-loader'
+           'sass-loader',
          ],
        },
        {

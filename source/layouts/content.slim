@@ -4,7 +4,6 @@ html
     = partial 'layouts/meta_tags'
     = stylesheet_link_tag "main"
 
-    #root
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-84580051-7"></script>
     javascript:
@@ -19,6 +18,8 @@ html
 
     = javascript_include_tag "main.bundle"
 
+
+
   body class = page_classes
     = partial 'blocks/floating_feedback'
     .main-content#main
@@ -32,3 +33,5 @@ html
           = yield
           = partial 'blocks/toTop'
           .visel
+
+    = javascript_include_tag "components.bundle"
