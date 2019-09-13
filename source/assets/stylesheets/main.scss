@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 
-// @import '~carbon-components/scss/globals/scss/styles.scss';
+@import '~carbon-components/scss/globals/scss/styles.scss';
 
 @import "bourbon/bourbon";
 @import "vendors/normalize";
@@ -16,7 +16,6 @@
 
 
 // Vendors
-// @import '../node_modules/bourbon/core/_bourbon';
 @import "vendors/c3.min";
 @import "vendors/slick";
 
@@ -117,6 +116,3 @@
 
 // 11. charts/
 @import "graphics/line_chart";
-
-// 12. carbon-components/
-// @import '../node_modules/carbon-components/scss/components/modal/modal';

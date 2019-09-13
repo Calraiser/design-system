@@ -11,8 +11,8 @@ module.exports = (env, options) => ({
   },
 
   entry: {
-    main:   __dirname + '/source/assets/javascripts/main.js',
-    second: __dirname + '/source/assets/javascripts/components.js',
+    main:       __dirname + '/source/assets/javascripts/main.js',
+    components: __dirname + '/source/assets/javascripts/components.js',
   },
 
   output: {
@@ -49,7 +49,7 @@ module.exports = (env, options) => ({
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-       filename: 'assets/stylesheets/main.css'
+       filename: 'assets/stylesheets/[name].css'
      }),
 
     new webpack.ProvidePlugin({

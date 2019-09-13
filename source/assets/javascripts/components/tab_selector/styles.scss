@@ -1,0 +1,12 @@
+
+.tab-list {
+  display: flex;
+  &-item {
+    width: 110px;
+    height: 36px;
+    border: solid 1px #d8d8d8;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    text-align: center;
+  }
+}

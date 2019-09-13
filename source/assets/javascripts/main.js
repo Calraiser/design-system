@@ -1,7 +1,7 @@
 
 import _css from '../stylesheets/main.scss';
 
-// import 'carbon-components'
+import 'carbon-components'
 import 'jquery-ui'
 import './vendors/bootstrap-tooltip.js'
 import './vendors/clipboard.min.js'

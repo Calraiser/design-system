@@ -1,0 +1,19 @@
+---
+page_title: Tabs Switcher
+description: Dropdown lets users choose options (one in case of dropdown) or various options (in case of multiselect dropdown) from a list in a menu. It works well for lists of more than four choices when displaying them could clutter up the interface.
+
+layout: content
+index: true
+---
+
+.content
+  h1.bx--type-h1 = current_page.data.page_title
+  p.bx--type-p = current_page.data.description
+
+  .content-block
+
+    #root
+
+  .action.downloads
+    = partial :"components/_downloads", :locals => { :name => 'combobox_DS_LUCA', :sketch => true }
+    = partial :"components/_downloads", :locals => { :name => 'combobox_DS_LUCA', :pdf => true }

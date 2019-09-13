@@ -11,19 +11,11 @@ set :pdf_dir,     'download/pdf'
 set :data_dir,    'data'
 set :video_dir,   'assets/video'
 
-activate :autoprefixer
-activate :livereload
 activate :lunr
 activate :syntax, :inline_theme => Rouge::Themes::Github.new
-# activate :sprockets
-
-# activate :google_analytics do |ga|
-#   ga.tracking_id = 'UA-127480418-2'
-# end
 
 # Load Sass from node_modules
 config[:sass_assets_paths] << File.join(root, 'node_modules')
-
 
 activate :external_pipeline,
    name: :webpack,
@@ -49,13 +41,6 @@ page '/*.txt',  layout: false
 page '/source/404.html', directory_index: false
 
 configure :build do
-  activate :minify_css
-  activate :minify_html, remove_input_attributes: false
-  activate :minify_javascript
-  activate :gzip
-  activate :asset_hash
-  activate :relative_assets
-
   set :relative_links, true
 end
 

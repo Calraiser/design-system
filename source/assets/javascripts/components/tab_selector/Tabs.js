@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Tab from './Tab';
 
 class Tabs extends Component {
-  
+
   static propTypes = {
     children: PropTypes.instanceOf(Array).isRequired,
   }
@@ -34,9 +34,10 @@ class Tabs extends Component {
 
     return (
       <div className="tabs">
-        <ol className="tab-list">
+        <div className="tab-list">
           {children.map((child) => {
             const { label } = child.props;
+            const { href } = child.props;
 
             return (
               <Tab
@@ -44,16 +45,12 @@ class Tabs extends Component {
                 key={label}
                 label={label}
                 onClick={onClickTabItem}
+                href={href}
               />
             );
           })}
-        </ol>
-        <div className="tab-content">
-          {children.map((child) => {
-            if (child.props.label !== activeTab) return undefined;
-            return child.props.children;
-          })}
         </div>
+
       </div>
     );
   }

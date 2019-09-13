@@ -7,6 +7,7 @@ class Tab extends Component {
     activeTab: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
+    href: PropTypes.string.isRequired,
   }
 
   onClick = () => {
@@ -20,6 +21,7 @@ class Tab extends Component {
       props: {
         activeTab,
         label,
+        href,
       },
     } = this;
 
@@ -30,12 +32,12 @@ class Tab extends Component {
     }
 
     return (
-      <li
+      <a href={href}
         className={className}
         onClick={onClick}
       >
         {label}
-      </li>
+      </a>
     );
   }
 }
