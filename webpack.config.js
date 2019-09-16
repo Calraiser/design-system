@@ -41,7 +41,10 @@ module.exports = (env, options) => ({
        },
        {
         test: /\.(ttf|eot|svg|png|jpg|gif|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'file-loader'
+        loader: 'file-loader',
+        options: {
+         outputPath: 'assets/images',
+       },
       }
     ]
   },
