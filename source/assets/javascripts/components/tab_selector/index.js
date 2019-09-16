@@ -10,11 +10,9 @@ function App() {
   return (
     <div>
      <Tabs>
-       <a href="hola" label="hola">
+       <a href="hola" label="Externa">
        </a>
-       <a href="hola" label="hola2">
-       </a>
-       <a href="hola" label="hola3">
+       <a href="hola" label="Interna">
        </a>
      </Tabs>
     </div>

@@ -10,9 +10,11 @@ class Tab extends Component {
     href: PropTypes.string.isRequired,
   }
 
-  onClick = () => {
+  onClick = (event) => {
     const { label, onClick } = this.props;
     onClick(label);
+
+    event.preventDefault();
   }
 
   render() {
