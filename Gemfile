@@ -17,6 +17,8 @@ gem 'middleman-navtree'
 gem 'redcarpet'
 gem 'middleman-gh-pages'
 
+gem "bourbon"
+
 gem 'middleman-google-analytics', '~> 3.0'
 
 # For faster file watcher updates on Windows:
