@@ -1,3 +1,13 @@
+@import '../node_modules/carbon-components/scss/components/overflow-menu/overflow-menu';
+
+$css--font-face: true !default;
+$css--helpers: true !default;
+$css--body: true !default;
+$css--use-layer: true !default;
+$css--reset: true !default;
+$css--typography: true !default;
+$css--plex: true !default;
+
 .lds-breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -34,6 +44,40 @@
     &.hover {
       a {
         color: $blue;
+      }
+    }
+    .bx--overflow-menu {
+      height: auto;
+      width: auto;
+      .bx--assistive-text {
+        color: #86888c;
+        margin-right: 2px;
+      }
+
+    }
+  }
+}
+
+.bx--overflow-menu--flip {
+  left: -45px;
+  &:before {
+    left: 45px;
+    width: 0.8rem;
+    height: 0.8rem;
+    top: -7px;
+  }
+}
+
+.bx--overflow-menu-options {
+  margin-top: 12px;
+  @include reset;
+  box-shadow: 0 0 4px 0 #cccccc;
+  padding: 5px 0;
+  &__option {
+    &:hover {
+      background-color: $white;
+      .bx--overflow-menu-options__btn {
+        background-color: $white;
       }
     }
   }

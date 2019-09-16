@@ -7,7 +7,22 @@ nav.lds-breadcrumb
 
   - if truncated
     .lds-breadcrumb__item
-      span = link_to '...'
+
+      div (data-overflow-menu class="bx--overflow-menu")
+        .bx--overflow-menu__trigger.bx--tooltip__trigger.bx--tooltip--a11y.bx--tooltip--down.bx--tooltip--align-start (aria-haspopup="true" aria-expanded="true" id="example-q7b25t3u68g-trigger" aria-controls="example-q7b25t3u68g")
+          span.bx--assistive-text ...
+
+          ul (class="bx--overflow-menu-options bx--overflow-menu-options--open bx--overflow-menu--flip" tabindex="-1" data-floating-menu-direction="bottom" role="menu" aria-labelledby="example-q7b25t3u68g-trigger" id="example-q7b25t3u68g")
+            li.bx--overflow-menu-options__option
+              a href="#" class="bx--overflow-menu-options__btn" role="menuitem"
+
+                span.bx--overflow-menu-options__option-content
+                  | Graphics
+            li.bx--overflow-menu-options__option
+              a href="#" class="bx--overflow-menu-options__btn" role="menuitem"
+                span.bx--overflow-menu-options__option-content
+                  | Visualization rules
+
 
     .lds-breadcrumb__item class=('hover' if hover.present?)
       = link_to 'Types of chart', '#';

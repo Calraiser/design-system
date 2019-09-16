@@ -19,21 +19,24 @@ index: true
 
   .content-block
     h2.bx--type-h4.u-text-blue States
-    p.bx--type-p
+    p.bx--type-p.u-pb-6
       | These are the different states you can find the breadcrumb component.
 
-    .u-py-7.col-xs-offset-0.col-lg-offset-1
+    breadcrumb__examples.u-py-7
       .col-xs-12.col-md-4
-        h3.bx--type-label.u-uppercase.u-pb-5 Default
-        = partial :"components/_breadcrumb", :locals => {}
+        h3.bx--type-label.u-uppercase Default
+        .u-pb-9.u-pt-5.col-xs-offset-0.col-lg-offset-1
+          = partial :"components/_breadcrumb", :locals => {}
 
       .col-xs-12.col-md-4
-        h3.bx--type-label.u-uppercase.u-pb-5  On hover
-        = partial :"components/_breadcrumb", :locals => { :hover => true }
+        h3.bx--type-label.u-uppercase On hover
+        .u-pb-9.u-pt-5.col-xs-offset-0.col-lg-offset-1
+          = partial :"components/_breadcrumb", :locals => { :hover => true }
 
       .col-xs-12.col-md-4
-        h3.bx--type-label.u-uppercase.u-pb-5  Truncated
-        = partial :"components/_breadcrumb", :locals => { :truncated => true }
+        h3.bx--type-label.u-uppercase Truncated
+        .u-pb-9.u-pt-5.col-xs-offset-0.col-lg-offset-1
+          = partial :"components/_breadcrumb", :locals => { :truncated => true }
 
 
 
@@ -42,7 +45,20 @@ index: true
     .code-wrapper
       .code-content id="breadcrumb"
         = code("html") do
-          = partial :"components/_info", :locals => {}
+          | <nav class="lds-breadcrumb">
+              <div class="lds-breadcrumb__item">
+                <a href="#">Home</a>
+              </div>
+              <div class="lds-breadcrumb__item">
+                <a href="#">Graphics</a>
+              </div>
+              <div class="lds-breadcrumb__item">
+                <a href="#">Visualization rules</a>
+              </div>
+              <div class="lds-breadcrumb__item">
+                <a href="#">Types of chart</a>
+              </div>
+            </nav>
 
       = partial :"components/_code_actions", :locals => { :target => '#breadcrumb'}
 
