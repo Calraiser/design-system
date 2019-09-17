@@ -113,6 +113,17 @@
       }
     }
   }
+  #ico_15 {
+    display: none;
+  }
+  &.active {
+    #ico_15 {
+      display: block;
+    }
+    #ico_16 {
+      display: none;
+    }
+  }
 }
 
 

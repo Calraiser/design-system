@@ -6,9 +6,15 @@
   - if header.present?
     h2.bx--type-note = header
 
+
+
   .lds-navigation-icons__wrapper
     - items.each_with_index do |element, index|
-      div class=(title.present? ? 'col-xs u-pb-6' : "col-xs")
-        i class="icon icon-ic-#{element.title.downcase.split.join('_')}"
-        - if title.present?
-          p.bx--type-legend = element.title
+      - if element.header == 'Active'
+        - if index == 15
+
+      - else
+        div class=(title.present? ? 'col-xs u-pb-6' : "col-xs") id='ico_#{index}'
+          i class="icon icon-ic-#{element.title.downcase.split.join('_')}"
+          - if title.present?
+            p.bx--type-legend = element.title

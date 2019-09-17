@@ -45,6 +45,9 @@ icons:
     - image: 'icons/ic-export.svg'
       title: 'Export'
 
+    - image: 'icons/ic-favoritefill.svg'
+      title: 'Favorite fill'
+
     - image: 'icons/ic-favoriteline.svg'
       title: 'Favorite'
 
