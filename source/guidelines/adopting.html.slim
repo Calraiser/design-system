@@ -1,6 +1,6 @@
 ---
 page_title: Adopting a Design System
-description: At LUCA, we want to create friendly experiences for our users. We define a simple attractive design, cool interactions at the source and then apply the solutions consistently across our product portfolio, trying to make sure people only have to learn them once. The LUCA Design System is plastic, flexible and allows for gradual adoption by our product teams. The UX Design team of LUCA Product Portfolio Department watches and control the adoption process across LUCA product portfolio progress across steps on each tool.
+description: Our main goal is to create valuable friendly experiences for our users. The LUCA Design System is functional, well documented, and allows for gradual adoption. From the principles to the language and materials, we provide everything you’ll need to build high-quality digital experiences.
 
 layout: content
 index: true
@@ -14,12 +14,12 @@ index: true
     = image_tag 'adopting-overview.png'
 
   p.bx--type-p.text-light.u-pt-4
-    | The LDS reflects the style guides, patterns, and components that underpin the LUCA Product Portfolio. These patterns and components provide a tone and unified language, and consistent look and feel when designing products within the LUCA ecosystems that consolidate the LUCA Product Portfolio.
+    | LDS gathers our style guide, visualisation rules, as well as elements and components that underpin LUCA’s Product Portfolio in order to create a unified language and consistent look.
 
   .content-block.u-pt-5
     h2.bx--type-h4 Steps
     p.bx--type-p
-      | The Design System is adopted per product across gradual steps in priority order. These steps serve as milestones to track adoption across all products no matter the pace of an individual product team.
+      | The Design System is adopted according to the product through gradual steps. They serve as milestones to track the adoption process no matter the pace of the different product teams.
 
     .steps-header
       h3.bx--type-h4.u-uppercase.u-text-blue Step
@@ -27,32 +27,32 @@ index: true
 
     .steps-container
       .step-block
-        = image_tag 'steps/step-1.png'
+        = image_tag 'steps/step-1.png';
         p.bx--type-p
-          | Detect the problem
+          | Identify the problem
         p.bx--type-p
-          | Non adopter
+          | Non-adopter
 
       .criteria-block
         ul.e-list
-          li Branding / visual language is out of date.
-          li Product is obviously not complying with System.
-          li Interface is dated and inconsistent with latest conventions.
+          li Branding/visual language is out of date.
+          li Product is not complying with the System.
+          li Interface is out of date and inconsistent with the latest conventions.
 
       .step-block
-        = image_tag 'steps/step-2.png'
+        = image_tag 'steps/step-2.png';
         h2.bx--type-h4.u-uppercase Step 1
         p.bx--type-p
-          | Plan: backlog and roadmap
+          | Plan: Backlog and roadmap
 
       .criteria-block
         ul.e-list
           li Review codebase dependency.
-          li Compiled assets –and redesign if is necessary– and customize for integration.
+          li Asset compilation and redesign if necessary, to ensure integration.
           li Commitment and rules for process adoption.
 
       .step-block
-        = image_tag 'steps/step-3.png'
+        = image_tag 'steps/step-3.png';
         h2.bx--type-h4.u-uppercase Step 2
         p.bx--type-p
           | Basics: Visual language
@@ -76,10 +76,10 @@ index: true
           li List groups and data tablets.
 
       .step-block
-        = image_tag 'steps/step-5.png'
+        = image_tag 'steps/step-5.png';
         h2.bx--type-h4.u-uppercase Step 4
         p.bx--type-p
-          | Plan: Full priority components
+          | Plan: High-priority components
 
       .criteria-block
         ul.e-list
@@ -96,8 +96,8 @@ index: true
       .criteria-block
         ul.e-list
           li Basic charts.
-          li Simple visualizations.
-          li Complex visualizations.
+          li Simple visualisations.
+          li Complex visualisation.
 
       .step-block
         = image_tag 'steps/step-7.png'
@@ -114,13 +114,13 @@ index: true
 
     h1.bx--type-h1 Atomic design
     p.bx--type-p.u-pb-5
-      | Atomic design is a design system which objective is to organize the components in hierarchy to build interfaces and to have a usefull organization. It helps to the developers to build the code in an easy and clear way, facilitating to visualize and translate the design to a code more directly. In addition, it helps designers in the communication and to find and control changes or problems that could appear when the design is being programmed.
+      | The objective of our Atomic Design is to organize components according to their hierarchy in order to build well-constructed interfaces. It helps developers to build the code in an easy and structured way. In addition, it helps designers to identify and solve problems when the design is being programmed.
 
     .content-block
       h2.bx--type-h4
         | Atomic hierarchy
       p.bx--type-p
-        | This is the actual hierarchy, from the smallest to the largest element (it is suitable to add more elements if it would be necessary):
+        | From the smallest element to the largest (more elements will be added if necessary).
 
     .content-block
       .row.center-xs.around-xs
@@ -149,7 +149,7 @@ index: true
       h2.bx--type-h4.u-text-blue.u-uppercase
         | Atoms
       p.bx--type-p
-        | Atoms are  the smallets elements or with a low hierarchy. An atom is an element that does not make sense by itself and needs to cohabit with others atoms to make it. An atom should be named, defined and enclosed for margins to know how is its behaviour when being joined with other atoms.
+        | Atoms are the smallest elements of the hierarchy. An atom needs other elements in order to function properly. An atom should be named, defined and enclosed with margins.
 
     .content-block
       .row
@@ -162,34 +162,34 @@ index: true
       h2.bx--type-h4.u-text-blue.u-uppercase
         | Molecules
       p.bx--type-p
-        | When two or more atoms come together, they create molecules. A molecule is the element that begins to be used in isolation. A molecule offers enough information to guide an action within the interface. A molecule must be defined and bounded again to be able to know how it behaves in coexistence with its peers.
+        | Molecules are created when two or more atoms come together. Because it offers enough information to guide an action within the interface. It is, in fact, the first element in the hierarchy that can be used by itself. A molecule must be defined and enclosed within margins.
 
     .content-block
       .row.actions
         = link_to 'cancel', '#', class: 'c-btn btn-primary inverse btn-small'
         = link_to 'ok', '#', class: 'c-btn btn-primary btn-small'
       p.bx--type-p.small.u-pt-3
-        | Atom (button) + Atom(button) = Molecule
+        | Atom (button) + Atom (button) = Molecule
 
     .content-block
       h2.bx--type-h4.u-text-blue.u-uppercase
         | Organisms
       p.bx--type-p
-        | They are formed by two or more molecules and form a section or part of our product. The organisms offer a complete experience to the user.
+        | They are formed by two or more molecules and constitute a section or part of the product.
 
     .content-block
       .row
         .col-xs-12
           == partial :"components/_modal", :locals => { :id => 'example', :close => true, :text => 'Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. ', :heading => 'Welcome to your account', :textlabel => 'LUCA Comms', :check => false, :btnTxt => 'Ok', :secondbtnTxt => 'Cancel', :secondbtn => true, :footerPosition => 'end-xs', :extraclass => 'is-static' }
       p.bx--type-p.small.u-pt-3
-        | Molecule(text) + Molecule(action buttons) = Organism(modal)
+        | Molecule (text) + Molecule (action buttons) = Organism (modal)
 
 
     .content-block
       h2.bx--type-h4.u-text-blue.u-uppercase
         | System
       p.bx--type-p
-        | Templates are formed by molecules into a page layout, articulating the system, which is everything: any digital product we are building.
+        | Molecules form the templates that later become the page’s layout. Thus, articulating the System of any digital product we build.
 
     .content-block
       .row

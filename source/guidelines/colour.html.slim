@@ -1,19 +1,17 @@
 ---
 page_title: Colour palette
-description: Colour brings a design to life. It is used to express emotion and tone, as well as place emphasis and create associations. Colour should always be used in meaningful and intentional ways in order to create patterns and visual cues.
+description: Colour expresses emotion, as well as tone. It places emphasis on certain areas and creates playful associations within a layout. They must be used in a meaningful and intentional way in order to create patterns and visual cues. Our palette is designed to support a wide range of distinct visual styles in order to provide a well-organised brand. We not only value primary colours but also dark and light variants that can be applied to the UI in different ways.
+
 layout: content
 index: true
 ---
 
 .p-colors.content
   h1.bx--type-h1 = current_page.data.page_title
-  p.bx--type-p = current_page.data.description
-  p.bx--type-p.description.u-pt-3
-    | This palette is designed to support a range of distinct visual styles that continue to feel connected. Primary colours are mainly selected to represent our brand. Dark and light variants of each colours can then be applied to the UI in different ways.
-
+  p.bx--type-p.u-pb-6 = current_page.data.description
   p.bx--type-p.u-font-bold Visual Differentiation
   p.bx--type-p
-    | LUCA uses many colours in conjunction with iconography to visually differentiate between similar types of content, such as records of different object types. However, it’s important to not always rely on colour to provide visual differentiation. If too many use cases employ colour in this manner, the colours lose their meaning.
+    | We use many colours along with a wide variety of iconography in order to make a distinction between similar types of content.
 
   .content-block
     h2.bx--type-h4.u-text-blue Main grey scale
@@ -43,12 +41,12 @@ index: true
   .content-block
     h2.bx--type-h4.u-text-blue Primary colours
     p.bx--type-h4
-      | Status colour (for use on components that require a different state)
+      | Status colours (to be used on components that require a different state)
 
     .content-block
       .row.between-xs.row-np
         .col-lg-3.col-xs-6
-          = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.success, :title => 'Completed / Success/Call to action <br> / Buttons, links & active states', :extraclass => 'rounded'}
+          = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.success, :title => 'Completed / Success / Call to action  / <br> Buttons, links, and active states', :extraclass => 'rounded'}
         .col-lg-3.col-xs-6
           = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.primaryColors.warning, :title => 'Warning / In progress', :extraclass => 'rounded'}
         .col-lg-2.col-xs-6
@@ -60,21 +58,19 @@ index: true
 
     h2.bx--type-h4 Visual Hierarchy
     p.bx--type-p
-      | Colour is used sparingly to draw attention to important elements and those that we want the user to take action on. Because most of the application is grey, pops of colour catch a user’s eye.
+      | Colour is used sparingly to draw attention to important elements. In addition, we use pops of colour to catch the user’s attention encouraging them to take action.
 
     h2.bx--type-h4.u-pt-5 Accessibility
     p.bx--type-p
-      | It’s important that our products meet all web accessibility standards, including the minimum contrast ratios that the WCAG 2.0 specifies for text and background colour combinations. This adherence helps users who are colour-blind or have low vision to better interact with LUCA tools, but it also improves usability and readability for all users.
-    p.bx--type-p
-      | Choose primary, secondary, and extended colours that support usability by ensuring sufficient colour contrast between elements so that people with low vision can see and use the interface.
+      | It’s important that our products meet all web accessibility standards, including the minimum contrast ratios that the WCAG 2.0 specifies for text and background colour combinations. This adherence not only helps colour-blind or low vision users to interact better with LUCA tools, but also improves the usability and readability overall. Choose primary, secondary, and extended colours to ensure sufficient colour contrast between elements.
 
   .content-block
-    h2.bx--type-h4.u-text-blue Extended palette (visualization colours)
+    h2.bx--type-h4.u-text-blue Extended palette
     p.bx--type-p
-      | The extended palette consists of all the useable tints and shades of each colour in the palette. Usage of these colours varies depending on the touch point, but they come in handy for analytics charts and dashboards, illustrations and components in product.
-    h2.bx--type-h4.u-pt-4 Black and white variants from our PRIMARY LUCA colours
+      | The extended palette is made out of the colour variations of each colour from the palette, including all shades, tints and tones. These variants come in handy for analytic charts, dashboards, illustrations or components.
+    h2.bx--type-h4.u-pt-4 Black and white variants
     p.note
-      | Different percentages of white (left) and black (right) added to our base colour can really fill out the range LUCA palette.
+      | From our primary LUCA colours, the different percentages of white (left) and black (right) complete our palette.
 
   .content-block
     = partial :"components/_colour_palette_simple", :locals => { :colours => data.color_palette.green.colors, :colorTitle => '- Green - Colour one', :extraclass => 'main-palette'}

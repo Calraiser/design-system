@@ -1,6 +1,6 @@
 ---
-page_title: Layout, basic rules
-description: Consider making layouts fluid and adaptive by default cause not every user will have their desktop browser maximized. This 12-column responsive grid provides the structure for websites and LUCA tools content, with flexible column widths and fixed gutters.
+page_title: Layouts
+description: We believe layouts should be fluid and adaptive by default. The following grid provides the structure for LUCA’s websites and tools content, with flexible column widths and fixed gutters.
 layout: content
 index: true
 ---
@@ -13,11 +13,11 @@ index: true
   p.bx--type-p
     | When to use:
     ul.e-list
-      li Almost always use a grid layout — visitors can read more quickly on pages that use grids. Choose a single grid system for your entire site.
-      li Avoid mixing this grid and other grid systems.
+      li Almost always use a grid layout. It helps users find the information faster.
+      li Choose a single grid system for your entire site or product. Meaning, avoid mixing different grid systems.
 
   .content-block.layout-structure
-    h2.bx--type-p.u-uppercase.u-pb-4 Structure of modules & Read order/Layout
+    h2.bx--type-p.u-uppercase.u-pb-4 Module’s structure, hierarchy and layout compositions
     .row.center-xs.top-xs.start-lg.u-pt-4
       .col-xs-12.col-sm-6.col-lg-2
         = svg_tag 'layout-mobile.svg', class: 'e-image-full-xs'
@@ -29,7 +29,7 @@ index: true
         = svg_tag 'layout-desktop.svg', class: 'e-image-full-sm'
 
   .content-block
-    h2.bx--type-p.u-uppercase structure of content
+    h2.bx--type-p.u-uppercase Content structure
     .row.u-py-6
       .col-xs-7.col-md-2
         .legend-item.row.middle-xs
@@ -51,36 +51,24 @@ index: true
     .row.around-xs.layout-structure
       .col-xs-12.col-center.col-sm-6.col-lg-3
         = svg_tag 'single-column-gp.svg', class: 'e-image-full-xs'
-        p.note
-          | Single Column with global and app navigation.
       .col-xs-12.col-center.col-sm-6.col-lg-3
         = svg_tag 'two-column-gp.svg', class: 'e-image-full-xs'
-        p.note
-          | Two Column with global and app navigation.
       .col-xs-12.col-center.col-sm-6.col-lg-3
         = svg_tag 'single-column-gn.svg', class: 'e-image-full-xs'
-        p.note
-          | Single Column with Global navigation.
       .col-xs-12.col-center.col-sm-6.col-lg-3
         = svg_tag 'two-column-apn.svg', class: 'e-image-full-xs'
-        p.note
-          | Two Column with app navigation.
 
     h1.bx--type-h1 Grid & breakpoints
 
     p.bx--type-p.description
-      | We use the grid to create a visual structure with content, rather than relying heavily on boxes and lines. This reduces the amount of elements a user needs to scan in order to digest the content on the screen. We have a defined set of columns that content and UI elements align to. The space between columns is called a "gutter". The column widths are fixed and scale when there isn't enough space available on the screen. The gutters, however, are fixed and only scale when the text size scales to maintain a distinct and legible separation of content. There are 3 different gutter sizes to allow for different types of content: compact, cozy, and comfortable.
-
+      | We use a grid to create a visual structure focused on quality content, rather than relying on unplanned spaces, boxes and lines. Our content and UI elements have a defined structure. Both the column widths and gutters are fixed and only scale if strictly necessary. There are 3 different types of gutter sizes to allow for different types of content: compact, cozy, and comfortable.
     h2.bx--type-h4.u-text-blue Responsive breakpoints
 
     .text-group
       p.bx--type-p
-        | This 12 / 8 / 4 column system (desktop, tablet, mobile), is a responsive grid provides structure for build tools for LUCA and distribute content on websites. The simplest layout is a single block of text that spans 12 columns, but the layout can be scaled to use the remaining 8 or 4 columns if there is a need for primary and secondary information in order to have a better look & feel, and a consistent experience as user.
-      p.bx--type-p
-        | For optimal user experience, LUCA Design System user interfaces should adapt layouts for the following 4 breakpoint widths: 0-768dp, 768-1280dp, 1280-1920dp and 1920dp-3000dp.
+        | The 12/8/4 column system (desktop, tablet, mobile) is a responsive grid that provides the basis of a coherent design structure. The simplest layout is a single block of text composed of 12 columns. This layout can scale the remaining 4 or 8 columns if needed. For optimal user experience, the interfaces should adapt the layouts to the following 4 breakpoint widths: 0-768dp, 768-1280dp, 1280-1920dp and 1920dp-3000dp.
       p.bx--type-p.u-pt-4
-        | Mobile devices, including tablets, vary greatly in size, but even more dramatic is the difference in desktop and laptop machines. The overwhelming majority of users are using their screen in a landscape configuration, so our breakpoints are based on the browser window's width. This allows for content to be optimized on both small and larger screens in response to this value.
-
+        | Because the majority of users have the landscape configuration in their devices, our breakpoints are based on the browser’s window width.
   .content-block
     h2.bx--type-p.u-uppercase Fixed grid
 
@@ -106,22 +94,22 @@ index: true
     .content-image
       = svg_tag 'fixed-grid.svg'
 
-    .d-flex
-      .text-column
-        h4.bx--type-h4 Rules and summary view content in layouts (min. screen widths)
+    .row
+      .text-column.col-xs-12.col-md-6
+        h4.bx--type-h4 Minimum screen widths
+        p.bx--type-p.u-pb-4
+          | Layouts under 600dp wide may fill the screen with a single level of content hierarchy; either summary or detail, but not both.
         p.bx--type-p
-          | Layouts under 600dp wide may fill the screen with a single level of content hierarchy (either summary or detail content, but not both).
-        p.bx--type-p
-          | Layouts over 600dp wide may place two levels of content hierarchy on the screen (both summary and detail content).
+          | Layouts over 600dp wide may have two levels of content hierarchy; both summary and detail content.
 
-      .text-column
+      .text-column.col-xs-12.col-md-6
         h4.bx--type-h4 Max screen widths
         p.bx--type-p.u-pb-4
-          | Layouts over 1600dp wide may let the layout grow until it hits a max width. At this point, the grid may do one of the following:
+          | Layouts over 1600dp wide may expand until it hits a maximum width. At this point, the grid may:
         ul.e-list
-          li Become center aligned with increased margins
-          li Remain left aligned while the right margin grows
-          li Continue to grow while revealing additional content
+          li Align in the center with increased margins
+          li Remain aligned to the left while the right margin expands
+          li Continue to expand while revealing additional content
 
     .content-image
       = svg_tag 'layout-grid02.svg'

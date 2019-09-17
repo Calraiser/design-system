@@ -14,7 +14,12 @@ $(function() {
             r.append('<h3 class="title">' + (n + 1) + ". " + c[e.ref].page_title + "</h3>"), r.append('<p class="description">' + c[e.ref].description + "</p>"), t.mouseover(function() {
                 o = $(".searchbar .content-search .result").index(this), a()
             }), t.appendTo(".searchbar .content-search")
-        }), a()) : $('<div class="result"/>').html("No results found...").appendTo(".searchbar .content-search"), $(".searchbar").show()
+        }), a()) : $('<div class="result"/>')
+        .append('<p class="u-pb-4">We’re sorry! We can’t find any matches for your search term.</p>')
+        .append('<p>What can you do?</p>')
+        .append('<ul class="e-list"><li>Make sure that all the words are spelled correctly</li><li>Try using a different keyword</li></ul>')
+        .appendTo(".searchbar .content-search"),
+        $(".searchbar").show()
       })
     }
 
