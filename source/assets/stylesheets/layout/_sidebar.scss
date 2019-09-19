@@ -40,6 +40,7 @@ $sidebar-width: 105px;
     display: block;
     margin: 0 auto;
     @include size(60px, 35px);
+    
 
     @include media($mobile) {
       background-image: url('../images/brand_logos/logo_sidebar.png');

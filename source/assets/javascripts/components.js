@@ -1,2 +1,2 @@
 
-import './components/tab_selector/index'
+import './components/luca-tab-switcher/index'

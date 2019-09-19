@@ -1,22 +1,30 @@
-.tab-list {
+.luca-tab-switcher {
   display: flex; }
-  .tab-list .tab-list-item + .tab-list-item {
-    margin-left: -1px; }
-  .tab-list-item {
-    width: 110px;
-    padding: 10px;
-    border: solid 1px #d8d8d8;
-    background-color: #ffffff;
-    color: #4a4a4a;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px; }
-  .tab-list-active {
-    width: 110px;
-    border-radius: 2px;
-    box-shadow: inset 0 0 4px 0 #cccccc;
-    border: solid 1px #d8d8d8;
-    background-color: #f2f2f2;
-    font-weight: bold;
-    color: #00aaee; }
+
+.luca-tab-switcher button {
+  border: none;
+  background: none;
+  min-width: 110px;
+  padding: 10px;
+  border: solid 1px #d8d8d8;
+  background-color: #ffffff;
+  color: #4a4a4a;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer; }
+
+.luca-tab-switcher button + button {
+  margin-left: -2px; }
+
+.luca-tab-switcher button:focus {
+  outline: none; }
+
+.luca-tab-switcher button.tab-switcher__active {
+  border-radius: 2px;
+  box-shadow: inset 0 0 4px 0 #cccccc;
+  border: solid 1px #d8d8d8;
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #00aaee; }
 
