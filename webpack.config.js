@@ -11,8 +11,9 @@ module.exports = (env, options) => ({
   },
 
   entry: {
-    main:       __dirname + '/source/assets/javascripts/main.js',
-    components: __dirname + '/source/assets/javascripts/components.js',
+    main:               __dirname + '/source/assets/javascripts/main.js',
+    luca_tab_switcher:  __dirname + '/source/assets/javascripts/components/luca-tab-switcher/index.js',
+    date_picker:        __dirname + '/source/assets/javascripts/components/luca-date-picker/index.js',
   },
 
   output: {
@@ -24,6 +25,7 @@ module.exports = (env, options) => ({
     rules: [
       {
         test: /\.js$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: 'babel-loader',

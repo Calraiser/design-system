@@ -32,6 +32,7 @@
     "webpack-cli": "^3.3.8"
   },
   "dependencies": {
+    "bootstrap-daterangepicker": "^3.0.5",
     "bootstrap-tooltip": "^3.1.1",
     "bourbon": "^6.0.0",
     "carbon-components": "^10.6.1",
@@ -44,9 +45,12 @@
     "jquery": "^3.4.1",
     "jquery-sticky": "^1.0.4",
     "jquery-ui": "^1.12.1",
+    "moment": "^2.24.0",
     "prismjs": "^1.17.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
+    "react-advanced-datetimerange-picker": "^1.0.8",
+    "react-bootstrap-datetimerangepicker": "^2.0.4",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.9.0",
     "react-ga": "^2.6.0",

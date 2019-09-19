@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./source/assets/javascripts/components.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./source/assets/javascripts/components/luca-tab-switcher/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -262,18 +262,6 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 "use strict";
 eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ \"./node_modules/scheduler/cjs/scheduler-tracing.development.js\");\n}\n\n\n//# sourceURL=webpack:///./node_modules/scheduler/tracing.js?");
-
-/***/ }),
-
-/***/ "./source/assets/javascripts/components.js":
-/*!*************************************************!*\
-  !*** ./source/assets/javascripts/components.js ***!
-  \*************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_luca_tab_switcher_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/luca-tab-switcher/index */ \"./source/assets/javascripts/components/luca-tab-switcher/index.js\");\n\n\n//# sourceURL=webpack:///./source/assets/javascripts/components.js?");
 
 /***/ }),
 

@@ -13,16 +13,14 @@ end
 activate :lunr
 activate :syntax, :inline_theme => Rouge::Themes::Github.new
 
-# activate :google_analytics do |ga|
-#   ga.tracking_id = 'UA-127480418-2'
-# end
-
-
 activate :external_pipeline,
    name: :webpack,
-   command: build? ? 'npm run build' : 'npm run start',
+   command: build? ?
+     'npm run build' :
+     'npm run start',
    source: ".tmp/dist",
    latency: 1
+
 
 activate :navtree do |options|
   options.automatic_tree_updates = false # The tree.yml file will be updated automatically when source files are changed.
