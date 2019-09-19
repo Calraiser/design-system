@@ -4,45 +4,138 @@
     .content-buttons-block.col-xs-12.col-sm-5.col-md-3
       .row.column-xs
         h5.bx--type-h5.uppercase Large
+        .row.column-xs.middle-xs.top-sm.u-pl-3.u-pb-7
+          .dropdown_btn.large
+            .btn_link
+              = link_to 'Active', '#';
+            select.btn_dropdown
+              option value="hide"
+              option value="http://option1.com"  Option 1
+              option value="http://option2.com"  Option 2
+              option value="http://option3.com"  Option 3
+              option value="http://option4.com"  Option 4
+              option value="http://option5.com"  Option 5
+
+        .row.column-xs.middle-xs.top-sm.u-pl-3.u-pb-7
+          .dropdown_btn.large.hover
+            .btn_link
+              = link_to 'Hover', '#';
+            select.btn_dropdown
+
         .row.column-xs.middle-xs.top-sm.u-pl-3
-          = link_to '#', class: 'c-btn btn-secondary has-icon btn-large' do
-             i class="ico icon-ic-expand_more"
-             span.c-btn-text Active
-        .row.column-xs.middle-xs.top-sm.u-pl-3
-          = link_to '#', class: 'c-btn btn-secondary has-icon btn-large hover' do
-            i class="ico icon-ic-expand_more"
-            span.c-btn-text Hover
-        .row.column-xs.middle-xs.top-sm.u-pl-3
-          = link_to '#', class: 'c-btn btn-secondary has-icon btn-large disabled', disabled: true do
-            i class="ico icon-ic-expand_more"
-            span.c-btn-text Disabled
+          .dropdown_btn.large.active
+            .btn_link
+              = link_to 'Dropdown', '#';
+            select.btn_dropdown
+              option value="hide"
+              option value="http://option1.com"  Option 1
+              option value="http://option2.com"  Option 2
+              option value="http://option3.com"  Option 3
+              option value="http://option4.com"  Option 4
+              option value="http://option5.com"  Option 5
+
+        .row.column-xs.middle-xs.top-sm.u-pl-3.u-pb-10
+          .dropdown_btn.large.disabled
+            .btn_link
+              = link_to 'Disabled', '#';
+            select.btn_dropdown disabled="disabled"
+              option value="hide"
+              option value="http://option1.com"  Option 1
+              option value="http://option2.com"  Option 2
+              option value="http://option3.com"  Option 3
+              option value="http://option4.com"  Option 4
+              option value="http://option5.com"  Option 5
 
     .content-buttons-block.col-xs-12.col-sm-5.col-md-3
       .row.column-xs
         h5.bx--type-h5.uppercase Medium
+        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3.u-pb-7
+          .dropdown_btn.medium
+            .btn_link
+              = link_to 'Active', '#';
+            select.btn_dropdown
+              option value="hide"
+              option value="http://option1.com"  Option 1
+              option value="http://option2.com"  Option 2
+              option value="http://option3.com"  Option 3
+              option value="http://option4.com"  Option 4
+              option value="http://option5.com"  Option 5
+
+
+        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3.u-pb-7
+          .dropdown_btn.medium.hover
+            .btn_link
+              = link_to 'Hover', '#';
+            select.btn_dropdown
+
         .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3
-          = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium' do
-            'Active
-            i.ico.icon-ic-expand_more
-        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3
-          = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium hover' do
-            'Hover <i class="ico icon-ic-expand_more"></i>
-        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3
-          = link_to '#', class: 'c-btn btn-secondary has-icon btn-medium disabled', disabled: true do
-            'Disabled <i class="ico icon-ic-expand_more"></i>
+          .dropdown_btn.medium.active
+            .btn_link
+              = link_to 'Dropdown', '#';
+            select.btn_dropdown
+              option value="hide"
+              option value="http://option1.com"  Option 1
+              option value="http://option2.com"  Option 2
+              option value="http://option3.com"  Option 3
+              option value="http://option4.com"  Option 4
+              option value="http://option5.com"  Option 5
+
+        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3.u-pb-7
+          .dropdown_btn.medium.disabled
+            .btn_link
+              = link_to 'Disabled', '#';
+            select.btn_dropdown
+              option value="hide"
+              option value="http://option1.com"  Option 1
+              option value="http://option2.com"  Option 2
+              option value="http://option3.com"  Option 3
+              option value="http://option4.com"  Option 4
+              option value="http://option5.com"  Option 5
 
     .content-buttons-block.col-xs-12.col-sm-5.col-md-3
       .row.column-xs
         h5.bx--type-h5.uppercase Small
+        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3.u-pb-7
+          .dropdown_btn.small
+            .btn_link
+              = link_to 'Active', '#';
+            select.btn_dropdown
+              option value="hide"
+              option value="http://option1.com"  Option 1
+              option value="http://option2.com"  Option 2
+              option value="http://option3.com"  Option 3
+              option value="http://option4.com"  Option 4
+              option value="http://option5.com"  Option 5
+
+        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3.u-pb-7
+          .dropdown_btn.small.hover
+            .btn_link
+              = link_to 'Hover', '#';
+            select.btn_dropdown
+
         .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3
-          = link_to '#', class: 'c-btn btn-secondary has-icon btn-small' do
-            'Active <i class="ico icon-ic-expand_more"></i>
-        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3
-          = link_to '#', class: 'c-btn btn-secondary has-icon btn-small hover' do
-            'Hover <i class="ico icon-ic-expand_more"></i>
-        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3
-          = link_to '#', class: 'c-btn btn-secondary has-icon btn-small disabled', disabled: true do
-            'Off <i class="ico icon-ic-expand_more"></i>
+          .dropdown_btn.small.active
+            .btn_link
+              = link_to 'Dro..', '#';
+            select.btn_dropdown
+              option value="hide"
+              option value="http://option1.com"  Option 1
+              option value="http://option2.com"  Option 2
+              option value="http://option3.com"  Option 3
+              option value="http://option4.com"  Option 4
+              option value="http://option5.com"  Option 5
+
+        .col-sm-12.row.column-xs.middle-xs.top-sm.u-pl-3.u-pb-7
+          .dropdown_btn.small.disabled
+            .btn_link
+              = link_to 'Disa..', '#';
+            select.btn_dropdown
+              option value="hide"
+              option value="http://option1.com"  Option 1
+              option value="http://option2.com"  Option 2
+              option value="http://option3.com"  Option 3
+              option value="http://option4.com"  Option 4
+              option value="http://option5.com"  Option 5
 
 
 .clipboard

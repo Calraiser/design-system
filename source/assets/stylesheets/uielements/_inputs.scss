@@ -2,7 +2,7 @@
    TEXT FIELDS (uielements/_inputs.scss)
    ========================================================================== */
 
-   
+
 .lds-input-field {
   position: relative;
   margin-bottom: 45px;
@@ -53,7 +53,7 @@
 
     &.error {
       border-bottom: 1px solid $pink;
-      background: image-url('ic-error.svg') no-repeat;
+      background: url('../images/ic-error.svg') no-repeat;
       background-position: 100% 17px;
 
       &::-webkit-input-placeholder {
@@ -62,20 +62,20 @@
     }
 
     &[type="password"] {
-      background: image-url('ic-password.svg') no-repeat;
+      background: url('../images/ic-password.svg') no-repeat;
       background-position: 100% 17px;
     }
 
     &[type="email"] {
       padding-left: 22px;
       padding-right: 3px;
-      background: image-url('ic-envelope.svg') no-repeat;
+      background: url('../images/ic-envelope.svg') no-repeat;
       background-position: 0 17px;
     }
 
     + .ic {
       &-success {
-        background: image-url('ic-check-green.svg') no-repeat;
+        background: url('../images/ic-check-green.svg') no-repeat;
         @include position(absolute, null 0 8px null);
         @include size(20px);
       }

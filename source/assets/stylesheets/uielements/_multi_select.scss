@@ -5,7 +5,7 @@
   border-radius: 3px;
   border: 1px solid $grey02;
   color: $grey;
-  background: image-url('icons/arrow_drop_down.svg') no-repeat;
+  background: url('../images/icons/arrow_drop_down.svg') no-repeat;
   background-position: 94% 15px;
   font-size: 14px;
   font-family: Telefonicaregular;
@@ -16,7 +16,7 @@
     display: block;
   }
   &.open {
-    background: image-url('icons/arrow_drop_up.svg') no-repeat;
+    background: url('../images/icons/arrow_drop_up.svg') no-repeat;
     background-position: 94% 15px;
     border-color: $grey01;
     .multi-menu {

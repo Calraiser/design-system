@@ -51,7 +51,7 @@ table {
     position: absolute;
     &:before {
       content: '';
-      background: image-url('uicomponents/list/legend-example.svg') no-repeat;
+      background: url('../images/uicomponents/list/legend-example.svg') no-repeat;
       @include size(22px,8px);
       margin-right: 10px;
     }
@@ -159,13 +159,13 @@ table {
 
       .sorting_asc, .sorting {
         &:after {
-          background-image: image-url("sort-down-black.svg");
+          background-image: url("../images/sort-down-black.svg");
         }
       }
 
       .sorting_desc {
         &:after {
-          background-image: image-url("sort-up.svg");
+          background-image: url("../images/sort-up.svg");
         }
       }
     }

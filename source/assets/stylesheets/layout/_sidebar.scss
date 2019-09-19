@@ -33,16 +33,17 @@ $sidebar-width: 105px;
   }
 
   .logo-sidebar {
-    background-image: image-url('brand_logos/logo_sidebar_m.svg');
+    background-image: url('../images/brand_logos/logo_sidebar_m.svg');
     background-position: 50% 13%;
     background-repeat: no-repeat;
     background-size: 100% auto;
     display: block;
     margin: 0 auto;
     @include size(60px, 35px);
+    
 
     @include media($mobile) {
-      background-image: image-url('brand_logos/logo_sidebar.png');
+      background-image: url('../images/brand_logos/logo_sidebar.png');
       @include size(75px, 35px);
 
 
@@ -125,7 +126,7 @@ $sidebar-width: 105px;
     }
   }
   .m-ico-search {
-    background: image-url('ic-search.svg') no-repeat;
+    background: url('../images/ic-search.svg') no-repeat;
     @include size(20px);
     align-self: center;
     margin: 0 25px 0 20px;

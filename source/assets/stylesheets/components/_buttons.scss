@@ -6,7 +6,7 @@
    ========================================================================== */
 
 
-@import '../node_modules/carbon-components/scss/components/dropdown/_dropdown';
+// @import '../node_modules/carbon-components/scss/components/dropdown/_dropdown';
 
 $css--font-face: true !default;
 $css--helpers: true !default;
@@ -111,7 +111,6 @@ $button-colors: (
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: .407rem 1.25rem;
 		&:hover {
 			.ico:before {
 				color: $white;

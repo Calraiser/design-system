@@ -54,31 +54,31 @@
     }
     &.Adobe {
       &:before {
-        background-image: image-url('ic-doc-ai.svg');
+        background-image: url('../images/ic-doc-ai.svg');
         background-size: 19px auto;
       }
     }
     &.PDF {
       &:before {
-        background-image: image-url('ic-doc-pdf.svg');
+        background-image: url('../images/ic-doc-pdf.svg');
         background-size: 19px auto;
       }
     }
     &.Font {
       &:before {
-        background-image: image-url('ic-typo_02.svg');
+        background-image: url('../images/ic-typo_02.svg');
         background-size: 21px auto;
       }
     }
     &.sketch {
       &:before {
-        background-image: image-url('ic-sketch_02.svg');
+        background-image: url('../images/ic-sketch_02.svg');
         background-size: 22px auto;
       }
     }
     &.ZIP {
       &:before {
-        background-image: image-url('ic-doc-zip.svg');
+        background-image: url('../images/ic-doc-zip.svg');
         background-size: 19px auto;
       }
     }
@@ -108,7 +108,7 @@
   line-height: 35px;
   &:after {
     content: '';
-    background: image-url('icons/ic-doc-ppt.svg') no-repeat;
+    background: url('../images/icons/ic-doc-ppt.svg') no-repeat;
     background-size: 40px auto;
     padding: 22px;
     float: left;

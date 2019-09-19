@@ -70,17 +70,17 @@ $(document).ready(function() {
   }
 
   // Clipboard
-  var clipboard = new ClipboardJS('.btn-copy');
-
-  clipboard.on('success', function(e) {
-    setTooltip(e.trigger, 'Copied!');
-    hideTooltip(e.trigger);
-  });
-
-  clipboard.on('error', function(e) {
-    setTooltip(e.trigger, 'Failed!');
-    hideTooltip(e.trigger);
-  });
+  // var clipboard = new ClipboardJS('.btn-copy');
+  //
+  // clipboard.on('success', function(e) {
+  //   setTooltip(e.trigger, 'Copied!');
+  //   hideTooltip(e.trigger);
+  // });
+  //
+  // clipboard.on('error', function(e) {
+  //   setTooltip(e.trigger, 'Failed!');
+  //   hideTooltip(e.trigger);
+  // });
 
 
   // Scroll Totop
