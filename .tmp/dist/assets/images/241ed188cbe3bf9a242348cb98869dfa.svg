@@ -1,0 +1,15 @@
+
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Text-field-Copy" transform="translate(-398.000000, -1031.000000)" fill="#FF0099">
+            <g id="incorrect" transform="translate(214.000000, 1001.000000)">
+                <g id="info-copy" transform="translate(184.000000, 30.000000)">
+                    <path d="M9,0 C4.029,0 0,4.029 0,9 C0,13.971 4.029,18 9,18 C13.971,18 18,13.971 18,9 C18,4.029 13.971,0 9,0 M9.5,6 L8.5,6 C8.224,6 8,5.776 8,5.5 L8,4.5 C8,4.224 8.224,4 8.5,4 L9.5,4 C9.776,4 10,4.224 10,4.5 L10,5.5 C10,5.776 9.776,6 9.5,6 M9.5,14 L8.5,14 C8.224,14 8,13.776 8,13.5 L8,8.5 C8,8.224 8.224,8 8.5,8 L9.5,8 C9.776,8 10,8.224 10,8.5 L10,13.5 C10,13.776 9.776,14 9.5,14" transform="translate(9.000000, 9.000000) rotate(-180.000000) translate(-9.000000, -9.000000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

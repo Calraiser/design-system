@@ -1,0 +1,171 @@
+/* =============================================================================
+   BUTTON DROPDOWN (uielements/_button_dropdown.scss)
+   ========================================================================== */
+
+
+$background: #e74c3c;
+$select-background: #f3f3f3;
+$select-width: 220px;
+$select-height: 40px;
+
+
+.dropdown_btn {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in;
+  border-radius: 42px;
+  color: $blue;
+  border: 2px solid $blue;
+  font-family: 'Telefonicabold';
+  font-size: rem-calc(14);
+  text-transform: uppercase;
+  position: relative;
+  padding: 8px 20px;
+
+  &.large {
+    width: 215px;
+  }
+
+  &.medium {
+    width: 166px;
+  }
+
+  &.small {
+    width: 118px;
+    .btn-select .btn-styled:after {
+      right: 8px;
+      padding-left: 5px;
+    }
+  }
+  .btn_link {
+    width: 100%;
+    a {
+      display: block;
+      color: $blue;
+    }
+  }
+  &.active {
+    margin-bottom: 150px;
+    .btn-select .btn-styled {
+      &:after {
+        content: "\e90c";
+      }
+    }
+    .btn-select .select-options {
+      display: block;
+    }
+  }
+  &.disabled {
+    opacity: 0.3 !important;
+    border: 2px solid $grey !important;
+    color: $grey !important;
+    cursor: not-allowed;
+    pointer-events: none;
+
+    .btn_link a {
+      color: $grey;
+    }
+    .btn-styled {
+      &:after {
+        color: $grey;
+        border-color: $grey;
+      }
+    }
+  }
+  &.hover {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  &:hover,
+  &:active,
+  &.active,
+  &.hover {
+    background-color: $blue;
+    color: $white;
+    a {
+      color: $white;
+    }
+    .btn-styled {
+      &:after {
+        color: $white;
+        border-left: 2px solid $white;
+      }
+    }
+  }
+}
+
+.btn-select {
+  .select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  .btn_dropdown {
+    cursor: pointer;
+    font-size: 16px;
+    color: $select-color;
+  }
+  .btn-styled {
+    padding: 11px 20px;
+    transition: all 0.2s ease-in;
+    color: $blue;
+    font-size: rem-calc(14);
+    text-transform: uppercase;
+    box-sizing: content-box;
+    cursor: pointer;
+    &:after {
+      content: "\e90d";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 13px;
+      padding-left: 9px;
+      border-left: 2px solid $blue;
+      font-family: 'luca-icon';
+      font-weight: bold;
+      color: $blue;
+      font-size: rem-calc(25);
+    }
+
+    &:active, &.active {
+      &:after {
+        content: "\e90c";
+      }
+    }
+  }
+
+  .select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 5px 0;
+    padding: 0;
+    list-style: none;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 4px 0 rgba(156, 156, 156, 0.5);
+    li {
+      margin: 0;
+      padding: 12px 0;
+      text-indent: 18px;
+      transition: all 0.2s ease-in;
+      font-size: rem-calc(14);
+      color: $grey;
+      cursor: pointer;
+      text-align: left;
+      &:hover {
+        background: $select-background;
+        font-weight: bold;
+      }
+      &[rel="hide"] {
+        display: none;
+      }
+    }
+  }
+}

@@ -8,4 +8,5 @@ ReactDOM.render(
 
   <TabSwitcher />,
   document.getElementById('root'),
+
 );

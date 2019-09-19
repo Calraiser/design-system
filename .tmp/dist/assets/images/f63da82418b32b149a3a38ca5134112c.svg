@@ -1,0 +1,20 @@
+
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="ALERTS-AND-NOTIFICATIONS" transform="translate(-563.000000, -399.000000)" stroke="#CCCCCC">
+            <g id="Group-3-Copy" transform="translate(207.000000, 389.000000)">
+                <g id="cross-close-icon" transform="translate(355.000000, 9.000000)">
+                    <g id="Group">
+                        <g transform="translate(2.000000, 2.000000)">
+                            <path d="M0.5,0.5 L11.6803399,11.6803399" id="Line" stroke-width="2"></path>
+                            <path d="M0.5,11.6803399 L11.6803399,0.5" id="Line" stroke-width="2"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
