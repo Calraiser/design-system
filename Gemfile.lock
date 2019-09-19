@@ -161,7 +161,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
   bourbon
+=======
+>>>>>>> 0cf652eefc45b8ed530fa98adb25511bde1d2d28
   dom_limpio
   middleman (= 4.2.1)
   middleman-autoprefixer (~> 2.7.1)
