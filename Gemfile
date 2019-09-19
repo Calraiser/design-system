@@ -5,11 +5,11 @@ source 'https://rubygems.org'
 ruby '2.5.0'
 
 # Middleman Gems
-gem "middleman",                "~> 4"
+gem 'middleman',                '4.2.1'
 gem 'middleman-autoprefixer',   '~> 2.7.1'
 gem 'middleman-minify-html',    '~> 3.4.1'
-# gem 'middleman-livereload',     '~> 3.4.3'
-# gem 'middleman-sprockets'
+gem 'middleman-livereload',     '~> 3.4.3'
+gem 'middleman-sprockets'
 gem 'middleman-lunr'
 gem "middleman-syntax"
 gem 'middleman-navtree'
@@ -17,7 +17,7 @@ gem 'middleman-navtree'
 gem 'redcarpet'
 gem 'middleman-gh-pages'
 
-gem 'bourbon', :git => 'https://github.com/animade/bourbon.git', :branch => 'bourbon-3.2.0'
+gem "bourbon"
 
 gem 'middleman-google-analytics', '~> 3.0'
 
@@ -30,5 +30,5 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem 'oga',                      '~> 2.8'
 gem 'slim',                     '~> 3.0.7'
 
-
-gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
+# Assets Gems
+gem 'dom_limpio'

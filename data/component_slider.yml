@@ -537,3 +537,10 @@ items:
         - item: '/assets/images/uicomponents/buttons/specs_03@3x.png'
           width: 218
           height: 161
+
+  breadcrumb:
+    - id: 'specifications'
+      images:
+        - item: '/assets/images/uicomponents/breadcrumb/specs@3x.png'
+          width: 395
+          height: 176

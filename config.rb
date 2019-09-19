@@ -11,23 +11,25 @@ set :pdf_dir,     'download/pdf'
 set :data_dir,    'data'
 set :video_dir,   'assets/video'
 
+activate :autoprefixer
+activate :livereload
 activate :lunr
 activate :syntax, :inline_theme => Rouge::Themes::Github.new
 
-# Load Sass from node_modules
-config[:sass_assets_paths] << File.join(root, 'node_modules')
-
-activate :external_pipeline,
-   name: :webpack,
-   command: build? ? 'npm run build' : 'npm run start',
-   source: ".tmp/dist",
-   latency: 1
+# activate :google_analytics do |ga|
+#   ga.tracking_id = 'UA-127480418-2'
+# end
 
 activate :navtree do |options|
   options.automatic_tree_updates = false # The tree.yml file will be updated automatically when source files are changed.
   options.data_file = 'title.yml' # The data file where our navtree is stored.
   options.ignore_dir = ['assets'] # An array of directories we want to ignore when building our tree.
 end
+
+activate :sprockets do |c|
+  c.expose_middleman_helpers = true
+end
+
 
 # activate :middleman_scavenger do |config|
 #   config.path = "./source/assets/images/icons/"
@@ -41,6 +43,13 @@ page '/*.txt',  layout: false
 page '/source/404.html', directory_index: false
 
 configure :build do
+  activate :minify_css
+  activate :minify_html, remove_input_attributes: false
+  activate :minify_javascript
+  activate :gzip
+  activate :asset_hash
+  activate :relative_assets
+
   set :relative_links, true
 end
 

@@ -1,5 +1,7 @@
+
 .luca-tab-switcher {
-  display: flex; }
+  display: flex;
+}
 
 .luca-tab-switcher button {
   border: none;
@@ -12,19 +14,22 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .luca-tab-switcher button + button {
-  margin-left: -2px; }
+  margin-left: -2px;
+}
 
 .luca-tab-switcher button:focus {
-  outline: none; }
+  outline: none;
+}
 
-.luca-tab-switcher button.tab-switcher__active {
+.luca-tab-switcher  button.tab-switcher__active {
   border-radius: 2px;
   box-shadow: inset 0 0 4px 0 #cccccc;
   border: solid 1px #d8d8d8;
   background-color: #f2f2f2;
   font-weight: bold;
-  color: #00aaee; }
-
+  color: #00aaee;
+}
