@@ -21,13 +21,20 @@ configure :development do
   end
 end
 
-configure :production do
+configure :build do
+  activate :asset_hash
+  activate :relative_assets
   activate :minify_html
-  activate :asset_hash, ignore: [/\.jpg\Z/, /\.png\Z/, /\.svg\Z/]
+
+  set :relative_links, true
+  after_configuration do
+    sprockets.append_path "#{root}/node_modules"
+  end
 end
 
 activate :lunr
 activate :syntax, :inline_theme => Rouge::Themes::Github.new
+
 
 activate :external_pipeline,
    name: :webpack,
@@ -44,13 +51,6 @@ activate :navtree do |options|
   options.ignore_dir = ['assets'] # An array of directories we want to ignore when building our tree.
 end
 
-
-# configure :build do
-#   activate :asset_hash
-#   activate :relative_assets
-#
-#   set :relative_links, true
-# end
 
 # Helpers
 helpers do

@@ -16,6 +16,8 @@ gem 'middleman-navtree'
 gem 'redcarpet'
 gem 'middleman-gh-pages'
 
+gem 'middleman-sprockets'
+
 gem "bourbon"
 
 gem 'middleman-google-analytics', '~> 3.0'
