@@ -1,13 +1,29 @@
 
+
+activate :directory_indexes
+
 set :markdown_enginge, :redcarpet
 set :markdown, fenced_code_blocks: true
 set :haml, { ugly: true }
 
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+
+page '/*.xml', layout: false
+page '/*.json', layout: false
+page '/*.txt', layout: false
+
+
 configure :development do
-  set :css_dir,    'assets/stylesheets'
-  set :js_dir,     'assets/javascripts'
-  set :images_dir, 'assets/images'
-  set :fonts_dir,  'assets/fonts'
+  activate :livereload do |reload|
+    reload.no_swf = true
+  end
+end
+
+configure :production do
+  activate :minify_html
+  activate :asset_hash, ignore: [/\.jpg\Z/, /\.png\Z/, /\.svg\Z/]
 end
 
 activate :lunr
@@ -28,17 +44,13 @@ activate :navtree do |options|
   options.ignore_dir = ['assets'] # An array of directories we want to ignore when building our tree.
 end
 
-# activate :middleman_scavenger do |config|
-#   config.path = "./source/assets/images/icons/"
-#   config.prefix = "ic-"
-#   config.sprite_path = "/assets/images/sprites.svg"
+
+# configure :build do
+#   activate :asset_hash
+#   activate :relative_assets
+#
+#   set :relative_links, true
 # end
-
-page '/*.xml',  layout: false
-page '/*.json', layout: false
-page '/*.txt',  layout: false
-page '/source/404.html', directory_index: false
-
 
 # Helpers
 helpers do

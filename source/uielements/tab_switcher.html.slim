@@ -38,9 +38,18 @@ index: true
 
 
 
-  .action.downloads
-    = partial :"components/_downloads", :locals => { :name => 'combobox_DS_LUCA', :sketch => true }
-    = partial :"components/_downloads", :locals => { :name => 'combobox_DS_LUCA', :pdf => true }
+    .content-block
+      = partial :"blocks/_anatomy", :locals => { :extraclass => '' , :item => data.component_slider.items.tabs_section }
 
+    .footer-navigation
+      .footer-navigation__previous
+        = previous_link(data.title['uielements'])
+      .footer-navigation__next
+        = next_link(data.title['uielements'])
 
-  = javascript_include_tag "components.bundle"
+    .action.downloads
+      = partial :"components/_downloads", :locals => { :name => 'tabs_DS_LUCA', :sketch => true }
+      = partial :"components/_downloads", :locals => { :name => 'tabs_DS_LUCA', :pdf => true }
+
+  /
+  / = javascript_include_tag "components.bundle"
