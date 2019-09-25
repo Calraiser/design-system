@@ -1,4 +1,3 @@
-
 .luca-tab-switcher {
   display: flex;
 }
@@ -25,7 +24,7 @@
   outline: none;
 }
 
-.luca-tab-switcher  button.tab-switcher__active {
+.luca-tab-switcher button.tab-switcher__active {
   border-radius: 2px;
   box-shadow: inset 0 0 4px 0 #cccccc;
   border: solid 1px #d8d8d8;

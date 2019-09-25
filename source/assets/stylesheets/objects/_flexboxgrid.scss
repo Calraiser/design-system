@@ -13,18 +13,15 @@ $flexboxgrid-outer-margin: 2rem !default;
 // Create or remove breakpoints for your project
 // Syntax:
 // name SIZErem,
-$flexboxgrid-breakpoints:
-  sm 48em 46rem,
-  md 62em 61rem,
-  lg 75em 71rem !default;
+$flexboxgrid-breakpoints: sm 48em 46rem, md 62em 61rem, lg 75em 71rem !default;
 $flexboxgrid-max-width: 1200px !default;
 
 //
 // -- Stop editing -- //
 //
 
-$gutter-compensation: $flexboxgrid-gutter-width * .5 * -1;
-$half-gutter-width: $flexboxgrid-gutter-width * .5;
+$gutter-compensation: $flexboxgrid-gutter-width * 0.5 * -1;
+$half-gutter-width: $flexboxgrid-gutter-width * 0.5;
 
 .wrapper {
   box-sizing: border-box;
@@ -184,7 +181,6 @@ $name: xs;
         @include flex-basis(100% / $flexboxgrid-grid-columns * $i);
         max-width: 100% / $flexboxgrid-grid-columns * $i;
         width: 100% / $flexboxgrid-grid-columns * $i;
-
       }
     }
     @for $i from 0 through $flexboxgrid-grid-columns {

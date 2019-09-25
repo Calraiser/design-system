@@ -1,10 +1,8 @@
-
 $(document).ready(function() {
-
   var offset = 600,
-      duration = 300,
-      btnTop = $('.toTop'),
-      counter = $(".progressCounter");
+    duration = 300,
+    btnTop = $(".toTop"),
+    counter = $(".progressCounter");
 
   counter.progressScroll({
     width: 40,
@@ -17,18 +15,20 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > offset) {
-      btnTop.addClass('visible');
+      btnTop.addClass("visible");
     } else {
-      btnTop.removeClass('visible');
+      btnTop.removeClass("visible");
     }
   });
 
-  btnTop.on('click', function(e) {
+  btnTop.on("click", function(e) {
     e.preventDefault();
-    $('html, body').animate({
-      scrollTop: 0
-    }, duration);
+    $("html, body").animate(
+      {
+        scrollTop: 0
+      },
+      duration
+    );
     return false;
-  })
-
+  });
 });

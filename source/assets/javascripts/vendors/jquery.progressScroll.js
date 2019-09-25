@@ -8,105 +8,128 @@
  */
 
 $.fn.progressScroll = function(options) {
+  var settings = $.extend(
+    {
+      width: 100,
+      height: 100,
+      borderSize: 10,
+      mainBgColor: "#E6F4F7",
+      lightBorderColor: "#ffffff",
+      darkBorderColor: "#fffff",
+      fontSize: "30px"
+    },
+    options
+  );
 
-    var settings = $.extend({
-        width: 100,
-        height: 100,
-        borderSize: 10,
-        mainBgColor: "#E6F4F7",
-        lightBorderColor: "#ffffff",
-        darkBorderColor: "#fffff",
-        fontSize: "30px"
-    }, options);
+  var innerHeight,
+    offsetHeight,
+    netHeight,
+    self = this,
+    container = this.selector,
+    borderContainer = "progressScroll-border",
+    circleContainer = "progressScroll-circle",
+    textContainer = "progressScroll-text";
 
-    var innerHeight, offsetHeight, netHeight,
-        self = this,
-        container = this.selector,
-        borderContainer = "progressScroll-border",
-        circleContainer = "progressScroll-circle",
-        textContainer = "progressScroll-text";
+  this.getHeight = function() {
+    innerHeight = window.innerHeight;
+    offsetHeight = document.body.offsetHeight;
+    netHeight = offsetHeight - innerHeight;
+  };
 
-    this.getHeight = function () {
-        innerHeight = window.innerHeight;
-        offsetHeight = document.body.offsetHeight;
-        netHeight = offsetHeight - innerHeight;
+  this.addEvent = function() {
+    var e = document.createEvent("Event");
+    e.initEvent("scroll", false, false);
+    window.dispatchEvent(e);
+  };
+
+  this.updateProgress = function(per) {
+    var per = Math.round(100 * per);
+    var deg = (per * 360) / 100;
+    if (deg <= 180) {
+      $("." + borderContainer, container).css(
+        "background-image",
+        "linear-gradient(" +
+          (90 + deg) +
+          "deg, transparent 50%, #D8D8D8 50%),linear-gradient(90deg, #D8D8D8 50%, transparent 50%)"
+      );
+    } else {
+      $("." + borderContainer, container).css(
+        "background-image",
+        "linear-gradient(" +
+          (deg - 90) +
+          "deg, transparent 50%, #00AAEE 50%),linear-gradient(90deg, #D8D8D8 50%, transparent 50%)"
+      );
     }
+    $("." + textContainer, container).text(per + "%");
+  };
 
-    this.addEvent = function () {
-        var e = document.createEvent("Event");
-        e.initEvent("scroll", false, false);
-        window.dispatchEvent(e);
-    }
+  this.prepare = function() {
+    $(container).addClass("progressScroll");
+    $(container).html(
+      "<div class='" +
+        borderContainer +
+        "'><div class='" +
+        circleContainer +
+        "'><span class='ico icon-ic-arrow_back'></span></div></div>"
+    );
 
-    this.updateProgress = function (per) {
-        var per = Math.round(100 * per);
-        var deg = per * 360 / 100;
-        if (deg <= 180) {
-            $("." + borderContainer, container).css("background-image", "linear-gradient(" + (90 + deg) + "deg, transparent 50%, #D8D8D8 50%),linear-gradient(90deg, #D8D8D8 50%, transparent 50%)");
-        }
-        else {
-            $("." + borderContainer, container).css("background-image", "linear-gradient(" + (deg - 90) + "deg, transparent 50%, #00AAEE 50%),linear-gradient(90deg, #D8D8D8 50%, transparent 50%)");
-        }
-        $("." + textContainer, container).text(per + "%");
-    }
+    $(".progressScroll").css({
+      width: settings.width,
+      height: settings.height
+    });
+    $("." + borderContainer, container).css({
+      position: "relative",
+      "text-align": "center",
+      width: "100%",
+      height: "100%",
+      "border-radius": "50%",
+      "background-color": settings.darkBorderColor,
+      "background-image":
+        "linear-gradient(91deg, transparent 50%," +
+        settings.lightBorderColor +
+        "50%), linear-gradient(90deg," +
+        settings.lightBorderColor +
+        "50%, transparent 50%"
+    });
+    $("." + circleContainer, container).css({
+      position: "relative",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      "text-align": "center",
+      width: settings.width - settings.borderSize,
+      height: settings.height - settings.borderSize,
+      "border-radius": "50%",
+      "background-color": settings.mainBgColor
+    });
+    $("." + textContainer, container).css({
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      position: "absolute",
+      "font-size": settings.fontSize
+    });
+  };
 
-    this.prepare = function () {
-        $(container).addClass("progressScroll");
-        $(container).html("<div class='" + borderContainer + "'><div class='" + circleContainer + "'><span class='ico icon-ic-arrow_back'></span></div></div>");
+  this.init = function() {
+    self.prepare();
 
-        $(".progressScroll").css({
-            "width" : settings.width,
-            "height" : settings.height
-        });
-        $("." + borderContainer, container).css({
-            "position" : "relative",
-            "text-align" : "center",
-            "width" : "100%",
-            "height" : "100%",
-            "border-radius" : "50%",
-            "background-color" : settings.darkBorderColor,
-            "background-image" : "linear-gradient(91deg, transparent 50%," + settings.lightBorderColor + "50%), linear-gradient(90deg," +  settings.lightBorderColor + "50%, transparent 50%"
-        });
-        $("." + circleContainer, container).css({
-            "position": "relative",
-            "top" : "50%",
-            "left" : "50%",
-            "transform" : "translate(-50%, -50%)",
-            "text-align" : "center",
-            "width" : settings.width - settings.borderSize,
-            "height" : settings.height - settings.borderSize,
-            "border-radius" : "50%",
-            "background-color" : settings.mainBgColor
-        });
-        $("." + textContainer, container).css({
-            "top" : "50%",
-            "left" : "50%",
-            "transform" : "translate(-50%, -50%)",
-            "position" : "absolute",
-            "font-size" : settings.fontSize
-        });
-    }
+    $(window).bind("scroll", function() {
+      var getOffset = window.pageYOffset || document.documentElement.scrollTop,
+        per = Math.max(0, Math.min(1, getOffset / netHeight));
+      self.updateProgress(per);
+    });
 
-    this.init = function () {
+    $(window).bind("resize", function() {
+      self.getHeight();
+      self.addEvent();
+    });
 
-        self.prepare();
+    $(window).bind("load", function() {
+      self.getHeight();
+      self.addEvent();
+    });
+  };
 
-        $(window).bind("scroll", function () {
-            var getOffset = window.pageYOffset || document.documentElement.scrollTop,
-                per = Math.max(0, Math.min(1, getOffset / netHeight));
-            self.updateProgress(per);
-        });
-
-        $(window).bind("resize", function () {
-            self.getHeight();
-            self.addEvent();
-        });
-
-        $(window).bind("load", function () {
-            self.getHeight();
-            self.addEvent();
-        });
-    }
-
-    self.init();
-}
+  self.init();
+};

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Tabs from './Tabs';
+import React, { Component } from "react";
+import Tabs from "./Tabs";
 
 export default class TabSwitcher extends Component {
   constructor(props) {
@@ -8,25 +8,25 @@ export default class TabSwitcher extends Component {
       activeTabIndex: 0,
       initialData: [
         {
-          label: 'Total',
-          id: '1',
+          label: "Total",
+          id: "1"
         },
         {
-          label: 'Activas',
-          id: '2',
+          label: "Activas",
+          id: "2"
         },
         {
-          label: 'Sin tráfico',
-          id: '3',
-        },
-      ],
+          label: "Sin tráfico",
+          id: "3"
+        }
+      ]
     };
     this.handleTabClick = this.handleTabClick.bind(this);
   }
 
   handleTabClick(index) {
     this.setState({
-      activeTabIndex: index,
+      activeTabIndex: index
     });
   }
 

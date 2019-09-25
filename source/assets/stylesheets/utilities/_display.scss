@@ -6,43 +6,42 @@
  * Utilities for controlling the display box type of an element.
  */
 
-
 .u-block {
-	display: block;
+  display: block;
 }
 
 .u-table {
-	display: table;
+  display: table;
 }
 
 .u-table-row {
-	display: table-row;
+  display: table-row;
 }
 
 .u-table-cell {
-	display: table-cell;
+  display: table-cell;
 }
 
 .u-hidden {
-	display: none;
+  display: none;
 }
 
 .u-hidden-xs {
-	display: none;
-	@include media($mobile) {
-		display: block;
-	}
+  display: none;
+  @include media($mobile) {
+    display: block;
+  }
 }
 
 .u-right {
-	float: right;
+  float: right;
 }
 
 .u-left {
-	float: left;
+  float: left;
 }
 
 .u-wide {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }

@@ -21,9 +21,9 @@
 
 .lds-navigation-icons {
   width: 100%;
-    @include media($tablet) {
-      width: 90%;
-    }
+  @include media($tablet) {
+    width: 90%;
+  }
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -69,10 +69,8 @@
       &:hover:before {
         color: $grey01;
         display: block;
-
       }
     }
-
 
     &.hover {
       .icon {
@@ -82,7 +80,7 @@
 
     &.blue {
       .icon {
-          &:before {
+        &:before {
           color: $blue;
         }
       }
@@ -97,7 +95,7 @@
     }
 
     &.green {
-      .icon  {
+      .icon {
         &:before {
           color: $green;
         }
@@ -105,7 +103,7 @@
     }
 
     &.disabled {
-      .icon  {
+      .icon {
         &:before {
           color: $grey07;
           cursor: not-allowed;
@@ -126,12 +124,12 @@
   }
 }
 
-
 @keyframes bounce {
-	0%, 100% {
+  0%,
+  100% {
     transform: translateX(0);
   }
-	40% {
-  transform: translateX(-10px);
+  40% {
+    transform: translateX(-10px);
   }
 }

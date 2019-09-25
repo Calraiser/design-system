@@ -1,27 +1,24 @@
-
-
 //
 // Variables
 // -----------------------------------------
 
-$tooltip-bg:             #fff !default;
-$tooltip-bg-dark:        $grey05 !default;
-$tooltip-base-size:      10px !default;
-$tooltip-arrow-height:   10px;
-$tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
-
+$tooltip-bg: #fff !default;
+$tooltip-bg-dark: $grey05 !default;
+$tooltip-base-size: 10px !default;
+$tooltip-arrow-height: 10px;
+$tooltip-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 
 //
 // Mixins
 // -----------------------------------------
 
-  @mixin transform ($val) {
-     transform: $val;
-   }
+@mixin transform($val) {
+  transform: $val;
+}
 
-  @mixin transform-origin ($val) {
+@mixin transform-origin($val) {
   transform-origin: $val;
-  }
+}
 
 .popover {
   @include position(relative, 0 null null 0);
@@ -67,7 +64,6 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
         left: 50%;
         @include transform(translate(-50%, -12px));
       }
-
     }
   }
 }
@@ -87,7 +83,6 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
   content: "";
 }
 
-
 .popover.right .arrow {
   top: 50%;
   right: 100%;
@@ -100,7 +95,6 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
     border-width: 10px 10px 10px 0;
     @include transform(translate(2px, -50%));
   }
-
 }
 
 .popover.bottom .arrow {
@@ -133,13 +127,12 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
-
 .popover {
   padding: 0;
   .arrow {
     &:before {
-      content: '';
-      background: url('../images/ic-user.svg') no-repeat;
+      content: "";
+      background: url("../images/ic-user.svg") no-repeat;
       padding: 12px;
       position: absolute;
       left: 50%;
@@ -147,28 +140,28 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
       transform: translate(-50%, -50%);
     }
   }
-&.top .arrow {
-  left: 70%;
-  &:before {
-    margin-top: 20px;
+  &.top .arrow {
+    left: 70%;
+    &:before {
+      margin-top: 20px;
+    }
   }
-}
-&.right .arrow {
-  &:before {
-    margin-left: -20px;
+  &.right .arrow {
+    &:before {
+      margin-left: -20px;
+    }
   }
-}
-&.left .arrow {
-  &:before {
-    margin-left: 20px;
+  &.left .arrow {
+    &:before {
+      margin-left: 20px;
+    }
   }
-}
-&.bottom .arrow {
-  left: 70%;
-  &:before {
-    margin-top: -20px;
+  &.bottom .arrow {
+    left: 70%;
+    &:before {
+      margin-top: -20px;
+    }
   }
-}
 
   .popover-content {
     margin: 5px 0;
@@ -196,6 +189,5 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 100px;
   @include media($tablet) {
     margin-bottom: 0;
-
   }
 }

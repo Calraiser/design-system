@@ -32,7 +32,7 @@
     flex: 1;
 
     &:before {
-      content: '';
+      content: "";
       @include size(18px);
       border-radius: 4px;
       margin-right: 10px;
@@ -59,7 +59,7 @@
   }
 
   &.alert-primary {
-    .lds-alert__title{
+    .lds-alert__title {
       &:before {
         background: $pink;
       }
@@ -80,7 +80,7 @@
 
   .close {
     border: none;
-    background: url('../images/ic-close-d3.svg') no-repeat;
+    background: url("../images/ic-close-d3.svg") no-repeat;
     background-size: 11px auto;
     cursor: pointer;
     margin-left: 10px;
@@ -94,7 +94,7 @@
   position: relative;
   z-index: 99999;
   .lds-card-triangle {
-    @include css-triangle('#000', 'up');
+    @include css-triangle("#000", "up");
     left: auto;
     right: 8%;
     z-index: 1;
@@ -112,7 +112,6 @@
     z-index: 9999;
     background: $white;
     border-radius: 4px;
-
   }
   &__item {
     padding: 12px 12px;
@@ -126,50 +125,45 @@
     justify-content: space-between;
     &__title {
       h2 {
-      @extend %txt-subtitle-h2-bold;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-      margin-top: 5px;
-      display: flex;
-      align-items: center;
-      flex: 1;
-      &:before {
-        content: '';
-        @include size(18px);
-        border-radius: 4px;
-        margin-right: 10px;
-        display: inline-block;
-      }
-      &.title-alert {
+        @extend %txt-subtitle-h2-bold;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        flex: 1;
         &:before {
-          background: $pink;
+          content: "";
+          @include size(18px);
+          border-radius: 4px;
+          margin-right: 10px;
+          display: inline-block;
+        }
+        &.title-alert {
+          &:before {
+            background: $pink;
+          }
+        }
+        &.title-notification {
+          &:before {
+            background: $blue;
+          }
         }
       }
-      &.title-notification {
-        &:before {
-          background: $blue;
-        }
-      }
-    }
     }
     &__date {
       p {
         @extend %txt-small;
         margin-right: 8px;
       }
-
     }
   }
   .card-text {
     p {
       font-size: rem-calc(14);
     }
-
   }
 }
-
-
-
 
 .multiple-alert {
   &__content {
@@ -177,8 +171,6 @@
 
     .lds-alert {
       position: absolute;
-
-
     }
   }
 }
@@ -195,7 +187,7 @@
     border-radius: 0;
     box-shadow: none;
     &.alert-yellow {
-      .lds-alert__title  {
+      .lds-alert__title {
         &:before {
           background: $yellow;
         }

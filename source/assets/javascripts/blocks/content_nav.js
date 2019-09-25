@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-
   // $('.nav-content .back:not(#0):not(#1)').on('click', 'a' ,function(e) {
   //   e.preventDefault();
   //   $(this).parent()
@@ -9,12 +7,11 @@ $(document).ready(function() {
   //   .tooltip('show');
   // });
 
-
-  var $menu = $('.sidebar-menu > li'),
-      $submenu = $('.o-sidebar-submenu'),
-      $close = $submenu.find('.close'),
-      $container = $('.main-content'),
-      $trClass = 'menu-open';
+  var $menu = $(".sidebar-menu > li"),
+    $submenu = $(".o-sidebar-submenu"),
+    $close = $submenu.find(".close"),
+    $container = $(".main-content"),
+    $trClass = "menu-open";
 
   if (!$menu.length) {
     return false;
@@ -29,59 +26,71 @@ $(document).ready(function() {
   //   .tooltip('show');
   // });
 
-  $menu.on('click', 'a', function(e) {
+  $menu.on("click", "a", function(e) {
     e.preventDefault();
-    $submenu.filter('.' + this.id).trigger('togglePanel');
+    $submenu.filter("." + this.id).trigger("togglePanel");
 
-    $menu.removeClass('active');
-    $(this).parent().addClass('active');
+    $menu.removeClass("active");
+    $(this)
+      .parent()
+      .addClass("active");
   });
 
   $submenu
-    .on('togglePanel', function() {
+    .on("togglePanel", function() {
       var $this = $(this),
-          $activePanels = $submenu.filter(':visible').not($this);
+        $activePanels = $submenu.filter(":visible").not($this);
       if ($activePanels.length) {
         $activePanels
-          .one('panelHidden', function() {
-            $this.is(':visible') ?
-              $this.trigger('hidePanel') :
-              $this.trigger('showPanel');
+          .one("panelHidden", function() {
+            $this.is(":visible")
+              ? $this.trigger("hidePanel")
+              : $this.trigger("showPanel");
           })
-          .trigger('hidePanel');
+          .trigger("hidePanel");
       } else {
-        $this.is(':visible') ?
-          $this.trigger('hidePanel') :
-          $this.trigger('showPanel');
+        $this.is(":visible")
+          ? $this.trigger("hidePanel")
+          : $this.trigger("showPanel");
       }
     })
-    .on('hidePanel', function() {
+    .on("hidePanel", function() {
       var $this = $(this);
-        $this.animate({
-          'width': 'hide'
-        }, 800, function() {
-          $this.trigger('panelHidden');
-        });
+      $this.animate(
+        {
+          width: "hide"
+        },
+        800,
+        function() {
+          $this.trigger("panelHidden");
+        }
+      );
 
-        $this.removeClass('active');
-        $container.removeClass($trClass);
-        $container.parent().removeClass('open');
+      $this.removeClass("active");
+      $container.removeClass($trClass);
+      $container.parent().removeClass("open");
     })
-    .on('showPanel', function() {
+    .on("showPanel", function() {
       var $this = $(this);
-      $this.animate({
-        'width': 'show'
-      }, 800, function() {
-          $this.trigger('panelShown');
-      });
+      $this.animate(
+        {
+          width: "show"
+        },
+        800,
+        function() {
+          $this.trigger("panelShown");
+        }
+      );
 
-        $this.addClass('active');
-        $container.addClass($trClass);
-        $container.parent().addClass('open');
+      $this.addClass("active");
+      $container.addClass($trClass);
+      $container.parent().addClass("open");
     });
 
-    $close.on('click', function() {
-      $(this).closest($submenu).trigger('togglePanel');
-      $menu.find('a').removeClass('active');
+  $close.on("click", function() {
+    $(this)
+      .closest($submenu)
+      .trigger("togglePanel");
+    $menu.find("a").removeClass("active");
   });
 });

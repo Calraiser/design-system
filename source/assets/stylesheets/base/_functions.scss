@@ -4,13 +4,26 @@
 
 @function rem-calc($size) {
   $remSize: $size / 16;
-    @return #{$remSize}rem;
+  @return #{$remSize}rem;
 }
 
 /*
 This loop will create "margin helpers" and "padding helpers" for use in your web projects.
 */
-$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Adjust this to include the pixel amounts you need.
+$spaceamounts: (
+  5,
+  10,
+  15,
+  20,
+  25,
+  30,
+  35,
+  40,
+  45,
+  50,
+  75,
+  100
+); // Adjust this to include the pixel amounts you need.
 $sides: (top, bottom, left, right); // Leave this variable alone
 
 @each $space in $spaceamounts {

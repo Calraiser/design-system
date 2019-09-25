@@ -1,40 +1,26 @@
 
+# Import custom libraries and helpers
+require "helpers/common_helpers"
+helpers CommonHelper
 
-activate :directory_indexes
 
 set :markdown_enginge, :redcarpet
 set :markdown, fenced_code_blocks: true
 set :haml, { ugly: true }
 
-set :css_dir, 'assets/stylesheets'
-set :js_dir, 'assets/javascripts'
+# Load Sass from node_modules
+config[:sass_assets_paths] << File.join(root, 'node_modules')
+
+set :css_dir,    'assets/stylesheets'
+set :js_dir,     'assets/javascripts'
 set :images_dir, 'assets/images'
 
-page '/*.xml', layout: false
-page '/*.json', layout: false
-page '/*.txt', layout: false
+# page '/*.xml', layout: false
+# page '/*.json', layout: false
+# page '/*.txt', layout: false
 
-
-configure :development do
-  activate :livereload do |reload|
-    reload.no_swf = true
-  end
-end
-
-configure :build do
-  activate :asset_hash
-  activate :relative_assets
-  activate :minify_html
-
-  set :relative_links, true
-  after_configuration do
-    sprockets.append_path "#{root}/node_modules"
-  end
-end
-
-activate :lunr
 activate :syntax, :inline_theme => Rouge::Themes::Github.new
-
+activate :lunr
 
 activate :external_pipeline,
    name: :webpack,
@@ -44,69 +30,23 @@ activate :external_pipeline,
    source: ".tmp/dist",
    latency: 1
 
-
 activate :navtree do |options|
-  options.automatic_tree_updates = false # The tree.yml file will be updated automatically when source files are changed.
-  options.data_file = 'title.yml' # The data file where our navtree is stored.
-  options.ignore_dir = ['assets'] # An array of directories we want to ignore when building our tree.
+ options.automatic_tree_updates = false # The tree.yml file will be updated automatically when source files are changed.
+ options.data_file = 'title.yml' # The data file where our navtree is stored.
+ options.ignore_dir = ['assets'] # An array of directories we want to ignore when building our tree.
 end
 
+configure :development do
+  set      :debug_assets, true
+  activate :livereload
+  activate :pry
+end
 
-# Helpers
-helpers do
-
-  def previous_link(sourcetree)
-    pagelist = flatten_source_tree(sourcetree)
-    position = get_current_position_in_page_list(pagelist)
-    # Skip link generation if position is nil (meaning, the current page isn't in our
-    # pagination pagelist).
-    if position
-      prev_page = pagelist[position - 1]
-      options = {:class => "previous"}
-      unless first_page?(pagelist)
-        link_to(File.basename(prev_page,File.extname(prev_page)).split('_'), prev_page, options)
-      end
-    end
-  end
-
-  def next_link(sourcetree)
-    pagelist = flatten_source_tree(sourcetree)
-    position = get_current_position_in_page_list(pagelist)
-    # Skip link generation if position is nil (meaning, the current page isn't in our
-    # pagination pagelist).
-    if position
-      next_page = pagelist[position + 1]
-      options = {:class => "next"}
-      unless last_page?(pagelist)
-        link_to(File.basename(next_page,File.extname(next_page)).split('_'), next_page, options)
-      end
-    end
-  end
-
-  def nav_link(name, url, id, options={})
-    options = {
-      class: "",
-      active_if: url,
-      id: id,
-      page: current_page.url,
-    }.update options
-    active_url = options.delete(:active_if)
-    active = Regexp === active_url ? current_page.url =~ active_url : current_page.url == active_url
-    options[:class] += " active" if active
-
-    link_to name, url, options
-  end
-
-  def current_page?(path)
-    current_page.url.chomp('/') == path.chomp('/')
-  end
-
-
-  def strip_trailing_zero(n)
-    n.to_s.sub(/\.?0+$/, '')
-  end
-
-  def active_class(page)
-    current_page.url == page ? {:class => 'active'} : {}
-  end
+configure :build do
+  set      :relative_links, true
+  activate :asset_hash, ignore: [/\.jpg\Z/, /\.png\Z/, /\.svg\Z/]
+  activate :gzip
+  # activate :minify_css
+  # activate :minify_html
+  activate :relative_assets
 end

@@ -10,7 +10,7 @@
  */
 
 @each $color-key, $color-value in $colors {
-	.u-bg-#{$color-key} {
-		background-color: $color-value;
-	}
+  .u-bg-#{$color-key} {
+    background-color: $color-value;
+  }
 }

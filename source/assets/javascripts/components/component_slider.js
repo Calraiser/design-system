@@ -1,16 +1,15 @@
 $(document).ready(function() {
+  var $menu = $(".component-menu li"),
+    $item = $(".component-item");
 
-  var $menu = $('.component-menu li'),
-      $item = $('.component-item');
-
-  $menu.on('click', 'a', function(e) {
+  $menu.on("click", "a", function(e) {
     e.preventDefault();
 
-    var $id = $(this).attr('id');
+    var $id = $(this).attr("id");
 
-    $menu.find('a').removeClass('active');
-    $(this).addClass('active');
-    $item.removeClass('show');
-    $item.filter('#' + $id).addClass('show');
+    $menu.find("a").removeClass("active");
+    $(this).addClass("active");
+    $item.removeClass("show");
+    $item.filter("#" + $id).addClass("show");
   });
 });

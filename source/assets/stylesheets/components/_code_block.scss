@@ -1,4 +1,3 @@
-
 .clipboard {
   display: none;
   @include media($mobile) {
@@ -27,7 +26,6 @@
       svg {
         margin-left: 5px;
       }
-
     }
   }
 }
@@ -40,13 +38,12 @@
     border-radius: 3px;
     transition: max-height 0.8s;
     max-height: 200px;
-    max-width: 1200px;;
+    max-width: 1200px;
     width: 100%;
     overflow: hidden;
     overflow-y: auto;
 
     position: relative;
-
 
     &.active {
       max-height: 20px;

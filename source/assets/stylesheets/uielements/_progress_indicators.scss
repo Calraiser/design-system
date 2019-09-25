@@ -28,17 +28,17 @@
   border-radius: 21px 0 0 21px;
   color: $white;
   background-image: linear-gradient(to left, $green, $blue);
-  &[aria-valuenow = '60'] {
+  &[aria-valuenow="60"] {
     .percentaje {
       color: $white;
     }
   }
-  &[aria-valuenow = '0'] {
+  &[aria-valuenow="0"] {
     .percentaje {
       color: #86888c;
     }
   }
-  &[aria-valuenow = '100'] {
+  &[aria-valuenow="100"] {
     border-radius: 21px;
     .percentaje {
       color: $white;

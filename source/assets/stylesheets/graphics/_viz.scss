@@ -121,198 +121,196 @@
   }
 }
 
-
 .bx--graph-header {
-    font-weight: 300;
-    font-size: 24px;
+  font-weight: 300;
+  font-size: 24px;
 }
 
 .bx--graph-overlay {
-    fill: #3d70b2;
-    opacity: .1;
-    display: none;
-    pointer-events: none;
+  fill: #3d70b2;
+  opacity: 0.1;
+  display: none;
+  pointer-events: none;
 }
 
 .bx--line {
-    stroke-width: 2;
-    stroke: #00a68f;
-    fill: none;
-    pointer-events: none;
+  stroke-width: 2;
+  stroke: #00a68f;
+  fill: none;
+  pointer-events: none;
 }
 
 .bx--axis path {
-    stroke: #5A6872;
+  stroke: #5a6872;
 }
 
 .tick line {
-    stroke: #5A6872;
+  stroke: #5a6872;
 }
 
 .tick text {
-    fill: #5A6872;
+  fill: #5a6872;
 }
 
 .bx--graph-container {
-    position: relative;
+  position: relative;
 }
 
 .bx--tooltip {
-    display: none;
-    font-weight: 700;
-    padding: .25rem .5rem;
-    pointer-events: none;
+  display: none;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  pointer-events: none;
 }
 
 .bx--axis--y path {
-    display: none;
+  display: none;
 }
 
 .bx--graph-label {
-    font-size: 10px;
-    font-weight: 700;
-    fill: #5A6872;
-    text-anchor: middle;
+  font-size: 10px;
+  font-weight: 700;
+  fill: #5a6872;
+  text-anchor: middle;
 }
 
-
-  .hgroup {
-    float: left;
-    text-align: left;
-    h4 {
-      color: $grey;
-      font-family: Telefonicabold;
-    }
-
-    h5 {
-      color: $grey;
-      font-family: Telefonicaregular;
-
-    }
+.hgroup {
+  float: left;
+  text-align: left;
+  h4 {
+    color: $grey;
+    font-family: Telefonicabold;
   }
 
-  .viz-container {
-    position: absolute;
+  h5 {
+    color: $grey;
+    font-family: Telefonicaregular;
+  }
+}
+
+.viz-container {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+
+  &.switch {
+    bottom: 20px;
+    height: 202px;
+
+    .legend {
+      bottom: 0;
+    }
+  }
+}
+
+// TODO: Refactor
+.viz-box {
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 0 2px 0 #d1d1d1;
+  padding: 10px 20px 40px;
+  position: relative;
+  height: 390px;
+  .bubble {
+    bottom: 50px !important;
+  }
+  .c3,
+  canvas,
+  .bubble {
+    position: absolute !important;
+    bottom: 10px;
     left: 50%;
-    bottom: 0;
     transform: translateX(-50%);
-    width: 100%;
+  }
+  > * {
+    transition: $transition-slow;
+  }
+  .title {
+    margin-bottom: 0;
+  }
+  .subtitle {
+    @extend %txt-paragraph;
+  }
+
+  &.example {
+    border: none;
+    box-shadow: none;
+  }
+  &.disabled {
+    > :not(.lds-info-navigation) {
+      opacity: 0.5;
+    }
+  }
+
+  &.viz-box__wide {
+    flex-basis: 100%;
     max-width: 100%;
-    overflow: hidden;
+  }
 
-    &.switch {
-      bottom: 20px;
-      height: 202px;
+  &.last-child {
+    margin-right: 0;
+  }
 
-      .legend {
-        bottom: 0;
+  .data-container {
+    > div {
+      display: inline-block;
+    }
+  }
+
+  .data-container {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+  }
+
+  .data {
+    text-align: left;
+    margin-top: 50px;
+
+    p {
+      margin: 0 0 5px;
+      font-family: Telefonicaregular;
+      color: #4a4a4a;
+
+      &.strong {
+        font-family: Telefonicabold;
+        font-size: 14px;
+      }
+
+      &.number {
+        font-family: Telefonicalight;
+        font-size: 18px;
+        margin-bottom: 30px;
       }
     }
   }
 
-  // TODO: Refactor
-  .viz-box {
-    border-radius: 2px;
-    background-color: #fff;
-    box-shadow: 0 0 2px 0 #d1d1d1;
-    padding: 10px 20px 40px;
-    position: relative;
-    height: 390px;
-    .bubble {
-      bottom: 50px !important;
-    }
-    .c3, canvas, .bubble {
-      position: absolute !important;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    > * {
-      transition: $transition-slow;
-    }
-    .title {
-      margin-bottom: 0;
-    }
-    .subtitle {
-      @extend %txt-paragraph;
-    }
-
-    &.example {
-      border: none;
-      box-shadow: none;
-    }
-    &.disabled {
-      > :not(.lds-info-navigation) {
-      opacity: .5;
-      }
-    }
-
-    &.viz-box__wide {
-      flex-basis: 100%;
-      max-width: 100%;
-    }
-
-    &.last-child {
-      margin-right: 0;
-    }
-
-    .data-container {
-      > div {
-        display: inline-block;
-      }
-    }
-
-    .data-container {
-      position: absolute;
-      right: 20px;
-      top: 40px;
-    }
-
-    .data {
-      text-align: left;
-      margin-top: 50px;
-
-      p {
-        margin: 0 0 5px;
-        font-family: Telefonicaregular;
-        color: #4A4A4A;
-
-        &.strong {
-          font-family: Telefonicabold;
-          font-size: 14px;
-        }
-
-        &.number {
-          font-family: Telefonicalight;
-          font-size: 18px;
-          margin-bottom: 30px;
-        }
-      }
-    }
-
-    .btn {
-      position: absolute;
-      right: 20px;
-      top: 15px;
-    }
-
-    svg {
-      overflow: initial;
-      display: block;
-    }
-
-    .pie_legend {
-      text-align: center;
-      li {
-        display: inline-block;
-        list-style: none;
-        text-transform: none;
-        color: #54565B;
-        @extend %txt-notes-positive;
-      }
-    }
+  .btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
   }
 
+  svg {
+    overflow: initial;
+    display: block;
+  }
+
+  .pie_legend {
+    text-align: center;
+    li {
+      display: inline-block;
+      list-style: none;
+      text-transform: none;
+      color: #54565b;
+      @extend %txt-notes-positive;
+    }
+  }
+}
 
 .legend {
   position: absolute;
@@ -339,10 +337,14 @@
       width: 20px;
       height: 10px;
       &-bar {
-      background-image: linear-gradient(to left, #0088cc, #00aaee 50%, #99f8dd);
+        background-image: linear-gradient(
+          to left,
+          #0088cc,
+          #00aaee 50%,
+          #99f8dd
+        );
       }
       &-line {
-
       }
     }
   }
@@ -381,7 +383,7 @@
 #chartjs-tooltip {
   opacity: 1;
   position: absolute;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   border-radius: 3px;
   -webkit-transition: all 0.1s ease;
@@ -400,7 +402,7 @@
 #chartjs-tooltip {
   opacity: 1;
   position: absolute;
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   border-radius: 3px;
   -webkit-transition: all 0.1s ease;

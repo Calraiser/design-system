@@ -1,42 +1,48 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import DatetimeRangePicker from 'react-bootstrap-datetimerangepicker';
-import moment from 'moment';
+import React from "react";
+import PropTypes from "prop-types";
+import DatetimeRangePicker from "react-bootstrap-datetimerangepicker";
+import moment from "moment";
 
-import 'bootstrap-daterangepicker/daterangepicker.css';
+import "bootstrap-daterangepicker/daterangepicker.css";
 
 class DateRangePicker extends React.Component {
-
   constructor(props) {
     super(props);
 
     this.handleApply = this.handleApply.bind(this);
 
     this.state = {
-      startDate: moment().subtract(29, 'days'),
+      startDate: moment().subtract(29, "days"),
       endDate: moment(),
       ranges: {
-        'Today': [moment(), moment()],
-        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-        'This Month': [moment().startOf('month'), moment().endOf('month')],
-        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')],
-      },
+        Today: [moment(), moment()],
+        Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+        "Last 7 Days": [moment().subtract(6, "days"), moment()],
+        "Last 30 Days": [moment().subtract(29, "days"), moment()],
+        "This Month": [moment().startOf("month"), moment().endOf("month")],
+        "Last Month": [
+          moment()
+            .subtract(1, "month")
+            .startOf("month"),
+          moment()
+            .subtract(1, "month")
+            .endOf("month")
+        ]
+      }
     };
   }
 
   handleApply(event, picker) {
     this.setState({
       startDate: picker.startDate,
-      endDate: picker.endDate,
+      endDate: picker.endDate
     });
   }
 
   render() {
-    let start = this.state.startDate.format('YYYY-MM-DD');
-    let end = this.state.endDate.format('YYYY-MM-DD');
-    let label = start + ' - ' + end;
+    let start = this.state.startDate.format("YYYY-MM-DD");
+    let end = this.state.endDate.format("YYYY-MM-DD");
+    let label = start + " - " + end;
     if (start === end) {
       label = start;
     }
@@ -53,12 +59,12 @@ class DateRangePicker extends React.Component {
             autoApply
           >
             <div className="input-group">
-              <input type="text" className="form-control" value={label}/>
-                <span className="input-group-btn">
-                    <button className="default date-range-toggle">
-                      <i className="fa fa-calendar"/>
-                    </button>
-                </span>
+              <input type="text" className="form-control" value={label} />
+              <span className="input-group-btn">
+                <button className="default date-range-toggle">
+                  <i className="fa fa-calendar" />
+                </button>
+              </span>
             </div>
           </DatetimeRangePicker>
         </div>

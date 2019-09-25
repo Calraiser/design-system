@@ -2,20 +2,17 @@
    Content Nav (objects/_content_nav.scss)
    ========================================================================== */
 
-
 //
 // Variables
 // -----------------------------------------
 
 $submenu-width: 400px;
 
-
 .menu-open {
   .main-content-wrapper {
     width: 100%;
   }
 }
-
 
 .is-sticky {
   .o-sidebar-submenu {
@@ -39,7 +36,6 @@ body {
   }
 }
 
-
 .o-sidebar-submenu {
   transform: translate3d(-200%, 0, 0);
   border-right: 1px solid $grey03;
@@ -58,7 +54,6 @@ body {
     min-width: $submenu-width;
     min-height: 100vh;
     @include position(absolute, 0 null null -24px);
-
   }
 
   .submenu-content {
@@ -116,7 +111,7 @@ body {
     white-space: nowrap;
 
     &:before {
-      content: '';
+      content: "";
       @include size(55px);
       display: inline-block;
       vertical-align: middle;
@@ -137,12 +132,13 @@ body {
       position: relative;
       z-index: 1;
       transition: all 1s;
-      &:hover, &.active {
+      &:hover,
+      &.active {
         color: $blue;
       }
 
       &:after {
-        content: '.';
+        content: ".";
         transition: all 0.5s;
         display: block;
         @include position(absolute, 0);
@@ -155,7 +151,8 @@ body {
         z-index: -1;
       }
 
-      &:hover:after, &.active:after {
+      &:hover:after,
+      &.active:after {
         opacity: 1;
         visibility: visible;
         width: 100%;
@@ -189,23 +186,23 @@ body {
 }
 
 .content {
-	position: relative;
-	left: 0;
-	z-index: 99;
-	height: 100%;
-	-webkit-transition: -webkit-transform 0.5s;
-	transition: transform 0.5s;
+  position: relative;
+  left: 0;
+  z-index: 99;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
 }
 
-.main-content.menu-open .o-sidebar-submenu.active  {
-	visibility: visible;
-	transition: transform 0.5s;
-	transform: translate3d(0, 0, 0);
+.main-content.menu-open .o-sidebar-submenu.active {
+  visibility: visible;
+  transition: transform 0.5s;
+  transform: translate3d(0, 0, 0);
   z-index: 999 !important;
 }
 .main-content.menu-open .main-content-wrapper .content {
   transform: translate3d(400px, 0, 0);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   @include media($tablet) {
     padding-right: 500px;
   }

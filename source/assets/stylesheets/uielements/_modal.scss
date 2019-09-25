@@ -5,9 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  content: '';
+  content: "";
   opacity: 0;
-  background-color: rgba(74,74,74,0.15);
+  background-color: rgba(74, 74, 74, 0.15);
   transition: opacity 200ms, z-index 0s 200ms, visibility 0s 200ms;
   visibility: visible;
   outline: none;
@@ -124,7 +124,7 @@
   border: none;
   padding: 0.25rem 0.25rem 0.125rem;
 
-  .icon-ic-close{
+  .icon-ic-close {
     color: $grey01;
     transition: $transition-slow;
 

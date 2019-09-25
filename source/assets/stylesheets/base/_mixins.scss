@@ -8,7 +8,7 @@
   }
 }
 
-@mixin offset-margin($margin, $value){
+@mixin offset-margin($margin, $value) {
   margin-#{$margin}: $value;
 }
 
@@ -39,7 +39,7 @@
   -moz-osx-font-smoothing: grayscale;
   font-size: #{$size}px;
   font-size: calculateRem($size);
-  line-height: calculateLH($size,$lHeight);
+  line-height: calculateLH($size, $lHeight);
   font-family: $family;
   color: $color;
 }
@@ -53,20 +53,20 @@
 //
 // @include icon(12, 10, 'icon-burguer.png');
 // @include icon(12, 10, 'icon-burguer.png', 1, .5);
-@mixin icon($width, $height, $img, $opacity: null, $opacity-hover: '') {
-  content: '';
+@mixin icon($width, $height, $img, $opacity: null, $opacity-hover: "") {
+  content: "";
   display: inline-block;
   text-align: left;
   text-indent: -999em;
   overflow: hidden;
   width: #{$width}px;
   height: #{$height}px;
-  background: url('../images/#{$img}') no-repeat center center transparent;
+  background: url("../images/#{$img}") no-repeat center center transparent;
   background-size: 100%;
   transition: $transition-slow;
   opacity: $opacity;
 
-  @if $opacity-hover != '' {
+  @if $opacity-hover != "" {
     &:hover,
     &:focus,
     &:active {
@@ -83,20 +83,19 @@
 //
 // @include arrow(5, 'right', $cl-white);
 @mixin arrow($size, $side, $color) {
-
   $direction: 45;
 
-  @if $side == 'top' {
-    $direction: '-45';
-  } @else if $side == 'bottom' {
-    $direction: '135';
-  } @else if $side == 'left' {
-    $direction: '-135';
-  } @else if $side == 'right' {
-    $direction: '45';
+  @if $side == "top" {
+    $direction: "-45";
+  } @else if $side == "bottom" {
+    $direction: "135";
+  } @else if $side == "left" {
+    $direction: "-135";
+  } @else if $side == "right" {
+    $direction: "45";
   }
 
-  content: '';
+  content: "";
   display: inline-block;
   width: #{$size}px;
   height: #{$size}px;
@@ -106,7 +105,6 @@
   transform: rotate(#{$direction}deg);
   position: relative;
 }
-
 
 // ANIMATIONS
 // loads and setup an animation from '_animate.scss'
@@ -126,7 +124,7 @@
   padding-left: 20px;
 
   @each $name, $size in $sizes {
-    @media (min-width: map-get($breakpoints, $name)){
+    @media (min-width: map-get($breakpoints, $name)) {
       padding-right: map-get($sizes, $name);
       padding-left: map-get($sizes, $name);
     }
@@ -143,7 +141,6 @@
   }
 }
 
-
 // LINK ISOLATED
 @mixin link-isolated($color) {
   @include text-style(16, 22, ssp-semibold, $color);
@@ -155,7 +152,7 @@
   }
 
   &::before {
-    @include arrow(4, 'right', $color);
+    @include arrow(4, "right", $color);
     top: -1px;
     left: calc(100% + 3px);
   }
@@ -166,8 +163,8 @@
     width: 0;
     height: 1px;
     display: block;
-    content: '';
-    transition: width .3s;
+    content: "";
+    transition: width 0.3s;
     background: $color;
   }
 
@@ -190,7 +187,16 @@
 }
 
 // CHECKBOX CUSTOM BUTTON
-@mixin input-custom($border, $inputHeight, $inputWidth, $inputBorderWidth, $inputActiveScale, $inputColor, $bgColor, $position) {
+@mixin input-custom(
+  $border,
+  $inputHeight,
+  $inputWidth,
+  $inputBorderWidth,
+  $inputActiveScale,
+  $inputColor,
+  $bgColor,
+  $position
+) {
   input[type="radio"],
   input[type="checkbox"] {
     @include vh();
@@ -249,7 +255,7 @@
       &:after {
         box-sizing: content-box;
         position: absolute;
-        content: '';
+        content: "";
         display: block;
         left: 0;
         top: 0;
@@ -263,11 +269,10 @@
         background: $bgColor;
         border-radius: 2px;
         transition: $transition-slow;
-
       }
 
       &:after {
-        top:0;
+        top: 0;
         background-color: $inputColor;
         left: $inputBorderWidth + $inputActiveScale/2 - 1;
         width: $inputWidth - $inputActiveScale + 2;
@@ -300,7 +305,7 @@
     }
   }
 
-  @if $position == 'right' {
+  @if $position == "right" {
     input[type="radio"] {
       + label {
         padding-left: 0;
@@ -332,7 +337,8 @@
 
       &:after {
         background-color: transparent;
-        top: 4px; left: 3px;
+        top: 4px;
+        left: 3px;
         width: 10px;
         height: 5px;
         margin-top: 0;
@@ -357,17 +363,17 @@
         &:before {
           border-color: $grey02;
           background: transparent;
+        }
       }
     }
-  }
-  &:focus {
-    + label {
-      &:before {
-        border-color: $green;
-        background: transparent;
+    &:focus {
+      + label {
+        &:before {
+          border-color: $green;
+          background: transparent;
+        }
+      }
     }
-  }
-}
 
     &:checked {
       &.multiple {
@@ -375,7 +381,8 @@
           &:after {
             transform: rotate(90deg) scale(1);
             transition: transform 200ms ease-out;
-            top: 3px; left: 8px;
+            top: 3px;
+            left: 8px;
             height: 10px;
             width: 0;
           }
@@ -387,7 +394,7 @@
           background-color: $green;
         }
         &:after {
-          content: ''; //\2713';
+          content: ""; //\2713';
           transform: rotate(-45deg) scale(1);
           transition: transform 200ms ease-out;
         }
@@ -395,7 +402,6 @@
     }
   }
 }
-
 
 // PADDINGS FOR LAYOUT MODULES
 @mixin pd-def {
@@ -437,52 +443,60 @@
 }
 
 @mixin layout-paddings($sizes) {
-  @if $sizes == 'def' {
+  @if $sizes == "def" {
     @include pd-def;
     @include pd-small;
     @include pd-medium;
     @include pd-large;
     @include pd-ultra;
-  } @if $sizes == 'small' {
+  }
+  @if $sizes == "small" {
     @include pd-small;
     @include pd-medium;
     @include pd-large;
     @include pd-ultra;
-  } @if $sizes == 'medium' {
+  }
+  @if $sizes == "medium" {
     @include pd-medium;
     @include pd-large;
     @include pd-ultra;
-  } @if $sizes == 'large' {
+  }
+  @if $sizes == "large" {
     @include pd-large;
     @include pd-ultra;
-  } @if $sizes == 'ultra' {
+  }
+  @if $sizes == "ultra" {
     @include pd-ultra;
   }
 }
 
 @mixin layout-paddings-4col($sizes) {
-  @if $sizes == 'def' {
+  @if $sizes == "def" {
     @include pd-def;
     @include pd-small;
 
     @media (min-width: $mq-medium) {
       @include pd-4col;
     }
-  } @if $sizes == 'small' {
+  }
+  @if $sizes == "small" {
     @include pd-small;
 
     @media (min-width: $mq-medium) {
       @include pd-4col;
     }
-  } @if $sizes == 'medium' {
+  }
+  @if $sizes == "medium" {
     @media (min-width: $mq-medium) {
       @include pd-4col;
     }
-  } @if $sizes == 'large' {
+  }
+  @if $sizes == "large" {
     @media (min-width: $mq-large) {
       @include pd-4col;
     }
-  } @if $sizes == 'ultra' {
+  }
+  @if $sizes == "ultra" {
     @media (min-width: $mq-ultra) {
       @include pd-4col;
     }
@@ -496,7 +510,7 @@
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       width: #{$size}px;
       height: #{$size}px;
       border-radius: 50%;
@@ -528,22 +542,17 @@
 /// @param {Number} $triangle-size - Width of the triangle.
 /// @param {Color} $triangle-color - Color of the triangle.
 /// @param {Keyword} $triangle-direction - Direction the triangle points. Can be `up`, `right`, `down`, or `left`.
-@mixin css-triangle(
-  $triangle-color,
-  $triangle-direction
-) {
+@mixin css-triangle($triangle-color, $triangle-direction) {
   display: block;
 
   @include size(10px);
   z-index: -100;
   display: block;
   background: #fff;
-  transform:
-    translateX(-50%)
-    rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
   box-shadow: $tooltip-shadow;
 
-  content: '';
+  content: "";
 
   @if ($triangle-direction == down) {
     @include position(absolute, null null -4px 50%);
@@ -555,14 +564,12 @@
   }
   @if ($triangle-direction == right) {
     @include position(absolute, 50% -4px null null);
-    transform:  translateY(-50%)
-                rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
     background: $triangle-color;
   }
   @if ($triangle-direction == left) {
     @include position(absolute, 50% null null -4px);
-    transform:  translateY(-50%)
-                rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
     background: $triangle-color;
   }
 }

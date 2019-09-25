@@ -39,7 +39,6 @@
     }
 
     .header {
-
       @include media($large-desktop) {
         min-width: 500px;
         padding-right: 50px;
@@ -77,8 +76,8 @@
     }
 
     .title {
-    margin: 0 0 15px;
-      }
+      margin: 0 0 15px;
+    }
 
     .text {
       margin-top: 25px;
@@ -89,7 +88,6 @@
       @include media($mobile) {
         margin-top: 36px;
       }
-
     }
   }
 

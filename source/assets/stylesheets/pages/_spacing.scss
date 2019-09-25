@@ -5,13 +5,11 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 5px;
-    > p:last-child{
+    > p:last-child {
       flex: 0 0 30%;
     }
-
   }
   &__content {
-
   }
   &__item {
     border-bottom: 1px solid #e9eae8;
@@ -29,11 +27,11 @@
       & > div {
         background: $blue;
       }
-        @for $i from 1 through 66 {
-          $size: $i * 3 / 3;
-          .example-#{$i} {
-            height: $size + px;
-            width: $size + px;
+      @for $i from 1 through 66 {
+        $size: $i * 3 / 3;
+        .example-#{$i} {
+          height: $size + px;
+          width: $size + px;
         }
       }
     }

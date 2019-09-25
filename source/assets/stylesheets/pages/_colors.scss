@@ -1,127 +1,121 @@
 $colorPalette: (
   black: #000,
   grey: #333333,
-  grey00: #F2F2F3,
-  grey01: #E9EAE8,
-  grey02: #D3D4D3,
-  grey03: #B6B7B7,
-  grey04: #9D9D9E,
-  grey05: #86888C,
+  grey00: #f2f2f3,
+  grey01: #e9eae8,
+  grey02: #d3d4d3,
+  grey03: #b6b7b7,
+  grey04: #9d9d9e,
+  grey05: #86888c,
   grey06: #606060,
-  grey07: #4A4A4A,
+  grey07: #4a4a4a,
   grey08: #333333,
   grey09: #606060,
-  grey10: #F2F2F3,
-  grey11: #DFE0E1,
-  grey12: #F4F4F4,
-  green00: #D1EDE9,
-  green01: #A3DCD3,
-  green02: #75CBBD,
-  green03: #47BAA7,
-  green04: #1AA992,
+  grey10: #f2f2f3,
+  grey11: #dfe0e1,
+  grey12: #f4f4f4,
+  green00: #d1ede9,
+  green01: #a3dcd3,
+  green02: #75cbbd,
+  green03: #47baa7,
+  green04: #1aa992,
   green05: #148774,
-  green06: #0F6557,
-  green07: #0A433A,
-  green08: #05211D,
-  green09: #00CCAA,
-  blue00: #CCEEFB,
-  blue01: #99DDF8,
-  blue02: #66CCF4,
-  blue03: #33BBF1,
-  blue04: #00AAEE,
-  blue05: #0088BE,
-  blue06: #00668E,
-  blue07: #00445F,
-  blue08: #00222F,
-  yellow00: #FFFCCC,
-  yellow01: #FFF999,
-  yellow02: #FFF666,
-  yellow03: #FFF333,
-  yellow04: #FFF000,
-  yellow05: #CCC000,
+  green06: #0f6557,
+  green07: #0a433a,
+  green08: #05211d,
+  green09: #00ccaa,
+  blue00: #cceefb,
+  blue01: #99ddf8,
+  blue02: #66ccf4,
+  blue03: #33bbf1,
+  blue04: #00aaee,
+  blue05: #0088be,
+  blue06: #00668e,
+  blue07: #00445f,
+  blue08: #00222f,
+  yellow00: #fffccc,
+  yellow01: #fff999,
+  yellow02: #fff666,
+  yellow03: #fff333,
+  yellow04: #fff000,
+  yellow05: #ccc000,
   yellow06: #999000,
   yellow07: #666000,
   yellow08: #333000,
-  orange00: #FFE4CC,
-  orange01: #FFC999,
-  orange02: #FFAF66,
-  orange03: #FF9433,
-  orange04: #FF7A00,
-  orange05: #CC6100,
+  orange00: #ffe4cc,
+  orange01: #ffc999,
+  orange02: #ffaf66,
+  orange03: #ff9433,
+  orange04: #ff7a00,
+  orange05: #cc6100,
   orange06: #994900,
   orange07: #663000,
   orange08: #331800,
-  pink00: #FFCCEA,
-  pink01: #FF99D6,
-  pink02: #FF66C1,
-  pink03: #FF33AD,
-  pink04: #FF0099,
-  pink05: #CC007A,
-  pink06: #99005B,
-  pink07: #66003D,
-  pink08: #33001E,
-  red: #F80000,
-  viz01_1: #FF7A00,
-  viz01_2: #FF0099,
-  viz01_3: #FFF000,
-  viz01_4: #F80000,
-  viz01_5: #00CCAA,
-  viz02_1: #0066DD,
+  pink00: #ffccea,
+  pink01: #ff99d6,
+  pink02: #ff66c1,
+  pink03: #ff33ad,
+  pink04: #ff0099,
+  pink05: #cc007a,
+  pink06: #99005b,
+  pink07: #66003d,
+  pink08: #33001e,
+  red: #f80000,
+  viz01_1: #ff7a00,
+  viz01_2: #ff0099,
+  viz01_3: #fff000,
+  viz01_4: #f80000,
+  viz01_5: #00ccaa,
+  viz02_1: #0066dd,
   viz02_2: #393999,
-  viz02_3: #8600DD,
-  viz02_4: #FF72FF,
-  viz02_5: #60CCCC,
-
-  varient1_1: #CCE0F8,
-  varient1_2: #99C1F1,
-  varient1_3: #66A3EA,
-  varient1_4: #3384E3,
-  varient1_5: #0066DD,
-  varient1_6: #0051B0,
-  varient1_7: #003D84,
+  viz02_3: #8600dd,
+  viz02_4: #ff72ff,
+  viz02_5: #60cccc,
+  varient1_1: #cce0f8,
+  varient1_2: #99c1f1,
+  varient1_3: #66a3ea,
+  varient1_4: #3384e3,
+  varient1_5: #0066dd,
+  varient1_6: #0051b0,
+  varient1_7: #003d84,
   varient1_8: #002858,
-  varient1_9: #011B40,
-
-  varient2_1: #D7D7EA,
-  varient2_2: #AFAFD6,
-  varient2_3: #8888C1,
-  varient2_4: #6060AD,
+  varient1_9: #011b40,
+  varient2_1: #d7d7ea,
+  varient2_2: #afafd6,
+  varient2_3: #8888c1,
+  varient2_4: #6060ad,
   varient2_5: #393999,
-  varient2_6: #2D2D7A,
-  varient2_7: #22225B,
-  varient2_8: #16163D,
-  varient2_9: #0D0C2B,
-
-  varient3_1: #E6CCF8,
-  varient3_2: #CE99F1,
-  varient3_3: #B666EA,
-  varient3_4: #9E33E3,
-  varient3_5: #8600DD,
-  varient3_6: #6B00B0,
+  varient2_6: #2d2d7a,
+  varient2_7: #22225b,
+  varient2_8: #16163d,
+  varient2_9: #0d0c2b,
+  varient3_1: #e6ccf8,
+  varient3_2: #ce99f1,
+  varient3_3: #b666ea,
+  varient3_4: #9e33e3,
+  varient3_5: #8600dd,
+  varient3_6: #6b00b0,
   varient3_7: #500084,
   varient3_8: #350058,
   varient3_9: #240040,
-
-  varient4_1: #FFE2FF,
-  varient4_2: #FFC6FF,
-  varient4_3: #FFAAFF,
-  varient4_4: #FF8EFF,
-  varient4_5: #FF72FF,
-  varient4_6: #CC5BCC,
+  varient4_1: #ffe2ff,
+  varient4_2: #ffc6ff,
+  varient4_3: #ffaaff,
+  varient4_4: #ff8eff,
+  varient4_5: #ff72ff,
+  varient4_6: #cc5bcc,
   varient4_7: #994499,
-  varient4_8: #662D66,
-  varient4_9: #4D1D4D,
-
-  varient5_1: #DFF4F4,
-  varient5_2: #BFEAEA,
-  varient5_3: #9FE0E0,
-  varient5_4: #7FD6D6,
-  varient5_5: #60CCCC,
-  varient5_6: #4CA3A3,
-  varient5_7: #397A7A,
+  varient4_8: #662d66,
+  varient4_9: #4d1d4d,
+  varient5_1: #dff4f4,
+  varient5_2: #bfeaea,
+  varient5_3: #9fe0e0,
+  varient5_4: #7fd6d6,
+  varient5_5: #60cccc,
+  varient5_6: #4ca3a3,
+  varient5_7: #397a7a,
   varient5_8: #265151,
-  varient5_9: #1A393B,
-
+  varient5_9: #1a393b
 );
 
 .p-colors {
@@ -137,7 +131,6 @@ $colorPalette: (
         border-radius: 0;
         @include media($mobile) {
           border-radius: 50%;
-
         }
       }
 
@@ -181,7 +174,8 @@ $colorPalette: (
               }
             }
           }
-          &.#{$color}[class*="04"], &.#{$color}[class*="_5"], {
+          &.#{$color}[class*="04"],
+          &.#{$color}[class*="_5"] {
             border-radius: 0;
             @include media($mobile) {
               border-radius: 50%;
@@ -193,15 +187,15 @@ $colorPalette: (
               font-family: Telefonicabold;
 
               span {
-                @include position (absolute, -20px null null -260px);
+                @include position(absolute, -20px null null -260px);
                 @include media($mobile) {
-                  @include position (absolute, -19px null null -319px);
+                  @include position(absolute, -19px null null -319px);
                 }
               }
 
               &:before {
-                content: '#{$value}';
-                @include position (absolute, -15px null null 0);
+                content: "#{$value}";
+                @include position(absolute, -15px null null 0);
                 margin-top: -4px;
                 left: 50%;
                 transform: translateX(-50%);
@@ -222,9 +216,9 @@ $colorPalette: (
       .container-flex {
         .swatches {
           .color-swatch {
-            @include size (119px);
+            @include size(119px);
             @include media($mobile) {
-              @include size (75px);
+              @include size(75px);
             }
           }
         }
@@ -240,7 +234,8 @@ $colorPalette: (
       font-size: rem-calc(13);
       @extend %txt-note;
 
-      span {}
+      span {
+      }
     }
   }
 
@@ -266,7 +261,7 @@ $colorPalette: (
     }
   }
 
-  .color-swatch:nth-child(n+7) {
+  .color-swatch:nth-child(n + 7) {
     color: #fff;
   }
 
@@ -290,7 +285,7 @@ $colorPalette: (
         color: map-get($colorPalette, $color);
 
         + .item {
-          content: '#{$value}';
+          content: "#{$value}";
 
           span {
             position: relative;
@@ -326,9 +321,9 @@ $colorPalette: (
     }
 
     .item-color,
-      h4 {
-        display: none;
-      }
+    h4 {
+      display: none;
+    }
 
     .color-swatch + .item {
       &:before {
@@ -340,7 +335,7 @@ $colorPalette: (
       + .item {
         .percentage {
           &:after {
-            content: 'Light and dark percentage';
+            content: "Light and dark percentage";
             @include position(relative, 1px -92px null null);
 
             font-family: Telefonicaregular;
@@ -351,12 +346,11 @@ $colorPalette: (
           }
           &:before {
             display: inline-block;
-            content: '';
-            border-top: 0.1rem solid #DFDFDF;
+            content: "";
+            border-top: 0.1rem solid #dfdfdf;
             width: 3rem;
             @include position(absolute, 8px null null null);
-            transform: rotate(0)
-                       translate(55px, 50%)
+            transform: rotate(0) translate(55px, 50%);
           }
         }
       }
@@ -365,7 +359,7 @@ $colorPalette: (
     .green04 {
       border-radius: 50px;
       &:after {
-        content: 'Primary';
+        content: "Primary";
         font-family: Telefonicaregular;
         font-size: rem-calc(12);
         color: $grey06;
@@ -375,18 +369,17 @@ $colorPalette: (
       &:before {
         display: inline-block;
         content: "";
-        border-top: 0.1rem solid #DFDFDF;
+        border-top: 0.1rem solid #dfdfdf;
         width: 3rem;
         margin: 30px 15px;
-        transform: rotate(90deg)
-                   translate(-130%, 50%)
+        transform: rotate(90deg) translate(-130%, 50%);
       }
     }
 
     .blue06 {
       border-radius: 50px;
       &:after {
-        content: 'Variant';
+        content: "Variant";
         font-family: Telefonicaregular;
         font-size: rem-calc(12);
         color: $grey06;
@@ -396,11 +389,10 @@ $colorPalette: (
       &:before {
         display: inline-block;
         content: "";
-        border-top: 0.1rem solid #DFDFDF;
+        border-top: 0.1rem solid #dfdfdf;
         width: 3rem;
         margin: 30px 15px;
-        transform: rotate(90deg)
-                   translate(165%, 50%)
+        transform: rotate(90deg) translate(165%, 50%);
       }
     }
   }

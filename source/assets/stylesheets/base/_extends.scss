@@ -4,7 +4,7 @@
 
 %clearfix {
   &:after {
-    content: '';
+    content: "";
     display: table;
     clear: both;
   }
@@ -28,11 +28,13 @@
   border: 1px solid transparent;
 
   &:before {
-    content: '';
+    content: "";
     display: block;
     height: 1px;
     position: absolute;
-    top: 100%; left: 0; right: 100%;
+    top: 100%;
+    left: 0;
+    right: 100%;
     background: $grey;
     transition: right 0.3s ease;
   }
@@ -173,7 +175,6 @@
   }
 }
 
-
 %txt-text-positive-bold {
   @include text-style(18, 24, Telefonicabold, $grey05);
 
@@ -221,7 +222,6 @@
     @include text-style(12, 19, Telefonicaregular, $grey);
   }
 }
-
 
 %txt-text-negative {
   @include text-style(18, 24, Telefonicaregular, $blue);

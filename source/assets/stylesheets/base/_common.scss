@@ -55,7 +55,7 @@ ul {
       flex: 0 0 48%;
       margin-bottom: 40px;
 
-      &:nth-child(2n+2) {
+      &:nth-child(2n + 2) {
         margin-left: 30px;
       }
     }
@@ -115,10 +115,10 @@ ul {
 }
 //refactor to-do
 .graph-wrapper {
-  border: 1px solid #DFDFDF;
+  border: 1px solid #dfdfdf;
   padding: 0;
   display: inline-block;
-  box-shadow: 0 0 4px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
   @include media($mobile) {
     width: auto;
@@ -140,22 +140,21 @@ ul {
   font-family: Telefonicaregular;
 }
 
-
 // Examples
 .two--col-bg {
-  background: url('../images/uicomponents/2-col-bg.svg') repeat-y;
+  background: url("../images/uicomponents/2-col-bg.svg") repeat-y;
 }
 
 .four--col-bg {
-  background: url('../images/uicomponents/4-col-bg.svg') repeat-y;
+  background: url("../images/uicomponents/4-col-bg.svg") repeat-y;
 }
 
 .six--col-bg {
-  background: url('../images/uicomponents/6-col-bg.svg') repeat-y;
+  background: url("../images/uicomponents/6-col-bg.svg") repeat-y;
 }
 
 .eight--col-bg {
-  background: url('../images/uicomponents/8-col-bg.svg') repeat-y;
+  background: url("../images/uicomponents/8-col-bg.svg") repeat-y;
 }
 
 .examples-layout {
@@ -195,7 +194,6 @@ ul {
       width: 100%;
       @include media($mobile) {
         width: 935px;
-
       }
     }
 
@@ -256,7 +254,8 @@ ul {
     margin-bottom: 10px;
   }
 
-  &.pills {}
+  &.pills {
+  }
 }
 
 .module-anatomy {
@@ -276,7 +275,7 @@ ul {
   > div {
     &:after,
     &:before {
-      font-family: 'luca-icon';
+      font-family: "luca-icon";
       font-size: 14px;
       color: $grey;
     }
@@ -289,7 +288,8 @@ ul {
     &:hover {
       color: $blue;
     }
-    &:before, &:after {
+    &:before,
+    &:after {
       margin-top: 4px;
     }
   }

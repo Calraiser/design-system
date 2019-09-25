@@ -1,50 +1,49 @@
 $white: #fff;
 $black: #000;
 
-$grey: #4A4A4A;
+$grey: #4a4a4a;
 $grey01: #999;
-$grey02: #D8D8D8;
-$grey03: #F2F2F2;
+$grey02: #d8d8d8;
+$grey03: #f2f2f2;
 
 $grey04: #676767;
-$grey05: #4A4A4A;
+$grey05: #4a4a4a;
 
-$grey06: #9B9B9B;
+$grey06: #9b9b9b;
 
 $grey07: #ccc;
 
-$grey08: #50535A;
+$grey08: #50535a;
 
 $tags: #004466;
 $tags-hover: #006699;
 
-$blue: #00AAEE;
-$light-blue: #DFF5F5;
-$green: #00CCAA;
-$yellow: #FFF000;
-$orange: #FF7A00;
-$pink: #FF0099;
-$red: #F80000;
-$purple: #854D9F;
-$pink01: #FF77FF;
+$blue: #00aaee;
+$light-blue: #dff5f5;
+$green: #00ccaa;
+$yellow: #fff000;
+$orange: #ff7a00;
+$pink: #ff0099;
+$red: #f80000;
+$purple: #854d9f;
+$pink01: #ff77ff;
 
 $body-color: $white;
 $primary-color: $blue;
 $secondary-color: $green;
 
 $baseColors: (
-  grey: #4A4A4A,
+  grey: #4a4a4a,
   grey01: #999,
-  grey02: #D8D8D8,
-  grey03: #F2F2F2,
+  grey02: #d8d8d8,
+  grey03: #f2f2f2,
   grey04: #676767,
-  blue: #00AAEE,
-  light-blue: #DFF5F5,
-  green: #00EEAA,
-  pink01: #FF77FF,
-  yellow: #FFF000,
-  orange: #FF7A00
-
+  blue: #00aaee,
+  light-blue: #dff5f5,
+  green: #00eeaa,
+  pink01: #ff77ff,
+  yellow: #fff000,
+  orange: #ff7a00
 );
 
 // @function colorMap($baseColors, $variations) {
@@ -55,7 +54,7 @@ $baseColors: (
 //     $mid: $variations / 2;
 //     $dist: $mid - 1;
 //     $step: $maxVar / $dist;
-// 
+//
 //     // lighten and darken
 //     @for $i from 1 through $dist {
 //       $percent: $maxVar - ($step * ($i - 1));

@@ -7,45 +7,45 @@
  */
 
 @each $spacer-key, $spacer-value in $spacers {
-	@if $spacer-key != 'auto' {
-		.u-p-#{$spacer-key} {
-			padding-top: $spacer-value;
-			padding-right: 0;
-			padding-bottom: $spacer-value;
-			padding-left: 0;
-			@include media($mobile) {
-				padding-right: $spacer-value;
-				padding-left: $spacer-value;
-			}
-		}
-	}
+  @if $spacer-key != "auto" {
+    .u-p-#{$spacer-key} {
+      padding-top: $spacer-value;
+      padding-right: 0;
+      padding-bottom: $spacer-value;
+      padding-left: 0;
+      @include media($mobile) {
+        padding-right: $spacer-value;
+        padding-left: $spacer-value;
+      }
+    }
+  }
 
-	@each $spacing-side-key, $spacing-side-value in $spacing-sides {
-		@if $spacer-key != 'auto' {
-			@if $spacing-side-key == 'horizontal' {
-				.u-p#{$spacing-side-value}-#{$spacer-key} {
-					padding-right: $spacer-value;
-					padding-left: $spacer-value;
-				}
-			} @else if $spacing-side-key == 'vertical' {
-				.u-p#{$spacing-side-value}-#{$spacer-key} {
-					padding-top: $spacer-value/3;
-					padding-bottom: $spacer-value/3;
-					@include media($mobile) {
-						padding-top: $spacer-value;
-						padding-bottom: $spacer-value;
-					}
-				}
-			} @else {
-				.u-p#{$spacing-side-value}-#{$spacer-key} {
-					padding-#{$spacing-side-key}: $spacer-value/2;
-					@include media($mobile) {
-						padding-#{$spacing-side-key}: $spacer-value;
-					}
-				}
-			}
-		}
-	}
+  @each $spacing-side-key, $spacing-side-value in $spacing-sides {
+    @if $spacer-key != "auto" {
+      @if $spacing-side-key == "horizontal" {
+        .u-p#{$spacing-side-value}-#{$spacer-key} {
+          padding-right: $spacer-value;
+          padding-left: $spacer-value;
+        }
+      } @else if $spacing-side-key == "vertical" {
+        .u-p#{$spacing-side-value}-#{$spacer-key} {
+          padding-top: $spacer-value/3;
+          padding-bottom: $spacer-value/3;
+          @include media($mobile) {
+            padding-top: $spacer-value;
+            padding-bottom: $spacer-value;
+          }
+        }
+      } @else {
+        .u-p#{$spacing-side-value}-#{$spacer-key} {
+          padding-#{$spacing-side-key}: $spacer-value/2;
+          @include media($mobile) {
+            padding-#{$spacing-side-key}: $spacer-value;
+          }
+        }
+      }
+    }
+  }
 }
 
 /**
@@ -53,12 +53,12 @@
  */
 
 @each $spacing-side-key, $spacing-side-value in $spacing-sides {
-	@each $spacer-key, $spacer-value in $spacers {
-		@if $spacing-side-key == 'horizontal' {
-			.u-m#{$spacing-side-value}-#{$spacer-key} {
-				margin-right: $spacer-value;
-				margin-left: $spacer-value;
-			}
-		}
-	}
+  @each $spacer-key, $spacer-value in $spacers {
+    @if $spacing-side-key == "horizontal" {
+      .u-m#{$spacing-side-value}-#{$spacer-key} {
+        margin-right: $spacer-value;
+        margin-left: $spacer-value;
+      }
+    }
+  }
 }

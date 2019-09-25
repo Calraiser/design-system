@@ -10,12 +10,10 @@
  */
 
 @each $color-key, $color-value in $baseColors {
-	.u-text-#{$color-key} {
-		color: $color-value;
-	}
+  .u-text-#{$color-key} {
+    color: $color-value;
+  }
 }
-
-
 
 /* Font weight
    ========================================================================== */
@@ -25,14 +23,12 @@
  */
 
 .u-font-normal {
-	font-weight: normal;
+  font-weight: normal;
 }
 
 .u-font-bold {
-	font-weight: bold;
+  font-weight: bold;
 }
-
-
 
 /* Text alignment
    ========================================================================== */
@@ -42,18 +38,16 @@
  */
 
 .u-text-left {
-	text-align: left;
+  text-align: left;
 }
 
 .u-text-center {
-	text-align: center;
+  text-align: center;
 }
 
 .u-text-right {
-	text-align: right;
+  text-align: right;
 }
-
-
 
 /* Style and decoration
    ========================================================================== */
@@ -63,13 +57,13 @@
  */
 
 .u-italic {
-	font-style: italic;
+  font-style: italic;
 }
 
 .u-roman {
-	font-style: normal;
+  font-style: normal;
 }
 
 .u-uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }

@@ -2,7 +2,6 @@
    TABS SECTION (uielements/_tabs_section.scss)
    ========================================================================== */
 
-
 /* Settings
  ========================================================================== */
 
@@ -19,7 +18,6 @@ $num-of-tabs: 5;
     }
   }
 }
-
 
 .lds-tab--section {
   width: 100%;
@@ -86,10 +84,7 @@ $num-of-tabs: 5;
   }
 }
 
-
-
 @media screen and (max-width: 800px) {
-
   .tab-wrap {
     width: 80%;
     margin-left: 10%;

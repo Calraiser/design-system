@@ -17,7 +17,7 @@
   }
   &__title {
     h2 {
-      @extend %txt-text-positive-bold ;
+      @extend %txt-text-positive-bold;
       padding: 7px 15px;
     }
   }
@@ -29,8 +29,8 @@
       max-height: 0;
     }
     &.default {
-      .lds-accordion__item{
-        &:nth-child(-n+2) {
+      .lds-accordion__item {
+        &:nth-child(-n + 2) {
           display: none;
         }
       }
@@ -96,7 +96,7 @@
   .module-header {
     cursor: pointer;
     padding: 11px 15px;
-    color: #4D4D4D;
+    color: #4d4d4d;
     font-size: 14px;
     font-weight: 700;
     border-top: 1px solid $grey02;
@@ -117,8 +117,6 @@
     }
   }
 }
-
-
 
 /**
  * Submenu

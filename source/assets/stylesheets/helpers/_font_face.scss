@@ -1,67 +1,76 @@
 @font-face {
-  font-family: 'Telefonicaextralight';
+  font-family: "Telefonicaextralight";
   font-weight: normal;
   font-style: normal;
-    src: url('/assets/fonts/telefonica-extralight.eot');
-    src: url('/assets/fonts/telefonica-extralight.eot?#iefix')                format('embedded-opentype'),
-         url('/assets/fonts/telefonica-extralight.woff')                      format('woff'),
-         url('/assets/fonts/telefonica-extralight.ttf')                       format('truetype'),
-         url('/assets/fonts/telefonica-extralight.svg#Telefonicaextralight')  format('svg');
+  src: url("/assets/fonts/telefonica-extralight.eot");
+  src: url("/assets/fonts/telefonica-extralight.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/telefonica-extralight.woff") format("woff"),
+    url("/assets/fonts/telefonica-extralight.ttf") format("truetype"),
+    url("/assets/fonts/telefonica-extralight.svg#Telefonicaextralight")
+      format("svg");
 }
 
 @font-face {
-  font-family: 'Telefonicalight';
+  font-family: "Telefonicalight";
   font-weight: normal;
   font-style: normal;
-    src: url('/assets/fonts/telefonica-light.eot');
-    src: url('/assets/fonts/telefonica-light.eot?#iefix')              format('embedded-opentype'),
-         url('/assets/fonts/telefonica-light.woff')                    format('woff'),
-         url('/assets/fonts/telefonica-light.ttf')                     format('truetype'),
-         url('/assets/fonts/telefonica-light.svg#Telefonicalight')     format('svg');
+  src: url("/assets/fonts/telefonica-light.eot");
+  src: url("/assets/fonts/telefonica-light.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/telefonica-light.woff") format("woff"),
+    url("/assets/fonts/telefonica-light.ttf") format("truetype"),
+    url("/assets/fonts/telefonica-light.svg#Telefonicalight") format("svg");
 }
 
 @font-face {
-  font-family: 'Telefonicaregular';
+  font-family: "Telefonicaregular";
   font-weight: normal;
   font-style: normal;
-    src: url('/assets/fonts/telefonica-regular.eot');
-    src: url('/assets/fonts/telefonica-regular.eot?#iefix')             format('embedded-opentype'),
-         url('/assets/fonts/telefonica-regular.woff')                   format('woff'),
-         url('/assets/fonts/telefonica-regular.ttf')                    format('truetype'),
-         url('/assets/fonts/telefonica-regular.svg#Telefonicaregular')  format('svg');
+  src: url("/assets/fonts/telefonica-regular.eot");
+  src: url("/assets/fonts/telefonica-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/telefonica-regular.woff") format("woff"),
+    url("/assets/fonts/telefonica-regular.ttf") format("truetype"),
+    url("/assets/fonts/telefonica-regular.svg#Telefonicaregular") format("svg");
 }
 
 @font-face {
-  font-family: 'Telefonicatextbold';
+  font-family: "Telefonicatextbold";
   font-weight: normal;
   font-style: normal;
-    src: url('/assets/fonts/telefonicatext-bold.eot');
-    src: url('/assets/fonts/telefonicatext-bold.eot?#iefix')              format('embedded-opentype'),
-         url('/assets/fonts/telefonicatext-bold.woff')                    format('woff'),
-         url('/assets/fonts/telefonicatext-bold.ttf')                     format('truetype'),
-         url('/assets/fonts/telefonicatext-bold.svg#Telefonicatextbold')  format('svg');
+  src: url("/assets/fonts/telefonicatext-bold.eot");
+  src: url("/assets/fonts/telefonicatext-bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/telefonicatext-bold.woff") format("woff"),
+    url("/assets/fonts/telefonicatext-bold.ttf") format("truetype"),
+    url("/assets/fonts/telefonicatext-bold.svg#Telefonicatextbold")
+      format("svg");
 }
 
 @font-face {
-  font-family: 'Telefonicatextregular';
+  font-family: "Telefonicatextregular";
   font-weight: normal;
   font-style: normal;
-    src: url('/assets/fonts/telefonicatext-regular.eot');
-    src: url('/assets/fonts/telefonicatext-regular.eot?#iefix')                 format('embedded-opentype'),
-         url('/assets/fonts/telefonicatext-regular.woff')                       format('woff'),
-         url('/assets/fonts/telefonicatext-regular.ttf')                        format('truetype'),
-         url('/assets/fonts/telefonicatext-regular.svg#Telefonicatextregular')  format('svg');
+  src: url("/assets/fonts/telefonicatext-regular.eot");
+  src: url("/assets/fonts/telefonicatext-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/telefonicatext-regular.woff") format("woff"),
+    url("/assets/fonts/telefonicatext-regular.ttf") format("truetype"),
+    url("/assets/fonts/telefonicatext-regular.svg#Telefonicatextregular")
+      format("svg");
 }
 
 @font-face {
-  font-family: 'Telefonicabold';
+  font-family: "Telefonicabold";
   font-weight: normal;
   font-style: normal;
-    src: url('/assets/fonts/telefonica-bold.eot');
-    src: url('/assets/fonts/telefonica-bold.eot?#iefix')          format('embedded-opentype'),
-         url('/assets/fonts/telefonica-bold.woff')                format('woff'),
-         url('/assets/fonts/telefonica-bold.ttf')                 format('truetype'),
-         url('/assets/fonts/telefonica-bold.svg#Telefonicabold')  format('svg');
+  src: url("/assets/fonts/telefonica-bold.eot");
+  src: url("/assets/fonts/telefonica-bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/assets/fonts/telefonica-bold.woff") format("woff"),
+    url("/assets/fonts/telefonica-bold.ttf") format("truetype"),
+    url("/assets/fonts/telefonica-bold.svg#Telefonicabold") format("svg");
 }
 
 /*
@@ -70,26 +79,26 @@
 
 @font-face {
   font-family: "luca-icon";
-  src: url('/assets/fonts/luca-icon.eot');
-  src: url('/assets/fonts/luca-icon.eot?#iefix') format("embedded-opentype"),
-       url('/assets/fonts/luca-icon.woff') format("woff"),
-       url('/assets/fonts/luca-icon.ttf') format("truetype"),
-       url('/assets/fonts/luca-icon.svg') format("svg");
+  src: url("/assets/fonts/luca-icon.eot");
+  src: url("/assets/fonts/luca-icon.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/luca-icon.woff") format("woff"),
+    url("/assets/fonts/luca-icon.ttf") format("truetype"),
+    url("/assets/fonts/luca-icon.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
   @font-face {
     font-family: "fontcustom";
-    src: url('/assets/fonts/luca-icon.svg') format("svg");
+    src: url("/assets/fonts/luca-icon.svg") format("svg");
   }
 }
 
-
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'luca-icon' !important;
+  font-family: "luca-icon" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;

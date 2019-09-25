@@ -1,7 +1,5 @@
 // @import '../node_modules/carbon-components/scss/components/date-picker/_date-picker';
 
-
-
 .example-calendar {
   position: relative;
 }
@@ -38,7 +36,6 @@
   margin: 0 10px;
 }
 
-
 .bx--date-picker__calendar.flatpickr-calendar.open {
   border-radius: 4px;
   box-shadow: 0 0 4px 0 $grey07;
@@ -55,23 +52,22 @@
 
 .bx--date-picker__day.today::after,
 .flatpickr-day.today::after {
-    content: '';
-    position: absolute;
-    display: block;
-    top: inherit;
-    left: inherit;
-    transform: translateX(0);
-    height: auto;
-    width: auto;
-    border-radius: 0;
-    background: #fff;
-  }
+  content: "";
+  position: absolute;
+  display: block;
+  top: inherit;
+  left: inherit;
+  transform: translateX(0);
+  height: auto;
+  width: auto;
+  border-radius: 0;
+  background: #fff;
+}
 
 .flatpickr-innerContainer,
 .flatpickr-rContainer {
   width: 100%;
   height: 100%;
-
 }
 .bx--date-picker__weekdays {
   background: #e5e5e5;
@@ -81,7 +77,6 @@
 .flatpickr-weekdays,
 .flatpickr-weekdaycontainer {
   width: 100%;
-
 }
 .bx--date-picker__days,
 .dayContainer {
@@ -105,14 +100,13 @@
   border-radius: 50%;
 
   &:hover:not(.inRange) {
-     border: solid 2px $green;
-     background: $white;
-     border-radius: 50%;
-     color: $green;
-     font-family: Telefonicabold;
+    border: solid 2px $green;
+    background: $white;
+    border-radius: 50%;
+    color: $green;
+    font-family: Telefonicabold;
   }
 }
-
 
 .bx--date-picker__month .flatpickr-current-month .cur-month,
 .bx--date-picker__month .numInputWrapper .numInput {
@@ -121,7 +115,6 @@
   color: $grey;
   text-transform: none;
 }
-
 
 .bx--date-picker__day.startRange,
 .flatpickr-day.starRange,
@@ -134,7 +127,7 @@
     border: 0;
     background-color: rgba(0, 204, 170, 0.2);
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       width: 32px;
       height: 32px;
@@ -165,7 +158,7 @@
 }
 .bx--date-picker__day.endRange.selected,
 .flatpickr-day.endRange.selected {
-    border-radius: 0 50% 50% 0;
+  border-radius: 0 50% 50% 0;
 }
 .bx--date-picker__day.startRange.selected,
 .bx--date-picker__day.endRange.selected,
@@ -178,7 +171,7 @@
   border: 0;
   background-color: rgba(0, 204, 170, 0.2);
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 32px;
     height: 32px;
@@ -186,21 +179,19 @@
     border: solid 2px $green;
     background-color: $green;
     border-radius: 50%;
-
   }
 }
 .bx--date-picker__day.inRange,
 .flatpickr-day.inRange {
-    background-color: rgba(0, 204, 170, 0.2);
-    box-shadow: none;
-    border-radius: 0;
+  background-color: rgba(0, 204, 170, 0.2);
+  box-shadow: none;
+  border-radius: 0;
 }
-
 
 .bx--date-picker__month .numInputWrapper span.arrowDown,
 .flatpickr-month .numInputWrapper span.arrowDown,
 .bx--date-picker__month .numInputWrapper span.arrowUp,
-.flatpickr-month .numInputWrapper span.arrowUp  {
+.flatpickr-month .numInputWrapper span.arrowUp {
   top: 50%;
   transform: translateY(-50%);
 }
@@ -223,7 +214,7 @@
     color: $grey07;
     transition: $transition-slow;
     &:after {
-      font-family: 'luca-icon';
+      font-family: "luca-icon";
       border: none;
     }
     &:hover:after {

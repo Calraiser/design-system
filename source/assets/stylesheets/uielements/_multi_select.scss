@@ -5,7 +5,7 @@
   border-radius: 3px;
   border: 1px solid $grey02;
   color: $grey;
-  background: url('../images/icons/arrow_drop_down.svg') no-repeat;
+  background: url("../images/icons/arrow_drop_down.svg") no-repeat;
   background-position: 94% 15px;
   font-size: 14px;
   font-family: Telefonicaregular;
@@ -16,13 +16,12 @@
     display: block;
   }
   &.open {
-    background: url('../images/icons/arrow_drop_up.svg') no-repeat;
+    background: url("../images/icons/arrow_drop_up.svg") no-repeat;
     background-position: 94% 15px;
     border-color: $grey01;
     .multi-menu {
-     display: block;
-
-   }
+      display: block;
+    }
   }
   .multi-menu {
     min-height: 120px;
@@ -41,7 +40,7 @@
         }
         .check-mark {
           &:before {
-            content: '\f1ca';
+            content: "\f1ca";
             font-family: fontcustom;
             color: $blue;
           }
@@ -56,25 +55,24 @@
         font-weight: 400;
         line-height: 1.42857143;
         color: $grey;
-        white-space: nowrap
+        white-space: nowrap;
       }
     }
   }
 }
 
-
 .multi-menu li a span.text {
   display: inline-block;
-  position: relative
+  position: relative;
 }
 
 .multi-menu li a span.check-mark {
-  display: none
+  display: none;
 }
 
 .multi-menu li.selected a span.check-mark {
   position: absolute;
   display: inline-block;
   right: 15px;
-  margin-top: 0
+  margin-top: 0;
 }

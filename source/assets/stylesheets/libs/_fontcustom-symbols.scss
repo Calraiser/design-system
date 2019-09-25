@@ -1,7 +1,11 @@
 //
 // Icon Font: luca-symbols
 //
-@include font-face(luca-symbols, "../fonts/fontcustom/luca-symbols", $file-formats: svg eot ttf woff);
+@include font-face(
+  luca-symbols,
+  "../fonts/fontcustom/luca-symbols",
+  $file-formats: svg eot ttf woff
+);
 %custom-icon,
 .s:after,
 .s-before:before {
@@ -19,11 +23,11 @@
   font-smoothing: antialiased;
 
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
 }
 
 .s-before:before {
@@ -31,7 +35,6 @@
 }
 
 // [data-icon]:after { content: attr(data-icon); }
-
 
 .s.s-ic-close:after {
   content: "\f100";
@@ -93,8 +96,6 @@
   content: "\f10e";
 }
 
-
-
 .s-before.s-ic-close:before {
   content: "\f100";
 }
@@ -155,14 +156,35 @@
   content: "\f10e";
 }
 
-
-.s-2x { font-size: 2em; }
-.s-3x { font-size: 3em; }
-.s-4x { font-size: 4em; }
-.s-5x { font-size: 5em; }
+.s-2x {
+  font-size: 2em;
+}
+.s-3x {
+  font-size: 3em;
+}
+.s-4x {
+  font-size: 4em;
+}
+.s-5x {
+  font-size: 5em;
+}
 
 $icons: (
-   ic-close: "\f100",  ic-components-xl: "\f101",  ic-downloads-xl: "\f102",  ic-downloads-xs: "\f103",  ic-graphics-vizrules-xs: "\f104",  ic-guidelines-blue-full: "\f105",  ic-guidelines-xl: "\f106",  ic-guidelines-xl-green: "\f107",  ic-guidelines-xs: "\f108",  ic-resources-downloads-xs-grey: "\f109",  ic-search: "\f10a",  ic-uielements-xs: "\f10b",  ic-viz-rules-xl: "\f10c",  logo-luca: "\f10d",  pattern: "\f10e", 
+  ic-close: "\f100",
+  ic-components-xl: "\f101",
+  ic-downloads-xl: "\f102",
+  ic-downloads-xs: "\f103",
+  ic-graphics-vizrules-xs: "\f104",
+  ic-guidelines-blue-full: "\f105",
+  ic-guidelines-xl: "\f106",
+  ic-guidelines-xl-green: "\f107",
+  ic-guidelines-xs: "\f108",
+  ic-resources-downloads-xs-grey: "\f109",
+  ic-search: "\f10a",
+  ic-uielements-xs: "\f10b",
+  ic-viz-rules-xl: "\f10c",
+  logo-luca: "\f10d",
+  pattern: "\f10e"
 );
 
 // Mixin for adding icons to element without need of adding classes

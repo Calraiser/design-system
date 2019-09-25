@@ -14,7 +14,7 @@
     color: $grey01;
     pointer-events: none;
   }
-  &[aria-disabled='true'] {
+  &[aria-disabled="true"] {
     color: $grey07;
     cursor: not-allowed;
     pointer-events: none;
@@ -26,8 +26,6 @@
   color: $blue;
 }
 
-
-
 .link-examples {
   .b-charts-type {
     margin-top: 0 !important;
@@ -36,7 +34,7 @@
     position: relative !important;
     transform: rotateY(0) !important;
     width: 300px !important;
-    background: $white !important
+    background: $white !important;
   }
   .lds-resources {
     border-bottom: none !important;

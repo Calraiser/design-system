@@ -2,12 +2,10 @@
    BUTTON DROPDOWN (uielements/_button_dropdown.scss)
    ========================================================================== */
 
-
 $background: #e74c3c;
 $select-background: #f3f3f3;
 $select-width: 220px;
 $select-height: 40px;
-
 
 .dropdown_btn {
   display: flex;
@@ -16,7 +14,7 @@ $select-height: 40px;
   border-radius: 42px;
   color: $blue;
   border: 2px solid $blue;
-  font-family: 'Telefonicabold';
+  font-family: "Telefonicabold";
   font-size: rem-calc(14);
   text-transform: uppercase;
   position: relative;
@@ -124,13 +122,14 @@ $select-height: 40px;
       right: 13px;
       padding-left: 9px;
       border-left: 2px solid $blue;
-      font-family: 'luca-icon';
+      font-family: "luca-icon";
       font-weight: bold;
       color: $blue;
       font-size: rem-calc(25);
     }
 
-    &:active, &.active {
+    &:active,
+    &.active {
       &:after {
         content: "\e90c";
       }

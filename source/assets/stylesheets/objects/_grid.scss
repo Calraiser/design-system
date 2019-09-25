@@ -69,14 +69,13 @@
 }
 
 .flex-block {
-  display: flex
+  display: flex;
 }
 .image-block {
   margin: 18px 0;
   display: block;
   @include media($mobile) {
     margin: 70px 0;
-
   }
   &.no-res {
     img {
@@ -102,7 +101,7 @@
   &.active {
     background-color: $grey03;
     position: fixed;
-    opacity: .8;
+    opacity: 0.8;
     top: 70px;
     left: 0;
     height: 100%;

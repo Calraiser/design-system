@@ -10,7 +10,7 @@
   li {
     display: inline-block;
     // not on the first one ;)
-    &:nth-child(n+2) {
+    &:nth-child(n + 2) {
       margin-left: rem-calc(30);
     }
   }
@@ -42,5 +42,4 @@
       }
     }
   }
-
 }

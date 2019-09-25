@@ -1,26 +1,24 @@
-
 //
 // Variables
 // -----------------------------------------
 
-$tooltip-bg:             #fff !default;
-$tooltip-bg-dark:        $grey05 !default;
-$tooltip-base-size:      10px !default;
-$tooltip-arrow-height:   10px;
-$tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
-
+$tooltip-bg: #fff !default;
+$tooltip-bg-dark: $grey05 !default;
+$tooltip-base-size: 10px !default;
+$tooltip-arrow-height: 10px;
+$tooltip-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 
 //
 // Mixins
 // -----------------------------------------
 
-  @mixin transform ($val) {
-     transform: $val;
-   }
+@mixin transform($val) {
+  transform: $val;
+}
 
-  @mixin transform-origin ($val) {
+@mixin transform-origin($val) {
   transform-origin: $val;
-  }
+}
 
 .tooltip {
   @include position(relative, 0 null null 0);
@@ -58,7 +56,6 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
         left: 50%;
         @include transform(translate(-50%, -12px));
       }
-
     }
   }
 }
@@ -112,7 +109,6 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
-
 .tooltip.right .arrow {
   top: 50%;
   right: 100%;
@@ -125,7 +121,6 @@ $tooltip-shadow:         0 1px 5px rgba(0, 0, 0, 0.2);
     border-width: 10px 10px 10px 0;
     @include transform(translate(2px, -50%));
   }
-
 }
 
 .tooltip.bottom .arrow {

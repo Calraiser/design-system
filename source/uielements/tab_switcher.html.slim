@@ -6,6 +6,9 @@ layout: content
 index: true
 ---
 
+
+= stylesheet_link_tag "luca_tab_switcher.css"
+
 .content
   h1.bx--type-h1 = current_page.data.page_title
   p.bx--type-p = current_page.data.description
@@ -51,5 +54,5 @@ index: true
       = partial :"components/_downloads", :locals => { :name => 'tabs_DS_LUCA', :sketch => true }
       = partial :"components/_downloads", :locals => { :name => 'tabs_DS_LUCA', :pdf => true }
 
-  /
-  / = javascript_include_tag "components.bundle"
+
+  = javascript_include_tag "luca_tab_switcher.bundle"

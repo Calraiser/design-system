@@ -16,7 +16,7 @@
     cursor: pointer;
     &:before {
       content: "\e907";
-      font-family: 'luca-icon';
+      font-family: "luca-icon";
       font-weight: bold;
       font-size: rem-calc(18);
       transition: $transition-slow;
@@ -26,7 +26,6 @@
       position: relative;
       top: 4px;
     }
-
   }
   &__content {
     margin-top: 20px;
@@ -34,7 +33,6 @@
     .col-xs-6 {
       padding-bottom: 20px;
     }
-
   }
   &__subtitle {
     @extend %txt-paragraph;
@@ -50,51 +48,47 @@
       padding: 12px;
       background-repeat: no-repeat;
       background-position: center;
-
     }
     &.Adobe {
       &:before {
-        background-image: url('../images/ic-doc-ai.svg');
+        background-image: url("../images/ic-doc-ai.svg");
         background-size: 19px auto;
       }
     }
     &.PDF {
       &:before {
-        background-image: url('../images/ic-doc-pdf.svg');
+        background-image: url("../images/ic-doc-pdf.svg");
         background-size: 19px auto;
       }
     }
     &.Font {
       &:before {
-        background-image: url('../images/ic-typo_02.svg');
+        background-image: url("../images/ic-typo_02.svg");
         background-size: 21px auto;
       }
     }
     &.sketch {
       &:before {
-        background-image: url('../images/ic-sketch_02.svg');
+        background-image: url("../images/ic-sketch_02.svg");
         background-size: 22px auto;
       }
     }
     &.ZIP {
       &:before {
-        background-image: url('../images/ic-doc-zip.svg');
+        background-image: url("../images/ic-doc-zip.svg");
         background-size: 19px auto;
       }
     }
 
     [a*="pdf"] {
       text-transform: uppercase;
-
     }
 
     a {
       @extend %txt-links-positive;
       color: $blue;
       text-decoration: none;
-
     }
-
   }
 }
 
@@ -107,8 +101,8 @@
 .ppt-file {
   line-height: 35px;
   &:after {
-    content: '';
-    background: url('../images/icons/ic-doc-ppt.svg') no-repeat;
+    content: "";
+    background: url("../images/icons/ic-doc-ppt.svg") no-repeat;
     background-size: 40px auto;
     padding: 22px;
     float: left;

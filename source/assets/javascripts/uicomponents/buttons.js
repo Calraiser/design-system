@@ -2,66 +2,81 @@
 Reference: http://jsfiddle.net/BB3JK/47/
 */
 
-$(document).ready(function(){
+$(document).ready(function() {
+  $(".btn_dropdown").each(function() {
+    var $this = $(this),
+      numberOfOptions = $(this).children("option").length;
 
-  $('.btn_dropdown').each(function() {
+    $this.addClass("select-hidden");
+    $this.wrap('<div class="btn-select"></div>');
+    $this.after('<div class="btn-styled"></div>');
 
-      var $this = $(this),
-          numberOfOptions = $(this).children('option').length;
+    var $styledSelect = $this.next(".btn-styled");
+    $styledSelect.text(
+      $this
+        .children("option")
+        .eq()
+        .val()
+    );
 
-      $this.addClass('select-hidden');
-      $this.wrap('<div class="btn-select"></div>');
-      $this.after('<div class="btn-styled"></div>');
+    var $list = $("<ul />", {
+      class: "select-options"
+    });
 
+    $(".btn-select").each(function() {
+      $list.insertAfter($styledSelect);
+    });
 
-      var $styledSelect = $this.next('.btn-styled');
-      $styledSelect.text($this.children('option').eq().val());
+    for (var i = 0; i < numberOfOptions; i++) {
+      $("<li />", {
+        text: $this
+          .children("option")
+          .eq(i)
+          .text(),
+        rel: $this
+          .children("option")
+          .eq(i)
+          .val()
+      }).appendTo($list);
+    }
 
+    var $listItems = $list.children("li");
 
-      var $list = $('<ul />', {
-          'class': 'select-options'
-      })
+    $styledSelect.click(function(e) {
+      e.stopPropagation();
 
-      $('.btn-select').each(function(){
-        $list.insertAfter($styledSelect);
-      })
+      $("div.btn-styled.active")
+        .not(this)
+        .each(function() {
+          $(this)
+            .removeClass("active")
+            .next("ul.select-options")
+            .hide();
+        });
+      $(this)
+        .toggleClass("active")
+        .next("ul.select-options")
+        .toggle();
+    });
 
-      for (var i = 0; i < numberOfOptions; i++) {
-          $('<li />', {
-              text: $this.children('option').eq(i).text(),
-              rel: $this.children('option').eq(i).val()
-          }).appendTo($list);
-      }
+    $listItems.click(function(e) {
+      e.stopPropagation();
 
-      var $listItems = $list.children('li');
-
-      $styledSelect.click(function(e) {
-          e.stopPropagation();
-
-          $('div.btn-styled.active').not(this).each(function(){
-              $(this).removeClass('active').next('ul.select-options').hide();
-          });
-          $(this).toggleClass('active').next('ul.select-options').toggle();
+      $(this).each(function() {
+        $(this)
+          .up(4)
+          .find(".btn_link a")
+          .attr("href", $(this).attr("rel"))
+          .text($(this).text());
       });
 
-      $listItems.click(function(e) {
-          e.stopPropagation();
+      $styledSelect.removeClass("active");
+      $list.hide();
+    });
 
-          $(this).each(function(){
-            $(this).up(4).find('.btn_link a')
-              .attr('href', $(this).attr('rel'))
-              .text($(this).text());
-            })
-
-          $styledSelect.removeClass('active');
-          $list.hide();
-
-      });
-
-      // $(document).on('click', function() {
-      //     $styledSelect.removeClass('active');
-      //     $list.hide();
-      // });
-
+    // $(document).on('click', function() {
+    //     $styledSelect.removeClass('active');
+    //     $list.hide();
+    // });
   });
 });

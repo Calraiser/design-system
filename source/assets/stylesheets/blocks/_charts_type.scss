@@ -92,7 +92,6 @@ $flipper-width: 300px;
   }
 }
 
-
 .og-grid {
   > li {
     height: 350px;
@@ -121,7 +120,6 @@ $flipper-width: 300px;
 }
 
 .og-grid .og-expanded .item::after {
-
   border: solid transparent;
   content: " ";
   @include size(0);
@@ -164,7 +162,7 @@ $flipper-width: 300px;
 
 .og-close::after,
 .og-close::before {
-  content: '';
+  content: "";
   @include position(absolute, 50% null null null);
   @include size(100%, 1px);
   background: #888;
@@ -201,7 +199,6 @@ $flipper-width: 300px;
     margin-top: 60px;
     margin-right: 40px;
     padding: 0;
-
   }
   @include media($mobile) {
     display: block;
@@ -236,7 +233,6 @@ $flipper-width: 300px;
 }
 
 .og-details a {
-
 }
 
 .og-loading {

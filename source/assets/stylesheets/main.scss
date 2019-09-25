@@ -1,10 +1,8 @@
 @charset "utf-8";
 
+// @import '~carbon-components/scss/globals/scss/styles.scss';
 
-
-@import '~carbon-components/scss/globals/scss/styles.scss';
-
-@import 'bourbon';
+@import "bourbon";
 @import "vendors/normalize";
 @import "base/mixins";
 
@@ -14,7 +12,6 @@
 // Settings
 @import "settings/colors";
 @import "settings/variables";
-
 
 // Vendors
 @import "vendors/c3.min";
@@ -70,7 +67,6 @@
 @import "utilities/gradients";
 @import "utilities/flexbox";
 
-
 // 8. pages/
 @import "pages/errors";
 @import "pages/home";
@@ -113,7 +109,6 @@
 @import "uielements/date_picker";
 @import "uielements/breadcrumb";
 @import "uielements/button_dropdown";
-
 
 // 11. charts/
 @import "graphics/line_chart";

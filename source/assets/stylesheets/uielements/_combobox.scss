@@ -34,11 +34,10 @@ $select-height: 36px;
   padding: 8px 12px;
   transition: $transition-slow;
   border-radius: 3px;
-  border: 1px solid #D8D8D8;
+  border: 1px solid #d8d8d8;
   color: $grey;
-  background: url('../images/icons/arrow_drop_down.svg') no-repeat;
+  background: url("../images/icons/arrow_drop_down.svg") no-repeat;
   background-position: 94% center;
-
 
   &.disabled {
     opacity: 0.5;
@@ -53,7 +52,7 @@ $select-height: 36px;
     font-family: Telefonicabold;
   }
   &.open {
-    background: url('../images/icons/arrow_drop_up.svg') no-repeat;
+    background: url("../images/icons/arrow_drop_up.svg") no-repeat;
     background-position: 95% center;
   }
 
@@ -152,7 +151,7 @@ $select-height: 36px;
   height: 50px;
   width: 6px;
   border-radius: 50px;
-  background: #86888C;
+  background: #86888c;
 }
 
 // .sb-scrollbar:hover {

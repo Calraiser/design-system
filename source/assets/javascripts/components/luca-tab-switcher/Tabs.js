@@ -1,5 +1,5 @@
-import React from 'react';
-import Tab from './Tab';
+import React from "react";
+import Tab from "./Tab";
 
 const Tabs = ({ activeTabIndex, data, handleTabClick }) => (
   <div>
@@ -18,6 +18,5 @@ const Tabs = ({ activeTabIndex, data, handleTabClick }) => (
     })}
   </div>
 );
-
 
 export default Tabs;

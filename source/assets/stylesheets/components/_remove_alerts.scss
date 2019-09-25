@@ -21,15 +21,14 @@
 
 .stackedcards {
   position: relative;
-  .actions, .right-action {
+  .actions,
+  .right-action {
     @include position(absolute, -56px null null 28px);
     @include size(380px, 130px);
     background: transparent;
     z-index: 9999;
 
-
     cursor: pointer;
-
   }
   .stackedcards-container {
     margin-bottom: 0 !important;
@@ -84,7 +83,6 @@
   color: #fff;
   /* this style was added only for better preview */
 }
-
 
 .stackedcards-overlay.left:empty,
 .stackedcards-overlay.right:empty,

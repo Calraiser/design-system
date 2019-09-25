@@ -1,4 +1,3 @@
-
 .p-adopting {
   .step-block {
     flex: 1 0 32%;
@@ -8,14 +7,13 @@
     }
     img {
       width: 100%;
-        @include position(absolute, 18px null 0 0);
+      @include position(absolute, 18px null 0 0);
       @include media($mobile) {
         @include position(absolute, 15px null 0 0);
       }
       @include media($medium-desktop) {
         top: 8px;
       }
-
     }
   }
   .steps-header {
@@ -27,11 +25,10 @@
     }
     h3 {
       flex: 1;
-      &:nth-child(2){
+      &:nth-child(2) {
         flex: 1 0 18%;
       }
     }
-
   }
   .steps-container {
     display: flex;
@@ -43,7 +40,8 @@
       flex-direction: row;
     }
   }
-  .step-block, .criteria-block {
+  .step-block,
+  .criteria-block {
     margin: 20px 0 35px;
     width: 100%;
     @include media($mobile) {

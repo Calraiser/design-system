@@ -5,7 +5,6 @@
 /* Settings
    ========================================================================== */
 
-
 // @import '../node_modules/carbon-components/scss/components/dropdown/_dropdown';
 
 $css--font-face: true !default;
@@ -16,15 +15,14 @@ $css--reset: true !default;
 $css--typography: true !default;
 $css--plex: true !default;
 
-
 $button-default-background-color: #bbbbbb !default;
 $button-default-text-color: $white !default;
 $btn-height: 38px;
 $button-colors: (
-	'dark': $black,
-	'red': $orange,
-	'green': $green,
-	'blue': $blue,
+  "dark": $black,
+  "red": $orange,
+  "green": $green,
+  "blue": $blue
 ) !default;
 
 %btn-primary-ico {
@@ -39,10 +37,10 @@ $button-colors: (
   position: relative;
   display: inline-block;
   border-radius: 42px;
-	padding: .532rem .75rem;
+  padding: 0.532rem 0.75rem;
   @include padding(null 20px);
-	font-size: rem-calc(14);
-	line-height: 1.5;
+  font-size: rem-calc(14);
+  line-height: 1.5;
 
   overflow: hidden;
   vertical-align: middle;
@@ -50,12 +48,12 @@ $button-colors: (
 
   cursor: pointer;
 
-  font-family: 'Telefonicabold';
+  font-family: "Telefonicabold";
   text-align: center;
   text-transform: uppercase;
 
   transition: all 0.25s ease;
-	box-sizing: content-box;
+  box-sizing: content-box;
 
   &.btn-large {
     width: 170px;
@@ -65,9 +63,9 @@ $button-colors: (
   }
   &.btn-small {
     width: 74px;
-		.ico {
-			margin-left: 0;
-		}
+    .ico {
+      margin-left: 0;
+    }
   }
   &.wide {
     width: 100%;
@@ -76,8 +74,8 @@ $button-colors: (
     opacity: 0.3 !important;
     border: 2px solid $grey !important;
     color: $grey !important;
-		cursor: not-allowed;
-		pointer-events:none;
+    cursor: not-allowed;
+    pointer-events: none;
     &:after {
       display: none;
     }
@@ -102,54 +100,54 @@ $button-colors: (
   border: 2px solid $green;
   background: transparent;
   &:hover,
-	&.hover {
+  &.hover {
     color: $white;
     background: $green;
   }
   &.has-icon {
     @extend %btn-primary-ico;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		&:hover {
-			.ico:before {
-				color: $white;
-			}
-		}
-		&.inverse {
-			&:hover {
-				.ico:before {
-					color: $white;
-				}
-			}
-			.ico:before {
-				color: $grey;
-			}
-		}
-		&.disabled {
-			.ico:before {
-				color: $grey;
-			}
-		}
-		&.hover {
-			color: $white;
-			background: $green;
-			.ico:before {
-				color: $white;
-			}
-		}
-		.ico {
-			font-size: rem-calc(18);
-			font-weight: bold;
-			&:before {
-				color: $green;
-			}
-		}
-		&.btn-small:not(.inverse) {
-			width: 87px;
-			padding-right: 12px;
-			padding-left: 15px;
-		}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover {
+      .ico:before {
+        color: $white;
+      }
+    }
+    &.inverse {
+      &:hover {
+        .ico:before {
+          color: $white;
+        }
+      }
+      .ico:before {
+        color: $grey;
+      }
+    }
+    &.disabled {
+      .ico:before {
+        color: $grey;
+      }
+    }
+    &.hover {
+      color: $white;
+      background: $green;
+      .ico:before {
+        color: $white;
+      }
+    }
+    .ico {
+      font-size: rem-calc(18);
+      font-weight: bold;
+      &:before {
+        color: $green;
+      }
+    }
+    &.btn-small:not(.inverse) {
+      width: 87px;
+      padding-right: 12px;
+      padding-left: 15px;
+    }
   }
 }
 
@@ -171,79 +169,77 @@ $button-colors: (
   color: $blue;
   border: 2px solid $blue;
   background: transparent;
-	&.disabled {
-		.icon-ic-expand_more {
-			border-left: 2px solid $grey !important;
-		}
-	}
+  &.disabled {
+    .icon-ic-expand_more {
+      border-left: 2px solid $grey !important;
+    }
+  }
   &:hover,
-	&.hover {
+  &.hover {
     color: $white;
     background: $blue;
-		.icon-ic-expand_more {
-			border-left: 2px solid $white !important;
-		}
+    .icon-ic-expand_more {
+      border-left: 2px solid $white !important;
+    }
   }
   &.has-icon {
     text-align: left;
     padding: 0 0 0 20px;
     display: flex;
-		justify-content: space-between;
-		align-items: center;
-		&:hover {
-			.icon-ic-expand_more:before {
-				color: $white;
-			}
-		}
-		&.disabled {
-			.icon-ic-expand_more:before {
-				color: $grey;
-			}
-		}
-		&.hover {
-			.icon-ic-expand_more:before {
-				color: $white;
-			}
-		}
+    justify-content: space-between;
+    align-items: center;
+    &:hover {
+      .icon-ic-expand_more:before {
+        color: $white;
+      }
+    }
+    &.disabled {
+      .icon-ic-expand_more:before {
+        color: $grey;
+      }
+    }
+    &.hover {
+      .icon-ic-expand_more:before {
+        color: $white;
+      }
+    }
     .ico {
       padding-left: 20px;
     }
     .btn-text {
       flex: 1;
-
     }
     .icon-ic-expand_more {
       display: block;
       padding: 8px 12px 8px 11px;
       order: 1;
       border-left: 2px solid $blue;
-			align-items: center;
-			font-size: rem-calc(22);
-			&:before {
-				margin-top: 8px;
-				color: $blue;
-				font-weight: bold;
-			}
+      align-items: center;
+      font-size: rem-calc(22);
+      &:before {
+        margin-top: 8px;
+        color: $blue;
+        font-weight: bold;
+      }
     }
 
-		&.btn-large {
-			width: 190px;
-		}
-		&.btn-medium {
-			width: 142px;
-		}
-		&.btn-small {
-			padding-left: 15px;
-			width: 99px;
-
-		}
-		&.btn-medium,
-		&.btn-small {
-			.icon-ic-expand_more {
-				padding-left: 11px;
-				padding-right: 11px;
-			}
-		}
+    &.btn-large {
+      width: 190px;
+    }
+    &.btn-medium {
+      width: 142px;
+    }
+    &.btn-small {
+      padding-left: 15px;
+      width: 99px;
+    }
+    &.btn-medium,
+    &.btn-small {
+      .icon-ic-expand_more {
+        padding-left: 11px;
+        padding-right: 11px;
+      }
+    }
   }
 }
 
@@ -257,21 +253,22 @@ $button-colors: (
   color: $grey04;
   border: 2px solid $grey04;
   background: transparent;
-  &:hover, &.hover {
+  &:hover,
+  &.hover {
     color: $white;
     background: $grey04;
   }
   &.has-icon {
     @extend %btn-primary-ico;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: .532rem 1.25rem;
-		.icon-ic-close {
-			&:before {
-				font-size: rem-calc(18);
-			}
-		}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.532rem 1.25rem;
+    .icon-ic-close {
+      &:before {
+        font-size: rem-calc(18);
+      }
+    }
   }
 }
 
@@ -284,17 +281,16 @@ $button-colors: (
     border: 1px solid transparent;
   }
   &:after {
-    background: rgba(0,0,0,0.1);
-    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
 .actions {
-	.c-btn + .c-btn {
-		margin-left: 15px;
-	}
+  .c-btn + .c-btn {
+    margin-left: 15px;
+  }
 }
-
 
 /**
  * Color variations. To add new color variation you have to add new value in
@@ -302,7 +298,7 @@ $button-colors: (
  */
 
 @each $color-key, $color-value in $button-colors {
-	.c-btn--#{$color-key} {
-		background-color: $color-value;
-	}
+  .c-btn--#{$color-key} {
+    background-color: $color-value;
+  }
 }

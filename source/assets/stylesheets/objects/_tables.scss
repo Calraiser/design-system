@@ -4,7 +4,7 @@
 // ----------------------------------------
 // // ------ colors ------
 // ----------------------------------------
-$table-border-color: #F2F2F2; // ----------------------------------------
+$table-border-color: #f2f2f2; // ----------------------------------------
 // // ------ demo container settings ------
 // ----------------------------------------
 $container-width: 100%;
@@ -17,11 +17,13 @@ $table-margin-bottom: 0;
 $table-cell-height: 41px;
 $table-cell-padding: 0;
 $table-cell-text-align: left;
-$table-cell-border-top: $table-border-width $table-border-style $table-border-color;
+$table-cell-border-top: $table-border-width $table-border-style
+  $table-border-color;
 $table-header-font-weight: bold;
 $table-body-border-top: 0.142857143em $table-border-style $table-border-color;
 $table-condensed-padding: 0.294117647em;
-$table-bordered-border: $table-border-width $table-border-style $table-border-color;
+$table-bordered-border: $table-border-width $table-border-style
+  $table-border-color;
 $table-bordered-border-radius: 0;
 $table-border-left: $table-border-width $table-border-style $table-border-color;
 $table-bordered-child-radius: 0;
@@ -50,9 +52,10 @@ table {
     white-space: pre;
     position: absolute;
     &:before {
-      content: '';
-      background: url('../images/uicomponents/list/legend-example.svg') no-repeat;
-      @include size(22px,8px);
+      content: "";
+      background: url("../images/uicomponents/list/legend-example.svg")
+        no-repeat;
+      @include size(22px, 8px);
       margin-right: 10px;
     }
   }
@@ -76,7 +79,7 @@ table {
   text-align: $table-cell-text-align;
   border-top: $table-cell-border-top;
   font-family: Telefonicaregular;
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-size: 14px;
 }
 /*  Sets table header font-weight to bold.
@@ -121,55 +124,57 @@ table {
     border: 1px solid $grey03;
   }
   &.odd {
-    border: 1px solid #F8F8F8;
+    border: 1px solid #f8f8f8;
   }
-  &.selected, &:hover {
-    box-shadow: inset .5px .5px 0 2px $green;
+  &.selected,
+  &:hover {
+    box-shadow: inset 0.5px 0.5px 0 2px $green;
     background-color: $white !important;
     td {
       font-weight: bold;
     }
   }
   &:nth-child(odd) {
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
   }
 }
 
-  .table {
-    thead {
-      .sorting,
-      .sorting_asc,
-      .sorting_desc {
-        &:hover {
-          cursor: pointer;
-        }
-        &:after {
-          content: '';
-          background-repeat: no-repeat;
-          background-position: center 20px;
-          cursor: pointer;
-          padding: 10px;
-        }
-
-        &:hover {
-          border: 0;
-          outline: none;
-        }
+.table {
+  thead {
+    .sorting,
+    .sorting_asc,
+    .sorting_desc {
+      &:hover {
+        cursor: pointer;
+      }
+      &:after {
+        content: "";
+        background-repeat: no-repeat;
+        background-position: center 20px;
+        cursor: pointer;
+        padding: 10px;
       }
 
-      .sorting_asc, .sorting {
-        &:after {
-          background-image: url("../images/sort-down-black.svg");
-        }
+      &:hover {
+        border: 0;
+        outline: none;
       }
+    }
 
-      .sorting_desc {
-        &:after {
-          background-image: url("../images/sort-up.svg");
-        }
+    .sorting_asc,
+    .sorting {
+      &:after {
+        background-image: url("../images/sort-down-black.svg");
+      }
+    }
+
+    .sorting_desc {
+      &:after {
+        background-image: url("../images/sort-up.svg");
       }
     }
   }
+}
 
 /*  Removes the border-top from the first row. */
 %table thead:first-child tr td,
@@ -244,8 +249,8 @@ table {
 .table-bordered tbody:last-child tr:last-child td:last-child,
 .table-bordered thead:last-child tr:last-child th:last-child {
   border-radius: 0 0 $table-bordered-child-radius 0;
-
-}.dataTables_length {
+}
+.dataTables_length {
   display: none;
 }
 
@@ -254,7 +259,6 @@ table {
 }
 
 .dataTables_paginate {
-
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
@@ -264,10 +268,10 @@ table {
     margin: 0 6px;
     cursor: pointer;
     img {
-      filter: invert(.8);
+      filter: invert(0.8);
       transition: $transition-slow;
       &:hover {
-        filter: invert(.3);
+        filter: invert(0.3);
       }
     }
     &.current {
@@ -280,17 +284,15 @@ table {
       }
     }
     &.previous {
-
     }
     &.current {
       font-family: Telefonicabold;
     }
-
-    }
   }
+}
 
-  .example-table {
-    @include media($mobile) {
-      margin-left: 60px;
-    }
+.example-table {
+  @include media($mobile) {
+    margin-left: 60px;
   }
+}

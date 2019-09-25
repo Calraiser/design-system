@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 export default class Tab extends Component {
   constructor(props) {
@@ -16,16 +16,15 @@ export default class Tab extends Component {
 
     return (
       <button
-        id= { this.props.id }
-        className= { this.props.isActive ? 'tab-switcher__active' : '' }
-        onClick= { this.onTabClick }
+        id={this.props.id}
+        className={this.props.isActive ? "tab-switcher__active" : ""}
+        onClick={this.onTabClick}
       >
-        { label }
+        {label}
       </button>
     );
   }
 }
-
 
 Tab.propTypes = {
   label: PropTypes.string.isRequired,
