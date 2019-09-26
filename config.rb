@@ -66,9 +66,9 @@ end
 # Build-specific configuration
 # ----------------------------------------------
 configure :build do
-  # Use relative URLs
-  activate :directory_indexes
+  set      :relative_links, true
 
   # Add asset fingerprinting to avoid cache issues
   activate :asset_hash
+  activate :relative_assets
 end

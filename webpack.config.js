@@ -5,7 +5,9 @@ var Clean = require('clean-webpack-plugin')
 
 module.exports = {
   entry: {
-    application: './source/assets/javascripts/main.js'
+    main:              __dirname + '/source/assets/javascripts/main.js',
+    luca_tab_switcher: __dirname + '/source/assets/javascripts/components/luca-tab-switcher/index.js',
+    date_picker:       __dirname + '/source/assets/javascripts/components/luca-date-picker/index.js'
   },
 
   resolve: {
@@ -87,5 +89,12 @@ module.exports = {
     }),
     new Clean(['.tmp']),
     new ExtractTextPlugin('assets/stylesheets/[name].bundle.css'),
+    new webpack.ProvidePlugin({
+     React: "react",
+     ReactDOM: "react-dom",
+     $: "jquery",
+     jQuery: "jquery",
+     "window.jQuery": "jquery"
+   })
   ],
 }
