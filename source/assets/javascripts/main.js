@@ -1,4 +1,5 @@
-import _css from "../stylesheets/main.scss";
+
+import 'main.css.sass';
 
 import "bourbon";
 import "carbon-components";

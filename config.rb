@@ -3,32 +3,8 @@
 require "helpers/common_helpers"
 helpers CommonHelper
 
-
-set :markdown_enginge, :redcarpet
-set :markdown, fenced_code_blocks: true
-set :haml, { ugly: true }
-
-# Load Sass from node_modules
-config[:sass_assets_paths] << File.join(root, 'node_modules')
-
-set :css_dir,    'assets/stylesheets'
-set :js_dir,     'assets/javascripts'
-set :images_dir, 'assets/images'
-
-# page '/*.xml', layout: false
-# page '/*.json', layout: false
-# page '/*.txt', layout: false
-
 activate :syntax, :inline_theme => Rouge::Themes::Github.new
 activate :lunr
-
-activate :external_pipeline,
-   name: :webpack,
-   command: build? ?
-     'npm run build' :
-     'npm run start',
-   source: ".tmp/dist",
-   latency: 1
 
 activate :navtree do |options|
  options.automatic_tree_updates = false # The tree.yml file will be updated automatically when source files are changed.
@@ -36,17 +12,63 @@ activate :navtree do |options|
  options.ignore_dir = ['assets'] # An array of directories we want to ignore when building our tree.
 end
 
+
+# Slim HTML
+# ----------------------------------------------
+::Slim::Engine.set_options :format  => :html
+
+# i18n
+# ----------------------------------------------
+activate :i18n, :mount_at_root => :'en'
+
+# Webpack
+# ----------------------------------------------
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ?  "yarn run build" : "yarn run start",
+  source: ".tmp/dist",
+  latency: 1
+
+# Configure assets directories
+# ----------------------------------------------
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
+
+
+# Other configurations
+# ----------------------------------------------
+set :trailing_slash, false
+
+# Sitemap
+# ----------------------------------------------
+page "/sitemap.xml", :layout => false
+
+# Livereload
+# ----------------------------------------------
 configure :development do
-  set      :debug_assets, true
-  activate :livereload
-  activate :pry
+  activate :livereload, :no_swf => true
 end
 
+
+# Development-specific configuration
+# ----------------------------------------------
+configure :development do
+  activate :directory_indexes
+
+  set :debug_assets, true
+
+  # Output a pretty html
+  ::Slim::Engine.set_options :pretty => true
+end
+
+# Build-specific configuration
+# ----------------------------------------------
 configure :build do
-  set      :relative_links, true
-  activate :asset_hash, ignore: [/\.jpg\Z/, /\.png\Z/, /\.svg\Z/]
-  activate :gzip
-  # activate :minify_css
-  # activate :minify_html
-  activate :relative_assets
+  # Use relative URLs
+  activate :directory_indexes
+
+  # Add asset fingerprinting to avoid cache issues
+  activate :asset_hash
 end

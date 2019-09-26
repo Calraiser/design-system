@@ -1,59 +1,70 @@
-const webpack = require("webpack");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
-const path = require("path");
+/* globals __dirname */
+var webpack = require('webpack')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var Clean = require('clean-webpack-plugin')
 
-module.exports = (env, options) => ({
-  optimization: {
-    minimizer: [
-      new UglifyJsPlugin({
-        cache: true,
-        parallel: true,
-        sourceMap: false
-      }),
-      new OptimizeCSSAssetsPlugin({})
+module.exports = {
+  entry: {
+    application: './source/assets/javascripts/main.js'
+  },
+
+  resolve: {
+    modules: [
+      __dirname + '/source/assets/javascripts',
+      __dirname + '/source/assets/stylesheets',
+      __dirname + '/node_modules',
     ]
   },
 
-  entry: {
-    main: __dirname + "/source/assets/javascripts/main.js",
-    luca_tab_switcher:
-      __dirname +
-      "/source/assets/javascripts/components/luca-tab-switcher/index.js",
-    date_picker:
-      __dirname +
-      "/source/assets/javascripts/components/luca-date-picker/index.js"
-  },
   output: {
-    path: __dirname + "/.tmp/dist",
-    filename: "assets/javascripts/[name].bundle.js"
+    path: __dirname + '/.tmp/dist',
+    filename: 'assets/javascripts/[name].bundle.js',
   },
+
   module: {
-    rules: [
-      {
+    loaders: [{
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
+        loader: 'babel-loader'
       },
       {
-        test: /\.(scss|sass|css)$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "postcss-loader",
-          {
-            loader: "sass-loader",
-            options: {
-              includePaths: [
-                path.resolve(__dirname, "node_modules/bourbon/core/"),
-                path.resolve(__dirname, "source")
-              ]
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader',
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: function() {
+                  return [
+                    require('autoprefixer')
+                  ]
+                }
+              }
             }
-          }
-        ]
+          ]
+        }),
+      },
+      {
+        test: /\.(sass|scss)$/,
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader',
+            {
+              loader: 'postcss-loader',
+              options: {
+                plugins: function() {
+                  return [
+                    require('autoprefixer')
+                  ]
+                }
+              }
+            },
+            'sass-loader'
+          ]
+        }),
       },
       {
         test: /\.(ttf|eot|svg|png|jpg|gif|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -66,16 +77,15 @@ module.exports = (env, options) => ({
   },
 
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: "assets/stylesheets/[name].css"
+    // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
+    // inside your code for any environment checks UglifyJS will automatically
+    // drop any unreachable code.
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      },
     }),
-
-    new webpack.ProvidePlugin({
-      React: "react",
-      ReactDOM: "react-dom",
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery"
-    })
-  ]
-});
+    new Clean(['.tmp']),
+    new ExtractTextPlugin('assets/stylesheets/[name].bundle.css'),
+  ],
+}
