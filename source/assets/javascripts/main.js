@@ -2,7 +2,11 @@
 import 'main.css.sass';
 
 import "bourbon";
-import "carbon-components";
+
+import 'carbon-components';
+
+import "slick-slider";
+
 import "jquery-ui";
 import "lunr";
 import "bootstrap-tooltip";
@@ -15,6 +19,7 @@ import "./blocks/search.js";
 import "./vendors/jquery.progressScroll.js";
 import "./vendors/scrollBar.js";
 import "./vendors/jquery.sticky-kit.js";
+
 import "./blocks/content_nav.js";
 import "./blocks/responsive_nav.js";
 import "./blocks/resources.js";
@@ -23,7 +28,7 @@ import "./components/code_block.js";
 import "./components/component_slider.js";
 import "./components/scrollTop.js";
 // import './components/sticky_menu.js'
-// import './components/clipboard.js'
+import './vendors/clipboard.min.js'
 // import './components/tooltips.js'
 
 // import './uicomponents/combobox.js'

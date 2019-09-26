@@ -1,4 +1,9 @@
-import { Modal } from "carbon-components";
+
+
+
+import Cookies from 'jquery.cookie';
+
+var Modal = CarbonComponents.Modal;
 
 var element = Modal.create(document.getElementById("onBoarding"));
 var slider = $(".onBoarding-slide");
@@ -41,20 +46,3 @@ function applyHiddenClass() {
     }
   });
 }
-
-$(document).ready(function() {
-  $(".slick-disabled").html("Lets go");
-
-  if (Cookies("popup_1_2") == null) {
-    element.show();
-    Cookies("popup_1_2", "2");
-  }
-
-  slider.on("setPosition", function(event, slick, currentSlide) {
-    applyHiddenClass();
-  });
-
-  slider.on("beforeChange", function(event, slick, currentSlide) {
-    currSlide = currentSlide;
-  });
-});
