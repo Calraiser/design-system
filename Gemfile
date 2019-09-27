@@ -5,8 +5,8 @@ source 'https://rubygems.org'
 ruby '2.5.0'
 
 # Middleman Gems
-# HTTP server for Ruby/Rack recommended by Heroku
-gem 'puma', '~> 3.11'
+# # HTTP server for Ruby/Rack recommended by Heroku
+# gem 'puma', '~> 3.11'
 gem 'middleman',                '4.2'
 gem 'middleman-autoprefixer',   '~> 2.7.1'
 gem 'middleman-minify-html',    '~> 3.4.1'
