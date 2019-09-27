@@ -22,3 +22,6 @@
 
 # FontCustom
 /source/assets/images/fontcustom-icons
+
+# Local Netlify folder
+.netlify
