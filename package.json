@@ -50,7 +50,7 @@
     "lunr": "^2.3.6",
     "moment": "^2.24.0",
     "path": "^0.12.7",
-    "prismjs": "^1.17.1",
+    "prismjs": "^1.23.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-advanced-datetimerange-picker": "^1.0.8",
